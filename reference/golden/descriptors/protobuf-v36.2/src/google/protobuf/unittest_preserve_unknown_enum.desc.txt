@@ -1,0 +1,40 @@
+package proto3_preserve_unknown_enum_unittest
+syntax editions
+edition 1002
+message MyMessage
+  field e 1 1 14 .proto3_preserve_unknown_enum_unittest.MyEnum e - 0 -
+    resolved 0 0 14 - 0 -
+  field repeated_e 2 3 14 .proto3_preserve_unknown_enum_unittest.MyEnum repeatedE - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_packed_e 3 3 14 .proto3_preserve_unknown_enum_unittest.MyEnum repeatedPackedE - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_packed_unexpected_e 4 3 14 .proto3_preserve_unknown_enum_unittest.MyEnumPlusExtra repeatedPackedUnexpectedE - 0 -
+    resolved 0 1 14 - 0 -
+  field oneof_e_1 5 1 14 .proto3_preserve_unknown_enum_unittest.MyEnum oneofE1 0 0 -
+    resolved 1 0 14 - 0 -
+  field oneof_e_2 6 1 14 .proto3_preserve_unknown_enum_unittest.MyEnum oneofE2 0 0 -
+    resolved 1 0 14 - 0 -
+  oneof o
+message MyMessagePlusExtra
+  field e 1 1 14 .proto3_preserve_unknown_enum_unittest.MyEnumPlusExtra e - 0 -
+    resolved 0 0 14 - 0 -
+  field repeated_e 2 3 14 .proto3_preserve_unknown_enum_unittest.MyEnumPlusExtra repeatedE - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_packed_e 3 3 14 .proto3_preserve_unknown_enum_unittest.MyEnumPlusExtra repeatedPackedE - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_packed_unexpected_e 4 3 14 .proto3_preserve_unknown_enum_unittest.MyEnumPlusExtra repeatedPackedUnexpectedE - 0 -
+    resolved 0 1 14 - 0 -
+  field oneof_e_1 5 1 14 .proto3_preserve_unknown_enum_unittest.MyEnumPlusExtra oneofE1 0 0 -
+    resolved 1 0 14 - 0 -
+  field oneof_e_2 6 1 14 .proto3_preserve_unknown_enum_unittest.MyEnumPlusExtra oneofE2 0 0 -
+    resolved 1 0 14 - 0 -
+  oneof o
+enum MyEnum
+  value FOO 0
+  value BAR 1
+  value BAZ 2
+enum MyEnumPlusExtra
+  value E_FOO 0
+  value E_BAR 1
+  value E_BAZ 2
+  value E_EXTRA 3

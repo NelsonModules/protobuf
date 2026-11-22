@@ -1,0 +1,365 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message TestMapLite
+  field map_int32_int32 1 3 11 .proto2_unittest.TestMapLite.MapInt32Int32Entry mapInt32Int32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int64_int64 2 3 11 .proto2_unittest.TestMapLite.MapInt64Int64Entry mapInt64Int64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_uint32_uint32 3 3 11 .proto2_unittest.TestMapLite.MapUint32Uint32Entry mapUint32Uint32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_uint64_uint64 4 3 11 .proto2_unittest.TestMapLite.MapUint64Uint64Entry mapUint64Uint64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_sint32_sint32 5 3 11 .proto2_unittest.TestMapLite.MapSint32Sint32Entry mapSint32Sint32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_sint64_sint64 6 3 11 .proto2_unittest.TestMapLite.MapSint64Sint64Entry mapSint64Sint64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_fixed32_fixed32 7 3 11 .proto2_unittest.TestMapLite.MapFixed32Fixed32Entry mapFixed32Fixed32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_fixed64_fixed64 8 3 11 .proto2_unittest.TestMapLite.MapFixed64Fixed64Entry mapFixed64Fixed64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_sfixed32_sfixed32 9 3 11 .proto2_unittest.TestMapLite.MapSfixed32Sfixed32Entry mapSfixed32Sfixed32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_sfixed64_sfixed64 10 3 11 .proto2_unittest.TestMapLite.MapSfixed64Sfixed64Entry mapSfixed64Sfixed64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_float 11 3 11 .proto2_unittest.TestMapLite.MapInt32FloatEntry mapInt32Float - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_double 12 3 11 .proto2_unittest.TestMapLite.MapInt32DoubleEntry mapInt32Double - 0 -
+    resolved 0 0 11 - 0 -
+  field map_bool_bool 13 3 11 .proto2_unittest.TestMapLite.MapBoolBoolEntry mapBoolBool - 0 -
+    resolved 0 0 11 - 0 -
+  field map_string_string 14 3 11 .proto2_unittest.TestMapLite.MapStringStringEntry mapStringString - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_bytes 15 3 11 .proto2_unittest.TestMapLite.MapInt32BytesEntry mapInt32Bytes - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_enum 16 3 11 .proto2_unittest.TestMapLite.MapInt32EnumEntry mapInt32Enum - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_foreign_message 17 3 11 .proto2_unittest.TestMapLite.MapInt32ForeignMessageEntry mapInt32ForeignMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field teboring 18 3 11 .proto2_unittest.TestMapLite.TeboringEntry teboring - 0 -
+    resolved 0 0 11 - 0 -
+  message MapInt32Int32Entry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 1 0 5 - 0 -
+    map_entry
+  message MapInt64Int64Entry
+    field key 1 1 3 - key - 0 -
+      resolved 1 0 3 - 0 -
+    field value 2 1 3 - value - 0 -
+      resolved 1 0 3 - 0 -
+    map_entry
+  message MapUint32Uint32Entry
+    field key 1 1 13 - key - 0 -
+      resolved 1 0 13 - 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 1 0 13 - 0 -
+    map_entry
+  message MapUint64Uint64Entry
+    field key 1 1 4 - key - 0 -
+      resolved 1 0 4 - 0 -
+    field value 2 1 4 - value - 0 -
+      resolved 1 0 4 - 0 -
+    map_entry
+  message MapSint32Sint32Entry
+    field key 1 1 17 - key - 0 -
+      resolved 1 0 17 - 0 -
+    field value 2 1 17 - value - 0 -
+      resolved 1 0 17 - 0 -
+    map_entry
+  message MapSint64Sint64Entry
+    field key 1 1 18 - key - 0 -
+      resolved 1 0 18 - 0 -
+    field value 2 1 18 - value - 0 -
+      resolved 1 0 18 - 0 -
+    map_entry
+  message MapFixed32Fixed32Entry
+    field key 1 1 7 - key - 0 -
+      resolved 1 0 7 - 0 -
+    field value 2 1 7 - value - 0 -
+      resolved 1 0 7 - 0 -
+    map_entry
+  message MapFixed64Fixed64Entry
+    field key 1 1 6 - key - 0 -
+      resolved 1 0 6 - 0 -
+    field value 2 1 6 - value - 0 -
+      resolved 1 0 6 - 0 -
+    map_entry
+  message MapSfixed32Sfixed32Entry
+    field key 1 1 15 - key - 0 -
+      resolved 1 0 15 - 0 -
+    field value 2 1 15 - value - 0 -
+      resolved 1 0 15 - 0 -
+    map_entry
+  message MapSfixed64Sfixed64Entry
+    field key 1 1 16 - key - 0 -
+      resolved 1 0 16 - 0 -
+    field value 2 1 16 - value - 0 -
+      resolved 1 0 16 - 0 -
+    map_entry
+  message MapInt32FloatEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 2 - value - 0 -
+      resolved 1 0 2 - 0 -
+    map_entry
+  message MapInt32DoubleEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 1 - value - 0 -
+      resolved 1 0 1 - 0 -
+    map_entry
+  message MapBoolBoolEntry
+    field key 1 1 8 - key - 0 -
+      resolved 1 0 8 - 0 -
+    field value 2 1 8 - value - 0 -
+      resolved 1 0 8 - 0 -
+    map_entry
+  message MapStringStringEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 0 0 -
+    map_entry
+  message MapInt32BytesEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 12 - value - 0 -
+      resolved 1 0 12 - 0 -
+    map_entry
+  message MapInt32EnumEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 14 .proto2_unittest.MapEnumLite value - 0 -
+      resolved 1 0 14 - 0 -
+    map_entry
+  message MapInt32ForeignMessageEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 11 .proto2_unittest.ForeignMessageLite value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+  message TeboringEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 1 0 5 - 0 -
+    map_entry
+message TestArenaMapLite
+  field map_int32_int32 1 3 11 .proto2_unittest.TestArenaMapLite.MapInt32Int32Entry mapInt32Int32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int64_int64 2 3 11 .proto2_unittest.TestArenaMapLite.MapInt64Int64Entry mapInt64Int64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_uint32_uint32 3 3 11 .proto2_unittest.TestArenaMapLite.MapUint32Uint32Entry mapUint32Uint32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_uint64_uint64 4 3 11 .proto2_unittest.TestArenaMapLite.MapUint64Uint64Entry mapUint64Uint64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_sint32_sint32 5 3 11 .proto2_unittest.TestArenaMapLite.MapSint32Sint32Entry mapSint32Sint32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_sint64_sint64 6 3 11 .proto2_unittest.TestArenaMapLite.MapSint64Sint64Entry mapSint64Sint64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_fixed32_fixed32 7 3 11 .proto2_unittest.TestArenaMapLite.MapFixed32Fixed32Entry mapFixed32Fixed32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_fixed64_fixed64 8 3 11 .proto2_unittest.TestArenaMapLite.MapFixed64Fixed64Entry mapFixed64Fixed64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_sfixed32_sfixed32 9 3 11 .proto2_unittest.TestArenaMapLite.MapSfixed32Sfixed32Entry mapSfixed32Sfixed32 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_sfixed64_sfixed64 10 3 11 .proto2_unittest.TestArenaMapLite.MapSfixed64Sfixed64Entry mapSfixed64Sfixed64 - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_float 11 3 11 .proto2_unittest.TestArenaMapLite.MapInt32FloatEntry mapInt32Float - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_double 12 3 11 .proto2_unittest.TestArenaMapLite.MapInt32DoubleEntry mapInt32Double - 0 -
+    resolved 0 0 11 - 0 -
+  field map_bool_bool 13 3 11 .proto2_unittest.TestArenaMapLite.MapBoolBoolEntry mapBoolBool - 0 -
+    resolved 0 0 11 - 0 -
+  field map_string_string 14 3 11 .proto2_unittest.TestArenaMapLite.MapStringStringEntry mapStringString - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_bytes 15 3 11 .proto2_unittest.TestArenaMapLite.MapInt32BytesEntry mapInt32Bytes - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_enum 16 3 11 .proto2_unittest.TestArenaMapLite.MapInt32EnumEntry mapInt32Enum - 0 -
+    resolved 0 0 11 - 0 -
+  field map_int32_foreign_message 17 3 11 .proto2_unittest.TestArenaMapLite.MapInt32ForeignMessageEntry mapInt32ForeignMessage - 0 -
+    resolved 0 0 11 - 0 -
+  message MapInt32Int32Entry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 1 0 5 - 0 -
+    map_entry
+  message MapInt64Int64Entry
+    field key 1 1 3 - key - 0 -
+      resolved 1 0 3 - 0 -
+    field value 2 1 3 - value - 0 -
+      resolved 1 0 3 - 0 -
+    map_entry
+  message MapUint32Uint32Entry
+    field key 1 1 13 - key - 0 -
+      resolved 1 0 13 - 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 1 0 13 - 0 -
+    map_entry
+  message MapUint64Uint64Entry
+    field key 1 1 4 - key - 0 -
+      resolved 1 0 4 - 0 -
+    field value 2 1 4 - value - 0 -
+      resolved 1 0 4 - 0 -
+    map_entry
+  message MapSint32Sint32Entry
+    field key 1 1 17 - key - 0 -
+      resolved 1 0 17 - 0 -
+    field value 2 1 17 - value - 0 -
+      resolved 1 0 17 - 0 -
+    map_entry
+  message MapSint64Sint64Entry
+    field key 1 1 18 - key - 0 -
+      resolved 1 0 18 - 0 -
+    field value 2 1 18 - value - 0 -
+      resolved 1 0 18 - 0 -
+    map_entry
+  message MapFixed32Fixed32Entry
+    field key 1 1 7 - key - 0 -
+      resolved 1 0 7 - 0 -
+    field value 2 1 7 - value - 0 -
+      resolved 1 0 7 - 0 -
+    map_entry
+  message MapFixed64Fixed64Entry
+    field key 1 1 6 - key - 0 -
+      resolved 1 0 6 - 0 -
+    field value 2 1 6 - value - 0 -
+      resolved 1 0 6 - 0 -
+    map_entry
+  message MapSfixed32Sfixed32Entry
+    field key 1 1 15 - key - 0 -
+      resolved 1 0 15 - 0 -
+    field value 2 1 15 - value - 0 -
+      resolved 1 0 15 - 0 -
+    map_entry
+  message MapSfixed64Sfixed64Entry
+    field key 1 1 16 - key - 0 -
+      resolved 1 0 16 - 0 -
+    field value 2 1 16 - value - 0 -
+      resolved 1 0 16 - 0 -
+    map_entry
+  message MapInt32FloatEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 2 - value - 0 -
+      resolved 1 0 2 - 0 -
+    map_entry
+  message MapInt32DoubleEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 1 - value - 0 -
+      resolved 1 0 1 - 0 -
+    map_entry
+  message MapBoolBoolEntry
+    field key 1 1 8 - key - 0 -
+      resolved 1 0 8 - 0 -
+    field value 2 1 8 - value - 0 -
+      resolved 1 0 8 - 0 -
+    map_entry
+  message MapStringStringEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 0 0 -
+    map_entry
+  message MapInt32BytesEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 12 - value - 0 -
+      resolved 1 0 12 - 0 -
+    map_entry
+  message MapInt32EnumEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 14 .proto2_unittest.MapEnumLite value - 0 -
+      resolved 1 0 14 - 0 -
+    map_entry
+  message MapInt32ForeignMessageEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 11 .proto2_unittest.ForeignMessageArenaLite value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+message TestRequiredMessageMapLite
+  field map_field 1 3 11 .proto2_unittest.TestRequiredMessageMapLite.MapFieldEntry mapField - 0 -
+    resolved 0 0 11 - 0 -
+  message MapFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 11 .proto2_unittest.TestRequiredLite value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+message TestEnumMapLite
+  field known_map_field 101 3 11 .proto2_unittest.TestEnumMapLite.KnownMapFieldEntry knownMapField - 0 -
+    resolved 0 0 11 - 0 -
+  field unknown_map_field 102 3 11 .proto2_unittest.TestEnumMapLite.UnknownMapFieldEntry unknownMapField - 0 -
+    resolved 0 0 11 - 0 -
+  message KnownMapFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 14 .proto2_unittest.Proto2MapEnumLite value - 0 -
+      resolved 1 0 14 - 0 -
+    map_entry
+  message UnknownMapFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 14 .proto2_unittest.Proto2MapEnumLite value - 0 -
+      resolved 1 0 14 - 0 -
+    map_entry
+message TestEnumMapPlusExtraLite
+  field known_map_field 101 3 11 .proto2_unittest.TestEnumMapPlusExtraLite.KnownMapFieldEntry knownMapField - 0 -
+    resolved 0 0 11 - 0 -
+  field unknown_map_field 102 3 11 .proto2_unittest.TestEnumMapPlusExtraLite.UnknownMapFieldEntry unknownMapField - 0 -
+    resolved 0 0 11 - 0 -
+  message KnownMapFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 14 .proto2_unittest.Proto2MapEnumPlusExtraLite value - 0 -
+      resolved 1 0 14 - 0 -
+    map_entry
+  message UnknownMapFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 14 .proto2_unittest.Proto2MapEnumPlusExtraLite value - 0 -
+      resolved 1 0 14 - 0 -
+    map_entry
+message TestMessageMapLite
+  field map_int32_message 1 3 11 .proto2_unittest.TestMessageMapLite.MapInt32MessageEntry mapInt32Message - 0 -
+    resolved 0 0 11 - 0 -
+  message MapInt32MessageEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 11 .proto2_unittest.TestAllTypesLite value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+message TestRequiredLite
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 1 -
+  field b 2 1 5 - b - 0 -
+    resolved 1 0 5 - 1 -
+  field c 3 1 5 - c - 0 -
+    resolved 1 0 5 - 1 -
+  extension single 1000 1 11 .proto2_unittest.TestRequiredLite .proto2_unittest.TestAllExtensionsLite single - 0 -
+    resolved 1 0 11 - 0 -
+message ForeignMessageArenaLite
+  field c 1 1 5 - c - 0 -
+    resolved 1 0 5 - 0 -
+enum Proto2MapEnumLite
+  closed
+  value PROTO2_MAP_ENUM_FOO_LITE 0
+  value PROTO2_MAP_ENUM_BAR_LITE 1
+  value PROTO2_MAP_ENUM_BAZ_LITE 2
+enum Proto2MapEnumPlusExtraLite
+  closed
+  value E_PROTO2_MAP_ENUM_FOO_LITE 0
+  value E_PROTO2_MAP_ENUM_BAR_LITE 1
+  value E_PROTO2_MAP_ENUM_BAZ_LITE 2
+  value E_PROTO2_MAP_ENUM_EXTRA_LITE 3
+enum MapEnumLite
+  closed
+  value MAP_ENUM_FOO_LITE 0
+  value MAP_ENUM_BAR_LITE 1
+  value MAP_ENUM_BAZ_LITE 2

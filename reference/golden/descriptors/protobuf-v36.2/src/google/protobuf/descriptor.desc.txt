@@ -1,0 +1,575 @@
+package google.protobuf
+syntax proto2
+message FileDescriptorSet
+  field file 1 3 11 .google.protobuf.FileDescriptorProto file - 0 -
+    resolved 0 0 11 - 0 -
+  extension_range 536000000 536000001
+message FileDescriptorProto
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  field package 2 1 9 - package - 0 -
+    resolved 1 0 9 0 0 -
+  field dependency 3 3 9 - dependency - 0 -
+    resolved 0 0 9 0 0 -
+  field public_dependency 10 3 5 - publicDependency - 0 -
+    resolved 0 0 5 - 0 -
+  field weak_dependency 11 3 5 - weakDependency - 0 -
+    resolved 0 0 5 - 0 -
+  field option_dependency 15 3 9 - optionDependency - 0 -
+    resolved 0 0 9 0 0 -
+  field message_type 4 3 11 .google.protobuf.DescriptorProto messageType - 0 -
+    resolved 0 0 11 - 0 -
+  field enum_type 5 3 11 .google.protobuf.EnumDescriptorProto enumType - 0 -
+    resolved 0 0 11 - 0 -
+  field service 6 3 11 .google.protobuf.ServiceDescriptorProto service - 0 -
+    resolved 0 0 11 - 0 -
+  field extension 7 3 11 .google.protobuf.FieldDescriptorProto extension - 0 -
+    resolved 0 0 11 - 0 -
+  field options 8 1 11 .google.protobuf.FileOptions options - 0 -
+    resolved 1 0 11 - 0 -
+  field source_code_info 9 1 11 .google.protobuf.SourceCodeInfo sourceCodeInfo - 0 -
+    resolved 1 0 11 - 0 -
+  field syntax 12 1 9 - syntax - 0 -
+    resolved 1 0 9 0 0 -
+  field edition 14 1 14 .google.protobuf.Edition edition - 0 -
+    resolved 1 0 14 - 0 -
+message DescriptorProto
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  field field 2 3 11 .google.protobuf.FieldDescriptorProto field - 0 -
+    resolved 0 0 11 - 0 -
+  field extension 6 3 11 .google.protobuf.FieldDescriptorProto extension - 0 -
+    resolved 0 0 11 - 0 -
+  field nested_type 3 3 11 .google.protobuf.DescriptorProto nestedType - 0 -
+    resolved 0 0 11 - 0 -
+  field enum_type 4 3 11 .google.protobuf.EnumDescriptorProto enumType - 0 -
+    resolved 0 0 11 - 0 -
+  field extension_range 5 3 11 .google.protobuf.DescriptorProto.ExtensionRange extensionRange - 0 -
+    resolved 0 0 11 - 0 -
+  field oneof_decl 8 3 11 .google.protobuf.OneofDescriptorProto oneofDecl - 0 -
+    resolved 0 0 11 - 0 -
+  field options 7 1 11 .google.protobuf.MessageOptions options - 0 -
+    resolved 1 0 11 - 0 -
+  field reserved_range 9 3 11 .google.protobuf.DescriptorProto.ReservedRange reservedRange - 0 -
+    resolved 0 0 11 - 0 -
+  field reserved_name 10 3 9 - reservedName - 0 -
+    resolved 0 0 9 0 0 -
+  field visibility 11 1 14 .google.protobuf.SymbolVisibility visibility - 0 -
+    resolved 1 0 14 - 0 -
+  message ExtensionRange
+    field start 1 1 5 - start - 0 -
+      resolved 1 0 5 - 0 -
+    field end 2 1 5 - end - 0 -
+      resolved 1 0 5 - 0 -
+    field options 3 1 11 .google.protobuf.ExtensionRangeOptions options - 0 -
+      resolved 1 0 11 - 0 -
+  message ReservedRange
+    field start 1 1 5 - start - 0 -
+      resolved 1 0 5 - 0 -
+    field end 2 1 5 - end - 0 -
+      resolved 1 0 5 - 0 -
+message ExtensionRangeOptions
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  field declaration 2 3 11 .google.protobuf.ExtensionRangeOptions.Declaration declaration - 0 -
+    resolved 0 0 11 - 0 -
+  field features 50 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field verification 3 1 14 .google.protobuf.ExtensionRangeOptions.VerificationState verification - 0 -
+    resolved 1 0 14 - 0 default=UNVERIFIED
+  message Declaration
+    field number 1 1 5 - number - 0 -
+      resolved 1 0 5 - 0 -
+    field full_name 2 1 9 - fullName - 0 -
+      resolved 1 0 9 0 0 -
+    field type 3 1 9 - type - 0 -
+      resolved 1 0 9 0 0 -
+    field reserved 5 1 8 - reserved - 0 -
+      resolved 1 0 8 - 0 -
+    field repeated 6 1 8 - repeated - 0 -
+      resolved 1 0 8 - 0 -
+    reserved_range 4 5
+  enum VerificationState
+    closed
+    value DECLARATION 0
+    value UNVERIFIED 1
+  extension_range 990 999
+  extension_range 1000 536870912
+message FieldDescriptorProto
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  field number 3 1 5 - number - 0 -
+    resolved 1 0 5 - 0 -
+  field label 4 1 14 .google.protobuf.FieldDescriptorProto.Label label - 0 -
+    resolved 1 0 14 - 0 -
+  field type 5 1 14 .google.protobuf.FieldDescriptorProto.Type type - 0 -
+    resolved 1 0 14 - 0 -
+  field type_name 6 1 9 - typeName - 0 -
+    resolved 1 0 9 0 0 -
+  field extendee 2 1 9 - extendee - 0 -
+    resolved 1 0 9 0 0 -
+  field default_value 7 1 9 - defaultValue - 0 -
+    resolved 1 0 9 0 0 -
+  field oneof_index 9 1 5 - oneofIndex - 0 -
+    resolved 1 0 5 - 0 -
+  field json_name 10 1 9 - jsonName - 0 -
+    resolved 1 0 9 0 0 -
+  field options 8 1 11 .google.protobuf.FieldOptions options - 0 -
+    resolved 1 0 11 - 0 -
+  field proto3_optional 17 1 8 - proto3Optional - 0 -
+    resolved 1 0 8 - 0 -
+  enum Type
+    closed
+    value TYPE_DOUBLE 1
+    value TYPE_FLOAT 2
+    value TYPE_INT64 3
+    value TYPE_UINT64 4
+    value TYPE_INT32 5
+    value TYPE_FIXED64 6
+    value TYPE_FIXED32 7
+    value TYPE_BOOL 8
+    value TYPE_STRING 9
+    value TYPE_GROUP 10
+    value TYPE_MESSAGE 11
+    value TYPE_BYTES 12
+    value TYPE_UINT32 13
+    value TYPE_ENUM 14
+    value TYPE_SFIXED32 15
+    value TYPE_SFIXED64 16
+    value TYPE_SINT32 17
+    value TYPE_SINT64 18
+  enum Label
+    closed
+    value LABEL_OPTIONAL 1
+    value LABEL_REPEATED 3
+    value LABEL_REQUIRED 2
+message OneofDescriptorProto
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  field options 2 1 11 .google.protobuf.OneofOptions options - 0 -
+    resolved 1 0 11 - 0 -
+message EnumDescriptorProto
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  field value 2 3 11 .google.protobuf.EnumValueDescriptorProto value - 0 -
+    resolved 0 0 11 - 0 -
+  field options 3 1 11 .google.protobuf.EnumOptions options - 0 -
+    resolved 1 0 11 - 0 -
+  field reserved_range 4 3 11 .google.protobuf.EnumDescriptorProto.EnumReservedRange reservedRange - 0 -
+    resolved 0 0 11 - 0 -
+  field reserved_name 5 3 9 - reservedName - 0 -
+    resolved 0 0 9 0 0 -
+  field visibility 6 1 14 .google.protobuf.SymbolVisibility visibility - 0 -
+    resolved 1 0 14 - 0 -
+  message EnumReservedRange
+    field start 1 1 5 - start - 0 -
+      resolved 1 0 5 - 0 -
+    field end 2 1 5 - end - 0 -
+      resolved 1 0 5 - 0 -
+message EnumValueDescriptorProto
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  field number 2 1 5 - number - 0 -
+    resolved 1 0 5 - 0 -
+  field options 3 1 11 .google.protobuf.EnumValueOptions options - 0 -
+    resolved 1 0 11 - 0 -
+message ServiceDescriptorProto
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  field method 2 3 11 .google.protobuf.MethodDescriptorProto method - 0 -
+    resolved 0 0 11 - 0 -
+  field options 3 1 11 .google.protobuf.ServiceOptions options - 0 -
+    resolved 1 0 11 - 0 -
+  reserved_range 4 5
+  reserved_name stream
+message MethodDescriptorProto
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  field input_type 2 1 9 - inputType - 0 -
+    resolved 1 0 9 0 0 -
+  field output_type 3 1 9 - outputType - 0 -
+    resolved 1 0 9 0 0 -
+  field options 4 1 11 .google.protobuf.MethodOptions options - 0 -
+    resolved 1 0 11 - 0 -
+  field client_streaming 5 1 8 - clientStreaming - 0 -
+    resolved 1 0 8 - 0 default=false
+  field server_streaming 6 1 8 - serverStreaming - 0 -
+    resolved 1 0 8 - 0 default=false
+message FileOptions
+  field java_package 1 1 9 - javaPackage - 0 -
+    resolved 1 0 9 0 0 -
+  field java_outer_classname 8 1 9 - javaOuterClassname - 0 -
+    resolved 1 0 9 0 0 -
+  field java_multiple_files 10 1 8 - javaMultipleFiles - 0 -
+    resolved 1 0 8 - 0 default=false
+  field java_generate_equals_and_hash 20 1 8 - javaGenerateEqualsAndHash - 0 -
+    resolved 1 0 8 - 0 -
+  field java_string_check_utf8 27 1 8 - javaStringCheckUtf8 - 0 -
+    resolved 1 0 8 - 0 default=false
+  field optimize_for 9 1 14 .google.protobuf.FileOptions.OptimizeMode optimizeFor - 0 -
+    resolved 1 0 14 - 0 default=SPEED
+  field go_package 11 1 9 - goPackage - 0 -
+    resolved 1 0 9 0 0 -
+  field cc_generic_services 16 1 8 - ccGenericServices - 0 -
+    resolved 1 0 8 - 0 default=false
+  field java_generic_services 17 1 8 - javaGenericServices - 0 -
+    resolved 1 0 8 - 0 default=false
+  field py_generic_services 18 1 8 - pyGenericServices - 0 -
+    resolved 1 0 8 - 0 default=false
+  field deprecated 23 1 8 - deprecated - 0 -
+    resolved 1 0 8 - 0 default=false
+  field cc_enable_arenas 31 1 8 - ccEnableArenas - 0 -
+    resolved 1 0 8 - 0 default=true
+  field objc_class_prefix 36 1 9 - objcClassPrefix - 0 -
+    resolved 1 0 9 0 0 -
+  field csharp_namespace 37 1 9 - csharpNamespace - 0 -
+    resolved 1 0 9 0 0 -
+  field swift_prefix 39 1 9 - swiftPrefix - 0 -
+    resolved 1 0 9 0 0 -
+  field php_class_prefix 40 1 9 - phpClassPrefix - 0 -
+    resolved 1 0 9 0 0 -
+  field php_namespace 41 1 9 - phpNamespace - 0 -
+    resolved 1 0 9 0 0 -
+  field php_metadata_namespace 44 1 9 - phpMetadataNamespace - 0 -
+    resolved 1 0 9 0 0 -
+  field ruby_package 45 1 9 - rubyPackage - 0 -
+    resolved 1 0 9 0 0 -
+  field features 50 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  enum OptimizeMode
+    closed
+    value SPEED 1
+    value CODE_SIZE 2
+    value LITE_RUNTIME 3
+  reserved_range 42 43
+  reserved_range 38 39
+  reserved_name php_generic_services
+  extension_range 990 999
+  extension_range 1000 536870912
+message MessageOptions
+  field message_set_wire_format 1 1 8 - messageSetWireFormat - 0 -
+    resolved 1 0 8 - 0 default=false
+  field no_standard_descriptor_accessor 2 1 8 - noStandardDescriptorAccessor - 0 -
+    resolved 1 0 8 - 0 default=false
+  field deprecated 3 1 8 - deprecated - 0 -
+    resolved 1 0 8 - 0 default=false
+  field map_entry 7 1 8 - mapEntry - 0 -
+    resolved 1 0 8 - 0 -
+  field deprecated_legacy_json_field_conflicts 11 1 8 - deprecatedLegacyJsonFieldConflicts - 0 -
+    resolved 1 0 8 - 0 -
+  field features 12 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  reserved_range 4 5
+  reserved_range 5 6
+  reserved_range 6 7
+  reserved_range 8 9
+  reserved_range 9 10
+  extension_range 990 999
+  extension_range 1000 536870912
+message FieldOptions
+  field ctype 1 1 14 .google.protobuf.FieldOptions.CType ctype - 0 -
+    resolved 1 0 14 - 0 default=STRING
+  field packed 2 1 8 - packed - 0 -
+    resolved 1 0 8 - 0 -
+  field jstype 6 1 14 .google.protobuf.FieldOptions.JSType jstype - 0 -
+    resolved 1 0 14 - 0 default=JS_NORMAL
+  field lazy 5 1 8 - lazy - 0 -
+    resolved 1 0 8 - 0 default=false
+  field unverified_lazy 15 1 8 - unverifiedLazy - 0 -
+    resolved 1 0 8 - 0 default=false
+  field deprecated 3 1 8 - deprecated - 0 -
+    resolved 1 0 8 - 0 default=false
+  field weak 10 1 8 - weak - 0 -
+    resolved 1 0 8 - 0 default=false
+  field debug_redact 16 1 8 - debugRedact - 0 -
+    resolved 1 0 8 - 0 default=false
+  field retention 17 1 14 .google.protobuf.FieldOptions.OptionRetention retention - 0 -
+    resolved 1 0 14 - 0 -
+  field targets 19 3 14 .google.protobuf.FieldOptions.OptionTargetType targets - 0 -
+    resolved 0 0 14 - 0 -
+  field edition_defaults 20 3 11 .google.protobuf.FieldOptions.EditionDefault editionDefaults - 0 -
+    resolved 0 0 11 - 0 -
+  field features 21 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field feature_support 22 1 11 .google.protobuf.FieldOptions.FeatureSupport featureSupport - 0 -
+    resolved 1 0 11 - 0 -
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  message EditionDefault
+    field edition 3 1 14 .google.protobuf.Edition edition - 0 -
+      resolved 1 0 14 - 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 0 0 -
+  message FeatureSupport
+    field edition_introduced 1 1 14 .google.protobuf.Edition editionIntroduced - 0 -
+      resolved 1 0 14 - 0 -
+    field edition_deprecated 2 1 14 .google.protobuf.Edition editionDeprecated - 0 -
+      resolved 1 0 14 - 0 -
+    field deprecation_warning 3 1 9 - deprecationWarning - 0 -
+      resolved 1 0 9 0 0 -
+    field edition_removed 4 1 14 .google.protobuf.Edition editionRemoved - 0 -
+      resolved 1 0 14 - 0 -
+    field removal_error 5 1 9 - removalError - 0 -
+      resolved 1 0 9 0 0 -
+  enum CType
+    closed
+    value STRING 0
+    value CORD 1
+    value STRING_PIECE 2
+  enum JSType
+    closed
+    value JS_NORMAL 0
+    value JS_STRING 1
+    value JS_NUMBER 2
+  enum OptionRetention
+    closed
+    value RETENTION_UNKNOWN 0
+    value RETENTION_RUNTIME 1
+    value RETENTION_SOURCE 2
+  enum OptionTargetType
+    closed
+    value TARGET_TYPE_UNKNOWN 0
+    value TARGET_TYPE_FILE 1
+    value TARGET_TYPE_EXTENSION_RANGE 2
+    value TARGET_TYPE_MESSAGE 3
+    value TARGET_TYPE_FIELD 4
+    value TARGET_TYPE_ONEOF 5
+    value TARGET_TYPE_ENUM 6
+    value TARGET_TYPE_ENUM_ENTRY 7
+    value TARGET_TYPE_SERVICE 8
+    value TARGET_TYPE_METHOD 9
+  reserved_range 4 5
+  reserved_range 18 19
+  extension_range 990 999
+  extension_range 1000 536870912
+message OneofOptions
+  field features 1 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  extension_range 990 999
+  extension_range 1000 536870912
+message EnumOptions
+  field allow_alias 2 1 8 - allowAlias - 0 -
+    resolved 1 0 8 - 0 -
+  field deprecated 3 1 8 - deprecated - 0 -
+    resolved 1 0 8 - 0 default=false
+  field deprecated_legacy_json_field_conflicts 6 1 8 - deprecatedLegacyJsonFieldConflicts - 0 -
+    resolved 1 0 8 - 0 -
+  field features 7 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  reserved_range 5 6
+  extension_range 990 999
+  extension_range 1000 536870912
+message EnumValueOptions
+  field deprecated 1 1 8 - deprecated - 0 -
+    resolved 1 0 8 - 0 default=false
+  field features 2 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field debug_redact 3 1 8 - debugRedact - 0 -
+    resolved 1 0 8 - 0 default=false
+  field feature_support 4 1 11 .google.protobuf.FieldOptions.FeatureSupport featureSupport - 0 -
+    resolved 1 0 11 - 0 -
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  extension_range 990 999
+  extension_range 1000 536870912
+message ServiceOptions
+  field features 34 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field deprecated 33 1 8 - deprecated - 0 -
+    resolved 1 0 8 - 0 default=false
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  extension_range 990 999
+  extension_range 1000 536870912
+message MethodOptions
+  field deprecated 33 1 8 - deprecated - 0 -
+    resolved 1 0 8 - 0 default=false
+  field idempotency_level 34 1 14 .google.protobuf.MethodOptions.IdempotencyLevel idempotencyLevel - 0 -
+    resolved 1 0 14 - 0 default=IDEMPOTENCY_UNKNOWN
+  field features 35 1 11 .google.protobuf.FeatureSet features - 0 -
+    resolved 1 0 11 - 0 -
+  field uninterpreted_option 999 3 11 .google.protobuf.UninterpretedOption uninterpretedOption - 0 -
+    resolved 0 0 11 - 0 -
+  enum IdempotencyLevel
+    closed
+    value IDEMPOTENCY_UNKNOWN 0
+    value NO_SIDE_EFFECTS 1
+    value IDEMPOTENT 2
+  extension_range 990 999
+  extension_range 1000 536870912
+message UninterpretedOption
+  field name 2 3 11 .google.protobuf.UninterpretedOption.NamePart name - 0 -
+    resolved 0 0 11 - 0 -
+  field identifier_value 3 1 9 - identifierValue - 0 -
+    resolved 1 0 9 0 0 -
+  field positive_int_value 4 1 4 - positiveIntValue - 0 -
+    resolved 1 0 4 - 0 -
+  field negative_int_value 5 1 3 - negativeIntValue - 0 -
+    resolved 1 0 3 - 0 -
+  field double_value 6 1 1 - doubleValue - 0 -
+    resolved 1 0 1 - 0 -
+  field string_value 7 1 12 - stringValue - 0 -
+    resolved 1 0 12 - 0 -
+  field aggregate_value 8 1 9 - aggregateValue - 0 -
+    resolved 1 0 9 0 0 -
+  message NamePart
+    field name_part 1 2 9 - namePart - 0 -
+      resolved 1 0 9 0 1 -
+    field is_extension 2 2 8 - isExtension - 0 -
+      resolved 1 0 8 - 1 -
+message FeatureSet
+  field field_presence 1 1 14 .google.protobuf.FeatureSet.FieldPresence fieldPresence - 0 -
+    resolved 1 0 14 - 0 -
+  field enum_type 2 1 14 .google.protobuf.FeatureSet.EnumType enumType - 0 -
+    resolved 1 0 14 - 0 -
+  field repeated_field_encoding 3 1 14 .google.protobuf.FeatureSet.RepeatedFieldEncoding repeatedFieldEncoding - 0 -
+    resolved 1 0 14 - 0 -
+  field utf8_validation 4 1 14 .google.protobuf.FeatureSet.Utf8Validation utf8Validation - 0 -
+    resolved 1 0 14 - 0 -
+  field message_encoding 5 1 14 .google.protobuf.FeatureSet.MessageEncoding messageEncoding - 0 -
+    resolved 1 0 14 - 0 -
+  field json_format 6 1 14 .google.protobuf.FeatureSet.JsonFormat jsonFormat - 0 -
+    resolved 1 0 14 - 0 -
+  field enforce_naming_style 7 1 14 .google.protobuf.FeatureSet.EnforceNamingStyle enforceNamingStyle - 0 -
+    resolved 1 0 14 - 0 -
+  field default_symbol_visibility 8 1 14 .google.protobuf.FeatureSet.VisibilityFeature.DefaultSymbolVisibility defaultSymbolVisibility - 0 -
+    resolved 1 0 14 - 0 -
+  field enforce_proto_limits 9 1 14 .google.protobuf.FeatureSet.ProtoLimitsFeature.EnforceProtoLimits enforceProtoLimits - 0 -
+    resolved 1 0 14 - 0 -
+  message VisibilityFeature
+    enum DefaultSymbolVisibility
+      closed
+      value DEFAULT_SYMBOL_VISIBILITY_UNKNOWN 0
+      value EXPORT_ALL 1
+      value EXPORT_TOP_LEVEL 2
+      value LOCAL_ALL 3
+      value STRICT 4
+    reserved_range 1 536870912
+  message ProtoLimitsFeature
+    enum EnforceProtoLimits
+      closed
+      value PROTO_LIMITS_UNKNOWN 0
+      value LEGACY_NO_EXPLICIT_LIMITS 1
+      value PROTO_LIMITS2026 2
+  enum FieldPresence
+    closed
+    value FIELD_PRESENCE_UNKNOWN 0
+    value EXPLICIT 1
+    value IMPLICIT 2
+    value LEGACY_REQUIRED 3
+  enum EnumType
+    closed
+    value ENUM_TYPE_UNKNOWN 0
+    value OPEN 1
+    value CLOSED 2
+  enum RepeatedFieldEncoding
+    closed
+    value REPEATED_FIELD_ENCODING_UNKNOWN 0
+    value PACKED 1
+    value EXPANDED 2
+  enum Utf8Validation
+    closed
+    value UTF8_VALIDATION_UNKNOWN 0
+    value VERIFY 2
+    value NONE 3
+    reserved_range 1 1
+  enum MessageEncoding
+    closed
+    value MESSAGE_ENCODING_UNKNOWN 0
+    value LENGTH_PREFIXED 1
+    value DELIMITED 2
+  enum JsonFormat
+    closed
+    value JSON_FORMAT_UNKNOWN 0
+    value ALLOW 1
+    value LEGACY_BEST_EFFORT 2
+  enum EnforceNamingStyle
+    closed
+    value ENFORCE_NAMING_STYLE_UNKNOWN 0
+    value STYLE2024 1
+    value STYLE_LEGACY 2
+    value STYLE2026 3
+  reserved_range 999 1000
+  extension_range 1000 9995
+  extension_range 9995 10000
+  extension_range 10000 10001
+message FeatureSetDefaults
+  field defaults 1 3 11 .google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault defaults - 0 -
+    resolved 0 0 11 - 0 -
+  field minimum_edition 4 1 14 .google.protobuf.Edition minimumEdition - 0 -
+    resolved 1 0 14 - 0 -
+  field maximum_edition 5 1 14 .google.protobuf.Edition maximumEdition - 0 -
+    resolved 1 0 14 - 0 -
+  message FeatureSetEditionDefault
+    field edition 3 1 14 .google.protobuf.Edition edition - 0 -
+      resolved 1 0 14 - 0 -
+    field overridable_features 4 1 11 .google.protobuf.FeatureSet overridableFeatures - 0 -
+      resolved 1 0 11 - 0 -
+    field fixed_features 5 1 11 .google.protobuf.FeatureSet fixedFeatures - 0 -
+      resolved 1 0 11 - 0 -
+    reserved_range 1 2
+    reserved_range 2 3
+    reserved_name features
+message SourceCodeInfo
+  field location 1 3 11 .google.protobuf.SourceCodeInfo.Location location - 0 -
+    resolved 0 0 11 - 0 -
+  message Location
+    field path 1 3 5 - path - 0 true
+      resolved 0 1 5 - 0 -
+    field span 2 3 5 - span - 0 true
+      resolved 0 1 5 - 0 -
+    field leading_comments 3 1 9 - leadingComments - 0 -
+      resolved 1 0 9 0 0 -
+    field trailing_comments 4 1 9 - trailingComments - 0 -
+      resolved 1 0 9 0 0 -
+    field leading_detached_comments 6 3 9 - leadingDetachedComments - 0 -
+      resolved 0 0 9 0 0 -
+  extension_range 536000000 536000001
+message GeneratedCodeInfo
+  field annotation 1 3 11 .google.protobuf.GeneratedCodeInfo.Annotation annotation - 0 -
+    resolved 0 0 11 - 0 -
+  message Annotation
+    field path 1 3 5 - path - 0 true
+      resolved 0 1 5 - 0 -
+    field source_file 2 1 9 - sourceFile - 0 -
+      resolved 1 0 9 0 0 -
+    field begin 3 1 5 - begin - 0 -
+      resolved 1 0 5 - 0 -
+    field end 4 1 5 - end - 0 -
+      resolved 1 0 5 - 0 -
+    field semantic 5 1 14 .google.protobuf.GeneratedCodeInfo.Annotation.Semantic semantic - 0 -
+      resolved 1 0 14 - 0 -
+    enum Semantic
+      closed
+      value NONE 0
+      value SET 1
+      value ALIAS 2
+enum Edition
+  closed
+  value EDITION_UNKNOWN 0
+  value EDITION_LEGACY 900
+  value EDITION_PROTO2 998
+  value EDITION_PROTO3 999
+  value EDITION_2023 1000
+  value EDITION_2024 1001
+  value EDITION_2026 1002
+  value EDITION_UNSTABLE 9999
+  value EDITION_1_TEST_ONLY 1
+  value EDITION_2_TEST_ONLY 2
+  value EDITION_99997_TEST_ONLY 99997
+  value EDITION_99998_TEST_ONLY 99998
+  value EDITION_99999_TEST_ONLY 99999
+  value EDITION_MAX 2147483647
+enum SymbolVisibility
+  closed
+  value VISIBILITY_UNSET 0
+  value VISIBILITY_LOCAL 1
+  value VISIBILITY_EXPORT 2

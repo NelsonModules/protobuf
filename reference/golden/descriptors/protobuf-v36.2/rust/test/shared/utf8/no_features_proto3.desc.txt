@@ -1,0 +1,5 @@
+package utf8
+syntax proto3
+message NoFeaturesProto3
+  field my_field 1 1 9 - myField 0 1 -
+  oneof _my_field

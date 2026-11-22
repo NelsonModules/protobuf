@@ -1,0 +1,8 @@
+package pb.file
+syntax editions
+edition 2024
+message CppFileOptions
+  field namespace 1 1 9 - namespace - 0 -
+    resolved 1 0 9 1 0 -
+extension cpp 990 1 11 .pb.file.CppFileOptions .google.protobuf.FileOptions cpp - 0 -
+  resolved 1 0 11 - 0 -

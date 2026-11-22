@@ -1,0 +1,4 @@
+package srcsless_library_test
+syntax editions
+edition 2023
+message Child

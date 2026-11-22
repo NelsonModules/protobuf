@@ -1,0 +1,115 @@
+package a.b.editions
+syntax editions
+edition 2023
+message TestMessage
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int64 2 1 3 - optionalInt64 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_uint32 3 1 13 - optionalUint32 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint64 4 1 4 - optionalUint64 - 0 -
+    resolved 1 0 4 - 0 -
+  field optional_bool 5 1 8 - optionalBool - 0 -
+    resolved 1 0 8 - 0 -
+  field optional_double 6 1 1 - optionalDouble - 0 -
+    resolved 1 0 1 - 0 -
+  field optional_float 7 1 2 - optionalFloat - 0 -
+    resolved 1 0 2 - 0 -
+  field optional_string 8 1 9 - optionalString - 0 -
+    resolved 1 0 9 0 0 -
+  field optional_bytes 9 1 12 - optionalBytes - 0 -
+    resolved 1 0 12 - 0 -
+  field optional_enum 10 1 14 .a.b.editions.TestEnum optionalEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_msg 11 1 11 .a.b.editions.TestMessage optionalMsg - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_int32 21 3 5 - repeatedInt32 - 0 -
+    resolved 0 0 5 - 0 -
+  field repeated_int64 22 3 3 - repeatedInt64 - 0 -
+    resolved 0 0 3 - 0 -
+  field repeated_uint32 23 3 13 - repeatedUint32 - 0 -
+    resolved 0 0 13 - 0 -
+  field repeated_uint64 24 3 4 - repeatedUint64 - 0 -
+    resolved 0 0 4 - 0 -
+  field repeated_bool 25 3 8 - repeatedBool - 0 -
+    resolved 0 0 8 - 0 -
+  field repeated_double 26 3 1 - repeatedDouble - 0 -
+    resolved 0 0 1 - 0 -
+  field repeated_float 27 3 2 - repeatedFloat - 0 -
+    resolved 0 0 2 - 0 -
+  field repeated_string 28 3 9 - repeatedString - 0 -
+    resolved 0 0 9 0 0 -
+  field repeated_bytes 29 3 12 - repeatedBytes - 0 -
+    resolved 0 0 12 - 0 -
+  field repeated_enum 30 3 14 .a.b.editions.TestEnum repeatedEnum - 0 -
+    resolved 0 0 14 - 0 -
+  field repeated_msg 31 3 11 .a.b.editions.TestMessage repeatedMsg - 0 -
+    resolved 0 0 11 - 0 -
+  field required_int32 41 1 5 - requiredInt32 - 0 -
+    resolved 1 0 5 - 1 -
+  field required_int64 42 1 3 - requiredInt64 - 0 -
+    resolved 1 0 3 - 1 -
+  field required_uint32 43 1 13 - requiredUint32 - 0 -
+    resolved 1 0 13 - 1 -
+  field required_uint64 44 1 4 - requiredUint64 - 0 -
+    resolved 1 0 4 - 1 -
+  field required_bool 45 1 8 - requiredBool - 0 -
+    resolved 1 0 8 - 1 -
+  field required_double 46 1 1 - requiredDouble - 0 -
+    resolved 1 0 1 - 1 -
+  field required_float 47 1 2 - requiredFloat - 0 -
+    resolved 1 0 2 - 1 -
+  field required_string 48 1 9 - requiredString - 0 -
+    resolved 1 0 9 0 1 -
+  field required_bytes 49 1 12 - requiredBytes - 0 -
+    resolved 1 0 12 - 1 -
+  field required_enum 50 1 14 .a.b.editions.TestEnum requiredEnum - 0 -
+    resolved 1 0 14 - 1 -
+  field required_msg 51 1 11 .a.b.editions.TestMessage requiredMsg - 0 -
+    resolved 1 0 11 - 1 -
+  field oneof_int32 61 1 5 - oneofInt32 0 0 -
+    resolved 1 0 5 - 0 -
+  field oneof_int64 62 1 3 - oneofInt64 0 0 -
+    resolved 1 0 3 - 0 -
+  field oneof_uint32 63 1 13 - oneofUint32 0 0 -
+    resolved 1 0 13 - 0 -
+  field oneof_uint64 64 1 4 - oneofUint64 0 0 -
+    resolved 1 0 4 - 0 -
+  field oneof_bool 65 1 8 - oneofBool 0 0 -
+    resolved 1 0 8 - 0 -
+  field oneof_double 66 1 1 - oneofDouble 0 0 -
+    resolved 1 0 1 - 0 -
+  field oneof_float 67 1 2 - oneofFloat 0 0 -
+    resolved 1 0 2 - 0 -
+  field oneof_string 68 1 9 - oneofString 0 0 -
+    resolved 1 0 9 0 0 -
+  field oneof_bytes 69 1 12 - oneofBytes 0 0 -
+    resolved 1 0 12 - 0 -
+  field oneof_enum 70 1 14 .a.b.editions.TestEnum oneofEnum 0 0 -
+    resolved 1 0 14 - 0 -
+  field oneof_msg 71 1 11 .a.b.editions.TestMessage oneofMsg 0 0 -
+    resolved 1 0 11 - 0 -
+  field nested_message 80 1 11 .a.b.editions.TestMessage.NestedMessage nestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  message NestedMessage
+    field foo 1 1 5 - foo - 0 -
+      resolved 1 0 5 - 0 -
+  oneof my_oneof
+message TestUnknown
+  field optional_unknown 11 1 11 .a.b.editions.TestUnknown optionalUnknown - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_unknown 31 3 11 .a.b.editions.TestUnknown repeatedUnknown - 0 -
+    resolved 0 0 11 - 0 -
+  field oneof_unknown 51 1 11 .a.b.editions.TestUnknown oneofUnknown 0 0 -
+    resolved 1 0 11 - 0 -
+  field unknown_field 89 1 5 - unknownField - 0 -
+    resolved 1 0 5 - 0 -
+  oneof my_oneof
+enum TestEnum
+  closed
+  value Default 0
+  value A 1
+  value B 2
+  value C 3
+  value v0 4

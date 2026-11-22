@@ -1,0 +1,46 @@
+package conformance
+syntax proto3
+message TestStatus
+  field name 1 1 9 - name - 0 -
+  field failure_message 2 1 9 - failureMessage - 0 -
+  field matched_name 3 1 9 - matchedName - 0 -
+message FailureSet
+  field test 2 3 11 .conformance.TestStatus test - 0 -
+  reserved_range 1 2
+message ConformanceRequest
+  field protobuf_payload 1 1 12 - protobufPayload 0 0 -
+  field json_payload 2 1 9 - jsonPayload 0 0 -
+  field jspb_payload 7 1 9 - jspbPayload 0 0 -
+  field text_payload 8 1 9 - textPayload 0 0 -
+  field requested_output_format 3 1 14 .conformance.WireFormat requestedOutputFormat - 0 -
+  field message_type 4 1 9 - messageType - 0 -
+  field test_category 5 1 14 .conformance.TestCategory testCategory - 0 -
+  field jspb_encoding_options 6 1 11 .conformance.JspbEncodingConfig jspbEncodingOptions - 0 -
+  field print_unknown_fields 9 1 8 - printUnknownFields - 0 -
+  oneof payload
+message ConformanceResponse
+  field parse_error 1 1 9 - parseError 0 0 -
+  field serialize_error 6 1 9 - serializeError 0 0 -
+  field timeout_error 9 1 9 - timeoutError 0 0 -
+  field runtime_error 2 1 9 - runtimeError 0 0 -
+  field protobuf_payload 3 1 12 - protobufPayload 0 0 -
+  field json_payload 4 1 9 - jsonPayload 0 0 -
+  field skipped 5 1 9 - skipped 0 0 -
+  field jspb_payload 7 1 9 - jspbPayload 0 0 -
+  field text_payload 8 1 9 - textPayload 0 0 -
+  oneof result
+message JspbEncodingConfig
+  field use_jspb_array_any_format 1 1 8 - useJspbArrayAnyFormat - 0 -
+enum WireFormat
+  value UNSPECIFIED 0
+  value PROTOBUF 1
+  value JSON 2
+  value JSPB 3
+  value TEXT_FORMAT 4
+enum TestCategory
+  value UNSPECIFIED_TEST 0
+  value BINARY_TEST 1
+  value JSON_TEST 2
+  value JSON_IGNORE_UNKNOWN_PARSING_TEST 3
+  value JSPB_TEST 4
+  value TEXT_FORMAT_TEST 5

@@ -1,0 +1,22 @@
+package upb.test_2023
+syntax editions
+edition 2024
+message EditionsMessage
+  field plain_field 1 1 5 - plainField - 0 -
+    resolved 1 0 5 - 0 -
+  field implicit_presence_field 2 1 5 - implicitPresenceField - 0 -
+    resolved 0 0 5 - 0 -
+  field required_field 3 1 5 - requiredField - 0 -
+    resolved 1 0 5 - 1 -
+  field delimited_field 4 1 11 .upb.test_2023.EditionsMessage delimitedField - 0 -
+    resolved 1 0 10 - 0 -
+  field enum_field 5 1 14 .upb.test_2023.EditionsEnum enumField - 0 -
+    resolved 1 0 14 - 0 -
+  field unpacked_field 6 3 5 - unpackedField - 0 -
+    resolved 0 0 5 - 0 -
+  extension_range 100 200
+enum EditionsEnum
+  closed
+  value ONE 1
+extension ext 100 1 5 - .upb.test_2023.EditionsMessage ext - 0 -
+  resolved 1 0 5 - 0 -

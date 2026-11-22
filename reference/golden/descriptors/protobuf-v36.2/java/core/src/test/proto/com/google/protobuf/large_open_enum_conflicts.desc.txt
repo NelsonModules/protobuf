@@ -1,0 +1,17 @@
+package protobuf_test_messages.edition.openenumconflicts
+syntax editions
+edition 2024
+message LargeOpenEnumContainer
+  enum EnumWithConflicts
+    value LARGE_ENUM_UNSPECIFIED 0
+    value LARGE_ENUM1 1
+  enum EnumWithConflicts0
+    value LARGE_ENUM0_UNSPECIFIED 0
+    value LARGE_ENUM2 1
+enum LargeOpenEnumWithConflicts0
+  value LARGE_ENUM0_UNSPECIFIED 0
+  value LARGE_ENUM2 1
+enum LargeOpenEnumWithConflicts
+  value LARGE_ENUM_UNSPECIFIED 0
+  value LARGE_ENUM1 1
+  value LARGE_ENUM1_ALIAS 1

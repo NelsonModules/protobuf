@@ -1,0 +1,10 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message MessageToBeExtended
+  extension_range 1 536870912
+message MyNonNestedExtension
+extension nonNestedExtension 1 1 11 .proto2_unittest.MyNonNestedExtension .proto2_unittest.MessageToBeExtended nonNestedExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension if 2000 1 9 - .proto2_unittest.MessageToBeExtended if - 0 -
+  resolved 1 0 9 0 0 -

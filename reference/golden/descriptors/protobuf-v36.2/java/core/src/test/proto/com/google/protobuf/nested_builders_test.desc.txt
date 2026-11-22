@@ -1,0 +1,23 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message Vehicle
+  field engine 1 1 11 .proto2_unittest.Engine engine - 0 -
+    resolved 1 0 11 - 0 -
+  field wheel 2 3 11 .proto2_unittest.Wheel wheel - 0 -
+    resolved 0 0 11 - 0 -
+message Engine
+  field cylinder 1 1 5 - cylinder - 0 -
+    resolved 1 0 5 - 0 -
+  field liters 2 1 5 - liters - 0 -
+    resolved 1 0 5 - 0 -
+  field timing_belt 3 1 11 .proto2_unittest.TimingBelt timingBelt - 0 -
+    resolved 1 0 11 - 0 -
+message TimingBelt
+  field number_of_teeth 1 1 5 - numberOfTeeth - 0 -
+    resolved 1 0 5 - 0 -
+message Wheel
+  field radius 1 1 5 - radius - 0 -
+    resolved 1 0 5 - 0 -
+  field width 2 1 5 - width - 0 -
+    resolved 1 0 5 - 0 -

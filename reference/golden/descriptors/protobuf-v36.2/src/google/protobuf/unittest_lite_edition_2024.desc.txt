@@ -1,0 +1,6 @@
+package proto2_unittest
+syntax editions
+edition 2024
+enum EnumNameStringView
+  value ENUM_NAME_STRING_VIEW_DEFAULT 0
+  value ENUM_NAME_STRING_VIEW_ANOTHER_VALUE 1

@@ -1,0 +1,60 @@
+package google.rpc
+syntax proto3
+message ErrorInfo
+  field reason 1 1 9 - reason - 0 -
+  field domain 2 1 9 - domain - 0 -
+  field metadata 3 3 11 .google.rpc.ErrorInfo.MetadataEntry metadata - 0 -
+  message MetadataEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message RetryInfo
+  field retry_delay 1 1 11 .google.protobuf.Duration retryDelay - 0 -
+message DebugInfo
+  field stack_entries 1 3 9 - stackEntries - 0 -
+  field detail 2 1 9 - detail - 0 -
+message QuotaFailure
+  field violations 1 3 11 .google.rpc.QuotaFailure.Violation violations - 0 -
+  message Violation
+    field subject 1 1 9 - subject - 0 -
+    field description 2 1 9 - description - 0 -
+    field api_service 3 1 9 - apiService - 0 -
+    field quota_metric 4 1 9 - quotaMetric - 0 -
+    field quota_id 5 1 9 - quotaId - 0 -
+    field quota_dimensions 6 3 11 .google.rpc.QuotaFailure.Violation.QuotaDimensionsEntry quotaDimensions - 0 -
+    field quota_value 7 1 3 - quotaValue - 0 -
+    field future_quota_value 8 1 3 - futureQuotaValue 0 1 -
+    message QuotaDimensionsEntry
+      field key 1 1 9 - key - 0 -
+      field value 2 1 9 - value - 0 -
+      map_entry
+    oneof _future_quota_value
+message PreconditionFailure
+  field violations 1 3 11 .google.rpc.PreconditionFailure.Violation violations - 0 -
+  message Violation
+    field type 1 1 9 - type - 0 -
+    field subject 2 1 9 - subject - 0 -
+    field description 3 1 9 - description - 0 -
+message BadRequest
+  field field_violations 1 3 11 .google.rpc.BadRequest.FieldViolation fieldViolations - 0 -
+  message FieldViolation
+    field field 1 1 9 - field - 0 -
+    field description 2 1 9 - description - 0 -
+    field reason 3 1 9 - reason - 0 -
+    field localized_message 4 1 11 .google.rpc.LocalizedMessage localizedMessage - 0 -
+message RequestInfo
+  field request_id 1 1 9 - requestId - 0 -
+  field serving_data 2 1 9 - servingData - 0 -
+message ResourceInfo
+  field resource_type 1 1 9 - resourceType - 0 -
+  field resource_name 2 1 9 - resourceName - 0 -
+  field owner 3 1 9 - owner - 0 -
+  field description 4 1 9 - description - 0 -
+message Help
+  field links 1 3 11 .google.rpc.Help.Link links - 0 -
+  message Link
+    field description 1 1 9 - description - 0 -
+    field url 2 1 9 - url - 0 -
+message LocalizedMessage
+  field locale 1 1 9 - locale - 0 -
+  field message 2 1 9 - message - 0 -

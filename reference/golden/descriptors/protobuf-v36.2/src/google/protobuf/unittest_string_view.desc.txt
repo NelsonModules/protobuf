@@ -1,0 +1,24 @@
+package proto2_unittest
+syntax editions
+edition 1002
+message TestStringView
+  field singular_string 1 1 9 - singularString - 0 -
+    resolved 1 0 9 1 0 -
+  field singular_bytes 2 1 12 - singularBytes - 0 -
+    resolved 1 0 12 - 0 -
+  field implicit_presence 5 1 9 - implicitPresence - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string 3 3 9 - repeatedString - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_bytes 4 3 12 - repeatedBytes - 0 -
+    resolved 0 0 12 - 0 -
+message TestStringViewExtension
+  extension_range 1 536870912
+extension singular_string_view_extension 1 1 9 - .proto2_unittest.TestStringViewExtension singularStringViewExtension - 0 -
+  resolved 1 0 9 1 0 -
+extension singular_bytes_view_extension 2 1 12 - .proto2_unittest.TestStringViewExtension singularBytesViewExtension - 0 -
+  resolved 1 0 12 - 0 -
+extension repeated_string_view_extension 3 3 9 - .proto2_unittest.TestStringViewExtension repeatedStringViewExtension - 0 -
+  resolved 0 0 9 1 0 -
+extension repeated_bytes_view_extension 4 3 12 - .proto2_unittest.TestStringViewExtension repeatedBytesViewExtension - 0 -
+  resolved 0 0 12 - 0 -

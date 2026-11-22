@@ -1,0 +1,4 @@
+package bar
+syntax proto3
+message TestInclude
+  field a 1 1 5 - a - 0 -

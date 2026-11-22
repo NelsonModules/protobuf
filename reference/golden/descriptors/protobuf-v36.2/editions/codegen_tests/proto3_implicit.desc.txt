@@ -1,0 +1,51 @@
+package protobuf_editions_test.proto3
+syntax proto3
+message Proto3Implicit
+  field int32_field 17 1 5 - int32Field - 0 -
+  field float_field 18 1 2 - floatField - 0 -
+  field double_field 19 1 1 - doubleField - 0 -
+  field int64_field 20 1 3 - int64Field - 0 -
+  field uint32_field 21 1 13 - uint32Field - 0 -
+  field uint64_field 22 1 4 - uint64Field - 0 -
+  field sint32_field 23 1 17 - sint32Field - 0 -
+  field sint64_field 24 1 18 - sint64Field - 0 -
+  field fixed32_field 25 1 7 - fixed32Field - 0 -
+  field fixed64_field 26 1 6 - fixed64Field - 0 -
+  field sfixed32_field 27 1 15 - sfixed32Field - 0 -
+  field sfixed64_field 28 1 16 - sfixed64Field - 0 -
+  field bool_field 29 1 8 - boolField - 0 -
+  field string_field 30 1 9 - stringField - 0 -
+  field bytes_field 31 1 12 - bytesField - 0 -
+  field int32_oneof_field 152 1 5 - int32OneofField 0 0 -
+  field float_oneof_field 153 1 2 - floatOneofField 0 0 -
+  field double_oneof_field 154 1 1 - doubleOneofField 0 0 -
+  field int64_oneof_field 155 1 3 - int64OneofField 0 0 -
+  field uint32_oneof_field 156 1 13 - uint32OneofField 0 0 -
+  field uint64_oneof_field 157 1 4 - uint64OneofField 0 0 -
+  field sint32_oneof_field 158 1 17 - sint32OneofField 0 0 -
+  field sint64_oneof_field 159 1 18 - sint64OneofField 0 0 -
+  field fixed32_oneof_field 160 1 7 - fixed32OneofField 0 0 -
+  field fixed64_oneof_field 161 1 6 - fixed64OneofField 0 0 -
+  field sfixed32_oneof_field 162 1 15 - sfixed32OneofField 0 0 -
+  field sfixed64_oneof_field 163 1 16 - sfixed64OneofField 0 0 -
+  field bool_oneof_field 164 1 8 - boolOneofField 0 0 -
+  field string_oneof_field 165 1 9 - stringOneofField 0 0 -
+  field bytes_oneof_field 166 1 12 - bytesOneofField 0 0 -
+  field sub_message 2 1 11 .protobuf_editions_test.proto3.Proto3Implicit.SubMessage subMessage - 0 -
+  message SubMessage
+    field int32_field 17 1 5 - int32Field - 0 -
+    field float_field 18 1 2 - floatField - 0 -
+    field double_field 19 1 1 - doubleField - 0 -
+    field int64_field 20 1 3 - int64Field - 0 -
+    field uint32_field 21 1 13 - uint32Field - 0 -
+    field uint64_field 22 1 4 - uint64Field - 0 -
+    field sint32_field 23 1 17 - sint32Field - 0 -
+    field sint64_field 24 1 18 - sint64Field - 0 -
+    field fixed32_field 25 1 7 - fixed32Field - 0 -
+    field fixed64_field 26 1 6 - fixed64Field - 0 -
+    field sfixed32_field 27 1 15 - sfixed32Field - 0 -
+    field sfixed64_field 28 1 16 - sfixed64Field - 0 -
+    field bool_field 29 1 8 - boolField - 0 -
+    field string_field 30 1 9 - stringField - 0 -
+    field bytes 31 1 12 - bytes - 0 -
+  oneof oneof_field

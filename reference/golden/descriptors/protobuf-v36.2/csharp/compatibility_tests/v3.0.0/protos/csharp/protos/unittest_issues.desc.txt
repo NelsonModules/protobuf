@@ -1,0 +1,43 @@
+package unittest_issues
+syntax proto3
+message Issue307
+  message NestedOnce
+    message NestedTwice
+message NegativeEnumMessage
+  field value 1 1 14 .unittest_issues.NegativeEnum value - 0 -
+  field values 2 3 14 .unittest_issues.NegativeEnum values - 0 false
+  field packed_values 3 3 14 .unittest_issues.NegativeEnum packedValues - 0 true
+message DeprecatedChild
+message DeprecatedFieldsMessage
+  field PrimitiveValue 1 1 5 - PrimitiveValue - 0 -
+  field PrimitiveArray 2 3 5 - PrimitiveArray - 0 -
+  field MessageValue 3 1 11 .unittest_issues.DeprecatedChild MessageValue - 0 -
+  field MessageArray 4 3 11 .unittest_issues.DeprecatedChild MessageArray - 0 -
+  field EnumValue 5 1 14 .unittest_issues.DeprecatedEnum EnumValue - 0 -
+  field EnumArray 6 3 14 .unittest_issues.DeprecatedEnum EnumArray - 0 -
+message ItemField
+  field item 1 1 5 - item - 0 -
+message ReservedNames
+  field types 1 1 5 - types - 0 -
+  field descriptor 2 1 5 - descriptor - 0 -
+  message SomeNestedType
+message TestJsonFieldOrdering
+  field plain_int32 4 1 5 - plainInt32 - 0 -
+  field o1_string 2 1 9 - o1String 0 0 -
+  field o1_int32 5 1 5 - o1Int32 0 0 -
+  field plain_string 1 1 9 - plainString - 0 -
+  field o2_int32 6 1 5 - o2Int32 1 0 -
+  field o2_string 3 1 9 - o2String 1 0 -
+  oneof o1
+  oneof o2
+message TestJsonName
+  field name 1 1 9 - name - 0 -
+  field description 2 1 9 - desc - 0 -
+  field guid 3 1 9 - exid - 0 -
+enum NegativeEnum
+  value NEGATIVE_ENUM_ZERO 0
+  value FiveBelow -5
+  value MinusOne -1
+enum DeprecatedEnum
+  value DEPRECATED_ZERO 0
+  value one 1

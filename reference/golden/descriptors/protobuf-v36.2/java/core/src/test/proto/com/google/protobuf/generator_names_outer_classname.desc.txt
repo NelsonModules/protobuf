@@ -1,0 +1,4 @@
+package google.protobuf
+syntax editions
+edition 2023
+message OuterClassnameMessage

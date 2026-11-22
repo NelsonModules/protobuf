@@ -1,0 +1,1865 @@
+attributes {
+  fields {
+    key: "tab\tquote\""
+    value {
+      list_value {
+        values {
+          null_value: NULL_VALUE
+        }
+      }
+    }
+  }
+}
+items {
+  values {
+    number_value: 123456789.25
+  }
+  values {
+    number_value: 1e-07
+  }
+}
+mask {
+}
+nothing {
+}
+f {
+  value: 2.5
+}
+i64 {
+  value: 9223372036854775807
+}
+u64 {
+}
+u32 {
+  value: 1
+}
+b {
+}
+s {
+  value: "3c3ab11x"
+}
+raw {
+  value: "\025\333I\2177!\327B\360B"
+}
+values {
+  list_value {
+    values {
+      number_value: -1.5
+    }
+    values {
+      null_value: NULL_VALUE
+    }
+    values {
+      null_value: NULL_VALUE
+    }
+  }
+}
+named {
+  key: "a"
+  value {
+    string_value: "tab\tquote\""
+  }
+}
+at {
+  seconds: 16689438381
+}
+span {
+  seconds: 263522060767
+}
+times {
+  seconds: -16797797922
+  nanos: 5000000
+}
+spans {
+  seconds: 313383607522
+  nanos: 250000000
+}
+spans {
+  seconds: 180790381948
+  nanos: 50526142
+}
+spans {
+  seconds: 213041950669
+  nanos: 152346494
+}
+===
+value {
+  list_value {
+    values {
+      string_value: "🙂"
+    }
+    values {
+      string_value: "a"
+    }
+  }
+}
+mask {
+  paths: "sample_rate"
+  paths: "a.b"
+  paths: "x_y.z"
+}
+nothing {
+}
+d {
+  value: -0.125
+}
+f {
+  value: inf
+}
+u64 {
+  value: 9356352042770029359
+}
+i32 {
+  value: 317
+}
+b {
+}
+s {
+}
+raw {
+  value: "\352\033\371\036KC"
+}
+values {
+  bool_value: false
+}
+named {
+  key: "a"
+  value {
+    bool_value: true
+  }
+}
+named {
+  key: "line\nbreak"
+  value {
+  }
+}
+named {
+  key: "日本"
+  value {
+  }
+}
+at {
+  seconds: 11004107644
+  nanos: 5000000
+}
+span {
+  seconds: 237666227585
+}
+times {
+  seconds: 3317566388
+  nanos: 1000
+}
+===
+attributes {
+  fields {
+    key: "tab\tquote\""
+    value {
+      list_value {
+        values {
+          number_value: 1e-07
+        }
+      }
+    }
+  }
+  fields {
+    key: "日本"
+    value {
+      string_value: "日本"
+    }
+  }
+}
+value {
+  number_value: -1.5
+}
+mask {
+  paths: "diagnostics.drift"
+  paths: "a.b"
+}
+nothing {
+}
+f {
+}
+u64 {
+}
+b {
+  value: true
+}
+s {
+  value: "a_2xz_yccba"
+}
+raw {
+  value: "\004Kc"
+}
+values {
+  null_value: NULL_VALUE
+}
+values {
+  string_value: "日本"
+}
+values {
+  struct_value {
+    fields {
+      key: "héllo"
+      value {
+        string_value: ""
+      }
+    }
+    fields {
+      key: "k1"
+      value {
+        bool_value: true
+      }
+    }
+    fields {
+      key: "日本"
+      value {
+        number_value: 1e-07
+      }
+    }
+  }
+}
+named {
+  key: "héllo"
+  value {
+    bool_value: false
+  }
+}
+at {
+  seconds: -21929587566
+  nanos: 5000000
+}
+span {
+  seconds: 42618393995
+  nanos: 89621940
+}
+times {
+  seconds: 161242566339
+  nanos: 1000
+}
+spans {
+  seconds: 39995666591
+  nanos: 242808251
+}
+===
+value {
+  null_value: NULL_VALUE
+}
+items {
+}
+mask {
+  paths: "a"
+  paths: "a.b"
+  paths: "diagnostics.drift"
+}
+nothing {
+}
+d {
+}
+f {
+}
+i64 {
+  value: 9223372036854775807
+}
+u64 {
+}
+u32 {
+}
+s {
+  value: "日本"
+}
+values {
+  struct_value {
+    fields {
+      key: "héllo"
+      value {
+        string_value: "héllo"
+      }
+    }
+    fields {
+      key: "line\nbreak"
+      value {
+        bool_value: false
+      }
+    }
+  }
+}
+values {
+  bool_value: false
+}
+values {
+  bool_value: true
+}
+named {
+  key: "a"
+  value {
+  }
+}
+at {
+  seconds: -54978614153
+  nanos: 5000000
+}
+span {
+  seconds: 56317494844
+}
+times {
+  seconds: 154990761459
+  nanos: 1000
+}
+===
+value {
+  struct_value {
+    fields {
+      key: "日本"
+      value {
+        string_value: "🙂"
+      }
+    }
+  }
+}
+nothing {
+}
+d {
+  value: nan
+}
+f {
+  value: -0.125
+}
+i64 {
+}
+u64 {
+}
+i32 {
+  value: 150
+}
+s {
+  value: "0x2acz0ax3xbbbx"
+}
+raw {
+}
+values {
+  number_value: 0.0
+}
+named {
+  key: "b3b3cc11"
+  value {
+    number_value: -179217904.88649833
+  }
+}
+span {
+  seconds: -254537445138
+  nanos: -250000000
+}
+spans {
+  seconds: 172508944212
+  nanos: 250000000
+}
+spans {
+  seconds: 27233798878
+}
+nothing_at_all: 77
+===
+attributes {
+  fields {
+    value {
+    }
+  }
+  fields {
+    key: "k2"
+    value {
+    }
+  }
+  fields {
+    key: "tab\tquote\""
+    value {
+      null_value: NULL_VALUE
+    }
+  }
+}
+value {
+  struct_value {
+    fields {
+      key: "héllo"
+      value {
+        string_value: "héllo"
+      }
+    }
+    fields {
+      key: "k2"
+      value {
+        bool_value: false
+      }
+    }
+    fields {
+      key: "🙂"
+      value {
+        bool_value: true
+      }
+    }
+  }
+}
+items {
+  values {
+    null_value: NULL_VALUE
+  }
+}
+mask {
+  paths: "sample_rate"
+  paths: "a.b"
+  paths: "a"
+}
+nothing {
+}
+d {
+  value: -0.125
+}
+f {
+  value: inf
+}
+i64 {
+  value: 7683836082419584180
+}
+u64 {
+}
+i32 {
+  value: 2147483647
+}
+u32 {
+  value: 803
+}
+b {
+  value: true
+}
+raw {
+  value: "\225l"
+}
+named {
+  key: "zybx2_y1a_c13x3cb30_"
+  value {
+    number_value: 0.0
+  }
+}
+named {
+  key: "日本"
+  value {
+    bool_value: true
+  }
+}
+named {
+  key: "🙂"
+  value {
+    struct_value {
+      fields {
+        key: "k1"
+        value {
+          string_value: "🙂"
+        }
+      }
+    }
+  }
+}
+span {
+  seconds: -209359859649
+  nanos: -250000000
+}
+times {
+  seconds: 53928602146
+}
+times {
+  seconds: 66031669467
+  nanos: 1000
+}
+times {
+  seconds: 183559494732
+  nanos: 5000000
+}
+spans {
+  seconds: -90445670739
+  nanos: -728863936
+}
+spans {
+  seconds: 223125873804
+  nanos: 250000000
+}
+spans {
+  seconds: 1878062369
+  nanos: 739655864
+}
+nothing_at_all: 77
+===
+attributes {
+  fields {
+    key: "héllo"
+    value {
+    }
+  }
+  fields {
+    key: "日本"
+    value {
+      struct_value {
+        fields {
+          value {
+            bool_value: true
+          }
+        }
+        fields {
+          key: "k1"
+          value {
+            null_value: NULL_VALUE
+          }
+        }
+      }
+    }
+  }
+  fields {
+    key: "🙂"
+    value {
+      string_value: "日本"
+    }
+  }
+}
+value {
+  null_value: NULL_VALUE
+}
+d {
+  value: nan
+}
+i64 {
+  value: -1
+}
+i32 {
+  value: -2147483648
+}
+u32 {
+  value: 310
+}
+s {
+  value: "a"
+}
+raw {
+  value: "\206\323^\010\341g"
+}
+named {
+  key: "1xa0_0_0byab3yaxx2"
+  value {
+    struct_value {
+      fields {
+        key: "line\nbreak"
+        value {
+          bool_value: false
+        }
+      }
+    }
+  }
+}
+named {
+  key: "héllo"
+  value {
+    number_value: 308316218.106004
+  }
+}
+at {
+  seconds: 32025773876
+}
+===
+attributes {
+}
+nothing {
+}
+f {
+  value: -0.125
+}
+i64 {
+  value: 355
+}
+u64 {
+  value: 18446744073709551615
+}
+i32 {
+}
+u32 {
+  value: 1
+}
+b {
+  value: true
+}
+s {
+  value: "zxacbz0c110c3_x012c"
+}
+raw {
+}
+values {
+  struct_value {
+    fields {
+      key: "line\nbreak"
+      value {
+        string_value: "héllo"
+      }
+    }
+  }
+}
+values {
+  bool_value: true
+}
+values {
+  bool_value: true
+}
+named {
+  key: "ayaa_33"
+  value {
+    string_value: "tab\tquote\""
+  }
+}
+named {
+  key: "héllo"
+  value {
+    null_value: NULL_VALUE
+  }
+}
+named {
+  key: "tab\tquote\""
+  value {
+    null_value: NULL_VALUE
+  }
+}
+at {
+  seconds: 121431925338
+  nanos: 5000000
+}
+span {
+  seconds: 253381685366
+  nanos: 250000000
+}
+times {
+  seconds: 45045965250
+}
+times {
+  seconds: 129182772943
+  nanos: 1000
+}
+===
+attributes {
+  fields {
+    value {
+      bool_value: false
+    }
+  }
+  fields {
+    key: "🙂"
+    value {
+      list_value {
+        values {
+          bool_value: false
+        }
+        values {
+          null_value: NULL_VALUE
+        }
+      }
+    }
+  }
+}
+value {
+}
+items {
+  values {
+    string_value: "héllo"
+  }
+  values {
+    list_value {
+      values {
+        bool_value: true
+      }
+      values {
+        bool_value: true
+      }
+    }
+  }
+}
+mask {
+  paths: "x_y.z"
+  paths: "sample_rate"
+}
+nothing {
+}
+u64 {
+}
+b {
+}
+raw {
+}
+values {
+  bool_value: false
+}
+values {
+  list_value {
+    values {
+      bool_value: false
+    }
+  }
+}
+values {
+  null_value: NULL_VALUE
+}
+named {
+  value {
+    string_value: "tab\tquote\""
+  }
+}
+named {
+  key: "bc3_"
+  value {
+    string_value: "日本"
+  }
+}
+named {
+  key: "🙂"
+  value {
+  }
+}
+at {
+  seconds: 120222818559
+  nanos: 465833377
+}
+span {
+  seconds: -116515506796
+  nanos: -250000000
+}
+times {
+  seconds: 1007041800
+}
+times {
+  seconds: -41994686828
+  nanos: 817416537
+}
+spans {
+  seconds: 33733729800
+  nanos: 673666285
+}
+nothing_at_all: 77
+===
+value {
+  list_value {
+    values {
+      null_value: NULL_VALUE
+    }
+  }
+}
+mask {
+  paths: "diagnostics.drift"
+}
+d {
+  value: nan
+}
+f {
+  value: 2.5
+}
+i64 {
+  value: 1
+}
+u64 {
+  value: 18446744073709551615
+}
+u32 {
+  value: 1
+}
+b {
+}
+s {
+  value: "x3y_b20bc133x_2c0b1"
+}
+at {
+  seconds: -56628830076
+}
+times {
+  seconds: -40759786055
+  nanos: 1000
+}
+times {
+  seconds: 222270554636
+  nanos: 134288016
+}
+times {
+  seconds: 116776733759
+}
+spans {
+  seconds: -126768580569
+  nanos: -250000000
+}
+spans {
+  seconds: 237354228156
+}
+===
+items {
+  values {
+    number_value: 3.0
+  }
+}
+mask {
+  paths: "diagnostics.drift"
+}
+nothing {
+}
+f {
+  value: nan
+}
+i64 {
+  value: -9223372036854775808
+}
+s {
+  value: "1y_032_xyb0cx"
+}
+raw {
+  value: ";\033\3336\346!"
+}
+values {
+  null_value: NULL_VALUE
+}
+values {
+  struct_value {
+    fields {
+      key: "a"
+      value {
+        string_value: ""
+      }
+    }
+    fields {
+      key: "tab\tquote\""
+      value {
+        number_value: 948823597.2803271
+      }
+    }
+  }
+}
+named {
+  key: "1yyx_zzb_ya"
+  value {
+    bool_value: true
+  }
+}
+span {
+  seconds: 76067759655
+}
+times {
+  seconds: 77825777398
+}
+spans {
+  seconds: 279380793495
+  nanos: 684600835
+}
+spans {
+  seconds: -15844590585
+  nanos: -278470010
+}
+===
+attributes {
+  fields {
+    value {
+      list_value {
+        values {
+          null_value: NULL_VALUE
+        }
+        values {
+          number_value: 0.0
+        }
+      }
+    }
+  }
+  fields {
+    key: "k2"
+    value {
+    }
+  }
+}
+items {
+  values {
+    number_value: -731092026.4874241
+  }
+  values {
+    struct_value {
+      fields {
+        key: "line\nbreak"
+        value {
+          null_value: NULL_VALUE
+        }
+      }
+    }
+  }
+  values {
+    string_value: "héllo"
+  }
+}
+mask {
+}
+nothing {
+}
+d {
+  value: nan
+}
+i64 {
+  value: 7818380981011545317
+}
+u64 {
+}
+i32 {
+  value: 889425566
+}
+u32 {
+  value: 4061862842
+}
+b {
+  value: true
+}
+values {
+  struct_value {
+    fields {
+      key: "k1"
+      value {
+        string_value: "héllo"
+      }
+    }
+  }
+}
+spans {
+  seconds: 162151669838
+  nanos: 623250659
+}
+===
+attributes {
+  fields {
+    key: "tab\tquote\""
+    value {
+      null_value: NULL_VALUE
+    }
+  }
+}
+value {
+  number_value: 137080802.5023396
+}
+items {
+  values {
+    bool_value: false
+  }
+  values {
+    number_value: 1e-07
+  }
+  values {
+    struct_value {
+      fields {
+        key: "k1"
+        value {
+          null_value: NULL_VALUE
+        }
+      }
+    }
+  }
+}
+d {
+}
+f {
+  value: inf
+}
+u64 {
+  value: 10342092393224353807
+}
+i32 {
+  value: -316521478
+}
+u32 {
+}
+b {
+  value: true
+}
+s {
+  value: "🙂"
+}
+raw {
+  value: "\244Z\037\317"
+}
+named {
+  key: "x_01023a2003"
+  value {
+    null_value: NULL_VALUE
+  }
+}
+span {
+  seconds: 117146342237
+}
+spans {
+  seconds: -177660055603
+}
+spans {
+  seconds: -111342970798
+  nanos: -250000000
+}
+nothing_at_all: 77
+===
+attributes {
+}
+mask {
+}
+i64 {
+  value: 1
+}
+u64 {
+  value: 733
+}
+b {
+}
+raw {
+}
+span {
+  seconds: 310275331633
+}
+times {
+  seconds: 79164981883
+  nanos: 5000000
+}
+times {
+  seconds: 23387562762
+  nanos: 1000
+}
+times {
+  seconds: 229523000370
+  nanos: 5000000
+}
+spans {
+  seconds: 185770409767
+  nanos: 554961358
+}
+spans {
+  seconds: -203798356172
+}
+spans {
+  seconds: -4508733306
+  nanos: -250000000
+}
+===
+value {
+  string_value: "line\nbreak"
+}
+items {
+  values {
+    number_value: 1e-07
+  }
+  values {
+    string_value: "日本"
+  }
+}
+mask {
+  paths: "sample_rate"
+  paths: "a.b"
+}
+d {
+}
+f {
+  value: 2.5
+}
+i64 {
+  value: 400
+}
+u64 {
+  value: 18446744073709551615
+}
+s {
+  value: "héllo"
+}
+raw {
+  value: "\210\023\037\345\354\217\304"
+}
+values {
+  string_value: "héllo"
+}
+values {
+  string_value: "tab\tquote\""
+}
+named {
+  key: "1xy2xcbac1azcaz2a2x"
+  value {
+    struct_value {
+      fields {
+        key: "héllo"
+        value {
+          string_value: ""
+        }
+      }
+      fields {
+        key: "line\nbreak"
+        value {
+          string_value: "日本"
+        }
+      }
+      fields {
+        key: "🙂"
+        value {
+          number_value: 243854811.43208933
+        }
+      }
+    }
+  }
+}
+named {
+  key: "a"
+  value {
+    bool_value: true
+  }
+}
+named {
+  key: "tab\tquote\""
+  value {
+  }
+}
+times {
+  seconds: 81508674982
+  nanos: 794710665
+}
+spans {
+  seconds: 244088777282
+}
+===
+attributes {
+}
+value {
+  number_value: -1.5
+}
+mask {
+  paths: "x_y.z"
+  paths: "diagnostics.drift"
+  paths: "sample_rate"
+}
+nothing {
+}
+d {
+  value: inf
+}
+f {
+  value: nan
+}
+i64 {
+}
+u32 {
+  value: 1
+}
+b {
+}
+raw {
+  value: "\036\247\353\356?\366;\013"
+}
+values {
+  null_value: NULL_VALUE
+}
+values {
+  bool_value: false
+}
+span {
+  seconds: 227429860593
+}
+times {
+  seconds: 25311210686
+}
+spans {
+  seconds: 106185986501
+}
+spans {
+  seconds: -93396695921
+}
+spans {
+  seconds: 313034932318
+}
+nothing_at_all: 77
+===
+attributes {
+}
+value {
+  struct_value {
+    fields {
+      key: "line\nbreak"
+      value {
+        string_value: "tab\tquote\""
+      }
+    }
+  }
+}
+items {
+  values {
+    null_value: NULL_VALUE
+  }
+  values {
+    list_value {
+      values {
+        null_value: NULL_VALUE
+      }
+    }
+  }
+  values {
+    number_value: -155411605.9307326
+  }
+}
+mask {
+  paths: "diagnostics.drift"
+  paths: "sample_rate"
+}
+nothing {
+}
+d {
+  value: 2.5
+}
+u64 {
+}
+i32 {
+}
+u32 {
+}
+raw {
+  value: "e\344\215"
+}
+named {
+  value {
+    string_value: "line\nbreak"
+  }
+}
+named {
+  key: "日本"
+  value {
+    struct_value {
+      fields {
+        key: "héllo"
+        value {
+          bool_value: true
+        }
+      }
+      fields {
+        key: "日本"
+        value {
+          string_value: "héllo"
+        }
+      }
+      fields {
+        key: "🙂"
+        value {
+          bool_value: true
+        }
+      }
+    }
+  }
+}
+named {
+  key: "🙂"
+  value {
+    null_value: NULL_VALUE
+  }
+}
+at {
+  seconds: 148963986687
+  nanos: 1000
+}
+span {
+  seconds: -290871088741
+}
+times {
+  seconds: 81644138155
+  nanos: 1000
+}
+times {
+  seconds: 37133371754
+  nanos: 5000000
+}
+times {
+  seconds: 77045947482
+  nanos: 778323775
+}
+spans {
+  seconds: -135016949330
+  nanos: -895717598
+}
+spans {
+  seconds: -257597766221
+}
+spans {
+  seconds: -171013455519
+}
+nothing_at_all: 77
+===
+attributes {
+}
+value {
+  string_value: "日本"
+}
+items {
+  values {
+    null_value: NULL_VALUE
+  }
+  values {
+    string_value: "héllo"
+  }
+  values {
+    number_value: 1e-07
+  }
+}
+mask {
+  paths: "a.b"
+}
+d {
+  value: 2.5
+}
+f {
+  value: 2.5
+}
+i64 {
+}
+u64 {
+}
+i32 {
+  value: -1
+}
+u32 {
+  value: 281
+}
+raw {
+  value: "\302"
+}
+values {
+  null_value: NULL_VALUE
+}
+values {
+  number_value: 123456789.25
+}
+at {
+  seconds: 251696242766
+}
+span {
+  seconds: -77245222552
+  nanos: -250000000
+}
+times {
+  seconds: -7238150976
+  nanos: 1000
+}
+times {
+  seconds: 192658947246
+}
+times {
+  seconds: 113549871672
+  nanos: 132551279
+}
+spans {
+  seconds: 286415985894
+  nanos: 834774687
+}
+===
+attributes {
+  fields {
+    key: "a"
+    value {
+      number_value: 3.0
+    }
+  }
+  fields {
+    key: "日本"
+    value {
+      number_value: 619047729.9164066
+    }
+  }
+}
+items {
+  values {
+    null_value: NULL_VALUE
+  }
+  values {
+    list_value {
+      values {
+        number_value: -1.5
+      }
+      values {
+        string_value: "héllo"
+      }
+      values {
+        bool_value: true
+      }
+    }
+  }
+  values {
+    number_value: 1e-07
+  }
+}
+mask {
+}
+nothing {
+}
+d {
+}
+f {
+  value: nan
+}
+u64 {
+  value: 18446744073709551615
+}
+i32 {
+}
+b {
+}
+s {
+  value: "line\nbreak"
+}
+raw {
+  value: "\317!\373\362\267:\333"
+}
+named {
+  key: "1b"
+  value {
+    bool_value: false
+  }
+}
+at {
+  seconds: 151934019015
+}
+span {
+  seconds: -23170250823
+  nanos: -250000000
+}
+times {
+  seconds: -45356549044
+  nanos: 1000
+}
+times {
+  seconds: 226548857204
+}
+spans {
+  seconds: -163959778291
+  nanos: -250000000
+}
+spans {
+  seconds: 64953915581
+  nanos: 663917568
+}
+nothing_at_all: 77
+===
+attributes {
+}
+value {
+  null_value: NULL_VALUE
+}
+mask {
+  paths: "a"
+  paths: "a.b"
+  paths: "diagnostics.drift"
+}
+nothing {
+}
+d {
+}
+i32 {
+  value: 2147483647
+}
+u32 {
+  value: 4294967295
+}
+b {
+}
+raw {
+  value: "=\214\221\013\034*\235\213"
+}
+values {
+  struct_value {
+    fields {
+      key: "line\nbreak"
+      value {
+        null_value: NULL_VALUE
+      }
+    }
+  }
+}
+named {
+  key: "line\nbreak"
+  value {
+    bool_value: false
+  }
+}
+at {
+  seconds: 187592564312
+  nanos: 5000000
+}
+times {
+  seconds: 187705238997
+  nanos: 1000
+}
+times {
+  seconds: 215722721598
+  nanos: 5000000
+}
+spans {
+  seconds: -105112429935
+  nanos: -250000000
+}
+spans {
+  seconds: -309999367812
+  nanos: -986314518
+}
+spans {
+  seconds: -134494497458
+  nanos: -160520350
+}
+===
+attributes {
+}
+items {
+  values {
+    number_value: 0.0
+  }
+  values {
+    null_value: NULL_VALUE
+  }
+}
+nothing {
+}
+d {
+  value: -0.125
+}
+f {
+}
+u64 {
+}
+i32 {
+  value: 435
+}
+u32 {
+  value: 364
+}
+s {
+  value: "héllo"
+}
+raw {
+  value: "z\037}\341"
+}
+values {
+  string_value: "line\nbreak"
+}
+named {
+  key: "1z_b0b"
+  value {
+    number_value: 3.0
+  }
+}
+named {
+  key: "a"
+  value {
+    struct_value {
+      fields {
+        key: "a"
+        value {
+          string_value: "line\nbreak"
+        }
+      }
+    }
+  }
+}
+named {
+  key: "y"
+  value {
+    struct_value {
+      fields {
+        key: "a"
+        value {
+          number_value: 200857654.52640414
+        }
+      }
+      fields {
+        key: "k2"
+        value {
+          bool_value: true
+        }
+      }
+    }
+  }
+}
+at {
+  seconds: 122600943497
+  nanos: 1000
+}
+span {
+  seconds: 166203013258
+  nanos: 813531885
+}
+times {
+  seconds: 167657143089
+}
+times {
+  seconds: 36423376503
+  nanos: 137894311
+}
+times {
+  seconds: 43561971040
+  nanos: 5000000
+}
+===
+value {
+}
+mask {
+  paths: "sample_rate"
+  paths: "a"
+}
+nothing {
+}
+d {
+  value: 2.5
+}
+f {
+  value: nan
+}
+i64 {
+  value: -1
+}
+u64 {
+  value: 18446744073709551615
+}
+i32 {
+  value: 997020300
+}
+u32 {
+}
+raw {
+  value: "\261|4:\333\336`\370+"
+}
+span {
+  seconds: 184363456237
+}
+times {
+  seconds: 210445243786
+  nanos: 5000000
+}
+times {
+  seconds: -45201307342
+  nanos: 1000
+}
+spans {
+  seconds: -261503493242
+  nanos: -121783637
+}
+spans {
+  seconds: -74284356253
+}
+nothing_at_all: 77
+===
+value {
+  number_value: -1.5
+}
+nothing {
+}
+d {
+  value: -0.125
+}
+i64 {
+  value: 9223372036854775807
+}
+u64 {
+}
+i32 {
+  value: 1
+}
+u32 {
+}
+b {
+}
+named {
+  key: "a"
+  value {
+  }
+}
+at {
+  seconds: 14530655880
+  nanos: 5000000
+}
+span {
+  seconds: -191318179975
+  nanos: -250000000
+}
+times {
+  seconds: -50460703648
+}
+times {
+  seconds: 146864945679
+  nanos: 5000000
+}
+times {
+  seconds: 28945603056
+}
+spans {
+  seconds: -213973472085
+  nanos: -857589159
+}
+spans {
+  seconds: 46309489777
+  nanos: 250000000
+}
+===
+attributes {
+}
+value {
+}
+items {
+  values {
+    struct_value {
+      fields {
+        key: "k2"
+        value {
+          string_value: "héllo"
+        }
+      }
+      fields {
+        key: "line\nbreak"
+        value {
+          bool_value: false
+        }
+      }
+    }
+  }
+}
+mask {
+  paths: "a"
+}
+nothing {
+}
+d {
+  value: 2.5
+}
+f {
+  value: 2.5
+}
+i64 {
+}
+i32 {
+}
+u32 {
+  value: 3957587109
+}
+b {
+  value: true
+}
+s {
+  value: "1a_a0az2"
+}
+raw {
+  value: ">"
+}
+values {
+  list_value {
+    values {
+      string_value: "tab\tquote\""
+    }
+    values {
+      number_value: 123456789.25
+    }
+    values {
+      bool_value: false
+    }
+  }
+}
+span {
+  seconds: 159139204309
+  nanos: 250000000
+}
+spans {
+  seconds: 112523905083
+}
+===
+value {
+  struct_value {
+    fields {
+      value {
+        null_value: NULL_VALUE
+      }
+    }
+    fields {
+      key: "k1"
+      value {
+        number_value: 1e-07
+      }
+    }
+  }
+}
+items {
+  values {
+    list_value {
+      values {
+        string_value: "tab\tquote\""
+      }
+    }
+  }
+  values {
+    bool_value: true
+  }
+}
+mask {
+  paths: "sample_rate"
+}
+nothing {
+}
+d {
+  value: 2.5
+}
+i64 {
+  value: 1
+}
+u64 {
+  value: 18446744073709551615
+}
+i32 {
+  value: -1
+}
+u32 {
+  value: 2030192812
+}
+b {
+}
+s {
+  value: "y3cccc_"
+}
+named {
+  key: "🙂"
+  value {
+    struct_value {
+      fields {
+        key: "héllo"
+        value {
+          bool_value: false
+        }
+      }
+      fields {
+        key: "k1"
+        value {
+          null_value: NULL_VALUE
+        }
+      }
+      fields {
+        key: "k2"
+        value {
+          null_value: NULL_VALUE
+        }
+      }
+      fields {
+        key: "🙂"
+        value {
+          string_value: "héllo"
+        }
+      }
+    }
+  }
+}
+at {
+  seconds: 80321342166
+  nanos: 732029848
+}
+times {
+  seconds: 244649827196
+  nanos: 758764015
+}
+times {
+  seconds: 27999362065
+  nanos: 45556187
+}
+times {
+  seconds: -36672894736
+  nanos: 1000
+}
+spans {
+  seconds: -158913661972
+}
+nothing_at_all: 77

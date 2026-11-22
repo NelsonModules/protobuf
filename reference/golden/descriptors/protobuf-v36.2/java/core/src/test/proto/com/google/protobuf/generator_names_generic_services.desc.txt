@@ -1,0 +1,8 @@
+package google.protobuf
+syntax editions
+edition 2023
+message GenericServiceMessage
+  field field 1 1 5 - field - 0 -
+    resolved 1 0 5 - 0 -
+service TestGenericService
+  method Foo .google.protobuf.GenericServiceMessage .google.protobuf.GenericServiceMessage 0 0

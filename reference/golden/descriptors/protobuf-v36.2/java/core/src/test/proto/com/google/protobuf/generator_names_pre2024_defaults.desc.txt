@@ -1,0 +1,15 @@
+package com.google.protobuf
+syntax editions
+edition 2023
+message TopLevelMessage
+  field field 1 1 5 - field - 0 -
+    resolved 1 0 5 - 0 -
+  message NestedMessage
+    field nested_field 1 1 5 - nestedField - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    value VALUE0 0
+enum TopLevelEnum
+  value VALUE0 0
+service Pre2024DefaultsService
+  method Foo .com.google.protobuf.TopLevelMessage .com.google.protobuf.TopLevelMessage 0 0

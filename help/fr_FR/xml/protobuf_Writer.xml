@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.Writer</keyword>
+  <short_description>Écrit des enregistrements délimités à mesure dans une cible ouverte.</short_description>
+  <syntax>
+    <syntax_item>w = protobuf.Writer(schema, type, filename, 'Append', tf, 'Layout', layout, 'Progress', f)</syntax_item>
+    <syntax_item>w = protobuf.Writer(schema, type, fid)</syntax_item>
+    <syntax_item>w = protobuf.Writer(schema, type, z, 'Entry', entryname)</syntax_item>
+    <syntax_item>w.push(value)</syntax_item>
+    <syntax_item>w.close()</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>un schéma de protobuf.load et un type de message.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>filename, fid, z</param_name>
+      <param_description>un nom de fichier de données, un identificateur de fichier ouvert, ou un nelson.io.ZipArchive ouvert en écriture avec 'Entry', name. La cible reste ouverte entre les push.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>value</param_name>
+      <param_description>w.push : les enregistrements à ajouter, sous toute forme acceptée par protobuf.encode (structure, colonnes avec 'Layout', 'columns', table ou timetable). Ils sont encodés en enregistrements délimités et écrits aussitôt.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Append', 'Layout', 'Progress'</param_name>
+      <param_description>'Append' ajoute à un fichier existant, 'Layout' fixe la forme des valeurs poussées, 'Progress', f(n, total) est appelé après chaque push avec les octets écrits jusque-là (total vaut NaN, inconnu à l'avance).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>w</param_name>
+      <param_description>un objet protobuf.Writer. push écrit des enregistrements ; close ferme la cible quand le writer l'a ouverte.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.Writer garde ouvert un fichier, un identificateur de fichier ou une entrée ZIP et écrit les enregistrements à mesure qu'ils sont produits, sur plusieurs appels push. Il convient à un flux construit petit à petit, quand on ne veut pas garder tous les enregistrements en mémoire.</p>
+    <p>close vide et ferme la cible quand le writer l'a ouverte (un nom de fichier ou une entrée ZIP) ; un identificateur de fichier fourni reste à la charge de l'appelant.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Écrire des enregistrements à mesure, puis les relire</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+filename = [tempdir(), 'writer.bin'];
+w = protobuf.Writer(schema, 'SensorSample', filename, 'Layout', 'columns');
+for k = 1:5
+  w.push(struct('timestamp_ms', int64(k * 100 + (1:100)'), 'status', int32(mod((1:100)', 3))));
+end
+w.close();
+C = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns');
+numel(C.timestamp_ms)
+delete(filename);
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.write">protobuf.write</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Decoder">protobuf.Decoder</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.read">protobuf.read</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

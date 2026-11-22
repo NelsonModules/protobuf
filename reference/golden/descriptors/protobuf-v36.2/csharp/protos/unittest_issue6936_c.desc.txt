@@ -1,0 +1,4 @@
+package unittest_issues
+syntax proto3
+message Bar
+  field foo 1 1 11 .unittest_issues.Foo foo - 0 -

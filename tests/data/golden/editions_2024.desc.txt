@@ -1,0 +1,18 @@
+package nelson.test.editions2024
+syntax editions
+edition 2024
+message Envelope
+  field body 1 1 11 .nelson.test.editions2024.Envelope.Body body - 0 -
+    resolved 1 0 11 - 0 -
+  field values 2 3 5 - values - 0 -
+    resolved 0 1 5 - 0 -
+  field label 3 1 9 - label - 0 -
+    resolved 1 0 9 0 0 -
+  field kind 4 1 14 .nelson.test.editions2024.Kind kind - 0 -
+    resolved 1 0 14 - 0 -
+  message Body
+    field text 1 1 9 - text - 0 -
+      resolved 1 0 9 0 0 -
+enum Kind
+  value KIND_UNSET 0
+  value KIND_A 1

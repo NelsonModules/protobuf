@@ -1,0 +1,8 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+message BadMethodMessage
+  field foo 1 1 9 - foo - 0 -
+    resolved 1 0 9 1 0 -
+service BadMethodService
+  method bad_method_name .protobuf_editions_test.edition2023.BadMethodMessage .protobuf_editions_test.edition2023.BadMethodMessage 0 0

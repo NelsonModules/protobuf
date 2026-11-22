@@ -1,0 +1,3 @@
+package upb_benchmark
+syntax proto3
+message Empty

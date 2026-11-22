@@ -1,0 +1,5 @@
+package google.type
+syntax proto3
+message LatLng
+  field latitude 1 1 1 - latitude - 0 -
+  field longitude 2 1 1 - longitude - 0 -

@@ -1,0 +1,15 @@
+package rust_cpp_interop_test
+syntax editions
+edition 2023
+message InteropTestMessage
+  field i64 1 1 3 - i64 - 0 -
+    resolved 1 0 3 - 0 -
+  field bytes 2 1 12 - bytes - 0 -
+    resolved 1 0 12 - 0 -
+  field b 3 1 8 - b - 0 -
+    resolved 1 0 8 - 0 -
+  field default_int32 4 1 5 - defaultInt32 - 0 -
+    resolved 1 0 5 - 0 default=41
+  extension_range 100 536870912
+extension bytes_extension 100 1 12 - .rust_cpp_interop_test.InteropTestMessage bytesExtension - 0 -
+  resolved 1 0 12 - 0 -

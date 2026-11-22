@@ -1,0 +1,45 @@
+package repeated_field_test_protos
+syntax proto3
+message TestMessage
+  field optional_int32 1 1 5 - optionalInt32 0 1 -
+  field optional_int64 2 1 3 - optionalInt64 1 1 -
+  field optional_uint32 3 1 13 - optionalUint32 2 1 -
+  field optional_uint64 4 1 4 - optionalUint64 3 1 -
+  field optional_bool 5 1 8 - optionalBool 4 1 -
+  field optional_float 6 1 2 - optionalFloat 5 1 -
+  field optional_double 7 1 1 - optionalDouble 6 1 -
+  field optional_string 8 1 9 - optionalString 7 1 -
+  field optional_bytes 9 1 12 - optionalBytes 8 1 -
+  field optional_msg 10 1 11 .repeated_field_test_protos.TestMessage2 optionalMsg 9 1 -
+  field optional_enum 11 1 14 .repeated_field_test_protos.TestEnum optionalEnum 10 1 -
+  field repeated_int32 12 3 5 - repeatedInt32 - 0 -
+  field repeated_int64 13 3 3 - repeatedInt64 - 0 -
+  field repeated_uint32 14 3 13 - repeatedUint32 - 0 -
+  field repeated_uint64 15 3 4 - repeatedUint64 - 0 -
+  field repeated_bool 16 3 8 - repeatedBool - 0 -
+  field repeated_float 17 3 2 - repeatedFloat - 0 -
+  field repeated_double 18 3 1 - repeatedDouble - 0 -
+  field repeated_string 19 3 9 - repeatedString - 0 -
+  field repeated_bytes 20 3 12 - repeatedBytes - 0 -
+  field repeated_msg 21 3 11 .repeated_field_test_protos.TestMessage2 repeatedMsg - 0 -
+  field repeated_enum 22 3 14 .repeated_field_test_protos.TestEnum repeatedEnum - 0 -
+  oneof _optional_int32
+  oneof _optional_int64
+  oneof _optional_uint32
+  oneof _optional_uint64
+  oneof _optional_bool
+  oneof _optional_float
+  oneof _optional_double
+  oneof _optional_string
+  oneof _optional_bytes
+  oneof _optional_msg
+  oneof _optional_enum
+message TestMessage2
+  field foo 1 1 5 - foo 0 1 -
+  oneof _foo
+enum TestEnum
+  value DEFAULT 0
+  value A 1
+  value B 2
+  value C 3
+  value V0 4

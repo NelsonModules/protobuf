@@ -1,0 +1,342 @@
+package fuzz_unittest
+syntax editions
+edition 2024
+message FuzzMostTypes
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int64 2 1 3 - optionalInt64 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_uint32 3 1 13 - optionalUint32 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint64 4 1 4 - optionalUint64 - 0 -
+    resolved 1 0 4 - 0 -
+  field optional_sint32 5 1 17 - optionalSint32 - 0 -
+    resolved 1 0 17 - 0 -
+  field optional_sint64 6 1 18 - optionalSint64 - 0 -
+    resolved 1 0 18 - 0 -
+  field optional_fixed32 7 1 7 - optionalFixed32 - 0 -
+    resolved 1 0 7 - 0 -
+  field optional_fixed64 8 1 6 - optionalFixed64 - 0 -
+    resolved 1 0 6 - 0 -
+  field optional_sfixed32 9 1 15 - optionalSfixed32 - 0 -
+    resolved 1 0 15 - 0 -
+  field optional_sfixed64 10 1 16 - optionalSfixed64 - 0 -
+    resolved 1 0 16 - 0 -
+  field optional_float 11 1 2 - optionalFloat - 0 -
+    resolved 1 0 2 - 0 -
+  field optional_double 12 1 1 - optionalDouble - 0 -
+    resolved 1 0 1 - 0 -
+  field optional_bool 13 1 8 - optionalBool - 0 -
+    resolved 1 0 8 - 0 -
+  field optional_string 14 1 9 - optionalString - 0 -
+    resolved 1 0 9 0 0 -
+  field optional_bytes 15 1 12 - optionalBytes - 0 -
+    resolved 1 0 12 - 0 -
+  field optionalgroup 16 1 11 .fuzz_unittest.FuzzMostTypes.OptionalGroup optionalgroup - 0 -
+    resolved 1 0 10 - 0 -
+  field optional_nested_message 18 1 11 .fuzz_unittest.FuzzMostTypes.NestedMessage optionalNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_foreign_message 19 1 11 .fuzz_unittest.ForeignMessage optionalForeignMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_import_message 20 1 11 .proto2_unittest_import.ImportMessage optionalImportMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_nested_enum 21 1 14 .fuzz_unittest.FuzzMostTypes.NestedEnum optionalNestedEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_foreign_enum 22 1 14 .fuzz_unittest.ForeignEnum optionalForeignEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_import_enum 23 1 14 .proto2_unittest_import.ImportEnum optionalImportEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_cord 25 1 9 - optionalCord - 0 -
+    resolved 1 0 9 0 0 -
+  field optional_bytes_cord 86 1 12 - optionalBytesCord - 0 -
+    resolved 1 0 12 - 0 -
+  field optional_public_import_message 26 1 11 .proto2_unittest_import.PublicImportMessage optionalPublicImportMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_lazy_message 27 1 11 .fuzz_unittest.FuzzMostTypes.NestedMessage optionalLazyMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_int32 31 3 5 - repeatedInt32 - 0 -
+    resolved 0 0 5 - 0 -
+  field repeated_int64 32 3 3 - repeatedInt64 - 0 -
+    resolved 0 0 3 - 0 -
+  field repeated_uint32 33 3 13 - repeatedUint32 - 0 -
+    resolved 0 0 13 - 0 -
+  field repeated_uint64 34 3 4 - repeatedUint64 - 0 -
+    resolved 0 0 4 - 0 -
+  field repeated_sint32 35 3 17 - repeatedSint32 - 0 -
+    resolved 0 0 17 - 0 -
+  field repeated_sint64 36 3 18 - repeatedSint64 - 0 -
+    resolved 0 0 18 - 0 -
+  field repeated_fixed32 37 3 7 - repeatedFixed32 - 0 -
+    resolved 0 0 7 - 0 -
+  field repeated_fixed64 38 3 6 - repeatedFixed64 - 0 -
+    resolved 0 0 6 - 0 -
+  field repeated_sfixed32 39 3 15 - repeatedSfixed32 - 0 -
+    resolved 0 0 15 - 0 -
+  field repeated_sfixed64 40 3 16 - repeatedSfixed64 - 0 -
+    resolved 0 0 16 - 0 -
+  field repeated_float 41 3 2 - repeatedFloat - 0 -
+    resolved 0 0 2 - 0 -
+  field repeated_double 42 3 1 - repeatedDouble - 0 -
+    resolved 0 0 1 - 0 -
+  field repeated_bool 43 3 8 - repeatedBool - 0 -
+    resolved 0 0 8 - 0 -
+  field repeated_string 44 3 9 - repeatedString - 0 -
+    resolved 0 0 9 0 0 -
+  field repeated_bytes 45 3 12 - repeatedBytes - 0 -
+    resolved 0 0 12 - 0 -
+  field repeatedgroup 46 3 11 .fuzz_unittest.FuzzMostTypes.RepeatedGroup repeatedgroup - 0 -
+    resolved 0 0 10 - 0 -
+  field repeated_nested_message 48 3 11 .fuzz_unittest.FuzzMostTypes.NestedMessage repeatedNestedMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_foreign_message 49 3 11 .fuzz_unittest.ForeignMessage repeatedForeignMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_import_message 50 3 11 .proto2_unittest_import.ImportMessage repeatedImportMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_nested_enum 51 3 14 .fuzz_unittest.FuzzMostTypes.NestedEnum repeatedNestedEnum - 0 -
+    resolved 0 0 14 - 0 -
+  field repeated_foreign_enum 52 3 14 .fuzz_unittest.ForeignEnum repeatedForeignEnum - 0 -
+    resolved 0 0 14 - 0 -
+  field repeated_import_enum 53 3 14 .proto2_unittest_import.ImportEnum repeatedImportEnum - 0 -
+    resolved 0 0 14 - 0 -
+  field repeated_cord 55 3 9 - repeatedCord - 0 -
+    resolved 0 0 9 0 0 -
+  field default_int32 61 1 5 - defaultInt32 - 0 -
+    resolved 1 0 5 - 0 default=41
+  field default_int64 62 1 3 - defaultInt64 - 0 -
+    resolved 1 0 3 - 0 default=42
+  field default_uint32 63 1 13 - defaultUint32 - 0 -
+    resolved 1 0 13 - 0 default=43
+  field default_uint64 64 1 4 - defaultUint64 - 0 -
+    resolved 1 0 4 - 0 default=44
+  field default_sint32 65 1 17 - defaultSint32 - 0 -
+    resolved 1 0 17 - 0 default=-45
+  field default_sint64 66 1 18 - defaultSint64 - 0 -
+    resolved 1 0 18 - 0 default=46
+  field default_fixed32 67 1 7 - defaultFixed32 - 0 -
+    resolved 1 0 7 - 0 default=47
+  field default_fixed64 68 1 6 - defaultFixed64 - 0 -
+    resolved 1 0 6 - 0 default=48
+  field default_sfixed32 69 1 15 - defaultSfixed32 - 0 -
+    resolved 1 0 15 - 0 default=49
+  field default_sfixed64 70 1 16 - defaultSfixed64 - 0 -
+    resolved 1 0 16 - 0 default=-50
+  field default_float 71 1 2 - defaultFloat - 0 -
+    resolved 1 0 2 - 0 default=51.5
+  field default_double 72 1 1 - defaultDouble - 0 -
+    resolved 1 0 1 - 0 default=52000
+  field default_bool 73 1 8 - defaultBool - 0 -
+    resolved 1 0 8 - 0 default=true
+  field default_string 74 1 9 - defaultString - 0 -
+    resolved 1 0 9 0 0 default=hello
+  field default_bytes 75 1 12 - defaultBytes - 0 -
+    resolved 1 0 12 - 0 default=world
+  field default_nested_enum 81 1 14 .fuzz_unittest.FuzzMostTypes.NestedEnum defaultNestedEnum - 0 -
+    resolved 1 0 14 - 0 default=BAR
+  field default_foreign_enum 82 1 14 .fuzz_unittest.ForeignEnum defaultForeignEnum - 0 -
+    resolved 1 0 14 - 0 default=FOREIGN_BAR
+  field default_import_enum 83 1 14 .proto2_unittest_import.ImportEnum defaultImportEnum - 0 -
+    resolved 1 0 14 - 0 default=IMPORT_BAR
+  field default_cord 85 1 9 - defaultCord - 0 -
+    resolved 1 0 9 0 0 default=123
+  field optional_utf8_string 90 1 9 - optionalUtf8String - 0 -
+    resolved 1 0 9 1 0 -
+  field repeated_utf8_string 91 3 9 - repeatedUtf8String - 0 -
+    resolved 0 0 9 1 0 -
+  field single 1000 1 11 .fuzz_unittest.TestRequired single - 0 -
+    resolved 1 0 11 - 0 -
+  field multi 1001 3 11 .fuzz_unittest.TestRequired multi - 0 -
+    resolved 0 0 11 - 0 -
+  field test 1002 1 9 - test - 0 -
+    resolved 1 0 9 0 0 default=test
+  field nested_string 1003 1 9 - nestedString - 0 -
+    resolved 1 0 9 0 0 -
+  message NestedMessage
+    field bb 1 1 5 - bb - 0 -
+      resolved 1 0 5 - 0 -
+  message OptionalGroup
+    field a 17 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+  message RepeatedGroup
+    field a 47 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    closed
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+    value NEG -1
+message ForeignMessage
+  field c 1 1 5 - c - 0 -
+    resolved 1 0 5 - 0 -
+  field d 2 1 5 - d - 0 -
+    resolved 1 0 5 - 0 -
+message FuzzMostExtensions
+  extension_range 1 536870912
+message TestRequired
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 1 -
+  extension single 1000 1 11 .fuzz_unittest.TestRequired .fuzz_unittest.FuzzMostExtensions single - 0 -
+    resolved 1 0 11 - 0 -
+  extension multi 1001 3 11 .fuzz_unittest.TestRequired .fuzz_unittest.FuzzMostExtensions multi - 0 -
+    resolved 0 0 11 - 0 -
+message OptionalGroupExtension
+  field a 17 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+message RepeatedGroupExtension
+  field a 47 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+message TestNestedExtension
+  extension test 1002 1 9 - .fuzz_unittest.FuzzMostExtensions test - 0 -
+    resolved 1 0 9 0 0 default=test
+  extension nested_string_extension 1003 1 9 - .fuzz_unittest.FuzzMostExtensions nestedStringExtension - 0 -
+    resolved 1 0 9 0 0 -
+  message OptionalGroupExtension
+    field a 17 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+enum ForeignEnum
+  closed
+  value FOREIGN_FOO 4
+  value FOREIGN_BAR 5
+  value FOREIGN_BAZ 6
+  value FOREIGN_BAX 32
+  value FOREIGN_LARGE 123456
+extension optional_int32_extension 1 1 5 - .fuzz_unittest.FuzzMostExtensions optionalInt32Extension - 0 -
+  resolved 1 0 5 - 0 -
+extension optional_int64_extension 2 1 3 - .fuzz_unittest.FuzzMostExtensions optionalInt64Extension - 0 -
+  resolved 1 0 3 - 0 -
+extension optional_uint32_extension 3 1 13 - .fuzz_unittest.FuzzMostExtensions optionalUint32Extension - 0 -
+  resolved 1 0 13 - 0 -
+extension optional_uint64_extension 4 1 4 - .fuzz_unittest.FuzzMostExtensions optionalUint64Extension - 0 -
+  resolved 1 0 4 - 0 -
+extension optional_sint32_extension 5 1 17 - .fuzz_unittest.FuzzMostExtensions optionalSint32Extension - 0 -
+  resolved 1 0 17 - 0 -
+extension optional_sint64_extension 6 1 18 - .fuzz_unittest.FuzzMostExtensions optionalSint64Extension - 0 -
+  resolved 1 0 18 - 0 -
+extension optional_fixed32_extension 7 1 7 - .fuzz_unittest.FuzzMostExtensions optionalFixed32Extension - 0 -
+  resolved 1 0 7 - 0 -
+extension optional_fixed64_extension 8 1 6 - .fuzz_unittest.FuzzMostExtensions optionalFixed64Extension - 0 -
+  resolved 1 0 6 - 0 -
+extension optional_sfixed32_extension 9 1 15 - .fuzz_unittest.FuzzMostExtensions optionalSfixed32Extension - 0 -
+  resolved 1 0 15 - 0 -
+extension optional_sfixed64_extension 10 1 16 - .fuzz_unittest.FuzzMostExtensions optionalSfixed64Extension - 0 -
+  resolved 1 0 16 - 0 -
+extension optional_float_extension 11 1 2 - .fuzz_unittest.FuzzMostExtensions optionalFloatExtension - 0 -
+  resolved 1 0 2 - 0 -
+extension optional_double_extension 12 1 1 - .fuzz_unittest.FuzzMostExtensions optionalDoubleExtension - 0 -
+  resolved 1 0 1 - 0 -
+extension optional_bool_extension 13 1 8 - .fuzz_unittest.FuzzMostExtensions optionalBoolExtension - 0 -
+  resolved 1 0 8 - 0 -
+extension optional_string_extension 14 1 9 - .fuzz_unittest.FuzzMostExtensions optionalStringExtension - 0 -
+  resolved 1 0 9 0 0 -
+extension optional_bytes_extension 15 1 12 - .fuzz_unittest.FuzzMostExtensions optionalBytesExtension - 0 -
+  resolved 1 0 12 - 0 -
+extension optional_group_extension 16 1 11 .fuzz_unittest.OptionalGroupExtension .fuzz_unittest.FuzzMostExtensions optionalGroupExtension - 0 -
+  resolved 1 0 10 - 0 -
+extension optional_nested_message_extension 18 1 11 .fuzz_unittest.FuzzMostTypes.NestedMessage .fuzz_unittest.FuzzMostExtensions optionalNestedMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_foreign_message_extension 19 1 11 .fuzz_unittest.ForeignMessage .fuzz_unittest.FuzzMostExtensions optionalForeignMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_import_message_extension 20 1 11 .proto2_unittest_import.ImportMessage .fuzz_unittest.FuzzMostExtensions optionalImportMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_nested_enum_extension 21 1 14 .fuzz_unittest.FuzzMostTypes.NestedEnum .fuzz_unittest.FuzzMostExtensions optionalNestedEnumExtension - 0 -
+  resolved 1 0 14 - 0 -
+extension optional_foreign_enum_extension 22 1 14 .fuzz_unittest.ForeignEnum .fuzz_unittest.FuzzMostExtensions optionalForeignEnumExtension - 0 -
+  resolved 1 0 14 - 0 -
+extension optional_import_enum_extension 23 1 14 .proto2_unittest_import.ImportEnum .fuzz_unittest.FuzzMostExtensions optionalImportEnumExtension - 0 -
+  resolved 1 0 14 - 0 -
+extension optional_cord_extension 25 1 9 - .fuzz_unittest.FuzzMostExtensions optionalCordExtension - 0 -
+  resolved 1 0 9 0 0 -
+extension optional_bytes_cord_extension 86 1 12 - .fuzz_unittest.FuzzMostExtensions optionalBytesCordExtension - 0 -
+  resolved 1 0 12 - 0 -
+extension optional_public_import_message_extension 26 1 11 .proto2_unittest_import.PublicImportMessage .fuzz_unittest.FuzzMostExtensions optionalPublicImportMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_lazy_message_extension 27 1 11 .fuzz_unittest.FuzzMostTypes.NestedMessage .fuzz_unittest.FuzzMostExtensions optionalLazyMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension repeated_int32_extension 31 3 5 - .fuzz_unittest.FuzzMostExtensions repeatedInt32Extension - 0 -
+  resolved 0 0 5 - 0 -
+extension repeated_int64_extension 32 3 3 - .fuzz_unittest.FuzzMostExtensions repeatedInt64Extension - 0 -
+  resolved 0 0 3 - 0 -
+extension repeated_uint32_extension 33 3 13 - .fuzz_unittest.FuzzMostExtensions repeatedUint32Extension - 0 -
+  resolved 0 0 13 - 0 -
+extension repeated_uint64_extension 34 3 4 - .fuzz_unittest.FuzzMostExtensions repeatedUint64Extension - 0 -
+  resolved 0 0 4 - 0 -
+extension repeated_sint32_extension 35 3 17 - .fuzz_unittest.FuzzMostExtensions repeatedSint32Extension - 0 -
+  resolved 0 0 17 - 0 -
+extension repeated_sint64_extension 36 3 18 - .fuzz_unittest.FuzzMostExtensions repeatedSint64Extension - 0 -
+  resolved 0 0 18 - 0 -
+extension repeated_fixed32_extension 37 3 7 - .fuzz_unittest.FuzzMostExtensions repeatedFixed32Extension - 0 -
+  resolved 0 0 7 - 0 -
+extension repeated_fixed64_extension 38 3 6 - .fuzz_unittest.FuzzMostExtensions repeatedFixed64Extension - 0 -
+  resolved 0 0 6 - 0 -
+extension repeated_sfixed32_extension 39 3 15 - .fuzz_unittest.FuzzMostExtensions repeatedSfixed32Extension - 0 -
+  resolved 0 0 15 - 0 -
+extension repeated_sfixed64_extension 40 3 16 - .fuzz_unittest.FuzzMostExtensions repeatedSfixed64Extension - 0 -
+  resolved 0 0 16 - 0 -
+extension repeated_float_extension 41 3 2 - .fuzz_unittest.FuzzMostExtensions repeatedFloatExtension - 0 -
+  resolved 0 0 2 - 0 -
+extension repeated_double_extension 42 3 1 - .fuzz_unittest.FuzzMostExtensions repeatedDoubleExtension - 0 -
+  resolved 0 0 1 - 0 -
+extension repeated_bool_extension 43 3 8 - .fuzz_unittest.FuzzMostExtensions repeatedBoolExtension - 0 -
+  resolved 0 0 8 - 0 -
+extension repeated_string_extension 44 3 9 - .fuzz_unittest.FuzzMostExtensions repeatedStringExtension - 0 -
+  resolved 0 0 9 0 0 -
+extension repeated_bytes_extension 45 3 12 - .fuzz_unittest.FuzzMostExtensions repeatedBytesExtension - 0 -
+  resolved 0 0 12 - 0 -
+extension repeated_group_extension 46 3 11 .fuzz_unittest.RepeatedGroupExtension .fuzz_unittest.FuzzMostExtensions repeatedGroupExtension - 0 -
+  resolved 0 0 10 - 0 -
+extension repeated_nested_message_extension 48 3 11 .fuzz_unittest.FuzzMostTypes.NestedMessage .fuzz_unittest.FuzzMostExtensions repeatedNestedMessageExtension - 0 -
+  resolved 0 0 11 - 0 -
+extension repeated_foreign_message_extension 49 3 11 .fuzz_unittest.ForeignMessage .fuzz_unittest.FuzzMostExtensions repeatedForeignMessageExtension - 0 -
+  resolved 0 0 11 - 0 -
+extension repeated_import_message_extension 50 3 11 .proto2_unittest_import.ImportMessage .fuzz_unittest.FuzzMostExtensions repeatedImportMessageExtension - 0 -
+  resolved 0 0 11 - 0 -
+extension repeated_nested_enum_extension 51 3 14 .fuzz_unittest.FuzzMostTypes.NestedEnum .fuzz_unittest.FuzzMostExtensions repeatedNestedEnumExtension - 0 -
+  resolved 0 0 14 - 0 -
+extension repeated_foreign_enum_extension 52 3 14 .fuzz_unittest.ForeignEnum .fuzz_unittest.FuzzMostExtensions repeatedForeignEnumExtension - 0 -
+  resolved 0 0 14 - 0 -
+extension repeated_import_enum_extension 53 3 14 .proto2_unittest_import.ImportEnum .fuzz_unittest.FuzzMostExtensions repeatedImportEnumExtension - 0 -
+  resolved 0 0 14 - 0 -
+extension repeated_cord_extension 55 3 9 - .fuzz_unittest.FuzzMostExtensions repeatedCordExtension - 0 -
+  resolved 0 0 9 0 0 -
+extension default_int32_extension 61 1 5 - .fuzz_unittest.FuzzMostExtensions defaultInt32Extension - 0 -
+  resolved 1 0 5 - 0 default=41
+extension default_int64_extension 62 1 3 - .fuzz_unittest.FuzzMostExtensions defaultInt64Extension - 0 -
+  resolved 1 0 3 - 0 default=42
+extension default_uint32_extension 63 1 13 - .fuzz_unittest.FuzzMostExtensions defaultUint32Extension - 0 -
+  resolved 1 0 13 - 0 default=43
+extension default_uint64_extension 64 1 4 - .fuzz_unittest.FuzzMostExtensions defaultUint64Extension - 0 -
+  resolved 1 0 4 - 0 default=44
+extension default_sint32_extension 65 1 17 - .fuzz_unittest.FuzzMostExtensions defaultSint32Extension - 0 -
+  resolved 1 0 17 - 0 default=-45
+extension default_sint64_extension 66 1 18 - .fuzz_unittest.FuzzMostExtensions defaultSint64Extension - 0 -
+  resolved 1 0 18 - 0 default=46
+extension default_fixed32_extension 67 1 7 - .fuzz_unittest.FuzzMostExtensions defaultFixed32Extension - 0 -
+  resolved 1 0 7 - 0 default=47
+extension default_fixed64_extension 68 1 6 - .fuzz_unittest.FuzzMostExtensions defaultFixed64Extension - 0 -
+  resolved 1 0 6 - 0 default=48
+extension default_sfixed32_extension 69 1 15 - .fuzz_unittest.FuzzMostExtensions defaultSfixed32Extension - 0 -
+  resolved 1 0 15 - 0 default=49
+extension default_sfixed64_extension 70 1 16 - .fuzz_unittest.FuzzMostExtensions defaultSfixed64Extension - 0 -
+  resolved 1 0 16 - 0 default=-50
+extension default_float_extension 71 1 2 - .fuzz_unittest.FuzzMostExtensions defaultFloatExtension - 0 -
+  resolved 1 0 2 - 0 default=51.5
+extension default_double_extension 72 1 1 - .fuzz_unittest.FuzzMostExtensions defaultDoubleExtension - 0 -
+  resolved 1 0 1 - 0 default=52000
+extension default_bool_extension 73 1 8 - .fuzz_unittest.FuzzMostExtensions defaultBoolExtension - 0 -
+  resolved 1 0 8 - 0 default=true
+extension default_string_extension 74 1 9 - .fuzz_unittest.FuzzMostExtensions defaultStringExtension - 0 -
+  resolved 1 0 9 0 0 default=hello
+extension default_bytes_extension 75 1 12 - .fuzz_unittest.FuzzMostExtensions defaultBytesExtension - 0 -
+  resolved 1 0 12 - 0 default=world
+extension default_nested_enum_extension 81 1 14 .fuzz_unittest.FuzzMostTypes.NestedEnum .fuzz_unittest.FuzzMostExtensions defaultNestedEnumExtension - 0 -
+  resolved 1 0 14 - 0 default=BAR
+extension default_foreign_enum_extension 82 1 14 .fuzz_unittest.ForeignEnum .fuzz_unittest.FuzzMostExtensions defaultForeignEnumExtension - 0 -
+  resolved 1 0 14 - 0 default=FOREIGN_BAR
+extension default_import_enum_extension 83 1 14 .proto2_unittest_import.ImportEnum .fuzz_unittest.FuzzMostExtensions defaultImportEnumExtension - 0 -
+  resolved 1 0 14 - 0 default=IMPORT_BAR
+extension default_cord_extension 85 1 9 - .fuzz_unittest.FuzzMostExtensions defaultCordExtension - 0 -
+  resolved 1 0 9 0 0 default=123
+extension optional_utf8_string_extension 90 1 9 - .fuzz_unittest.FuzzMostExtensions optionalUtf8StringExtension - 0 -
+  resolved 1 0 9 1 0 -
+extension repeated_utf8_string_extension 91 3 9 - .fuzz_unittest.FuzzMostExtensions repeatedUtf8StringExtension - 0 -
+  resolved 0 0 9 1 0 -

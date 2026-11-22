@@ -1,0 +1,3 @@
+package A.B.C
+syntax proto2
+message TestImportedMessage

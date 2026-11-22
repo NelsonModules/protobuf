@@ -1,0 +1,168 @@
+package upper_enum
+syntax proto3
+enum ABSTRACT
+  value ZERO1 0
+enum AND
+  value ZERO2 0
+enum ARRAY
+  value ZERO3 0
+enum AS
+  value ZERO4 0
+enum BOOL
+  value ZERO5 0
+enum BREAK
+  value ZERO6 0
+enum CALLABLE
+  value ZERO7 0
+enum CASE
+  value ZERO8 0
+enum CATCH
+  value ZERO9 0
+enum CLASS
+  value ZERO10 0
+enum CLONE
+  value ZERO11 0
+enum CONST
+  value ZERO12 0
+enum CONTINUE
+  value ZERO13 0
+enum DECLARE
+  value ZERO14 0
+enum DEFAULT
+  value ZERO15 0
+enum DIE
+  value ZERO16 0
+enum DO
+  value ZERO17 0
+enum ECHO
+  value ZERO18 0
+enum ELSE
+  value ZERO19 0
+enum ELSEIF
+  value ZERO20 0
+enum EMPTY
+  value ZERO21 0
+enum ENDDECLARE
+  value ZERO22 0
+enum ENDFOR
+  value ZERO23 0
+enum ENDFOREACH
+  value ZERO24 0
+enum ENDIF
+  value ZERO25 0
+enum ENDSWITCH
+  value ZERO26 0
+enum ENDWHILE
+  value ZERO27 0
+enum EVAL
+  value ZERO28 0
+enum EXIT
+  value ZERO29 0
+enum EXTENDS
+  value ZERO30 0
+enum FALSE
+  value ZERO31 0
+enum FINAL
+  value ZERO32 0
+enum FINALLY
+  value ZERO33 0
+enum FLOAT
+  value ZERO34 0
+enum FN
+  value ZERO35 0
+enum FOR
+  value ZERO36 0
+enum FOREACH
+  value ZERO37 0
+enum FUNCTION
+  value ZERO38 0
+enum GLOBAL
+  value ZERO39 0
+enum GOTO
+  value ZERO40 0
+enum IF
+  value ZERO41 0
+enum IMPLEMENTS
+  value ZERO42 0
+enum INCLUDE
+  value ZERO43 0
+enum INCLUDE_ONCE
+  value ZERO44 0
+enum INSTANCEOF
+  value ZERO45 0
+enum INSTEADOF
+  value ZERO46 0
+enum INT
+  value ZERO47 0
+enum INTERFACE
+  value ZERO48 0
+enum ISSET
+  value ZERO49 0
+enum ITERABLE
+  value ZERO50 0
+enum LIST
+  value ZERO51 0
+enum MATCH
+  value ZERO52 0
+enum MIXED
+  value ZERO53 0
+enum NAMESPACE
+  value ZERO54 0
+enum NEVER
+  value ZERO55 0
+enum NEW
+  value ZERO56 0
+enum NULL
+  value ZERO57 0
+enum OBJECT
+  value ZERO58 0
+enum OR
+  value ZERO59 0
+enum PARENT
+  value ZERO60 0
+enum PRINT
+  value ZERO61 0
+enum PRIVATE
+  value ZERO62 0
+enum PROTECTED
+  value ZERO63 0
+enum PUBLIC
+  value ZERO64 0
+enum READONLY
+  value ZERO65 0
+enum REQUIRE
+  value ZERO66 0
+enum REQUIRE_ONCE
+  value ZERO67 0
+enum RETURN
+  value ZERO68 0
+enum SELF
+  value ZERO69 0
+enum STATIC
+  value ZERO70 0
+enum STRING
+  value ZERO71 0
+enum SWITCH
+  value ZERO72 0
+enum THROW
+  value ZERO73 0
+enum TRAIT
+  value ZERO74 0
+enum TRUE
+  value ZERO75 0
+enum TRY
+  value ZERO76 0
+enum UNSET
+  value ZERO77 0
+enum USE
+  value ZERO78 0
+enum VAR
+  value ZERO79 0
+enum VOID
+  value ZERO80 0
+enum WHILE
+  value ZERO81 0
+enum XOR
+  value ZERO82 0
+enum YIELD
+  value ZERO83 0

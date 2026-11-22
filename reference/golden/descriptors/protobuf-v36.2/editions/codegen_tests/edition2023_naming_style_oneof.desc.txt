@@ -1,0 +1,9 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+message BadOneofMessage
+  field foo 1 1 9 - foo 0 0 -
+    resolved 1 0 9 1 0 -
+  field bar 2 1 9 - bar 0 0 -
+    resolved 1 0 9 1 0 -
+  oneof BAD_ONEOF_NAME

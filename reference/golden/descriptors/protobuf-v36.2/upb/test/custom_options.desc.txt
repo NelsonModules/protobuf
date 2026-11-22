@@ -1,0 +1,5 @@
+package upb
+syntax editions
+edition 2024
+extension message_opt 7739036 1 5 - .google.protobuf.MessageOptions messageOpt - 0 -
+  resolved 1 0 5 - 0 -

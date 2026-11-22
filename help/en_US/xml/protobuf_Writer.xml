@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.Writer</keyword>
+  <short_description>Write length-delimited records as they come to an open target.</short_description>
+  <syntax>
+    <syntax_item>w = protobuf.Writer(schema, type, filename, 'Append', tf, 'Layout', layout, 'Progress', f)</syntax_item>
+    <syntax_item>w = protobuf.Writer(schema, type, fid)</syntax_item>
+    <syntax_item>w = protobuf.Writer(schema, type, z, 'Entry', entryname)</syntax_item>
+    <syntax_item>w.push(value)</syntax_item>
+    <syntax_item>w.close()</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>a schema from protobuf.load and a message type.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>filename, fid, z</param_name>
+      <param_description>a data file name, an open file identifier, or a nelson.io.ZipArchive open for writing with 'Entry', name. The target stays open between pushes.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>value</param_name>
+      <param_description>w.push: the records to add, in any form accepted by protobuf.encode (struct, columns with 'Layout', 'columns', table or timetable). They are encoded as length-delimited records and written at once.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Append', 'Layout', 'Progress'</param_name>
+      <param_description>'Append' adds to an existing file, 'Layout' fixes the form of the pushed values, 'Progress', f(n, total) is called after each push with the bytes written so far (total is NaN, not known in advance).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>w</param_name>
+      <param_description>a protobuf.Writer object. push writes records; close closes the target when the writer opened it.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.Writer keeps a file, a file identifier or a ZIP entry open and writes records as they are produced, over several push calls. It suits a stream that is built little by little, when holding every record in memory is not wanted.</p>
+    <p>close flushes and closes the target when the writer opened it (a file name or a ZIP entry); a file identifier passed in stays the caller's to close.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Write records as they come, then read them back</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+filename = [tempdir(), 'writer.bin'];
+w = protobuf.Writer(schema, 'SensorSample', filename, 'Layout', 'columns');
+for k = 1:5
+  w.push(struct('timestamp_ms', int64(k * 100 + (1:100)'), 'status', int32(mod((1:100)', 3))));
+end
+w.close();
+C = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns');
+numel(C.timestamp_ms)
+delete(filename);
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.write">protobuf.write</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Decoder">protobuf.Decoder</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.read">protobuf.read</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

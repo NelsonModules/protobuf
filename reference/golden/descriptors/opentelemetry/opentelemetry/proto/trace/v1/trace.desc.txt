@@ -1,0 +1,62 @@
+package opentelemetry.proto.trace.v1
+syntax proto3
+message TracesData
+  field resource_spans 1 3 11 .opentelemetry.proto.trace.v1.ResourceSpans resourceSpans - 0 -
+message ResourceSpans
+  field resource 1 1 11 .opentelemetry.proto.resource.v1.Resource resource - 0 -
+  field scope_spans 2 3 11 .opentelemetry.proto.trace.v1.ScopeSpans scopeSpans - 0 -
+  field schema_url 3 1 9 - schemaUrl - 0 -
+  reserved_range 1000 1001
+message ScopeSpans
+  field scope 1 1 11 .opentelemetry.proto.common.v1.InstrumentationScope scope - 0 -
+  field spans 2 3 11 .opentelemetry.proto.trace.v1.Span spans - 0 -
+  field schema_url 3 1 9 - schemaUrl - 0 -
+message Span
+  field trace_id 1 1 12 - traceId - 0 -
+  field span_id 2 1 12 - spanId - 0 -
+  field trace_state 3 1 9 - traceState - 0 -
+  field parent_span_id 4 1 12 - parentSpanId - 0 -
+  field flags 16 1 7 - flags - 0 -
+  field name 5 1 9 - name - 0 -
+  field kind 6 1 14 .opentelemetry.proto.trace.v1.Span.SpanKind kind - 0 -
+  field start_time_unix_nano 7 1 6 - startTimeUnixNano - 0 -
+  field end_time_unix_nano 8 1 6 - endTimeUnixNano - 0 -
+  field attributes 9 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+  field dropped_attributes_count 10 1 13 - droppedAttributesCount - 0 -
+  field events 11 3 11 .opentelemetry.proto.trace.v1.Span.Event events - 0 -
+  field dropped_events_count 12 1 13 - droppedEventsCount - 0 -
+  field links 13 3 11 .opentelemetry.proto.trace.v1.Span.Link links - 0 -
+  field dropped_links_count 14 1 13 - droppedLinksCount - 0 -
+  field status 15 1 11 .opentelemetry.proto.trace.v1.Status status - 0 -
+  message Event
+    field time_unix_nano 1 1 6 - timeUnixNano - 0 -
+    field name 2 1 9 - name - 0 -
+    field attributes 3 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+    field dropped_attributes_count 4 1 13 - droppedAttributesCount - 0 -
+  message Link
+    field trace_id 1 1 12 - traceId - 0 -
+    field span_id 2 1 12 - spanId - 0 -
+    field trace_state 3 1 9 - traceState - 0 -
+    field attributes 4 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+    field dropped_attributes_count 5 1 13 - droppedAttributesCount - 0 -
+    field flags 6 1 7 - flags - 0 -
+  enum SpanKind
+    value SPAN_KIND_UNSPECIFIED 0
+    value SPAN_KIND_INTERNAL 1
+    value SPAN_KIND_SERVER 2
+    value SPAN_KIND_CLIENT 3
+    value SPAN_KIND_PRODUCER 4
+    value SPAN_KIND_CONSUMER 5
+message Status
+  field message 2 1 9 - message - 0 -
+  field code 3 1 14 .opentelemetry.proto.trace.v1.Status.StatusCode code - 0 -
+  enum StatusCode
+    value STATUS_CODE_UNSET 0
+    value STATUS_CODE_OK 1
+    value STATUS_CODE_ERROR 2
+  reserved_range 1 2
+enum SpanFlags
+  value SPAN_FLAGS_DO_NOT_USE 0
+  value SPAN_FLAGS_TRACE_FLAGS_MASK 255
+  value SPAN_FLAGS_CONTEXT_HAS_IS_REMOTE_MASK 256
+  value SPAN_FLAGS_CONTEXT_IS_REMOTE_MASK 512

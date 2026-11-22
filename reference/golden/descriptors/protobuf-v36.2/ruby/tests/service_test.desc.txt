@@ -1,0 +1,22 @@
+package service_test_protos
+syntax proto3
+message UnaryRequestType
+  field ping 1 1 9 - ping - 0 -
+message UnaryResponseType
+  field pong 1 1 9 - pong - 0 -
+message StreamRequestType
+  field ping 1 1 9 - ping - 0 -
+  field sequence 2 1 13 - sequence - 0 -
+message StreamResponseType
+  field pong 1 1 9 - pong - 0 -
+  field sequence 2 1 13 - sequence - 0 -
+message TestOptionsType
+  field int_option_value 1 1 13 - intOptionValue - 0 -
+extension test_options 50000 1 11 .service_test_protos.TestOptionsType .google.protobuf.ServiceOptions testOptions - 1 -
+service TestService
+  method UnaryOne .service_test_protos.UnaryRequestType .service_test_protos.UnaryResponseType 0 0
+  method UnaryTwo .service_test_protos.UnaryRequestType .service_test_protos.UnaryResponseType 0 0
+  method IdempotentMethod .service_test_protos.UnaryRequestType .service_test_protos.UnaryResponseType 0 0
+  method PureMethod .service_test_protos.UnaryRequestType .service_test_protos.UnaryResponseType 0 0
+  method StreamingMethod .service_test_protos.StreamRequestType .service_test_protos.StreamResponseType 1 1
+service DeprecatedService

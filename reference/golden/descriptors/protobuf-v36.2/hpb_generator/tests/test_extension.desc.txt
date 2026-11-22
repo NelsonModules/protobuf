@@ -1,0 +1,29 @@
+package hpb_unittest.someotherpackage
+syntax editions
+edition 2023
+extension styling 13001 1 11 .hpb_unittest.ThemeExtension .hpb_unittest.TestModel styling - 0 -
+  resolved 1 0 11 - 0 -
+extension int32_ext 13002 1 5 - .hpb_unittest.TestModel int32Ext - 0 -
+  resolved 1 0 5 - 0 default=644
+extension int64_ext 13003 1 3 - .hpb_unittest.TestModel int64Ext - 0 -
+  resolved 1 0 3 - 0 default=2147483648
+extension repeated_int32_ext 13004 3 5 - .hpb_unittest.TestModel repeatedInt32Ext - 0 -
+  resolved 0 1 5 - 0 -
+extension repeated_int64_ext 13005 3 3 - .hpb_unittest.TestModel repeatedInt64Ext - 0 -
+  resolved 0 1 3 - 0 -
+extension repeated_string_ext 13006 3 9 - .hpb_unittest.TestModel repeatedStringExt - 0 -
+  resolved 0 0 9 1 0 -
+extension uint32_ext 13007 1 13 - .hpb_unittest.TestModel uint32Ext - 0 -
+  resolved 1 0 13 - 0 default=12
+extension uint64_ext 13008 1 4 - .hpb_unittest.TestModel uint64Ext - 0 -
+  resolved 1 0 4 - 0 default=4294967296
+extension float_ext 13009 1 2 - .hpb_unittest.TestModel floatExt - 0 -
+  resolved 1 0 2 - 0 default=3.14
+extension double_ext 13010 1 1 - .hpb_unittest.TestModel doubleExt - 0 -
+  resolved 1 0 1 - 0 default=3.40282e+38
+extension bool_ext 13011 1 8 - .hpb_unittest.TestModel boolExt - 0 -
+  resolved 1 0 8 - 0 default=true
+extension string_ext 13012 1 9 - .hpb_unittest.TestModel stringExt - 0 -
+  resolved 1 0 9 1 0 default=mishpacha
+extension string_escape_ext 13013 1 9 - .hpb_unittest.TestModel stringEscapeExt - 0 -
+  resolved 1 0 9 1 0 default=bseder"bseder

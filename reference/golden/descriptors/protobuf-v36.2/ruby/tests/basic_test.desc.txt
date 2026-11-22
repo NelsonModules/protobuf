@@ -1,0 +1,317 @@
+package basic_test
+syntax proto3
+message Foo
+  field bar 1 1 11 .basic_test.Bar bar - 0 -
+  field baz 2 3 11 .basic_test.Baz baz - 0 -
+message Bar
+  field msg 1 1 9 - msg - 0 -
+message Baz
+  field msg 1 1 9 - msg - 0 -
+message TestMessage
+  field optional_int32 1 1 5 - optionalInt32 0 1 -
+  field optional_int64 2 1 3 - optionalInt64 1 1 -
+  field optional_uint32 3 1 13 - optionalUint32 2 1 -
+  field optional_uint64 4 1 4 - optionalUint64 3 1 -
+  field optional_bool 5 1 8 - optionalBool 4 1 -
+  field optional_float 6 1 2 - optionalFloat 5 1 -
+  field optional_double 7 1 1 - optionalDouble 6 1 -
+  field optional_string 8 1 9 - optionalString 7 1 -
+  field optional_bytes 9 1 12 - optionalBytes 8 1 -
+  field optional_msg 10 1 11 .basic_test.TestMessage2 optionalMsg 9 1 -
+  field optional_enum 11 1 14 .basic_test.TestEnum optionalEnum 10 1 -
+  field optional_proto2_submessage 24 1 11 .foo_bar.proto2.TestImportedMessage optionalProto2Submessage 11 1 -
+  field repeated_int32 12 3 5 - repeatedInt32 - 0 -
+  field repeated_int64 13 3 3 - repeatedInt64 - 0 -
+  field repeated_uint32 14 3 13 - repeatedUint32 - 0 -
+  field repeated_uint64 15 3 4 - repeatedUint64 - 0 -
+  field repeated_bool 16 3 8 - repeatedBool - 0 -
+  field repeated_float 17 3 2 - repeatedFloat - 0 -
+  field repeated_double 18 3 1 - repeatedDouble - 0 -
+  field repeated_string 19 3 9 - repeatedString - 0 -
+  field repeated_bytes 20 3 12 - repeatedBytes - 0 -
+  field repeated_msg 21 3 11 .basic_test.TestMessage2 repeatedMsg - 0 -
+  field repeated_enum 22 3 14 .basic_test.TestEnum repeatedEnum - 0 -
+  field optional_msg2 23 1 11 .basic_test.TestSingularFields optionalMsg2 12 1 -
+  oneof _optional_int32
+  oneof _optional_int64
+  oneof _optional_uint32
+  oneof _optional_uint64
+  oneof _optional_bool
+  oneof _optional_float
+  oneof _optional_double
+  oneof _optional_string
+  oneof _optional_bytes
+  oneof _optional_msg
+  oneof _optional_enum
+  oneof _optional_proto2_submessage
+  oneof _optional_msg2
+message TestUnpackedMessage
+  field repeated_int32 25 3 5 - repeatedInt32 - 0 false
+message TestSingularFields
+  field singular_int32 1 1 5 - singularInt32 - 0 -
+  field singular_int64 2 1 3 - singularInt64 - 0 -
+  field singular_uint32 3 1 13 - singularUint32 - 0 -
+  field singular_uint64 4 1 4 - singularUint64 - 0 -
+  field singular_bool 5 1 8 - singularBool - 0 -
+  field singular_float 6 1 2 - singularFloat - 0 -
+  field singular_double 7 1 1 - singularDouble - 0 -
+  field singular_string 8 1 9 - singularString - 0 -
+  field singular_bytes 9 1 12 - singularBytes - 0 -
+  field singular_msg 10 1 11 .basic_test.TestMessage2 singularMsg - 0 -
+  field singular_enum 11 1 14 .basic_test.TestEnum singularEnum - 0 -
+message TestMessage2
+  field foo 1 1 5 - foo 0 1 -
+  oneof _foo
+message TestDeprecatedMessage
+  field foo 1 1 5 - foo 1 1 -
+  field a 2 1 9 - a 0 0 -
+  field b 3 1 5 - b 0 0 -
+  field map_string_msg 4 3 11 .basic_test.TestDeprecatedMessage.MapStringMsgEntry mapStringMsg - 0 -
+  field repeated_msg 5 3 11 .basic_test.TestMessage2 repeatedMsg - 0 -
+  extension test_nested_option 1001 1 9 - .google.protobuf.OneofOptions testNestedOption - 1 -
+  message MapStringMsgEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .basic_test.TestMessage2 value - 0 -
+    map_entry
+  oneof test_deprecated_message_oneof
+  oneof _foo
+message TestEmbeddedMessageParent
+  field child_msg 1 1 11 .basic_test.TestEmbeddedMessageChild childMsg - 0 -
+  field number 2 1 5 - number - 0 -
+  field repeated_msg 3 3 11 .basic_test.TestEmbeddedMessageChild repeatedMsg - 0 -
+  field repeated_number 4 3 5 - repeatedNumber - 0 -
+message TestEmbeddedMessageChild
+  field sub_child 1 1 11 .basic_test.TestMessage subChild - 0 -
+message Recursive1
+  field foo 1 1 11 .basic_test.Recursive2 foo - 0 -
+message Recursive2
+  field foo 1 1 11 .basic_test.Recursive1 foo - 0 -
+message MapMessage
+  field map_string_int32 1 3 11 .basic_test.MapMessage.MapStringInt32Entry mapStringInt32 - 0 -
+  field map_string_msg 2 3 11 .basic_test.MapMessage.MapStringMsgEntry mapStringMsg - 0 -
+  field map_string_enum 3 3 11 .basic_test.MapMessage.MapStringEnumEntry mapStringEnum - 0 -
+  message MapStringInt32Entry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message MapStringMsgEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .basic_test.TestMessage2 value - 0 -
+    map_entry
+  message MapStringEnumEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 14 .basic_test.TestEnum value - 0 -
+    map_entry
+message MapMessageWireEquiv
+  field map_string_int32 1 3 11 .basic_test.MapMessageWireEquiv_entry1 mapStringInt32 - 0 -
+  field map_string_msg 2 3 11 .basic_test.MapMessageWireEquiv_entry2 mapStringMsg - 0 -
+message MapMessageWireEquiv_entry1
+  field key 1 1 9 - key - 0 -
+  field value 2 1 5 - value - 0 -
+message MapMessageWireEquiv_entry2
+  field key 1 1 9 - key - 0 -
+  field value 2 1 11 .basic_test.TestMessage2 value - 0 -
+message OneofMessage
+  field a 1 1 9 - a 0 0 -
+  field b 2 1 5 - b 0 0 -
+  field c 3 1 11 .basic_test.TestMessage2 c 0 0 -
+  field d 4 1 14 .basic_test.TestEnum d 0 0 -
+  oneof my_oneof
+message Outer
+  field items 1 3 11 .basic_test.Outer.ItemsEntry items - 0 -
+  message ItemsEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .basic_test.Inner value - 0 -
+    map_entry
+message Inner
+message Wrapper
+  field double 1 1 11 .google.protobuf.DoubleValue double - 0 -
+  field float 2 1 11 .google.protobuf.FloatValue float - 0 -
+  field int32 3 1 11 .google.protobuf.Int32Value int32 - 0 -
+  field int64 4 1 11 .google.protobuf.Int64Value int64 - 0 -
+  field uint32 5 1 11 .google.protobuf.UInt32Value uint32 - 0 -
+  field uint64 6 1 11 .google.protobuf.UInt64Value uint64 - 0 -
+  field bool 7 1 11 .google.protobuf.BoolValue bool - 0 -
+  field string 8 1 11 .google.protobuf.StringValue string - 0 -
+  field bytes 9 1 11 .google.protobuf.BytesValue bytes - 0 -
+  field real_string 100 1 9 - realString - 0 -
+  field string_in_oneof 10 1 9 - stringInOneof 0 0 -
+  field repeated_double 11 3 11 .google.protobuf.DoubleValue repeatedDouble - 0 -
+  field repeated_float 12 3 11 .google.protobuf.FloatValue repeatedFloat - 0 -
+  field repeated_int32 13 3 11 .google.protobuf.Int32Value repeatedInt32 - 0 -
+  field repeated_int64 14 3 11 .google.protobuf.Int64Value repeatedInt64 - 0 -
+  field repeated_uint32 15 3 11 .google.protobuf.UInt32Value repeatedUint32 - 0 -
+  field repeated_uint64 16 3 11 .google.protobuf.UInt64Value repeatedUint64 - 0 -
+  field repeated_bool 17 3 11 .google.protobuf.BoolValue repeatedBool - 0 -
+  field repeated_string 18 3 11 .google.protobuf.StringValue repeatedString - 0 -
+  field repeated_bytes 19 3 11 .google.protobuf.BytesValue repeatedBytes - 0 -
+  field map_double 21 3 11 .basic_test.Wrapper.MapDoubleEntry mapDouble - 0 -
+  field map_float 22 3 11 .basic_test.Wrapper.MapFloatEntry mapFloat - 0 -
+  field map_int32 23 3 11 .basic_test.Wrapper.MapInt32Entry mapInt32 - 0 -
+  field map_int64 24 3 11 .basic_test.Wrapper.MapInt64Entry mapInt64 - 0 -
+  field map_uint32 25 3 11 .basic_test.Wrapper.MapUint32Entry mapUint32 - 0 -
+  field map_uint64 26 3 11 .basic_test.Wrapper.MapUint64Entry mapUint64 - 0 -
+  field map_bool 27 3 11 .basic_test.Wrapper.MapBoolEntry mapBool - 0 -
+  field map_string 28 3 11 .basic_test.Wrapper.MapStringEntry mapString - 0 -
+  field map_bytes 29 3 11 .basic_test.Wrapper.MapBytesEntry mapBytes - 0 -
+  field oneof_double 31 1 11 .google.protobuf.DoubleValue oneofDouble 1 0 -
+  field oneof_float 32 1 11 .google.protobuf.FloatValue oneofFloat 1 0 -
+  field oneof_int32 33 1 11 .google.protobuf.Int32Value oneofInt32 1 0 -
+  field oneof_int64 34 1 11 .google.protobuf.Int64Value oneofInt64 1 0 -
+  field oneof_uint32 35 1 11 .google.protobuf.UInt32Value oneofUint32 1 0 -
+  field oneof_uint64 36 1 11 .google.protobuf.UInt64Value oneofUint64 1 0 -
+  field oneof_bool 37 1 11 .google.protobuf.BoolValue oneofBool 1 0 -
+  field oneof_string 38 1 11 .google.protobuf.StringValue oneofString 1 0 -
+  field oneof_bytes 39 1 11 .google.protobuf.BytesValue oneofBytes 1 0 -
+  field oneof_plain_string 101 1 9 - oneofPlainString 1 0 -
+  message MapDoubleEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.DoubleValue value - 0 -
+    map_entry
+  message MapFloatEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.FloatValue value - 0 -
+    map_entry
+  message MapInt32Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.Int32Value value - 0 -
+    map_entry
+  message MapInt64Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.Int64Value value - 0 -
+    map_entry
+  message MapUint32Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.UInt32Value value - 0 -
+    map_entry
+  message MapUint64Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.UInt64Value value - 0 -
+    map_entry
+  message MapBoolEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.BoolValue value - 0 -
+    map_entry
+  message MapStringEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.StringValue value - 0 -
+    map_entry
+  message MapBytesEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .google.protobuf.BytesValue value - 0 -
+    map_entry
+  oneof a_oneof
+  oneof wrapper_oneof
+message TimeMessage
+  field timestamp 1 1 11 .google.protobuf.Timestamp timestamp - 0 -
+  field duration 2 1 11 .google.protobuf.Duration duration - 0 -
+message Enumer
+  field optional_enum 1 1 14 .basic_test.TestEnum optionalEnum - 0 -
+  field repeated_enum 2 3 14 .basic_test.TestEnum repeatedEnum - 0 -
+  field a_const 3 1 9 - aConst - 0 -
+  field str 10 1 9 - str 0 0 -
+  field const 11 1 14 .basic_test.TestEnum const 0 0 -
+  oneof a_oneof
+message MyRepeatedStruct
+  field structs 1 3 11 .basic_test.MyStruct structs - 0 -
+message MyStruct
+  field string 1 1 9 - string - 0 -
+  field struct 2 1 11 .google.protobuf.Struct struct - 0 -
+message WithJsonName
+  field foo_bar 1 1 5 - jsonFooBar 0 1 -
+  field baz 2 3 11 .basic_test.WithJsonName jsonBaz - 0 -
+  oneof _foo_bar
+message HelloRequest
+  field id 1 1 13 - id 0 1 -
+  field random_name_a0 2 1 13 - randomNameA0 1 1 -
+  field random_name_a1 3 1 13 - randomNameA1 2 1 -
+  field random_name_a2 4 1 13 - randomNameA2 3 1 -
+  field random_name_a3 5 1 13 - randomNameA3 4 1 -
+  field random_name_a4 6 1 13 - randomNameA4 5 1 -
+  field random_name_a5 7 1 13 - randomNameA5 6 1 -
+  field random_name_a6 8 1 13 - randomNameA6 7 1 -
+  field random_name_a7 9 1 13 - randomNameA7 8 1 -
+  field random_name_a8 10 1 13 - randomNameA8 9 1 -
+  field random_name_a9 11 1 13 - randomNameA9 10 1 -
+  field random_name_b0 12 1 13 - randomNameB0 11 1 -
+  field random_name_b1 13 1 13 - randomNameB1 12 1 -
+  field random_name_b2 14 1 13 - randomNameB2 13 1 -
+  field random_name_b3 15 1 13 - randomNameB3 14 1 -
+  field random_name_b4 16 1 13 - randomNameB4 15 1 -
+  field random_name_b5 17 1 13 - randomNameB5 16 1 -
+  field random_name_b6 18 1 13 - randomNameB6 17 1 -
+  field random_name_b7 19 1 13 - randomNameB7 18 1 -
+  field random_name_b8 20 1 13 - randomNameB8 19 1 -
+  field random_name_b9 21 1 13 - randomNameB9 20 1 -
+  field random_name_c0 22 1 13 - randomNameC0 21 1 -
+  field random_name_c1 23 1 13 - randomNameC1 22 1 -
+  field random_name_c2 24 1 13 - randomNameC2 23 1 -
+  field random_name_c3 25 1 13 - randomNameC3 24 1 -
+  field random_name_c4 26 1 13 - randomNameC4 25 1 -
+  field random_name_c5 27 1 13 - randomNameC5 26 1 -
+  field random_name_c6 28 1 13 - randomNameC6 27 1 -
+  field random_name_c7 29 1 13 - randomNameC7 28 1 -
+  field random_name_c8 30 1 13 - randomNameC8 29 1 -
+  field random_name_c9 31 1 13 - randomNameC9 30 1 -
+  field version 32 1 9 - version 31 1 -
+  oneof _id
+  oneof _random_name_a0
+  oneof _random_name_a1
+  oneof _random_name_a2
+  oneof _random_name_a3
+  oneof _random_name_a4
+  oneof _random_name_a5
+  oneof _random_name_a6
+  oneof _random_name_a7
+  oneof _random_name_a8
+  oneof _random_name_a9
+  oneof _random_name_b0
+  oneof _random_name_b1
+  oneof _random_name_b2
+  oneof _random_name_b3
+  oneof _random_name_b4
+  oneof _random_name_b5
+  oneof _random_name_b6
+  oneof _random_name_b7
+  oneof _random_name_b8
+  oneof _random_name_b9
+  oneof _random_name_c0
+  oneof _random_name_c1
+  oneof _random_name_c2
+  oneof _random_name_c3
+  oneof _random_name_c4
+  oneof _random_name_c5
+  oneof _random_name_c6
+  oneof _random_name_c7
+  oneof _random_name_c8
+  oneof _random_name_c9
+  oneof _version
+message BadFieldNames
+  field dup 1 1 5 - dup 0 1 -
+  field class 2 1 5 - class 1 1 -
+  oneof _dup
+  oneof _class
+message Inner8311
+  field foo 1 1 9 - foo 0 1 -
+  field bar 2 1 9 - bar 1 1 -
+  oneof _foo
+  oneof _bar
+message Outer8311
+  field inners 1 3 11 .basic_test.Inner8311 inners - 0 -
+message NpeMessage
+  field type 1 1 14 .basic_test.TestEnum9507 type 0 1 -
+  field other 2 1 9 - other 1 1 -
+  oneof _type
+  oneof _other
+enum TestEnum
+  value Default 0
+  value A 1
+  value B 2
+  value C 3
+  value v0 4
+enum TestDeprecatedEnum
+  value DefaultA 0
+  value AA 1
+enum TestEnum9507
+  value Something 0
+extension test_top_level_option 1000 1 9 - .google.protobuf.OneofOptions testTopLevelOption - 1 -

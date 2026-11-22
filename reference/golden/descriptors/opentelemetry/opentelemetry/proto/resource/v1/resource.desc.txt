@@ -1,0 +1,6 @@
+package opentelemetry.proto.resource.v1
+syntax proto3
+message Resource
+  field attributes 1 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+  field dropped_attributes_count 2 1 13 - droppedAttributesCount - 0 -
+  field entity_refs 3 3 11 .opentelemetry.proto.common.v1.EntityRef entityRefs - 0 -

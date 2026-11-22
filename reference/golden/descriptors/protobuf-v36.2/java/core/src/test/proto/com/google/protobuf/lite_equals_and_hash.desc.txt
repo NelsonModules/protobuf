@@ -1,0 +1,78 @@
+package proto2_unittest.lite_equals_and_hash
+syntax editions
+edition 2024
+message TestOneofEquals
+  field name 1 1 9 - name 0 0 -
+    resolved 1 0 9 0 0 -
+  field value 2 1 5 - value 0 0 -
+    resolved 1 0 5 - 0 -
+  oneof oneof_field
+message Foo
+  field value 1 1 5 - value - 0 -
+    resolved 1 0 5 - 0 -
+  field bar 2 3 11 .proto2_unittest.lite_equals_and_hash.Bar bar - 0 -
+    resolved 0 0 11 - 0 -
+  field my_map 3 3 11 .proto2_unittest.lite_equals_and_hash.Foo.MyMapEntry myMap - 0 -
+    resolved 0 0 11 - 0 -
+  field sint64 4 1 18 - sint64 0 0 -
+    resolved 1 0 18 - 0 -
+  field mygroup 5 1 11 .proto2_unittest.lite_equals_and_hash.Foo.MyGroup mygroup 0 0 -
+    resolved 1 0 10 - 0 -
+  message MyMapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 0 0 -
+    map_entry
+  message MyGroup
+    field value 1 1 5 - value - 0 -
+      resolved 1 0 5 - 0 -
+  oneof Single
+  extension_range 100 536870912
+message Bar
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  extension foo_ext 100 1 11 .proto2_unittest.lite_equals_and_hash.Bar .proto2_unittest.lite_equals_and_hash.Foo fooExt - 0 -
+    resolved 1 0 11 - 0 -
+message BarPrime
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+message Empty
+message MyGroup
+  field group_value 1 1 9 - groupValue - 0 -
+    resolved 1 0 9 0 0 -
+message TestRecursiveOneof
+  field r 1 1 11 .proto2_unittest.lite_equals_and_hash.TestRecursiveOneof r 0 0 -
+    resolved 1 0 11 - 0 -
+  oneof Foo
+message TestOneofWithMultipleVariants
+  field boolean_value 1 1 8 - booleanValue 0 0 -
+    resolved 1 0 8 - 0 -
+  field integer_value 2 1 3 - integerValue 0 0 -
+    resolved 1 0 3 - 0 -
+  field double_value 3 1 1 - doubleValue 0 0 -
+    resolved 1 0 1 - 0 -
+  field string_value 4 1 9 - stringValue 0 0 -
+    resolved 1 0 9 0 0 -
+  field bytes_value 5 1 12 - bytesValue 0 0 -
+    resolved 1 0 12 - 0 -
+  field nested_value 6 1 11 .proto2_unittest.lite_equals_and_hash.NestedValue nestedValue 0 0 -
+    resolved 1 0 11 - 0 -
+  oneof value_type
+message NestedValue
+  field fields 1 3 11 .proto2_unittest.lite_equals_and_hash.NestedValue.FieldsEntry fields - 0 -
+    resolved 0 0 11 - 0 -
+  message FieldsEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 11 .proto2_unittest.lite_equals_and_hash.TestOneofWithMultipleVariants value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+extension varint 101 1 5 - .proto2_unittest.lite_equals_and_hash.Foo varint - 0 -
+  resolved 1 0 5 - 0 -
+extension fixed32 102 1 7 - .proto2_unittest.lite_equals_and_hash.Foo fixed32 - 0 -
+  resolved 1 0 7 - 0 -
+extension fixed64 103 1 6 - .proto2_unittest.lite_equals_and_hash.Foo fixed64 - 0 -
+  resolved 1 0 6 - 0 -
+extension mygroup 104 1 11 .proto2_unittest.lite_equals_and_hash.MyGroup .proto2_unittest.lite_equals_and_hash.Foo mygroup - 0 -
+  resolved 1 0 10 - 0 -

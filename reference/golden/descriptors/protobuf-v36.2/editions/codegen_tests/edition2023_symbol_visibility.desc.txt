@@ -1,0 +1,10 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+message SymbolVisibilityMessage
+  message NestedMessage
+    field a 1 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    value NESTED_ENUM_UNKNOWN 0
+    value NESTED_ENUM_BAR 1

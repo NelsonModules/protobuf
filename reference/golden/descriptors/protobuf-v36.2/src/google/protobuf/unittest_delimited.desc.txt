@@ -1,0 +1,52 @@
+package editions_unittest
+syntax editions
+edition 1002
+message LengthPrefixed
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field b 2 1 5 - b - 0 -
+    resolved 1 0 5 - 0 -
+message NotGroupLikeScope
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field b 2 1 5 - b - 0 -
+    resolved 1 0 5 - 0 -
+message GroupLikeFileScope
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field b 2 1 5 - b - 0 -
+    resolved 1 0 5 - 0 -
+message TestDelimited
+  field lengthprefixed 1 1 11 .editions_unittest.TestDelimited.LengthPrefixed lengthprefixed - 0 -
+    resolved 1 0 11 - 0 -
+  field nested 2 1 11 .editions_unittest.TestDelimited nested - 0 -
+    resolved 1 0 10 - 0 -
+  field grouplike 3 1 11 .editions_unittest.TestDelimited.GroupLike grouplike - 0 -
+    resolved 1 0 10 - 0 -
+  field notgrouplike 4 1 11 .editions_unittest.TestDelimited.GroupLike notgrouplike - 0 -
+    resolved 1 0 10 - 0 -
+  field notgrouplikescope 5 1 11 .editions_unittest.NotGroupLikeScope notgrouplikescope - 0 -
+    resolved 1 0 10 - 0 -
+  field messageimport 6 1 11 .editions_unittest.MessageImport messageimport - 0 -
+    resolved 1 0 10 - 0 -
+  message LengthPrefixed
+    field a 1 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+    field b 2 1 5 - b - 0 -
+      resolved 1 0 5 - 0 -
+  message GroupLike
+    field a 1 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+    field b 2 1 5 - b - 0 -
+      resolved 1 0 5 - 0 -
+  extension_range 1000 536870912
+extension lengthprefixed 1004 1 11 .editions_unittest.LengthPrefixed .editions_unittest.TestDelimited lengthprefixed - 0 -
+  resolved 1 0 11 - 0 -
+extension grouplikefilescope 1000 1 11 .editions_unittest.GroupLikeFileScope .editions_unittest.TestDelimited grouplikefilescope - 0 -
+  resolved 1 0 10 - 0 -
+extension not_group_like_scope 1001 1 11 .editions_unittest.NotGroupLikeScope .editions_unittest.TestDelimited notGroupLikeScope - 0 -
+  resolved 1 0 10 - 0 -
+extension grouplike 1002 1 11 .editions_unittest.TestDelimited.GroupLike .editions_unittest.TestDelimited grouplike - 0 -
+  resolved 1 0 10 - 0 -
+extension messageimport 1003 1 11 .editions_unittest.MessageImport .editions_unittest.TestDelimited messageimport - 0 -
+  resolved 1 0 10 - 0 -

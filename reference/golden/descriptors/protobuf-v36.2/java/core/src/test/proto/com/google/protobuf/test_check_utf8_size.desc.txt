@@ -1,0 +1,17 @@
+package proto2_test_check_utf8_size
+syntax editions
+edition 2023
+message StringWrapperSize
+  field req 1 1 9 - req - 0 -
+    resolved 1 0 9 1 1 -
+  field opt 2 1 9 - opt - 0 -
+    resolved 1 0 9 1 0 -
+  field rep 3 3 9 - rep - 0 -
+    resolved 0 0 9 1 0 -
+message BytesWrapperSize
+  field req 1 1 12 - req - 0 -
+    resolved 1 0 12 - 1 -
+  field opt 2 1 12 - opt - 0 -
+    resolved 1 0 12 - 0 -
+  field rep 3 3 12 - rep - 0 -
+    resolved 0 0 12 - 0 -

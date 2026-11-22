@@ -1,0 +1,96 @@
+package A.B.C
+syntax proto3
+message TestMessage
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+  field optional_int64 2 1 3 - optionalInt64 - 0 -
+  field optional_uint32 3 1 13 - optionalUint32 - 0 -
+  field optional_uint64 4 1 4 - optionalUint64 - 0 -
+  field optional_bool 5 1 8 - optionalBool - 0 -
+  field optional_double 6 1 1 - optionalDouble - 0 -
+  field optional_float 7 1 2 - optionalFloat - 0 -
+  field optional_string 8 1 9 - optionalString - 0 -
+  field optional_bytes 9 1 12 - optionalBytes - 0 -
+  field optional_enum 10 1 14 .A.B.C.TestEnum optionalEnum - 0 -
+  field optional_msg 11 1 11 .A.B.C.TestMessage optionalMsg - 0 -
+  field optional_proto2_submessage 12 1 11 .A.B.C.TestImportedMessage optionalProto2Submessage - 0 -
+  field repeated_int32 21 3 5 - repeatedInt32 - 0 -
+  field repeated_int64 22 3 3 - repeatedInt64 - 0 -
+  field repeated_uint32 23 3 13 - repeatedUint32 - 0 -
+  field repeated_uint64 24 3 4 - repeatedUint64 - 0 -
+  field repeated_bool 25 3 8 - repeatedBool - 0 -
+  field repeated_double 26 3 1 - repeatedDouble - 0 -
+  field repeated_float 27 3 2 - repeatedFloat - 0 -
+  field repeated_string 28 3 9 - repeatedString - 0 -
+  field repeated_bytes 29 3 12 - repeatedBytes - 0 -
+  field repeated_enum 30 3 14 .A.B.C.TestEnum repeatedEnum - 0 -
+  field repeated_msg 31 3 11 .A.B.C.TestMessage repeatedMsg - 0 -
+  field oneof_int32 41 1 5 - oneofInt32 0 0 -
+  field oneof_int64 42 1 3 - oneofInt64 0 0 -
+  field oneof_uint32 43 1 13 - oneofUint32 0 0 -
+  field oneof_uint64 44 1 4 - oneofUint64 0 0 -
+  field oneof_bool 45 1 8 - oneofBool 0 0 -
+  field oneof_double 46 1 1 - oneofDouble 0 0 -
+  field oneof_float 47 1 2 - oneofFloat 0 0 -
+  field oneof_string 48 1 9 - oneofString 0 0 -
+  field oneof_bytes 49 1 12 - oneofBytes 0 0 -
+  field oneof_enum 50 1 14 .A.B.C.TestEnum oneofEnum 0 0 -
+  field oneof_msg 51 1 11 .A.B.C.TestMessage oneofMsg 0 0 -
+  field map_int32_string 61 3 11 .A.B.C.TestMessage.MapInt32StringEntry mapInt32String - 0 -
+  field map_int64_string 62 3 11 .A.B.C.TestMessage.MapInt64StringEntry mapInt64String - 0 -
+  field map_uint32_string 63 3 11 .A.B.C.TestMessage.MapUint32StringEntry mapUint32String - 0 -
+  field map_uint64_string 64 3 11 .A.B.C.TestMessage.MapUint64StringEntry mapUint64String - 0 -
+  field map_bool_string 65 3 11 .A.B.C.TestMessage.MapBoolStringEntry mapBoolString - 0 -
+  field map_string_string 66 3 11 .A.B.C.TestMessage.MapStringStringEntry mapStringString - 0 -
+  field map_string_msg 67 3 11 .A.B.C.TestMessage.MapStringMsgEntry mapStringMsg - 0 -
+  field map_string_enum 68 3 11 .A.B.C.TestMessage.MapStringEnumEntry mapStringEnum - 0 -
+  field map_string_int32 69 3 11 .A.B.C.TestMessage.MapStringInt32Entry mapStringInt32 - 0 -
+  field map_string_bool 70 3 11 .A.B.C.TestMessage.MapStringBoolEntry mapStringBool - 0 -
+  field nested_message 80 1 11 .A.B.C.TestMessage.NestedMessage nestedMessage - 0 -
+  message MapInt32StringEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapInt64StringEntry
+    field key 1 1 3 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapUint32StringEntry
+    field key 1 1 13 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapUint64StringEntry
+    field key 1 1 4 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapBoolStringEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapStringStringEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapStringMsgEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .A.B.C.TestMessage value - 0 -
+    map_entry
+  message MapStringEnumEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 14 .A.B.C.TestEnum value - 0 -
+    map_entry
+  message MapStringInt32Entry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message MapStringBoolEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 8 - value - 0 -
+    map_entry
+  message NestedMessage
+    field foo 1 1 5 - foo - 0 -
+  oneof my_oneof
+enum TestEnum
+  value Default 0
+  value A 1
+  value B 2
+  value C 3

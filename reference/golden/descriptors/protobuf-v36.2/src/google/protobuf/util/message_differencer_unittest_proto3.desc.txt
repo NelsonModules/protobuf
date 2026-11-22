@@ -1,0 +1,9 @@
+package proto3_unittest
+syntax proto3
+message TestNoPresenceField
+  field no_presence_bool 1 1 8 - noPresenceBool - 0 -
+  field no_presence_nested 2 1 11 .proto3_unittest.TestNoPresenceField noPresenceNested - 0 -
+  field no_presence_repeated_nested 3 3 11 .proto3_unittest.TestNoPresenceField noPresenceRepeatedNested - 0 -
+  field no_presence_string 4 1 9 - noPresenceString - 0 -
+  field no_presence_bool2 5 1 8 - noPresenceBool2 - 0 -
+  field no_presence_bool3 6 1 8 - noPresenceBool3 - 0 -

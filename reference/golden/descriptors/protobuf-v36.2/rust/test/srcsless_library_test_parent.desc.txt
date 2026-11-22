@@ -1,0 +1,6 @@
+package srcsless_library_test
+syntax editions
+edition 2023
+message Parent
+  field child 1 1 11 .srcsless_library_test.Child child - 0 -
+    resolved 1 0 11 - 0 -

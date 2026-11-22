@@ -1,0 +1,101 @@
+package pb
+syntax editions
+edition 2024
+message CustomOptionLifetimesMessage
+  field custom_enum 1 1 14 .pb.CustomOptionLifetimesEnum customEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field repeated_custom_enum 2 3 14 .pb.CustomOptionLifetimesEnum repeatedCustomEnum - 0 -
+    resolved 0 1 14 - 0 -
+message TestMessage
+  extension test_message 9998 1 11 .pb.TestMessageFeatures .google.protobuf.FeatureSet testMessage - 0 -
+    resolved 1 0 11 - 0 -
+  message Nested
+    extension test_nested 9997 1 11 .pb.TestNestedFeatures .google.protobuf.FeatureSet testNested - 0 -
+      resolved 1 0 11 - 0 -
+message TestMessageFeatures
+  field file_feature 1 1 14 .pb.EnumFeature fileFeature - 0 -
+    resolved 1 0 14 - 0 -
+message TestNestedFeatures
+  field file_feature 1 1 14 .pb.EnumFeature fileFeature - 0 -
+    resolved 1 0 14 - 0 -
+message TestFeatures
+  field file_feature 1 1 14 .pb.EnumFeature fileFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field extension_range_feature 2 1 14 .pb.EnumFeature extensionRangeFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field message_feature 3 1 14 .pb.EnumFeature messageFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field field_feature 4 1 14 .pb.EnumFeature fieldFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field oneof_feature 5 1 14 .pb.EnumFeature oneofFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field enum_feature 6 1 14 .pb.EnumFeature enumFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field enum_entry_feature 7 1 14 .pb.EnumFeature enumEntryFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field service_feature 8 1 14 .pb.EnumFeature serviceFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field method_feature 9 1 14 .pb.EnumFeature methodFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field multiple_feature 10 1 14 .pb.EnumFeature multipleFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field bool_field_feature 11 1 8 - boolFieldFeature - 0 -
+    resolved 1 0 8 - 0 -
+  field source_feature 15 1 14 .pb.EnumFeature sourceFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field source_feature2 16 1 14 .pb.EnumFeature sourceFeature2 - 0 -
+    resolved 1 0 14 - 0 -
+  field removed_feature 17 1 14 .pb.EnumFeature removedFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field same_edition_removed_feature 21 1 14 .pb.EnumFeature sameEditionRemovedFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field future_feature 18 1 14 .pb.EnumFeature futureFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field legacy_feature 19 1 14 .pb.EnumFeature legacyFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field value_lifetime_feature 20 1 14 .pb.ValueLifetimeFeature valueLifetimeFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field new_unstable_feature 22 1 14 .pb.UnstableEnumFeature newUnstableFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field unstable_existing_feature 23 1 14 .pb.UnstableEnumFeature unstableExistingFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field removed_unstable_feature 24 1 14 .pb.UnstableEnumFeature removedUnstableFeature - 0 -
+    resolved 1 0 14 - 0 -
+enum CustomOptionLifetimesEnum
+  value TEST_CUSTOM_OPTION 0
+  value CUSTOM_OPTION1 1
+enum EnumFeature
+  value TEST_ENUM_FEATURE_UNKNOWN 0
+  value VALUE1 1
+  value VALUE2 2
+  value VALUE3 3
+  value VALUE4 4
+  value VALUE5 5
+  value VALUE6 6
+  value VALUE7 7
+  value VALUE8 8
+  value VALUE9 9
+  value VALUE10 10
+  value VALUE11 11
+  value VALUE12 12
+  value VALUE13 13
+  value VALUE14 14
+  value VALUE15 15
+enum UnstableEnumFeature
+  value TEST_UNSTABLE_ENUM_FEATURE_UNKNOWN 0
+  value UNSTABLE1 1
+  value UNSTABLE2 2
+  value UNSTABLE3 3
+  value UNSTABLE4 4
+enum ValueLifetimeFeature
+  value TEST_VALUE_LIFETIME_UNKNOWN 0
+  value VALUE_LIFETIME_INHERITED 1
+  value VALUE_LIFETIME_SUPPORT 2
+  value VALUE_LIFETIME_EMPTY_SUPPORT 3
+  value VALUE_LIFETIME_FUTURE 4
+  value VALUE_LIFETIME_DEPRECATED 5
+  value VALUE_LIFETIME_REMOVED 6
+extension custom_option_lifetimes_message 7737012 1 11 .pb.CustomOptionLifetimesMessage .google.protobuf.MessageOptions customOptionLifetimesMessage - 0 -
+  resolved 1 0 11 - 0 -
+extension test 9999 1 11 .pb.TestFeatures .google.protobuf.FeatureSet test - 0 -
+  resolved 1 0 11 - 0 -

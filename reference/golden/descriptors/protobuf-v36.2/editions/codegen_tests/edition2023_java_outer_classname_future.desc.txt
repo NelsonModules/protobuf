@@ -1,0 +1,15 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+message Edition2023OuterClassnameFutureMessage
+  field foo 1 1 5 - foo - 0 -
+    resolved 1 0 5 - 0 -
+  message NestedMessage
+    field bar 1 1 5 - bar - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    value NESTED_ENUM_UNKNOWN 0
+enum Edition2023OuterClassnameFutureEnum
+  value JAVA_OUTERCLASSNAME_FUTURE_ENUM_UNKNOWN 0
+service Edition2023OuterclassnameFutureService
+  method Method .protobuf_editions_test.edition2023.Edition2023OuterClassnameFutureMessage.NestedMessage .protobuf_editions_test.edition2023.Edition2023OuterClassnameFutureMessage 0 0

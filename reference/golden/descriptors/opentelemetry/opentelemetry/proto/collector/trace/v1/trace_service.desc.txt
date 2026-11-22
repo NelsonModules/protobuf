@@ -1,0 +1,11 @@
+package opentelemetry.proto.collector.trace.v1
+syntax proto3
+message ExportTraceServiceRequest
+  field resource_spans 1 3 11 .opentelemetry.proto.trace.v1.ResourceSpans resourceSpans - 0 -
+message ExportTraceServiceResponse
+  field partial_success 1 1 11 .opentelemetry.proto.collector.trace.v1.ExportTracePartialSuccess partialSuccess - 0 -
+message ExportTracePartialSuccess
+  field rejected_spans 1 1 3 - rejectedSpans - 0 -
+  field error_message 2 1 9 - errorMessage - 0 -
+service TraceService
+  method Export .opentelemetry.proto.collector.trace.v1.ExportTraceServiceRequest .opentelemetry.proto.collector.trace.v1.ExportTraceServiceResponse 0 0

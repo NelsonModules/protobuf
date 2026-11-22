@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.fields</keyword>
+  <short_description>Table des champs d'un type de message.</short_description>
+  <syntax>
+    <syntax_item>T = protobuf.fields(schema, type)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema</param_name>
+      <param_description>un objet protobuf.Schema renvoyé par protobuf.load.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>type</param_name>
+      <param_description>le type de message : un nom complet comme 'pkg.Outer.Inner', ou une fin de nom unique comme 'Inner'.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>T</param_name>
+      <param_description>une table avec une ligne par champ et les variables Name, Number, Type, TypeName, Repeated, Map, Presence, Oneof, JsonName, Required (champ requis hérité d'un fichier editions), Default (valeur que représente un champ absent, quand le schéma en fixe une), Options (tableau de structures des autres options écrites dans le texte .proto, options personnalisées comprises, avec Name et Value en texte et Decoded, la valeur typée quand google/protobuf/descriptor.proto et l'extension de l'option sont chargés, [] sinon) et Extension (le nom complet d'une extension, "" pour un champ du message). Les extensions du message sont listées en lignes aussi.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.fields renvoie la structure d'un type de message : le nom, le numéro, le type et les labels de chaque champ, le oneof auquel il appartient, le nom JSON, la valeur par défaut et les options écrites dans le texte .proto.</p>
+    <p>Les options personnalisées comme [(units) = "mbar"] apparaissent dans Options avec leur valeur décodée quand google/protobuf/descriptor.proto et l'extension de l'option sont chargés. Les extensions du message sont listées avec leur nom complet dans Extension.</p>
+    <p>Pour les valeurs d'un type d'énumération, voir protobuf.enums.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Champs d'un type de message</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+protobuf.fields(schema, 'Event')
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.enums">protobuf.enums</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.load">protobuf.load</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

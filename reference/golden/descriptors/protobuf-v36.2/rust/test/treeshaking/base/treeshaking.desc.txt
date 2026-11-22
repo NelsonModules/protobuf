@@ -1,0 +1,6 @@
+package rust_protobuf_base.treeshaking
+syntax proto3
+message UsedMessage
+  field id 1 1 5 - id - 0 -
+message UnusedMessage
+  field secret_data 1 1 9 - secretData - 0 -

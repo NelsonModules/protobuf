@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.read</keyword>
+  <short_description>Decode a protobuf file, an open file identifier or a ZIP entry.</short_description>
+  <syntax>
+    <syntax_item>[value, presence, report] = protobuf.read(schema, type, filename, name, value, ...)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.read(schema, type, fid, name, value, ...)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.read(schema, type, z, 'Entry', entryname, name, value, ...)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.read(schema, type, filename, 'Delimited', true, 'Records', [first last], 'Index', indexfile)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>a schema from protobuf.load and a message type.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>filename, fid, z</param_name>
+      <param_description>a data file name, an open file identifier read from its position to the end, or a nelson.io.ZipArchive open for reading with 'Entry', name.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Records'</param_name>
+      <param_description>[first last] with 'Delimited': only these records are decoded (last can be Inf). With an up to date index, the read starts from the nearest indexed record instead of reading all the records before it.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Index'</param_name>
+      <param_description>another index file to use (protobuf.index); the default one, named after the data file with .pbidx, is found by itself.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Where'</param_name>
+      <param_description>a function handle, with 'Delimited': each block is filtered by the columns it receives, so a large file is read without loading it whole.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Progress'</param_name>
+      <param_description>a function handle f(n, total) called after each 8 MiB block read (bytes read, file size).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>other options</param_name>
+      <param_description>'Delimited', 'Layout', 'Fields', 'WellKnownTypes', 'EnumsAsText', 'FillDefaults', 'MissingAsNaN', 'OnError', 'Workers', 'KeepUnknown', as protobuf.decode.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>value, presence, report</param_name>
+      <param_description>as protobuf.decode.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.read decodes Protocol Buffers data from a file, an open file identifier or a ZIP entry, with the same options as protobuf.decode. A file is mapped in memory instead of being read whole: its pages are read as the decoder needs them, so a large file uses a bounded amount of memory.</p>
+    <p>With 'Records' and an index written by protobuf.index, the read jumps to the first wanted record instead of reading every record before it. An index is used only while the file keeps the size and modification time it had when the index was written.</p>
+    <p>'Where' filters a stream block by block while it is read, which selects records from a large file without loading it whole.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Write records and read them back as columns</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+records = struct('timestamp_ms', {1000, 1040, 1080}, 'pressure', {single(5.2), [], single(5.6)});
+filename = [tempdir(), 'samples.bin'];
+protobuf.write(schema, 'SensorSample', filename, records, 'Delimited', true);
+[C, present] = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns');
+C.pressure
+present.pressure
+delete(filename);
+]]></example_item_data>
+    </example_item>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Filter a stream while reading it, and select fields of a sub-message</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+filename = [modulepath('protobuf'), '/tests/data/golden/sensor_stream.nelson.test.sensors.SensorSample.binpb'];
+C = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns', ...
+  'Fields', {'status', 'diagnostics.drift'}, 'Where', @(C) C.status > 0)
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.write">protobuf.write</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.index">protobuf.index</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

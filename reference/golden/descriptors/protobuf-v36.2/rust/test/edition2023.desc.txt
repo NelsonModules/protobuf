@@ -1,0 +1,14 @@
+package test
+syntax editions
+edition 2023
+message EditionsMessage
+  field plain_field 1 1 5 - plainField - 0 -
+    resolved 1 0 5 - 0 -
+  field implicit_presence_field 2 1 5 - implicitPresenceField - 0 -
+    resolved 0 0 5 - 0 -
+  field str_view 3 1 9 - strView - 0 -
+    resolved 1 0 9 1 0 -
+  field repeated_str_view 4 3 9 - repeatedStrView - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_str 5 3 9 - repeatedStr - 0 -
+    resolved 0 0 9 1 0 -

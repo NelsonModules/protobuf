@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.decode</keyword>
+  <short_description>Decode protobuf bytes to structs, columns, a table or a timetable.</short_description>
+  <syntax>
+    <syntax_item>value = protobuf.decode(schema, type, bytes)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.decode(schema, type, bytes, name, value, ...)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.decode(schema, type, bytes, 'Delimited', true, 'Layout', 'columns')</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>a schema from protobuf.load and a message type (full name or a unique trailing part).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>bytes</param_name>
+      <param_description>a uint8 vector: encoded data, one message or a length-delimited stream with 'Delimited'.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Delimited'</param_name>
+      <param_description>logical (default false): the bytes are a stream of records, each one prefixed by its size as a varint.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Layout'</param_name>
+      <param_description>'struct' (default, a 1xN struct array), 'columns' (a scalar struct of Nx1 columns with a presence output), 'table' or 'timetable'.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Fields'</param_name>
+      <param_description>a field name or a list of names: only these are decoded. 'a.b' selects field b of the sub-message a at any depth.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'WellKnownTypes', 'EnumsAsText', 'FillDefaults', 'MissingAsNaN'</param_name>
+      <param_description>control the mapping: Timestamp/Duration/wrappers as native values, enums as names, absent fields as their default, missing integers as NaN. See the protobuf page.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'OnError', 'Workers', 'KeepUnknown'</param_name>
+      <param_description>'skip' drops bad records (counted in report.Skipped), 'Workers' sets the decoding threads, 'KeepUnknown' keeps unknown fields in UnknownFields.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>value</param_name>
+      <param_description>the decoded data in the requested layout.</param_description>
+    </param_output_item>
+    <param_output_item>
+      <param_name>presence</param_name>
+      <param_description>columns layouts: a struct of Nx1 logical columns, true where a value is present, for fields that can be missing.</param_description>
+    </param_output_item>
+    <param_output_item>
+      <param_name>report</param_name>
+      <param_description>a struct with the fields Type, Records and Skipped.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.decode reads Protocol Buffers bytes back into Nelson values. A single message gives a struct; with 'Delimited', a stream gives a struct array, or columns, a table or a timetable with 'Layout'. Large streams are decoded on several threads.</p>
+    <p>The columns layouts return a presence output beside the data, so a value that is present but zero is told from one that is absent. Given back to protobuf.encode with 'Presence', the columns encode to the same bytes.</p>
+    <p>protobuf.read decodes straight from a file, a file identifier or a ZIP entry with the same options.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Decode a stream as columns with a presence output</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+records = struct('timestamp_ms', {1000, 1040, 1080}, 'pressure', {single(5.2), [], single(5.6)});
+bytes = protobuf.encode(schema, 'SensorSample', records, 'Delimited', true);
+[C, present] = protobuf.decode(schema, 'SensorSample', bytes, 'Delimited', true, 'Layout', 'columns');
+C.pressure
+present.pressure
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.encode">protobuf.encode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.read">protobuf.read</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Decoder">protobuf.Decoder</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

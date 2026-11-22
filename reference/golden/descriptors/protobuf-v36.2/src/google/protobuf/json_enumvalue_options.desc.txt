@@ -1,0 +1,8 @@
+package pb.enumvalue
+syntax editions
+edition 2024
+message JsonEnumValueOptions
+  field string 1 1 9 - string - 0 -
+    resolved 1 0 9 1 0 -
+extension json 998 1 11 .pb.enumvalue.JsonEnumValueOptions .google.protobuf.EnumValueOptions json - 0 -
+  resolved 1 0 11 - 0 -

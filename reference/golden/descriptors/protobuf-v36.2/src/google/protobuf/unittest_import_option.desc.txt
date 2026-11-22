@@ -1,0 +1,6 @@
+package proto2_unittest_import_option
+syntax editions
+edition 2024
+message TestMessage
+  field field1 1 1 5 - field1 - 0 -
+    resolved 1 0 5 - 0 -

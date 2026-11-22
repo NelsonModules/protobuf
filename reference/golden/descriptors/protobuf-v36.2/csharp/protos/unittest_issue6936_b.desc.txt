@@ -1,0 +1,3 @@
+package unittest_issues
+syntax proto3
+message Foo

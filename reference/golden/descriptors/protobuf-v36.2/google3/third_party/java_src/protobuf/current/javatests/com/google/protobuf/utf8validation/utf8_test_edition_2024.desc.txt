@@ -1,0 +1,41 @@
+package utf8validation.edition2024
+syntax editions
+edition 2024
+message Utf8TestEdition2024
+  field global_unset_java_unset 1 1 9 - globalUnsetJavaUnset - 0 -
+    resolved 1 0 9 1 0 -
+  field global_unset_java_default 2 1 9 - globalUnsetJavaDefault - 0 -
+    resolved 1 0 9 1 0 -
+  field global_unset_java_verify 3 1 9 - globalUnsetJavaVerify - 0 -
+    resolved 1 0 9 1 0 -
+  field global_verify_java_unset 4 1 9 - globalVerifyJavaUnset - 0 -
+    resolved 1 0 9 1 0 -
+  field global_verify_java_default 5 1 9 - globalVerifyJavaDefault - 0 -
+    resolved 1 0 9 1 0 -
+  field global_verify_java_verify 6 1 9 - globalVerifyJavaVerify - 0 -
+    resolved 1 0 9 1 0 -
+  field global_none_java_unset 7 1 9 - globalNoneJavaUnset - 0 -
+    resolved 1 0 9 0 0 -
+  field global_none_java_default 8 1 9 - globalNoneJavaDefault - 0 -
+    resolved 1 0 9 0 0 -
+  field global_none_java_verify 9 1 9 - globalNoneJavaVerify - 0 -
+    resolved 1 0 9 0 0 -
+  extension_range 100 201
+extension ext_global_unset_java_unset 101 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalUnsetJavaUnset - 0 -
+  resolved 1 0 9 1 0 -
+extension ext_global_unset_java_default 102 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalUnsetJavaDefault - 0 -
+  resolved 1 0 9 1 0 -
+extension ext_global_unset_java_verify 103 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalUnsetJavaVerify - 0 -
+  resolved 1 0 9 1 0 -
+extension ext_global_verify_java_unset 104 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalVerifyJavaUnset - 0 -
+  resolved 1 0 9 1 0 -
+extension ext_global_verify_java_default 105 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalVerifyJavaDefault - 0 -
+  resolved 1 0 9 1 0 -
+extension ext_global_verify_java_verify 106 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalVerifyJavaVerify - 0 -
+  resolved 1 0 9 1 0 -
+extension ext_global_none_java_unset 107 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalNoneJavaUnset - 0 -
+  resolved 1 0 9 0 0 -
+extension ext_global_none_java_default 108 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalNoneJavaDefault - 0 -
+  resolved 1 0 9 0 0 -
+extension ext_global_none_java_verify 109 1 9 - .utf8validation.edition2024.Utf8TestEdition2024 extGlobalNoneJavaVerify - 0 -
+  resolved 1 0 9 0 0 -

@@ -1,0 +1,23 @@
+package google.api
+syntax proto3
+message ResourceDescriptor
+  field type 1 1 9 - type - 0 -
+  field pattern 2 3 9 - pattern - 0 -
+  field name_field 3 1 9 - nameField - 0 -
+  field history 4 1 14 .google.api.ResourceDescriptor.History history - 0 -
+  field plural 5 1 9 - plural - 0 -
+  field singular 6 1 9 - singular - 0 -
+  field style 10 3 14 .google.api.ResourceDescriptor.Style style - 0 -
+  enum History
+    value HISTORY_UNSPECIFIED 0
+    value ORIGINALLY_SINGLE_PATTERN 1
+    value FUTURE_MULTI_PATTERN 2
+  enum Style
+    value STYLE_UNSPECIFIED 0
+    value DECLARATIVE_FRIENDLY 1
+message ResourceReference
+  field type 1 1 9 - type - 0 -
+  field child_type 2 1 9 - childType - 0 -
+extension resource_reference 1055 1 11 .google.api.ResourceReference .google.protobuf.FieldOptions resourceReference - 0 -
+extension resource_definition 1053 3 11 .google.api.ResourceDescriptor .google.protobuf.FileOptions resourceDefinition - 0 -
+extension resource 1053 1 11 .google.api.ResourceDescriptor .google.protobuf.MessageOptions resource - 0 -

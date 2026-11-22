@@ -1,0 +1,4 @@
+package protobuf_editions_test.proto3
+syntax proto3
+message Proto3ImportMessage
+  field sub_message_field 1 1 11 .protobuf_editions_test.proto3.Proto3Implicit subMessageField - 0 -

@@ -1,0 +1,168 @@
+package lower_enum
+syntax proto3
+enum abstract
+  value ZERO1 0
+enum and
+  value ZERO2 0
+enum array
+  value ZERO3 0
+enum as
+  value ZERO4 0
+enum bool
+  value ZERO5 0
+enum break
+  value ZERO6 0
+enum callable
+  value ZERO7 0
+enum case
+  value ZERO8 0
+enum catch
+  value ZERO9 0
+enum class
+  value ZERO10 0
+enum clone
+  value ZERO11 0
+enum const
+  value ZERO12 0
+enum continue
+  value ZERO13 0
+enum declare
+  value ZERO14 0
+enum default
+  value ZERO15 0
+enum die
+  value ZERO16 0
+enum do
+  value ZERO17 0
+enum echo
+  value ZERO18 0
+enum else
+  value ZERO19 0
+enum elseif
+  value ZERO20 0
+enum empty
+  value ZERO21 0
+enum enddeclare
+  value ZERO22 0
+enum endfor
+  value ZERO23 0
+enum endforeach
+  value ZERO24 0
+enum endif
+  value ZERO25 0
+enum endswitch
+  value ZERO26 0
+enum endwhile
+  value ZERO27 0
+enum eval
+  value ZERO28 0
+enum exit
+  value ZERO29 0
+enum extends
+  value ZERO30 0
+enum false
+  value ZERO31 0
+enum final
+  value ZERO32 0
+enum finally
+  value ZERO33 0
+enum float
+  value ZERO34 0
+enum fn
+  value ZERO35 0
+enum for
+  value ZERO36 0
+enum foreach
+  value ZERO37 0
+enum function
+  value ZERO38 0
+enum global
+  value ZERO39 0
+enum goto
+  value ZERO40 0
+enum if
+  value ZERO41 0
+enum implements
+  value ZERO42 0
+enum include
+  value ZERO43 0
+enum include_once
+  value ZERO44 0
+enum instanceof
+  value ZERO45 0
+enum insteadof
+  value ZERO46 0
+enum int
+  value ZERO47 0
+enum interface
+  value ZERO48 0
+enum isset
+  value ZERO49 0
+enum iterable
+  value ZERO50 0
+enum list
+  value ZERO51 0
+enum match
+  value ZERO52 0
+enum mixed
+  value ZERO53 0
+enum namespace
+  value ZERO54 0
+enum never
+  value ZERO55 0
+enum new
+  value ZERO56 0
+enum null
+  value ZERO57 0
+enum object
+  value ZERO58 0
+enum or
+  value ZERO59 0
+enum parent
+  value ZERO60 0
+enum print
+  value ZERO61 0
+enum private
+  value ZERO62 0
+enum protected
+  value ZERO63 0
+enum public
+  value ZERO64 0
+enum readonly
+  value ZERO65 0
+enum require
+  value ZERO66 0
+enum require_once
+  value ZERO67 0
+enum return
+  value ZERO68 0
+enum self
+  value ZERO69 0
+enum static
+  value ZERO70 0
+enum string
+  value ZERO71 0
+enum switch
+  value ZERO72 0
+enum throw
+  value ZERO73 0
+enum trait
+  value ZERO74 0
+enum true
+  value ZERO75 0
+enum try
+  value ZERO76 0
+enum unset
+  value ZERO77 0
+enum use
+  value ZERO78 0
+enum var
+  value ZERO79 0
+enum void
+  value ZERO80 0
+enum while
+  value ZERO81 0
+enum xor
+  value ZERO82 0
+enum yield
+  value ZERO83 0

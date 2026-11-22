@@ -1,0 +1,14 @@
+package protobuf_editions_test.proto3
+syntax proto3
+message Proto3EnumMessage
+  field enum_field 1 1 14 .protobuf_editions_test.proto3.Proto3Enum enumField - 0 -
+  field nested_enum_field 3 1 14 .protobuf_editions_test.proto3.Proto3EnumMessage.Proto3NestedEnum nestedEnumField 0 1 -
+  enum Proto3NestedEnum
+    value UNKNOWN 0
+    value FOO 1
+    value BAT 2
+  oneof _nested_enum_field
+enum Proto3Enum
+  value UNKNOWN 0
+  value BAR 1
+  value BAZ 2

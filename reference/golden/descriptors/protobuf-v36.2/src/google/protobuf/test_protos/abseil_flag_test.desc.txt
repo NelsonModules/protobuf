@@ -1,0 +1,20 @@
+package proto2_unittest
+syntax editions
+edition 2024
+message AbseilFlagTestProto
+  field i 1 1 5 - i - 0 -
+    resolved 1 0 5 - 0 -
+  field e 100 1 14 .proto2_unittest.OpenEnumForFlagTest e - 0 -
+    resolved 1 0 14 - 0 -
+  extension ext 1000 1 5 - .proto2_unittest.AbseilFlagTestProto ext - 0 -
+    resolved 1 0 5 - 0 -
+  extension_range 1000 10001
+message MessageWithConflictingFlagPrefixes
+  field text 1 1 5 - text - 0 -
+    resolved 1 0 5 - 0 -
+  field base64text 2 1 5 - base64text - 0 -
+    resolved 1 0 5 - 0 -
+  field base64serialized 3 1 5 - base64serialized - 0 -
+    resolved 1 0 5 - 0 -
+enum OpenEnumForFlagTest
+  value OPEN_ENUM_FOR_FLAG_TEST_DEFAULT 0

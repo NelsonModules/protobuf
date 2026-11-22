@@ -1,0 +1,46 @@
+package upb_test
+syntax editions
+edition 2023
+message DebugStringTestMessage
+  field int32_field 1 1 5 - int32Field - 0 -
+    resolved 1 0 5 - 0 -
+  field packed_int64_field 2 3 3 - packedInt64Field - 0 -
+    resolved 0 1 3 - 0 -
+  field repeated_int64_field 3 3 3 - repeatedInt64Field - 0 -
+    resolved 0 0 3 - 0 -
+  field map_field 4 3 11 .upb_test.DebugStringTestMessage.MapFieldEntry mapField - 0 -
+    resolved 0 0 11 - 0 -
+  field required_field 5 1 5 - requiredField - 0 -
+    resolved 1 0 5 - 1 -
+  field implicit_presence_field 6 1 5 - implicitPresenceField - 0 -
+    resolved 0 0 5 - 0 -
+  field closed_enum_field 7 1 14 .upb_test.ClosedEnum closedEnumField - 0 -
+    resolved 1 0 14 - 0 -
+  field open_enum_field 8 1 14 .upb_test.OpenEnum openEnumField - 0 -
+    resolved 1 0 14 - 0 -
+  field utf8_validated_string_field 9 1 9 - utf8ValidatedStringField - 0 -
+    resolved 1 0 9 1 0 -
+  field utf8_invalid_string_field 10 1 9 - utf8InvalidStringField - 0 -
+    resolved 1 0 9 0 0 -
+  field sub_message_field 11 1 11 .upb_test.SubMessage subMessageField - 0 -
+    resolved 1 0 11 - 0 -
+  field bool_field 12 1 8 - boolField - 0 -
+    resolved 1 0 8 - 0 -
+  message MapFieldEntry
+    field key 1 1 13 - key - 0 -
+      resolved 1 0 13 - 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 1 0 13 - 0 -
+    map_entry
+message SubMessage
+  field cycle_field 1 1 11 .upb_test.DebugStringTestMessage cycleField - 0 -
+    resolved 1 0 11 - 0 -
+enum OpenEnum
+  value OPEN_ENUM_UNSPECIFIED 0
+  value OPEN_ENUM_FOO 1
+  value OPEN_ENUM_BAR 2
+enum ClosedEnum
+  closed
+  value CLOSED_ENUM_UNSPECIFIED 0
+  value CLOSED_ENUM_FOO 1
+  value CLOSED_ENUM_BAR 2

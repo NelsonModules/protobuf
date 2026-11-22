@@ -1,0 +1,9 @@
+package stress_test_protos
+syntax proto3
+message TestMessage
+  field a 1 1 5 - a 0 1 -
+  field b 2 3 11 .stress_test_protos.M b - 0 -
+  oneof _a
+message M
+  field foo 1 1 9 - foo 0 1 -
+  oneof _foo

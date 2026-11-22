@@ -1,0 +1,48 @@
+package google.protobuf.python.internal
+syntax proto3
+message TestProto3Optional
+  field optional_int32 1 1 5 - optionalInt32 0 1 -
+  field optional_int64 2 1 3 - optionalInt64 1 1 -
+  field optional_uint32 3 1 13 - optionalUint32 2 1 -
+  field optional_uint64 4 1 4 - optionalUint64 3 1 -
+  field optional_sint32 5 1 17 - optionalSint32 4 1 -
+  field optional_sint64 6 1 18 - optionalSint64 5 1 -
+  field optional_fixed32 7 1 7 - optionalFixed32 6 1 -
+  field optional_fixed64 8 1 6 - optionalFixed64 7 1 -
+  field optional_sfixed32 9 1 15 - optionalSfixed32 8 1 -
+  field optional_sfixed64 10 1 16 - optionalSfixed64 9 1 -
+  field optional_float 11 1 2 - optionalFloat 10 1 -
+  field optional_double 12 1 1 - optionalDouble 11 1 -
+  field optional_bool 13 1 8 - optionalBool 12 1 -
+  field optional_string 14 1 9 - optionalString 13 1 -
+  field optional_bytes 15 1 12 - optionalBytes 14 1 -
+  field optional_nested_message 18 1 11 .google.protobuf.python.internal.TestProto3Optional.NestedMessage optionalNestedMessage 15 1 -
+  field optional_nested_enum 21 1 14 .google.protobuf.python.internal.TestProto3Optional.NestedEnum optionalNestedEnum 16 1 -
+  field repeated_int32 22 3 5 - repeatedInt32 - 0 -
+  field repeated_nested_message 23 3 11 .google.protobuf.python.internal.TestProto3Optional.NestedMessage repeatedNestedMessage - 0 -
+  message NestedMessage
+    field bb 1 1 5 - bb 0 1 -
+    oneof _bb
+  enum NestedEnum
+    value UNSPECIFIED 0
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+    value NEG -1
+  oneof _optional_int32
+  oneof _optional_int64
+  oneof _optional_uint32
+  oneof _optional_uint64
+  oneof _optional_sint32
+  oneof _optional_sint64
+  oneof _optional_fixed32
+  oneof _optional_fixed64
+  oneof _optional_sfixed32
+  oneof _optional_sfixed64
+  oneof _optional_float
+  oneof _optional_double
+  oneof _optional_bool
+  oneof _optional_string
+  oneof _optional_bytes
+  oneof _optional_nested_message
+  oneof _optional_nested_enum

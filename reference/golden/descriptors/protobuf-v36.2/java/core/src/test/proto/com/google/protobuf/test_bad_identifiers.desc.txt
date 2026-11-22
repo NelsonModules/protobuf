@@ -1,0 +1,190 @@
+package io_protocol_tests
+syntax editions
+edition 2023
+message ForbiddenWordsUnderscoreMessage
+  field class 1 1 8 - class - 0 -
+    resolved 1 0 8 - 0 -
+  field default_instance_for_type 2 1 8 - defaultInstanceForType - 0 -
+    resolved 1 0 8 - 0 -
+  field parser_for_type 3 1 8 - parserForType - 0 -
+    resolved 1 0 8 - 0 -
+  field serialized_size 4 1 8 - serializedSize - 0 -
+    resolved 1 0 8 - 0 -
+  field all_fields 5 1 8 - allFields - 0 -
+    resolved 1 0 8 - 0 -
+  field descriptor_for_type 6 1 8 - descriptorForType - 0 -
+    resolved 1 0 8 - 0 -
+  field initialization_error_string 7 1 8 - initializationErrorString - 0 -
+    resolved 1 0 8 - 0 -
+  field unknown_fields 8 1 8 - unknownFields - 0 -
+    resolved 1 0 8 - 0 -
+  field cached_size 9 1 8 - cachedSize - 0 -
+    resolved 1 0 8 - 0 -
+message ForbiddenWordsLeadingUnderscoreMessage
+  field _class 1 1 8 - Class - 0 -
+    resolved 1 0 8 - 0 -
+  field _default_instance_for_type 2 1 8 - DefaultInstanceForType - 0 -
+    resolved 1 0 8 - 0 -
+  field _parser_for_type 3 1 8 - ParserForType - 0 -
+    resolved 1 0 8 - 0 -
+  field _serialized_size 4 1 8 - SerializedSize - 0 -
+    resolved 1 0 8 - 0 -
+  field _all_fields 5 1 8 - AllFields - 0 -
+    resolved 1 0 8 - 0 -
+  field _descriptor_for_type 6 1 8 - DescriptorForType - 0 -
+    resolved 1 0 8 - 0 -
+  field _initialization_error_string 7 1 8 - InitializationErrorString - 0 -
+    resolved 1 0 8 - 0 -
+  field _cached_size 9 1 8 - CachedSize - 0 -
+    resolved 1 0 8 - 0 -
+message ForbiddenWordsCamelMessage
+  field class 1 1 8 - class - 0 -
+    resolved 1 0 8 - 0 -
+  field defaultInstanceForType 2 1 8 - defaultInstanceForType - 0 -
+    resolved 1 0 8 - 0 -
+  field serializedSize 3 1 8 - serializedSize - 0 -
+    resolved 1 0 8 - 0 -
+  field parserForType 4 1 8 - parserForType - 0 -
+    resolved 1 0 8 - 0 -
+  field initializationErrorString 5 1 8 - initializationErrorString - 0 -
+    resolved 1 0 8 - 0 -
+  field descriptorForType 6 1 8 - descriptorForType - 0 -
+    resolved 1 0 8 - 0 -
+  field allFields 7 1 8 - allFields - 0 -
+    resolved 1 0 8 - 0 -
+  field cachedSize 9 1 8 - cachedSize - 0 -
+    resolved 1 0 8 - 0 -
+message Descriptor
+  field descriptor 1 1 9 - descriptor - 0 -
+    resolved 1 0 9 0 0 -
+  field nested_descriptor 2 1 11 .io_protocol_tests.Descriptor.NestedDescriptor nestedDescriptor - 0 -
+    resolved 1 0 11 - 0 -
+  message NestedDescriptor
+    field descriptor 1 1 9 - descriptor - 0 -
+      resolved 1 0 9 0 0 -
+  enum NestedEnum
+    closed
+    value UNKNOWN 0
+    value FOO 1
+message Parser
+  field parser 1 1 14 .io_protocol_tests.Parser.ParserEnum parser - 0 -
+    resolved 1 0 14 - 0 -
+  enum ParserEnum
+    closed
+    value UNKNOWN 0
+    value PARSER 1
+message Deprecated
+  field field1 1 1 5 - field1 - 0 -
+    resolved 1 0 5 - 0 -
+  field field2 2 1 14 .io_protocol_tests.Deprecated.TestEnum field2 - 0 -
+    resolved 1 0 14 - 0 -
+  field field3 3 1 11 .io_protocol_tests.ForbiddenWordsUnderscoreMessage field3 - 0 -
+    resolved 1 0 11 - 0 -
+  enum TestEnum
+    closed
+    value UNKNOWN 0
+    value FOO 1
+    value BAR 2
+message Override
+  field override 1 1 5 - override - 0 -
+    resolved 1 0 5 - 0 -
+message Object
+  field object 1 1 5 - object - 0 -
+    resolved 1 0 5 - 0 -
+  field string_object 2 1 9 - stringObject - 0 -
+    resolved 1 0 9 0 0 -
+message String
+  field string 1 1 9 - string - 0 -
+    resolved 1 0 9 0 0 -
+message Integer
+  field integer 1 1 5 - integer - 0 -
+    resolved 1 0 5 - 0 -
+message Long
+  field long 1 1 5 - long - 0 -
+    resolved 1 0 5 - 0 -
+message Float
+  field float 1 1 2 - float - 0 -
+    resolved 1 0 2 - 0 -
+message Double
+  field double 1 1 1 - double - 0 -
+    resolved 1 0 1 - 0 -
+message TestConflictingFieldNames
+  field int32_field 1 3 5 - int32Field - 0 -
+    resolved 0 0 5 - 0 -
+  field enum_field 2 3 14 .io_protocol_tests.TestConflictingFieldNames.TestEnum enumField - 0 -
+    resolved 0 0 14 - 0 -
+  field string_field 3 3 9 - stringField - 0 -
+    resolved 0 0 9 0 0 -
+  field bytes_field 4 3 12 - bytesField - 0 -
+    resolved 0 0 12 - 0 -
+  field message_field 5 3 11 .io_protocol_tests.TestConflictingFieldNames.ForbiddenWordsUnderscoreMessage messageField - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_field_count 11 1 5 - int32FieldCount - 0 -
+    resolved 1 0 5 - 0 -
+  field enum_field_count 12 1 14 .io_protocol_tests.TestConflictingFieldNames.TestEnum enumFieldCount - 0 -
+    resolved 1 0 14 - 0 -
+  field string_field_count 13 1 9 - stringFieldCount - 0 -
+    resolved 1 0 9 0 0 -
+  field bytes_field_count 14 1 12 - bytesFieldCount - 0 -
+    resolved 1 0 12 - 0 -
+  field message_field_count 15 1 11 .io_protocol_tests.TestConflictingFieldNames.ForbiddenWordsUnderscoreMessage messageFieldCount - 0 -
+    resolved 1 0 11 - 0 -
+  field Int32Field 21 3 5 - Int32Field - 0 -
+    resolved 0 0 5 - 0 -
+  field EnumField 22 3 14 .io_protocol_tests.TestConflictingFieldNames.TestEnum EnumField - 0 -
+    resolved 0 0 14 - 0 -
+  field StringField 23 3 9 - StringField - 0 -
+    resolved 0 0 9 0 0 -
+  field BytesField 24 3 12 - BytesField - 0 -
+    resolved 0 0 12 - 0 -
+  field MessageField 25 3 11 .io_protocol_tests.TestConflictingFieldNames.ForbiddenWordsUnderscoreMessage MessageField - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_field_list 31 1 5 - int32FieldList - 0 -
+    resolved 1 0 5 - 1 -
+  field field_name 32 1 9 - fieldName - 0 -
+    resolved 1 0 9 0 0 -
+  field field__name 33 1 9 - fieldName - 0 -
+    resolved 1 0 9 0 0 -
+  field _2conflict 34 1 5 - 2conflict - 0 -
+    resolved 1 0 5 - 0 -
+  field __2conflict 35 1 5 - 2conflict - 0 -
+    resolved 1 0 5 - 0 -
+  field int64_field 41 3 3 - int64Field - 0 -
+    resolved 0 0 3 - 0 -
+  extension int64_field_count 1001 1 3 - .io_protocol_tests.TestConflictingFieldNames int64FieldCount - 0 -
+    resolved 1 0 3 - 0 -
+  extension int64_field_list 1002 1 3 - .io_protocol_tests.TestConflictingFieldNames int64FieldList - 0 -
+    resolved 1 0 3 - 0 -
+  message ForbiddenWordsUnderscoreMessage
+  enum TestEnum
+    closed
+    value UNKNOWN 0
+    value FOO 1
+  extension_range 1000 536870912
+message TestMapField
+  field map_field 1 3 11 .io_protocol_tests.TestMapField.MapFieldEntry mapField - 0 -
+    resolved 0 0 11 - 0 -
+  message MapField
+  message Pair
+  message Message
+  message MapFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 1 0 5 - 0 -
+    map_entry
+message TestLeadingNumberFields
+  field _30day_impressions 1 1 5 - 30dayImpressions - 0 -
+    resolved 1 0 5 - 0 -
+  field _60day_impressions 2 3 9 - 60dayImpressions - 0 -
+    resolved 0 0 9 0 0 -
+  field __2_underscores 3 1 9 - 2Underscores - 0 -
+    resolved 1 0 9 0 0 -
+  field __2repeated_underscores 4 3 9 - 2repeatedUnderscores - 0 -
+    resolved 0 0 9 0 0 -
+  field _32 32 1 5 - 32 - 0 -
+    resolved 1 0 5 - 0 -
+  field _64 64 3 3 - 64 - 0 -
+    resolved 0 0 3 - 0 -
+service TestConflictingMethodNames
+  method Override .io_protocol_tests.ForbiddenWordsUnderscoreMessage .io_protocol_tests.ForbiddenWordsUnderscoreMessage 0 0

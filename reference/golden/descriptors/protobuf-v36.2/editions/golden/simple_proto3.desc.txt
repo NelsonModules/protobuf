@@ -1,0 +1,5 @@
+package protobuf_editions_test.golden
+syntax proto3
+message SimpleProto3
+  field int32_field 1 1 5 - int32Field 0 1 -
+  oneof _int32_field

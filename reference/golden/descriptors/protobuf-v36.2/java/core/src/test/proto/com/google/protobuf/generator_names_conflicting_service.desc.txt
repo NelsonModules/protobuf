@@ -1,0 +1,6 @@
+package google.protobuf
+syntax editions
+edition 2023
+message EmptyMessage
+service GeneratorNamesConflictingService
+  method Foo .google.protobuf.EmptyMessage .google.protobuf.EmptyMessage 0 0

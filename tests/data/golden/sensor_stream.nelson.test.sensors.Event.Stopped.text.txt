@@ -1,0 +1,71 @@
+timestamp_ms: -1
+remaining_steps: 2147483647
+===
+timestamp_ms: -1
+mode: "tab\tquote\""
+===
+timestamp_ms: 9223372036854775807
+remaining_steps: 0
+===
+mode: "日本"
+remaining_steps: -2147483648
+===
+mode: "line\nbreak"
+===
+timestamp_ms: 9223372036854775807
+mode: "héllo"
+remaining_steps: 0
+===
+timestamp_ms: 9223372036854775807
+mode: "_cza0y3yzcc"
+===
+mode: "y0ycx3azxa"
+===
+timestamp_ms: 1
+mode: "line\nbreak"
+===
+timestamp_ms: 1
+mode: "3aacya1y0ba3"
+remaining_steps: -2147483648
+===
+timestamp_ms: 9223372036854775807
+mode: "日本"
+===
+mode: "日本"
+===
+timestamp_ms: 1
+mode: "héllo"
+===
+timestamp_ms: -9223372036854775808
+remaining_steps: -210
+===
+mode: "xyy"
+remaining_steps: -1
+===
+mode: "line\nbreak"
+===
+timestamp_ms: -9223372036854775808
+mode: "tab\tquote\""
+remaining_steps: 0
+===
+timestamp_ms: -6920557589762877785
+===
+timestamp_ms: -9223372036854775808
+===
+mode: "héllo"
+===
+timestamp_ms: 4004444362961624100
+remaining_steps: 2147483647
+===
+timestamp_ms: -90
+mode: "01_x110zy31y0z2z3"
+remaining_steps: 2147483647
+===
+mode: "line\nbreak"
+remaining_steps: -2147483648
+===
+timestamp_ms: -1
+===
+timestamp_ms: -601
+mode: "日本"
+remaining_steps: 1820702998

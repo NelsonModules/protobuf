@@ -1,0 +1,20 @@
+package google.api
+syntax proto3
+message Http
+  field rules 1 3 11 .google.api.HttpRule rules - 0 -
+  field fully_decode_reserved_expansion 2 1 8 - fullyDecodeReservedExpansion - 0 -
+message HttpRule
+  field selector 1 1 9 - selector - 0 -
+  field get 2 1 9 - get 0 0 -
+  field put 3 1 9 - put 0 0 -
+  field post 4 1 9 - post 0 0 -
+  field delete 5 1 9 - delete 0 0 -
+  field patch 6 1 9 - patch 0 0 -
+  field custom 8 1 11 .google.api.CustomHttpPattern custom 0 0 -
+  field body 7 1 9 - body - 0 -
+  field response_body 12 1 9 - responseBody - 0 -
+  field additional_bindings 11 3 11 .google.api.HttpRule additionalBindings - 0 -
+  oneof pattern
+message CustomHttpPattern
+  field kind 1 1 9 - kind - 0 -
+  field path 2 1 9 - path - 0 -

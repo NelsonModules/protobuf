@@ -1,0 +1,25 @@
+{"stepCompleted": {"timestampMs": "5793485795546851567", "mode": "日本", "measurements": [{}]}}
+{"stopped": {"remainingSteps": -1889535136}}
+{"started": {"timestampMs": "1", "mode": "line\nbreak"}}
+{"stopped": {"timestampMs": "6510444019129281336", "mode": "日本"}}
+{}
+{"stopped": {"timestampMs": "-1", "remainingSteps": 1990055278}}
+{}
+{}
+{}
+{"started": {"timestampMs": "1", "mode": "🙂"}}
+{"stepCompleted": {"measurements": [{"name": "a", "value": 1e+30}, {"name": "tab\tquote\"", "value": 1e+30}, {"name": "0b30baya02a333a", "value": 1e-30}]}}
+{}
+{}
+{}
+{"stopped": {"timestampMs": "1", "mode": "日本"}}
+{}
+{"stopped": {"mode": "日本"}}
+{"stepCompleted": {"mode": "héllo", "measurements": [{"name": "日本"}, {"name": "tab\tquote\"", "value": -0.0}]}}
+{"stopped": {"timestampMs": "1", "remainingSteps": -2147483648}}
+{"stepCompleted": {"timestampMs": "942", "measurements": [{"name": "32ac010y3_x0xyz2c3", "value": "-Infinity"}, {"name": "日本"}, {"name": "日本", "value": -0.0}]}}
+{"stopped": {"timestampMs": "1", "remainingSteps": -257987725}}
+{"started": {"timestampMs": "-9223372036854775808", "mode": "日本"}}
+{}
+{"stopped": {"timestampMs": "1", "mode": "a", "remainingSteps": 0}}
+{"stepCompleted": {"timestampMs": "9223372036854775807", "mode": "日本", "measurements": [{"value": 48288.316}, {"name": "tab\tquote\""}]}}

@@ -1,0 +1,58 @@
+mode: "line\nbreak"
+===
+timestamp_ms: 1
+mode: "日本"
+===
+timestamp_ms: -9223372036854775808
+mode: "line\nbreak"
+===
+timestamp_ms: -674
+mode: "b_12_3b"
+===
+timestamp_ms: -1
+===
+mode: "tab\tquote\""
+===
+timestamp_ms: -428
+===
+timestamp_ms: -1
+mode: "héllo"
+===
+timestamp_ms: -1
+===
+timestamp_ms: -9223372036854775808
+===
+mode: "🙂"
+===
+mode: "héllo"
+===
+mode: "日本"
+===
+timestamp_ms: 9223372036854775807
+mode: "tab\tquote\""
+===
+timestamp_ms: -1328043436550606508
+===
+timestamp_ms: 9223372036854775807
+mode: "a"
+===
+===
+timestamp_ms: 649
+===
+timestamp_ms: -8187883072901039406
+mode: "11y"
+===
+===
+mode: "3b1yay0yx"
+===
+timestamp_ms: -1
+mode: "a"
+===
+timestamp_ms: 9223372036854775807
+mode: "a"
+===
+timestamp_ms: 1
+mode: "1_x3c1c22x_by"
+===
+timestamp_ms: -1
+mode: "x"

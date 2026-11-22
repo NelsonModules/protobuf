@@ -1,0 +1,11 @@
+package opentelemetry.proto.collector.metrics.v1
+syntax proto3
+message ExportMetricsServiceRequest
+  field resource_metrics 1 3 11 .opentelemetry.proto.metrics.v1.ResourceMetrics resourceMetrics - 0 -
+message ExportMetricsServiceResponse
+  field partial_success 1 1 11 .opentelemetry.proto.collector.metrics.v1.ExportMetricsPartialSuccess partialSuccess - 0 -
+message ExportMetricsPartialSuccess
+  field rejected_data_points 1 1 3 - rejectedDataPoints - 0 -
+  field error_message 2 1 9 - errorMessage - 0 -
+service MetricsService
+  method Export .opentelemetry.proto.collector.metrics.v1.ExportMetricsServiceRequest .opentelemetry.proto.collector.metrics.v1.ExportMetricsServiceResponse 0 0

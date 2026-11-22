@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.fromtext</keyword>
+  <short_description>Lit un message depuis le format texte protobuf.</short_description>
+  <syntax>
+    <syntax_item>[value, presence, report] = protobuf.fromtext(schema, type, txt, name, value, ...)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>un schéma de protobuf.load et un type de message.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>txt</param_name>
+      <param_description>un vecteur de caractères : un document au format texte protobuf ("name: value", "name { }" imbriqué, commentaires avec #).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>name, value</param_name>
+      <param_description>les options de disposition de protobuf.decode ('Layout', 'Fields', 'WellKnownTypes'...).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>value, presence, report</param_name>
+      <param_description>comme protobuf.decode.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.fromtext lit un message écrit au format texte Protocol Buffers et le renvoie comme protobuf.decode, avec les mêmes options de disposition. protobuf.totext écrit ce format.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Aller-retour par le format texte</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+record = struct('timestamp_ms', 1000, 'status', 2);
+txt = protobuf.totext(schema, 'SensorSample', record);
+back = protobuf.fromtext(schema, 'SensorSample', txt)
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.totext">protobuf.totext</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fromjson">protobuf.fromjson</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

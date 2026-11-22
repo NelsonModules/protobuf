@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.descriptor</keyword>
+  <short_description>Write the serialized FileDescriptorSet of a schema.</short_description>
+  <syntax>
+    <syntax_item>bytes = protobuf.descriptor(schema)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema</param_name>
+      <param_description>a protobuf.Schema object returned by protobuf.load.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>bytes</param_name>
+      <param_description>a uint8 vector: the serialized FileDescriptorSet, the imports first and then the loaded file, as protoc --descriptor_set_out --include_imports writes it.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.descriptor serializes a loaded schema as a FileDescriptorSet. The bytes describe the loaded file and all of its imports, so the schema can be rebuilt later with protobuf.load even when the .proto sources are gone.</p>
+    <p>The output matches what protoc writes with --descriptor_set_out --include_imports, so it can be read by other Protocol Buffers tools and runtimes.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Write a descriptor set and load it back</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+bytes = protobuf.descriptor(schema);
+filename = [tempdir(), 'sensor_stream.binpb'];
+fid = fopen(filename, 'w');
+fwrite(fid, bytes, 'uint8');
+fclose(fid);
+schema2 = protobuf.load(filename);
+schema2.Messages
+delete(filename);
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.load">protobuf.load</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fields">protobuf.fields</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

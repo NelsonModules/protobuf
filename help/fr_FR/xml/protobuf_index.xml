@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.index</keyword>
+  <short_description>Écrit l'index des enregistrements d'un fichier protobuf délimité.</short_description>
+  <syntax>
+    <syntax_item>info = protobuf.index(filename)</syntax_item>
+    <syntax_item>info = protobuf.index(filename, 'Step', step, 'IndexFile', indexfile, 'Progress', f)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>filename</param_name>
+      <param_description>un fichier de données délimité.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Step'</param_name>
+      <param_description>une position est gardée tous les step enregistrements (1024 par défaut). Un step plus petit donne un index plus fin et un fichier plus gros.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'IndexFile'</param_name>
+      <param_description>le fichier d'index à écrire (par défaut : le nom du fichier de données suivi de .pbidx).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Progress'</param_name>
+      <param_description>un pointeur de fonction f(n, total) appelé après chaque bloc de 64 Mio parcouru (octets, taille du fichier).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>info</param_name>
+      <param_description>une structure avec Records (le nombre d'enregistrements complets), Bytes (leur taille), Step, File et IndexFile.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.index parcourt une fois un fichier délimité et écrit, à côté, un petit index des positions d'enregistrements. protobuf.read utilise ensuite l'index avec 'Records' pour atteindre le premier enregistrement voulu sans lire ceux qui précèdent.</p>
+    <p>Un index n'est utilisé que tant que le fichier garde la taille et la date de modification qu'il avait à l'écriture de l'index ; il est donc reconstruit après une modification du fichier.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Indexer un fichier et lire une plage d'enregistrements</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+filename = [tempdir(), 'indexed.bin'];
+protobuf.write(schema, 'SensorSample', filename, ...
+  struct('timestamp_ms', num2cell(int64(1:500))), 'Delimited', true);
+info = protobuf.index(filename, 'Step', 64)
+C = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns', 'Records', [250 252]);
+C.timestamp_ms
+delete(filename);
+delete(info.IndexFile);
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.read">protobuf.read</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.write">protobuf.write</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

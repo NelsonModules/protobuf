@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package nelson.test.wkt;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+import "google/protobuf/wrappers.proto";
+
+// Invented test schema: well-known types in singular and repeated fields.
+message Reading {
+  google.protobuf.Timestamp at = 1;
+  google.protobuf.Duration elapsed = 2;
+  google.protobuf.DoubleValue level = 3;
+  google.protobuf.Int32Value count = 4;
+  google.protobuf.StringValue label = 5;
+  repeated google.protobuf.Timestamp marks = 6;
+  repeated google.protobuf.FloatValue samples = 7;
+}

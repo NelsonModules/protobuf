@@ -1,0 +1,262 @@
+package protobuf_test_messages.proto3
+syntax proto3
+message TestAllTypesProto3
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+  field optional_int64 2 1 3 - optionalInt64 - 0 -
+  field optional_uint32 3 1 13 - optionalUint32 - 0 -
+  field optional_uint64 4 1 4 - optionalUint64 - 0 -
+  field optional_sint32 5 1 17 - optionalSint32 - 0 -
+  field optional_sint64 6 1 18 - optionalSint64 - 0 -
+  field optional_fixed32 7 1 7 - optionalFixed32 - 0 -
+  field optional_fixed64 8 1 6 - optionalFixed64 - 0 -
+  field optional_sfixed32 9 1 15 - optionalSfixed32 - 0 -
+  field optional_sfixed64 10 1 16 - optionalSfixed64 - 0 -
+  field optional_float 11 1 2 - optionalFloat - 0 -
+  field optional_double 12 1 1 - optionalDouble - 0 -
+  field optional_bool 13 1 8 - optionalBool - 0 -
+  field optional_string 14 1 9 - optionalString - 0 -
+  field optional_bytes 15 1 12 - optionalBytes - 0 -
+  field optional_nested_message 18 1 11 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedMessage optionalNestedMessage - 0 -
+  field optional_foreign_message 19 1 11 .protobuf_test_messages.proto3.ForeignMessage optionalForeignMessage - 0 -
+  field optional_nested_enum 21 1 14 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedEnum optionalNestedEnum - 0 -
+  field optional_foreign_enum 22 1 14 .protobuf_test_messages.proto3.ForeignEnum optionalForeignEnum - 0 -
+  field optional_aliased_enum 23 1 14 .protobuf_test_messages.proto3.TestAllTypesProto3.AliasedEnum optionalAliasedEnum - 0 -
+  field optional_string_piece 24 1 9 - optionalStringPiece - 0 -
+  field optional_cord 25 1 9 - optionalCord - 0 -
+  field recursive_message 27 1 11 .protobuf_test_messages.proto3.TestAllTypesProto3 recursiveMessage - 0 -
+  field repeated_int32 31 3 5 - repeatedInt32 - 0 -
+  field repeated_int64 32 3 3 - repeatedInt64 - 0 -
+  field repeated_uint32 33 3 13 - repeatedUint32 - 0 -
+  field repeated_uint64 34 3 4 - repeatedUint64 - 0 -
+  field repeated_sint32 35 3 17 - repeatedSint32 - 0 -
+  field repeated_sint64 36 3 18 - repeatedSint64 - 0 -
+  field repeated_fixed32 37 3 7 - repeatedFixed32 - 0 -
+  field repeated_fixed64 38 3 6 - repeatedFixed64 - 0 -
+  field repeated_sfixed32 39 3 15 - repeatedSfixed32 - 0 -
+  field repeated_sfixed64 40 3 16 - repeatedSfixed64 - 0 -
+  field repeated_float 41 3 2 - repeatedFloat - 0 -
+  field repeated_double 42 3 1 - repeatedDouble - 0 -
+  field repeated_bool 43 3 8 - repeatedBool - 0 -
+  field repeated_string 44 3 9 - repeatedString - 0 -
+  field repeated_bytes 45 3 12 - repeatedBytes - 0 -
+  field repeated_nested_message 48 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedMessage repeatedNestedMessage - 0 -
+  field repeated_foreign_message 49 3 11 .protobuf_test_messages.proto3.ForeignMessage repeatedForeignMessage - 0 -
+  field repeated_nested_enum 51 3 14 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedEnum repeatedNestedEnum - 0 -
+  field repeated_foreign_enum 52 3 14 .protobuf_test_messages.proto3.ForeignEnum repeatedForeignEnum - 0 -
+  field repeated_string_piece 54 3 9 - repeatedStringPiece - 0 -
+  field repeated_cord 55 3 9 - repeatedCord - 0 -
+  field packed_int32 75 3 5 - packedInt32 - 0 true
+  field packed_int64 76 3 3 - packedInt64 - 0 true
+  field packed_uint32 77 3 13 - packedUint32 - 0 true
+  field packed_uint64 78 3 4 - packedUint64 - 0 true
+  field packed_sint32 79 3 17 - packedSint32 - 0 true
+  field packed_sint64 80 3 18 - packedSint64 - 0 true
+  field packed_fixed32 81 3 7 - packedFixed32 - 0 true
+  field packed_fixed64 82 3 6 - packedFixed64 - 0 true
+  field packed_sfixed32 83 3 15 - packedSfixed32 - 0 true
+  field packed_sfixed64 84 3 16 - packedSfixed64 - 0 true
+  field packed_float 85 3 2 - packedFloat - 0 true
+  field packed_double 86 3 1 - packedDouble - 0 true
+  field packed_bool 87 3 8 - packedBool - 0 true
+  field packed_nested_enum 88 3 14 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedEnum packedNestedEnum - 0 true
+  field unpacked_int32 89 3 5 - unpackedInt32 - 0 false
+  field unpacked_int64 90 3 3 - unpackedInt64 - 0 false
+  field unpacked_uint32 91 3 13 - unpackedUint32 - 0 false
+  field unpacked_uint64 92 3 4 - unpackedUint64 - 0 false
+  field unpacked_sint32 93 3 17 - unpackedSint32 - 0 false
+  field unpacked_sint64 94 3 18 - unpackedSint64 - 0 false
+  field unpacked_fixed32 95 3 7 - unpackedFixed32 - 0 false
+  field unpacked_fixed64 96 3 6 - unpackedFixed64 - 0 false
+  field unpacked_sfixed32 97 3 15 - unpackedSfixed32 - 0 false
+  field unpacked_sfixed64 98 3 16 - unpackedSfixed64 - 0 false
+  field unpacked_float 99 3 2 - unpackedFloat - 0 false
+  field unpacked_double 100 3 1 - unpackedDouble - 0 false
+  field unpacked_bool 101 3 8 - unpackedBool - 0 false
+  field unpacked_nested_enum 102 3 14 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedEnum unpackedNestedEnum - 0 false
+  field map_int32_int32 56 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapInt32Int32Entry mapInt32Int32 - 0 -
+  field map_int64_int64 57 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapInt64Int64Entry mapInt64Int64 - 0 -
+  field map_uint32_uint32 58 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapUint32Uint32Entry mapUint32Uint32 - 0 -
+  field map_uint64_uint64 59 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapUint64Uint64Entry mapUint64Uint64 - 0 -
+  field map_sint32_sint32 60 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapSint32Sint32Entry mapSint32Sint32 - 0 -
+  field map_sint64_sint64 61 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapSint64Sint64Entry mapSint64Sint64 - 0 -
+  field map_fixed32_fixed32 62 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapFixed32Fixed32Entry mapFixed32Fixed32 - 0 -
+  field map_fixed64_fixed64 63 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapFixed64Fixed64Entry mapFixed64Fixed64 - 0 -
+  field map_sfixed32_sfixed32 64 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapSfixed32Sfixed32Entry mapSfixed32Sfixed32 - 0 -
+  field map_sfixed64_sfixed64 65 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapSfixed64Sfixed64Entry mapSfixed64Sfixed64 - 0 -
+  field map_int32_float 66 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapInt32FloatEntry mapInt32Float - 0 -
+  field map_int32_double 67 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapInt32DoubleEntry mapInt32Double - 0 -
+  field map_bool_bool 68 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapBoolBoolEntry mapBoolBool - 0 -
+  field map_string_string 69 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapStringStringEntry mapStringString - 0 -
+  field map_string_bytes 70 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapStringBytesEntry mapStringBytes - 0 -
+  field map_string_nested_message 71 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapStringNestedMessageEntry mapStringNestedMessage - 0 -
+  field map_string_foreign_message 72 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapStringForeignMessageEntry mapStringForeignMessage - 0 -
+  field map_string_nested_enum 73 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapStringNestedEnumEntry mapStringNestedEnum - 0 -
+  field map_string_foreign_enum 74 3 11 .protobuf_test_messages.proto3.TestAllTypesProto3.MapStringForeignEnumEntry mapStringForeignEnum - 0 -
+  field oneof_uint32 111 1 13 - oneofUint32 0 0 -
+  field oneof_nested_message 112 1 11 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedMessage oneofNestedMessage 0 0 -
+  field oneof_string 113 1 9 - oneofString 0 0 -
+  field oneof_bytes 114 1 12 - oneofBytes 0 0 -
+  field oneof_bool 115 1 8 - oneofBool 0 0 -
+  field oneof_uint64 116 1 4 - oneofUint64 0 0 -
+  field oneof_float 117 1 2 - oneofFloat 0 0 -
+  field oneof_double 118 1 1 - oneofDouble 0 0 -
+  field oneof_enum 119 1 14 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedEnum oneofEnum 0 0 -
+  field oneof_null_value 120 1 14 .google.protobuf.NullValue oneofNullValue 0 0 -
+  field optional_bool_wrapper 201 1 11 .google.protobuf.BoolValue optionalBoolWrapper - 0 -
+  field optional_int32_wrapper 202 1 11 .google.protobuf.Int32Value optionalInt32Wrapper - 0 -
+  field optional_int64_wrapper 203 1 11 .google.protobuf.Int64Value optionalInt64Wrapper - 0 -
+  field optional_uint32_wrapper 204 1 11 .google.protobuf.UInt32Value optionalUint32Wrapper - 0 -
+  field optional_uint64_wrapper 205 1 11 .google.protobuf.UInt64Value optionalUint64Wrapper - 0 -
+  field optional_float_wrapper 206 1 11 .google.protobuf.FloatValue optionalFloatWrapper - 0 -
+  field optional_double_wrapper 207 1 11 .google.protobuf.DoubleValue optionalDoubleWrapper - 0 -
+  field optional_string_wrapper 208 1 11 .google.protobuf.StringValue optionalStringWrapper - 0 -
+  field optional_bytes_wrapper 209 1 11 .google.protobuf.BytesValue optionalBytesWrapper - 0 -
+  field repeated_bool_wrapper 211 3 11 .google.protobuf.BoolValue repeatedBoolWrapper - 0 -
+  field repeated_int32_wrapper 212 3 11 .google.protobuf.Int32Value repeatedInt32Wrapper - 0 -
+  field repeated_int64_wrapper 213 3 11 .google.protobuf.Int64Value repeatedInt64Wrapper - 0 -
+  field repeated_uint32_wrapper 214 3 11 .google.protobuf.UInt32Value repeatedUint32Wrapper - 0 -
+  field repeated_uint64_wrapper 215 3 11 .google.protobuf.UInt64Value repeatedUint64Wrapper - 0 -
+  field repeated_float_wrapper 216 3 11 .google.protobuf.FloatValue repeatedFloatWrapper - 0 -
+  field repeated_double_wrapper 217 3 11 .google.protobuf.DoubleValue repeatedDoubleWrapper - 0 -
+  field repeated_string_wrapper 218 3 11 .google.protobuf.StringValue repeatedStringWrapper - 0 -
+  field repeated_bytes_wrapper 219 3 11 .google.protobuf.BytesValue repeatedBytesWrapper - 0 -
+  field optional_duration 301 1 11 .google.protobuf.Duration optionalDuration - 0 -
+  field optional_timestamp 302 1 11 .google.protobuf.Timestamp optionalTimestamp - 0 -
+  field optional_field_mask 303 1 11 .google.protobuf.FieldMask optionalFieldMask - 0 -
+  field optional_struct 304 1 11 .google.protobuf.Struct optionalStruct - 0 -
+  field optional_any 305 1 11 .google.protobuf.Any optionalAny - 0 -
+  field optional_value 306 1 11 .google.protobuf.Value optionalValue - 0 -
+  field optional_null_value 307 1 14 .google.protobuf.NullValue optionalNullValue - 0 -
+  field optional_empty 308 1 11 .google.protobuf.Empty optionalEmpty - 0 -
+  field repeated_duration 311 3 11 .google.protobuf.Duration repeatedDuration - 0 -
+  field repeated_timestamp 312 3 11 .google.protobuf.Timestamp repeatedTimestamp - 0 -
+  field repeated_fieldmask 313 3 11 .google.protobuf.FieldMask repeatedFieldmask - 0 -
+  field repeated_struct 324 3 11 .google.protobuf.Struct repeatedStruct - 0 -
+  field repeated_any 315 3 11 .google.protobuf.Any repeatedAny - 0 -
+  field repeated_value 316 3 11 .google.protobuf.Value repeatedValue - 0 -
+  field repeated_list_value 317 3 11 .google.protobuf.ListValue repeatedListValue - 0 -
+  field repeated_empty 318 3 11 .google.protobuf.Empty repeatedEmpty - 0 -
+  field fieldname1 401 1 5 - fieldname1 - 0 -
+  field field_name2 402 1 5 - fieldName2 - 0 -
+  field _field_name3 403 1 5 - FieldName3 - 0 -
+  field field__name4_ 404 1 5 - fieldName4 - 0 -
+  field field0name5 405 1 5 - field0name5 - 0 -
+  field field_0_name6 406 1 5 - field0Name6 - 0 -
+  field fieldName7 407 1 5 - fieldName7 - 0 -
+  field FieldName8 408 1 5 - FieldName8 - 0 -
+  field field_Name9 409 1 5 - fieldName9 - 0 -
+  field Field_Name10 410 1 5 - FieldName10 - 0 -
+  field FIELD_NAME11 411 1 5 - FIELDNAME11 - 0 -
+  field FIELD_name12 412 1 5 - FIELDName12 - 0 -
+  field __field_name13 413 1 5 - FieldName13 - 0 -
+  field __Field_name14 414 1 5 - FieldName14 - 0 -
+  field field__name15 415 1 5 - fieldName15 - 0 -
+  field field__Name16 416 1 5 - fieldName16 - 0 -
+  field field_name17__ 417 1 5 - fieldName17 - 0 -
+  field Field_name18__ 418 1 5 - FieldName18 - 0 -
+  message NestedMessage
+    field a 1 1 5 - a - 0 -
+    field corecursive 2 1 11 .protobuf_test_messages.proto3.TestAllTypesProto3 corecursive - 0 -
+  message MapInt32Int32Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message MapInt64Int64Entry
+    field key 1 1 3 - key - 0 -
+    field value 2 1 3 - value - 0 -
+    map_entry
+  message MapUint32Uint32Entry
+    field key 1 1 13 - key - 0 -
+    field value 2 1 13 - value - 0 -
+    map_entry
+  message MapUint64Uint64Entry
+    field key 1 1 4 - key - 0 -
+    field value 2 1 4 - value - 0 -
+    map_entry
+  message MapSint32Sint32Entry
+    field key 1 1 17 - key - 0 -
+    field value 2 1 17 - value - 0 -
+    map_entry
+  message MapSint64Sint64Entry
+    field key 1 1 18 - key - 0 -
+    field value 2 1 18 - value - 0 -
+    map_entry
+  message MapFixed32Fixed32Entry
+    field key 1 1 7 - key - 0 -
+    field value 2 1 7 - value - 0 -
+    map_entry
+  message MapFixed64Fixed64Entry
+    field key 1 1 6 - key - 0 -
+    field value 2 1 6 - value - 0 -
+    map_entry
+  message MapSfixed32Sfixed32Entry
+    field key 1 1 15 - key - 0 -
+    field value 2 1 15 - value - 0 -
+    map_entry
+  message MapSfixed64Sfixed64Entry
+    field key 1 1 16 - key - 0 -
+    field value 2 1 16 - value - 0 -
+    map_entry
+  message MapInt32FloatEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 2 - value - 0 -
+    map_entry
+  message MapInt32DoubleEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 1 - value - 0 -
+    map_entry
+  message MapBoolBoolEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 8 - value - 0 -
+    map_entry
+  message MapStringStringEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapStringBytesEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 12 - value - 0 -
+    map_entry
+  message MapStringNestedMessageEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedMessage value - 0 -
+    map_entry
+  message MapStringForeignMessageEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .protobuf_test_messages.proto3.ForeignMessage value - 0 -
+    map_entry
+  message MapStringNestedEnumEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 14 .protobuf_test_messages.proto3.TestAllTypesProto3.NestedEnum value - 0 -
+    map_entry
+  message MapStringForeignEnumEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 14 .protobuf_test_messages.proto3.ForeignEnum value - 0 -
+    map_entry
+  enum NestedEnum
+    value FOO 0
+    value BAR 1
+    value BAZ 2
+    value NEG -1
+  enum AliasedEnum
+    value ALIAS_FOO 0
+    value ALIAS_BAR 1
+    value ALIAS_BAZ 2
+    value MOO 2
+    value moo 2
+    value bAz 2
+  oneof oneof_field
+  reserved_range 501 511
+  reserved_range 999999 1000000
+  reserved_name reserved_field
+message ForeignMessage
+  field c 1 1 5 - c - 0 -
+message NullHypothesisProto3
+message EnumOnlyProto3
+  enum Bool
+    value kFalse 0
+    value kTrue 1
+enum ForeignEnum
+  value FOREIGN_FOO 0
+  value FOREIGN_BAR 1
+  value FOREIGN_BAZ 2

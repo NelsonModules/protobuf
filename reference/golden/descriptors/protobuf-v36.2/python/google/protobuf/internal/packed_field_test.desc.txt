@@ -1,0 +1,36 @@
+package google.protobuf.python.internal
+syntax proto3
+message TestPackedTypes
+  field repeated_int32 1 3 5 - repeatedInt32 - 0 -
+  field repeated_int64 2 3 3 - repeatedInt64 - 0 -
+  field repeated_uint32 3 3 13 - repeatedUint32 - 0 -
+  field repeated_uint64 4 3 4 - repeatedUint64 - 0 -
+  field repeated_sint32 5 3 17 - repeatedSint32 - 0 -
+  field repeated_sint64 6 3 18 - repeatedSint64 - 0 -
+  field repeated_fixed32 7 3 7 - repeatedFixed32 - 0 -
+  field repeated_fixed64 8 3 6 - repeatedFixed64 - 0 -
+  field repeated_sfixed32 9 3 15 - repeatedSfixed32 - 0 -
+  field repeated_sfixed64 10 3 16 - repeatedSfixed64 - 0 -
+  field repeated_float 11 3 2 - repeatedFloat - 0 -
+  field repeated_double 12 3 1 - repeatedDouble - 0 -
+  field repeated_bool 13 3 8 - repeatedBool - 0 -
+  field repeated_nested_enum 14 3 14 .google.protobuf.python.internal.TestPackedTypes.NestedEnum repeatedNestedEnum - 0 -
+  enum NestedEnum
+    value FOO 0
+    value BAR 1
+    value BAZ 2
+message TestUnpackedTypes
+  field repeated_int32 1 3 5 - repeatedInt32 - 0 false
+  field repeated_int64 2 3 3 - repeatedInt64 - 0 false
+  field repeated_uint32 3 3 13 - repeatedUint32 - 0 false
+  field repeated_uint64 4 3 4 - repeatedUint64 - 0 false
+  field repeated_sint32 5 3 17 - repeatedSint32 - 0 false
+  field repeated_sint64 6 3 18 - repeatedSint64 - 0 false
+  field repeated_fixed32 7 3 7 - repeatedFixed32 - 0 false
+  field repeated_fixed64 8 3 6 - repeatedFixed64 - 0 false
+  field repeated_sfixed32 9 3 15 - repeatedSfixed32 - 0 false
+  field repeated_sfixed64 10 3 16 - repeatedSfixed64 - 0 false
+  field repeated_float 11 3 2 - repeatedFloat - 0 false
+  field repeated_double 12 3 1 - repeatedDouble - 0 false
+  field repeated_bool 13 3 8 - repeatedBool - 0 false
+  field repeated_nested_enum 14 3 14 .google.protobuf.python.internal.TestPackedTypes.NestedEnum repeatedNestedEnum - 0 false

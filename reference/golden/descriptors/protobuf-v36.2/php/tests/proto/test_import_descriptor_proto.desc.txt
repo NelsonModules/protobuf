@@ -1,0 +1,5 @@
+package foo
+syntax proto3
+message TestImportDescriptorProto
+  extension a 72295727 1 5 - .google.protobuf.MethodOptions a - 0 -
+extension a 72295728 1 5 - .google.protobuf.MethodOptions a - 0 -

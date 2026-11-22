@@ -1,0 +1,8 @@
+package pkg
+syntax editions
+edition 2023
+message EditionsMessage
+  field required_field 1 1 5 - requiredField - 0 -
+    resolved 1 0 5 - 1 -
+  field delimited_field 2 1 11 .pkg.EditionsMessage delimitedField - 0 -
+    resolved 1 0 10 - 0 -

@@ -1,0 +1,59 @@
+package nelson.test.legacy
+syntax proto2
+message Setting
+  field id 1 2 5 - id - 0 -
+    resolved 1 0 5 - 1 -
+  field label 2 1 9 - label - 0 -
+    resolved 1 0 9 0 0 default=none
+  field value 3 1 1 - value - 0 -
+    resolved 1 0 1 - 0 default=1.5
+  field unit 4 1 14 .nelson.test.legacy.Unit unit - 0 -
+    resolved 1 0 14 - 0 default=UNIT_CMH2O
+  field history 5 3 5 - history - 0 -
+    resolved 0 0 5 - 0 -
+  field packed_history 6 3 17 - packedHistory - 0 true
+    resolved 0 1 17 - 0 -
+  field range 7 1 10 .nelson.test.legacy.Setting.Range range - 0 -
+    resolved 1 0 10 - 0 -
+  field point 8 3 10 .nelson.test.legacy.Setting.Point point - 0 -
+    resolved 0 0 10 - 0 -
+  field device 9 1 9 - device 0 0 -
+    resolved 1 0 9 0 0 -
+  field manual 10 1 10 .nelson.test.legacy.Setting.Manual manual 0 0 -
+    resolved 1 0 10 - 0 -
+  field counters 11 3 11 .nelson.test.legacy.Setting.CountersEntry counters - 0 -
+    resolved 0 0 11 - 0 -
+  field raw 12 1 12 - raw - 0 -
+    resolved 1 0 12 - 0 default=\001\002
+  field enabled 13 1 8 - enabled - 0 -
+    resolved 1 0 8 - 0 default=true
+  field units 14 3 14 .nelson.test.legacy.Unit units - 0 -
+    resolved 0 0 14 - 0 -
+  field parent 15 1 11 .nelson.test.legacy.Setting parent - 0 -
+    resolved 1 0 11 - 0 -
+  message Range
+    field low 1 1 1 - low - 0 -
+      resolved 1 0 1 - 0 -
+    field high 2 1 1 - high - 0 -
+      resolved 1 0 1 - 0 -
+  message Point
+    field at 1 2 3 - at - 0 -
+      resolved 1 0 3 - 1 -
+    field y 2 1 2 - y - 0 -
+      resolved 1 0 2 - 0 -
+  message Manual
+    field operator_name 1 1 9 - operatorName - 0 -
+      resolved 1 0 9 0 0 -
+  message CountersEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 1 0 5 - 0 -
+    map_entry
+  oneof source
+  reserved_range 20 31
+  reserved_name old
+enum Unit
+  closed
+  value UNIT_MBAR 1
+  value UNIT_CMH2O 2

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.load</keyword>
+  <short_description>Analyse un fichier .proto, du texte .proto ou un descriptor set en un schéma.</short_description>
+  <syntax>
+    <syntax_item>schema = protobuf.load(filename)</syntax_item>
+    <syntax_item>schema = protobuf.load(filename, 'ImportPaths', folders)</syntax_item>
+    <syntax_item>schema = protobuf.load(filename, 'Format', format)</syntax_item>
+    <syntax_item>schema = protobuf.load(text, 'Format', 'text', 'Name', name, 'ImportPaths', folders)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>filename</param_name>
+      <param_description>un vecteur de caractères ou une chaîne : le chemin d'un fichier .proto ou d'un FileDescriptorSet sérialisé. Avec 'Format', 'text', c'est le texte .proto lui-même.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'ImportPaths'</param_name>
+      <param_description>un dossier ou une liste de dossiers où les imports sont cherchés, après le dossier du fichier. Les types bien connus google/protobuf (timestamp, duration, wrappers, struct, empty, field_mask, any) et google/protobuf/descriptor.proto sont intégrés.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Format'</param_name>
+      <param_description>'auto' (par défaut), 'proto', 'descriptor' ou 'text'. Avec 'auto', les extensions .binpb, .pb, .desc et .protoset désignent un FileDescriptorSet (protoc --descriptor_set_out --include_imports) ; sinon le fichier est lu comme .proto. Avec 'text', le premier argument est du texte .proto, pas un chemin.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Name'</param_name>
+      <param_description>avec 'Format', 'text' : le nom de fichier donné au texte dans les messages et utilisé par les imports ('input.proto' par défaut).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>schema</param_name>
+      <param_description>un objet protobuf.Schema avec les propriétés File, Package, Messages (noms complets des types de message, importés compris) et Imports.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.load analyse un fichier .proto à l'exécution, avec les fichiers qu'il importe. Aucune génération de code, aucun compilateur ni outil externe. Le schéma renvoyé est passé à protobuf.encode, protobuf.decode, protobuf.read et protobuf.write.</p>
+    <p>proto2, proto3 et les editions 2023 et 2024 sont pris en charge, avec messages, types imbriqués, énumérations, optional, repeated, oneof, map, noms et numéros réservés, extensions et options personnalisées. Un fichier sans instruction syntax est lu en proto2.</p>
+    <p>Un FileDescriptorSet écrit par protoc se charge de la même façon, utile quand les sources .proto ne sont pas disponibles. protobuf.descriptor écrit un tel jeu à partir d'un schéma.</p>
+    <p>Les erreurs d'analyse ont l'identifiant protobuf:parseError:nom et donnent le fichier, la ligne et la colonne.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Charger un fichier .proto et lister ses types de message</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+schema.Messages
+]]></example_item_data>
+    </example_item>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Charger un schéma donné en texte .proto</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load('message Point { double x = 1; double y = 2; }', ...
+  'Format', 'text', 'Name', 'point.proto');
+bytes = protobuf.encode(schema, 'Point', struct('x', 1.5, 'y', 2.5));
+protobuf.decode(schema, 'Point', bytes)
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.descriptor">protobuf.descriptor</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fields">protobuf.fields</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.encode">protobuf.encode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

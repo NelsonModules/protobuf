@@ -1,0 +1,3 @@
+package pb
+syntax editions
+edition 2024

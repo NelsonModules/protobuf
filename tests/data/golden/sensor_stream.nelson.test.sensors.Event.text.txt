@@ -1,0 +1,121 @@
+step_completed {
+  timestamp_ms: 5793485795546851567
+  mode: "日本"
+  measurements {
+  }
+}
+===
+stopped {
+  remaining_steps: -1889535136
+}
+===
+started {
+  timestamp_ms: 1
+  mode: "line\nbreak"
+}
+===
+stopped {
+  timestamp_ms: 6510444019129281336
+  mode: "日本"
+}
+===
+===
+stopped {
+  timestamp_ms: -1
+  remaining_steps: 1990055278
+}
+===
+===
+===
+===
+started {
+  timestamp_ms: 1
+  mode: "🙂"
+}
+===
+step_completed {
+  measurements {
+    name: "a"
+    value: 1e+30
+  }
+  measurements {
+    name: "tab\tquote\""
+    value: 1e+30
+  }
+  measurements {
+    name: "0b30baya02a333a"
+    value: 1e-30
+  }
+}
+===
+===
+===
+===
+stopped {
+  timestamp_ms: 1
+  mode: "日本"
+}
+===
+===
+stopped {
+  mode: "日本"
+}
+===
+step_completed {
+  mode: "héllo"
+  measurements {
+    name: "日本"
+  }
+  measurements {
+    name: "tab\tquote\""
+    value: -0.0
+  }
+}
+===
+stopped {
+  timestamp_ms: 1
+  remaining_steps: -2147483648
+}
+===
+step_completed {
+  timestamp_ms: 942
+  measurements {
+    name: "32ac010y3_x0xyz2c3"
+    value: -inf
+  }
+  measurements {
+    name: "日本"
+  }
+  measurements {
+    name: "日本"
+    value: -0.0
+  }
+}
+===
+stopped {
+  timestamp_ms: 1
+  remaining_steps: -257987725
+}
+===
+started {
+  timestamp_ms: -9223372036854775808
+  mode: "日本"
+}
+===
+===
+stopped {
+  timestamp_ms: 1
+  mode: "a"
+  remaining_steps: 0
+}
+===
+step_completed {
+  timestamp_ms: 9223372036854775807
+  mode: "日本"
+  measurements {
+    value: 48288.316
+  }
+  measurements {
+    name: "tab\tquote\""
+  }
+}

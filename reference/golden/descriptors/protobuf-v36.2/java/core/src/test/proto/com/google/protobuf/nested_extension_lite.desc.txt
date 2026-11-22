@@ -1,0 +1,8 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message MyNestedExtensionLite
+  extension recursiveExtensionLite 3 1 11 .proto2_unittest.MessageLiteToBeExtended .proto2_unittest.MessageLiteToBeExtended recursiveExtensionLite - 0 -
+    resolved 1 0 11 - 0 -
+  extension private 2004 1 1 - .proto2_unittest.MessageLiteToBeExtended private - 0 -
+    resolved 1 0 1 - 0 -

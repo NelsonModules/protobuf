@@ -1,0 +1,7 @@
+package proto2_unittest.lazy_imports
+syntax editions
+edition 1002
+enum LazyEnum
+  closed
+  value LAZY_ENUM_0 0
+  value LAZY_ENUM_1 1

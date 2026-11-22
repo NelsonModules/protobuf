@@ -1,0 +1,23 @@
+{
+  "module": "protobuf",
+  "title": "protobuf",
+  "version": "1.0.0",
+  "authors": [
+    "Allan CORNET"
+  ],
+  "summary": "protobuf builtin module for Nelson.",
+  "description": "Protocol Buffers (proto3 and editions) for Nelson: runtime .proto parsing and fast native encode/decode.",
+  "license": "LGPL-3.0-or-later",
+  "repository": "https://github.com/NelsonModules/protobuf",
+  "builtin": true,
+  "platforms": [
+    "win64"
+  ],
+  "nelson": ">=2.0.0",
+  "dependencies": {},
+  "keywords": [
+    "nelson",
+    "protobuf",
+    "builtin"
+  ]
+}

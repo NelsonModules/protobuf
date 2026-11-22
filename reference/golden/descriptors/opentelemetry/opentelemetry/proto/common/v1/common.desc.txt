@@ -1,0 +1,30 @@
+package opentelemetry.proto.common.v1
+syntax proto3
+message AnyValue
+  field string_value 1 1 9 - stringValue 0 0 -
+  field bool_value 2 1 8 - boolValue 0 0 -
+  field int_value 3 1 3 - intValue 0 0 -
+  field double_value 4 1 1 - doubleValue 0 0 -
+  field array_value 5 1 11 .opentelemetry.proto.common.v1.ArrayValue arrayValue 0 0 -
+  field kvlist_value 6 1 11 .opentelemetry.proto.common.v1.KeyValueList kvlistValue 0 0 -
+  field bytes_value 7 1 12 - bytesValue 0 0 -
+  field string_value_strindex 8 1 5 - stringValueStrindex 0 0 -
+  oneof value
+message ArrayValue
+  field values 1 3 11 .opentelemetry.proto.common.v1.AnyValue values - 0 -
+message KeyValueList
+  field values 1 3 11 .opentelemetry.proto.common.v1.KeyValue values - 0 -
+message KeyValue
+  field key 1 1 9 - key - 0 -
+  field value 2 1 11 .opentelemetry.proto.common.v1.AnyValue value - 0 -
+  field key_strindex 3 1 5 - keyStrindex - 0 -
+message InstrumentationScope
+  field name 1 1 9 - name - 0 -
+  field version 2 1 9 - version - 0 -
+  field attributes 3 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+  field dropped_attributes_count 4 1 13 - droppedAttributesCount - 0 -
+message EntityRef
+  field schema_url 1 1 9 - schemaUrl - 0 -
+  field type 2 1 9 - type - 0 -
+  field id_keys 3 3 9 - idKeys - 0 -
+  field description_keys 4 3 9 - descriptionKeys - 0 -

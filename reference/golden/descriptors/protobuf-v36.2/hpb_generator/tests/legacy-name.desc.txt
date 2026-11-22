@@ -1,0 +1,6 @@
+package hpb_unittest
+syntax editions
+edition 2023
+enum LegacyEnum
+  value PHASE_DEFAULT 0
+  value PHASE_BUSY 1

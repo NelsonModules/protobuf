@@ -1,0 +1,10 @@
+package foo
+syntax proto3
+message TestEmptyNamespace
+  field a 1 1 5 - a - 0 -
+  field nested_message 2 1 11 .foo.TestEmptyNamespace.NestedMessage nestedMessage - 0 -
+  field nested_enum 3 1 14 .foo.TestEmptyNamespace.NestedEnum nestedEnum - 0 -
+  message NestedMessage
+    field a 1 1 5 - a - 0 -
+  enum NestedEnum
+    value ZERO 0

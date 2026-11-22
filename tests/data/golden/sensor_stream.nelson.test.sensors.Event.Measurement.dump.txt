@@ -1,0 +1,74 @@
+name: x:7461620971756f746522
+value: f:00000000
+---
+name: x:
+value: f:c0100000
+---
+name: x:f09f9982
+value: f:7fc00000
+---
+name: x:61
+value: f:ff800000
+---
+name: x:68c3a96c6c6f
+value: f:c6dda09d
+---
+name: x:61
+value: f:7fc00000
+---
+name: x:3263326132
+value: f:4956a7e6
+---
+name: x:32615f7a635f7a313231627961
+value: f:00000000
+---
+name: x:e697a5e69cac
+value: f:00000000
+---
+name: x:317a3131793162337a5f33333330613233
+value: f:ff800000
+---
+name: x:6c696e650a627265616b
+value: f:49388776
+---
+name: x:
+value: f:7149f2ca
+---
+name: x:f09f9982
+value: f:00000000
+---
+name: x:f09f9982
+value: f:80000000
+---
+name: x:
+value: f:c0100000
+---
+name: x:31617979
+value: f:7f800000
+---
+name: x:e697a5e69cac
+value: f:0da24260
+---
+name: x:79636331787962
+value: f:00000000
+---
+name: x:f09f9982
+value: f:c0100000
+---
+name: x:f09f9982
+value: f:ff800000
+---
+name: x:5f
+value: f:ff800000
+---
+name: x:6c696e650a627265616b
+value: f:3fc00000
+---
+name: x:
+value: f:ff800000
+---
+name: x:7461620971756f746522
+value: f:0da24260
+---
+name: x:
+value: f:00000000

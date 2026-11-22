@@ -1,0 +1,3 @@
+package foo_bar
+syntax proto3
+message TestRubyPackageMessage

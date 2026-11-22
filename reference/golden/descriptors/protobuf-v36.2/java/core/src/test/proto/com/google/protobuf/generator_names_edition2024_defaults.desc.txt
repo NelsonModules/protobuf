@@ -1,0 +1,15 @@
+package protobuf.edition2024.defaults
+syntax editions
+edition 2024
+message Edition2024DefaultsMessage
+  field field 1 1 5 - field - 0 -
+    resolved 1 0 5 - 0 -
+  message NestedMessage
+    field nested_field 1 1 5 - nestedField - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    value VALUE0 0
+enum Edition2024DefaultsEnum
+  value VALUE0 0
+service Edition2024DefaultsService
+  method Foo .protobuf.edition2024.defaults.Edition2024DefaultsMessage .protobuf.edition2024.defaults.Edition2024DefaultsMessage 0 0

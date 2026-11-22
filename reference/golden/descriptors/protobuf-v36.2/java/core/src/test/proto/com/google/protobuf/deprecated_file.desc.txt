@@ -1,0 +1,2 @@
+package deprecated_file
+syntax proto3

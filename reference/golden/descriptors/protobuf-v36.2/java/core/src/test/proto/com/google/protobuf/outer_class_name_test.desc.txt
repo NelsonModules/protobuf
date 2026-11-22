@@ -1,0 +1,4 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message OuterClassNameTest

@@ -1,0 +1,98 @@
+package protobuf.kotlin.generator
+syntax proto3
+message EvilNamesProto3
+  field initialized 1 1 8 - initialized - 0 -
+  field has_foo 2 1 8 - hasFoo - 0 -
+  field Bar 3 1 9 - Bar - 0 -
+  field is_initialized 4 1 8 - isInitialized - 0 -
+  field fooBar 5 1 9 - fooBar 0 0 -
+  field ALL_CAPS 7 3 9 - ALLCAPS - 0 -
+  field ALL_CAPS_MAP 8 3 11 .protobuf.kotlin.generator.EvilNamesProto3.ALLCAPSMAPEntry ALLCAPSMAP - 0 -
+  field has_underbar_preceding_numeric_1foo 9 1 8 - hasUnderbarPrecedingNumeric1foo - 0 -
+  field has_underbar_preceding_numeric_42bar 10 1 8 - hasUnderbarPrecedingNumeric42bar - 0 -
+  field has_underbar_preceding_numeric_123foo42bar_baz 11 1 8 - hasUnderbarPrecedingNumeric123foo42barBaz - 0 -
+  field extension 12 3 9 - extension - 0 -
+  field class 13 1 9 - class - 0 -
+  field int 14 1 1 - int - 0 -
+  field long 15 1 8 - long - 0 -
+  field boolean 16 1 3 - boolean - 0 -
+  field sealed 17 1 9 - sealed - 0 -
+  field interface 18 1 2 - interface - 0 -
+  field in 19 1 5 - in - 0 -
+  field object 20 1 9 - object - 0 -
+  field cached_size 21 1 9 - cachedSize - 0 -
+  field serialized_size 22 1 8 - serializedSize - 0 -
+  field value 23 1 9 - value - 0 -
+  field index 24 1 3 - index - 0 -
+  field values 25 3 9 - values - 0 -
+  field new_values 26 3 9 - newValues - 0 -
+  field builder 27 1 8 - builder - 0 -
+  field k 28 3 11 .protobuf.kotlin.generator.EvilNamesProto3.KEntry k - 0 -
+  field v 29 3 11 .protobuf.kotlin.generator.EvilNamesProto3.VEntry v - 0 -
+  field key 30 3 11 .protobuf.kotlin.generator.EvilNamesProto3.KeyEntry key - 0 -
+  field map 31 3 11 .protobuf.kotlin.generator.EvilNamesProto3.MapEntry map - 0 -
+  field pairs 32 3 11 .protobuf.kotlin.generator.EvilNamesProto3.PairsEntry pairs - 0 -
+  field _leading_underscore 33 1 9 - LeadingUnderscore - 0 -
+  field option 34 1 5 - option 1 0 -
+  field DEPRECATED_foo 35 1 9 - DEPRECATEDFoo 2 1 -
+  field ID 36 1 9 - ID 3 1 -
+  field a_b_notification 37 1 9 - aBNotification 4 1 -
+  field __DEPRECATED_Bar 38 1 9 - DEPRECATEDBar 5 1 -
+  field not_DEPRECATED_foo 39 1 9 - notDEPRECATEDFoo 6 1 -
+  message ALLCAPSMAPEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 8 - value - 0 -
+    map_entry
+  message KEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message VEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message KeyEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message PairsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  oneof camelCase
+  oneof _leading_underscore_oneof
+  oneof _DEPRECATED_foo
+  oneof _ID
+  oneof _a_b_notification
+  oneof X__DEPRECATED_Bar
+  oneof _not_DEPRECATED_foo
+message HardKeywordsAllTypesProto3
+  field as 1 1 5 - as 0 1 -
+  field in 2 1 9 - in 1 1 -
+  field break 3 1 14 .protobuf.kotlin.generator.HardKeywordsAllTypesProto3.NestedEnum break 2 1 -
+  field continue 4 3 11 .protobuf.kotlin.generator.HardKeywordsAllTypesProto3.ContinueEntry continue - 0 -
+  field do 5 1 11 .protobuf.kotlin.generator.HardKeywordsAllTypesProto3.NestedMessage do 3 1 -
+  field else 6 3 5 - else - 0 -
+  field for 7 3 9 - for - 0 -
+  field fun 8 3 14 .protobuf.kotlin.generator.HardKeywordsAllTypesProto3.NestedEnum fun - 0 -
+  field if 9 3 11 .protobuf.kotlin.generator.HardKeywordsAllTypesProto3.NestedMessage if - 0 -
+  message NestedMessage
+    field while 1 1 5 - while 0 1 -
+    oneof _while
+  message ContinueEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  enum NestedEnum
+    value ZERO 0
+    value FOO 1
+    value BAR 2
+  oneof _as
+  oneof _in
+  oneof _break
+  oneof _do
+message Class

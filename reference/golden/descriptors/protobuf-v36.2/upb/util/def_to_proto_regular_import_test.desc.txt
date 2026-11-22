@@ -1,0 +1,5 @@
+package pkg
+syntax proto3
+message RegularImportMessage
+enum Proto3Enum
+  value PROTO3_ENUM_ZERO 0

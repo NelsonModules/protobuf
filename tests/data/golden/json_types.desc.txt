@@ -1,0 +1,28 @@
+package nelson.test.json
+syntax proto3
+message Document
+  field attributes 1 1 11 .google.protobuf.Struct attributes - 0 -
+  field value 2 1 11 .google.protobuf.Value value - 0 -
+  field items 3 1 11 .google.protobuf.ListValue items - 0 -
+  field mask 4 1 11 .google.protobuf.FieldMask mask - 0 -
+  field nothing 5 1 11 .google.protobuf.Empty nothing - 0 -
+  field d 6 1 11 .google.protobuf.DoubleValue d - 0 -
+  field f 7 1 11 .google.protobuf.FloatValue f - 0 -
+  field i64 8 1 11 .google.protobuf.Int64Value i64 - 0 -
+  field u64 9 1 11 .google.protobuf.UInt64Value u64 - 0 -
+  field i32 10 1 11 .google.protobuf.Int32Value i32 - 0 -
+  field u32 11 1 11 .google.protobuf.UInt32Value u32 - 0 -
+  field b 12 1 11 .google.protobuf.BoolValue b - 0 -
+  field s 13 1 11 .google.protobuf.StringValue s - 0 -
+  field raw 14 1 11 .google.protobuf.BytesValue raw - 0 -
+  field values 15 3 11 .google.protobuf.Value values - 0 -
+  field named 16 3 11 .nelson.test.json.Document.NamedEntry named - 0 -
+  field at 17 1 11 .google.protobuf.Timestamp at - 0 -
+  field span 18 1 11 .google.protobuf.Duration span - 0 -
+  field times 19 3 11 .google.protobuf.Timestamp times - 0 -
+  field spans 20 3 11 .google.protobuf.Duration spans - 0 -
+  field nothing_at_all 21 1 14 .google.protobuf.NullValue nothingAtAll - 0 -
+  message NamedEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .google.protobuf.Value value - 0 -
+    map_entry

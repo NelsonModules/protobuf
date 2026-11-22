@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.infer</keyword>
+  <short_description>Write a .proto file from a struct or a table.</short_description>
+  <syntax>
+    <syntax_item>txt = protobuf.infer(value)</syntax_item>
+    <syntax_item>txt = protobuf.infer(value, 'Name', name, 'Package', package)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>value</param_name>
+      <param_description>a struct, a struct array or a table.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Name', 'Package'</param_name>
+      <param_description>the message name ('Record' by default) and the package of the .proto file.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>txt</param_name>
+      <param_description>a proto3 .proto file as text.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.infer writes a proto3 .proto file that describes a struct, a struct array or a table, to start a schema from data. Numbers give scalar fields (repeated when a value has several elements), text gives string, uint8 gives bytes, datetime and duration give Timestamp and Duration, and nested structs give nested messages. A field empty in some records is marked optional.</p>
+    <p>The text is a starting point to read and adjust, not a schema on its own; pass it to protobuf.load with 'Format', 'text' to use it.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Start a schema from a struct</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[measure = struct('id', int64(7), 'label', 'pump', 'values', [1.5 2.5], ...
+  'at', datetime(2026, 11, 12, 'TimeZone', 'UTC'), 'origin', struct('x', single(1), 'y', single(2)));
+disp(protobuf.infer(measure, 'Name', 'Measure', 'Package', 'demo'))
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.load">protobuf.load</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fields">protobuf.fields</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

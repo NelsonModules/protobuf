@@ -1,0 +1,8 @@
+package editions_unittest
+syntax editions
+edition 1002
+message MessageImport
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field b 2 1 5 - b - 0 -
+    resolved 1 0 5 - 0 -

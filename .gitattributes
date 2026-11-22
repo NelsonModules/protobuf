@@ -1,0 +1,6 @@
+# Golden files are compared byte for byte by the native tests.
+*.binpb binary
+*.proto text eol=lf
+tests/data/golden/*.txt text eol=lf
+reference/golden/**/*.txt text eol=lf
+reference/golden/*.tsv text eol=lf

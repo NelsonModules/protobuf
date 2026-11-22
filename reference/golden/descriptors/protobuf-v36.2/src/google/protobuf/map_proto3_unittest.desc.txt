@@ -1,0 +1,29 @@
+package proto3_unittest
+syntax editions
+edition 1002
+message TestProto3BytesMap
+  field map_bytes 1 3 11 .proto3_unittest.TestProto3BytesMap.MapBytesEntry mapBytes - 0 -
+    resolved 0 0 11 - 0 -
+  field map_string 2 3 11 .proto3_unittest.TestProto3BytesMap.MapStringEntry mapString - 0 -
+    resolved 0 0 11 - 0 -
+  message MapBytesEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 12 - value - 0 -
+      resolved 0 0 12 - 0 -
+    map_entry
+  message MapStringEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 0 0 9 1 0 -
+    map_entry
+message TestI32StrMap
+  field m_32_str 1 3 11 .proto3_unittest.TestI32StrMap.M32StrEntry m32Str - 0 -
+    resolved 0 0 11 - 0 -
+  message M32StrEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 0 0 9 1 0 -
+    map_entry

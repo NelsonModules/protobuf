@@ -1,0 +1,25 @@
+{"timestampMs": "-1", "remainingSteps": 2147483647}
+{"timestampMs": "-1", "mode": "tab\tquote\""}
+{"timestampMs": "9223372036854775807", "remainingSteps": 0}
+{"mode": "日本", "remainingSteps": -2147483648}
+{"mode": "line\nbreak"}
+{"timestampMs": "9223372036854775807", "mode": "héllo", "remainingSteps": 0}
+{"timestampMs": "9223372036854775807", "mode": "_cza0y3yzcc"}
+{"mode": "y0ycx3azxa"}
+{"timestampMs": "1", "mode": "line\nbreak"}
+{"timestampMs": "1", "mode": "3aacya1y0ba3", "remainingSteps": -2147483648}
+{"timestampMs": "9223372036854775807", "mode": "日本"}
+{"mode": "日本"}
+{"timestampMs": "1", "mode": "héllo"}
+{"timestampMs": "-9223372036854775808", "remainingSteps": -210}
+{"mode": "xyy", "remainingSteps": -1}
+{"mode": "line\nbreak"}
+{"timestampMs": "-9223372036854775808", "mode": "tab\tquote\"", "remainingSteps": 0}
+{"timestampMs": "-6920557589762877785"}
+{"timestampMs": "-9223372036854775808"}
+{"mode": "héllo"}
+{"timestampMs": "4004444362961624100", "remainingSteps": 2147483647}
+{"timestampMs": "-90", "mode": "01_x110zy31y0z2z3", "remainingSteps": 2147483647}
+{"mode": "line\nbreak", "remainingSteps": -2147483648}
+{"timestampMs": "-1"}
+{"timestampMs": "-601", "mode": "日本", "remainingSteps": 1820702998}

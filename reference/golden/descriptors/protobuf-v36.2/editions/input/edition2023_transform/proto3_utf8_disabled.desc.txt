@@ -1,0 +1,10 @@
+package protobuf_editions_test
+syntax proto3
+message TestMessageProto3
+  field string_field 1 1 9 - stringField - 0 -
+  field string_map_field 4 3 11 .protobuf_editions_test.TestMessageProto3.StringMapFieldEntry stringMapField - 0 -
+  field int_field 7 3 5 - intField - 0 -
+  message StringMapFieldEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry

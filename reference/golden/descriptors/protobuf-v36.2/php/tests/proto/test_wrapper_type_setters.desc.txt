@@ -1,0 +1,21 @@
+package foo
+syntax proto3
+message TestWrapperSetters
+  field double_value 1 1 11 .google.protobuf.DoubleValue doubleValue - 0 -
+  field float_value 2 1 11 .google.protobuf.FloatValue floatValue - 0 -
+  field int64_value 3 1 11 .google.protobuf.Int64Value int64Value - 0 -
+  field uint64_value 4 1 11 .google.protobuf.UInt64Value uint64Value - 0 -
+  field int32_value 5 1 11 .google.protobuf.Int32Value int32Value - 0 -
+  field uint32_value 6 1 11 .google.protobuf.UInt32Value uint32Value - 0 -
+  field bool_value 7 1 11 .google.protobuf.BoolValue boolValue - 0 -
+  field string_value 8 1 11 .google.protobuf.StringValue stringValue - 0 -
+  field bytes_value 9 1 11 .google.protobuf.BytesValue bytesValue - 0 -
+  field double_value_oneof 10 1 11 .google.protobuf.DoubleValue doubleValueOneof 0 0 -
+  field string_value_oneof 11 1 11 .google.protobuf.StringValue stringValueOneof 0 0 -
+  field repeated_string_value 12 3 11 .google.protobuf.StringValue repeatedStringValue - 0 -
+  field map_string_value 13 3 11 .foo.TestWrapperSetters.MapStringValueEntry mapStringValue - 0 -
+  message MapStringValueEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .google.protobuf.StringValue value - 0 -
+    map_entry
+  oneof wrapped_oneofs

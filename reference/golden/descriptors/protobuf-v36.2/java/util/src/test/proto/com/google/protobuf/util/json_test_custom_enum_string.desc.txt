@@ -1,0 +1,21 @@
+package com.google.protobuf.util.json_test_custom_enum_string
+syntax editions
+edition 1002
+message Knight
+  field armor 1 1 14 .com.google.protobuf.util.json_test_custom_enum_string.Armor armor - 0 -
+    resolved 1 0 14 - 0 -
+  field helmet 2 1 14 .com.google.protobuf.util.json_test_custom_enum_string.Helmet helmet - 0 -
+    resolved 1 0 14 - 0 -
+enum Armor
+  value ARMOR_UNKNOWN 0
+  value ARMOR_GREAT_HELM 1
+  value ARMOR_GORGET 2
+  value ARMOR_GAUNTLET 3
+  value ARMOR_PLATE 4
+  value ARMOR_COIF 5
+  value ARMOR_PAULDRON 6
+  value ARMOR_SHIELD 7
+  value ARMOR_HACHI_MAI_DO 8
+enum Helmet
+  value HELMET_UNKNOWN 0
+  value HELMET_GOBLIN 1

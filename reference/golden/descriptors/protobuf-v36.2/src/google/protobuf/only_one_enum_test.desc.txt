@@ -1,0 +1,6 @@
+package proto2_unittest
+syntax editions
+edition 1002
+enum OnlyOneEnum
+  value ONLY_ONE_ENUM_DEFAULT 0
+  value ONLY_ONE_ENUM_VALID 10

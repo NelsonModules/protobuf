@@ -1,0 +1,3 @@
+package pkg
+syntax proto3
+message PublicImportMessage

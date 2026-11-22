@@ -1,0 +1,1973 @@
+attributes {
+  fields[] {
+    key: x:7461620971756f746522
+    value {
+      list_value {
+        values[0] {
+          null_value: 0
+        }
+      }
+    }
+  }
+}
+items {
+  values[0] {
+    number_value: d:419d6f3455000000
+  }
+  values[1] {
+    number_value: d:3e7ad7f29abcaf48
+  }
+}
+mask {
+}
+nothing {
+}
+f {
+  value: f:40200000
+}
+i64 {
+  value: 9223372036854775807
+}
+u64 {
+  value: 0
+}
+u32 {
+  value: 1
+}
+b {
+  value: false
+}
+s {
+  value: x:3363336162313178
+}
+raw {
+  value: x:15db498f3721d742f042
+}
+values[0] {
+  list_value {
+    values[0] {
+      number_value: d:bff8000000000000
+    }
+    values[1] {
+      null_value: 0
+    }
+    values[2] {
+      null_value: 0
+    }
+  }
+}
+named[] {
+  key: x:61
+  value {
+    string_value: x:7461620971756f746522
+  }
+}
+at {
+  seconds: 16689438381
+  nanos: 0
+}
+span {
+  seconds: 263522060767
+  nanos: 0
+}
+times[0] {
+  seconds: -16797797922
+  nanos: 5000000
+}
+spans[0] {
+  seconds: 313383607522
+  nanos: 250000000
+}
+spans[1] {
+  seconds: 180790381948
+  nanos: 50526142
+}
+spans[2] {
+  seconds: 213041950669
+  nanos: 152346494
+}
+nothing_at_all: 0
+---
+value {
+  list_value {
+    values[0] {
+      string_value: x:f09f9982
+    }
+    values[1] {
+      string_value: x:61
+    }
+  }
+}
+mask {
+  paths[0]: x:73616d706c655f72617465
+  paths[1]: x:612e62
+  paths[2]: x:785f792e7a
+}
+nothing {
+}
+d {
+  value: d:bfc0000000000000
+}
+f {
+  value: f:7f800000
+}
+u64 {
+  value: 9356352042770029359
+}
+i32 {
+  value: 317
+}
+b {
+  value: false
+}
+s {
+  value: x:
+}
+raw {
+  value: x:ea1bf91e4b43
+}
+values[0] {
+  bool_value: false
+}
+named[] {
+  key: x:61
+  value {
+    bool_value: true
+  }
+}
+named[] {
+  key: x:6c696e650a627265616b
+  value {
+  }
+}
+named[] {
+  key: x:e697a5e69cac
+  value {
+  }
+}
+at {
+  seconds: 11004107644
+  nanos: 5000000
+}
+span {
+  seconds: 237666227585
+  nanos: 0
+}
+times[0] {
+  seconds: 3317566388
+  nanos: 1000
+}
+nothing_at_all: 0
+---
+attributes {
+  fields[] {
+    key: x:7461620971756f746522
+    value {
+      list_value {
+        values[0] {
+          number_value: d:3e7ad7f29abcaf48
+        }
+      }
+    }
+  }
+  fields[] {
+    key: x:e697a5e69cac
+    value {
+      string_value: x:e697a5e69cac
+    }
+  }
+}
+value {
+  number_value: d:bff8000000000000
+}
+mask {
+  paths[0]: x:646961676e6f73746963732e6472696674
+  paths[1]: x:612e62
+}
+nothing {
+}
+f {
+  value: f:00000000
+}
+u64 {
+  value: 0
+}
+b {
+  value: true
+}
+s {
+  value: x:615f32787a5f7963636261
+}
+raw {
+  value: x:044b63
+}
+values[0] {
+  null_value: 0
+}
+values[1] {
+  string_value: x:e697a5e69cac
+}
+values[2] {
+  struct_value {
+    fields[] {
+      key: x:68c3a96c6c6f
+      value {
+        string_value: x:
+      }
+    }
+    fields[] {
+      key: x:6b31
+      value {
+        bool_value: true
+      }
+    }
+    fields[] {
+      key: x:e697a5e69cac
+      value {
+        number_value: d:3e7ad7f29abcaf48
+      }
+    }
+  }
+}
+named[] {
+  key: x:68c3a96c6c6f
+  value {
+    bool_value: false
+  }
+}
+at {
+  seconds: -21929587566
+  nanos: 5000000
+}
+span {
+  seconds: 42618393995
+  nanos: 89621940
+}
+times[0] {
+  seconds: 161242566339
+  nanos: 1000
+}
+spans[0] {
+  seconds: 39995666591
+  nanos: 242808251
+}
+nothing_at_all: 0
+---
+value {
+  null_value: 0
+}
+items {
+}
+mask {
+  paths[0]: x:61
+  paths[1]: x:612e62
+  paths[2]: x:646961676e6f73746963732e6472696674
+}
+nothing {
+}
+d {
+  value: d:0000000000000000
+}
+f {
+  value: f:00000000
+}
+i64 {
+  value: 9223372036854775807
+}
+u64 {
+  value: 0
+}
+u32 {
+  value: 0
+}
+s {
+  value: x:e697a5e69cac
+}
+values[0] {
+  struct_value {
+    fields[] {
+      key: x:68c3a96c6c6f
+      value {
+        string_value: x:68c3a96c6c6f
+      }
+    }
+    fields[] {
+      key: x:6c696e650a627265616b
+      value {
+        bool_value: false
+      }
+    }
+  }
+}
+values[1] {
+  bool_value: false
+}
+values[2] {
+  bool_value: true
+}
+named[] {
+  key: x:61
+  value {
+  }
+}
+at {
+  seconds: -54978614153
+  nanos: 5000000
+}
+span {
+  seconds: 56317494844
+  nanos: 0
+}
+times[0] {
+  seconds: 154990761459
+  nanos: 1000
+}
+nothing_at_all: 0
+---
+value {
+  struct_value {
+    fields[] {
+      key: x:e697a5e69cac
+      value {
+        string_value: x:f09f9982
+      }
+    }
+  }
+}
+nothing {
+}
+d {
+  value: d:7ff8000000000000
+}
+f {
+  value: f:be000000
+}
+i64 {
+  value: 0
+}
+u64 {
+  value: 0
+}
+i32 {
+  value: 150
+}
+s {
+  value: x:30783261637a306178337862626278
+}
+raw {
+  value: x:
+}
+values[0] {
+  number_value: d:0000000000000000
+}
+named[] {
+  key: x:6233623363633131
+  value {
+    number_value: d:c1a55d4be1c5e31c
+  }
+}
+span {
+  seconds: -254537445138
+  nanos: -250000000
+}
+spans[0] {
+  seconds: 172508944212
+  nanos: 250000000
+}
+spans[1] {
+  seconds: 27233798878
+  nanos: 0
+}
+nothing_at_all: 77
+---
+attributes {
+  fields[] {
+    key: x:
+    value {
+    }
+  }
+  fields[] {
+    key: x:6b32
+    value {
+    }
+  }
+  fields[] {
+    key: x:7461620971756f746522
+    value {
+      null_value: 0
+    }
+  }
+}
+value {
+  struct_value {
+    fields[] {
+      key: x:68c3a96c6c6f
+      value {
+        string_value: x:68c3a96c6c6f
+      }
+    }
+    fields[] {
+      key: x:6b32
+      value {
+        bool_value: false
+      }
+    }
+    fields[] {
+      key: x:f09f9982
+      value {
+        bool_value: true
+      }
+    }
+  }
+}
+items {
+  values[0] {
+    null_value: 0
+  }
+}
+mask {
+  paths[0]: x:73616d706c655f72617465
+  paths[1]: x:612e62
+  paths[2]: x:61
+}
+nothing {
+}
+d {
+  value: d:bfc0000000000000
+}
+f {
+  value: f:7f800000
+}
+i64 {
+  value: 7683836082419584180
+}
+u64 {
+  value: 0
+}
+i32 {
+  value: 2147483647
+}
+u32 {
+  value: 803
+}
+b {
+  value: true
+}
+raw {
+  value: x:956c
+}
+named[] {
+  key: x:7a796278325f7931615f6331337833636233305f
+  value {
+    number_value: d:0000000000000000
+  }
+}
+named[] {
+  key: x:e697a5e69cac
+  value {
+    bool_value: true
+  }
+}
+named[] {
+  key: x:f09f9982
+  value {
+    struct_value {
+      fields[] {
+        key: x:6b31
+        value {
+          string_value: x:f09f9982
+        }
+      }
+    }
+  }
+}
+span {
+  seconds: -209359859649
+  nanos: -250000000
+}
+times[0] {
+  seconds: 53928602146
+  nanos: 0
+}
+times[1] {
+  seconds: 66031669467
+  nanos: 1000
+}
+times[2] {
+  seconds: 183559494732
+  nanos: 5000000
+}
+spans[0] {
+  seconds: -90445670739
+  nanos: -728863936
+}
+spans[1] {
+  seconds: 223125873804
+  nanos: 250000000
+}
+spans[2] {
+  seconds: 1878062369
+  nanos: 739655864
+}
+nothing_at_all: 77
+---
+attributes {
+  fields[] {
+    key: x:68c3a96c6c6f
+    value {
+    }
+  }
+  fields[] {
+    key: x:e697a5e69cac
+    value {
+      struct_value {
+        fields[] {
+          key: x:
+          value {
+            bool_value: true
+          }
+        }
+        fields[] {
+          key: x:6b31
+          value {
+            null_value: 0
+          }
+        }
+      }
+    }
+  }
+  fields[] {
+    key: x:f09f9982
+    value {
+      string_value: x:e697a5e69cac
+    }
+  }
+}
+value {
+  null_value: 0
+}
+d {
+  value: d:7ff8000000000000
+}
+i64 {
+  value: -1
+}
+i32 {
+  value: -2147483648
+}
+u32 {
+  value: 310
+}
+s {
+  value: x:61
+}
+raw {
+  value: x:86d35e08e167
+}
+named[] {
+  key: x:317861305f305f3062796162337961787832
+  value {
+    struct_value {
+      fields[] {
+        key: x:6c696e650a627265616b
+        value {
+          bool_value: false
+        }
+      }
+    }
+  }
+}
+named[] {
+  key: x:68c3a96c6c6f
+  value {
+    number_value: d:41b260883a1b2314
+  }
+}
+at {
+  seconds: 32025773876
+  nanos: 0
+}
+nothing_at_all: 0
+---
+attributes {
+}
+nothing {
+}
+f {
+  value: f:be000000
+}
+i64 {
+  value: 355
+}
+u64 {
+  value: 18446744073709551615
+}
+i32 {
+  value: 0
+}
+u32 {
+  value: 1
+}
+b {
+  value: true
+}
+s {
+  value: x:7a786163627a306331313063335f7830313263
+}
+raw {
+  value: x:
+}
+values[0] {
+  struct_value {
+    fields[] {
+      key: x:6c696e650a627265616b
+      value {
+        string_value: x:68c3a96c6c6f
+      }
+    }
+  }
+}
+values[1] {
+  bool_value: true
+}
+values[2] {
+  bool_value: true
+}
+named[] {
+  key: x:617961615f3333
+  value {
+    string_value: x:7461620971756f746522
+  }
+}
+named[] {
+  key: x:68c3a96c6c6f
+  value {
+    null_value: 0
+  }
+}
+named[] {
+  key: x:7461620971756f746522
+  value {
+    null_value: 0
+  }
+}
+at {
+  seconds: 121431925338
+  nanos: 5000000
+}
+span {
+  seconds: 253381685366
+  nanos: 250000000
+}
+times[0] {
+  seconds: 45045965250
+  nanos: 0
+}
+times[1] {
+  seconds: 129182772943
+  nanos: 1000
+}
+nothing_at_all: 0
+---
+attributes {
+  fields[] {
+    key: x:
+    value {
+      bool_value: false
+    }
+  }
+  fields[] {
+    key: x:f09f9982
+    value {
+      list_value {
+        values[0] {
+          bool_value: false
+        }
+        values[1] {
+          null_value: 0
+        }
+      }
+    }
+  }
+}
+value {
+}
+items {
+  values[0] {
+    string_value: x:68c3a96c6c6f
+  }
+  values[1] {
+    list_value {
+      values[0] {
+        bool_value: true
+      }
+      values[1] {
+        bool_value: true
+      }
+    }
+  }
+}
+mask {
+  paths[0]: x:785f792e7a
+  paths[1]: x:73616d706c655f72617465
+}
+nothing {
+}
+u64 {
+  value: 0
+}
+b {
+  value: false
+}
+raw {
+  value: x:
+}
+values[0] {
+  bool_value: false
+}
+values[1] {
+  list_value {
+    values[0] {
+      bool_value: false
+    }
+  }
+}
+values[2] {
+  null_value: 0
+}
+named[] {
+  key: x:
+  value {
+    string_value: x:7461620971756f746522
+  }
+}
+named[] {
+  key: x:6263335f
+  value {
+    string_value: x:e697a5e69cac
+  }
+}
+named[] {
+  key: x:f09f9982
+  value {
+  }
+}
+at {
+  seconds: 120222818559
+  nanos: 465833377
+}
+span {
+  seconds: -116515506796
+  nanos: -250000000
+}
+times[0] {
+  seconds: 1007041800
+  nanos: 0
+}
+times[1] {
+  seconds: -41994686828
+  nanos: 817416537
+}
+spans[0] {
+  seconds: 33733729800
+  nanos: 673666285
+}
+nothing_at_all: 77
+---
+value {
+  list_value {
+    values[0] {
+      null_value: 0
+    }
+  }
+}
+mask {
+  paths[0]: x:646961676e6f73746963732e6472696674
+}
+d {
+  value: d:7ff8000000000000
+}
+f {
+  value: f:40200000
+}
+i64 {
+  value: 1
+}
+u64 {
+  value: 18446744073709551615
+}
+u32 {
+  value: 1
+}
+b {
+  value: false
+}
+s {
+  value: x:7833795f6232306263313333785f3263306231
+}
+at {
+  seconds: -56628830076
+  nanos: 0
+}
+times[0] {
+  seconds: -40759786055
+  nanos: 1000
+}
+times[1] {
+  seconds: 222270554636
+  nanos: 134288016
+}
+times[2] {
+  seconds: 116776733759
+  nanos: 0
+}
+spans[0] {
+  seconds: -126768580569
+  nanos: -250000000
+}
+spans[1] {
+  seconds: 237354228156
+  nanos: 0
+}
+nothing_at_all: 0
+---
+items {
+  values[0] {
+    number_value: d:4008000000000000
+  }
+}
+mask {
+  paths[0]: x:646961676e6f73746963732e6472696674
+}
+nothing {
+}
+f {
+  value: f:7fc00000
+}
+i64 {
+  value: -9223372036854775808
+}
+s {
+  value: x:31795f3033325f787962306378
+}
+raw {
+  value: x:3b1bdb36e621
+}
+values[0] {
+  null_value: 0
+}
+values[1] {
+  struct_value {
+    fields[] {
+      key: x:61
+      value {
+        string_value: x:
+      }
+    }
+    fields[] {
+      key: x:7461620971756f746522
+      value {
+        number_value: d:41cc46f316a3e1c2
+      }
+    }
+  }
+}
+named[] {
+  key: x:317979785f7a7a625f7961
+  value {
+    bool_value: true
+  }
+}
+span {
+  seconds: 76067759655
+  nanos: 0
+}
+times[0] {
+  seconds: 77825777398
+  nanos: 0
+}
+spans[0] {
+  seconds: 279380793495
+  nanos: 684600835
+}
+spans[1] {
+  seconds: -15844590585
+  nanos: -278470010
+}
+nothing_at_all: 0
+---
+attributes {
+  fields[] {
+    key: x:
+    value {
+      list_value {
+        values[0] {
+          null_value: 0
+        }
+        values[1] {
+          number_value: d:0000000000000000
+        }
+      }
+    }
+  }
+  fields[] {
+    key: x:6b32
+    value {
+    }
+  }
+}
+items {
+  values[0] {
+    number_value: d:c1c5c9ca1d3e63ea
+  }
+  values[1] {
+    struct_value {
+      fields[] {
+        key: x:6c696e650a627265616b
+        value {
+          null_value: 0
+        }
+      }
+    }
+  }
+  values[2] {
+    string_value: x:68c3a96c6c6f
+  }
+}
+mask {
+}
+nothing {
+}
+d {
+  value: d:7ff8000000000000
+}
+i64 {
+  value: 7818380981011545317
+}
+u64 {
+  value: 0
+}
+i32 {
+  value: 889425566
+}
+u32 {
+  value: 4061862842
+}
+b {
+  value: true
+}
+values[0] {
+  struct_value {
+    fields[] {
+      key: x:6b31
+      value {
+        string_value: x:68c3a96c6c6f
+      }
+    }
+  }
+}
+spans[0] {
+  seconds: 162151669838
+  nanos: 623250659
+}
+nothing_at_all: 0
+---
+attributes {
+  fields[] {
+    key: x:7461620971756f746522
+    value {
+      null_value: 0
+    }
+  }
+}
+value {
+  number_value: d:41a0575fc50132a8
+}
+items {
+  values[0] {
+    bool_value: false
+  }
+  values[1] {
+    number_value: d:3e7ad7f29abcaf48
+  }
+  values[2] {
+    struct_value {
+      fields[] {
+        key: x:6b31
+        value {
+          null_value: 0
+        }
+      }
+    }
+  }
+}
+d {
+  value: d:0000000000000000
+}
+f {
+  value: f:7f800000
+}
+u64 {
+  value: 10342092393224353807
+}
+i32 {
+  value: -316521478
+}
+u32 {
+  value: 0
+}
+b {
+  value: true
+}
+s {
+  value: x:f09f9982
+}
+raw {
+  value: x:a45a1fcf
+}
+named[] {
+  key: x:785f30313032336132303033
+  value {
+    null_value: 0
+  }
+}
+span {
+  seconds: 117146342237
+  nanos: 0
+}
+spans[0] {
+  seconds: -177660055603
+  nanos: 0
+}
+spans[1] {
+  seconds: -111342970798
+  nanos: -250000000
+}
+nothing_at_all: 77
+---
+attributes {
+}
+mask {
+}
+i64 {
+  value: 1
+}
+u64 {
+  value: 733
+}
+b {
+  value: false
+}
+raw {
+  value: x:
+}
+span {
+  seconds: 310275331633
+  nanos: 0
+}
+times[0] {
+  seconds: 79164981883
+  nanos: 5000000
+}
+times[1] {
+  seconds: 23387562762
+  nanos: 1000
+}
+times[2] {
+  seconds: 229523000370
+  nanos: 5000000
+}
+spans[0] {
+  seconds: 185770409767
+  nanos: 554961358
+}
+spans[1] {
+  seconds: -203798356172
+  nanos: 0
+}
+spans[2] {
+  seconds: -4508733306
+  nanos: -250000000
+}
+nothing_at_all: 0
+---
+value {
+  string_value: x:6c696e650a627265616b
+}
+items {
+  values[0] {
+    number_value: d:3e7ad7f29abcaf48
+  }
+  values[1] {
+    string_value: x:e697a5e69cac
+  }
+}
+mask {
+  paths[0]: x:73616d706c655f72617465
+  paths[1]: x:612e62
+}
+d {
+  value: d:0000000000000000
+}
+f {
+  value: f:40200000
+}
+i64 {
+  value: 400
+}
+u64 {
+  value: 18446744073709551615
+}
+s {
+  value: x:68c3a96c6c6f
+}
+raw {
+  value: x:88131fe5ec8fc4
+}
+values[0] {
+  string_value: x:68c3a96c6c6f
+}
+values[1] {
+  string_value: x:7461620971756f746522
+}
+named[] {
+  key: x:31787932786362616331617a63617a32613278
+  value {
+    struct_value {
+      fields[] {
+        key: x:68c3a96c6c6f
+        value {
+          string_value: x:
+        }
+      }
+      fields[] {
+        key: x:6c696e650a627265616b
+        value {
+          string_value: x:e697a5e69cac
+        }
+      }
+      fields[] {
+        key: x:f09f9982
+        value {
+          number_value: d:41ad11dbb6dd3ad0
+        }
+      }
+    }
+  }
+}
+named[] {
+  key: x:61
+  value {
+    bool_value: true
+  }
+}
+named[] {
+  key: x:7461620971756f746522
+  value {
+  }
+}
+times[0] {
+  seconds: 81508674982
+  nanos: 794710665
+}
+spans[0] {
+  seconds: 244088777282
+  nanos: 0
+}
+nothing_at_all: 0
+---
+attributes {
+}
+value {
+  number_value: d:bff8000000000000
+}
+mask {
+  paths[0]: x:785f792e7a
+  paths[1]: x:646961676e6f73746963732e6472696674
+  paths[2]: x:73616d706c655f72617465
+}
+nothing {
+}
+d {
+  value: d:7ff0000000000000
+}
+f {
+  value: f:7fc00000
+}
+i64 {
+  value: 0
+}
+u32 {
+  value: 1
+}
+b {
+  value: false
+}
+raw {
+  value: x:1ea7ebee3ff63b0b
+}
+values[0] {
+  null_value: 0
+}
+values[1] {
+  bool_value: false
+}
+span {
+  seconds: 227429860593
+  nanos: 0
+}
+times[0] {
+  seconds: 25311210686
+  nanos: 0
+}
+spans[0] {
+  seconds: 106185986501
+  nanos: 0
+}
+spans[1] {
+  seconds: -93396695921
+  nanos: 0
+}
+spans[2] {
+  seconds: 313034932318
+  nanos: 0
+}
+nothing_at_all: 77
+---
+attributes {
+}
+value {
+  struct_value {
+    fields[] {
+      key: x:6c696e650a627265616b
+      value {
+        string_value: x:7461620971756f746522
+      }
+    }
+  }
+}
+items {
+  values[0] {
+    null_value: 0
+  }
+  values[1] {
+    list_value {
+      values[0] {
+        null_value: 0
+      }
+    }
+  }
+  values[2] {
+    number_value: d:c1a286c92bdc88fc
+  }
+}
+mask {
+  paths[0]: x:646961676e6f73746963732e6472696674
+  paths[1]: x:73616d706c655f72617465
+}
+nothing {
+}
+d {
+  value: d:4004000000000000
+}
+u64 {
+  value: 0
+}
+i32 {
+  value: 0
+}
+u32 {
+  value: 0
+}
+raw {
+  value: x:65e48d
+}
+named[] {
+  key: x:
+  value {
+    string_value: x:6c696e650a627265616b
+  }
+}
+named[] {
+  key: x:e697a5e69cac
+  value {
+    struct_value {
+      fields[] {
+        key: x:68c3a96c6c6f
+        value {
+          bool_value: true
+        }
+      }
+      fields[] {
+        key: x:e697a5e69cac
+        value {
+          string_value: x:68c3a96c6c6f
+        }
+      }
+      fields[] {
+        key: x:f09f9982
+        value {
+          bool_value: true
+        }
+      }
+    }
+  }
+}
+named[] {
+  key: x:f09f9982
+  value {
+    null_value: 0
+  }
+}
+at {
+  seconds: 148963986687
+  nanos: 1000
+}
+span {
+  seconds: -290871088741
+  nanos: 0
+}
+times[0] {
+  seconds: 81644138155
+  nanos: 1000
+}
+times[1] {
+  seconds: 37133371754
+  nanos: 5000000
+}
+times[2] {
+  seconds: 77045947482
+  nanos: 778323775
+}
+spans[0] {
+  seconds: -135016949330
+  nanos: -895717598
+}
+spans[1] {
+  seconds: -257597766221
+  nanos: 0
+}
+spans[2] {
+  seconds: -171013455519
+  nanos: 0
+}
+nothing_at_all: 77
+---
+attributes {
+}
+value {
+  string_value: x:e697a5e69cac
+}
+items {
+  values[0] {
+    null_value: 0
+  }
+  values[1] {
+    string_value: x:68c3a96c6c6f
+  }
+  values[2] {
+    number_value: d:3e7ad7f29abcaf48
+  }
+}
+mask {
+  paths[0]: x:612e62
+}
+d {
+  value: d:4004000000000000
+}
+f {
+  value: f:40200000
+}
+i64 {
+  value: 0
+}
+u64 {
+  value: 0
+}
+i32 {
+  value: -1
+}
+u32 {
+  value: 281
+}
+raw {
+  value: x:c2
+}
+values[0] {
+  null_value: 0
+}
+values[1] {
+  number_value: d:419d6f3455000000
+}
+at {
+  seconds: 251696242766
+  nanos: 0
+}
+span {
+  seconds: -77245222552
+  nanos: -250000000
+}
+times[0] {
+  seconds: -7238150976
+  nanos: 1000
+}
+times[1] {
+  seconds: 192658947246
+  nanos: 0
+}
+times[2] {
+  seconds: 113549871672
+  nanos: 132551279
+}
+spans[0] {
+  seconds: 286415985894
+  nanos: 834774687
+}
+nothing_at_all: 0
+---
+attributes {
+  fields[] {
+    key: x:61
+    value {
+      number_value: d:4008000000000000
+    }
+  }
+  fields[] {
+    key: x:e697a5e69cac
+    value {
+      number_value: d:41c272f598f54cd0
+    }
+  }
+}
+items {
+  values[0] {
+    null_value: 0
+  }
+  values[1] {
+    list_value {
+      values[0] {
+        number_value: d:bff8000000000000
+      }
+      values[1] {
+        string_value: x:68c3a96c6c6f
+      }
+      values[2] {
+        bool_value: true
+      }
+    }
+  }
+  values[2] {
+    number_value: d:3e7ad7f29abcaf48
+  }
+}
+mask {
+}
+nothing {
+}
+d {
+  value: d:0000000000000000
+}
+f {
+  value: f:7fc00000
+}
+u64 {
+  value: 18446744073709551615
+}
+i32 {
+  value: 0
+}
+b {
+  value: false
+}
+s {
+  value: x:6c696e650a627265616b
+}
+raw {
+  value: x:cf21fbf2b73adb
+}
+named[] {
+  key: x:3162
+  value {
+    bool_value: false
+  }
+}
+at {
+  seconds: 151934019015
+  nanos: 0
+}
+span {
+  seconds: -23170250823
+  nanos: -250000000
+}
+times[0] {
+  seconds: -45356549044
+  nanos: 1000
+}
+times[1] {
+  seconds: 226548857204
+  nanos: 0
+}
+spans[0] {
+  seconds: -163959778291
+  nanos: -250000000
+}
+spans[1] {
+  seconds: 64953915581
+  nanos: 663917568
+}
+nothing_at_all: 77
+---
+attributes {
+}
+value {
+  null_value: 0
+}
+mask {
+  paths[0]: x:61
+  paths[1]: x:612e62
+  paths[2]: x:646961676e6f73746963732e6472696674
+}
+nothing {
+}
+d {
+  value: d:0000000000000000
+}
+i32 {
+  value: 2147483647
+}
+u32 {
+  value: 4294967295
+}
+b {
+  value: false
+}
+raw {
+  value: x:3d8c910b1c2a9d8b
+}
+values[0] {
+  struct_value {
+    fields[] {
+      key: x:6c696e650a627265616b
+      value {
+        null_value: 0
+      }
+    }
+  }
+}
+named[] {
+  key: x:6c696e650a627265616b
+  value {
+    bool_value: false
+  }
+}
+at {
+  seconds: 187592564312
+  nanos: 5000000
+}
+times[0] {
+  seconds: 187705238997
+  nanos: 1000
+}
+times[1] {
+  seconds: 215722721598
+  nanos: 5000000
+}
+spans[0] {
+  seconds: -105112429935
+  nanos: -250000000
+}
+spans[1] {
+  seconds: -309999367812
+  nanos: -986314518
+}
+spans[2] {
+  seconds: -134494497458
+  nanos: -160520350
+}
+nothing_at_all: 0
+---
+attributes {
+}
+items {
+  values[0] {
+    number_value: d:0000000000000000
+  }
+  values[1] {
+    null_value: 0
+  }
+}
+nothing {
+}
+d {
+  value: d:bfc0000000000000
+}
+f {
+  value: f:00000000
+}
+u64 {
+  value: 0
+}
+i32 {
+  value: 435
+}
+u32 {
+  value: 364
+}
+s {
+  value: x:68c3a96c6c6f
+}
+raw {
+  value: x:7a1f7de1
+}
+values[0] {
+  string_value: x:6c696e650a627265616b
+}
+named[] {
+  key: x:317a5f623062
+  value {
+    number_value: d:4008000000000000
+  }
+}
+named[] {
+  key: x:61
+  value {
+    struct_value {
+      fields[] {
+        key: x:61
+        value {
+          string_value: x:6c696e650a627265616b
+        }
+      }
+    }
+  }
+}
+named[] {
+  key: x:79
+  value {
+    struct_value {
+      fields[] {
+        key: x:61
+        value {
+          number_value: d:41a7f1b06d0d84d8
+        }
+      }
+      fields[] {
+        key: x:6b32
+        value {
+          bool_value: true
+        }
+      }
+    }
+  }
+}
+at {
+  seconds: 122600943497
+  nanos: 1000
+}
+span {
+  seconds: 166203013258
+  nanos: 813531885
+}
+times[0] {
+  seconds: 167657143089
+  nanos: 0
+}
+times[1] {
+  seconds: 36423376503
+  nanos: 137894311
+}
+times[2] {
+  seconds: 43561971040
+  nanos: 5000000
+}
+nothing_at_all: 0
+---
+value {
+}
+mask {
+  paths[0]: x:73616d706c655f72617465
+  paths[1]: x:61
+}
+nothing {
+}
+d {
+  value: d:4004000000000000
+}
+f {
+  value: f:7fc00000
+}
+i64 {
+  value: -1
+}
+u64 {
+  value: 18446744073709551615
+}
+i32 {
+  value: 997020300
+}
+u32 {
+  value: 0
+}
+raw {
+  value: x:b17c343adbde60f82b
+}
+span {
+  seconds: 184363456237
+  nanos: 0
+}
+times[0] {
+  seconds: 210445243786
+  nanos: 5000000
+}
+times[1] {
+  seconds: -45201307342
+  nanos: 1000
+}
+spans[0] {
+  seconds: -261503493242
+  nanos: -121783637
+}
+spans[1] {
+  seconds: -74284356253
+  nanos: 0
+}
+nothing_at_all: 77
+---
+value {
+  number_value: d:bff8000000000000
+}
+nothing {
+}
+d {
+  value: d:bfc0000000000000
+}
+i64 {
+  value: 9223372036854775807
+}
+u64 {
+  value: 0
+}
+i32 {
+  value: 1
+}
+u32 {
+  value: 0
+}
+b {
+  value: false
+}
+named[] {
+  key: x:61
+  value {
+  }
+}
+at {
+  seconds: 14530655880
+  nanos: 5000000
+}
+span {
+  seconds: -191318179975
+  nanos: -250000000
+}
+times[0] {
+  seconds: -50460703648
+  nanos: 0
+}
+times[1] {
+  seconds: 146864945679
+  nanos: 5000000
+}
+times[2] {
+  seconds: 28945603056
+  nanos: 0
+}
+spans[0] {
+  seconds: -213973472085
+  nanos: -857589159
+}
+spans[1] {
+  seconds: 46309489777
+  nanos: 250000000
+}
+nothing_at_all: 0
+---
+attributes {
+}
+value {
+}
+items {
+  values[0] {
+    struct_value {
+      fields[] {
+        key: x:6b32
+        value {
+          string_value: x:68c3a96c6c6f
+        }
+      }
+      fields[] {
+        key: x:6c696e650a627265616b
+        value {
+          bool_value: false
+        }
+      }
+    }
+  }
+}
+mask {
+  paths[0]: x:61
+}
+nothing {
+}
+d {
+  value: d:4004000000000000
+}
+f {
+  value: f:40200000
+}
+i64 {
+  value: 0
+}
+i32 {
+  value: 0
+}
+u32 {
+  value: 3957587109
+}
+b {
+  value: true
+}
+s {
+  value: x:31615f6130617a32
+}
+raw {
+  value: x:3e
+}
+values[0] {
+  list_value {
+    values[0] {
+      string_value: x:7461620971756f746522
+    }
+    values[1] {
+      number_value: d:419d6f3455000000
+    }
+    values[2] {
+      bool_value: false
+    }
+  }
+}
+span {
+  seconds: 159139204309
+  nanos: 250000000
+}
+spans[0] {
+  seconds: 112523905083
+  nanos: 0
+}
+nothing_at_all: 0
+---
+value {
+  struct_value {
+    fields[] {
+      key: x:
+      value {
+        null_value: 0
+      }
+    }
+    fields[] {
+      key: x:6b31
+      value {
+        number_value: d:3e7ad7f29abcaf48
+      }
+    }
+  }
+}
+items {
+  values[0] {
+    list_value {
+      values[0] {
+        string_value: x:7461620971756f746522
+      }
+    }
+  }
+  values[1] {
+    bool_value: true
+  }
+}
+mask {
+  paths[0]: x:73616d706c655f72617465
+}
+nothing {
+}
+d {
+  value: d:4004000000000000
+}
+i64 {
+  value: 1
+}
+u64 {
+  value: 18446744073709551615
+}
+i32 {
+  value: -1
+}
+u32 {
+  value: 2030192812
+}
+b {
+  value: false
+}
+s {
+  value: x:7933636363635f
+}
+named[] {
+  key: x:f09f9982
+  value {
+    struct_value {
+      fields[] {
+        key: x:68c3a96c6c6f
+        value {
+          bool_value: false
+        }
+      }
+      fields[] {
+        key: x:6b31
+        value {
+          null_value: 0
+        }
+      }
+      fields[] {
+        key: x:6b32
+        value {
+          null_value: 0
+        }
+      }
+      fields[] {
+        key: x:f09f9982
+        value {
+          string_value: x:68c3a96c6c6f
+        }
+      }
+    }
+  }
+}
+at {
+  seconds: 80321342166
+  nanos: 732029848
+}
+times[0] {
+  seconds: 244649827196
+  nanos: 758764015
+}
+times[1] {
+  seconds: 27999362065
+  nanos: 45556187
+}
+times[2] {
+  seconds: -36672894736
+  nanos: 1000
+}
+spans[0] {
+  seconds: -158913661972
+  nanos: 0
+}
+nothing_at_all: 77

@@ -1,0 +1,24 @@
+package routeguide
+syntax proto3
+message Point
+  field latitude 1 1 5 - latitude - 0 -
+  field longitude 2 1 5 - longitude - 0 -
+message Rectangle
+  field lo 1 1 11 .routeguide.Point lo - 0 -
+  field hi 2 1 11 .routeguide.Point hi - 0 -
+message Feature
+  field name 1 1 9 - name - 0 -
+  field location 2 1 11 .routeguide.Point location - 0 -
+message RouteNote
+  field location 1 1 11 .routeguide.Point location - 0 -
+  field message 2 1 9 - message - 0 -
+message RouteSummary
+  field point_count 1 1 5 - pointCount - 0 -
+  field feature_count 2 1 5 - featureCount - 0 -
+  field distance 3 1 5 - distance - 0 -
+  field elapsed_time 4 1 5 - elapsedTime - 0 -
+service RouteGuide
+  method GetFeature .routeguide.Point .routeguide.Feature 0 0
+  method ListFeatures .routeguide.Rectangle .routeguide.Feature 0 1
+  method RecordRoute .routeguide.Point .routeguide.RouteSummary 1 0
+  method RouteChat .routeguide.RouteNote .routeguide.RouteNote 1 1

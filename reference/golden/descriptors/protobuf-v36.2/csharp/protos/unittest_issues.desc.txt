@@ -1,0 +1,150 @@
+package unittest_issues
+syntax proto3
+message Issue307
+  message NestedOnce
+    message NestedTwice
+message NegativeEnumMessage
+  field value 1 1 14 .unittest_issues.NegativeEnum value - 0 -
+  field values 2 3 14 .unittest_issues.NegativeEnum values - 0 false
+  field packed_values 3 3 14 .unittest_issues.NegativeEnum packedValues - 0 true
+message DeprecatedChild
+message DeprecatedFieldsMessage
+  field PrimitiveValue 1 1 5 - PrimitiveValue - 0 -
+  field PrimitiveArray 2 3 5 - PrimitiveArray - 0 -
+  field MessageValue 3 1 11 .unittest_issues.DeprecatedChild MessageValue - 0 -
+  field MessageArray 4 3 11 .unittest_issues.DeprecatedChild MessageArray - 0 -
+  field EnumValue 5 1 14 .unittest_issues.DeprecatedEnum EnumValue - 0 -
+  field EnumArray 6 3 14 .unittest_issues.DeprecatedEnum EnumArray - 0 -
+message ItemField
+  field item 1 1 5 - item - 0 -
+message ReservedNames
+  field types 1 1 5 - types - 0 -
+  field descriptor 2 1 5 - descriptor - 0 -
+  message SomeNestedType
+message TestJsonFieldOrdering
+  field plain_int32 4 1 5 - plainInt32 - 0 -
+  field o1_string 2 1 9 - o1String 0 0 -
+  field o1_int32 5 1 5 - o1Int32 0 0 -
+  field plain_string 1 1 9 - plainString - 0 -
+  field o2_int32 6 1 5 - o2Int32 1 0 -
+  field o2_string 3 1 9 - o2String 1 0 -
+  oneof o1
+  oneof o2
+message TestJsonName
+  field name 1 1 9 - name - 0 -
+  field description 2 1 9 - desc - 0 -
+  field guid 3 1 9 - exid - 0 -
+message OneofMerging
+  field text 1 1 9 - text 0 0 -
+  field nested 2 1 11 .unittest_issues.OneofMerging.Nested nested 0 0 -
+  message Nested
+    field x 1 1 5 - x - 0 -
+    field y 2 1 5 - y - 0 -
+  oneof value
+message NullValueOutsideStruct
+  field string_value 1 1 9 - stringValue 0 0 -
+  field null_value 2 1 14 .google.protobuf.NullValue nullValue 0 0 -
+  oneof value
+message NullValueNotInOneof
+  field null_value 2 1 14 .google.protobuf.NullValue nullValue - 0 -
+message MixedRegularAndOptional
+  field regular_field 1 1 9 - regularField - 0 -
+  field optional_field 2 1 9 - optionalField 0 1 -
+  oneof _optional_field
+message OneofWithNoneField
+  field x 1 1 9 - x 0 0 -
+  field none 2 1 9 - none 0 0 -
+  oneof test
+message OneofWithNoneName
+  field x 1 1 9 - x 0 0 -
+  field y 2 1 9 - y 0 0 -
+  oneof none
+message DisambiguateCommonMembers
+  field disambiguate_common_members 1 1 5 - disambiguateCommonMembers - 0 -
+  field types 2 1 5 - types - 0 -
+  field descriptor 3 1 5 - descriptor - 0 -
+  field equals 4 1 5 - equals - 0 -
+  field to_string 5 1 5 - toString - 0 -
+  field get_hash_code 6 1 5 - getHashCode - 0 -
+  field write_to 7 1 5 - writeTo - 0 -
+  field clone 8 1 5 - clone - 0 -
+  field calculate_size 9 1 5 - calculateSize - 0 -
+  field merge_from 10 1 5 - mergeFrom - 0 -
+  field on_construction 11 1 5 - onConstruction - 0 -
+  field parser 12 1 5 - parser - 0 -
+message Issue11987Message
+  field a 1 1 5 - b - 0 -
+  field b 2 1 5 - a - 0 -
+  field c 3 1 5 - d - 0 -
+message TestPresenceBits
+  field field1 1 1 5 - field1 0 1 -
+  field field2 2 1 5 - field2 1 1 -
+  field field3 3 1 5 - field3 2 1 -
+  field field4 4 1 5 - field4 3 1 -
+  field field5 5 1 5 - field5 4 1 -
+  field field6 6 1 5 - field6 5 1 -
+  field field7 7 1 5 - field7 6 1 -
+  field field8 8 1 5 - field8 7 1 -
+  field field9 9 1 5 - field9 8 1 -
+  field field10 10 1 5 - field10 9 1 -
+  field field11 11 1 5 - field11 10 1 -
+  field field12 12 1 5 - field12 11 1 -
+  field field13 13 1 5 - field13 12 1 -
+  field field14 14 1 5 - field14 13 1 -
+  field field15 15 1 5 - field15 14 1 -
+  field field16 16 1 5 - field16 15 1 -
+  field field17 17 1 5 - field17 16 1 -
+  field field18 18 1 5 - field18 17 1 -
+  field field19 19 1 5 - field19 18 1 -
+  field field20 20 1 5 - field20 19 1 -
+  field field21 21 1 5 - field21 20 1 -
+  field field22 22 1 5 - field22 21 1 -
+  field field23 23 1 5 - field23 22 1 -
+  field field24 24 1 5 - field24 23 1 -
+  field field25 25 1 5 - field25 24 1 -
+  field field26 26 1 5 - field26 25 1 -
+  field field27 27 1 5 - field27 26 1 -
+  field field28 28 1 5 - field28 27 1 -
+  field field29 29 1 5 - field29 28 1 -
+  field field30 30 1 5 - field30 29 1 -
+  field field31 31 1 5 - field31 30 1 -
+  field field32 32 1 5 - field32 31 1 -
+  oneof _field1
+  oneof _field2
+  oneof _field3
+  oneof _field4
+  oneof _field5
+  oneof _field6
+  oneof _field7
+  oneof _field8
+  oneof _field9
+  oneof _field10
+  oneof _field11
+  oneof _field12
+  oneof _field13
+  oneof _field14
+  oneof _field15
+  oneof _field16
+  oneof _field17
+  oneof _field18
+  oneof _field19
+  oneof _field20
+  oneof _field21
+  oneof _field22
+  oneof _field23
+  oneof _field24
+  oneof _field25
+  oneof _field26
+  oneof _field27
+  oneof _field28
+  oneof _field29
+  oneof _field30
+  oneof _field31
+  oneof _field32
+enum NegativeEnum
+  value NEGATIVE_ENUM_ZERO 0
+  value FiveBelow -5
+  value MinusOne -1
+enum DeprecatedEnum
+  value DEPRECATED_ZERO 0
+  value one 1

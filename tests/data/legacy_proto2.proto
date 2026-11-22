@@ -1,0 +1,40 @@
+// proto2: labels, required fields, default values, closed enums, groups, packed option.
+syntax = "proto2";
+
+package nelson.test.legacy;
+
+enum Unit {
+  UNIT_MBAR = 1;
+  UNIT_CMH2O = 2;
+}
+
+message Setting {
+  required int32 id = 1;
+  optional string label = 2 [default = "none"];
+  optional double value = 3 [default = 1.5];
+  optional Unit unit = 4 [default = UNIT_CMH2O];
+  repeated int32 history = 5;
+  repeated sint32 packed_history = 6 [packed = true];
+  optional group Range = 7 {
+    optional double low = 1;
+    optional double high = 2;
+  }
+  repeated group Point = 8 {
+    required int64 at = 1;
+    optional float y = 2;
+  }
+  oneof source {
+    string device = 9;
+    group Manual = 10 {
+      optional string operator_name = 1;
+    }
+  }
+  map<string, int32> counters = 11;
+  optional bytes raw = 12 [default = "\001\002"];
+  optional bool enabled = 13 [default = true];
+  repeated Unit units = 14;
+  optional Setting parent = 15;
+
+  reserved 20 to 30;
+  reserved "old";
+}

@@ -1,0 +1,6 @@
+package google.rpc
+syntax proto3
+message Status
+  field code 1 1 5 - code - 0 -
+  field message 2 1 9 - message - 0 -
+  field details 3 3 11 .google.protobuf.Any details - 0 -

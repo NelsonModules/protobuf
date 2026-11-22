@@ -1,0 +1,32 @@
+package custom_enum_json
+syntax editions
+edition 1002
+message Knight
+  field armor 1 1 14 .custom_enum_json.Armor armor - 0 -
+    resolved 1 0 14 - 0 -
+  field armors 2 3 14 .custom_enum_json.Armor armors - 0 -
+    resolved 0 1 14 - 0 -
+  field armor_map 3 3 11 .custom_enum_json.Knight.ArmorMapEntry armorMap - 0 -
+    resolved 0 0 11 - 0 -
+  field shield 4 1 14 .custom_enum_json.Knight.Shield shield - 0 -
+    resolved 1 0 14 - 0 -
+  message ArmorMapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 1 0 -
+    field value 2 1 14 .custom_enum_json.Armor value - 0 -
+      resolved 1 0 14 - 0 -
+    map_entry
+  enum Shield
+    value SHIELD_UNKNOWN 0
+    value SHIELD_BUCKLER 1
+enum Armor
+  value ARMOR_UNKNOWN 0
+  value ARMOR_GREAT_HELM 1
+  value ARMOR_GORGET 2
+  value ARMOR_GAUNTLET 3
+  value ARMOR_PLATE 4
+  value ARMOR_COIF 5
+  value ARMOR_PAULDRON 6
+  value ARMOR_SABATON 7
+  value ARMOR_SOLLERET 7
+  value ARMOR_HACHI_MAI_DO 8

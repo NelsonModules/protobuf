@@ -1,0 +1,82 @@
+package google.pubsub.v1
+syntax proto3
+message Schema
+  field name 1 1 9 - name - 0 -
+  field type 2 1 14 .google.pubsub.v1.Schema.Type type - 0 -
+  field definition 3 1 9 - definition - 0 -
+  field compiled_proto_schema 8 1 11 .google.pubsub.v1.CompiledProtoSchema compiledProtoSchema 0 0 -
+  field revision_id 4 1 9 - revisionId - 0 -
+  field revision_create_time 6 1 11 .google.protobuf.Timestamp revisionCreateTime - 0 -
+  enum Type
+    value TYPE_UNSPECIFIED 0
+    value PROTOCOL_BUFFER 1
+    value AVRO 2
+  oneof configuration
+message CreateSchemaRequest
+  field parent 1 1 9 - parent - 0 -
+  field schema 2 1 11 .google.pubsub.v1.Schema schema - 0 -
+  field schema_id 3 1 9 - schemaId - 0 -
+message GetSchemaRequest
+  field name 1 1 9 - name - 0 -
+  field view 2 1 14 .google.pubsub.v1.SchemaView view - 0 -
+message ListSchemasRequest
+  field parent 1 1 9 - parent - 0 -
+  field view 2 1 14 .google.pubsub.v1.SchemaView view - 0 -
+  field page_size 3 1 5 - pageSize - 0 -
+  field page_token 4 1 9 - pageToken - 0 -
+message ListSchemasResponse
+  field schemas 1 3 11 .google.pubsub.v1.Schema schemas - 0 -
+  field next_page_token 2 1 9 - nextPageToken - 0 -
+message ListSchemaRevisionsRequest
+  field name 1 1 9 - name - 0 -
+  field view 2 1 14 .google.pubsub.v1.SchemaView view - 0 -
+  field page_size 3 1 5 - pageSize - 0 -
+  field page_token 4 1 9 - pageToken - 0 -
+message ListSchemaRevisionsResponse
+  field schemas 1 3 11 .google.pubsub.v1.Schema schemas - 0 -
+  field next_page_token 2 1 9 - nextPageToken - 0 -
+message CommitSchemaRequest
+  field name 1 1 9 - name - 0 -
+  field schema 2 1 11 .google.pubsub.v1.Schema schema - 0 -
+message RollbackSchemaRequest
+  field name 1 1 9 - name - 0 -
+  field revision_id 2 1 9 - revisionId - 0 -
+message DeleteSchemaRevisionRequest
+  field name 1 1 9 - name - 0 -
+  field revision_id 2 1 9 - revisionId - 0 -
+message DeleteSchemaRequest
+  field name 1 1 9 - name - 0 -
+message ValidateSchemaRequest
+  field parent 1 1 9 - parent - 0 -
+  field schema 2 1 11 .google.pubsub.v1.Schema schema - 0 -
+message ValidateSchemaResponse
+message ValidateMessageRequest
+  field parent 1 1 9 - parent - 0 -
+  field name 2 1 9 - name 0 0 -
+  field schema 3 1 11 .google.pubsub.v1.Schema schema 0 0 -
+  field message 4 1 12 - message - 0 -
+  field encoding 5 1 14 .google.pubsub.v1.Encoding encoding - 0 -
+  oneof schema_spec
+message ValidateMessageResponse
+message CompiledProtoSchema
+  field root_message 1 1 9 - rootMessage - 0 -
+  field compiled_bytes 2 1 12 - compiledBytes - 0 -
+enum SchemaView
+  value SCHEMA_VIEW_UNSPECIFIED 0
+  value BASIC 1
+  value FULL 2
+enum Encoding
+  value ENCODING_UNSPECIFIED 0
+  value JSON 1
+  value BINARY 2
+service SchemaService
+  method CreateSchema .google.pubsub.v1.CreateSchemaRequest .google.pubsub.v1.Schema 0 0
+  method GetSchema .google.pubsub.v1.GetSchemaRequest .google.pubsub.v1.Schema 0 0
+  method ListSchemas .google.pubsub.v1.ListSchemasRequest .google.pubsub.v1.ListSchemasResponse 0 0
+  method ListSchemaRevisions .google.pubsub.v1.ListSchemaRevisionsRequest .google.pubsub.v1.ListSchemaRevisionsResponse 0 0
+  method CommitSchema .google.pubsub.v1.CommitSchemaRequest .google.pubsub.v1.Schema 0 0
+  method RollbackSchema .google.pubsub.v1.RollbackSchemaRequest .google.pubsub.v1.Schema 0 0
+  method DeleteSchemaRevision .google.pubsub.v1.DeleteSchemaRevisionRequest .google.pubsub.v1.Schema 0 0
+  method DeleteSchema .google.pubsub.v1.DeleteSchemaRequest .google.protobuf.Empty 0 0
+  method ValidateSchema .google.pubsub.v1.ValidateSchemaRequest .google.pubsub.v1.ValidateSchemaResponse 0 0
+  method ValidateMessage .google.pubsub.v1.ValidateMessageRequest .google.pubsub.v1.ValidateMessageResponse 0 0

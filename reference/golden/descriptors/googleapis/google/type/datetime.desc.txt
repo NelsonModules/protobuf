@@ -1,0 +1,16 @@
+package google.type
+syntax proto3
+message DateTime
+  field year 1 1 5 - year - 0 -
+  field month 2 1 5 - month - 0 -
+  field day 3 1 5 - day - 0 -
+  field hours 4 1 5 - hours - 0 -
+  field minutes 5 1 5 - minutes - 0 -
+  field seconds 6 1 5 - seconds - 0 -
+  field nanos 7 1 5 - nanos - 0 -
+  field utc_offset 8 1 11 .google.protobuf.Duration utcOffset 0 0 -
+  field time_zone 9 1 11 .google.type.TimeZone timeZone 0 0 -
+  oneof time_offset
+message TimeZone
+  field id 1 1 9 - id - 0 -
+  field version 2 1 9 - version - 0 -

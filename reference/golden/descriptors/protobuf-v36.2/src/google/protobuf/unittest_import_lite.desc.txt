@@ -1,0 +1,11 @@
+package proto2_unittest_import
+syntax editions
+edition 2023
+message ImportMessageLite
+  field d 1 1 5 - d - 0 -
+    resolved 1 0 5 - 0 -
+enum ImportEnumLite
+  closed
+  value IMPORT_LITE_FOO 7
+  value IMPORT_LITE_BAR 8
+  value IMPORT_LITE_BAZ 9

@@ -1,0 +1,72 @@
+package opentelemetry.proto.profiles.v1development
+syntax proto3
+message ProfilesDictionary
+  field mapping_table 1 3 11 .opentelemetry.proto.profiles.v1development.Mapping mappingTable - 0 -
+  field location_table 2 3 11 .opentelemetry.proto.profiles.v1development.Location locationTable - 0 -
+  field function_table 3 3 11 .opentelemetry.proto.profiles.v1development.Function functionTable - 0 -
+  field link_table 4 3 11 .opentelemetry.proto.profiles.v1development.Link linkTable - 0 -
+  field string_table 5 3 9 - stringTable - 0 -
+  field attribute_table 6 3 11 .opentelemetry.proto.profiles.v1development.KeyValueAndUnit attributeTable - 0 -
+  field stack_table 7 3 11 .opentelemetry.proto.profiles.v1development.Stack stackTable - 0 -
+message ProfilesData
+  field resource_profiles 1 3 11 .opentelemetry.proto.profiles.v1development.ResourceProfiles resourceProfiles - 0 -
+  field dictionary 2 1 11 .opentelemetry.proto.profiles.v1development.ProfilesDictionary dictionary - 0 -
+message ResourceProfiles
+  field resource 1 1 11 .opentelemetry.proto.resource.v1.Resource resource - 0 -
+  field scope_profiles 2 3 11 .opentelemetry.proto.profiles.v1development.ScopeProfiles scopeProfiles - 0 -
+  field schema_url 3 1 9 - schemaUrl - 0 -
+  reserved_range 1000 1001
+message ScopeProfiles
+  field scope 1 1 11 .opentelemetry.proto.common.v1.InstrumentationScope scope - 0 -
+  field profiles 2 3 11 .opentelemetry.proto.profiles.v1development.Profile profiles - 0 -
+  field schema_url 3 1 9 - schemaUrl - 0 -
+message Profile
+  field sample_type 1 1 11 .opentelemetry.proto.profiles.v1development.ValueType sampleType - 0 -
+  field samples 2 3 11 .opentelemetry.proto.profiles.v1development.Sample samples - 0 -
+  field time_unix_nano 3 1 6 - timeUnixNano - 0 -
+  field duration_nano 4 1 4 - durationNano - 0 -
+  field period_type 5 1 11 .opentelemetry.proto.profiles.v1development.ValueType periodType - 0 -
+  field period 6 1 3 - period - 0 -
+  field profile_id 7 1 12 - profileId - 0 -
+  field dropped_attributes_count 8 1 13 - droppedAttributesCount - 0 -
+  field original_payload_format 9 1 9 - originalPayloadFormat - 0 -
+  field original_payload 10 1 12 - originalPayload - 0 -
+  field attribute_indices 11 3 5 - attributeIndices - 0 -
+message Link
+  field trace_id 1 1 12 - traceId - 0 -
+  field span_id 2 1 12 - spanId - 0 -
+message ValueType
+  field type_strindex 1 1 5 - typeStrindex - 0 -
+  field unit_strindex 2 1 5 - unitStrindex - 0 -
+message Sample
+  field stack_index 1 1 5 - stackIndex - 0 -
+  field attribute_indices 2 3 5 - attributeIndices - 0 -
+  field link_index 3 1 5 - linkIndex - 0 -
+  field values 4 3 3 - values - 0 -
+  field timestamps_unix_nano 5 3 6 - timestampsUnixNano - 0 -
+message Mapping
+  field memory_start 1 1 4 - memoryStart - 0 -
+  field memory_limit 2 1 4 - memoryLimit - 0 -
+  field file_offset 3 1 4 - fileOffset - 0 -
+  field filename_strindex 4 1 5 - filenameStrindex - 0 -
+  field attribute_indices 5 3 5 - attributeIndices - 0 -
+message Stack
+  field location_indices 1 3 5 - locationIndices - 0 -
+message Location
+  field mapping_index 1 1 5 - mappingIndex - 0 -
+  field address 2 1 4 - address - 0 -
+  field lines 3 3 11 .opentelemetry.proto.profiles.v1development.Line lines - 0 -
+  field attribute_indices 4 3 5 - attributeIndices - 0 -
+message Line
+  field function_index 1 1 5 - functionIndex - 0 -
+  field line 2 1 3 - line - 0 -
+  field column 3 1 3 - column - 0 -
+message Function
+  field name_strindex 1 1 5 - nameStrindex - 0 -
+  field system_name_strindex 2 1 5 - systemNameStrindex - 0 -
+  field filename_strindex 3 1 5 - filenameStrindex - 0 -
+  field start_line 4 1 3 - startLine - 0 -
+message KeyValueAndUnit
+  field key_strindex 1 1 5 - keyStrindex - 0 -
+  field value 2 1 11 .opentelemetry.proto.common.v1.AnyValue value - 0 -
+  field unit_strindex 3 1 5 - unitStrindex - 0 -

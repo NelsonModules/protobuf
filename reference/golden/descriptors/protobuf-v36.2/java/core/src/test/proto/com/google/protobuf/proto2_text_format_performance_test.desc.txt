@@ -1,0 +1,13 @@
+package protobuf.testing.textformat.performance.proto2
+syntax editions
+edition 2023
+message ContainsSubMessageWithRepeatedInt32
+  field sub_msg 1 1 11 .protobuf.testing.textformat.performance.proto2.RepeatedInt32 subMsg - 0 -
+    resolved 1 0 11 - 0 -
+message RepeatedInt32
+  field value 2 3 5 - value - 0 -
+    resolved 0 0 5 - 0 -
+message ContainsExtensionSubMessage
+  extension_range 1 536870912
+extension sub_msg_ext 1 1 11 .protobuf.testing.textformat.performance.proto2.RepeatedInt32 .protobuf.testing.textformat.performance.proto2.ContainsExtensionSubMessage subMsgExt - 0 -
+  resolved 1 0 11 - 0 -

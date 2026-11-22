@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.show</keyword>
+  <short_description>Affiche des messages au format texte protobuf.</short_description>
+  <syntax>
+    <syntax_item>protobuf.show(schema, type, value)</syntax_item>
+    <syntax_item>protobuf.show(schema, type, value, 'Delimited', tf, 'MaxRecords', n)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>un schéma de protobuf.load et un type de message.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>value</param_name>
+      <param_description>une structure (chaque élément est un enregistrement) ou des octets encodés ('Delimited', true pour un flux).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'MaxRecords'</param_name>
+      <param_description>le nombre maximal d'enregistrements affichés (10 par défaut, Inf pour tous).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output />
+  <description>
+    <p>protobuf.show affiche des messages au format texte, un bloc par enregistrement, ce qui est un moyen rapide de regarder un tableau de structures ou un flux. protobuf.totext renvoie le texte d'un seul message sous forme de chaîne.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Afficher deux enregistrements</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+a = struct('timestamp_ms', 1000, 'status', 1, 'diagnostics', struct('drift', 0.5));
+b = a;
+b.diagnostics.drift = 0.75;
+protobuf.show(schema, 'SensorSample', [a, b])
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.totext">protobuf.totext</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.inspect">protobuf.inspect</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.diff">protobuf.diff</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

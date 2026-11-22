@@ -1,0 +1,13 @@
+package google.api
+syntax proto3
+enum FieldBehavior
+  value FIELD_BEHAVIOR_UNSPECIFIED 0
+  value OPTIONAL 1
+  value REQUIRED 2
+  value OUTPUT_ONLY 3
+  value INPUT_ONLY 4
+  value IMMUTABLE 5
+  value UNORDERED_LIST 6
+  value NON_EMPTY_DEFAULT 7
+  value IDENTIFIER 8
+extension field_behavior 1052 3 14 .google.api.FieldBehavior .google.protobuf.FieldOptions fieldBehavior - 0 -

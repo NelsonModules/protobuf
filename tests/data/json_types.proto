@@ -1,0 +1,36 @@
+// Well-known types with a special JSON form: Struct, Value, ListValue, FieldMask, Empty,
+// wrappers, Timestamp and Duration.
+syntax = "proto3";
+
+package nelson.test.json;
+
+import "google/protobuf/duration.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/field_mask.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+message Document {
+  google.protobuf.Struct attributes = 1;
+  google.protobuf.Value value = 2;
+  google.protobuf.ListValue items = 3;
+  google.protobuf.FieldMask mask = 4;
+  google.protobuf.Empty nothing = 5;
+  google.protobuf.DoubleValue d = 6;
+  google.protobuf.FloatValue f = 7;
+  google.protobuf.Int64Value i64 = 8;
+  google.protobuf.UInt64Value u64 = 9;
+  google.protobuf.Int32Value i32 = 10;
+  google.protobuf.UInt32Value u32 = 11;
+  google.protobuf.BoolValue b = 12;
+  google.protobuf.StringValue s = 13;
+  google.protobuf.BytesValue raw = 14;
+  repeated google.protobuf.Value values = 15;
+  map<string, google.protobuf.Value> named = 16;
+  google.protobuf.Timestamp at = 17;
+  google.protobuf.Duration span = 18;
+  repeated google.protobuf.Timestamp times = 19;
+  repeated google.protobuf.Duration spans = 20;
+  google.protobuf.NullValue nothing_at_all = 21;
+}

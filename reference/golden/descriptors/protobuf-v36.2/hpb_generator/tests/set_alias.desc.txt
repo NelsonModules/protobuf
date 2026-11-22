@@ -1,0 +1,25 @@
+package hpb_unittest
+syntax editions
+edition 2023
+message Child
+  field peeps 1 1 5 - peeps - 0 -
+    resolved 1 0 5 - 0 -
+message Parent
+  field x 2 1 5 - x - 0 -
+    resolved 1 0 5 - 0 -
+  field child 3 1 11 .hpb_unittest.Child child - 0 -
+    resolved 1 0 11 - 0 -
+  field out_of_order 1 1 3 - outOfOrder - 0 -
+    resolved 1 0 3 - 0 -
+message ParentWithRepeated
+  field children 1 3 11 .hpb_unittest.Child children - 0 -
+    resolved 0 0 11 - 0 -
+message ParentWithMap
+  field child_map 1 3 11 .hpb_unittest.ParentWithMap.ChildMapEntry childMap - 0 -
+    resolved 0 0 11 - 0 -
+  message ChildMapEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 11 .hpb_unittest.Child value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry

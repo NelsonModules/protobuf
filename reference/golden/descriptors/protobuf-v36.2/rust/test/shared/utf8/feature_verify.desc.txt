@@ -1,0 +1,6 @@
+package utf8
+syntax editions
+edition 2023
+message Verify
+  field my_field 1 1 9 - myField - 0 -
+    resolved 1 0 9 1 0 -

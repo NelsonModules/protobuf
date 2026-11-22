@@ -1,0 +1,211 @@
+begin_ms: -1
+end_ms: -9223372036854775808
+pressure {
+  q05: 1.5
+  q50: -2.25
+}
+flow {
+  q05: 1.5
+  q95: 0.0
+}
+quality: 0
+===
+begin_ms: -10
+end_ms: 8465560357308172118
+pressure {
+  q50: -inf
+  q95: -inf
+}
+===
+end_ms: 1
+pressure {
+  q05: -2.25
+  q50: inf
+  q95: inf
+}
+flow {
+  q05: -0.0
+  q50: -0.0
+  q95: 1e-30
+}
+quality: -1
+===
+begin_ms: 1
+pressure {
+  q05: -0.0
+}
+quality: -440383233
+===
+begin_ms: 1
+pressure {
+  q05: -inf
+}
+flow {
+}
+quality: 0
+===
+end_ms: 1
+pressure {
+  q50: 1.5
+}
+flow {
+  q95: inf
+}
+quality: -1
+===
+begin_ms: 186341454574849164
+pressure {
+  q95: 1e-30
+}
+flow {
+  q05: 611044.25
+  q95: inf
+}
+quality: -1
+===
+begin_ms: -8688973355689435118
+flow {
+  q50: -113660.984
+}
+quality: -6
+===
+begin_ms: -9223372036854775808
+end_ms: -663
+pressure {
+  q05: -inf
+  q50: 1.5
+  q95: -0.0
+}
+flow {
+  q50: -2.25
+}
+quality: 1
+===
+end_ms: 9223372036854775807
+flow {
+  q50: nan
+  q95: 1.5
+}
+quality: -100293479
+===
+end_ms: 9223372036854775807
+pressure {
+  q50: 0.0
+}
+flow {
+  q50: -2.25
+  q95: -749869.06
+}
+quality: 1
+===
+end_ms: -9223372036854775808
+quality: -2147483648
+===
+end_ms: -1
+pressure {
+  q05: inf
+  q95: 1.5
+}
+flow {
+  q05: 1e-30
+  q95: inf
+}
+===
+end_ms: -891
+pressure {
+  q05: 1e+30
+  q50: -0.0
+}
+flow {
+  q95: nan
+}
+===
+end_ms: 1
+pressure {
+  q50: 0.0
+}
+flow {
+  q05: 1.5
+}
+===
+end_ms: 1
+pressure {
+  q05: 0.0
+  q50: 1.5
+}
+flow {
+  q05: 1.5
+  q50: 1e-30
+}
+quality: -2147483648
+===
+begin_ms: -378
+pressure {
+  q05: inf
+  q50: inf
+  q95: 1.5
+}
+quality: 1968393572
+===
+begin_ms: 9223372036854775807
+end_ms: 2858877024503837439
+pressure {
+}
+flow {
+  q05: nan
+}
+quality: 2056634988
+===
+begin_ms: -327
+end_ms: 9223372036854775807
+pressure {
+}
+flow {
+  q05: -275232.03
+  q50: inf
+  q95: 0.0
+}
+===
+begin_ms: 995
+end_ms: 9223372036854775807
+pressure {
+  q05: 0.0
+}
+flow {
+}
+===
+end_ms: 6638369283610589613
+pressure {
+  q50: -inf
+  q95: 1e-30
+}
+flow {
+  q05: 0.0
+  q50: inf
+  q95: 0.0
+}
+===
+begin_ms: 1230182433130116145
+pressure {
+}
+quality: 84
+===
+begin_ms: 1
+flow {
+  q50: -542252.1
+}
+===
+begin_ms: -277
+end_ms: -9223372036854775808
+flow {
+  q50: -inf
+  q95: -396634.9
+}
+===
+begin_ms: 1
+end_ms: -6578637993108936018
+pressure {
+  q50: -410839.62
+  q95: inf
+}
+quality: 2147483647

@@ -1,0 +1,6 @@
+package any_test
+syntax editions
+edition 2023
+message TestAny
+  field value 1 1 11 .google.protobuf.Any value - 0 -
+    resolved 1 0 11 - 0 -

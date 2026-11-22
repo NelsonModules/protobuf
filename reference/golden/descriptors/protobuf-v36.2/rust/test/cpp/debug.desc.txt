@@ -1,0 +1,5 @@
+package debug
+syntax proto3
+message DebugMsg
+  field id 1 1 5 - id - 0 -
+  field secret_user_data 2 1 9 - secretUserData - 0 -

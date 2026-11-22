@@ -1,0 +1,20 @@
+package google.protobuf
+syntax proto3
+message DoubleValue
+  field value 1 1 1 - value - 0 -
+message FloatValue
+  field value 1 1 2 - value - 0 -
+message Int64Value
+  field value 1 1 3 - value - 0 -
+message UInt64Value
+  field value 1 1 4 - value - 0 -
+message Int32Value
+  field value 1 1 5 - value - 0 -
+message UInt32Value
+  field value 1 1 13 - value - 0 -
+message BoolValue
+  field value 1 1 8 - value - 0 -
+message StringValue
+  field value 1 1 9 - value - 0 -
+message BytesValue
+  field value 1 1 12 - value - 0 -

@@ -1,0 +1,6 @@
+package protobuf.kotlin.generator
+syntax proto3
+message MultipleFilesMessageA
+message MultipleFilesMessageB
+enum NestedEnum
+  value FOO 0

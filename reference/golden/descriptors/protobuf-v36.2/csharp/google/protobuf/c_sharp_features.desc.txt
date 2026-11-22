@@ -1,0 +1,7 @@
+package pb
+syntax proto2
+message CSharpFeatures
+  field nullable_reference_types 1 1 8 - nullableReferenceTypes - 0 -
+    resolved 1 0 8 - 0 -
+extension csharp 1004 1 11 .pb.CSharpFeatures .google.protobuf.FeatureSet csharp - 0 -
+  resolved 1 0 11 - 0 -

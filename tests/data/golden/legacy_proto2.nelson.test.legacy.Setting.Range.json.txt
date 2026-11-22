@@ -1,0 +1,25 @@
+{"high": 1e+30}
+{"high": "Infinity"}
+{}
+{"low": "Infinity"}
+{"high": -0.0}
+{"high": 702132.6929919603}
+{"low": -0.0, "high": -0.0}
+{"high": 1.5}
+{"high": 0.0}
+{"low": "-Infinity"}
+{"low": 1e-30}
+{"high": -2.25}
+{"low": "NaN"}
+{}
+{"high": 1e-30}
+{}
+{"low": "NaN", "high": "-Infinity"}
+{"high": -0.0}
+{}
+{"low": -0.0, "high": 0.0}
+{"low": "-Infinity", "high": "Infinity"}
+{"high": "-Infinity"}
+{"high": "NaN"}
+{"low": 0.0}
+{"low": "Infinity"}

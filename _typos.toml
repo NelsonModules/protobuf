@@ -1,0 +1,3 @@
+# French help pages and catalogs and the third-party reference corpus are not English source.
+[files]
+extend-exclude = ["help/fr_FR/**", "reference/**", "tests/data/golden/**", "tools/protoc-*/**", "build/**", "locale/*fr_FR*"]

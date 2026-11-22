@@ -1,0 +1,21 @@
+package pb
+syntax editions
+edition 1002
+message InternalOptionsForce
+  enum Enum
+    value UNSPECIFIED 0
+    value FORCE_ON 1
+    value FORCE_OFF 2
+message InternalFieldOptionsCpp
+  field micro_string 1 1 11 .pb.InternalFieldOptionsCpp.MicroString microString - 0 -
+    resolved 1 0 11 - 0 -
+  message MicroString
+    field force 1 1 14 .pb.InternalOptionsForce.Enum force - 0 -
+      resolved 1 0 14 - 0 -
+    field sso_size 2 1 5 - ssoSize - 0 -
+      resolved 1 0 5 - 0 -
+message InternalFieldOptions
+  field cpp 1 1 11 .pb.InternalFieldOptionsCpp cpp - 0 -
+    resolved 1 0 11 - 0 -
+extension internal_field_options 535801550 1 11 .pb.InternalFieldOptions .google.protobuf.FieldOptions internalFieldOptions - 0 -
+  resolved 1 0 11 - 0 -

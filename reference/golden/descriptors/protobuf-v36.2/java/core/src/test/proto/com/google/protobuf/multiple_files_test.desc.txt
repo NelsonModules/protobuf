@@ -1,0 +1,28 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message MessageWithNoOuter
+  field nested 1 1 11 .proto2_unittest.MessageWithNoOuter.NestedMessage nested - 0 -
+    resolved 1 0 11 - 0 -
+  field foreign 2 3 11 .proto2_unittest.TestAllTypes foreign - 0 -
+    resolved 0 0 11 - 0 -
+  field nested_enum 3 1 14 .proto2_unittest.MessageWithNoOuter.NestedEnum nestedEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field foreign_enum 4 1 14 .proto2_unittest.EnumWithNoOuter foreignEnum - 0 -
+    resolved 1 0 14 - 0 -
+  message NestedMessage
+    field i 1 1 5 - i - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    closed
+    value BAZ 3
+enum EnumWithNoOuter
+  closed
+  value FOO 1
+  value BAR 2
+extension enum_value_option 7654321 1 5 - .google.protobuf.EnumValueOptions enumValueOption - 0 -
+  resolved 1 0 5 - 0 -
+extension extension_with_outer 1234567 1 5 - .proto2_unittest.TestAllExtensions extensionWithOuter - 0 -
+  resolved 1 0 5 - 0 -
+service ServiceWithNoOuter
+  method Foo .proto2_unittest.MessageWithNoOuter .proto2_unittest.TestAllTypes 0 0

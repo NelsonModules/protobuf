@@ -1,0 +1,26 @@
+package descriptors
+syntax proto3
+message TestDescriptorsMessage
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+  field optional_enum 16 1 14 .descriptors.TestDescriptorsEnum optionalEnum - 0 -
+  field optional_message 17 1 11 .descriptors.TestDescriptorsMessage.Sub optionalMessage - 0 -
+  field repeated_int32 31 3 5 - repeatedInt32 - 0 -
+  field repeated_message 47 3 11 .descriptors.TestDescriptorsMessage.Sub repeatedMessage - 0 -
+  field oneof_int32 51 1 5 - oneofInt32 0 0 -
+  field proto3_optional_int32 52 1 5 - proto3OptionalInt32 1 1 -
+  field map_int32_enum 71 3 11 .descriptors.TestDescriptorsMessage.MapInt32EnumEntry mapInt32Enum - 0 -
+  message MapInt32EnumEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 14 .descriptors.TestDescriptorsMessage.EnumSub value - 0 -
+    map_entry
+  message Sub
+    field a 1 1 5 - a - 0 -
+    field b 2 3 5 - b - 0 -
+  enum EnumSub
+    value ZERO 0
+    value ONE 1
+  oneof my_oneof
+  oneof _proto3_optional_int32
+enum TestDescriptorsEnum
+  value ZERO 0
+  value ONE 1

@@ -1,0 +1,9 @@
+package proto2_unittest
+syntax editions
+edition 2024
+message TestUtf8ValidationOfExtensions
+  extension_range 1 536870912
+extension optional_utf8_string_extension 1 1 9 - .proto2_unittest.TestUtf8ValidationOfExtensions optionalUtf8StringExtension - 0 -
+  resolved 1 0 9 1 0 -
+extension repeated_utf8_string_extension 2 3 9 - .proto2_unittest.TestUtf8ValidationOfExtensions repeatedUtf8StringExtension - 0 -
+  resolved 0 0 9 1 0 -

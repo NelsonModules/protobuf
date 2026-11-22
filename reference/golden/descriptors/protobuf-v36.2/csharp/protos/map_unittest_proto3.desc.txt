@@ -1,0 +1,201 @@
+package protobuf_unittest3
+syntax proto3
+message TestMap
+  field map_int32_int32 1 3 11 .protobuf_unittest3.TestMap.MapInt32Int32Entry mapInt32Int32 - 0 -
+  field map_int64_int64 2 3 11 .protobuf_unittest3.TestMap.MapInt64Int64Entry mapInt64Int64 - 0 -
+  field map_uint32_uint32 3 3 11 .protobuf_unittest3.TestMap.MapUint32Uint32Entry mapUint32Uint32 - 0 -
+  field map_uint64_uint64 4 3 11 .protobuf_unittest3.TestMap.MapUint64Uint64Entry mapUint64Uint64 - 0 -
+  field map_sint32_sint32 5 3 11 .protobuf_unittest3.TestMap.MapSint32Sint32Entry mapSint32Sint32 - 0 -
+  field map_sint64_sint64 6 3 11 .protobuf_unittest3.TestMap.MapSint64Sint64Entry mapSint64Sint64 - 0 -
+  field map_fixed32_fixed32 7 3 11 .protobuf_unittest3.TestMap.MapFixed32Fixed32Entry mapFixed32Fixed32 - 0 -
+  field map_fixed64_fixed64 8 3 11 .protobuf_unittest3.TestMap.MapFixed64Fixed64Entry mapFixed64Fixed64 - 0 -
+  field map_sfixed32_sfixed32 9 3 11 .protobuf_unittest3.TestMap.MapSfixed32Sfixed32Entry mapSfixed32Sfixed32 - 0 -
+  field map_sfixed64_sfixed64 10 3 11 .protobuf_unittest3.TestMap.MapSfixed64Sfixed64Entry mapSfixed64Sfixed64 - 0 -
+  field map_int32_float 11 3 11 .protobuf_unittest3.TestMap.MapInt32FloatEntry mapInt32Float - 0 -
+  field map_int32_double 12 3 11 .protobuf_unittest3.TestMap.MapInt32DoubleEntry mapInt32Double - 0 -
+  field map_bool_bool 13 3 11 .protobuf_unittest3.TestMap.MapBoolBoolEntry mapBoolBool - 0 -
+  field map_string_string 14 3 11 .protobuf_unittest3.TestMap.MapStringStringEntry mapStringString - 0 -
+  field map_int32_bytes 15 3 11 .protobuf_unittest3.TestMap.MapInt32BytesEntry mapInt32Bytes - 0 -
+  field map_int32_enum 16 3 11 .protobuf_unittest3.TestMap.MapInt32EnumEntry mapInt32Enum - 0 -
+  field map_int32_foreign_message 17 3 11 .protobuf_unittest3.TestMap.MapInt32ForeignMessageEntry mapInt32ForeignMessage - 0 -
+  message MapInt32Int32Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message MapInt64Int64Entry
+    field key 1 1 3 - key - 0 -
+    field value 2 1 3 - value - 0 -
+    map_entry
+  message MapUint32Uint32Entry
+    field key 1 1 13 - key - 0 -
+    field value 2 1 13 - value - 0 -
+    map_entry
+  message MapUint64Uint64Entry
+    field key 1 1 4 - key - 0 -
+    field value 2 1 4 - value - 0 -
+    map_entry
+  message MapSint32Sint32Entry
+    field key 1 1 17 - key - 0 -
+    field value 2 1 17 - value - 0 -
+    map_entry
+  message MapSint64Sint64Entry
+    field key 1 1 18 - key - 0 -
+    field value 2 1 18 - value - 0 -
+    map_entry
+  message MapFixed32Fixed32Entry
+    field key 1 1 7 - key - 0 -
+    field value 2 1 7 - value - 0 -
+    map_entry
+  message MapFixed64Fixed64Entry
+    field key 1 1 6 - key - 0 -
+    field value 2 1 6 - value - 0 -
+    map_entry
+  message MapSfixed32Sfixed32Entry
+    field key 1 1 15 - key - 0 -
+    field value 2 1 15 - value - 0 -
+    map_entry
+  message MapSfixed64Sfixed64Entry
+    field key 1 1 16 - key - 0 -
+    field value 2 1 16 - value - 0 -
+    map_entry
+  message MapInt32FloatEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 2 - value - 0 -
+    map_entry
+  message MapInt32DoubleEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 1 - value - 0 -
+    map_entry
+  message MapBoolBoolEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 8 - value - 0 -
+    map_entry
+  message MapStringStringEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapInt32BytesEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 12 - value - 0 -
+    map_entry
+  message MapInt32EnumEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 14 .protobuf_unittest3.MapEnum value - 0 -
+    map_entry
+  message MapInt32ForeignMessageEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .protobuf_unittest3.ForeignMessage value - 0 -
+    map_entry
+message TestMapSubmessage
+  field test_map 1 1 11 .protobuf_unittest3.TestMap testMap - 0 -
+message TestMessageMap
+  field map_int32_message 1 3 11 .protobuf_unittest3.TestMessageMap.MapInt32MessageEntry mapInt32Message - 0 -
+  message MapInt32MessageEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .protobuf_unittest3.TestAllTypes value - 0 -
+    map_entry
+message TestSameTypeMap
+  field map1 1 3 11 .protobuf_unittest3.TestSameTypeMap.Map1Entry map1 - 0 -
+  field map2 2 3 11 .protobuf_unittest3.TestSameTypeMap.Map2Entry map2 - 0 -
+  message Map1Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Map2Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+message TestArenaMap
+  field map_int32_int32 1 3 11 .protobuf_unittest3.TestArenaMap.MapInt32Int32Entry mapInt32Int32 - 0 -
+  field map_int64_int64 2 3 11 .protobuf_unittest3.TestArenaMap.MapInt64Int64Entry mapInt64Int64 - 0 -
+  field map_uint32_uint32 3 3 11 .protobuf_unittest3.TestArenaMap.MapUint32Uint32Entry mapUint32Uint32 - 0 -
+  field map_uint64_uint64 4 3 11 .protobuf_unittest3.TestArenaMap.MapUint64Uint64Entry mapUint64Uint64 - 0 -
+  field map_sint32_sint32 5 3 11 .protobuf_unittest3.TestArenaMap.MapSint32Sint32Entry mapSint32Sint32 - 0 -
+  field map_sint64_sint64 6 3 11 .protobuf_unittest3.TestArenaMap.MapSint64Sint64Entry mapSint64Sint64 - 0 -
+  field map_fixed32_fixed32 7 3 11 .protobuf_unittest3.TestArenaMap.MapFixed32Fixed32Entry mapFixed32Fixed32 - 0 -
+  field map_fixed64_fixed64 8 3 11 .protobuf_unittest3.TestArenaMap.MapFixed64Fixed64Entry mapFixed64Fixed64 - 0 -
+  field map_sfixed32_sfixed32 9 3 11 .protobuf_unittest3.TestArenaMap.MapSfixed32Sfixed32Entry mapSfixed32Sfixed32 - 0 -
+  field map_sfixed64_sfixed64 10 3 11 .protobuf_unittest3.TestArenaMap.MapSfixed64Sfixed64Entry mapSfixed64Sfixed64 - 0 -
+  field map_int32_float 11 3 11 .protobuf_unittest3.TestArenaMap.MapInt32FloatEntry mapInt32Float - 0 -
+  field map_int32_double 12 3 11 .protobuf_unittest3.TestArenaMap.MapInt32DoubleEntry mapInt32Double - 0 -
+  field map_bool_bool 13 3 11 .protobuf_unittest3.TestArenaMap.MapBoolBoolEntry mapBoolBool - 0 -
+  field map_int32_enum 14 3 11 .protobuf_unittest3.TestArenaMap.MapInt32EnumEntry mapInt32Enum - 0 -
+  field map_int32_foreign_message 15 3 11 .protobuf_unittest3.TestArenaMap.MapInt32ForeignMessageEntry mapInt32ForeignMessage - 0 -
+  message MapInt32Int32Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message MapInt64Int64Entry
+    field key 1 1 3 - key - 0 -
+    field value 2 1 3 - value - 0 -
+    map_entry
+  message MapUint32Uint32Entry
+    field key 1 1 13 - key - 0 -
+    field value 2 1 13 - value - 0 -
+    map_entry
+  message MapUint64Uint64Entry
+    field key 1 1 4 - key - 0 -
+    field value 2 1 4 - value - 0 -
+    map_entry
+  message MapSint32Sint32Entry
+    field key 1 1 17 - key - 0 -
+    field value 2 1 17 - value - 0 -
+    map_entry
+  message MapSint64Sint64Entry
+    field key 1 1 18 - key - 0 -
+    field value 2 1 18 - value - 0 -
+    map_entry
+  message MapFixed32Fixed32Entry
+    field key 1 1 7 - key - 0 -
+    field value 2 1 7 - value - 0 -
+    map_entry
+  message MapFixed64Fixed64Entry
+    field key 1 1 6 - key - 0 -
+    field value 2 1 6 - value - 0 -
+    map_entry
+  message MapSfixed32Sfixed32Entry
+    field key 1 1 15 - key - 0 -
+    field value 2 1 15 - value - 0 -
+    map_entry
+  message MapSfixed64Sfixed64Entry
+    field key 1 1 16 - key - 0 -
+    field value 2 1 16 - value - 0 -
+    map_entry
+  message MapInt32FloatEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 2 - value - 0 -
+    map_entry
+  message MapInt32DoubleEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 1 - value - 0 -
+    map_entry
+  message MapBoolBoolEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 8 - value - 0 -
+    map_entry
+  message MapInt32EnumEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 14 .protobuf_unittest3.MapEnum value - 0 -
+    map_entry
+  message MapInt32ForeignMessageEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .protobuf_unittest3.ForeignMessage value - 0 -
+    map_entry
+message MessageContainingEnumCalledType
+  field type 1 3 11 .protobuf_unittest3.MessageContainingEnumCalledType.TypeEntry type - 0 -
+  message TypeEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .protobuf_unittest3.MessageContainingEnumCalledType value - 0 -
+    map_entry
+  enum Type
+    value TYPE_FOO 0
+message MessageContainingMapCalledEntry
+  field entry 1 3 11 .protobuf_unittest3.MessageContainingMapCalledEntry.EntryEntry entry - 0 -
+  message EntryEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+enum MapEnum
+  value MAP_ENUM_FOO 0
+  value MAP_ENUM_BAR 1
+  value MAP_ENUM_BAZ 2

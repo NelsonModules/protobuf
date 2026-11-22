@@ -1,0 +1,25 @@
+{"timestampMs": "9223372036854775807", "measurements": [{"name": "zx0byxx03bb"}]}
+{"timestampMs": "1", "mode": "213_zc0", "measurements": [{}, {"name": "a01_xazz", "value": 1.5}, {"name": "a", "value": -2.25}]}
+{"timestampMs": "-7225063480884514271", "measurements": [{"name": "a_1y0a0zb_xzaxy3z", "value": "-Infinity"}, {"name": "c23bx_1ccc3yb_cc_y_"}]}
+{"timestampMs": "-201", "measurements": [{"value": "-Infinity"}]}
+{"timestampMs": "-451", "mode": "tab\tquote\"", "measurements": [{"name": "0b", "value": -0.0}, {"name": "line\nbreak", "value": 1e-30}]}
+{"mode": "héllo", "measurements": [{"name": "ya101_x1z2", "value": 833768.0}]}
+{"timestampMs": "-9223372036854775808", "mode": "_1xa10320x22_"}
+{"timestampMs": "588", "mode": "z1zbaaczxc_3a", "measurements": [{"name": "line\nbreak", "value": 1e+30}, {"value": -18414.201}]}
+{"timestampMs": "1", "measurements": [{"name": "0z33z2y2cz1bc3zb", "value": -0.0}, {"name": "🙂", "value": -141798.11}, {"value": -2.25}]}
+{"mode": "a02zzxba1c_y", "measurements": [{"name": "_23", "value": 1e+30}, {"name": "line\nbreak", "value": "-Infinity"}, {"value": 1.5}]}
+{"timestampMs": "-1", "measurements": [{"name": "héllo", "value": -2.25}, {"name": "🙂", "value": -0.0}, {"name": "1b30c_b_1", "value": -2.25}]}
+{"timestampMs": "4606573277212566290", "measurements": [{"name": "héllo", "value": "NaN"}]}
+{"timestampMs": "-927", "mode": "a", "measurements": [{"name": "🙂", "value": -2.25}, {"name": "a", "value": -71074.9}, {"name": "tab\tquote\"", "value": 1e+30}]}
+{"timestampMs": "9223372036854775807", "mode": "🙂", "measurements": [{"name": "héllo", "value": -308527.12}]}
+{"timestampMs": "-1"}
+{"timestampMs": "-1"}
+{"timestampMs": "-1", "mode": "_caz_cy02_xb220", "measurements": [{"name": "🙂"}, {"value": -2.25}]}
+{"measurements": [{"name": "y1", "value": "Infinity"}, {"name": "tab\tquote\"", "value": -0.0}]}
+{"measurements": [{"name": "120ya2__cab_323__c", "value": "Infinity"}, {"name": "a", "value": -0.0}, {"name": "line\nbreak"}]}
+{"timestampMs": "-1", "mode": "🙂", "measurements": [{"name": "12yayx0a2", "value": 646953.8}, {"name": "日本", "value": "Infinity"}, {"name": "cb"}]}
+{"timestampMs": "7809173583703006275", "mode": "🙂", "measurements": [{"name": "tab\tquote\"", "value": -955721.7}, {"name": "b_000x02", "value": -0.0}]}
+{"timestampMs": "-1"}
+{"timestampMs": "1", "mode": "a"}
+{"mode": "héllo", "measurements": [{"name": "a", "value": -0.0}, {"name": "aycbx3300bb1cbbz"}]}
+{"mode": "200323xbb_3a"}

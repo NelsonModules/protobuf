@@ -1,0 +1,211 @@
+package hpb_unittest
+syntax editions
+edition 2023
+message TestModelContainer
+  field models 1 3 11 .hpb_unittest.TestModel models - 0 -
+    resolved 0 0 11 - 0 -
+  field proto_3_child 2 1 11 .hpb_unittest.ChildModel3 proto3Child - 0 -
+    resolved 1 0 11 - 0 -
+  extension_range 10000 536870912
+message TestModel
+  field value 1 1 5 - value - 0 -
+    resolved 1 0 5 - 0 -
+  field value_array 2 3 5 - valueArray - 0 -
+    resolved 0 0 5 - 0 -
+  field value_packed_array 3 3 5 - valuePackedArray - 0 -
+    resolved 0 1 5 - 0 -
+  field value_deprec 4 3 5 - valueDeprec - 0 -
+    resolved 0 0 5 - 0 -
+  field str1 115 1 9 - str1 - 0 -
+    resolved 1 0 9 0 0 -
+  field b1 9 1 8 - b1 - 0 -
+    resolved 1 0 8 - 0 -
+  field b2 10 1 8 - b2 - 0 -
+    resolved 1 0 8 - 0 -
+  field str2 50 1 9 - str2 - 0 -
+    resolved 1 0 9 0 0 -
+  field str3 11 1 9 - str3 - 0 -
+    resolved 1 0 9 0 0 -
+  field optional_float 14 1 2 - optionalFloat - 0 -
+    resolved 1 0 2 - 0 -
+  field optional_double 15 1 1 - optionalDouble - 0 -
+    resolved 1 0 1 - 0 -
+  field optional_int64 16 1 3 - optionalInt64 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_uint32 17 1 13 - optionalUint32 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint64 18 1 4 - optionalUint64 - 0 -
+    resolved 1 0 4 - 0 -
+  field optional_sint32 19 1 17 - optionalSint32 - 0 -
+    resolved 1 0 17 - 0 -
+  field optional_sint64 20 1 18 - optionalSint64 - 0 -
+    resolved 1 0 18 - 0 -
+  field optional_fixed32 21 1 7 - optionalFixed32 - 0 -
+    resolved 1 0 7 - 0 -
+  field optional_fixed64 22 1 6 - optionalFixed64 - 0 -
+    resolved 1 0 6 - 0 -
+  field optional_sfixed32 23 1 15 - optionalSfixed32 - 0 -
+    resolved 1 0 15 - 0 -
+  field optional_sfixed64 24 1 16 - optionalSfixed64 - 0 -
+    resolved 1 0 16 - 0 -
+  field repeated_int64 25 3 3 - repeatedInt64 - 0 -
+    resolved 0 0 3 - 0 -
+  field repeated_uint64 26 3 4 - repeatedUint64 - 0 -
+    resolved 0 0 4 - 0 -
+  field repeated_fixed64 27 3 6 - repeatedFixed64 - 0 -
+    resolved 0 0 6 - 0 -
+  field repeated_sfixed64 28 3 16 - repeatedSfixed64 - 0 -
+    resolved 0 0 16 - 0 -
+  field repeated_bool 29 3 8 - repeatedBool - 0 -
+    resolved 0 0 8 - 0 -
+  field repeated_string 35 3 9 - repeatedString - 0 -
+    resolved 0 0 9 0 0 -
+  field optional_bytes 36 1 12 - optionalBytes - 0 -
+    resolved 1 0 12 - 0 -
+  field nested_child_1 212 1 11 .hpb_unittest.TestModel.NestedChild nestedChild1 - 0 -
+    resolved 1 0 11 - 0 -
+  field child_model_1 222 1 11 .hpb_unittest.ChildModel1 childModel1 - 0 -
+    resolved 1 0 11 - 0 -
+  field child_models 223 3 11 .hpb_unittest.ChildModel1 childModels - 0 -
+    resolved 0 0 11 - 0 -
+  field bar 224 1 11 .hpb_unittest.ChildModel1 bar - 0 -
+    resolved 1 0 11 - 0 -
+  field oneof_member1 98 1 9 - oneofMember1 0 0 -
+    resolved 1 0 9 0 0 -
+  field oneof_member2 99 1 8 - oneofMember2 0 0 -
+    resolved 1 0 8 - 0 -
+  field int_value_with_default 31 1 5 - intValueWithDefault - 0 -
+    resolved 1 0 5 - 0 default=65
+  field string_value_with_default 32 1 9 - stringValueWithDefault - 0 -
+    resolved 1 0 9 0 0 default=hello
+  field float_value_with_default 33 1 2 - floatValueWithDefault - 0 -
+    resolved 1 0 2 - 0 default=inf
+  field double_value_with_default 34 1 2 - doubleValueWithDefault - 0 -
+    resolved 1 0 2 - 0 default=-inf
+  field child_map 225 3 11 .hpb_unittest.TestModel.ChildMapEntry childMap - 0 -
+    resolved 0 0 11 - 0 -
+  field recursive_child 226 1 11 .hpb_unittest.TestModel recursiveChild - 0 -
+    resolved 1 0 11 - 0 -
+  field child_str_map 227 3 11 .hpb_unittest.TestModel.ChildStrMapEntry childStrMap - 0 -
+    resolved 0 0 11 - 0 -
+  field str_to_int_map 228 3 11 .hpb_unittest.TestModel.StrToIntMapEntry strToIntMap - 0 -
+    resolved 0 0 11 - 0 -
+  field str_to_str_map 229 3 11 .hpb_unittest.TestModel.StrToStrMapEntry strToStrMap - 0 -
+    resolved 0 0 11 - 0 -
+  field category 37 1 14 .hpb_unittest.TestModel.Category category - 0 -
+    resolved 1 0 14 - 0 -
+  field string 230 1 9 - string 1 0 -
+    resolved 1 0 9 0 0 -
+  field int64 231 1 3 - int64 1 0 -
+    resolved 1 0 3 - 0 -
+  field double 232 1 1 - double 1 0 -
+    resolved 1 0 1 - 0 -
+  field template 233 1 9 - template - 0 -
+    resolved 1 0 9 0 0 -
+  field msg 234 1 9 - msg - 0 -
+    resolved 1 0 9 0 0 -
+  field arena 235 1 9 - arena - 0 -
+    resolved 1 0 9 0 0 -
+  field imported_enum 238 1 14 .hpb_unittest.TestEnum importedEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field phase 239 1 9 - phase - 0 -
+    resolved 1 0 9 0 0 -
+  field clear_phase 240 1 8 - clearPhase - 0 -
+    resolved 1 0 8 - 0 -
+  field doc_id 241 1 9 - docId - 0 -
+    resolved 1 0 9 0 0 -
+  field set_doc_id 242 1 8 - setDocId - 0 -
+    resolved 1 0 8 - 0 -
+  extension in_message_ext 15000 1 11 .hpb_unittest.OtherExtension .hpb_unittest.TestAnnotation inMessageExt - 0 -
+    resolved 1 0 11 - 0 -
+  message NestedChild
+    field nested_child_name 211 1 9 - nestedChildName - 0 -
+      resolved 1 0 9 0 0 -
+  message ChildMapEntry
+    field key 1 1 5 - key - 0 -
+      resolved 1 0 5 - 0 -
+    field value 2 1 11 .hpb_unittest.ChildModel1 value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+  message ChildStrMapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 11 .hpb_unittest.ChildModel1 value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+  message StrToIntMapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 1 0 5 - 0 -
+    map_entry
+  message StrToStrMapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 0 0 -
+    map_entry
+  enum Category
+    closed
+    value IMAGES 5
+    value NEWS 6
+    value VIDEO 7
+    value RADIO 8
+  oneof child_oneof1
+  oneof type
+  extension_range 10000 536870912
+message TestModelContainerV1
+  field models 1 3 11 .hpb_unittest.TestModelV1 models - 0 -
+    resolved 0 0 11 - 0 -
+message TestModelV1
+  field value 1 1 5 - value - 0 -
+    resolved 1 0 5 - 0 -
+  field value2 2 3 5 - value2 - 0 -
+    resolved 0 0 5 - 0 -
+  field value3 3 3 5 - value3 - 0 -
+    resolved 0 1 5 - 0 -
+  field value4 4 3 5 - value4 - 0 -
+    resolved 0 0 5 - 0 -
+  field b1 9 1 8 - b1 - 0 -
+    resolved 1 0 8 - 0 -
+  field b2 10 1 8 - b2 - 0 -
+    resolved 1 0 8 - 0 -
+  field str2 50 1 9 - str2 - 0 -
+    resolved 1 0 9 0 0 -
+message ThemeExtension
+  field ext_name 1 1 9 - extName - 0 -
+    resolved 1 0 9 0 0 -
+  field ext_bool 2 1 8 - extBool - 0 -
+    resolved 1 0 8 - 0 -
+  extension theme_extension 12003 1 11 .hpb_unittest.ThemeExtension .hpb_unittest.TestModel themeExtension - 0 -
+    resolved 1 0 11 - 0 -
+message ContainerExtension
+  field ext_container_name 1 1 9 - extContainerName - 0 -
+    resolved 1 0 9 0 0 -
+  extension container_extension 12004 1 11 .hpb_unittest.ContainerExtension .hpb_unittest.TestModelContainer containerExtension - 0 -
+    resolved 1 0 11 - 0 -
+message OtherExtension
+  field ext2_name 1 1 9 - ext2Name - 0 -
+    resolved 1 0 9 0 0 -
+message TestAnnotation
+  extension_range 10000 536870912
+message TestMessageHasEnum
+  field enum_declared_after_message 1 1 14 .hpb_unittest.EnumDeclaredAfterMessage enumDeclaredAfterMessage - 0 -
+    resolved 1 0 14 - 0 -
+enum PrimaryColors
+  closed
+  value RED 1
+  value GREEN 2
+  value BLUE 3
+enum EnumDeclaredAfterMessage
+  closed
+  value ZERO 0
+  value ONE 1
+  value TWO 2
+  value THREE 3
+extension theme 12001 1 11 .hpb_unittest.ThemeExtension .hpb_unittest.TestModel theme - 0 -
+  resolved 1 0 11 - 0 -
+extension container_ext 12005 1 11 .hpb_unittest.ContainerExtension .hpb_unittest.TestModelContainer containerExt - 0 -
+  resolved 1 0 11 - 0 -
+extension other_ext 12002 1 11 .hpb_unittest.OtherExtension .hpb_unittest.TestModel otherExt - 0 -
+  resolved 1 0 11 - 0 -

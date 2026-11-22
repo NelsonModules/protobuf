@@ -1,0 +1,29 @@
+package pb
+syntax proto2
+message JavaFeatures
+  field legacy_closed_enum 1 1 8 - legacyClosedEnum - 0 -
+    resolved 1 0 8 - 0 -
+  field utf8_validation 2 1 14 .pb.JavaFeatures.Utf8Validation utf8Validation - 0 -
+    resolved 1 0 14 - 0 -
+  field large_enum 3 1 8 - largeEnum - 0 -
+    resolved 1 0 8 - 0 -
+  field use_old_outer_classname_default 4 1 8 - useOldOuterClassnameDefault - 0 -
+    resolved 1 0 8 - 0 -
+  field nest_in_file_class 5 1 14 .pb.JavaFeatures.NestInFileClassFeature.NestInFileClass nestInFileClass - 0 -
+    resolved 1 0 14 - 0 -
+  message NestInFileClassFeature
+    enum NestInFileClass
+      closed
+      value NEST_IN_FILE_CLASS_UNKNOWN 0
+      value NO 1
+      value YES 2
+      value LEGACY 3
+    reserved_range 1 536870912
+  enum Utf8Validation
+    closed
+    value UTF8_VALIDATION_UNKNOWN 0
+    value DEFAULT 1
+    value VERIFY 2
+  reserved_range 6 7
+extension java 1001 1 11 .pb.JavaFeatures .google.protobuf.FeatureSet java - 0 -
+  resolved 1 0 11 - 0 -

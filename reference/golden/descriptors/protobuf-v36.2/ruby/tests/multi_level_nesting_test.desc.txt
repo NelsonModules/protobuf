@@ -1,0 +1,13 @@
+package 
+syntax proto3
+message Function
+  field name 1 1 9 - name - 0 -
+  field parameters 2 3 11 .Function.Parameter parameters - 0 -
+  field return_type 3 1 9 - returnType - 0 -
+  message Parameter
+    field name 1 1 9 - name - 0 -
+    field value 2 1 11 .Function.Parameter.Value value - 0 -
+    message Value
+      field string 1 1 9 - string 0 0 -
+      field integer 2 1 3 - integer 0 0 -
+      oneof type

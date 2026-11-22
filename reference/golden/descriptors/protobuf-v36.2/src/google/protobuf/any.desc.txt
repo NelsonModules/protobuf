@@ -1,0 +1,5 @@
+package google.protobuf
+syntax proto3
+message Any
+  field type_url 1 1 9 - typeUrl - 0 -
+  field value 2 1 12 - value - 0 -

@@ -1,0 +1,22 @@
+// Edition 2024: symbol visibility and file-level features.
+edition = "2024";
+
+package nelson.test.editions2024;
+
+option features.utf8_validation = NONE;
+
+export message Envelope {
+  local message Body {
+    string text = 1;
+  }
+
+  Body body = 1;
+  repeated int32 values = 2;
+  string label = 3;
+  Kind kind = 4;
+}
+
+local enum Kind {
+  KIND_UNSET = 0;
+  KIND_A = 1;
+}

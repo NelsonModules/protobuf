@@ -1,0 +1,4 @@
+package examples.with.hyphen
+syntax editions
+edition 2023
+message EmptyMessage

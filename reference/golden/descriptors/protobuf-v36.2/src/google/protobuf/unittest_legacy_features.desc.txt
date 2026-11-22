@@ -1,0 +1,8 @@
+package legacy_features_unittest
+syntax editions
+edition 1002
+message TestEditionsMessage
+  field required_field 1 1 5 - requiredField - 0 -
+    resolved 1 0 5 - 1 -
+  field delimited_field 2 1 11 .legacy_features_unittest.TestEditionsMessage delimitedField - 0 -
+    resolved 1 0 10 - 0 -

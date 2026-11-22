@@ -1,0 +1,25 @@
+{"beginMs": "-1", "endMs": "-9223372036854775808", "pressure": {"q05": 1.5, "q50": -2.25}, "flow": {"q05": 1.5, "q95": 0.0}, "quality": 0}
+{"beginMs": "-10", "endMs": "8465560357308172118", "pressure": {"q50": "-Infinity", "q95": "-Infinity"}}
+{"endMs": "1", "pressure": {"q05": -2.25, "q50": "Infinity", "q95": "Infinity"}, "flow": {"q05": -0.0, "q50": -0.0, "q95": 1e-30}, "quality": -1}
+{"beginMs": "1", "pressure": {"q05": -0.0}, "quality": -440383233}
+{"beginMs": "1", "pressure": {"q05": "-Infinity"}, "flow": {}, "quality": 0}
+{"endMs": "1", "pressure": {"q50": 1.5}, "flow": {"q95": "Infinity"}, "quality": -1}
+{"beginMs": "186341454574849164", "pressure": {"q95": 1e-30}, "flow": {"q05": 611044.25, "q95": "Infinity"}, "quality": -1}
+{"beginMs": "-8688973355689435118", "flow": {"q50": -113660.984}, "quality": -6}
+{"beginMs": "-9223372036854775808", "endMs": "-663", "pressure": {"q05": "-Infinity", "q50": 1.5, "q95": -0.0}, "flow": {"q50": -2.25}, "quality": 1}
+{"endMs": "9223372036854775807", "flow": {"q50": "NaN", "q95": 1.5}, "quality": -100293479}
+{"endMs": "9223372036854775807", "pressure": {"q50": 0.0}, "flow": {"q50": -2.25, "q95": -749869.06}, "quality": 1}
+{"endMs": "-9223372036854775808", "quality": -2147483648}
+{"endMs": "-1", "pressure": {"q05": "Infinity", "q95": 1.5}, "flow": {"q05": 1e-30, "q95": "Infinity"}}
+{"endMs": "-891", "pressure": {"q05": 1e+30, "q50": -0.0}, "flow": {"q95": "NaN"}}
+{"endMs": "1", "pressure": {"q50": 0.0}, "flow": {"q05": 1.5}}
+{"endMs": "1", "pressure": {"q05": 0.0, "q50": 1.5}, "flow": {"q05": 1.5, "q50": 1e-30}, "quality": -2147483648}
+{"beginMs": "-378", "pressure": {"q05": "Infinity", "q50": "Infinity", "q95": 1.5}, "quality": 1968393572}
+{"beginMs": "9223372036854775807", "endMs": "2858877024503837439", "pressure": {}, "flow": {"q05": "NaN"}, "quality": 2056634988}
+{"beginMs": "-327", "endMs": "9223372036854775807", "pressure": {}, "flow": {"q05": -275232.03, "q50": "Infinity", "q95": 0.0}}
+{"beginMs": "995", "endMs": "9223372036854775807", "pressure": {"q05": 0.0}, "flow": {}}
+{"endMs": "6638369283610589613", "pressure": {"q50": "-Infinity", "q95": 1e-30}, "flow": {"q05": 0.0, "q50": "Infinity", "q95": 0.0}}
+{"beginMs": "1230182433130116145", "pressure": {}, "quality": 84}
+{"beginMs": "1", "flow": {"q50": -542252.1}}
+{"beginMs": "-277", "endMs": "-9223372036854775808", "flow": {"q50": "-Infinity", "q95": -396634.9}}
+{"beginMs": "1", "endMs": "-6578637993108936018", "pressure": {"q50": -410839.62, "q95": "Infinity"}, "quality": 2147483647}

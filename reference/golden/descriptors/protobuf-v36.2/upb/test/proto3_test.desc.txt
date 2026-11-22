@@ -1,0 +1,19 @@
+package upb.test
+syntax proto3
+message MyMessage3
+message TestMessage3
+  field i32 1 1 5 - i32 0 1 -
+  field r_i32 2 3 5 - rI32 - 0 -
+  field str 3 1 9 - str 1 1 -
+  field r_str 4 3 9 - rStr - 0 -
+  field msg 5 1 11 .upb.test.TestMessage3 msg 2 1 -
+  field r_msg 6 3 11 .upb.test.TestMessage3 rMsg - 0 -
+  oneof _i32
+  oneof _str
+  oneof _msg
+message TestOneOfInitialField
+  field a 1 1 5 - a 0 0 -
+  field b 2 1 13 - b 0 0 -
+  field c 3 1 2 - c - 0 -
+  oneof oneof_field
+extension my_option 51235 1 9 - .google.protobuf.MessageOptions myOption - 1 -

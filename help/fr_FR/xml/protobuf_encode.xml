@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.encode</keyword>
+  <short_description>Encode des structures, colonnes, tables ou timetables en octets protobuf.</short_description>
+  <syntax>
+    <syntax_item>bytes = protobuf.encode(schema, type, value)</syntax_item>
+    <syntax_item>bytes = protobuf.encode(schema, type, records, 'Delimited', true)</syntax_item>
+    <syntax_item>bytes = protobuf.encode(schema, type, columns, 'Layout', 'columns', 'Presence', presence, 'Delimited', true)</syntax_item>
+    <syntax_item>bytes = protobuf.encode(schema, type, T, 'Delimited', true, 'RowTimes', name, 'TimeUnit', unit)</syntax_item>
+    <syntax_item>bytes = protobuf.encode(schema, type, records, 'Delimited', true, 'Workers', n)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>un schéma de protobuf.load et un type de message (nom complet ou fin de nom unique).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>value, records</param_name>
+      <param_description>une structure (un message, ou un enregistrement par élément avec 'Delimited'). Les champs absents gardent leur valeur par défaut. Les champs Timestamp, Duration et wrappers acceptent aussi des datetime, des duration et des valeurs simples. Les champs d'énumération acceptent un nombre ou un nom. Un oneof s'écrit via le champ portant son nom.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Delimited'</param_name>
+      <param_description>logique (false par défaut) : écrit un flux d'enregistrements, chacun précédé de sa taille en varint.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Layout'</param_name>
+      <param_description>'struct' (par défaut) ou 'columns' (la valeur est une structure scalaire de colonnes Nx1, une par champ), 'table' ou 'timetable'.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Presence'</param_name>
+      <param_description>la sortie presence de la disposition en colonnes : les valeurs dont la présence est false ne sont pas écrites, si bien que les octets correspondent à ceux décodés.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'RowTimes', 'TimeUnit'</param_name>
+      <param_description>valeur timetable : le champ écrit à partir des temps des lignes, et son unité quand c'est un nombre ('s', 'ms' (par défaut), 'us', 'ns' depuis le 1970-01-01 UTC).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Workers'</param_name>
+      <param_description>nombre de threads qui encodent un flux délimité ; 0 (par défaut) choisit d'après le nombre d'enregistrements. Les octets sont les mêmes quel que soit le nombre de threads.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>bytes</param_name>
+      <param_description>un vecteur uint8 : les données encodées.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.encode transforme des valeurs Nelson en octets Protocol Buffers. Une structure est un message ; avec 'Delimited', un tableau de structures est un flux d'enregistrements délimités par leur taille. Les colonnes, tables et timetables encodent les mêmes données sous forme de colonnes, chemin rapide pour de grands ensembles d'enregistrements.</p>
+    <p>Les colonnes numériques sont copiées sans tableau intermédiaire et les gros flux sont encodés sur plusieurs threads, d'où un débit de quelques millions d'enregistrements par seconde. protobuf.write envoie les mêmes octets directement vers un fichier, un identificateur de fichier ou une entrée ZIP.</p>
+    <p>Les erreurs d'encodage ont l'identifiant protobuf:encodeError:nom et nomment le champ fautif.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Encoder et décoder un message avec un oneof</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+bytes = protobuf.encode(schema, 'Event', struct('started', struct('timestamp_ms', 1, 'mode', 'auto')))
+event = protobuf.decode(schema, 'Event', bytes);
+event.kind
+event.started
+]]></example_item_data>
+    </example_item>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Encoder un flux d'enregistrements</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+records = struct('timestamp_ms', {1000, 1040, 1080}, 'status', {int32(0), int32(1), int32(2)});
+bytes = protobuf.encode(schema, 'SensorSample', records, 'Delimited', true);
+numel(bytes)
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.write">protobuf.write</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.load">protobuf.load</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

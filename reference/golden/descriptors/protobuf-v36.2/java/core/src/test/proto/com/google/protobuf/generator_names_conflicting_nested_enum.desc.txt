@@ -1,0 +1,6 @@
+package google.protobuf
+syntax editions
+edition 2023
+message EnumContainer
+  enum GeneratorNamesConflictingNestedEnum
+    value UNKNOWN_VALUE 0

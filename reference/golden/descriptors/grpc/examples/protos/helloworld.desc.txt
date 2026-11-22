@@ -1,0 +1,10 @@
+package helloworld
+syntax proto3
+message HelloRequest
+  field name 1 1 9 - name - 0 -
+message HelloReply
+  field message 1 1 9 - message - 0 -
+service Greeter
+  method SayHello .helloworld.HelloRequest .helloworld.HelloReply 0 0
+  method SayHelloStreamReply .helloworld.HelloRequest .helloworld.HelloReply 0 1
+  method SayHelloBidiStream .helloworld.HelloRequest .helloworld.HelloReply 1 1

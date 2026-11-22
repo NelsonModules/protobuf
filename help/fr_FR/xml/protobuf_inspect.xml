@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.inspect</keyword>
+  <short_description>Lit des octets protobuf sans schéma.</short_description>
+  <syntax>
+    <syntax_item>txt = protobuf.inspect(bytes)</syntax_item>
+    <syntax_item>[txt, fields] = protobuf.inspect(bytes, 'Delimited', tf)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>bytes</param_name>
+      <param_description>un vecteur uint8 : données encodées.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Delimited'</param_name>
+      <param_description>logique (false par défaut) : lit les octets comme un flux délimité par tailles.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>txt</param_name>
+      <param_description>les champs lus sans schéma, comme les affiche protoc --decode_raw. Sans sortie, le texte est affiché.</param_description>
+    </param_output_item>
+    <param_output_item>
+      <param_name>fields</param_name>
+      <param_description>un tableau de structures avec Number, Wire ('varint', 'fixed64', 'bytes', 'group' ou 'fixed32'), Value, Text et Fields (les champs d'un message imbriqué, ou []) ; une cellule avec un tableau de structures par enregistrement avec 'Delimited'.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.inspect lit les numéros de champ, les types de fil et les valeurs d'octets protobuf sans schéma, comme le fait protoc --decode_raw. C'est utile quand le schéma est inconnu ou qu'un flux d'octets doit être examiné, et la fonction renvoie les champs analysés en structure pour un usage ultérieur.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Lire des octets sans schéma</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+a = struct('timestamp_ms', 1000, 'status', 1, 'diagnostics', struct('drift', 0.5));
+txt = protobuf.inspect(protobuf.encode(schema, 'SensorSample', a))
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.show">protobuf.show</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

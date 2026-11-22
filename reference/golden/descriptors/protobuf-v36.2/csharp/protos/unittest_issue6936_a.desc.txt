@@ -1,0 +1,3 @@
+package unittest_issues
+syntax proto3
+extension opt 50000 1 9 - .google.protobuf.MessageOptions opt - 0 -

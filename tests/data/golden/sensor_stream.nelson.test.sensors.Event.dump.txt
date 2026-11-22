@@ -1,0 +1,146 @@
+step_completed {
+  timestamp_ms: 5793485795546851567
+  mode: x:e697a5e69cac
+  measurements[0] {
+    name: x:
+    value: f:00000000
+  }
+}
+---
+stopped {
+  timestamp_ms: 0
+  mode: x:
+  remaining_steps: -1889535136
+}
+---
+started {
+  timestamp_ms: 1
+  mode: x:6c696e650a627265616b
+}
+---
+stopped {
+  timestamp_ms: 6510444019129281336
+  mode: x:e697a5e69cac
+}
+---
+
+---
+stopped {
+  timestamp_ms: -1
+  mode: x:
+  remaining_steps: 1990055278
+}
+---
+
+---
+
+---
+
+---
+started {
+  timestamp_ms: 1
+  mode: x:f09f9982
+}
+---
+step_completed {
+  timestamp_ms: 0
+  mode: x:
+  measurements[0] {
+    name: x:61
+    value: f:7149f2ca
+  }
+  measurements[1] {
+    name: x:7461620971756f746522
+    value: f:7149f2ca
+  }
+  measurements[2] {
+    name: x:306233306261796130326133333361
+    value: f:0da24260
+  }
+}
+---
+
+---
+
+---
+
+---
+stopped {
+  timestamp_ms: 1
+  mode: x:e697a5e69cac
+}
+---
+
+---
+stopped {
+  timestamp_ms: 0
+  mode: x:e697a5e69cac
+}
+---
+step_completed {
+  timestamp_ms: 0
+  mode: x:68c3a96c6c6f
+  measurements[0] {
+    name: x:e697a5e69cac
+    value: f:00000000
+  }
+  measurements[1] {
+    name: x:7461620971756f746522
+    value: f:80000000
+  }
+}
+---
+stopped {
+  timestamp_ms: 1
+  mode: x:
+  remaining_steps: -2147483648
+}
+---
+step_completed {
+  timestamp_ms: 942
+  mode: x:
+  measurements[0] {
+    name: x:3332616330313079335f783078797a326333
+    value: f:ff800000
+  }
+  measurements[1] {
+    name: x:e697a5e69cac
+    value: f:00000000
+  }
+  measurements[2] {
+    name: x:e697a5e69cac
+    value: f:80000000
+  }
+}
+---
+stopped {
+  timestamp_ms: 1
+  mode: x:
+  remaining_steps: -257987725
+}
+---
+started {
+  timestamp_ms: -9223372036854775808
+  mode: x:e697a5e69cac
+}
+---
+
+---
+stopped {
+  timestamp_ms: 1
+  mode: x:61
+  remaining_steps: 0
+}
+---
+step_completed {
+  timestamp_ms: 9223372036854775807
+  mode: x:e697a5e69cac
+  measurements[0] {
+    name: x:
+    value: f:473ca051
+  }
+  measurements[1] {
+    name: x:7461620971756f746522
+    value: f:00000000
+  }
+}

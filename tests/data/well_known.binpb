@@ -1,0 +1,48 @@
+
+ÿ
+google/protobuf/timestamp.protogoogle.protobuf";
+	Timestamp
+seconds (Rseconds
+nanos (RnanosB…
+com.google.protobufBTimestampProtoPZ2google.golang.org/protobuf/types/known/timestamppbø¢GPBªGoogle.Protobuf.WellKnownTypesbproto3
+û
+google/protobuf/duration.protogoogle.protobuf":
+Duration
+seconds (Rseconds
+nanos (RnanosBƒ
+com.google.protobufBDurationProtoPZ1google.golang.org/protobuf/types/known/durationpbø¢GPBªGoogle.Protobuf.WellKnownTypesbproto3
+†
+google/protobuf/wrappers.protogoogle.protobuf"#
+DoubleValue
+value (Rvalue""
+
+FloatValue
+value (Rvalue""
+
+Int64Value
+value (Rvalue"#
+UInt64Value
+value (Rvalue""
+
+Int32Value
+value (Rvalue"#
+UInt32Value
+value (Rvalue"!
+	BoolValue
+value (Rvalue"#
+StringValue
+value (	Rvalue""
+
+BytesValue
+value (RvalueBƒ
+com.google.protobufBWrappersProtoPZ1google.golang.org/protobuf/types/known/wrapperspbø¢GPBªGoogle.Protobuf.WellKnownTypesbproto3
+ý
+well_known.protonelson.test.wktgoogle/protobuf/timestamp.protogoogle/protobuf/duration.protogoogle/protobuf/wrappers.proto"î
+Reading*
+at (2.google.protobuf.TimestampRat3
+elapsed (2.google.protobuf.DurationRelapsed2
+level (2.google.protobuf.DoubleValueRlevel1
+count (2.google.protobuf.Int32ValueRcount2
+label (2.google.protobuf.StringValueRlabel0
+marks (2.google.protobuf.TimestampRmarks5
+samples (2.google.protobuf.FloatValueRsamplesbproto3

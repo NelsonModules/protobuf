@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.diff</keyword>
+  <short_description>Differences between two messages, field by field.</short_description>
+  <syntax>
+    <syntax_item>D = protobuf.diff(a, b)</syntax_item>
+    <syntax_item>D = protobuf.diff(schema, type, a, b)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>a, b</param_name>
+      <param_description>two structs, or with a schema and a type two messages given as structs or as encoded uint8 bytes. With a schema, both are first read through it, so absent fields and default values compare the same way.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>a schema from protobuf.load and a message type.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>D</param_name>
+      <param_description>a table with one row per difference and the variables Path (a string such as "a.b(2).c"), Change ("changed", "added" in b, "removed" from a), A and B (cells with the values, [] when absent).</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.diff lists the fields that differ between two messages. With a schema and a type, the two sides are decoded first, so a field left out of one struct and a field set to its default compare as equal, as they would on the wire.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Compare two messages</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+a = struct('timestamp_ms', 1000, 'status', 1, 'diagnostics', struct('drift', 0.5));
+b = a;
+b.diagnostics.drift = 0.75;
+D = protobuf.diff(schema, 'SensorSample', a, b)
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.show">protobuf.show</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.inspect">protobuf.inspect</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

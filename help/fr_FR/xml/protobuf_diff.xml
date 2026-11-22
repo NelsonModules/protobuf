@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.diff</keyword>
+  <short_description>Différences entre deux messages, champ par champ.</short_description>
+  <syntax>
+    <syntax_item>D = protobuf.diff(a, b)</syntax_item>
+    <syntax_item>D = protobuf.diff(schema, type, a, b)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>a, b</param_name>
+      <param_description>deux structures, ou avec un schéma et un type deux messages donnés en structures ou en octets uint8 encodés. Avec un schéma, les deux sont d'abord relus à travers lui, si bien que les champs absents et les valeurs par défaut se comparent de la même façon.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>un schéma de protobuf.load et un type de message.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>D</param_name>
+      <param_description>une table avec une ligne par différence et les variables Path (une chaîne comme "a.b(2).c"), Change ("changed", "added" dans b, "removed" de a), A et B (cellules contenant les valeurs, [] si absentes).</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.diff liste les champs qui diffèrent entre deux messages. Avec un schéma et un type, les deux côtés sont d'abord décodés, si bien qu'un champ omis dans l'une des structures et un champ mis à sa valeur par défaut se comparent comme égaux, comme ils le seraient sur le fil.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Comparer deux messages</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+a = struct('timestamp_ms', 1000, 'status', 1, 'diagnostics', struct('drift', 0.5));
+b = a;
+b.diagnostics.drift = 0.75;
+D = protobuf.diff(schema, 'SensorSample', a, b)
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.show">protobuf.show</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.inspect">protobuf.inspect</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

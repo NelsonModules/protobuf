@@ -1,0 +1,6 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+message BadFieldMessage
+  field badFieldName 1 1 9 - badFieldName - 0 -
+    resolved 1 0 9 1 0 -

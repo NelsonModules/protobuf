@@ -1,0 +1,35 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message LazyMessageLite
+  field num 1 1 5 - num - 0 -
+    resolved 1 0 5 - 0 -
+  field num_with_default 2 1 5 - numWithDefault - 0 -
+    resolved 1 0 5 - 0 default=421
+  field inner 3 1 11 .proto2_unittest.LazyInnerMessageLite inner - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_inner 4 3 11 .proto2_unittest.LazyInnerMessageLite repeatedInner - 0 -
+    resolved 0 0 11 - 0 -
+  field oneof_num 5 1 5 - oneofNum 0 0 -
+    resolved 1 0 5 - 0 -
+  field oneof_inner 6 1 11 .proto2_unittest.LazyInnerMessageLite oneofInner 0 0 -
+    resolved 1 0 11 - 0 -
+  oneof oneof_field
+message LazyInnerMessageLite
+  field num 1 1 5 - num - 0 -
+    resolved 1 0 5 - 0 -
+  field num_with_default 2 1 5 - numWithDefault - 0 -
+    resolved 1 0 5 - 0 default=42
+  field nested 3 1 11 .proto2_unittest.LazyNestedInnerMessageLite nested - 0 -
+    resolved 1 0 11 - 0 -
+  extension_range 1000 536870912
+message LazyExtension
+  field name 1 1 9 - name - 0 -
+    resolved 1 0 9 0 0 -
+  extension extension 1000 1 11 .proto2_unittest.LazyExtension .proto2_unittest.LazyInnerMessageLite extension - 0 -
+    resolved 1 0 11 - 0 -
+message LazyNestedInnerMessageLite
+  field num 1 1 5 - num - 0 -
+    resolved 1 0 5 - 0 -
+  field num_with_default 2 1 5 - numWithDefault - 0 -
+    resolved 1 0 5 - 0 default=4

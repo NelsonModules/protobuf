@@ -1,0 +1,25 @@
+{"body": {"text": "a"}, "label": "tab\tquote\"", "kind": "KIND_UNSET"}
+{"body": {"text": "🙂"}, "values": [372], "label": "zx__yaa_33yc_bx331bz", "kind": "KIND_A"}
+{"body": {}, "kind": "KIND_A"}
+{"body": {"text": "tab\tquote\""}, "values": [1, -1590488089], "label": "cbb13caxzy0zc_a0x", "kind": 77}
+{"body": {}, "values": [2147483647], "label": "日本", "kind": "KIND_UNSET"}
+{"body": {}, "values": [-2147483648], "label": "héllo"}
+{"body": {"text": "tab\tquote\""}, "values": [629], "kind": "KIND_A"}
+{"values": [-299, -2147483648, -2147483648], "label": "b_200bxx", "kind": 77}
+{"body": {}, "values": [-2147483648]}
+{"body": {"text": "11b0acz3zz1xacxb3"}, "values": [-2147483648], "label": "héllo", "kind": "KIND_A"}
+{"body": {"text": "a"}, "values": [2147483647], "label": "héllo", "kind": "KIND_UNSET"}
+{"body": {}, "values": [-1027304652, 1, -1], "kind": 77}
+{"body": {"text": "a0y2"}, "values": [2147483647]}
+{"body": {}, "kind": "KIND_UNSET"}
+{"body": {"text": "line\nbreak"}, "values": [2147483647, -2147483648, 0], "label": "日本"}
+{"body": {"text": ""}, "values": [1, 613, -1618799154]}
+{"body": {}, "values": [1, -2147483648, 0]}
+{"body": {}, "values": [1, 2147483647], "kind": "KIND_UNSET"}
+{"kind": "KIND_A"}
+{"body": {}, "values": [-1, -1]}
+{"body": {"text": ""}, "values": [-2147483648, -234], "label": "a"}
+{"values": [517208480, -1], "label": "line\nbreak", "kind": "KIND_A"}
+{"values": [0, 0], "kind": "KIND_UNSET"}
+{"body": {}, "values": [0, 1], "label": "a", "kind": "KIND_UNSET"}
+{"body": {}, "label": "a", "kind": "KIND_UNSET"}

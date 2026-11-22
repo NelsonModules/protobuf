@@ -1,0 +1,24 @@
+package unittest_drop_unknown_fields
+syntax editions
+edition 1002
+message Foo
+  field int32_value 1 1 5 - int32Value - 0 -
+    resolved 0 0 5 - 0 -
+  field enum_value 2 1 14 .unittest_drop_unknown_fields.Foo.NestedEnum enumValue - 0 -
+    resolved 0 0 14 - 0 -
+  enum NestedEnum
+    value FOO 0
+    value BAR 1
+    value BAZ 2
+message FooWithExtraFields
+  field int32_value 1 1 5 - int32Value - 0 -
+    resolved 0 0 5 - 0 -
+  field enum_value 2 1 14 .unittest_drop_unknown_fields.FooWithExtraFields.NestedEnum enumValue - 0 -
+    resolved 0 0 14 - 0 -
+  field extra_int32_value 3 1 5 - extraInt32Value - 0 -
+    resolved 0 0 5 - 0 -
+  enum NestedEnum
+    value FOO 0
+    value BAR 1
+    value BAZ 2
+    value MOO 3

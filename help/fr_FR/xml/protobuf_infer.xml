@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.infer</keyword>
+  <short_description>Écrit un fichier .proto à partir d'une structure ou d'une table.</short_description>
+  <syntax>
+    <syntax_item>txt = protobuf.infer(value)</syntax_item>
+    <syntax_item>txt = protobuf.infer(value, 'Name', name, 'Package', package)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>value</param_name>
+      <param_description>une structure, un tableau de structures ou une table.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Name', 'Package'</param_name>
+      <param_description>le nom du message ('Record' par défaut) et le package du fichier .proto.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>txt</param_name>
+      <param_description>un fichier .proto proto3 sous forme de texte.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.infer écrit un fichier .proto proto3 qui décrit une structure, un tableau de structures ou une table, pour démarrer un schéma à partir de données. Les nombres donnent des champs scalaires (répétés quand une valeur a plusieurs éléments), le texte donne string, uint8 donne bytes, datetime et duration donnent Timestamp et Duration, et les structures imbriquées donnent des messages imbriqués. Un champ vide dans certains enregistrements est marqué optional.</p>
+    <p>Le texte est un point de départ à relire et ajuster, pas un schéma à lui seul ; passez-le à protobuf.load avec 'Format', 'text' pour l'utiliser.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Démarrer un schéma à partir d'une structure</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[measure = struct('id', int64(7), 'label', 'pump', 'values', [1.5 2.5], ...
+  'at', datetime(2026, 11, 12, 'TimeZone', 'UTC'), 'origin', struct('x', single(1), 'y', single(2)));
+disp(protobuf.infer(measure, 'Name', 'Measure', 'Package', 'demo'))
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.load">protobuf.load</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fields">protobuf.fields</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

@@ -1,0 +1,731 @@
+id: -528
+tag: "\005C-\026"
+fallback: LEVEL_LOW
+history: LEVEL_HIGH
+history: LEVEL_HIGH
+history_expanded: LEVEL_LOW
+track {
+}
+track {
+  y: 1
+}
+track {
+}
+raw_text: "a"
+named {
+  key: ""
+  value {
+  }
+}
+named {
+  key: "héllo"
+  value {
+    y: 2147483647
+  }
+}
+named {
+  key: "tab\tquote\""
+  value {
+    x: -657
+  }
+}
+flag: true
+===
+id: 0
+fallback: LEVEL_LOW
+history: LEVEL_HIGH
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+count: 1
+at {
+  y: 1
+}
+raw_text: "1zbaaz10022zc2zz2z"
+named {
+  key: "x11ay33ayzx22za"
+  value {
+  }
+}
+named {
+  key: "🙂"
+  value {
+    y: -1
+  }
+}
+ratio: -inf
+total: 0
+samples: -901
+samples: 2147483647
+samples: -1
+===
+id: -1
+tag: ""
+fallback: LEVEL_LOW
+count: 1
+at {
+  x: 0
+}
+track {
+  x: -565
+  y: 0
+}
+spot {
+  y: 365
+}
+ratio: -0.0
+total: 0
+samples: 2147483647
+samples: 0
+===
+id: 1
+value: nan
+tag: "\250\242\017\202"
+fallback: LEVEL_LOW
+history: LEVEL_HIGH
+history: LEVEL_HIGH
+history: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+count: 1
+at {
+  x: 0
+  y: -1
+}
+track {
+  x: 0
+  y: -1
+}
+named {
+  key: ""
+  value {
+    x: 1
+  }
+}
+flag: true
+total: 10220939971088659950
+samples: 1
+===
+id: 1
+value: inf
+unit: "héllo"
+tag: "\234\356\024\013\340\305#\203\263"
+level: LEVEL_LOW
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_LOW
+count: 61160630
+at {
+  y: 1
+}
+named {
+  key: "héllo"
+  value {
+    x: 0
+    y: 0
+  }
+}
+named {
+  key: "tab\tquote\""
+  value {
+    x: 96
+  }
+}
+spot {
+  x: 0
+  y: 1971041866
+}
+ratio: -2.25
+flag: true
+samples: 2147483647
+===
+id: 0
+unit: "3xcazy313y3_xx"
+level: LEVEL_LOW
+history: LEVEL_HIGH
+history: LEVEL_HIGH
+history: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+at {
+  x: 0
+}
+track {
+}
+track {
+  y: 809684778
+}
+named {
+  key: ""
+  value {
+    x: 0
+  }
+}
+named {
+  key: "日本"
+  value {
+    x: 2147483647
+  }
+}
+named {
+  key: "🙂"
+  value {
+  }
+}
+big: 1
+ratio: -inf
+total: 0
+samples: 688
+===
+id: 2147483647
+tag: "\204\350\2452"
+level: LEVEL_HIGH
+fallback: LEVEL_HIGH
+history: LEVEL_HIGH
+history: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+at {
+  x: 937180647
+  y: 2147483647
+}
+track {
+  y: 2147483647
+}
+named {
+  key: ""
+  value {
+  }
+}
+named {
+  key: "日本"
+  value {
+    x: 2147483647
+    y: -6
+  }
+}
+ratio: inf
+flag: false
+total: 475
+samples: 0
+samples: 2147483647
+===
+id: 2147483647
+value: -inf
+tag: "j\317\233f\000\036"
+level: LEVEL_HIGH
+fallback: LEVEL_HIGH
+history: LEVEL_LOW
+history: LEVEL_HIGH
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_LOW
+track {
+  y: -252
+}
+track {
+  y: 1883498353
+}
+mode: MODE_UNSET
+named {
+  key: "a"
+  value {
+    y: 1
+  }
+}
+total: 1000
+samples: 1
+===
+id: 0
+unit: "a"
+history: LEVEL_HIGH
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+count: -455
+track {
+  y: 2147483647
+}
+raw_text: "0cx0"
+mode: MODE_UNSET
+big: 0
+ratio: -0.0
+samples: 569
+samples: -2147483648
+===
+id: -879
+value: 1.5
+level: LEVEL_LOW
+history: LEVEL_HIGH
+history: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+at {
+}
+mode: MODE_UNSET
+named {
+  key: "line\nbreak"
+  value {
+    x: -2147483648
+  }
+}
+big: 9223372036854775807
+samples: 308
+samples: -2147483648
+samples: 0
+===
+id: 1
+value: nan
+unit: "a"
+tag: "\274\275*\0215_u\336\000p"
+level: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_LOW
+track {
+  y: -380
+}
+raw_text: "3x0_y"
+named {
+  key: "héllo"
+  value {
+    x: 1
+  }
+}
+named {
+  key: "tab\tquote\""
+  value {
+    x: -260
+  }
+}
+ratio: 0.0
+flag: false
+total: 13853900788304483099
+===
+id: 2147483647
+unit: "héllo"
+tag: "\305\225"
+fallback: LEVEL_HIGH
+history: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+count: 1135839911
+at {
+  x: 514019017
+}
+mode: MODE_UNSET
+named {
+  key: "tab\tquote\""
+  value {
+  }
+}
+named {
+  key: "y0_aazxzz1yx0y"
+  value {
+  }
+}
+named {
+  key: "🙂"
+  value {
+    x: -1
+    y: 0
+  }
+}
+big: 904
+ratio: -inf
+flag: true
+total: 0
+===
+id: 0
+value: 1e+30
+unit: "héllo"
+level: LEVEL_HIGH
+fallback: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+count: 426062791
+at {
+  x: 0
+}
+track {
+  x: 0
+}
+spot {
+  x: 1
+  y: 0
+}
+ratio: 1e+30
+total: 0
+===
+id: 972
+value: 1e+30
+unit: "🙂"
+tag: "\332\221"
+level: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_LOW
+count: -1889127931
+track {
+  y: 0
+}
+track {
+  y: -1
+}
+track {
+  x: -2147483648
+  y: 2147483647
+}
+mode: MODE_UNSET
+named {
+  key: "2_c_2z32bxc2"
+  value {
+    y: 0
+  }
+}
+ratio: 1.5
+flag: true
+total: 40948865427068686
+samples: 2147483647
+samples: -1
+===
+id: -2147483648
+value: -773692.8787983865
+tag: "\007P\352\366\212\316q\346o"
+level: LEVEL_LOW
+fallback: LEVEL_HIGH
+history: LEVEL_LOW
+history: LEVEL_LOW
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_LOW
+count: 1082591131
+at {
+  x: -2147483648
+  y: -1977059410
+}
+track {
+}
+track {
+}
+track {
+  x: 2147483647
+  y: 2147483647
+}
+mode: 77
+named {
+  key: "tab\tquote\""
+  value {
+    y: -2147483648
+  }
+}
+spot {
+  y: 0
+}
+ratio: 0.0
+flag: true
+total: 0
+samples: -2147483648
+===
+id: -2064476709
+value: -2.25
+unit: "a"
+level: LEVEL_LOW
+history: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+at {
+  y: 1
+}
+track {
+  x: 1
+  y: -570
+}
+track {
+  x: -2147483648
+  y: -2147483648
+}
+raw_text: ""
+mode: 77
+named {
+  key: "a"
+  value {
+  }
+}
+ratio: -inf
+flag: true
+total: 0
+samples: 1727579851
+samples: 771
+samples: 1
+===
+id: 691
+value: -0.0
+fallback: LEVEL_LOW
+history: LEVEL_LOW
+history: LEVEL_LOW
+count: 1
+track {
+  x: 1
+}
+track {
+}
+raw_text: "a"
+mode: MODE_AUTO
+ratio: 1e+30
+samples: -202783328
+samples: 2147483647
+samples: 2147483647
+===
+id: 536867368
+level: LEVEL_HIGH
+history: LEVEL_HIGH
+at {
+  x: -2147483648
+  y: 1
+}
+track {
+  y: 599
+}
+raw_text: "line\nbreak"
+named {
+  key: "yx"
+  value {
+    y: 0
+  }
+}
+total: 687
+samples: 1
+samples: -1
+===
+id: 435
+level: LEVEL_HIGH
+fallback: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+count: -1
+at {
+  y: -2147483648
+}
+track {
+}
+track {
+  y: 0
+}
+track {
+}
+spot {
+  y: -1
+}
+flag: true
+samples: 2147483647
+===
+id: 1
+value: 1e+30
+fallback: LEVEL_LOW
+history: LEVEL_HIGH
+history: LEVEL_HIGH
+history: LEVEL_HIGH
+count: 2147483647
+at {
+  x: -994792058
+  y: -1
+}
+track {
+  x: -2147483648
+}
+track {
+  x: 997020300
+  y: -2147483648
+}
+track {
+  x: -1
+  y: 0
+}
+mode: MODE_UNSET
+named {
+  key: "héllo"
+  value {
+  }
+}
+named {
+  key: "xcby"
+  value {
+    x: 2147483647
+    y: -1
+  }
+}
+named {
+  key: "🙂"
+  value {
+  }
+}
+samples: 773294890
+samples: 0
+===
+id: 1
+unit: "_11cza3zccya0ax2c22"
+level: LEVEL_LOW
+fallback: LEVEL_LOW
+history: LEVEL_LOW
+history: LEVEL_HIGH
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+track {
+}
+track {
+}
+track {
+  x: -1039246735
+}
+raw_text: "2a31c2_z200z3_31"
+named {
+  key: "b2abx"
+  value {
+    x: 1788644523
+  }
+}
+flag: true
+samples: 2147483647
+samples: 1810103461
+samples: 0
+===
+id: 98
+value: 0.0
+unit: "🙂"
+history: LEVEL_HIGH
+history: LEVEL_LOW
+history: LEVEL_LOW
+count: 1385356590
+track {
+  y: 1
+}
+track {
+  x: -1702528379
+  y: 2147483647
+}
+raw_text: "1ycy_z12czxccc"
+named {
+  key: "tab\tquote\""
+  value {
+    y: 1
+  }
+}
+named {
+  key: "xy3cccc_a"
+  value {
+    x: -1
+    y: 2147483647
+  }
+}
+named {
+  key: "z10xz2ya2c"
+  value {
+    x: -2147483648
+    y: -1
+  }
+}
+spot {
+  x: 55
+}
+ratio: -0.0
+flag: false
+total: 0
+samples: -1
+samples: -121639048
+samples: 1
+===
+id: 2147483647
+value: 1e+30
+unit: "日本"
+level: LEVEL_LOW
+history_expanded: LEVEL_LOW
+history_expanded: LEVEL_HIGH
+at {
+  y: -2147483648
+}
+track {
+  x: -2147483648
+  y: -1
+}
+raw_text: "y111_bcz2_21_x1x_c"
+named {
+  key: "1x30bzcc1zaa3_yxz_3"
+  value {
+  }
+}
+named {
+  key: "line\nbreak"
+  value {
+    x: 0
+  }
+}
+named {
+  key: "日本"
+  value {
+  }
+}
+big: -1
+samples: 2147483647
+===
+id: -80
+tag: "\241\276z\020"
+fallback: LEVEL_HIGH
+history_expanded: LEVEL_HIGH
+count: 2147483647
+at {
+  y: -1
+}
+track {
+  x: 0
+  y: -264
+}
+track {
+  y: 2147483647
+}
+track {
+  x: -1
+  y: 0
+}
+named {
+  key: "_x"
+  value {
+    x: 0
+    y: 1360421031
+  }
+}
+named {
+  key: "tab\tquote\""
+  value {
+    x: 2147483647
+    y: 1
+  }
+}
+flag: true
+samples: 1
+samples: 1
+samples: 0
+===
+id: -2147483648
+value: 0.0
+unit: "🙂"
+tag: "\336\311\246\225\211\212\\"
+level: LEVEL_HIGH
+history: LEVEL_LOW
+history: LEVEL_LOW
+history: LEVEL_HIGH
+count: -1
+at {
+  y: 2147483647
+}
+track {
+  y: 2147483647
+}
+raw_text: "11xyxzc0y_z33"
+mode: 77
+named {
+  key: ""
+  value {
+    x: 1
+    y: 1
+  }
+}
+big: 0
+ratio: nan
+samples: 869735630
+samples: -2147483648

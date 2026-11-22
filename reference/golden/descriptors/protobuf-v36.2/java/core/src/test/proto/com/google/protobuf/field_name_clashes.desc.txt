@@ -1,0 +1,11 @@
+package protobuf_unittest
+syntax editions
+edition 2023
+message BlankMessage
+message FieldsWithPotentialNameClashes
+  field foo 1 1 11 .protobuf_unittest.BlankMessage foo - 0 -
+    resolved 1 0 11 - 0 -
+  field foo_field 2 1 11 .protobuf_unittest.BlankMessage fooField - 0 -
+    resolved 1 0 11 - 0 -
+  field foo_field_accessor_table 3 1 11 .protobuf_unittest.BlankMessage fooFieldAccessorTable - 0 -
+    resolved 1 0 11 - 0 -

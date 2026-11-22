@@ -1,0 +1,3 @@
+package more_test_protos
+syntax editions
+edition 2024

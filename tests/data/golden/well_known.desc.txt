@@ -1,0 +1,10 @@
+package nelson.test.wkt
+syntax proto3
+message Reading
+  field at 1 1 11 .google.protobuf.Timestamp at - 0 -
+  field elapsed 2 1 11 .google.protobuf.Duration elapsed - 0 -
+  field level 3 1 11 .google.protobuf.DoubleValue level - 0 -
+  field count 4 1 11 .google.protobuf.Int32Value count - 0 -
+  field label 5 1 11 .google.protobuf.StringValue label - 0 -
+  field marks 6 3 11 .google.protobuf.Timestamp marks - 0 -
+  field samples 7 3 11 .google.protobuf.FloatValue samples - 0 -

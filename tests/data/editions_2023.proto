@@ -1,0 +1,50 @@
+// Edition 2023 features: presence, defaults, closed enums, delimited and expanded encodings.
+edition = "2023";
+
+package nelson.test.editions;
+
+option features.field_presence = EXPLICIT;
+
+enum Level {
+  option features.enum_type = CLOSED;
+  LEVEL_LOW = 1;
+  LEVEL_HIGH = 5;
+}
+
+enum Mode {
+  MODE_UNSET = 0;
+  MODE_AUTO = 1;
+}
+
+message Point {
+  int32 x = 1;
+  int32 y = 2;
+}
+
+message Reading {
+  int32 id = 1 [features.field_presence = LEGACY_REQUIRED];
+  double value = 2 [default = 1.5];
+  string unit = 3 [default = "bar"];
+  bytes tag = 4 [default = "\001x"];
+  Level level = 5;
+  Level fallback = 6 [default = LEVEL_HIGH];
+  repeated Level history = 7;
+  repeated Level history_expanded = 8 [features.repeated_field_encoding = EXPANDED];
+  int32 count = 9 [features.field_presence = IMPLICIT];
+  Point at = 10 [features.message_encoding = DELIMITED];
+  repeated Point track = 11 [features.message_encoding = DELIMITED];
+  string raw_text = 12 [features.utf8_validation = NONE];
+  Mode mode = 13;
+  map<string, Point> named = 14;
+  oneof choice {
+    sint64 big = 15;
+    Point spot = 16 [features.message_encoding = DELIMITED];
+  }
+  float ratio = 17 [default = -inf];
+  bool flag = 18 [default = true];
+  uint64 total = 19 [default = 18446744073709551615];
+  repeated sint32 samples = 26 [features.repeated_field_encoding = EXPANDED];
+
+  reserved old_name;
+  reserved 20 to 25;
+}

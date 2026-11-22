@@ -1,0 +1,1477 @@
+id: 2147483647
+value: d:412c669e4d6b1438
+history[0]: 960
+history[1]: -1
+packed_history[0]: 2147483647
+packed_history[1]: 0
+range {
+  low: d:7ff8000000000000
+}
+device: x:3363336162313178
+counters[] {
+  key: x:6c696e650a627265616b
+  value: 2147483647
+}
+counters[] {
+  key: x:7833333063
+  value: 811
+}
+parent {
+  id: 1
+  label: x:61
+  value: d:46293e5939a08cea
+  history[0]: 2147483647
+  history[1]: -2147483648
+  history[2]: -1
+  packed_history[0]: -1
+  packed_history[1]: -1
+  point[0] {
+    at: 1
+    y: f:ff800000
+  }
+  manual {
+  }
+  counters[] {
+    key: x:7461620971756f746522
+    value: 1
+  }
+  counters[] {
+    key: x:f09f9982
+    value: -1
+  }
+  raw: x:f6e3356776d3
+  parent {
+    id: -699374504
+    value: d:8000000000000000
+    unit: 1
+    history[0]: -2147483648
+    history[1]: -2147483648
+    history[2]: 0
+    packed_history[0]: 0
+    range {
+      low: d:fff0000000000000
+      high: d:46293e5939a08cea
+    }
+    point[0] {
+      at: -642
+      y: f:ff800000
+    }
+    counters[] {
+      key: x:
+      value: 0
+    }
+    counters[] {
+      key: x:7461620971756f746522
+      value: 1
+    }
+    counters[] {
+      key: x:e697a5e69cac
+      value: 394
+    }
+    units[0]: 1
+    units[1]: 2
+  }
+}
+---
+id: 0
+value: d:c002000000000000
+unit: 2
+history[0]: 1
+history[1]: 1
+history[2]: -984
+packed_history[0]: 2147483647
+packed_history[1]: -2147483648
+packed_history[2]: 0
+point[0] {
+  at: -830
+}
+point[1] {
+  at: 9223372036854775807
+  y: f:00000000
+}
+device: x:e697a5e69cac
+counters[] {
+  key: x:6178617a7a31793161
+  value: 1
+}
+raw: x:cc88eba93319
+units[0]: 2
+units[1]: 2
+units[2]: 1
+---
+id: 2147483647
+label: x:307831316179333361797a7832327a617831
+unit: 1
+history[0]: 517208480
+history[1]: -1
+packed_history[0]: -2147483648
+packed_history[1]: 575
+range {
+  low: d:7ff8000000000000
+}
+point[0] {
+  at: 1
+}
+manual {
+}
+enabled: true
+parent {
+  id: 1
+  value: d:c002000000000000
+  packed_history[0]: 2147483647
+  point[0] {
+    at: -7276858110116840996
+  }
+  device: x:615f336133625f62333133627930
+  counters[] {
+    key: x:e697a5e69cac
+    value: -2147483648
+  }
+  counters[] {
+    key: x:f09f9982
+    value: -1
+  }
+  units[0]: 2
+  units[1]: 2
+}
+---
+id: -2147483648
+unit: 1
+history[0]: 0
+history[1]: 607
+history[2]: 1
+packed_history[0]: 1
+point[0] {
+  at: 9223372036854775807
+}
+point[1] {
+  at: -1
+}
+counters[] {
+  key: x:325f7931615f6331
+  value: 697
+}
+counters[] {
+  key: x:5f637a33616333627a795f6178316278
+  value: 1
+}
+raw: x:c6d568dafa
+units[0]: 2
+units[1]: 2
+parent {
+  id: 0
+  value: d:8000000000000000
+  packed_history[0]: -1
+  packed_history[1]: 1
+  packed_history[2]: -1
+  range {
+  }
+  point[0] {
+    at: -805
+  }
+  point[1] {
+    at: 315
+    y: f:c0100000
+  }
+  point[2] {
+    at: 1
+    y: f:0da24260
+  }
+  manual {
+    operator_name: x:e697a5e69cac
+  }
+  counters[] {
+    key: x:
+    value: 1971041866
+  }
+  counters[] {
+    key: x:61
+    value: -2147483648
+  }
+  raw: x:4cb254fb133d250f73d2
+  enabled: false
+  units[0]: 1
+  parent {
+    id: 474
+    label: x:
+    history[0]: -935070909
+    packed_history[0]: 0
+    packed_history[1]: 2147483647
+    packed_history[2]: -2147483648
+    range {
+      high: d:8000000000000000
+    }
+    point[0] {
+      at: 1
+      y: f:3fc00000
+    }
+    point[1] {
+      at: -9223372036854775808
+    }
+    manual {
+    }
+    raw: x:
+    parent {
+      id: -1
+      history[0]: -2147483648
+      history[1]: 0
+      history[2]: 2147483647
+      counters[] {
+        key: x:79337930337a625f33617a3132
+        value: -2147483648
+      }
+      counters[] {
+        key: x:f09f9982
+        value: 1
+      }
+      units[0]: 2
+      units[1]: 1
+    }
+  }
+}
+---
+id: 2147483647
+label: x:6c696e650a627265616b
+value: d:7ff0000000000000
+unit: 2
+history[0]: -1
+history[1]: 1103422314
+history[2]: -2023059260
+packed_history[0]: 0
+packed_history[1]: 0
+packed_history[2]: -687
+range {
+  high: d:7ff0000000000000
+}
+point[0] {
+  at: -1
+  y: f:48ff279f
+}
+point[1] {
+  at: -3242741459509023548
+  y: f:0da24260
+}
+raw: x:e0758b
+enabled: true
+units[0]: 2
+units[1]: 2
+units[2]: 2
+parent {
+  id: -114
+  label: x:61
+  value: d:46293e5939a08cea
+  unit: 2
+  history[0]: -1
+  history[1]: 1
+  range {
+    low: d:0000000000000000
+  }
+  point[0] {
+    at: 0
+    y: f:c0100000
+  }
+  device: x:6c696e650a627265616b
+  units[0]: 1
+}
+---
+id: 1
+unit: 1
+range {
+  low: d:3ff8000000000000
+}
+counters[] {
+  key: x:5f32315f3261
+  value: -2147483648
+}
+counters[] {
+  key: x:7931635f313063315f31795f
+  value: 1
+}
+enabled: true
+units[0]: 2
+parent {
+  id: 2147483647
+  unit: 1
+  packed_history[0]: 0
+  packed_history[1]: -476
+  range {
+  }
+  counters[] {
+    key: x:
+    value: 2147483647
+  }
+  counters[] {
+    key: x:68c3a96c6c6f
+    value: -879
+  }
+  counters[] {
+    key: x:7461620971756f746522
+    value: -957
+  }
+  units[0]: 1
+  units[1]: 1
+  parent {
+    id: -1
+    label: x:32637a617a797979626379315f33317833793063
+    value: d:39b4484bfeebc2a0
+    history[0]: -2147483648
+    history[1]: -207
+    point[0] {
+      at: 9223372036854775807
+      y: f:c0100000
+    }
+    point[1] {
+      at: -2404326882608453506
+    }
+    device: x:61
+    counters[] {
+      key: x:f09f9982
+      value: 665634177
+    }
+    raw: x:2de1fc
+    enabled: true
+    units[0]: 1
+    units[1]: 2
+    units[2]: 1
+  }
+}
+---
+id: 0
+value: d:3ff8000000000000
+unit: 2
+history[0]: 0
+history[1]: -2147483648
+packed_history[0]: 1
+packed_history[1]: -2147483648
+point[0] {
+  at: 9223372036854775807
+  y: f:7fc00000
+}
+device: x:3161316330
+counters[] {
+  key: x:7461620971756f746522
+  value: -1
+}
+counters[] {
+  key: x:7978627a3062635f796333317a633232
+  value: -1
+}
+---
+id: -1
+label: x:7a32315f303132616278785f79305f61617a
+history[0]: 2147483647
+history[1]: 1
+packed_history[0]: -760
+packed_history[1]: 379
+packed_history[2]: -2147483648
+range {
+  low: d:412cc06cd947a324
+}
+point[0] {
+  at: -633
+}
+point[1] {
+  at: 9223372036854775807
+  y: f:7f800000
+}
+point[2] {
+  at: 9223372036854775807
+  y: f:ff800000
+}
+device: x:7461620971756f746522
+counters[] {
+  key: x:e697a5e69cac
+  value: 1617149682
+}
+units[0]: 2
+parent {
+  id: -995
+  history[0]: 1
+  packed_history[0]: 0
+  packed_history[1]: 2147483647
+  packed_history[2]: -1
+  point[0] {
+    at: -1
+    y: f:3fc00000
+  }
+  point[1] {
+    at: -1
+    y: f:7149f2ca
+  }
+  device: x:3232327a30306162307a
+  counters[] {
+    key: x:63613262323231617a3030623330
+    value: 0
+  }
+  enabled: false
+  parent {
+    id: -2147483648
+    label: x:5f785f5f78786263787a325f635f327a3332
+    history[0]: 1503117085
+    packed_history[0]: 553
+    packed_history[1]: 1000
+    packed_history[2]: -2147483648
+    range {
+    }
+    point[0] {
+      at: -9223372036854775808
+      y: f:80000000
+    }
+    point[1] {
+      at: 907
+    }
+    counters[] {
+      key: x:
+      value: -1
+    }
+    counters[] {
+      key: x:68c3a96c6c6f
+      value: 159
+    }
+    counters[] {
+      key: x:6c696e650a627265616b
+      value: 1
+    }
+    raw: x:7c4dc75b5a
+  }
+}
+---
+id: -2147483648
+label: x:68c3a96c6c6f
+value: d:c1246c44f75352ff
+packed_history[0]: -257987725
+range {
+  high: d:fff0000000000000
+}
+point[0] {
+  at: 1
+}
+counters[] {
+  key: x:32326131
+  value: -2147483648
+}
+raw: x:8c03548ff7
+enabled: true
+units[0]: 1
+units[1]: 1
+---
+id: -2147483648
+label: x:7461620971756f746522
+unit: 2
+history[0]: -444
+range {
+  high: d:fff0000000000000
+}
+counters[] {
+  key: x:61
+  value: -1
+}
+counters[] {
+  key: x:62335f61333063
+  value: -2147483648
+}
+counters[] {
+  key: x:7461620971756f746522
+  value: 1
+}
+units[0]: 1
+parent {
+  id: 51
+  label: x:6362787a79305f3363337a78625f7861617a
+  value: d:fff0000000000000
+  unit: 1
+  history[0]: 1727579851
+  history[1]: 771
+  history[2]: 1
+  range {
+    low: d:7ff8000000000000
+  }
+  point[0] {
+    at: -300
+  }
+  manual {
+  }
+  counters[] {
+    key: x:793079
+    value: -1
+  }
+  enabled: false
+  units[0]: 2
+  parent {
+    id: 2147483647
+    history[0]: 1
+    range {
+      high: d:8000000000000000
+    }
+    point[0] {
+      at: 9223372036854775807
+    }
+    point[1] {
+      at: 2305827790967563036
+    }
+    counters[] {
+      key: x:61
+      value: 1
+    }
+    counters[] {
+      key: x:68c3a96c6c6f
+      value: 1
+    }
+    raw: x:845dbd49ea56
+    enabled: true
+    units[0]: 2
+    parent {
+      id: 978
+      label: x:6c696e650a627265616b
+      unit: 1
+      packed_history[0]: 2147483647
+      packed_history[1]: 1
+      raw: x:b01ea1acb25da6d9d0
+      enabled: true
+    }
+  }
+}
+---
+id: -559
+label: x:68c3a96c6c6f
+value: d:7ff0000000000000
+unit: 2
+history[0]: 56
+history[1]: 1
+history[2]: -2147483648
+packed_history[0]: 556334174
+packed_history[1]: 0
+packed_history[2]: 0
+range {
+}
+point[0] {
+  at: 0
+  y: f:3fc00000
+}
+point[1] {
+  at: 0
+}
+counters[] {
+  key: x:30325f315f5f
+  value: 1
+}
+raw: x:89171db15731295ffa
+enabled: false
+parent {
+  id: 1
+  value: d:40f9985364395e30
+  history[0]: -2147483648
+  history[1]: 2147483647
+  history[2]: 1
+  packed_history[0]: -444
+  packed_history[1]: 0
+  range {
+    low: d:8000000000000000
+  }
+  point[0] {
+    at: -9223372036854775808
+    y: f:490ff576
+  }
+  device: x:6131787a3261623263785f
+  counters[] {
+    key: x:68c3a96c6c6f
+    value: -1
+  }
+}
+---
+id: 589
+value: d:c002000000000000
+history[0]: 0
+history[1]: 161
+packed_history[0]: 1
+packed_history[1]: 2147483647
+range {
+  low: d:46293e5939a08cea
+}
+point[0] {
+  at: -9223372036854775808
+}
+manual {
+  operator_name: x:
+}
+raw: x:c0379e69573d07ba532e
+enabled: false
+units[0]: 1
+units[1]: 1
+---
+id: -1
+label: x:68c3a96c6c6f
+value: d:39b4484bfeebc2a0
+history[0]: 0
+range {
+  low: d:c002000000000000
+  high: d:fff0000000000000
+}
+device: x:3062795f5f30303263
+counters[] {
+  key: x:306132
+  value: -68
+}
+counters[] {
+  key: x:61
+  value: 0
+}
+raw: x:b8cb243e7cedba611e
+units[0]: 1
+units[1]: 1
+units[2]: 2
+parent {
+  id: 1
+  unit: 2
+  point[0] {
+    at: 1
+  }
+  point[1] {
+    at: 1
+  }
+  point[2] {
+    at: -9223372036854775808
+    y: f:3fc00000
+  }
+  counters[] {
+    key: x:7461620971756f746522
+    value: 1
+  }
+  counters[] {
+    key: x:797a78627a315f7963303079616363
+    value: -623
+  }
+  raw: x:d309
+  enabled: true
+  units[0]: 2
+  units[1]: 1
+  units[2]: 1
+  parent {
+    id: 55
+    value: d:8000000000000000
+    unit: 2
+    history[0]: -1
+    history[1]: -121639048
+    range {
+      low: d:c002000000000000
+      high: d:46293e5939a08cea
+    }
+    point[0] {
+      at: 0
+    }
+    device: x:f09f9982
+    counters[] {
+      key: x:61
+      value: 821858953
+    }
+    counters[] {
+      key: x:7461620971756f746522
+      value: 0
+    }
+  }
+}
+---
+id: -1
+value: d:8000000000000000
+history[0]: -1
+history[1]: 0
+history[2]: 485
+packed_history[0]: -1
+packed_history[1]: 19831308
+packed_history[2]: 0
+range {
+  high: d:4121c84069ed0132
+}
+counters[] {
+  key: x:61
+  value: 0
+}
+counters[] {
+  key: x:79787a5f33797a79615f637a79
+  value: -2147483648
+}
+raw: x:29680149
+units[0]: 2
+units[1]: 2
+parent {
+  id: -1
+  unit: 1
+  history[0]: -1
+  packed_history[0]: 727
+  packed_history[1]: 2147483647
+  point[0] {
+    at: 0
+    y: f:4870f954
+  }
+  point[1] {
+    at: -1
+  }
+  point[2] {
+    at: 9223372036854775807
+    y: f:7fc00000
+  }
+  counters[] {
+    key: x:61
+    value: -210128330
+  }
+  counters[] {
+    key: x:e697a5e69cac
+    value: -1
+  }
+  counters[] {
+    key: x:f09f9982
+    value: 0
+  }
+  raw: x:86f3e95a23f7e7ec
+  units[0]: 1
+}
+---
+id: 1
+label: x:7a6379635f6279613330
+value: d:c002000000000000
+packed_history[0]: 1
+packed_history[1]: 1
+packed_history[2]: 0
+point[0] {
+  at: 9223372036854775807
+}
+counters[] {
+  key: x:
+  value: 743910255
+}
+counters[] {
+  key: x:6c696e650a627265616b
+  value: 1
+}
+counters[] {
+  key: x:e697a5e69cac
+  value: -1
+}
+raw: x:d88a38ce65
+units[0]: 1
+units[1]: 2
+parent {
+  id: 1
+  label: x:6c696e650a627265616b
+  history[0]: 2147483647
+  packed_history[0]: 0
+  packed_history[1]: -2147483648
+  range {
+    low: d:3ff8000000000000
+  }
+  point[0] {
+    at: 960
+    y: f:7fc00000
+  }
+  manual {
+  }
+  counters[] {
+    key: x:3379335f7979627a317a7a7a6163
+    value: 1524172885
+  }
+  counters[] {
+    key: x:5f615f
+    value: -1
+  }
+  raw: x:2b1e
+  enabled: true
+  parent {
+    id: 0
+    value: d:39b4484bfeebc2a0
+    unit: 1
+    packed_history[0]: -2147483648
+    packed_history[1]: 0
+    point[0] {
+      at: -9223372036854775808
+      y: f:3fc00000
+    }
+    manual {
+      operator_name: x:f09f9982
+    }
+    counters[] {
+      key: x:68c3a96c6c6f
+      value: 1
+    }
+    units[0]: 1
+    units[1]: 1
+  }
+}
+---
+id: 1
+unit: 2
+packed_history[0]: 2147483647
+packed_history[1]: 0
+packed_history[2]: 0
+point[0] {
+  at: 0
+  y: f:00000000
+}
+point[1] {
+  at: 8270714218647755548
+}
+manual {
+  operator_name: x:315f3332616332637a78326133303132
+}
+counters[] {
+  key: x:
+  value: 2147483647
+}
+counters[] {
+  key: x:e697a5e69cac
+  value: 2147483647
+}
+enabled: false
+units[0]: 1
+units[1]: 1
+units[2]: 1
+parent {
+  id: -2147483648
+  unit: 2
+  history[0]: -1
+  history[1]: -1
+  range {
+  }
+  point[0] {
+    at: 3287015681734408641
+  }
+  device: x:61
+  counters[] {
+    key: x:
+    value: -712
+  }
+  counters[] {
+    key: x:336378785f626132315f
+    value: -852
+  }
+  units[0]: 2
+  units[1]: 2
+  parent {
+    id: -616
+    label: x:
+    packed_history[0]: -1
+    packed_history[1]: 1
+    packed_history[2]: 520909053
+    point[0] {
+      at: 1
+      y: f:ff800000
+    }
+    point[1] {
+      at: 409
+      y: f:7fc00000
+    }
+    counters[] {
+      key: x:
+      value: -875
+    }
+    counters[] {
+      key: x:337878333032
+      value: -1
+    }
+    enabled: true
+    units[0]: 1
+    units[1]: 2
+  }
+}
+---
+id: -1657519308
+unit: 2
+history[0]: -1
+history[1]: -2147483648
+packed_history[0]: 79185601
+packed_history[1]: 0
+range {
+  high: d:39b4484bfeebc2a0
+}
+point[0] {
+  at: 1
+  y: f:00000000
+}
+device: x:e697a5e69cac
+counters[] {
+  key: x:307a7833796132323379
+  value: -2147483648
+}
+counters[] {
+  key: x:6c696e650a627265616b
+  value: -1
+}
+raw: x:27125580804c6aa154
+enabled: true
+units[0]: 2
+parent {
+  id: 2147483647
+  label: x:e697a5e69cac
+  packed_history[0]: -455114027
+  packed_history[1]: 0
+  range {
+    high: d:46293e5939a08cea
+  }
+  point[0] {
+    at: -262
+  }
+  manual {
+    operator_name: x:3162306263783231
+  }
+  counters[] {
+    key: x:7461620971756f746522
+    value: -2147483648
+  }
+  counters[] {
+    key: x:f09f9982
+    value: 1
+  }
+  raw: x:ab8d6e8f52bf27
+  enabled: false
+  units[0]: 2
+  units[1]: 1
+  units[2]: 2
+  parent {
+    id: 2147483647
+    value: d:8000000000000000
+    history[0]: -2147483648
+    packed_history[0]: 1
+    device: x:68c3a96c6c6f
+    raw: x:f80b22e9248edd1146
+    enabled: true
+    units[0]: 1
+    units[1]: 2
+  }
+}
+---
+id: 1
+label: x:68c3a96c6c6f
+value: d:7ff0000000000000
+history[0]: 0
+history[1]: 2088474744
+packed_history[0]: -2147483648
+range {
+}
+point[0] {
+  at: -136
+  y: f:493da44d
+}
+point[1] {
+  at: 0
+  y: f:7fc00000
+}
+point[2] {
+  at: 9223372036854775807
+  y: f:7fc00000
+}
+manual {
+  operator_name: x:7461620971756f746522
+}
+counters[] {
+  key: x:7a7832613178305f317a3279
+  value: 0
+}
+counters[] {
+  key: x:f09f9982
+  value: 1
+}
+raw: x:353cde18979f8eaeae
+enabled: true
+parent {
+  id: -1273433070
+  label: x:7461620971756f746522
+  value: d:c002000000000000
+  unit: 1
+  packed_history[0]: -1
+  packed_history[1]: 940
+  range {
+    low: d:7ff0000000000000
+  }
+  point[0] {
+    at: 1615922004828014898
+    y: f:c0100000
+  }
+  device: x:e697a5e69cac
+  counters[] {
+    key: x:68c3a96c6c6f
+    value: 0
+  }
+  counters[] {
+    key: x:6c696e650a627265616b
+    value: -1
+  }
+  counters[] {
+    key: x:e697a5e69cac
+    value: 0
+  }
+  raw: x:
+  units[0]: 1
+  units[1]: 1
+  units[2]: 2
+  parent {
+    id: -1
+    label: x:f09f9982
+    unit: 2
+    history[0]: -2147483648
+    history[1]: -2147483648
+    history[2]: 999526542
+    packed_history[0]: 2147483647
+    range {
+      high: d:7ff8000000000000
+    }
+    counters[] {
+      key: x:e697a5e69cac
+      value: 1
+    }
+    counters[] {
+      key: x:f09f9982
+      value: 2147483647
+    }
+    units[0]: 2
+    units[1]: 2
+    units[2]: 1
+  }
+}
+---
+id: -1
+label: x:e697a5e69cac
+history[0]: -2147483648
+history[1]: 2104506479
+packed_history[0]: 0
+packed_history[1]: 2147483647
+packed_history[2]: -2147483648
+point[0] {
+  at: -9223372036854775808
+  y: f:c0100000
+}
+point[1] {
+  at: 0
+}
+point[2] {
+  at: 1
+  y: f:c88a0894
+}
+raw: x:e84c76aed80d57d5d7d7
+enabled: false
+units[0]: 2
+units[1]: 2
+units[2]: 2
+---
+id: -1
+label: x:
+unit: 1
+history[0]: 1
+packed_history[0]: 546
+packed_history[1]: -1727074740
+packed_history[2]: -31
+point[0] {
+  at: 0
+  y: f:c0100000
+}
+manual {
+}
+counters[] {
+  key: x:315f3178336332617862
+  value: 2147483647
+}
+counters[] {
+  key: x:5f30
+  value: -2147483648
+}
+units[0]: 1
+units[1]: 2
+units[2]: 2
+parent {
+  id: -2147483648
+  label: x:307861785f307a7a63323033627a30307933
+  value: d:c114e04d8e62c620
+  unit: 2
+  history[0]: 2147483647
+  packed_history[0]: -2147483648
+  point[0] {
+    at: -9223372036854775808
+  }
+  point[1] {
+    at: 1
+  }
+  device: x:
+  counters[] {
+    key: x:313363637a7933627a6378305f337a5f7a7a637a
+    value: -295485243
+  }
+  counters[] {
+    key: x:62323132
+    value: -227
+  }
+  units[0]: 2
+  units[1]: 2
+  units[2]: 2
+  parent {
+    id: -1638787538
+    unit: 1
+    history[0]: -1
+    packed_history[0]: -2147483648
+    packed_history[1]: 0
+    range {
+      low: d:8000000000000000
+    }
+    point[0] {
+      at: 1
+    }
+    manual {
+      operator_name: x:61
+    }
+    counters[] {
+      key: x:
+      value: -902
+    }
+    counters[] {
+      key: x:5f6278335f796233325f3030623031636179
+      value: -1
+    }
+    counters[] {
+      key: x:e697a5e69cac
+      value: 353
+    }
+    raw: x:693c68
+    enabled: true
+    units[0]: 1
+    units[1]: 2
+    units[2]: 2
+    parent {
+      id: 15
+      value: d:46293e5939a08cea
+      unit: 1
+      history[0]: 208
+      packed_history[0]: -1
+      packed_history[1]: 1943765191
+      device: x:f09f9982
+      counters[] {
+        key: x:68c3a96c6c6f
+        value: 2147483647
+      }
+      counters[] {
+        key: x:6c696e650a627265616b
+        value: 0
+      }
+      enabled: false
+      units[0]: 1
+      units[1]: 2
+      units[2]: 2
+    }
+  }
+}
+---
+id: -1
+label: x:
+unit: 2
+history[0]: 2147483647
+packed_history[0]: -276
+packed_history[1]: -2147483648
+range {
+  low: d:fff0000000000000
+  high: d:39b4484bfeebc2a0
+}
+point[0] {
+  at: 0
+  y: f:4936e2de
+}
+raw: x:ed51
+enabled: true
+units[0]: 2
+units[1]: 2
+units[2]: 1
+parent {
+  id: -1919373792
+  label: x:
+  unit: 1
+  history[0]: -533
+  history[1]: 519
+  packed_history[0]: 0
+  packed_history[1]: 2147483647
+  packed_history[2]: -2147483648
+  point[0] {
+    at: -1
+  }
+  point[1] {
+    at: -775
+    y: f:c0100000
+  }
+  manual {
+    operator_name: x:f09f9982
+  }
+  counters[] {
+    key: x:6231797979303078333333785f5f30783162
+    value: -1
+  }
+  counters[] {
+    key: x:e697a5e69cac
+    value: 0
+  }
+  units[0]: 1
+  units[1]: 2
+}
+---
+id: 1
+label: x:625f307a626232306331
+value: d:0000000000000000
+unit: 1
+history[0]: -2147483648
+history[1]: -20
+packed_history[0]: -2147483648
+packed_history[1]: -2147483648
+packed_history[2]: 0
+point[0] {
+  at: 1
+}
+manual {
+}
+counters[] {
+  key: x:61
+  value: -2147483648
+}
+raw: x:13cba2ed7c9ced
+enabled: false
+parent {
+  id: 347
+  label: x:30
+  history[0]: -1
+  history[1]: -1
+  packed_history[0]: -1
+  range {
+    low: d:3ff8000000000000
+    high: d:8000000000000000
+  }
+  counters[] {
+    key: x:7461620971756f746522
+    value: 1
+  }
+  counters[] {
+    key: x:e697a5e69cac
+    value: 656402251
+  }
+  units[0]: 2
+  units[1]: 2
+  units[2]: 2
+  parent {
+    id: 0
+    label: x:
+    value: d:0000000000000000
+    unit: 2
+    history[0]: -986
+    history[1]: 1
+    history[2]: 124872671
+    packed_history[0]: -700
+    packed_history[1]: -242576283
+    packed_history[2]: -1
+    point[0] {
+      at: -9223372036854775808
+    }
+    device: x:61
+    counters[] {
+      key: x:
+      value: -1
+    }
+    counters[] {
+      key: x:31326261623230
+      value: -339
+    }
+    raw: x:b2f995
+    enabled: true
+    units[0]: 2
+    units[1]: 1
+    units[2]: 2
+    parent {
+      id: 0
+      label: x:61
+      value: d:3ff8000000000000
+      history[0]: -1
+      packed_history[0]: 2147483647
+      packed_history[1]: -2042952745
+      packed_history[2]: -2147483648
+      device: x:
+      units[0]: 2
+      units[1]: 1
+      units[2]: 1
+    }
+  }
+}
+---
+id: 311
+value: d:3ff8000000000000
+history[0]: -99445026
+history[1]: 1
+packed_history[0]: 1
+packed_history[1]: -1129004564
+packed_history[2]: 0
+range {
+  low: d:7ff0000000000000
+  high: d:8000000000000000
+}
+point[0] {
+  at: 1
+}
+point[1] {
+  at: -2258816497250649469
+}
+manual {
+}
+parent {
+  id: 1447978876
+  label: x:68c3a96c6c6f
+  value: d:fff0000000000000
+  unit: 1
+  packed_history[0]: 1
+  packed_history[1]: -607067497
+  packed_history[2]: -902
+  point[0] {
+    at: 446
+  }
+  point[1] {
+    at: -9223372036854775808
+    y: f:7fc00000
+  }
+  point[2] {
+    at: 0
+  }
+  manual {
+    operator_name: x:68c3a96c6c6f
+  }
+  counters[] {
+    key: x:7461620971756f746522
+    value: 1
+  }
+  raw: x:da8b3569ad95
+  enabled: true
+  parent {
+    id: -274
+    unit: 2
+    history[0]: 133727774
+    history[1]: -827396283
+    packed_history[0]: 1
+    packed_history[1]: 0
+    packed_history[2]: -981958381
+    point[0] {
+      at: -9223372036854775808
+    }
+    point[1] {
+      at: 9223372036854775807
+    }
+    point[2] {
+      at: 9223372036854775807
+    }
+    counters[] {
+      key: x:f09f9982
+      value: -754
+    }
+    units[0]: 2
+    units[1]: 2
+    parent {
+      id: -1
+      value: d:fff0000000000000
+      history[0]: -2147483648
+      history[1]: 1
+      history[2]: 1
+      packed_history[0]: -1
+      packed_history[1]: 0
+      enabled: true
+      units[0]: 2
+      units[1]: 2
+      units[2]: 1
+    }
+  }
+}
+---
+id: -2147483648
+label: x:307a30326232625f30
+history[0]: -1
+packed_history[0]: 2147483647
+manual {
+}
+units[0]: 2
+units[1]: 2
+units[2]: 1
+parent {
+  id: -1
+  label: x:61
+  history[0]: -2147483648
+  history[1]: -183
+  history[2]: -1
+  packed_history[0]: -2147483648
+  packed_history[1]: 2147483647
+  packed_history[2]: -1
+  range {
+    low: d:7ff8000000000000
+    high: d:3ff8000000000000
+  }
+  point[0] {
+    at: -417
+  }
+  device: x:3232636333613063793179797a325f30326330
+  enabled: false
+  units[0]: 2
+  units[1]: 2
+  units[2]: 2
+  parent {
+    id: -1402981477
+    label: x:68c3a96c6c6f
+    value: d:fff0000000000000
+    unit: 2
+    packed_history[0]: 2147483647
+    range {
+      low: d:3ff8000000000000
+      high: d:c002000000000000
+    }
+    point[0] {
+      at: -9223372036854775808
+    }
+    point[1] {
+      at: -9223372036854775808
+    }
+    manual {
+    }
+    raw: x:
+    enabled: true
+    units[0]: 2
+    units[1]: 1
+    parent {
+      id: 1
+      label: x:6c696e650a627265616b
+      value: d:0000000000000000
+      unit: 2
+      history[0]: -1
+      history[1]: -1
+      history[2]: -2147483648
+      packed_history[0]: -1
+      packed_history[1]: 1031074381
+      device: x:e697a5e69cac
+      counters[] {
+        key: x:3230
+        value: 1
+      }
+      counters[] {
+        key: x:7461620971756f746522
+        value: 390
+      }
+      raw: x:b567fe5b0f729a1f
+      units[0]: 2
+      units[1]: 2
+      units[2]: 2
+    }
+  }
+}
+---
+id: 2147483647
+label: x:f09f9982
+value: d:7ff0000000000000
+unit: 2
+packed_history[0]: -474
+packed_history[1]: -710
+device: x:68c3a96c6c6f
+counters[] {
+  key: x:61
+  value: 1
+}
+counters[] {
+  key: x:6331306278327a325f
+  value: -2147483648
+}
+counters[] {
+  key: x:6c696e650a627265616b
+  value: -2147483648
+}
+units[0]: 2

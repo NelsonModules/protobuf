@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.enums</keyword>
+  <short_description>Types d'énumération d'un schéma, ou valeurs d'un type d'énumération.</short_description>
+  <syntax>
+    <syntax_item>names = protobuf.enums(schema)</syntax_item>
+    <syntax_item>T = protobuf.enums(schema, enumtype)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema</param_name>
+      <param_description>un objet protobuf.Schema renvoyé par protobuf.load.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>enumtype</param_name>
+      <param_description>le type d'énumération : un nom complet ou une fin de nom unique comme 'Color'.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>names</param_name>
+      <param_description>sans type : les noms complets des types d'énumération du schéma.</param_description>
+    </param_output_item>
+    <param_output_item>
+      <param_name>T</param_name>
+      <param_description>avec un type : une table avec les variables Name et Number, les valeurs de ce type d'énumération.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.enums liste les types d'énumération d'un schéma, ou les noms et numéros d'un type d'énumération. Les noms sont ceux acceptés à l'encodage des champs d'énumération et renvoyés par l'option 'EnumsAsText' de protobuf.decode.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Valeurs d'un type d'énumération et champs d'énumération par leur nom</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+protobuf.enums(schema, 'Color')
+bytes = protobuf.encode(schema, 'AllTypes', struct('f_enum', 'BLUE', 'r_enum', {{'RED', 'BLUE'}}));
+value = protobuf.decode(schema, 'AllTypes', bytes, 'EnumsAsText', true);
+disp(value.r_enum)
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fields">protobuf.fields</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

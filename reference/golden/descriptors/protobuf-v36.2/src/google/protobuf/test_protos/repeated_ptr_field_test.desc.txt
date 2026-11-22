@@ -1,0 +1,8 @@
+package proto2_unittest
+syntax editions
+edition 2024
+message RepFieldSortMessage
+  field i 1 1 5 - i - 0 -
+    resolved 1 0 5 - 0 -
+  field s 2 1 9 - s - 0 -
+    resolved 1 0 9 1 0 -

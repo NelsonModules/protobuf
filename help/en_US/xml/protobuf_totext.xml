@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.totext</keyword>
+  <short_description>Protobuf text format of a message.</short_description>
+  <syntax>
+    <syntax_item>txt = protobuf.totext(schema, type, value)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>a schema from protobuf.load and a message type.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>value</param_name>
+      <param_description>one message given as a struct or as encoded uint8 bytes.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>txt</param_name>
+      <param_description>a character vector: the message in the protobuf text format.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.totext writes one message in the Protocol Buffers text format ("name: value", nested "name { }"), the form used by protoc --decode. protobuf.fromtext reads it back.</p>
+    <p>To display several records at once, use protobuf.show.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Text format of a message</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+record = struct('timestamp_ms', 1000, 'status', 1, 'diagnostics', struct('drift', 0.5));
+disp(protobuf.totext(schema, 'SensorSample', record))
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fromtext">protobuf.fromtext</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.tojson">protobuf.tojson</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.show">protobuf.show</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

@@ -1,0 +1,25 @@
+{"name": "tab\tquote\""}
+{"value": -2.25}
+{"name": "🙂", "value": "NaN"}
+{"name": "a", "value": "-Infinity"}
+{"name": "héllo", "value": -28368.307}
+{"name": "a", "value": "NaN"}
+{"name": "2c2a2", "value": 879230.4}
+{"name": "2a_zc_z121bya"}
+{"name": "日本"}
+{"name": "1z11y1b3z_3330a23", "value": "-Infinity"}
+{"name": "line\nbreak", "value": 755831.4}
+{"value": 1e+30}
+{"name": "🙂"}
+{"name": "🙂", "value": -0.0}
+{"value": -2.25}
+{"name": "1ayy", "value": "Infinity"}
+{"name": "日本", "value": 1e-30}
+{"name": "ycc1xyb"}
+{"name": "🙂", "value": -2.25}
+{"name": "🙂", "value": "-Infinity"}
+{"name": "_", "value": "-Infinity"}
+{"name": "line\nbreak", "value": 1.5}
+{"value": "-Infinity"}
+{"name": "tab\tquote\"", "value": 1e-30}
+{}

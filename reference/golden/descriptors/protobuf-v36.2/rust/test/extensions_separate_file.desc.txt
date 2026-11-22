@@ -1,0 +1,5 @@
+package third_party_protobuf_rust_test
+syntax editions
+edition 2023
+extension i32_extension_separate_file 1000 1 5 - .third_party_protobuf_rust_test.TestExtensions i32ExtensionSeparateFile - 0 -
+  resolved 1 0 5 - 0 -

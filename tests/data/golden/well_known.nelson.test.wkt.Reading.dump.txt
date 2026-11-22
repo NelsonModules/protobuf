@@ -1,0 +1,574 @@
+at {
+  seconds: -9223372036854775808
+  nanos: 1
+}
+elapsed {
+  seconds: -1
+  nanos: 764
+}
+label {
+  value: x:7461620971756f746522
+}
+marks[0] {
+  seconds: -395
+  nanos: 1
+}
+samples[0] {
+  value: f:00000000
+}
+samples[1] {
+  value: f:80000000
+}
+samples[2] {
+  value: f:c0100000
+}
+---
+at {
+  seconds: 332
+  nanos: 0
+}
+elapsed {
+  seconds: 0
+  nanos: 1
+}
+level {
+  value: d:4115bf09577338fc
+}
+marks[0] {
+  seconds: 3211092770310886130
+  nanos: 0
+}
+samples[0] {
+  value: f:3fc00000
+}
+samples[1] {
+  value: f:c0100000
+}
+---
+elapsed {
+  seconds: 1033550680230485628
+  nanos: -2147483648
+}
+level {
+  value: d:8000000000000000
+}
+count {
+  value: -2147483648
+}
+label {
+  value: x:68c3a96c6c6f
+}
+marks[0] {
+  seconds: 0
+  nanos: 0
+}
+marks[1] {
+  seconds: 4436875243345043255
+  nanos: -1671040600
+}
+samples[0] {
+  value: f:7fc00000
+}
+samples[1] {
+  value: f:7f800000
+}
+---
+at {
+  seconds: 1
+  nanos: 266
+}
+level {
+  value: d:8000000000000000
+}
+label {
+  value: x:5f32306130336163
+}
+marks[0] {
+  seconds: 0
+  nanos: 2147483647
+}
+---
+at {
+  seconds: 0
+  nanos: -543731789
+}
+elapsed {
+  seconds: -9223372036854775808
+  nanos: -540
+}
+level {
+  value: d:3ff8000000000000
+}
+count {
+  value: 2147483647
+}
+label {
+  value: x:68c3a96c6c6f
+}
+---
+at {
+  seconds: 0
+  nanos: -466
+}
+level {
+  value: d:0000000000000000
+}
+count {
+  value: 0
+}
+label {
+  value: x:f09f9982
+}
+marks[0] {
+  seconds: 1
+  nanos: 0
+}
+---
+at {
+  seconds: 9223372036854775807
+  nanos: 0
+}
+elapsed {
+  seconds: -661
+  nanos: 0
+}
+level {
+  value: d:4123fb37ea41496a
+}
+count {
+  value: -2147483648
+}
+label {
+  value: x:f09f9982
+}
+marks[0] {
+  seconds: 9223372036854775807
+  nanos: 0
+}
+marks[1] {
+  seconds: -6952689423118335581
+  nanos: 2147483647
+}
+samples[0] {
+  value: f:7fc00000
+}
+samples[1] {
+  value: f:c9632b15
+}
+samples[2] {
+  value: f:00000000
+}
+---
+at {
+  seconds: 0
+  nanos: 0
+}
+elapsed {
+  seconds: 9223372036854775807
+  nanos: -2147483648
+}
+level {
+  value: d:0000000000000000
+}
+count {
+  value: 1565944789
+}
+marks[0] {
+  seconds: -1
+  nanos: 2147483647
+}
+marks[1] {
+  seconds: -1
+  nanos: 812
+}
+marks[2] {
+  seconds: 0
+  nanos: -1
+}
+samples[0] {
+  value: f:80000000
+}
+---
+at {
+  seconds: -3766382369448509621
+  nanos: 457
+}
+level {
+  value: d:0000000000000000
+}
+count {
+  value: 0
+}
+label {
+  value: x:f09f9982
+}
+samples[0] {
+  value: f:ff800000
+}
+samples[1] {
+  value: f:00000000
+}
+---
+at {
+  seconds: -564
+  nanos: 0
+}
+elapsed {
+  seconds: 0
+  nanos: 0
+}
+count {
+  value: -518
+}
+label {
+  value: x:e697a5e69cac
+}
+marks[0] {
+  seconds: 0
+  nanos: -389
+}
+samples[0] {
+  value: f:00000000
+}
+samples[1] {
+  value: f:00000000
+}
+samples[2] {
+  value: f:00000000
+}
+---
+level {
+  value: d:8000000000000000
+}
+count {
+  value: -1
+}
+label {
+  value: x:
+}
+marks[0] {
+  seconds: 0
+  nanos: 514086631
+}
+marks[1] {
+  seconds: -559
+  nanos: -420259402
+}
+samples[0] {
+  value: f:00000000
+}
+samples[1] {
+  value: f:00000000
+}
+---
+at {
+  seconds: 9223372036854775807
+  nanos: 1
+}
+elapsed {
+  seconds: 240
+  nanos: 1
+}
+level {
+  value: d:7ff0000000000000
+}
+label {
+  value: x:68c3a96c6c6f
+}
+marks[0] {
+  seconds: 0
+  nanos: -1
+}
+---
+elapsed {
+  seconds: -603
+  nanos: 1
+}
+level {
+  value: d:0000000000000000
+}
+label {
+  value: x:
+}
+marks[0] {
+  seconds: 997567934233884142
+  nanos: -1
+}
+marks[1] {
+  seconds: -3340188439048121075
+  nanos: 2147483647
+}
+---
+at {
+  seconds: -1
+  nanos: 742624068
+}
+elapsed {
+  seconds: 0
+  nanos: -2147483648
+}
+level {
+  value: d:39b4484bfeebc2a0
+}
+count {
+  value: 1
+}
+label {
+  value: x:f09f9982
+}
+---
+at {
+  seconds: -9223372036854775808
+  nanos: -972858672
+}
+level {
+  value: d:c002000000000000
+}
+count {
+  value: 983
+}
+label {
+  value: x:
+}
+marks[0] {
+  seconds: 497
+  nanos: 0
+}
+marks[1] {
+  seconds: -10
+  nanos: -2147483648
+}
+marks[2] {
+  seconds: -249
+  nanos: 0
+}
+---
+level {
+  value: d:0000000000000000
+}
+marks[0] {
+  seconds: -9223372036854775808
+  nanos: 49
+}
+samples[0] {
+  value: f:80000000
+}
+samples[1] {
+  value: f:00000000
+}
+samples[2] {
+  value: f:7f800000
+}
+---
+at {
+  seconds: 0
+  nanos: 2147483647
+}
+elapsed {
+  seconds: 0
+  nanos: 0
+}
+level {
+  value: d:0000000000000000
+}
+count {
+  value: 809684778
+}
+label {
+  value: x:f09f9982
+}
+marks[0] {
+  seconds: 505544901748835172
+  nanos: -2147483648
+}
+samples[0] {
+  value: f:00000000
+}
+samples[1] {
+  value: f:00000000
+}
+samples[2] {
+  value: f:00000000
+}
+---
+elapsed {
+  seconds: 0
+  nanos: -1
+}
+level {
+  value: d:0000000000000000
+}
+label {
+  value: x:68c3a96c6c6f
+}
+samples[0] {
+  value: f:ff800000
+}
+---
+at {
+  seconds: 9223372036854775807
+  nanos: 831
+}
+elapsed {
+  seconds: -9223372036854775808
+  nanos: 43386000
+}
+count {
+  value: 1
+}
+marks[0] {
+  seconds: 9223372036854775807
+  nanos: -203482506
+}
+marks[1] {
+  seconds: 9223372036854775807
+  nanos: -1
+}
+---
+elapsed {
+  seconds: -1
+  nanos: 0
+}
+level {
+  value: d:4125935c39c977ca
+}
+count {
+  value: 1
+}
+marks[0] {
+  seconds: 3494201310132634682
+  nanos: -521
+}
+marks[1] {
+  seconds: -1
+  nanos: -1
+}
+marks[2] {
+  seconds: -1
+  nanos: -2147483648
+}
+samples[0] {
+  value: f:00000000
+}
+---
+at {
+  seconds: 758
+  nanos: -1
+}
+elapsed {
+  seconds: 1
+  nanos: -1
+}
+level {
+  value: d:3ff8000000000000
+}
+count {
+  value: 1
+}
+label {
+  value: x:
+}
+marks[0] {
+  seconds: -430757209800079868
+  nanos: 0
+}
+samples[0] {
+  value: f:c928e0ef
+}
+---
+at {
+  seconds: 4508461860036080407
+  nanos: 0
+}
+elapsed {
+  seconds: 0
+  nanos: 0
+}
+level {
+  value: d:c002000000000000
+}
+label {
+  value: x:
+}
+marks[0] {
+  seconds: 264
+  nanos: -2147483648
+}
+marks[1] {
+  seconds: -9223372036854775808
+  nanos: -1
+}
+marks[2] {
+  seconds: 0
+  nanos: 0
+}
+samples[0] {
+  value: f:7fc00000
+}
+---
+at {
+  seconds: 0
+  nanos: 2147483647
+}
+elapsed {
+  seconds: 149
+  nanos: 2147483647
+}
+level {
+  value: d:7ff8000000000000
+}
+count {
+  value: -2147483648
+}
+label {
+  value: x:61
+}
+samples[0] {
+  value: f:00000000
+}
+samples[1] {
+  value: f:00000000
+}
+---
+at {
+  seconds: -9223372036854775808
+  nanos: 0
+}
+elapsed {
+  seconds: 1
+  nanos: -1
+}
+level {
+  value: d:3ff8000000000000
+}
+count {
+  value: 1
+}
+label {
+  value: x:
+}
+samples[0] {
+  value: f:00000000
+}
+---
+elapsed {
+  seconds: 0
+  nanos: 0
+}
+level {
+  value: d:c002000000000000
+}
+count {
+  value: 888
+}
+marks[0] {
+  seconds: 3820053718505445152
+  nanos: 1
+}
+marks[1] {
+  seconds: 9223372036854775807
+  nanos: -1
+}
+samples[0] {
+  value: f:ff800000
+}

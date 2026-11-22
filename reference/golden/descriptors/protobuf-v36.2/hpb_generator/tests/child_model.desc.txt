@@ -1,0 +1,21 @@
+package hpb_unittest
+syntax editions
+edition 2023
+message ChildModel1
+  field child_b1 44 1 8 - childB1 - 0 -
+    resolved 1 0 8 - 0 -
+  field child_str1 56 1 9 - childStr1 - 0 -
+    resolved 1 0 9 1 0 -
+message ChildModel3
+  field sub_key 1 1 9 - subKey - 0 -
+    resolved 1 0 9 1 0 -
+  field bool1 2 1 8 - bool1 - 0 -
+    resolved 1 0 8 - 0 -
+  field i32 3 1 5 - i32 - 0 -
+    resolved 1 0 5 - 0 -
+  field opt_str 4 1 9 - optStr - 0 -
+    resolved 1 0 9 1 0 -
+  field opt_bool 5 1 8 - optBool - 0 -
+    resolved 1 0 8 - 0 -
+  field opt_i32 6 1 5 - optI32 - 0 -
+    resolved 1 0 5 - 0 -

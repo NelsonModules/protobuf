@@ -1,0 +1,30 @@
+package enums
+syntax proto3
+message TestMapWithNestedEnum
+  field string_map 1 3 11 .enums.TestMapWithNestedEnum.StringMapEntry stringMap - 0 -
+  message InnerNested
+    enum NestedEnum
+      value UNKNOWN 0
+      value FOO 1
+  message StringMapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 14 .enums.TestMapWithNestedEnum.InnerNested.NestedEnum value - 0 -
+    map_entry
+enum TestEnumWithDuplicateStrippedPrefixNames
+  value UNKNOWN 0
+  value TestEnumWithDuplicateStrippedPrefixNamesUNRECOGNIZED 0
+  value TestEnumWithDuplicateStrippedPrefixNames_FOO 1
+  value TEST_ENUM_WITH_DUPLICATE_STRIPPED_PREFIX_NAMES_FOO 1
+  value FOO 1
+  value TestEnumWithDuplicateStrippedPrefixNamesBAR 2
+  value TEST_ENUM_WITH_DUPLICATE_STRIPPED_PREFIX_NAMESBar 2
+  value BAR 2
+  value TEST_ENUM_WITH_DUPLICATE_STRIPPED_PREFIX_NAMES_DIFFERENT_NAME_ALIAS 2
+enum TestEnumWithNumericNames
+  value TestEnumWithNumericNamesUNKNOWN 0
+  value TestEnumWithNumericNames_2020 1
+  value TEST_ENUM_WITH_NUMERIC_NAMES_2021 2
+  value TEST_ENUM_WITH_NUMERIC_NAMES2022 3
+enum TestEnumValueNameSameAsEnum
+  value TEST_ENUM_VALUE_NAME_SAME_AS_ENUM_UNKNOWN 0
+  value TEST_ENUM_VALUE_NAME_SAME_AS_ENUM 1

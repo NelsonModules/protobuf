@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.Decoder</keyword>
+  <short_description>Décode un flux délimité fourni par morceaux.</short_description>
+  <syntax>
+    <syntax_item>d = protobuf.Decoder(schema, type, name, value, ...)</syntax_item>
+    <syntax_item>[records, skipped] = d.push(bytes)</syntax_item>
+    <syntax_item>[value, presence, report] = d.read()</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>un schéma de protobuf.load et un type de message.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>name, value</param_name>
+      <param_description>les options de décodage gardées pour tout le flux : 'Layout', 'Fields', 'Where', 'WellKnownTypes', 'EnumsAsText', 'FillDefaults', 'MissingAsNaN', 'OnError', 'KeepUnknown', comme protobuf.decode.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>bytes</param_name>
+      <param_description>d.push : un morceau du flux, de taille quelconque (uint8).</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>records, skipped</param_name>
+      <param_description>d.push : le nombre d'enregistrements décodés et d'enregistrements ignorés par ce push.</param_description>
+    </param_output_item>
+    <param_output_item>
+      <param_name>value, presence, report</param_name>
+      <param_description>d.read : les enregistrements décodés depuis le dernier read, comme protobuf.decode. report a PendingBytes, la taille de l'enregistrement incomplet qui attend le push suivant.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.Decoder décode un flux délimité qui arrive par morceaux, par exemple pendant la lecture d'un fichier ou d'une socket. Chaque push décode les enregistrements complets présents dans les octets reçus jusque-là ; les octets d'un enregistrement coupé en fin de morceau attendent le push suivant. read renvoie les enregistrements décodés depuis le dernier read.</p>
+    <p>Comme seuls les enregistrements complets sont gardés et que le reste attend, un gros flux se traite bloc par bloc avec une mémoire bornée.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Relire un fichier par morceaux de cinq octets</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+filename = [tempdir(), 'stream.bin'];
+protobuf.write(schema, 'SensorSample', filename, struct('timestamp_ms', {1, 2, 3}), 'Delimited', true);
+d = protobuf.Decoder(schema, 'SensorSample', 'Layout', 'columns');
+fid = fopen(filename, 'r');
+while ~feof(fid)
+  d.push(fread(fid, 5, '*uint8'));
+  [C, ~, report] = d.read();
+  disp([C.timestamp_ms', report.PendingBytes])
+end
+fclose(fid);
+delete(filename);
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.read">protobuf.read</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Writer">protobuf.Writer</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

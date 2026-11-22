@@ -1,0 +1,9 @@
+package upb
+syntax editions
+edition 2024
+message MultipleFilesMessage2
+  field field1 1 1 5 - field1 - 0 -
+    resolved 1 0 5 - 0 -
+  extension_range 100 200
+extension multiple_files_ext2 100 1 5 - .upb.MultipleFilesMessage2 multipleFilesExt2 - 0 -
+  resolved 1 0 5 - 0 -

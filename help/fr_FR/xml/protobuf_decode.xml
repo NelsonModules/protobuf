@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.decode</keyword>
+  <short_description>Décode des octets protobuf en structures, colonnes, table ou timetable.</short_description>
+  <syntax>
+    <syntax_item>value = protobuf.decode(schema, type, bytes)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.decode(schema, type, bytes, name, value, ...)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.decode(schema, type, bytes, 'Delimited', true, 'Layout', 'columns')</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>un schéma de protobuf.load et un type de message (nom complet ou fin de nom unique).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>bytes</param_name>
+      <param_description>un vecteur uint8 : données encodées, un message ou un flux délimité avec 'Delimited'.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Delimited'</param_name>
+      <param_description>logique (false par défaut) : les octets sont un flux d'enregistrements, chacun précédé de sa taille en varint.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Layout'</param_name>
+      <param_description>'struct' (par défaut, un tableau de structures 1xN), 'columns' (une structure scalaire de colonnes Nx1 avec une sortie presence), 'table' ou 'timetable'.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Fields'</param_name>
+      <param_description>un nom de champ ou une liste de noms : seuls ceux-ci sont décodés. 'a.b' sélectionne le champ b du sous-message a à toute profondeur.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'WellKnownTypes', 'EnumsAsText', 'FillDefaults', 'MissingAsNaN'</param_name>
+      <param_description>contrôlent la correspondance : Timestamp/Duration/wrappers en valeurs natives, énumérations en noms, champs absents à leur valeur par défaut, entiers manquants en NaN. Voir la page protobuf.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'OnError', 'Workers', 'KeepUnknown'</param_name>
+      <param_description>'skip' ignore les enregistrements fautifs (comptés dans report.Skipped), 'Workers' fixe les threads de décodage, 'KeepUnknown' garde les champs inconnus dans UnknownFields.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>value</param_name>
+      <param_description>les données décodées dans la disposition demandée.</param_description>
+    </param_output_item>
+    <param_output_item>
+      <param_name>presence</param_name>
+      <param_description>dispositions en colonnes : une structure de colonnes logiques Nx1, vraies là où une valeur est présente, pour les champs qui peuvent manquer.</param_description>
+    </param_output_item>
+    <param_output_item>
+      <param_name>report</param_name>
+      <param_description>une structure avec les champs Type, Records et Skipped.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.decode relit des octets Protocol Buffers en valeurs Nelson. Un message seul donne une structure ; avec 'Delimited', un flux donne un tableau de structures, ou des colonnes, une table ou un timetable avec 'Layout'. Les gros flux sont décodés sur plusieurs threads.</p>
+    <p>Les dispositions en colonnes renvoient une sortie presence à côté des données, ce qui distingue une valeur présente mais nulle d'une valeur absente. Rendues à protobuf.encode avec 'Presence', les colonnes réencodent les mêmes octets.</p>
+    <p>protobuf.read décode directement depuis un fichier, un identificateur de fichier ou une entrée ZIP avec les mêmes options.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Décoder un flux en colonnes avec une sortie presence</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+records = struct('timestamp_ms', {1000, 1040, 1080}, 'pressure', {single(5.2), [], single(5.6)});
+bytes = protobuf.encode(schema, 'SensorSample', records, 'Delimited', true);
+[C, present] = protobuf.decode(schema, 'SensorSample', bytes, 'Delimited', true, 'Layout', 'columns');
+C.pressure
+present.pressure
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.encode">protobuf.encode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.read">protobuf.read</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Decoder">protobuf.Decoder</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

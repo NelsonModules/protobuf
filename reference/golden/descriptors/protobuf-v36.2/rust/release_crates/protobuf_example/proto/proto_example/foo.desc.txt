@@ -1,0 +1,14 @@
+package proto_example
+syntax editions
+edition 2023
+message Foo
+  field int 1 1 5 - int - 0 -
+    resolved 1 0 5 - 0 -
+  field numbers 2 3 5 - numbers - 0 -
+    resolved 0 1 5 - 0 -
+  field name 3 1 9 - name - 0 -
+    resolved 1 0 9 1 0 -
+  field bar 4 1 11 .proto_example.Bar bar - 0 -
+    resolved 1 0 11 - 0 -
+  field timestamp 5 1 11 .google.protobuf.Timestamp timestamp - 0 -
+    resolved 1 0 11 - 0 -

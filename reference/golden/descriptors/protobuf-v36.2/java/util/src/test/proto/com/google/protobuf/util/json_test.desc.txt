@@ -1,0 +1,233 @@
+package json_test
+syntax proto3
+message TestAllTypes
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+  field optional_int64 2 1 3 - optionalInt64 - 0 -
+  field optional_uint32 3 1 13 - optionalUint32 - 0 -
+  field optional_uint64 4 1 4 - optionalUint64 - 0 -
+  field optional_sint32 5 1 17 - optionalSint32 - 0 -
+  field optional_sint64 6 1 18 - optionalSint64 - 0 -
+  field optional_fixed32 7 1 7 - optionalFixed32 - 0 -
+  field optional_fixed64 8 1 6 - optionalFixed64 - 0 -
+  field optional_sfixed32 9 1 15 - optionalSfixed32 - 0 -
+  field optional_sfixed64 10 1 16 - optionalSfixed64 - 0 -
+  field optional_float 11 1 2 - optionalFloat - 0 -
+  field optional_double 12 1 1 - optionalDouble - 0 -
+  field optional_bool 13 1 8 - optionalBool - 0 -
+  field optional_string 14 1 9 - optionalString - 0 -
+  field optional_bytes 15 1 12 - optionalBytes - 0 -
+  field optional_nested_message 18 1 11 .json_test.TestAllTypes.NestedMessage optionalNestedMessage - 0 -
+  field optional_nested_enum 21 1 14 .json_test.TestAllTypes.NestedEnum optionalNestedEnum - 0 -
+  field optional_aliased_enum 52 1 14 .json_test.TestAllTypes.AliasedEnum optionalAliasedEnum - 0 -
+  field optional_recursive 53 1 11 .json_test.TestRecursive optionalRecursive - 0 -
+  field explicit_presence_int32 54 1 5 - explicitPresenceInt32 0 1 -
+  field repeated_int32 31 3 5 - repeatedInt32 - 0 -
+  field repeated_int64 32 3 3 - repeatedInt64 - 0 -
+  field repeated_uint32 33 3 13 - repeatedUint32 - 0 -
+  field repeated_uint64 34 3 4 - repeatedUint64 - 0 -
+  field repeated_sint32 35 3 17 - repeatedSint32 - 0 -
+  field repeated_sint64 36 3 18 - repeatedSint64 - 0 -
+  field repeated_fixed32 37 3 7 - repeatedFixed32 - 0 -
+  field repeated_fixed64 38 3 6 - repeatedFixed64 - 0 -
+  field repeated_sfixed32 39 3 15 - repeatedSfixed32 - 0 -
+  field repeated_sfixed64 40 3 16 - repeatedSfixed64 - 0 -
+  field repeated_float 41 3 2 - repeatedFloat - 0 -
+  field repeated_double 42 3 1 - repeatedDouble - 0 -
+  field repeated_bool 43 3 8 - repeatedBool - 0 -
+  field repeated_string 44 3 9 - repeatedString - 0 -
+  field repeated_bytes 45 3 12 - repeatedBytes - 0 -
+  field repeated_nested_message 48 3 11 .json_test.TestAllTypes.NestedMessage repeatedNestedMessage - 0 -
+  field repeated_nested_enum 51 3 14 .json_test.TestAllTypes.NestedEnum repeatedNestedEnum - 0 -
+  field repeated_recursive 55 3 11 .json_test.TestRecursive repeatedRecursive - 0 -
+  message NestedMessage
+    field value 1 1 5 - value - 0 -
+  enum NestedEnum
+    value FOO 0
+    value BAR 1
+    value BAZ 2
+  enum AliasedEnum
+    value ALIAS_FOO 0
+    value ALIAS_BAR 1
+    value ALIAS_BAZ 2
+    value QUX 2
+    value qux 2
+    value bAz 2
+  oneof _explicit_presence_int32
+message TestOneof
+  field oneof_int32 1 1 5 - oneofInt32 0 0 -
+  field oneof_nested_message 2 1 11 .json_test.TestAllTypes.NestedMessage oneofNestedMessage 0 0 -
+  field oneof_null_value 3 1 14 .google.protobuf.NullValue oneofNullValue 0 0 -
+  oneof oneof_field
+message TestMap
+  field int32_to_int32_map 1 3 11 .json_test.TestMap.Int32ToInt32MapEntry int32ToInt32Map - 0 -
+  field int64_to_int32_map 2 3 11 .json_test.TestMap.Int64ToInt32MapEntry int64ToInt32Map - 0 -
+  field uint32_to_int32_map 3 3 11 .json_test.TestMap.Uint32ToInt32MapEntry uint32ToInt32Map - 0 -
+  field uint64_to_int32_map 4 3 11 .json_test.TestMap.Uint64ToInt32MapEntry uint64ToInt32Map - 0 -
+  field sint32_to_int32_map 5 3 11 .json_test.TestMap.Sint32ToInt32MapEntry sint32ToInt32Map - 0 -
+  field sint64_to_int32_map 6 3 11 .json_test.TestMap.Sint64ToInt32MapEntry sint64ToInt32Map - 0 -
+  field fixed32_to_int32_map 7 3 11 .json_test.TestMap.Fixed32ToInt32MapEntry fixed32ToInt32Map - 0 -
+  field fixed64_to_int32_map 8 3 11 .json_test.TestMap.Fixed64ToInt32MapEntry fixed64ToInt32Map - 0 -
+  field sfixed32_to_int32_map 9 3 11 .json_test.TestMap.Sfixed32ToInt32MapEntry sfixed32ToInt32Map - 0 -
+  field sfixed64_to_int32_map 10 3 11 .json_test.TestMap.Sfixed64ToInt32MapEntry sfixed64ToInt32Map - 0 -
+  field bool_to_int32_map 11 3 11 .json_test.TestMap.BoolToInt32MapEntry boolToInt32Map - 0 -
+  field string_to_int32_map 12 3 11 .json_test.TestMap.StringToInt32MapEntry stringToInt32Map - 0 -
+  field int32_to_int64_map 101 3 11 .json_test.TestMap.Int32ToInt64MapEntry int32ToInt64Map - 0 -
+  field int32_to_uint32_map 102 3 11 .json_test.TestMap.Int32ToUint32MapEntry int32ToUint32Map - 0 -
+  field int32_to_uint64_map 103 3 11 .json_test.TestMap.Int32ToUint64MapEntry int32ToUint64Map - 0 -
+  field int32_to_sint32_map 104 3 11 .json_test.TestMap.Int32ToSint32MapEntry int32ToSint32Map - 0 -
+  field int32_to_sint64_map 105 3 11 .json_test.TestMap.Int32ToSint64MapEntry int32ToSint64Map - 0 -
+  field int32_to_fixed32_map 106 3 11 .json_test.TestMap.Int32ToFixed32MapEntry int32ToFixed32Map - 0 -
+  field int32_to_fixed64_map 107 3 11 .json_test.TestMap.Int32ToFixed64MapEntry int32ToFixed64Map - 0 -
+  field int32_to_sfixed32_map 108 3 11 .json_test.TestMap.Int32ToSfixed32MapEntry int32ToSfixed32Map - 0 -
+  field int32_to_sfixed64_map 109 3 11 .json_test.TestMap.Int32ToSfixed64MapEntry int32ToSfixed64Map - 0 -
+  field int32_to_float_map 110 3 11 .json_test.TestMap.Int32ToFloatMapEntry int32ToFloatMap - 0 -
+  field int32_to_double_map 111 3 11 .json_test.TestMap.Int32ToDoubleMapEntry int32ToDoubleMap - 0 -
+  field int32_to_bool_map 112 3 11 .json_test.TestMap.Int32ToBoolMapEntry int32ToBoolMap - 0 -
+  field int32_to_string_map 113 3 11 .json_test.TestMap.Int32ToStringMapEntry int32ToStringMap - 0 -
+  field int32_to_bytes_map 114 3 11 .json_test.TestMap.Int32ToBytesMapEntry int32ToBytesMap - 0 -
+  field int32_to_message_map 115 3 11 .json_test.TestMap.Int32ToMessageMapEntry int32ToMessageMap - 0 -
+  field int32_to_enum_map 116 3 11 .json_test.TestMap.Int32ToEnumMapEntry int32ToEnumMap - 0 -
+  message Int32ToInt32MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Int64ToInt32MapEntry
+    field key 1 1 3 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Uint32ToInt32MapEntry
+    field key 1 1 13 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Uint64ToInt32MapEntry
+    field key 1 1 4 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Sint32ToInt32MapEntry
+    field key 1 1 17 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Sint64ToInt32MapEntry
+    field key 1 1 18 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Fixed32ToInt32MapEntry
+    field key 1 1 7 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Fixed64ToInt32MapEntry
+    field key 1 1 6 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Sfixed32ToInt32MapEntry
+    field key 1 1 15 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Sfixed64ToInt32MapEntry
+    field key 1 1 16 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message BoolToInt32MapEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message StringToInt32MapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Int32ToInt64MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 3 - value - 0 -
+    map_entry
+  message Int32ToUint32MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 13 - value - 0 -
+    map_entry
+  message Int32ToUint64MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 4 - value - 0 -
+    map_entry
+  message Int32ToSint32MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 17 - value - 0 -
+    map_entry
+  message Int32ToSint64MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 18 - value - 0 -
+    map_entry
+  message Int32ToFixed32MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 7 - value - 0 -
+    map_entry
+  message Int32ToFixed64MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 6 - value - 0 -
+    map_entry
+  message Int32ToSfixed32MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 15 - value - 0 -
+    map_entry
+  message Int32ToSfixed64MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 16 - value - 0 -
+    map_entry
+  message Int32ToFloatMapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 2 - value - 0 -
+    map_entry
+  message Int32ToDoubleMapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 1 - value - 0 -
+    map_entry
+  message Int32ToBoolMapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 8 - value - 0 -
+    map_entry
+  message Int32ToStringMapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message Int32ToBytesMapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 12 - value - 0 -
+    map_entry
+  message Int32ToMessageMapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 11 .json_test.TestAllTypes.NestedMessage value - 0 -
+    map_entry
+  message Int32ToEnumMapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 14 .json_test.TestAllTypes.NestedEnum value - 0 -
+    map_entry
+message TestWrappers
+  field int32_value 1 1 11 .google.protobuf.Int32Value int32Value - 0 -
+  field uint32_value 2 1 11 .google.protobuf.UInt32Value uint32Value - 0 -
+  field int64_value 3 1 11 .google.protobuf.Int64Value int64Value - 0 -
+  field uint64_value 4 1 11 .google.protobuf.UInt64Value uint64Value - 0 -
+  field float_value 5 1 11 .google.protobuf.FloatValue floatValue - 0 -
+  field double_value 6 1 11 .google.protobuf.DoubleValue doubleValue - 0 -
+  field bool_value 7 1 11 .google.protobuf.BoolValue boolValue - 0 -
+  field string_value 8 1 11 .google.protobuf.StringValue stringValue - 0 -
+  field bytes_value 9 1 11 .google.protobuf.BytesValue bytesValue - 0 -
+message TestTimestamp
+  field timestamp_value 1 1 11 .google.protobuf.Timestamp timestampValue - 0 -
+message TestDuration
+  field duration_value 1 1 11 .google.protobuf.Duration durationValue - 0 -
+message TestFieldMask
+  field field_mask_value 1 1 11 .google.protobuf.FieldMask fieldMaskValue - 0 -
+message TestStruct
+  field struct_value 1 1 11 .google.protobuf.Struct structValue - 0 -
+  field value 2 1 11 .google.protobuf.Value value - 0 -
+  field list_value 3 1 11 .google.protobuf.ListValue listValue - 0 -
+message TestAny
+  field any_value 1 1 11 .google.protobuf.Any anyValue - 0 -
+  field any_map 2 3 11 .json_test.TestAny.AnyMapEntry anyMap - 0 -
+  message AnyMapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .google.protobuf.Any value - 0 -
+    map_entry
+message TestCustomJsonName
+  field value 1 1 5 - @value - 0 -
+message TestRecursive
+  field value 1 1 5 - value - 0 -
+  field nested 2 1 11 .json_test.TestRecursive nested - 0 -

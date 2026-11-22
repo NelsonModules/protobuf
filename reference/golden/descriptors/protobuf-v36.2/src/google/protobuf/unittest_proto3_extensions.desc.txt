@@ -1,0 +1,5 @@
+package protobuf_unittest
+syntax proto3
+message Proto3FileExtensions
+  extension singular_int 1001 1 5 - .google.protobuf.FileOptions singularInt - 0 -
+  extension repeated_int 1002 3 5 - .google.protobuf.FileOptions repeatedInt - 0 -

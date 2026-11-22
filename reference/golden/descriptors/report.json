@@ -1,0 +1,2738 @@
+[
+ {
+  "corpus": "googleapis",
+  "file": "google/api/annotations.proto",
+  "name": "google/api/annotations.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/api/client.proto",
+  "name": "google/api/client.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/api/field_behavior.proto",
+  "name": "google/api/field_behavior.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/api/http.proto",
+  "name": "google/api/http.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/api/launch_stage.proto",
+  "name": "google/api/launch_stage.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/api/resource.proto",
+  "name": "google/api/resource.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/cloud/speech/v1/cloud_speech.proto",
+  "name": "google/cloud/speech/v1/cloud_speech.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/cloud/speech/v1/resource.proto",
+  "name": "google/cloud/speech/v1/resource.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/longrunning/operations.proto",
+  "name": "google/longrunning/operations.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/pubsub/v1/pubsub.proto",
+  "name": "google/pubsub/v1/pubsub.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/pubsub/v1/schema.proto",
+  "name": "google/pubsub/v1/schema.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/rpc/code.proto",
+  "name": "google/rpc/code.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/rpc/error_details.proto",
+  "name": "google/rpc/error_details.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/rpc/status.proto",
+  "name": "google/rpc/status.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/type/color.proto",
+  "name": "google/type/color.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/type/date.proto",
+  "name": "google/type/date.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/type/datetime.proto",
+  "name": "google/type/datetime.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/type/interval.proto",
+  "name": "google/type/interval.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/type/latlng.proto",
+  "name": "google/type/latlng.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "googleapis",
+  "file": "google/type/money.proto",
+  "name": "google/type/money.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "grpc",
+  "file": "examples/protos/helloworld.proto",
+  "name": "helloworld.proto",
+  "root": "examples/protos",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "grpc",
+  "file": "examples/protos/route_guide.proto",
+  "name": "route_guide.proto",
+  "root": "examples/protos",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/collector/logs/v1/logs_service.proto",
+  "name": "opentelemetry/proto/collector/logs/v1/logs_service.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/collector/metrics/v1/metrics_service.proto",
+  "name": "opentelemetry/proto/collector/metrics/v1/metrics_service.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/collector/trace/v1/trace_service.proto",
+  "name": "opentelemetry/proto/collector/trace/v1/trace_service.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/common/v1/common.proto",
+  "name": "opentelemetry/proto/common/v1/common.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/logs/v1/logs.proto",
+  "name": "opentelemetry/proto/logs/v1/logs.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/metrics/v1/metrics.proto",
+  "name": "opentelemetry/proto/metrics/v1/metrics.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/profiles/v1development/profiles.proto",
+  "name": "opentelemetry/proto/profiles/v1development/profiles.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/resource/v1/resource.proto",
+  "name": "opentelemetry/proto/resource/v1/resource.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "opentelemetry",
+  "file": "opentelemetry/proto/trace/v1/trace.proto",
+  "name": "opentelemetry/proto/trace/v1/trace.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "benchmarks/empty.proto",
+  "name": "benchmarks/empty.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "conformance/conformance.proto",
+  "name": "conformance/conformance.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "conformance/test_protos/test_messages_edition2023.proto",
+  "name": "conformance/test_protos/test_messages_edition2023.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/compatibility_tests/v3.0.0/protos/csharp/protos/unittest_issues.proto",
+  "name": "csharp/compatibility_tests/v3.0.0/protos/csharp/protos/unittest_issues.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/compatibility_tests/v3.0.0/protos/src/google/protobuf/map_unittest_proto3.proto",
+  "name": "google/protobuf/map_unittest_proto3.proto",
+  "root": "csharp/compatibility_tests/v3.0.0/protos/src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/compatibility_tests/v3.0.0/protos/src/google/protobuf/unittest_import_proto3.proto",
+  "name": "google/protobuf/unittest_import_proto3.proto",
+  "root": "csharp/compatibility_tests/v3.0.0/protos/src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/compatibility_tests/v3.0.0/protos/src/google/protobuf/unittest_import_public_proto3.proto",
+  "name": "google/protobuf/unittest_import_public_proto3.proto",
+  "root": "csharp/compatibility_tests/v3.0.0/protos/src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/compatibility_tests/v3.0.0/protos/src/google/protobuf/unittest_proto3.proto",
+  "name": "google/protobuf/unittest_proto3.proto",
+  "root": "csharp/compatibility_tests/v3.0.0/protos/src",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/csharp/compatibility_tests/v3.0.0/protos/src/google/protobuf/unittest_proto3.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/compatibility_tests/v3.0.0/protos/src/google/protobuf/unittest_well_known_types.proto",
+  "name": "google/protobuf/unittest_well_known_types.proto",
+  "root": "csharp/compatibility_tests/v3.0.0/protos/src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/google/protobuf/c_sharp_features.proto",
+  "name": "csharp/google/protobuf/c_sharp_features.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/map_unittest_proto3.proto",
+  "name": "csharp/protos/map_unittest_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/nrt.proto",
+  "name": "csharp/protos/nrt.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/old_extensions1.proto",
+  "name": "csharp/protos/old_extensions1.proto",
+  "root": "",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/csharp/protos/old_extensions1.proto:23:1: warning: Import csharp/protos/old_extensions2.proto is unused."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/old_extensions2.proto",
+  "name": "csharp/protos/old_extensions2.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest.proto",
+  "name": "csharp/protos/unittest.proto",
+  "root": "",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/csharp/protos/unittest.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_custom_options_proto3.proto",
+  "name": "csharp/protos/unittest_custom_options_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_import.proto",
+  "name": "csharp/protos/unittest_import.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_import_proto3.proto",
+  "name": "csharp/protos/unittest_import_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_import_public.proto",
+  "name": "csharp/protos/unittest_import_public.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_import_public_proto3.proto",
+  "name": "csharp/protos/unittest_import_public_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_issue6936_a.proto",
+  "name": "csharp/protos/unittest_issue6936_a.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_issue6936_b.proto",
+  "name": "csharp/protos/unittest_issue6936_b.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_issue6936_c.proto",
+  "name": "csharp/protos/unittest_issue6936_c.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_issues.proto",
+  "name": "csharp/protos/unittest_issues.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "csharp/protos/unittest_proto3.proto",
+  "name": "csharp/protos/unittest_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_ctype.proto",
+  "name": "editions/codegen_tests/edition2023_ctype.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_go_api_flag.proto",
+  "name": "editions/codegen_tests/edition2023_go_api_flag.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_api_flag.proto:19:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024).\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_api_flag.proto:25:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024).\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_api_flag.proto:31:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024).\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_api_flag.proto:12:8: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_go_api_flag_nested.proto",
+  "name": "editions/codegen_tests/edition2023_go_api_flag_nested.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_api_flag_nested.proto:15:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024).\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_api_flag_nested.proto:12:8: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_go_google3_go_api_default.proto",
+  "name": "editions/codegen_tests/edition2023_go_google3_go_api_default.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_google3_go_api_default.proto:17:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024).\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_google3_go_api_default.proto:23:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024).\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_google3_go_api_default.proto:29:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_go_oss_go_api_default.proto",
+  "name": "editions/codegen_tests/edition2023_go_oss_go_api_default.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_oss_go_api_default.proto:17:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024).\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_oss_go_api_default.proto:23:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024).\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_go_oss_go_api_default.proto:29:10: Option \"go_api_flag\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_import.proto",
+  "name": "editions/codegen_tests/edition2023_import.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_import.proto:15:3: \"protobuf_editions_test.google.protobuf.Proto2Optional\" is not defined."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_dual_multiple_files.proto",
+  "name": "editions/codegen_tests/edition2023_java_dual_multiple_files.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_multiple_files.proto",
+  "name": "editions/codegen_tests/edition2023_java_multiple_files.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_mutable_multiple_files.proto",
+  "name": "editions/codegen_tests/edition2023_java_mutable_multiple_files.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_no_multiple_files.proto",
+  "name": "editions/codegen_tests/edition2023_java_no_multiple_files.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_outer_classname.proto",
+  "name": "editions/codegen_tests/edition2023_java_outer_classname.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_outer_classname_future.proto",
+  "name": "editions/codegen_tests/edition2023_java_outer_classname_future.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_proto1_multiple_files.proto",
+  "name": "editions/codegen_tests/edition2023_java_proto1_multiple_files.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_java_proto1_multiple_files.proto:14:8: Option \"java_api_version\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_proto1_no_multiple_files.proto",
+  "name": "editions/codegen_tests/edition2023_java_proto1_no_multiple_files.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_java_proto1_no_multiple_files.proto:14:8: Option \"java_api_version\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_java_proto1_outer_classname_future.proto",
+  "name": "editions/codegen_tests/edition2023_java_proto1_outer_classname_future.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/codegen_tests/edition2023_java_proto1_outer_classname_future.proto:12:8: Option \"java_api_version\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_enum.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_enum.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_enum_value.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_enum_value.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_extension.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_extension.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_field.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_field.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_file.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_file.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_message.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_message.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_method.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_method.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_oneof.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_oneof.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_naming_style_service.proto",
+  "name": "editions/codegen_tests/edition2023_naming_style_service.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_string_type.proto",
+  "name": "editions/codegen_tests/edition2023_string_type.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_string_type_view_default.proto",
+  "name": "editions/codegen_tests/edition2023_string_type_view_default.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_symbol_visibility.proto",
+  "name": "editions/codegen_tests/edition2023_symbol_visibility.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/edition2023_symbol_visibility_use.proto",
+  "name": "editions/codegen_tests/edition2023_symbol_visibility_use.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/proto2_optional.proto",
+  "name": "editions/codegen_tests/proto2_optional.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/proto3_enum.proto",
+  "name": "editions/codegen_tests/proto3_enum.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/proto3_implicit.proto",
+  "name": "editions/codegen_tests/proto3_implicit.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/proto3_import.proto",
+  "name": "editions/codegen_tests/proto3_import.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/proto3_optional.proto",
+  "name": "editions/codegen_tests/proto3_optional.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/proto3_packed.proto",
+  "name": "editions/codegen_tests/proto3_packed.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/proto3_unpacked.proto",
+  "name": "editions/codegen_tests/proto3_unpacked.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/codegen_tests/proto3_utf8_strict.proto",
+  "name": "editions/codegen_tests/proto3_utf8_strict.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/simple_proto3.proto",
+  "name": "editions/golden/simple_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/test_messages_proto2_editions.proto",
+  "name": "editions/golden/test_messages_proto2_editions.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/test_messages_proto3_editions.proto",
+  "name": "editions/golden/test_messages_proto3_editions.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2023_transform/noop.proto",
+  "name": "editions/golden/edition2023_transform/noop.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2023_transform/proto2_lite.proto",
+  "name": "editions/golden/edition2023_transform/proto2_lite.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2023_transform/proto2_utf8_disabled.proto",
+  "name": "editions/golden/edition2023_transform/proto2_utf8_disabled.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2023_transform/proto3_utf8_disabled.proto",
+  "name": "editions/golden/edition2023_transform/proto3_utf8_disabled.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2023_transform/test_messages_proto2.proto",
+  "name": "editions/golden/edition2023_transform/test_messages_proto2.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2023_transform/test_messages_proto3.proto",
+  "name": "editions/golden/edition2023_transform/test_messages_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2024_transform/edition2023.proto",
+  "name": "editions/golden/edition2024_transform/edition2023.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2024_transform/noop.proto",
+  "name": "editions/golden/edition2024_transform/noop.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2024_transform/test_messages_proto2.proto",
+  "name": "editions/golden/edition2024_transform/test_messages_proto2.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/golden/edition2024_transform/test_messages_proto2.proto:83:37: Enum type \"pb.CppFeatures.StringType\" has no value named \"STRING_PIECE\" for option \"pb.CppFeatures.string_type\".\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/golden/edition2024_transform/test_messages_proto2.proto:113:37: Enum type \"pb.CppFeatures.StringType\" has no value named \"STRING_PIECE\" for option \"pb.CppFeatures.string_type\".\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/golden/edition2024_transform/test_messages_proto2.proto:556:37: Enum type \"pb.CppFeatures.StringType\" has no value named \"STRING_PIECE\" for option \"pb.CppFeatures.string_type\"."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/golden/edition2024_transform/test_messages_proto3.proto",
+  "name": "editions/golden/edition2024_transform/test_messages_proto3.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/golden/edition2024_transform/test_messages_proto3.proto:102:37: Enum type \"pb.CppFeatures.StringType\" has no value named \"STRING_PIECE\" for option \"pb.CppFeatures.string_type\".\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/editions/golden/edition2024_transform/test_messages_proto3.proto:132:37: Enum type \"pb.CppFeatures.StringType\" has no value named \"STRING_PIECE\" for option \"pb.CppFeatures.string_type\"."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/input/test_editions_2024_default_features.proto",
+  "name": "editions/input/test_editions_2024_default_features.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/input/test_editions_2026_default_features.proto",
+  "name": "editions/input/test_editions_2026_default_features.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/input/test_editions_default_features.proto",
+  "name": "editions/input/test_editions_default_features.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/input/edition2023_transform/noop.proto",
+  "name": "editions/input/edition2023_transform/noop.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/input/edition2023_transform/proto3_utf8_disabled.proto",
+  "name": "editions/input/edition2023_transform/proto3_utf8_disabled.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/input/edition2024_transform/edition2023.proto",
+  "name": "editions/input/edition2024_transform/edition2023.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "editions/input/edition2024_transform/noop.proto",
+  "name": "editions/input/edition2024_transform/noop.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "examples/addressbook.proto",
+  "name": "examples/addressbook.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "examples/examples_with_hyphen/empty.proto",
+  "name": "examples/examples_with_hyphen/empty.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2023.proto",
+  "name": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2023.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto",
+  "name": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto",
+  "root": "",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:18:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:21:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:26:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:31:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:38:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:43:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:54:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:57:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:62:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:67:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:74:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_edition_2024.proto:79:10: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3.proto",
+  "name": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3.proto:18:50: Option \"enforce_utf8\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3_checked.proto",
+  "name": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3_checked.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3_checked.proto:19:52: Option \"enforce_utf8\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3_unchecked.proto",
+  "name": "google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3_unchecked.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/google3/third_party/java_src/protobuf/current/javatests/com/google/protobuf/utf8validation/utf8_test_proto3_unchecked.proto:19:54: Option \"enforce_utf8\" unknown. Ensure that your proto definition file imports the proto which defines the option (i.e. via import option after edition 2024)."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/basic_test_editions.proto",
+  "name": "hpb_generator/tests/basic_test_editions.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/child_model.proto",
+  "name": "hpb_generator/tests/child_model.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/legacy-name.proto",
+  "name": "hpb_generator/tests/legacy-name.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/naming_conflict.proto",
+  "name": "hpb_generator/tests/naming_conflict.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/no_package.proto",
+  "name": "hpb_generator/tests/no_package.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/no_package_enum_user.proto",
+  "name": "hpb_generator/tests/no_package_enum_user.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/null_enum.proto",
+  "name": "hpb_generator/tests/null_enum.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/set_alias.proto",
+  "name": "hpb_generator/tests/set_alias.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/test_enum.proto",
+  "name": "hpb_generator/tests/test_enum.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/test_extension.proto",
+  "name": "hpb_generator/tests/test_extension.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "hpb_generator/tests/test_model.proto",
+  "name": "hpb_generator/tests/test_model.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/main/resources/google/protobuf/java_features.proto",
+  "name": "google/protobuf/java_features.proto",
+  "root": "java/core/src/main/resources",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/main/resources/google/protobuf/java_mutable_features.proto",
+  "name": "google/protobuf/java_mutable_features.proto",
+  "root": "java/core/src/main/resources",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/any_test.proto",
+  "name": "com/google/protobuf/any_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/cached_field_size_test.proto",
+  "name": "com/google/protobuf/cached_field_size_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": false,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/cached_field_size_test.proto:21:3: \"proto3_unittest.TestPackedTypes\" is not defined."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/deprecated_file.proto",
+  "name": "com/google/protobuf/deprecated_file.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/dynamic_message_test.proto",
+  "name": "com/google/protobuf/dynamic_message_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/field_name_clashes.proto",
+  "name": "com/google/protobuf/field_name_clashes.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/field_presence_test.proto",
+  "name": "com/google/protobuf/field_presence_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_conflicting_enum.proto",
+  "name": "com/google/protobuf/generator_names_conflicting_enum.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_conflicting_message.proto",
+  "name": "com/google/protobuf/generator_names_conflicting_message.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_conflicting_nested_enum.proto",
+  "name": "com/google/protobuf/generator_names_conflicting_nested_enum.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_conflicting_nested_message.proto",
+  "name": "com/google/protobuf/generator_names_conflicting_nested_message.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_conflicting_service.proto",
+  "name": "com/google/protobuf/generator_names_conflicting_service.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_edition2024_defaults.proto",
+  "name": "com/google/protobuf/generator_names_edition2024_defaults.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/generator_names_edition2024_defaults.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_generic_services.proto",
+  "name": "com/google/protobuf/generator_names_generic_services.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/generator_names_generic_services.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_multiple_files_proto3.proto",
+  "name": "com/google/protobuf/generator_names_multiple_files_proto3.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/generator_names_multiple_files_proto3.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_nest_in_file_class.proto",
+  "name": "com/google/protobuf/generator_names_nest_in_file_class.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/generator_names_nest_in_file_class.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_outer_classname.proto",
+  "name": "com/google/protobuf/generator_names_outer_classname.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/generator_names_pre2024_defaults.proto",
+  "name": "com/google/protobuf/generator_names_pre2024_defaults.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/generator_names_pre2024_defaults.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/large_open_aliasing_enum.proto",
+  "name": "com/google/protobuf/large_open_aliasing_enum.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/large_open_enum.proto",
+  "name": "com/google/protobuf/large_open_enum.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/large_open_enum_conflicts.proto",
+  "name": "com/google/protobuf/large_open_enum_conflicts.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/lazy_fields_lite.proto",
+  "name": "com/google/protobuf/lazy_fields_lite.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/lite_equals_and_hash.proto",
+  "name": "com/google/protobuf/lite_equals_and_hash.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/map_for_proto2_lite_test.proto",
+  "name": "com/google/protobuf/map_for_proto2_lite_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/map_for_proto2_test.proto",
+  "name": "com/google/protobuf/map_for_proto2_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/map_initialization_order_test.proto",
+  "name": "com/google/protobuf/map_initialization_order_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/map_lite_test.proto",
+  "name": "com/google/protobuf/map_lite_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/map_test.proto",
+  "name": "com/google/protobuf/map_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/multiple_files_test.proto",
+  "name": "com/google/protobuf/multiple_files_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/multiple_files_test.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/nested_builders_test.proto",
+  "name": "com/google/protobuf/nested_builders_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/nested_extension.proto",
+  "name": "com/google/protobuf/nested_extension.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/nested_extension_lite.proto",
+  "name": "com/google/protobuf/nested_extension_lite.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/non_nested_extension.proto",
+  "name": "com/google/protobuf/non_nested_extension.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/non_nested_extension_lite.proto",
+  "name": "com/google/protobuf/non_nested_extension_lite.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/outer_class_name_test.proto",
+  "name": "com/google/protobuf/outer_class_name_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/outer_class_name_test2.proto",
+  "name": "com/google/protobuf/outer_class_name_test2.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/outer_class_name_test3.proto",
+  "name": "com/google/protobuf/outer_class_name_test3.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/packed_field_test.proto",
+  "name": "com/google/protobuf/packed_field_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/proto2_message.proto",
+  "name": "com/google/protobuf/proto2_message.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/proto2_message_lite.proto",
+  "name": "com/google/protobuf/proto2_message_lite.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/proto2_text_format_performance_test.proto",
+  "name": "com/google/protobuf/proto2_text_format_performance_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/proto2_unknown_enum_values.proto",
+  "name": "com/google/protobuf/proto2_unknown_enum_values.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/proto3_message.proto",
+  "name": "com/google/protobuf/proto3_message.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/proto3_message_lite.proto",
+  "name": "com/google/protobuf/proto3_message_lite.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/proto3_text_format_performance_test.proto",
+  "name": "com/google/protobuf/proto3_text_format_performance_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/test_bad_identifiers.proto",
+  "name": "com/google/protobuf/test_bad_identifiers.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/test_bad_identifiers.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/test_check_utf8.proto",
+  "name": "com/google/protobuf/test_check_utf8.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/java/core/src/test/proto/com/google/protobuf/test_check_utf8.proto:13:1: warning: pb.JavaFeatures.utf8_validation has been deprecated in edition 2024: The Java-specific utf8 validation feature is deprecated and is scheduled to be removed in edition 2025.  Utf8 validation behavior should use the global cross-language utf8_validation feature."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/test_check_utf8_size.proto",
+  "name": "com/google/protobuf/test_check_utf8_size.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/core/src/test/proto/com/google/protobuf/wrappers_test.proto",
+  "name": "com/google/protobuf/wrappers_test.proto",
+  "root": "java/core/src/test/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/kotlin/src/test/proto/com/google/protobuf/evil_names_proto3.proto",
+  "name": "java/kotlin/src/test/proto/com/google/protobuf/evil_names_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/kotlin/src/test/proto/com/google/protobuf/multiple_files_proto3.proto",
+  "name": "java/kotlin/src/test/proto/com/google/protobuf/multiple_files_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/util/src/test/proto/com/google/protobuf/util/json_test.proto",
+  "name": "java/util/src/test/proto/com/google/protobuf/util/json_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "java/util/src/test/proto/com/google/protobuf/util/json_test_custom_enum_string.proto",
+  "name": "java/util/src/test/proto/com/google/protobuf/util/json_test_custom_enum_string.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "objectivec/Tests/any_test.proto",
+  "name": "objectivec/Tests/any_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "objectivec/Tests/map_unittest.proto",
+  "name": "objectivec/Tests/map_unittest.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "objectivec/Tests/unittest.proto",
+  "name": "objectivec/Tests/unittest.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "objectivec/Tests/unittest_import.proto",
+  "name": "objectivec/Tests/unittest_import.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "objectivec/Tests/unittest_import_public.proto",
+  "name": "objectivec/Tests/unittest_import_public.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "objectivec/Tests/unittest_preserve_unknown_enum.proto",
+  "name": "objectivec/Tests/unittest_preserve_unknown_enum.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "objectivec/Tests/unittest_runtime_proto3.proto",
+  "name": "objectivec/Tests/unittest_runtime_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test.proto",
+  "name": "php/tests/proto/test.proto",
+  "root": "",
+  "ok": false,
+  "stderr": "proto/test_empty_php_namespace.proto: File not found.\nproto/test_include.proto: File not found.\nproto/test_no_namespace.proto: File not found.\nproto/test_php_namespace.proto: File not found.\nproto/test_prefix.proto: File not found.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:8:1: Import \"proto/test_empty_php_namespace.proto\" was not found or had errors.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:9:1: Import \"proto/test_include.proto\" was not found or had errors.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:10:1: Import \"proto/test_no_namespace.proto\" was not found or had errors.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:11:1: Import \"proto/test_php_namespace.proto\" was not found or had errors.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:12:1: Import \"proto/test_prefix.proto\" was not found or had errors.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:34:3: \"bar.TestInclude\" is not defined.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:56:12: \"bar.TestInclude\" is not defined.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:127:3: \"NoNamespaceMessage\" is not defined.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:128:3: \"NoNamespaceEnum\" is not defined.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:129:12: \"NoNamespaceMessage\" is not defined.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:130:12: \"NoNamespaceEnum\" is not defined.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:234:3: \"TestPrefix\" is not defined.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:238:3: \"TestNamespace\" is not defined.\nD:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/php/tests/proto/test.proto:239:3: \"TestEmptyNamespace\" is not defined."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_custom_enum_json.proto",
+  "name": "php/tests/proto/test_custom_enum_json.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_default_value.proto",
+  "name": "php/tests/proto/test_default_value.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_descriptors.proto",
+  "name": "php/tests/proto/test_descriptors.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_empty_php_namespace.proto",
+  "name": "php/tests/proto/test_empty_php_namespace.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_import_descriptor_proto.proto",
+  "name": "php/tests/proto/test_import_descriptor_proto.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_include.proto",
+  "name": "php/tests/proto/test_include.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_no_namespace.proto",
+  "name": "php/tests/proto/test_no_namespace.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_php_namespace.proto",
+  "name": "php/tests/proto/test_php_namespace.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_prefix.proto",
+  "name": "php/tests/proto/test_prefix.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_reserved_enum_lower.proto",
+  "name": "php/tests/proto/test_reserved_enum_lower.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_reserved_enum_upper.proto",
+  "name": "php/tests/proto/test_reserved_enum_upper.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_reserved_enum_value_lower.proto",
+  "name": "php/tests/proto/test_reserved_enum_value_lower.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_reserved_enum_value_upper.proto",
+  "name": "php/tests/proto/test_reserved_enum_value_upper.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_reserved_message_lower.proto",
+  "name": "php/tests/proto/test_reserved_message_lower.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_reserved_message_upper.proto",
+  "name": "php/tests/proto/test_reserved_message_upper.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_special_characters.proto",
+  "name": "php/tests/proto/test_special_characters.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/test_wrapper_type_setters.proto",
+  "name": "php/tests/proto/test_wrapper_type_setters.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto/empty/echo.proto",
+  "name": "php/tests/proto/empty/echo.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "php/tests/proto_previous/test_previously_unreserved_message.proto",
+  "name": "php/tests/proto_previous/test_previously_unreserved_message.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "python/google/protobuf/internal/packed_field_test.proto",
+  "name": "python/google/protobuf/internal/packed_field_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "python/google/protobuf/internal/self_recursive.proto",
+  "name": "python/google/protobuf/internal/self_recursive.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "python/google/protobuf/internal/test_proto3_optional.proto",
+  "name": "python/google/protobuf/internal/test_proto3_optional.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "python/google/protobuf/internal/well_known_types_test.proto",
+  "name": "python/google/protobuf/internal/well_known_types_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/basic_test.proto",
+  "name": "basic_test.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/basic_test_features.proto",
+  "name": "basic_test_features.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/generated_code.proto",
+  "name": "generated_code.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/generated_code_editions.proto",
+  "name": "generated_code_editions.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/multi_level_nesting_test.proto",
+  "name": "multi_level_nesting_test.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/repeated_field_test.proto",
+  "name": "repeated_field_test.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/service_test.proto",
+  "name": "service_test.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/stress.proto",
+  "name": "stress.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/test_import.proto",
+  "name": "test_import.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/test_import_proto2.proto",
+  "name": "test_import_proto2.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "ruby/tests/test_ruby_package.proto",
+  "name": "test_ruby_package.proto",
+  "root": "ruby/tests",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/release_crates/protobuf_example/proto/proto_example/foo.proto",
+  "name": "proto_example/foo.proto",
+  "root": "rust/release_crates/protobuf_example/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/release_crates/protobuf_example/proto/proto_example/bar/bar.proto",
+  "name": "proto_example/bar/bar.proto",
+  "root": "rust/release_crates/protobuf_example/proto",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/edition2023.proto",
+  "name": "rust/test/edition2023.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/enums.proto",
+  "name": "rust/test/enums.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/extensions.proto",
+  "name": "rust/test/extensions.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/extensions_separate_file.proto",
+  "name": "rust/test/extensions_separate_file.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/map_unittest.proto",
+  "name": "rust/test/map_unittest.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/srcsless_library_test_child.proto",
+  "name": "rust/test/srcsless_library_test_child.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/srcsless_library_test_parent.proto",
+  "name": "rust/test/srcsless_library_test_parent.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/unittest.proto",
+  "name": "rust/test/unittest.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/unittest_import.proto",
+  "name": "rust/test/unittest_import.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/unittest_proto3.proto",
+  "name": "rust/test/unittest_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/unittest_proto3_optional.proto",
+  "name": "rust/test/unittest_proto3_optional.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/cpp/debug.proto",
+  "name": "rust/test/cpp/debug.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/cpp/optimize_for_lite.proto",
+  "name": "rust/test/cpp/optimize_for_lite.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/cpp/interop/interop_test.proto",
+  "name": "rust/test/cpp/interop/interop_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/more_test_protos/bad_names.proto",
+  "name": "rust/test/more_test_protos/bad_names.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/shared/utf8/feature_verify.proto",
+  "name": "rust/test/shared/utf8/feature_verify.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/shared/utf8/no_features_proto3.proto",
+  "name": "rust/test/shared/utf8/no_features_proto3.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/treeshaking/base/treeshaking.proto",
+  "name": "rust/test/treeshaking/base/treeshaking.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "rust/test/treeshaking/test/treeshaking.proto",
+  "name": "rust/test/treeshaking/test/treeshaking.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/any.proto",
+  "name": "google/protobuf/any.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/any_test.proto",
+  "name": "google/protobuf/any_test.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/api.proto",
+  "name": "google/protobuf/api.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/cpp_features.proto",
+  "name": "google/protobuf/cpp_features.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/cpp_file_options.proto",
+  "name": "google/protobuf/cpp_file_options.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/cpp_options.proto",
+  "name": "google/protobuf/cpp_options.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/descriptor.proto",
+  "name": "google/protobuf/descriptor.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/duration.proto",
+  "name": "google/protobuf/duration.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/edition_unittest.proto",
+  "name": "google/protobuf/edition_unittest.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/src/google/protobuf/edition_unittest.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/empty.proto",
+  "name": "google/protobuf/empty.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/field_mask.proto",
+  "name": "google/protobuf/field_mask.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/internal_metadata_locator_test.proto",
+  "name": "google/protobuf/internal_metadata_locator_test.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/internal_options.proto",
+  "name": "google/protobuf/internal_options.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/json_enumvalue_options.proto",
+  "name": "google/protobuf/json_enumvalue_options.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/json_options.proto",
+  "name": "google/protobuf/json_options.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/late_loaded_option.proto",
+  "name": "google/protobuf/late_loaded_option.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/late_loaded_option_user.proto",
+  "name": "google/protobuf/late_loaded_option_user.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/map_lite_unittest.proto",
+  "name": "google/protobuf/map_lite_unittest.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/map_proto3_unittest.proto",
+  "name": "google/protobuf/map_proto3_unittest.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/map_unittest.proto",
+  "name": "google/protobuf/map_unittest.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/only_one_enum_test.proto",
+  "name": "google/protobuf/only_one_enum_test.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/sample_messages_edition.proto",
+  "name": "google/protobuf/sample_messages_edition.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/source_context.proto",
+  "name": "google/protobuf/source_context.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/struct.proto",
+  "name": "google/protobuf/struct.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/test_messages_proto3.proto",
+  "name": "google/protobuf/test_messages_proto3.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/timestamp.proto",
+  "name": "google/protobuf/timestamp.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/type.proto",
+  "name": "google/protobuf/type.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest.proto",
+  "name": "google/protobuf/unittest.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/src/google/protobuf/unittest.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_arena.proto",
+  "name": "google/protobuf/unittest_arena.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_custom_features.proto",
+  "name": "google/protobuf/unittest_custom_features.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_custom_options.proto",
+  "name": "google/protobuf/unittest_custom_options.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/src/google/protobuf/unittest_custom_options.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_custom_options_unlinked.proto",
+  "name": "google/protobuf/unittest_custom_options_unlinked.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_delimited.proto",
+  "name": "google/protobuf/unittest_delimited.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_delimited_import.proto",
+  "name": "google/protobuf/unittest_delimited_import.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_drop_unknown_fields.proto",
+  "name": "google/protobuf/unittest_drop_unknown_fields.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_features.proto",
+  "name": "google/protobuf/unittest_features.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_fuzz_extensions.proto",
+  "name": "google/protobuf/unittest_fuzz_extensions.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_import.proto",
+  "name": "google/protobuf/unittest_import.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_import_lite.proto",
+  "name": "google/protobuf/unittest_import_lite.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_import_option.proto",
+  "name": "google/protobuf/unittest_import_option.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_import_public.proto",
+  "name": "google/protobuf/unittest_import_public.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_import_public_lite.proto",
+  "name": "google/protobuf/unittest_import_public_lite.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_lazy_dependencies.proto",
+  "name": "google/protobuf/unittest_lazy_dependencies.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/src/google/protobuf/unittest_lazy_dependencies.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_lazy_dependencies_custom_option.proto",
+  "name": "google/protobuf/unittest_lazy_dependencies_custom_option.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/src/google/protobuf/unittest_lazy_dependencies_custom_option.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_lazy_dependencies_enum.proto",
+  "name": "google/protobuf/unittest_lazy_dependencies_enum.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/src/google/protobuf/unittest_lazy_dependencies_enum.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_legacy_features.proto",
+  "name": "google/protobuf/unittest_legacy_features.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_lite.proto",
+  "name": "google/protobuf/unittest_lite.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_lite_edition_2024.proto",
+  "name": "google/protobuf/unittest_lite_edition_2024.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_no_field_presence.proto",
+  "name": "google/protobuf/unittest_no_field_presence.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_preserve_unknown_enum.proto",
+  "name": "google/protobuf/unittest_preserve_unknown_enum.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_preserve_unknown_enum2.proto",
+  "name": "google/protobuf/unittest_preserve_unknown_enum2.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_proto3.proto",
+  "name": "google/protobuf/unittest_proto3.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_proto3_arena.proto",
+  "name": "google/protobuf/unittest_proto3_arena.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_proto3_arena_lite.proto",
+  "name": "google/protobuf/unittest_proto3_arena_lite.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_proto3_bad_macros.proto",
+  "name": "google/protobuf/unittest_proto3_bad_macros.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_proto3_extensions.proto",
+  "name": "google/protobuf/unittest_proto3_extensions.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_proto3_lite.proto",
+  "name": "google/protobuf/unittest_proto3_lite.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_proto3_optional.proto",
+  "name": "google/protobuf/unittest_proto3_optional.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_redaction.proto",
+  "name": "google/protobuf/unittest_redaction.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_string_type.proto",
+  "name": "google/protobuf/unittest_string_type.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_string_view.proto",
+  "name": "google/protobuf/unittest_string_view.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_utf8_string_extensions.proto",
+  "name": "google/protobuf/unittest_utf8_string_extensions.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/unittest_well_known_types.proto",
+  "name": "google/protobuf/unittest_well_known_types.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/wrappers.proto",
+  "name": "google/protobuf/wrappers.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/compiler/cpp/test_bad_identifiers_editions.proto",
+  "name": "google/protobuf/compiler/cpp/test_bad_identifiers_editions.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": "D:/Developpements/official/nelson/protobuf_reference/protos/protobuf-v36.2/src/google/protobuf/compiler/cpp/test_bad_identifiers_editions.proto: warning: Generic services (cc_generic_services, java_generic_services, and py_generic_services) are deprecated in favor of using plugins that generate code specific to your particular RPC system. Additional code generator options may be required to enable generic services and total removal of these options is planned in future breaking releases."
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/compiler/java/message_serialization_unittest.proto",
+  "name": "google/protobuf/compiler/java/message_serialization_unittest.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/compiler/ruby/ruby_generated_code.proto",
+  "name": "ruby_generated_code.proto",
+  "root": "src/google/protobuf/compiler/ruby",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/compiler/ruby/ruby_generated_code_proto2_import.proto",
+  "name": "ruby_generated_code_proto2_import.proto",
+  "root": "src/google/protobuf/compiler/ruby",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/compiler/ruby/ruby_generated_pkg_explicit.proto",
+  "name": "ruby_generated_pkg_explicit.proto",
+  "root": "src/google/protobuf/compiler/ruby",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/compiler/ruby/ruby_generated_pkg_explicit_legacy.proto",
+  "name": "ruby_generated_pkg_explicit_legacy.proto",
+  "root": "src/google/protobuf/compiler/ruby",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/compiler/ruby/ruby_generated_pkg_implicit.proto",
+  "name": "ruby_generated_pkg_implicit.proto",
+  "root": "src/google/protobuf/compiler/ruby",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/json/json_enumval_custom_string.proto",
+  "name": "google/protobuf/json/json_enumval_custom_string.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/test_protos/abseil_flag_test.proto",
+  "name": "google/protobuf/test_protos/abseil_flag_test.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/test_protos/forced_micro_string.proto",
+  "name": "google/protobuf/test_protos/forced_micro_string.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/test_protos/repeated_field_proxy_import_message.proto",
+  "name": "google/protobuf/test_protos/repeated_field_proxy_import_message.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/test_protos/repeated_ptr_field_test.proto",
+  "name": "google/protobuf/test_protos/repeated_ptr_field_test.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/util/json_format_proto3.proto",
+  "name": "google/protobuf/util/json_format_proto3.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/util/message_differencer_unittest_proto3.proto",
+  "name": "google/protobuf/util/message_differencer_unittest_proto3.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "src/google/protobuf/util/python/testdata/test_messages.proto",
+  "name": "google/protobuf/util/python/testdata/test_messages.proto",
+  "root": "src",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/message/utf8_test.proto",
+  "name": "upb/message/utf8_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/mini_table/debug_string_test.proto",
+  "name": "upb/mini_table/debug_string_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/mini_table/generated_registry_empty_test.proto",
+  "name": "upb/mini_table/generated_registry_empty_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/mini_table/message_benchmark.proto",
+  "name": "upb/mini_table/message_benchmark.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/test/custom_options.proto",
+  "name": "upb/test/custom_options.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/test/custom_options_unlinked.proto",
+  "name": "upb/test/custom_options_unlinked.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/test/editions_test.proto",
+  "name": "upb/test/editions_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/test/proto3_test.proto",
+  "name": "upb/test/proto3_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/test/test_multiple_files.proto",
+  "name": "upb/test/test_multiple_files.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/test/test_multiple_files2.proto",
+  "name": "upb/test/test_multiple_files2.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/util/def_to_proto_editions_test.proto",
+  "name": "upb/util/def_to_proto_editions_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/util/def_to_proto_public_import_test.proto",
+  "name": "upb/util/def_to_proto_public_import_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/util/def_to_proto_regular_import_test.proto",
+  "name": "upb/util/def_to_proto_regular_import_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/util/def_to_proto_weak_import_test.proto",
+  "name": "upb/util/def_to_proto_weak_import_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/util/def_to_proto_wweak_import_test.proto",
+  "name": "upb/util/def_to_proto_wweak_import_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ },
+ {
+  "corpus": "protobuf-v36.2",
+  "file": "upb/util/required_fields_editions_test.proto",
+  "name": "upb/util/required_fields_editions_test.proto",
+  "root": "",
+  "ok": true,
+  "stderr": ""
+ }
+]

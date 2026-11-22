@@ -1,0 +1,5784 @@
+f_double: d:c002000000000000
+f_float: f:490d1bdf
+f_int32: -316
+f_int64: 0
+f_uint32: 4294967295
+f_uint64: 1
+f_sint32: 1
+f_sint64: 0
+f_fixed32: 0
+f_fixed64: 0
+f_sfixed32: -1
+f_sfixed64: 1
+f_bool: true
+f_string: x:78625f7861617a313378627a
+f_bytes: x:cf21fbf2b73adb
+f_enum: 0
+o_double: d:0000000000000000
+o_float: f:00000000
+o_int64: -9223372036854775808
+o_string: x:62793079635f327a323331337a635f617a
+o_bytes: x:cf28
+r_double[0]: d:7ff8000000000000
+r_int32[0]: 1
+r_uint32[0]: 4294967295
+r_uint32[1]: 0
+r_uint32[2]: 4294967295
+r_uint64[0]: 0
+r_sint64[0]: 1
+r_sint64[1]: -1
+r_fixed32[0]: 1
+r_fixed32[1]: 1
+r_fixed64[0]: 467
+r_sfixed32[0]: 2147483647
+r_sfixed32[1]: 0
+r_sfixed32[2]: 1
+r_sfixed64[0]: 1
+r_bytes[0]: x:594102086c
+r_bytes[1]: x:e4b01ea1ac
+r_bytes[2]: x:5da6d9d08b
+r_enum[0]: 0
+r_enum[1]: 77
+r_unpacked_int32[0]: -2147483648
+r_unpacked_int32[1]: -2147483648
+r_unpacked_int32[2]: 538
+m_string_int32[] {
+  key: x:68c3a96c6c6f
+  value: -1
+}
+m_string_int32[] {
+  key: x:f09f9982
+  value: 2147483647
+}
+m_int64_string[] {
+  key: 410
+  value: x:6c696e650a627265616b
+}
+m_bool_double[] {
+  key: false
+  value: d:7ff0000000000000
+}
+m_bool_double[] {
+  key: true
+  value: d:0000000000000000
+}
+m_uint32_color[] {
+  key: 0
+  value: 0
+}
+recursive {
+  f_double: d:8000000000000000
+  f_float: f:7149f2ca
+  f_int32: -888
+  f_int64: 0
+  f_uint32: 0
+  f_uint64: 0
+  f_sint32: -1404807542
+  f_sint64: 1
+  f_fixed32: 0
+  f_fixed64: 0
+  f_sfixed32: 2147483647
+  f_sfixed64: 9223372036854775807
+  f_bool: false
+  f_string: x:6c696e650a627265616b
+  f_bytes: x:5389
+  f_enum: 2
+  o_double: d:c11ffd57464a1535
+  o_float: f:48ae2a21
+  o_uint32: 3144503948
+  o_sint64: 8015134945982871865
+  o_bool: true
+  o_bytes: x:7c343adbde60f82b0a3e
+  o_enum: 2
+  r_double[0]: d:0000000000000000
+  r_double[1]: d:46293e5939a08cea
+  r_double[2]: d:7ff8000000000000
+  r_float[0]: f:ff800000
+  r_float[1]: f:00000000
+  r_int32[0]: 0
+  r_int64[0]: 0
+  r_uint32[0]: 1
+  r_uint64[0]: 1
+  r_uint64[1]: 43
+  r_uint64[2]: 364
+  r_sint64[0]: -1
+  r_sint64[1]: 1
+  r_sint64[2]: -6984326220276288525
+  r_fixed32[0]: 4294967295
+  r_sfixed32[0]: 0
+  r_sfixed32[1]: -2147483648
+  r_sfixed64[0]: -649
+  r_bool[0]: true
+  r_bool[1]: false
+  r_bytes[0]: x:a40832059a
+  r_bytes[1]: x:1943d2a2f5e5b5
+  r_enum[0]: 77
+  r_enum[1]: 2
+  r_enum[2]: 2
+  r_unpacked_int32[0]: 0
+  m_int64_string[] {
+    key: 9223372036854775807
+    value: x:61
+  }
+  m_bool_double[] {
+    key: false
+    value: d:fff0000000000000
+  }
+  m_bool_double[] {
+    key: true
+    value: d:7ff0000000000000
+  }
+  m_string_sample[] {
+    key: x:62795f5f303032637a786362306132
+    value {
+      timestamp_ms: -1
+    }
+  }
+  m_string_sample[] {
+    key: x:7461620971756f746522
+    value {
+      timestamp_ms: 1
+      status: -1702528379
+      pressure: f:80000000
+      flow: f:00000000
+      diagnostics {
+        calibrated: false
+        voltage: f:3fc00000
+      }
+    }
+  }
+  m_string_sample[] {
+    key: x:e697a5e69cac
+    value {
+      timestamp_ms: -856
+      status: 0
+      flow: f:00000000
+    }
+  }
+  m_uint32_color[] {
+    key: 1175543055
+    value: -3
+  }
+  recursive {
+    f_double: d:c1131828c9f14f7c
+    f_float: f:7f800000
+    f_int32: 0
+    f_int64: 1
+    f_uint32: 3354701216
+    f_uint64: 0
+    f_sint32: 1
+    f_sint64: 1
+    f_fixed32: 1
+    f_fixed64: 1
+    f_sfixed32: 2147483647
+    f_sfixed64: 1
+    f_bool: false
+    f_string: x:337a7a627a7a626379
+    f_bytes: x:96d7fb52dbcb
+    f_enum: 1
+    o_float: f:00000000
+    o_uint32: 145
+    o_bool: false
+    o_bytes: x:ca251b42b63aa83dc238
+    o_enum: 1
+    r_double[0]: d:3ff8000000000000
+    r_double[1]: d:3ff8000000000000
+    r_int32[0]: -1
+    r_int64[0]: -1
+    r_int64[1]: -224
+    r_uint32[0]: 543
+    r_uint32[1]: 0
+    r_uint32[2]: 1
+    r_uint64[0]: 1
+    r_sint32[0]: -507085700
+    r_sint32[1]: -734546589
+    r_sint64[0]: -9223372036854775808
+    r_sint64[1]: -9223372036854775808
+    r_fixed32[0]: 1103096952
+    r_fixed64[0]: 1
+    r_sfixed32[0]: 0
+    r_sfixed32[1]: 0
+    r_sfixed64[0]: -1
+    r_sfixed64[1]: 9223372036854775807
+    r_sfixed64[2]: -9223372036854775808
+    r_bool[0]: false
+    r_bool[1]: false
+    r_string[0]: x:6c696e650a627265616b
+    r_enum[0]: -3
+    r_unpacked_double[0]: d:0000000000000000
+    r_unpacked_double[1]: d:7ff8000000000000
+    r_unpacked_double[2]: d:7ff8000000000000
+    m_string_int32[] {
+      key: x:323079323078315f5f
+      value: 0
+    }
+    m_int64_string[] {
+      key: -1
+      value: x:
+    }
+    m_int64_string[] {
+      key: 0
+      value: x:61
+    }
+    m_int64_string[] {
+      key: 9223372036854775807
+      value: x:
+    }
+    m_bool_double[] {
+      key: true
+      value: d:8000000000000000
+    }
+    m_string_sample[] {
+      key: x:61
+      value {
+        timestamp_ms: 856
+        status: 0
+        flow: f:00000000
+      }
+    }
+    m_string_sample[] {
+      key: x:e697a5e69cac
+      value {
+        timestamp_ms: -1
+        pressure: f:00000000
+        flow: f:3fc00000
+      }
+    }
+    m_uint32_color[] {
+      key: 3852496659
+      value: 1
+    }
+    m_uint32_color[] {
+      key: 669676965
+      value: 1
+    }
+    recursive {
+      f_double: d:0000000000000000
+      f_float: f:7149f2ca
+      f_int32: -1
+      f_int64: -1
+      f_uint32: 977
+      f_uint64: 0
+      f_sint32: -1
+      f_sint64: 0
+      f_fixed32: 4294967295
+      f_fixed64: 1
+      f_sfixed32: 2147483647
+      f_sfixed64: 9223372036854775807
+      f_bool: false
+      f_string: x:7461620971756f746522
+      f_bytes: x:618c67a750ea90cb
+      f_enum: 1
+      o_float: f:c0100000
+      o_int64: 455
+      o_uint32: 176
+      o_sint64: -9223372036854775808
+      o_string: x:6c696e650a627265616b
+      o_enum: 1
+      r_double[0]: d:8000000000000000
+      r_double[1]: d:7ff8000000000000
+      r_int32[0]: -1
+      r_int32[1]: -1
+      r_int32[2]: -2147483648
+      r_uint32[0]: 272
+      r_uint32[1]: 1
+      r_uint32[2]: 0
+      r_uint64[0]: 0
+      r_sint32[0]: -1708014374
+      r_sint32[1]: 1
+      r_sint64[0]: 7796355770058571080
+      r_sint64[1]: -1
+      r_fixed32[0]: 1
+      r_fixed32[1]: 4294967295
+      r_fixed64[0]: 0
+      r_fixed64[1]: 0
+      r_sfixed32[0]: 224
+      r_sfixed64[0]: 9223372036854775807
+      r_sfixed64[1]: -9223372036854775808
+      r_bool[0]: true
+      r_bool[1]: false
+      r_bool[2]: true
+      r_string[0]: x:f09f9982
+      r_string[1]: x:7461620971756f746522
+      r_string[2]: x:7a63303131796132326361787a5f6332635f617a
+      r_enum[0]: 0
+      r_enum[1]: 2
+      r_enum[2]: 77
+      r_unpacked_double[0]: d:7ff0000000000000
+      r_unpacked_double[1]: d:7ff0000000000000
+      r_unpacked_double[2]: d:39b4484bfeebc2a0
+      m_string_int32[] {
+        key: x:68c3a96c6c6f
+        value: -1
+      }
+      m_int64_string[] {
+        key: -9223372036854775808
+        value: x:68c3a96c6c6f
+      }
+      m_bool_double[] {
+        key: false
+        value: d:0000000000000000
+      }
+      m_bool_double[] {
+        key: true
+        value: d:c002000000000000
+      }
+      m_uint32_color[] {
+        key: 1
+        value: 0
+      }
+      m_uint32_color[] {
+        key: 1328652456
+        value: 77
+      }
+    }
+    samples[0] {
+      timestamp_ms: 7884285144862135690
+      pressure: f:00000000
+      flow: f:c0100000
+    }
+    samples[1] {
+      timestamp_ms: -9223372036854775808
+    }
+    c_sample {
+      timestamp_ms: 9223372036854775807
+      pressure: f:7fc00000
+      flow: f:7f800000
+    }
+  }
+  samples[0] {
+    timestamp_ms: 1
+    pressure: f:7f800000
+    flow: f:0da24260
+  }
+  samples[1] {
+    timestamp_ms: 1
+    flow: f:0da24260
+    diagnostics {
+      temperature: f:ff800000
+      voltage: f:7f800000
+    }
+  }
+  samples[2] {
+    timestamp_ms: 426
+    flow: f:490c6340
+    diagnostics {
+      temperature: f:7fc00000
+    }
+  }
+  c_string: x:68c3a96c6c6f
+}
+samples[0] {
+  timestamp_ms: 0
+  status: -1
+  flow: f:7f800000
+  diagnostics {
+    drift: d:8000000000000000
+  }
+}
+c_sample {
+  timestamp_ms: -9223372036854775808
+  status: 0
+  pressure: f:7149f2ca
+  diagnostics {
+    calibrated: true
+    voltage: f:0da24260
+    drift: d:7ff0000000000000
+  }
+}
+---
+f_double: d:0000000000000000
+f_float: f:7f800000
+f_int32: -2147483648
+f_int64: -1
+f_uint32: 0
+f_uint64: 704
+f_sint32: 1
+f_sint64: 1
+f_fixed32: 0
+f_fixed64: 18446744073709551615
+f_sfixed32: 381
+f_sfixed64: 0
+f_bool: false
+f_string: x:
+f_bytes: x:
+f_enum: 0
+o_double: d:0000000000000000
+o_float: f:80000000
+o_uint32: 4294967295
+o_string: x:31617a326331787963633263
+o_enum: 2
+r_double[0]: d:c002000000000000
+r_double[1]: d:3ff8000000000000
+r_float[0]: f:0da24260
+r_float[1]: f:7149f2ca
+r_int32[0]: 2147483647
+r_int32[1]: 598632941
+r_int32[2]: -2147483648
+r_uint32[0]: 395
+r_sint32[0]: -2147483648
+r_sint64[0]: -11
+r_fixed64[0]: 18446744073709551615
+r_sfixed32[0]: 0
+r_sfixed32[1]: 0
+r_sfixed32[2]: -1
+r_sfixed64[0]: 518
+r_sfixed64[1]: 764785831702991886
+r_sfixed64[2]: -759
+r_bool[0]: false
+r_bool[1]: false
+r_bool[2]: true
+r_string[0]: x:
+r_unpacked_int32[0]: 877
+r_unpacked_double[0]: d:c0df527a358edf80
+r_unpacked_double[1]: d:46293e5939a08cea
+r_unpacked_double[2]: d:7ff0000000000000
+m_int64_string[] {
+  key: 0
+  value: x:
+}
+m_int64_string[] {
+  key: 7251107362795217753
+  value: x:
+}
+m_bool_double[] {
+  key: true
+  value: d:c002000000000000
+}
+m_string_sample[] {
+  key: x:6c696e650a627265616b
+  value {
+    timestamp_ms: 1
+    status: 1
+    diagnostics {
+      calibrated: true
+      temperature: f:494a57dc
+      voltage: f:0da24260
+      drift: d:4126046fed2c8122
+    }
+  }
+}
+m_string_sample[] {
+  key: x:f09f9982
+  value {
+    timestamp_ms: -1
+    status: -906
+    pressure: f:7f800000
+    diagnostics {
+      calibrated: true
+      temperature: f:80000000
+    }
+  }
+}
+m_uint32_color[] {
+  key: 0
+  value: 1
+}
+m_uint32_color[] {
+  key: 1
+  value: 2
+}
+recursive {
+  f_double: d:0000000000000000
+  f_float: f:7149f2ca
+  f_int32: 6
+  f_int64: 0
+  f_uint32: 0
+  f_uint64: 3655890001976995917
+  f_sint32: 2147483647
+  f_sint64: -505
+  f_fixed32: 1
+  f_fixed64: 3257569917752971622
+  f_sfixed32: -1
+  f_sfixed64: 540
+  f_bool: true
+  f_string: x:613333787a30625f63327a633030615f33
+  f_bytes: x:eee85e69
+  f_enum: 77
+  o_float: f:3fc00000
+  o_bool: true
+  o_enum: 77
+  r_double[0]: d:fff0000000000000
+  r_float[0]: f:491c4f8b
+  r_float[1]: f:c0100000
+  r_uint32[0]: 0
+  r_uint32[1]: 4251990127
+  r_uint64[0]: 3782917728421671296
+  r_uint64[1]: 18446744073709551615
+  r_uint64[2]: 18446744073709551615
+  r_sint32[0]: 14462444
+  r_sint64[0]: 9223372036854775807
+  r_fixed32[0]: 235
+  r_fixed32[1]: 2129979566
+  r_fixed32[2]: 3718310087
+  r_fixed64[0]: 152
+  r_fixed64[1]: 18446744073709551615
+  r_fixed64[2]: 276
+  r_sfixed32[0]: -1
+  r_sfixed32[1]: -2147483648
+  r_sfixed32[2]: 0
+  r_sfixed64[0]: 9223372036854775807
+  r_bool[0]: true
+  r_bytes[0]: x:d1f864326af221bf600a
+  r_enum[0]: 0
+  r_unpacked_int32[0]: -2147483648
+  r_unpacked_int32[1]: 1
+  r_unpacked_double[0]: d:46293e5939a08cea
+  r_unpacked_double[1]: d:c002000000000000
+  m_string_int32[] {
+    key: x:
+    value: 589
+  }
+  m_string_int32[] {
+    key: x:f09f9982
+    value: -127
+  }
+  m_int64_string[] {
+    key: 9223372036854775807
+    value: x:e697a5e69cac
+  }
+  m_uint32_color[] {
+    key: 0
+    value: 2
+  }
+  m_uint32_color[] {
+    key: 1
+    value: 1
+  }
+  recursive {
+    f_double: d:8000000000000000
+    f_float: f:ff800000
+    f_int32: -1
+    f_int64: 9223372036854775807
+    f_uint32: 165
+    f_uint64: 0
+    f_sint32: -1
+    f_sint64: -3496716204328870580
+    f_fixed32: 4294967295
+    f_fixed64: 0
+    f_sfixed32: -2147483648
+    f_sfixed64: 0
+    f_bool: false
+    f_string: x:
+    f_bytes: x:64
+    f_enum: 0
+    o_float: f:7149f2ca
+    o_int64: 0
+    o_sint64: 0
+    o_bool: false
+    o_string: x:68c3a96c6c6f
+    o_bytes: x:6fff
+    o_enum: 2
+    r_double[0]: d:fff0000000000000
+    r_double[1]: d:0000000000000000
+    r_double[2]: d:46293e5939a08cea
+    r_float[0]: f:c0100000
+    r_int32[0]: -200
+    r_int32[1]: 1
+    r_int64[0]: -1
+    r_int64[1]: 394
+    r_int64[2]: 0
+    r_uint32[0]: 0
+    r_uint64[0]: 0
+    r_uint64[1]: 0
+    r_sint32[0]: 0
+    r_sint32[1]: -1
+    r_sint64[0]: -1
+    r_fixed32[0]: 714
+    r_fixed32[1]: 1
+    r_fixed64[0]: 18446744073709551615
+    r_fixed64[1]: 0
+    r_fixed64[2]: 0
+    r_sfixed32[0]: 2147483647
+    r_sfixed64[0]: -1
+    r_bool[0]: false
+    r_string[0]: x:61
+    r_enum[0]: 77
+    r_enum[1]: 77
+    r_enum[2]: -3
+    r_unpacked_int32[0]: 2147483647
+    r_unpacked_double[0]: d:7ff0000000000000
+    m_int64_string[] {
+      key: 1
+      value: x:3179323331613061316331793062793132305f
+    }
+    m_int64_string[] {
+      key: 4547848413731812617
+      value: x:62785f625f625f793379785f62
+    }
+    m_int64_string[] {
+      key: 726
+      value: x:5f326331636332
+    }
+    m_bool_double[] {
+      key: false
+      value: d:0000000000000000
+    }
+    m_bool_double[] {
+      key: true
+      value: d:3ff8000000000000
+    }
+    m_string_sample[] {
+      key: x:5f317a7a797a3333327933333230
+      value {
+        timestamp_ms: 3366479092363771463
+        pressure: f:c0100000
+        flow: f:0da24260
+      }
+    }
+    m_string_sample[] {
+      key: x:f09f9982
+      value {
+        timestamp_ms: 8795716157452782450
+        status: 2147483647
+      }
+    }
+    m_uint32_color[] {
+      key: 3209943140
+      value: 77
+    }
+    m_uint32_color[] {
+      key: 4294967295
+      value: -3
+    }
+    recursive {
+      f_double: d:46293e5939a08cea
+      f_float: f:00000000
+      f_int32: -2147483648
+      f_int64: 1
+      f_uint32: 1
+      f_uint64: 0
+      f_sint32: -1
+      f_sint64: 9223372036854775807
+      f_fixed32: 0
+      f_fixed64: 693758849750154935
+      f_sfixed32: 0
+      f_sfixed64: -1
+      f_bool: true
+      f_string: x:32633363
+      f_bytes: x:74eaa6f656c99cfb
+      f_enum: 1
+      o_int64: -25
+      o_uint32: 965
+      r_double[0]: d:7ff0000000000000
+      r_int32[0]: 946
+      r_int64[0]: 0
+      r_int64[1]: 219
+      r_sint64[0]: 725
+      r_sint64[1]: 0
+      r_fixed32[0]: 4294967295
+      r_fixed64[0]: 1
+      r_fixed64[1]: 0
+      r_fixed64[2]: 1
+      r_sfixed32[0]: 0
+      r_sfixed32[1]: -1
+      r_sfixed32[2]: 0
+      r_sfixed64[0]: 8759240126036648292
+      r_sfixed64[1]: 9223372036854775807
+      r_sfixed64[2]: 1
+      r_bool[0]: false
+      r_bool[1]: false
+      r_string[0]: x:e697a5e69cac
+      r_string[1]: x:e697a5e69cac
+      r_string[2]: x:
+      r_bytes[0]: x:
+      r_bytes[1]: x:32a40abbcd61c2
+      r_enum[0]: -3
+      r_enum[1]: 77
+      r_enum[2]: 1
+      r_unpacked_double[0]: d:7ff0000000000000
+      r_unpacked_double[1]: d:c002000000000000
+      r_unpacked_double[2]: d:c002000000000000
+      m_string_int32[] {
+        key: x:
+        value: 2147483647
+      }
+      m_string_int32[] {
+        key: x:61
+        value: -663
+      }
+      m_string_int32[] {
+        key: x:7930326261305f3179787a5f31
+        value: -2147483648
+      }
+      m_int64_string[] {
+        key: 0
+        value: x:6c696e650a627265616b
+      }
+      m_bool_double[] {
+        key: false
+        value: d:3ff8000000000000
+      }
+      m_bool_double[] {
+        key: true
+        value: d:39b4484bfeebc2a0
+      }
+      m_uint32_color[] {
+        key: 0
+        value: 2
+      }
+      m_uint32_color[] {
+        key: 330
+        value: 77
+      }
+    }
+    samples[0] {
+      timestamp_ms: 439
+      status: -2147483648
+      pressure: f:7fc00000
+    }
+    samples[1] {
+      timestamp_ms: 1
+      status: 0
+    }
+  }
+  samples[0] {
+    timestamp_ms: -40
+    pressure: f:7f800000
+    flow: f:00000000
+    diagnostics {
+      calibrated: true
+      drift: d:fff0000000000000
+    }
+  }
+  c_string: x:f09f9982
+}
+samples[0] {
+  timestamp_ms: -4772318220571264517
+  status: 1
+  pressure: f:00000000
+  diagnostics {
+    calibrated: true
+    temperature: f:7149f2ca
+  }
+}
+---
+f_double: d:7ff0000000000000
+f_float: f:80000000
+f_int32: -1
+f_int64: 2776829005715252313
+f_uint32: 4294967295
+f_uint64: 18446744073709551615
+f_sint32: -1
+f_sint64: 0
+f_fixed32: 0
+f_fixed64: 1
+f_sfixed32: -2147483648
+f_sfixed64: -6820498458322056892
+f_bool: false
+f_string: x:68c3a96c6c6f
+f_bytes: x:
+f_enum: 77
+o_int64: -9223372036854775808
+o_uint32: 0
+o_sint64: 9223372036854775807
+o_bool: false
+o_string: x:61
+o_bytes: x:3a
+r_float[0]: f:0da24260
+r_float[1]: f:3fc00000
+r_int32[0]: 445
+r_int32[1]: 0
+r_int64[0]: -1
+r_int64[1]: -578
+r_uint32[0]: 0
+r_uint32[1]: 0
+r_uint32[2]: 363
+r_uint64[0]: 0
+r_uint64[1]: 0
+r_sint32[0]: -2147483648
+r_sint32[1]: 1
+r_sint32[2]: 0
+r_sint64[0]: 9223372036854775807
+r_sint64[1]: 1
+r_fixed32[0]: 735
+r_fixed64[0]: 0
+r_sfixed32[0]: -663694489
+r_sfixed32[1]: 1
+r_sfixed32[2]: 237
+r_sfixed64[0]: 0
+r_bool[0]: false
+r_bool[1]: true
+r_string[0]: x:68c3a96c6c6f
+r_string[1]: x:6c696e650a627265616b
+r_string[2]: x:6c696e650a627265616b
+r_bytes[0]: x:32c4a76fab84e71799
+r_bytes[1]: x:e98c3450c7
+r_enum[0]: 1
+r_enum[1]: 1
+r_unpacked_int32[0]: -1
+r_unpacked_int32[1]: 0
+r_unpacked_double[0]: d:7ff8000000000000
+r_unpacked_double[1]: d:3ff8000000000000
+r_unpacked_double[2]: d:c002000000000000
+m_string_int32[] {
+  key: x:
+  value: 0
+}
+m_string_int32[] {
+  key: x:31
+  value: -2147483648
+}
+m_string_int32[] {
+  key: x:e697a5e69cac
+  value: 2147483647
+}
+m_int64_string[] {
+  key: -501
+  value: x:f09f9982
+}
+m_int64_string[] {
+  key: 0
+  value: x:6c696e650a627265616b
+}
+m_int64_string[] {
+  key: 1420227742521577809
+  value: x:7461620971756f746522
+}
+m_bool_double[] {
+  key: true
+  value: d:8000000000000000
+}
+m_string_sample[] {
+  key: x:61
+  value {
+    timestamp_ms: 0
+    status: 2147483647
+    diagnostics {
+      temperature: f:7fc00000
+    }
+  }
+}
+m_string_sample[] {
+  key: x:68c3a96c6c6f
+  value {
+    timestamp_ms: 54
+    pressure: f:00000000
+    diagnostics {
+      calibrated: true
+      temperature: f:3fc00000
+      voltage: f:3fc00000
+      drift: d:39b4484bfeebc2a0
+    }
+  }
+}
+m_string_sample[] {
+  key: x:79
+  value {
+    timestamp_ms: 0
+    diagnostics {
+      voltage: f:3fc00000
+    }
+  }
+}
+m_uint32_color[] {
+  key: 0
+  value: 77
+}
+recursive {
+  f_double: d:410b9f0f3da8ecd0
+  f_float: f:7149f2ca
+  f_int32: -2147483648
+  f_int64: 1080803011641919175
+  f_uint32: 744502171
+  f_uint64: 593
+  f_sint32: 1
+  f_sint64: 0
+  f_fixed32: 4294967295
+  f_fixed64: 5713711508791845733
+  f_sfixed32: -164
+  f_sfixed64: -499
+  f_bool: true
+  f_string: x:6c696e650a627265616b
+  f_bytes: x:2d494b1ca7e67987db69
+  f_enum: 0
+  o_double: d:39b4484bfeebc2a0
+  o_int64: 9223372036854775807
+  o_uint32: 0
+  o_sint64: -9223372036854775808
+  o_string: x:6c696e650a627265616b
+  o_enum: 77
+  r_double[0]: d:c11769009ee438e0
+  r_double[1]: d:c002000000000000
+  r_double[2]: d:3ff8000000000000
+  r_float[0]: f:00000000
+  r_int32[0]: 1
+  r_int32[1]: -1
+  r_int32[2]: 534075592
+  r_uint32[0]: 0
+  r_uint64[0]: 18446744073709551615
+  r_uint64[1]: 0
+  r_uint64[2]: 0
+  r_sint64[0]: -474
+  r_sint64[1]: 2480675621266398229
+  r_fixed32[0]: 338
+  r_fixed32[1]: 0
+  r_fixed32[2]: 0
+  r_fixed64[0]: 1
+  r_fixed64[1]: 615
+  r_sfixed32[0]: 1
+  r_sfixed32[1]: 1
+  r_sfixed32[2]: 2147483647
+  r_bool[0]: true
+  r_string[0]: x:3330323261316179337962
+  r_string[1]: x:
+  r_enum[0]: 77
+  r_enum[1]: -3
+  r_unpacked_int32[0]: -930470202
+  m_string_int32[] {
+    key: x:627a
+    value: -1
+  }
+  m_int64_string[] {
+    key: -1
+    value: x:
+  }
+  m_int64_string[] {
+    key: -3817053180382479344
+    value: x:
+  }
+  m_int64_string[] {
+    key: -9223372036854775808
+    value: x:68c3a96c6c6f
+  }
+  m_string_sample[] {
+    key: x:
+    value {
+      timestamp_ms: 0
+      status: 1862892064
+      pressure: f:0da24260
+    }
+  }
+  m_uint32_color[] {
+    key: 1346717158
+    value: 0
+  }
+  m_uint32_color[] {
+    key: 1923079392
+    value: 77
+  }
+  m_uint32_color[] {
+    key: 237346974
+    value: 77
+  }
+  recursive {
+    f_double: d:410c90a9fe2d4158
+    f_float: f:7fc00000
+    f_int32: 1979724939
+    f_int64: -1
+    f_uint32: 0
+    f_uint64: 0
+    f_sint32: 1
+    f_sint64: -1
+    f_fixed32: 0
+    f_fixed64: 179
+    f_sfixed32: 27
+    f_sfixed64: -644457467396706567
+    f_bool: false
+    f_string: x:61
+    f_bytes: x:6a38195bab
+    f_enum: 0
+    o_int64: -9223372036854775808
+    o_uint32: 722
+    o_bool: true
+    r_float[0]: f:7fc00000
+    r_int32[0]: -517
+    r_int32[1]: -2147483648
+    r_int64[0]: -199
+    r_int64[1]: 0
+    r_int64[2]: 0
+    r_uint32[0]: 793
+    r_uint32[1]: 3568263400
+    r_uint32[2]: 4294967295
+    r_uint64[0]: 0
+    r_sint32[0]: 493
+    r_sint32[1]: 1
+    r_sint32[2]: -1
+    r_sint64[0]: -1
+    r_sint64[1]: -9223372036854775808
+    r_fixed32[0]: 0
+    r_fixed32[1]: 1
+    r_fixed32[2]: 0
+    r_fixed64[0]: 1
+    r_sfixed64[0]: 0
+    r_bool[0]: false
+    r_bool[1]: true
+    r_string[0]: x:68c3a96c6c6f
+    r_string[1]: x:61
+    r_bytes[0]: x:9ab715
+    r_bytes[1]: x:5d4ccf84ea1b125366b7
+    r_enum[0]: 1
+    r_enum[1]: -3
+    r_enum[2]: -3
+    r_unpacked_int32[0]: -1
+    r_unpacked_int32[1]: 332590110
+    r_unpacked_double[0]: d:46293e5939a08cea
+    r_unpacked_double[1]: d:39b4484bfeebc2a0
+    r_unpacked_double[2]: d:fff0000000000000
+    m_int64_string[] {
+      key: -1
+      value: x:783078785f7832307a7a
+    }
+    m_int64_string[] {
+      key: -9223372036854775808
+      value: x:61
+    }
+    m_int64_string[] {
+      key: 9223372036854775807
+      value: x:6c696e650a627265616b
+    }
+    m_string_sample[] {
+      key: x:3130
+      value {
+        timestamp_ms: 0
+        status: 0
+        pressure: f:0da24260
+        flow: f:7f800000
+      }
+    }
+    m_string_sample[] {
+      key: x:61
+      value {
+        timestamp_ms: 0
+        status: -1505037568
+        pressure: f:0da24260
+        flow: f:00000000
+      }
+    }
+    samples[0] {
+      timestamp_ms: -9223372036854775808
+    }
+  }
+  c_int32: -2147483648
+}
+samples[0] {
+  timestamp_ms: -1
+  pressure: f:80000000
+  flow: f:3fc00000
+}
+samples[1] {
+  timestamp_ms: 360
+  status: 691
+  diagnostics {
+    calibrated: true
+    temperature: f:c0100000
+  }
+}
+samples[2] {
+  timestamp_ms: 0
+  status: 0
+  pressure: f:c0100000
+}
+c_string: x:7461620971756f746522
+---
+f_double: d:46293e5939a08cea
+f_float: f:80000000
+f_int32: 1
+f_int64: 0
+f_uint32: 790
+f_uint64: 18446744073709551615
+f_sint32: 1
+f_sint64: 7555571674164146543
+f_fixed32: 0
+f_fixed64: 18446744073709551615
+f_sfixed32: 1
+f_sfixed64: 0
+f_bool: true
+f_string: x:f09f9982
+f_bytes: x:3b4ce6dfaef9
+f_enum: 2
+o_int64: -1
+o_sint64: 0
+o_bytes: x:4ff9
+o_enum: 0
+r_double[0]: d:fff0000000000000
+r_double[1]: d:7ff8000000000000
+r_uint32[0]: 1479797417
+r_uint32[1]: 565
+r_uint64[0]: 1
+r_uint64[1]: 16814519718042585748
+r_uint64[2]: 0
+r_sint32[0]: -1710874226
+r_sint32[1]: -2147483648
+r_fixed32[0]: 0
+r_fixed32[1]: 1
+r_fixed64[0]: 0
+r_fixed64[1]: 18446744073709551615
+r_fixed64[2]: 132
+r_sfixed32[0]: 818
+r_sfixed64[0]: 0
+r_sfixed64[1]: 7208062270054183041
+r_bool[0]: true
+r_bool[1]: true
+r_bool[2]: true
+r_bytes[0]: x:069e88133f
+r_enum[0]: 77
+r_enum[1]: 0
+r_unpacked_int32[0]: 1
+r_unpacked_int32[1]: -2147483648
+r_unpacked_int32[2]: -1
+r_unpacked_double[0]: d:fff0000000000000
+m_string_int32[] {
+  key: x:6c696e650a627265616b
+  value: 0
+}
+m_string_int32[] {
+  key: x:7a6330
+  value: -933
+}
+m_string_int32[] {
+  key: x:7a7a7a7a78617862
+  value: -2147483648
+}
+m_int64_string[] {
+  key: -375
+  value: x:3178627831303233
+}
+m_int64_string[] {
+  key: 0
+  value: x:6c696e650a627265616b
+}
+m_int64_string[] {
+  key: 9223372036854775807
+  value: x:7461620971756f746522
+}
+m_bool_double[] {
+  key: false
+  value: d:0000000000000000
+}
+m_bool_double[] {
+  key: true
+  value: d:3ff8000000000000
+}
+m_uint32_color[] {
+  key: 0
+  value: 0
+}
+m_uint32_color[] {
+  key: 3605669621
+  value: -3
+}
+samples[0] {
+  timestamp_ms: -1647288699442921950
+  diagnostics {
+  }
+}
+samples[1] {
+  timestamp_ms: 9223372036854775807
+  status: 2147483647
+  pressure: f:00000000
+  flow: f:7fc00000
+}
+samples[2] {
+  timestamp_ms: 1
+  status: 1
+  pressure: f:ff800000
+  diagnostics {
+    voltage: f:c8aaebbb
+    drift: d:0000000000000000
+  }
+}
+c_string: x:f09f9982
+---
+f_double: d:0000000000000000
+f_float: f:0da24260
+f_int32: -2147483648
+f_int64: 1
+f_uint32: 0
+f_uint64: 4977743841399723749
+f_sint32: -1
+f_sint64: 8008383457623190425
+f_fixed32: 0
+f_fixed64: 306
+f_sfixed32: -1
+f_sfixed64: 63
+f_bool: false
+f_string: x:68c3a96c6c6f
+f_bytes: x:8920964714aabe40
+f_enum: 0
+o_double: d:8000000000000000
+o_int64: 0
+o_sint64: -9223372036854775808
+o_bool: false
+o_enum: 1
+r_double[0]: d:8000000000000000
+r_float[0]: f:0da24260
+r_int32[0]: 784
+r_int64[0]: -4459313225982926972
+r_int64[1]: -1
+r_int64[2]: -1
+r_uint32[0]: 4294967295
+r_uint64[0]: 1
+r_uint64[1]: 18446744073709551615
+r_sint32[0]: -572
+r_sint32[1]: 1694229587
+r_sint32[2]: 0
+r_sint64[0]: 0
+r_sint64[1]: 9223372036854775807
+r_fixed32[0]: 4294967295
+r_fixed64[0]: 16461109137885428423
+r_fixed64[1]: 18446744073709551615
+r_sfixed32[0]: -1123333970
+r_sfixed32[1]: 930462095
+r_sfixed32[2]: -1982083480
+r_enum[0]: 2
+r_enum[1]: 2
+r_enum[2]: -3
+r_unpacked_int32[0]: 1243406703
+r_unpacked_int32[1]: 1
+r_unpacked_int32[2]: 1290124629
+r_unpacked_double[0]: d:46293e5939a08cea
+r_unpacked_double[1]: d:7ff8000000000000
+r_unpacked_double[2]: d:c1148388b7619dde
+m_string_int32[] {
+  key: x:
+  value: 1
+}
+m_int64_string[] {
+  key: -2877834416409055179
+  value: x:61796378317963317a7963325f
+}
+m_int64_string[] {
+  key: -9223372036854775808
+  value: x:7a3362636331313163303378
+}
+m_int64_string[] {
+  key: 0
+  value: x:68c3a96c6c6f
+}
+m_bool_double[] {
+  key: false
+  value: d:0000000000000000
+}
+m_bool_double[] {
+  key: true
+  value: d:0000000000000000
+}
+m_string_sample[] {
+  key: x:
+  value {
+    timestamp_ms: -208
+    flow: f:80000000
+    diagnostics {
+      calibrated: false
+      voltage: f:c823df4a
+    }
+  }
+}
+m_string_sample[] {
+  key: x:7461620971756f746522
+  value {
+    timestamp_ms: 1
+    status: 2147483647
+    pressure: f:80000000
+    flow: f:00000000
+    diagnostics {
+      voltage: f:0da24260
+      drift: d:39b4484bfeebc2a0
+    }
+  }
+}
+m_uint32_color[] {
+  key: 0
+  value: 1
+}
+m_uint32_color[] {
+  key: 313001110
+  value: -3
+}
+recursive {
+  f_double: d:7ff0000000000000
+  f_float: f:7fc00000
+  f_int32: 2147483647
+  f_int64: 0
+  f_uint32: 0
+  f_uint64: 0
+  f_sint32: 0
+  f_sint64: 0
+  f_fixed32: 0
+  f_fixed64: 0
+  f_sfixed32: 947
+  f_sfixed64: -481
+  f_bool: false
+  f_string: x:
+  f_bytes: x:
+  f_enum: 0
+  o_float: f:3fc00000
+  o_int64: -1
+  o_uint32: 0
+  o_string: x:
+  o_bytes: x:13fcc042
+  o_enum: -3
+  r_double[0]: d:46293e5939a08cea
+  r_double[1]: d:c1011760ff188c70
+  r_double[2]: d:fff0000000000000
+  r_float[0]: f:80000000
+  r_float[1]: f:3fc00000
+  r_int32[0]: -64615154
+  r_sint64[0]: 0
+  r_fixed64[0]: 18446744073709551615
+  r_fixed64[1]: 0
+  r_fixed64[2]: 68
+  r_sfixed32[0]: 0
+  r_sfixed64[0]: -9223372036854775808
+  r_sfixed64[1]: 8278989079666836375
+  r_bool[0]: true
+  r_bool[1]: false
+  r_bool[2]: false
+  r_string[0]: x:31
+  r_bytes[0]: x:3cdc
+  r_bytes[1]: x:840f3a
+  r_unpacked_int32[0]: -2147483648
+  r_unpacked_int32[1]: 1
+  r_unpacked_double[0]: d:0000000000000000
+  r_unpacked_double[1]: d:fff0000000000000
+  m_string_int32[] {
+    key: x:617879613031323130337963793378333362
+    value: -1
+  }
+  m_string_int32[] {
+    key: x:68c3a96c6c6f
+    value: -1
+  }
+  m_int64_string[] {
+    key: 0
+    value: x:79796179615f787832635f7a335f3032
+  }
+  m_int64_string[] {
+    key: 7211975563033598548
+    value: x:6331
+  }
+  m_bool_double[] {
+    key: false
+    value: d:c002000000000000
+  }
+  m_bool_double[] {
+    key: true
+    value: d:40f0a53aba9c0e80
+  }
+  m_uint32_color[] {
+    key: 4023625949
+    value: 2
+  }
+  m_uint32_color[] {
+    key: 722
+    value: 77
+  }
+  samples[0] {
+    timestamp_ms: -1
+    status: 1
+  }
+  samples[1] {
+    timestamp_ms: 0
+    flow: f:4928da97
+    diagnostics {
+      calibrated: false
+      temperature: f:0da24260
+      voltage: f:7f800000
+      drift: d:c120deaa257c6416
+    }
+  }
+  c_string: x:61
+}
+samples[0] {
+  timestamp_ms: 8784290117347720
+  status: 27751329
+  flow: f:0da24260
+}
+---
+f_double: d:39b4484bfeebc2a0
+f_float: f:ff800000
+f_int32: 0
+f_int64: -1
+f_uint32: 0
+f_uint64: 0
+f_sint32: -1
+f_sint64: -632
+f_fixed32: 1
+f_fixed64: 14883454927282029383
+f_sfixed32: 0
+f_sfixed64: 0
+f_bool: false
+f_string: x:61
+f_bytes: x:
+f_enum: 1
+o_double: d:0000000000000000
+o_int64: -6461085710821630438
+o_sint64: -1
+o_bool: true
+o_bytes: x:612eee
+o_enum: 77
+r_double[0]: d:8000000000000000
+r_double[1]: d:8000000000000000
+r_float[0]: f:7149f2ca
+r_float[1]: f:7f800000
+r_float[2]: f:80000000
+r_int32[0]: 2147483647
+r_int32[1]: 0
+r_int64[0]: 1
+r_int64[1]: -9223372036854775808
+r_int64[2]: -9020266965700120583
+r_uint64[0]: 4728226512611570812
+r_sint32[0]: -2147483648
+r_sint64[0]: -1603951963186747444
+r_fixed32[0]: 0
+r_fixed32[1]: 111
+r_fixed64[0]: 0
+r_fixed64[1]: 46
+r_sfixed32[0]: -611430356
+r_sfixed32[1]: 1
+r_sfixed32[2]: -2147483648
+r_sfixed64[0]: -6665016778851518618
+r_sfixed64[1]: 9223372036854775807
+r_bool[0]: true
+r_bool[1]: true
+r_bytes[0]: x:e3320f
+r_bytes[1]: x:b59ec83d6f54
+r_enum[0]: 1
+r_enum[1]: -3
+r_unpacked_int32[0]: 224
+r_unpacked_double[0]: d:7ff8000000000000
+r_unpacked_double[1]: d:fff0000000000000
+r_unpacked_double[2]: d:46293e5939a08cea
+m_string_int32[] {
+  key: x:68c3a96c6c6f
+  value: 1
+}
+m_string_int32[] {
+  key: x:6c696e650a627265616b
+  value: 0
+}
+m_int64_string[] {
+  key: -2512182417114347333
+  value: x:
+}
+m_int64_string[] {
+  key: 1
+  value: x:3362637a33787a62636279797a61
+}
+m_bool_double[] {
+  key: true
+  value: d:c1169974d38c05ce
+}
+m_string_sample[] {
+  key: x:e697a5e69cac
+  value {
+    timestamp_ms: 212
+    status: 1120891540
+  }
+}
+m_uint32_color[] {
+  key: 1
+  value: -3
+}
+m_uint32_color[] {
+  key: 4294967295
+  value: 2
+}
+recursive {
+  f_double: d:0000000000000000
+  f_float: f:c6e33e8b
+  f_int32: 2147483647
+  f_int64: 3805022385459645058
+  f_uint32: 767
+  f_uint64: 12455600837154552207
+  f_sint32: 0
+  f_sint64: -1
+  f_fixed32: 0
+  f_fixed64: 173
+  f_sfixed32: 0
+  f_sfixed64: 648
+  f_bool: true
+  f_string: x:e697a5e69cac
+  f_bytes: x:
+  f_enum: -3
+  o_double: d:46293e5939a08cea
+  o_int64: -1
+  o_uint32: 0
+  o_bool: true
+  o_enum: 0
+  r_double[0]: d:8000000000000000
+  r_double[1]: d:7ff8000000000000
+  r_double[2]: d:0000000000000000
+  r_float[0]: f:7149f2ca
+  r_float[1]: f:80000000
+  r_float[2]: f:c7b50826
+  r_int32[0]: 0
+  r_uint32[0]: 1
+  r_uint64[0]: 18446744073709551615
+  r_uint64[1]: 0
+  r_sint32[0]: -882021373
+  r_sint32[1]: 2147483647
+  r_sint32[2]: 2147483647
+  r_sint64[0]: -9223372036854775808
+  r_fixed32[0]: 0
+  r_fixed32[1]: 0
+  r_sfixed32[0]: 1
+  r_sfixed32[1]: 1793726091
+  r_sfixed64[0]: 1
+  r_sfixed64[1]: -9223372036854775808
+  r_sfixed64[2]: 9223372036854775807
+  r_string[0]: x:f09f9982
+  r_bytes[0]: x:65bc77b2e073
+  r_unpacked_int32[0]: 2147483647
+  r_unpacked_int32[1]: 1
+  r_unpacked_int32[2]: 2147483647
+  r_unpacked_double[0]: d:7ff8000000000000
+  r_unpacked_double[1]: d:7ff0000000000000
+  r_unpacked_double[2]: d:c1289b329806deb9
+  m_int64_string[] {
+    key: 1
+    value: x:7461620971756f746522
+  }
+  m_bool_double[] {
+    key: false
+    value: d:fff0000000000000
+  }
+  m_bool_double[] {
+    key: true
+    value: d:8000000000000000
+  }
+  m_string_sample[] {
+    key: x:
+    value {
+      timestamp_ms: 1
+      status: -986
+      flow: f:49591871
+      diagnostics {
+      }
+    }
+  }
+  m_string_sample[] {
+    key: x:7461620971756f746522
+    value {
+      timestamp_ms: -1
+      status: 2147483647
+      pressure: f:7f800000
+      flow: f:7149f2ca
+    }
+  }
+  m_string_sample[] {
+    key: x:f09f9982
+    value {
+      timestamp_ms: 9223372036854775807
+      diagnostics {
+        temperature: f:48a583a8
+        drift: d:7ff8000000000000
+      }
+    }
+  }
+  samples[0] {
+    timestamp_ms: 9223372036854775807
+    pressure: f:80000000
+    flow: f:c0100000
+  }
+  samples[1] {
+    timestamp_ms: 0
+    pressure: f:80000000
+    flow: f:7fc00000
+    diagnostics {
+      temperature: f:7f800000
+      voltage: f:c0100000
+      drift: d:0000000000000000
+    }
+  }
+  c_int32: 526
+}
+samples[0] {
+  timestamp_ms: -1
+  status: 2147483647
+  pressure: f:00000000
+  flow: f:ff800000
+  diagnostics {
+    temperature: f:7149f2ca
+    voltage: f:ff800000
+    drift: d:fff0000000000000
+  }
+}
+c_sample {
+  timestamp_ms: 0
+  status: -1
+  diagnostics {
+    voltage: f:0da24260
+  }
+}
+---
+f_double: d:0000000000000000
+f_float: f:00000000
+f_int32: -634
+f_int64: -481
+f_uint32: 0
+f_uint64: 0
+f_sint32: -225
+f_sint64: 1
+f_fixed32: 0
+f_fixed64: 0
+f_sfixed32: 1
+f_sfixed64: -9135312386322700055
+f_bool: true
+f_string: x:68c3a96c6c6f
+f_bytes: x:
+f_enum: 2
+o_int64: 1
+o_bytes: x:fe99996f
+r_double[0]: d:412b3a231bd274d0
+r_double[1]: d:39b4484bfeebc2a0
+r_double[2]: d:c002000000000000
+r_float[0]: f:c0100000
+r_float[1]: f:80000000
+r_int32[0]: -1
+r_int64[0]: -1
+r_uint32[0]: 2902988137
+r_uint32[1]: 0
+r_uint64[0]: 1
+r_uint64[1]: 0
+r_uint64[2]: 0
+r_sint32[0]: 2147483647
+r_sint32[1]: 2147483647
+r_sint32[2]: 0
+r_sint64[0]: -1
+r_sint64[1]: 1
+r_sint64[2]: 1298220619011093549
+r_fixed32[0]: 0
+r_fixed32[1]: 3290866880
+r_fixed32[2]: 3204774455
+r_fixed64[0]: 0
+r_fixed64[1]: 0
+r_fixed64[2]: 5620363188924774571
+r_sfixed32[0]: 6851992
+r_sfixed64[0]: -1
+r_bool[0]: false
+r_bool[1]: true
+r_string[0]: x:6c696e650a627265616b
+r_string[1]: x:f09f9982
+r_bytes[0]: x:
+r_bytes[1]: x:7b16
+r_bytes[2]: x:e4
+r_enum[0]: 0
+r_unpacked_int32[0]: 2147483647
+r_unpacked_int32[1]: -820
+r_unpacked_int32[2]: 1
+m_bool_double[] {
+  key: true
+  value: d:39b4484bfeebc2a0
+}
+m_uint32_color[] {
+  key: 0
+  value: 77
+}
+recursive {
+  f_double: d:c002000000000000
+  f_float: f:7149f2ca
+  f_int32: 0
+  f_int64: -1
+  f_uint32: 0
+  f_uint64: 0
+  f_sint32: -65379528
+  f_sint64: 0
+  f_fixed32: 0
+  f_fixed64: 0
+  f_sfixed32: -823116111
+  f_sfixed64: -1
+  f_bool: false
+  f_string: x:61
+  f_bytes: x:db58
+  f_enum: 0
+  o_float: f:80000000
+  o_string: x:e697a5e69cac
+  o_bytes: x:cea6b724
+  r_double[0]: d:c0fb26781a6af960
+  r_float[0]: f:00000000
+  r_float[1]: f:3fc00000
+  r_float[2]: f:c700d0d6
+  r_int32[0]: -508
+  r_int32[1]: 215
+  r_int64[0]: 5862885063308923329
+  r_int64[1]: -9223372036854775808
+  r_int64[2]: 9223372036854775807
+  r_uint32[0]: 0
+  r_uint32[1]: 0
+  r_uint32[2]: 2507785516
+  r_uint64[0]: 1
+  r_uint64[1]: 0
+  r_sint64[0]: -227
+  r_sint64[1]: 0
+  r_fixed32[0]: 1
+  r_sfixed32[0]: -728
+  r_sfixed64[0]: 1
+  r_sfixed64[1]: 9223372036854775807
+  r_sfixed64[2]: 9223372036854775807
+  r_bool[0]: true
+  r_bool[1]: true
+  r_bool[2]: true
+  r_bytes[0]: x:a0
+  r_enum[0]: 1
+  r_unpacked_double[0]: d:fff0000000000000
+  r_unpacked_double[1]: d:7ff8000000000000
+  r_unpacked_double[2]: d:7ff0000000000000
+  m_string_int32[] {
+    key: x:68c3a96c6c6f
+    value: -2147483648
+  }
+  m_int64_string[] {
+    key: -1
+    value: x:7461620971756f746522
+  }
+  m_int64_string[] {
+    key: 1
+    value: x:f09f9982
+  }
+  m_string_sample[] {
+    key: x:6c696e650a627265616b
+    value {
+      timestamp_ms: -9223372036854775808
+      pressure: f:c0100000
+      flow: f:3fc00000
+    }
+  }
+  recursive {
+    f_double: d:0000000000000000
+    f_float: f:7149f2ca
+    f_int32: -905
+    f_int64: -3642098136392638904
+    f_uint32: 616
+    f_uint64: 13846807290148271511
+    f_sint32: -20290984
+    f_sint64: -2746888028254133131
+    f_fixed32: 0
+    f_fixed64: 0
+    f_sfixed32: -1
+    f_sfixed64: 1
+    f_bool: false
+    f_string: x:5f79616333615f326362305f3379
+    f_bytes: x:db4393
+    f_enum: 0
+    o_int64: -9223372036854775808
+    o_sint64: 369
+    o_bool: true
+    r_float[0]: f:7149f2ca
+    r_float[1]: f:00000000
+    r_float[2]: f:80000000
+    r_int64[0]: 333
+    r_int64[1]: -1
+    r_uint32[0]: 365
+    r_uint32[1]: 92834752
+    r_uint32[2]: 343
+    r_uint64[0]: 997
+    r_uint64[1]: 18446744073709551615
+    r_uint64[2]: 0
+    r_sint32[0]: -2147483648
+    r_fixed32[0]: 1
+    r_fixed32[1]: 0
+    r_fixed64[0]: 18446744073709551615
+    r_fixed64[1]: 1
+    r_fixed64[2]: 18446744073709551615
+    r_sfixed64[0]: -9223372036854775808
+    r_sfixed64[1]: 0
+    r_bool[0]: false
+    r_bool[1]: false
+    r_string[0]: x:626130625f7a5f79797a79337931
+    r_bytes[0]: x:4f3a64
+    r_bytes[1]: x:
+    r_bytes[2]: x:66409d1545d2cd75
+    r_unpacked_int32[0]: 45
+    r_unpacked_int32[1]: -2147483648
+    m_string_int32[] {
+      key: x:
+      value: 0
+    }
+    m_string_int32[] {
+      key: x:61
+      value: -1
+    }
+    m_string_int32[] {
+      key: x:627a5f5f33617830
+      value: -1
+    }
+    m_int64_string[] {
+      key: -1
+      value: x:e697a5e69cac
+    }
+    m_int64_string[] {
+      key: 259
+      value: x:
+    }
+    recursive {
+      f_double: d:3ff8000000000000
+      f_float: f:00000000
+      f_int32: -2147483648
+      f_int64: 1
+      f_uint32: 1
+      f_uint64: 0
+      f_sint32: 1
+      f_sint64: 0
+      f_fixed32: 197
+      f_fixed64: 809
+      f_sfixed32: 0
+      f_sfixed64: -885
+      f_bool: false
+      f_string: x:
+      f_bytes: x:36
+      f_enum: -3
+      o_double: d:7ff8000000000000
+      o_float: f:80000000
+      o_sint64: 544
+      o_bytes: x:
+      o_enum: 77
+      r_float[0]: f:ff800000
+      r_float[1]: f:7149f2ca
+      r_int32[0]: -2147483648
+      r_int64[0]: -1
+      r_int64[1]: -1
+      r_int64[2]: 5778240094019339976
+      r_uint32[0]: 867707892
+      r_uint32[1]: 1153080841
+      r_uint64[0]: 1
+      r_uint64[1]: 18446744073709551615
+      r_sint32[0]: 0
+      r_sint32[1]: -1
+      r_sint64[0]: 0
+      r_sint64[1]: 8159326256581343779
+      r_sint64[2]: 0
+      r_fixed64[0]: 0
+      r_fixed64[1]: 0
+      r_sfixed32[0]: 241
+      r_sfixed64[0]: -1
+      r_bool[0]: true
+      r_string[0]: x:79
+      r_bytes[0]: x:5f89b330a7806e359182
+      r_bytes[1]: x:a2e428630aced24e
+      r_enum[0]: 2
+      r_unpacked_int32[0]: 1
+      m_int64_string[] {
+        key: -3683406797742455138
+        value: x:
+      }
+      m_int64_string[] {
+        key: 9223372036854775807
+        value: x:3163637a6331623130336332305f617a
+      }
+      m_bool_double[] {
+        key: false
+        value: d:3ff8000000000000
+      }
+      m_uint32_color[] {
+        key: 0
+        value: 77
+      }
+    }
+    c_int32: -1461604874
+  }
+  samples[0] {
+    timestamp_ms: 1
+    pressure: f:496041ff
+    flow: f:ff800000
+    diagnostics {
+      calibrated: false
+      voltage: f:7fc00000
+    }
+  }
+  samples[1] {
+    timestamp_ms: -1
+    pressure: f:0da24260
+    diagnostics {
+      calibrated: true
+    }
+  }
+  samples[2] {
+    timestamp_ms: 0
+    status: 1
+    flow: f:7fc00000
+    diagnostics {
+      temperature: f:0da24260
+    }
+  }
+  c_string: x:7461620971756f746522
+}
+c_sample {
+  timestamp_ms: -1
+  pressure: f:3fc00000
+  flow: f:c0100000
+  diagnostics {
+    calibrated: false
+    temperature: f:00000000
+    voltage: f:c912fa0d
+  }
+}
+---
+f_double: d:0000000000000000
+f_float: f:0da24260
+f_int32: 1
+f_int64: 0
+f_uint32: 1
+f_uint64: 0
+f_sint32: -257
+f_sint64: -1
+f_fixed32: 0
+f_fixed64: 0
+f_sfixed32: 2147483647
+f_sfixed64: -9223372036854775808
+f_bool: true
+f_string: x:303261786378637a3232783131
+f_bytes: x:17abe7975a
+f_enum: 2
+o_int64: -7224774863546346575
+o_sint64: -9223372036854775808
+o_bool: true
+r_double[0]: d:410e8ab53560cec8
+r_float[0]: f:00000000
+r_float[1]: f:7f800000
+r_int32[0]: 2147483647
+r_int32[1]: -622325345
+r_int64[0]: 209
+r_uint32[0]: 0
+r_uint32[1]: 0
+r_uint32[2]: 2043749343
+r_uint64[0]: 18446744073709551615
+r_uint64[1]: 0
+r_sint32[0]: -2147483648
+r_sint32[1]: -33
+r_sint64[0]: -507
+r_fixed32[0]: 1
+r_sfixed32[0]: -2147483648
+r_sfixed64[0]: 2653655570325823586
+r_sfixed64[1]: 9223372036854775807
+r_sfixed64[2]: 1
+r_bool[0]: false
+r_string[0]: x:7461620971756f746522
+r_string[1]: x:68c3a96c6c6f
+r_string[2]: x:61
+r_enum[0]: -3
+r_enum[1]: 0
+r_unpacked_int32[0]: -1229974830
+r_unpacked_int32[1]: -447
+r_unpacked_double[0]: d:0000000000000000
+m_bool_double[] {
+  key: false
+  value: d:412c0fe6824e7f74
+}
+m_bool_double[] {
+  key: true
+  value: d:8000000000000000
+}
+recursive {
+  f_double: d:c002000000000000
+  f_float: f:c0100000
+  f_int32: -2147483648
+  f_int64: -9223372036854775808
+  f_uint32: 2818768270
+  f_uint64: 18446744073709551615
+  f_sint32: 907
+  f_sint64: 0
+  f_fixed32: 3770159942
+  f_fixed64: 218
+  f_sfixed32: 1
+  f_sfixed64: -1
+  f_bool: false
+  f_string: x:
+  f_bytes: x:
+  f_enum: -3
+  o_double: d:7ff8000000000000
+  o_float: f:493749af
+  o_int64: -9223372036854775808
+  o_sint64: 253624005415506649
+  o_bool: true
+  o_enum: 77
+  r_double[0]: d:39b4484bfeebc2a0
+  r_double[1]: d:3ff8000000000000
+  r_double[2]: d:0000000000000000
+  r_float[0]: f:80000000
+  r_float[1]: f:ff800000
+  r_int32[0]: -1
+  r_int32[1]: -2147483648
+  r_uint32[0]: 0
+  r_uint32[1]: 0
+  r_uint64[0]: 1
+  r_uint64[1]: 18446744073709551615
+  r_uint64[2]: 0
+  r_sint64[0]: -9223372036854775808
+  r_sint64[1]: -2716249546262827092
+  r_sint64[2]: -1
+  r_fixed32[0]: 0
+  r_fixed32[1]: 4294967295
+  r_fixed32[2]: 0
+  r_fixed64[0]: 1
+  r_fixed64[1]: 18446744073709551615
+  r_sfixed64[0]: -9223372036854775808
+  r_sfixed64[1]: -1
+  r_bool[0]: true
+  r_string[0]: x:f09f9982
+  r_string[1]: x:6c696e650a627265616b
+  r_bytes[0]: x:792ffc0b
+  r_enum[0]: 77
+  r_enum[1]: 0
+  r_enum[2]: 2
+  r_unpacked_int32[0]: 0
+  r_unpacked_int32[1]: 2147483647
+  r_unpacked_int32[2]: -1
+  r_unpacked_double[0]: d:7ff8000000000000
+  r_unpacked_double[1]: d:8000000000000000
+  r_unpacked_double[2]: d:8000000000000000
+  m_string_int32[] {
+    key: x:337863
+    value: 873
+  }
+  m_bool_double[] {
+    key: false
+    value: d:c104681dc34d5e4c
+  }
+  m_bool_double[] {
+    key: true
+    value: d:39b4484bfeebc2a0
+  }
+  m_uint32_color[] {
+    key: 0
+    value: 2
+  }
+  m_uint32_color[] {
+    key: 1072152377
+    value: 1
+  }
+  m_uint32_color[] {
+    key: 1612025033
+    value: -3
+  }
+  samples[0] {
+    timestamp_ms: 1
+    status: -2090823961
+    flow: f:3fc00000
+  }
+  samples[1] {
+    timestamp_ms: 0
+    pressure: f:00000000
+  }
+  c_sample {
+    timestamp_ms: 0
+    status: -2147483648
+    pressure: f:00000000
+    flow: f:7f800000
+    diagnostics {
+      calibrated: true
+      voltage: f:80000000
+    }
+  }
+}
+samples[0] {
+  timestamp_ms: 508
+  status: 283666012
+  diagnostics {
+    temperature: f:00000000
+  }
+}
+samples[1] {
+  timestamp_ms: 0
+  status: -1377106581
+  flow: f:c0100000
+}
+samples[2] {
+  timestamp_ms: -9223372036854775808
+  pressure: f:7f800000
+  diagnostics {
+    calibrated: true
+    drift: d:46293e5939a08cea
+  }
+}
+c_sample {
+  timestamp_ms: 0
+  status: -2147483648
+  pressure: f:80000000
+}
+---
+f_double: d:39b4484bfeebc2a0
+f_float: f:3fc00000
+f_int32: 0
+f_int64: 0
+f_uint32: 1
+f_uint64: 1
+f_sint32: 0
+f_sint64: -676725323266223789
+f_fixed32: 4294967295
+f_fixed64: 1
+f_sfixed32: 2147483647
+f_sfixed64: 9223372036854775807
+f_bool: true
+f_string: x:
+f_bytes: x:c5cb81b643dffa
+f_enum: 1
+o_float: f:7149f2ca
+o_int64: -4264431591094801913
+o_uint32: 4294967295
+o_sint64: -198
+o_string: x:7461620971756f746522
+o_bytes: x:2d02
+o_enum: 77
+r_double[0]: d:39b4484bfeebc2a0
+r_float[0]: f:0da24260
+r_int32[0]: 1
+r_int32[1]: 601
+r_int32[2]: 1
+r_uint64[0]: 1
+r_uint64[1]: 0
+r_sint32[0]: 2147483647
+r_sint32[1]: 1
+r_sint32[2]: -2147483648
+r_sint64[0]: -9223372036854775808
+r_sint64[1]: -1
+r_sint64[2]: 926
+r_fixed64[0]: 0
+r_fixed64[1]: 9354962512859132920
+r_fixed64[2]: 528
+r_sfixed32[0]: 2147483647
+r_sfixed32[1]: 2122565838
+r_bool[0]: true
+r_bool[1]: true
+r_bool[2]: true
+r_string[0]: x:e697a5e69cac
+r_string[1]: x:61
+r_bytes[0]: x:cb103dfb55600767e4
+r_enum[0]: 2
+r_unpacked_double[0]: d:0000000000000000
+m_string_int32[] {
+  key: x:6c696e650a627265616b
+  value: 1
+}
+m_string_int32[] {
+  key: x:f09f9982
+  value: -2147483648
+}
+m_int64_string[] {
+  key: -1
+  value: x:68c3a96c6c6f
+}
+m_int64_string[] {
+  key: -9223372036854775808
+  value: x:61
+}
+m_int64_string[] {
+  key: 562
+  value: x:f09f9982
+}
+m_bool_double[] {
+  key: false
+  value: d:46293e5939a08cea
+}
+m_bool_double[] {
+  key: true
+  value: d:fff0000000000000
+}
+m_uint32_color[] {
+  key: 0
+  value: 1
+}
+m_uint32_color[] {
+  key: 2568992502
+  value: 1
+}
+---
+f_double: d:8000000000000000
+f_float: f:3fc00000
+f_int32: 659
+f_int64: 0
+f_uint32: 0
+f_uint64: 894
+f_sint32: -1
+f_sint64: -9223372036854775808
+f_fixed32: 0
+f_fixed64: 16143939392339189692
+f_sfixed32: 0
+f_sfixed64: 6706792985601045434
+f_bool: true
+f_string: x:
+f_bytes: x:44f7
+f_enum: 2
+o_double: d:0000000000000000
+o_float: f:80000000
+o_bytes: x:0da085
+o_enum: 0
+r_double[0]: d:7ff0000000000000
+r_double[1]: d:3ff8000000000000
+r_double[2]: d:7ff8000000000000
+r_float[0]: f:c947a0b7
+r_float[1]: f:c0100000
+r_float[2]: f:3fc00000
+r_int32[0]: 2147483647
+r_int32[1]: -1
+r_int32[2]: -882
+r_int64[0]: 9223372036854775807
+r_int64[1]: -1
+r_uint32[0]: 0
+r_uint32[1]: 0
+r_uint64[0]: 823
+r_sint64[0]: -1
+r_fixed32[0]: 0
+r_bool[0]: true
+r_bool[1]: false
+r_bool[2]: false
+r_string[0]: x:68c3a96c6c6f
+r_string[1]: x:68c3a96c6c6f
+r_string[2]: x:5f62323079
+r_bytes[0]: x:f2
+r_enum[0]: -3
+r_enum[1]: 1
+r_enum[2]: 1
+r_unpacked_int32[0]: 1
+r_unpacked_double[0]: d:fff0000000000000
+r_unpacked_double[1]: d:39b4484bfeebc2a0
+m_string_int32[] {
+  key: x:333078795f337878313233787a6178
+  value: -539
+}
+m_string_int32[] {
+  key: x:61
+  value: 0
+}
+m_int64_string[] {
+  key: -9223372036854775808
+  value: x:68c3a96c6c6f
+}
+m_int64_string[] {
+  key: 1
+  value: x:626261
+}
+m_string_sample[] {
+  key: x:3161316232786333786133
+  value {
+    timestamp_ms: 9223372036854775807
+    status: -1
+    pressure: f:c8a7c36d
+  }
+}
+m_string_sample[] {
+  key: x:e697a5e69cac
+  value {
+    timestamp_ms: 9223372036854775807
+    status: 631
+    pressure: f:0da24260
+    flow: f:80000000
+    diagnostics {
+      calibrated: false
+      temperature: f:7f800000
+      voltage: f:7fc00000
+    }
+  }
+}
+m_uint32_color[] {
+  key: 1
+  value: 2
+}
+m_uint32_color[] {
+  key: 646
+  value: 1
+}
+samples[0] {
+  timestamp_ms: 1
+  status: 240
+  pressure: f:c0100000
+  diagnostics {
+    calibrated: false
+    temperature: f:c8eb9d7c
+    drift: d:c002000000000000
+  }
+}
+samples[1] {
+  timestamp_ms: 5189095710810901440
+  status: -1
+  pressure: f:00000000
+  flow: f:7fc00000
+}
+---
+f_double: d:c002000000000000
+f_float: f:7149f2ca
+f_int32: 0
+f_int64: 0
+f_uint32: 1
+f_uint64: 0
+f_sint32: 0
+f_sint64: 0
+f_fixed32: 145
+f_fixed64: 1
+f_sfixed32: -1337665558
+f_sfixed64: 527
+f_bool: true
+f_string: x:
+f_bytes: x:d12b19f6791fa9d4
+f_enum: 77
+o_double: d:39b4484bfeebc2a0
+o_int64: -1
+o_uint32: 0
+o_bytes: x:a7b716a6814e3544
+o_enum: 0
+r_double[0]: d:412b1af338649c36
+r_float[0]: f:7fc00000
+r_float[1]: f:7fc00000
+r_float[2]: f:7f800000
+r_int32[0]: 214364991
+r_uint32[0]: 0
+r_uint64[0]: 0
+r_uint64[1]: 0
+r_sint32[0]: 267
+r_fixed32[0]: 0
+r_fixed32[1]: 0
+r_fixed32[2]: 4294967295
+r_sfixed64[0]: 615
+r_string[0]: x:61
+r_string[1]: x:
+r_unpacked_int32[0]: 2147483647
+m_string_int32[] {
+  key: x:61
+  value: -709984773
+}
+m_string_int32[] {
+  key: x:6c696e650a627265616b
+  value: -172
+}
+m_int64_string[] {
+  key: -6081017926457170862
+  value: x:6c696e650a627265616b
+}
+m_int64_string[] {
+  key: -9223372036854775808
+  value: x:5f626162637963
+}
+samples[0] {
+  timestamp_ms: 0
+  diagnostics {
+    calibrated: true
+    temperature: f:7f800000
+    voltage: f:0da24260
+  }
+}
+c_sample {
+  timestamp_ms: 0
+  status: -1
+  pressure: f:00000000
+  flow: f:80000000
+  diagnostics {
+    calibrated: false
+    temperature: f:c0100000
+    drift: d:411c96c74069264c
+  }
+}
+---
+f_double: d:0000000000000000
+f_float: f:7fc00000
+f_int32: 1
+f_int64: -9223372036854775808
+f_uint32: 4294967295
+f_uint64: 0
+f_sint32: -2147483648
+f_sint64: 0
+f_fixed32: 4294967295
+f_fixed64: 831
+f_sfixed32: 1
+f_sfixed64: -9223372036854775808
+f_bool: false
+f_string: x:
+f_bytes: x:
+f_enum: 1
+o_int64: -9223372036854775808
+o_uint32: 0
+o_sint64: -9223372036854775808
+o_bool: false
+o_bytes: x:ee9507ca6d1d93
+r_double[0]: d:39b4484bfeebc2a0
+r_float[0]: f:00000000
+r_float[1]: f:7f800000
+r_int32[0]: -1
+r_uint32[0]: 0
+r_uint32[1]: 0
+r_uint32[2]: 1
+r_uint64[0]: 18446744073709551615
+r_sint32[0]: 1
+r_sint32[1]: 855288746
+r_sint64[0]: -9223372036854775808
+r_fixed32[0]: 4294967295
+r_fixed32[1]: 0
+r_fixed32[2]: 1
+r_sfixed32[0]: 1
+r_sfixed32[1]: -2147483648
+r_sfixed32[2]: 1
+r_sfixed64[0]: -1
+r_bool[0]: false
+r_bool[1]: false
+r_bool[2]: false
+r_string[0]: x:f09f9982
+r_bytes[0]: x:7f963d9387e2
+r_bytes[1]: x:72843c162b2d957a
+r_bytes[2]: x:2055760cf9c78f
+r_enum[0]: 2
+r_enum[1]: -3
+r_unpacked_int32[0]: -2147483648
+r_unpacked_int32[1]: 1
+r_unpacked_int32[2]: 1
+r_unpacked_double[0]: d:c002000000000000
+m_string_int32[] {
+  key: x:61
+  value: -51
+}
+m_int64_string[] {
+  key: -9223372036854775808
+  value: x:e697a5e69cac
+}
+m_int64_string[] {
+  key: 1
+  value: x:7a3130787a787978307878
+}
+m_int64_string[] {
+  key: 1272261810272537100
+  value: x:6c696e650a627265616b
+}
+m_bool_double[] {
+  key: false
+  value: d:7ff8000000000000
+}
+m_bool_double[] {
+  key: true
+  value: d:8000000000000000
+}
+m_uint32_color[] {
+  key: 4294967295
+  value: 0
+}
+recursive {
+  f_double: d:c002000000000000
+  f_float: f:0da24260
+  f_int32: -2147483648
+  f_int64: -9223372036854775808
+  f_uint32: 1
+  f_uint64: 0
+  f_sint32: 0
+  f_sint64: 0
+  f_fixed32: 0
+  f_fixed64: 0
+  f_sfixed32: 409497707
+  f_sfixed64: 0
+  f_bool: true
+  f_string: x:68c3a96c6c6f
+  f_bytes: x:33
+  f_enum: 77
+  o_double: d:0000000000000000
+  o_int64: 1477648908687400738
+  o_uint32: 386334244
+  o_sint64: -9223372036854775808
+  o_bytes: x:2b5ad4b9f430ba04
+  r_double[0]: d:3ff8000000000000
+  r_double[1]: d:0000000000000000
+  r_double[2]: d:39b4484bfeebc2a0
+  r_float[0]: f:7f800000
+  r_float[1]: f:47a7702b
+  r_int32[0]: -2147483648
+  r_int64[0]: 9223372036854775807
+  r_uint32[0]: 596
+  r_uint32[1]: 0
+  r_uint64[0]: 8680277082969765034
+  r_uint64[1]: 273
+  r_sint32[0]: 0
+  r_sint64[0]: -331
+  r_fixed32[0]: 4294967295
+  r_fixed32[1]: 0
+  r_fixed32[2]: 238
+  r_sfixed32[0]: 975858692
+  r_sfixed32[1]: -2147483648
+  r_sfixed64[0]: -88
+  r_bool[0]: true
+  r_string[0]: x:
+  r_bytes[0]: x:bc19be37
+  r_bytes[1]: x:47
+  r_enum[0]: -3
+  r_enum[1]: 0
+  r_enum[2]: 77
+  r_unpacked_int32[0]: 2147483647
+  r_unpacked_int32[1]: 1
+  r_unpacked_double[0]: d:39b4484bfeebc2a0
+  r_unpacked_double[1]: d:7ff0000000000000
+  m_string_int32[] {
+    key: x:6c696e650a627265616b
+    value: 401
+  }
+  m_bool_double[] {
+    key: true
+    value: d:7ff8000000000000
+  }
+  m_string_sample[] {
+    key: x:61
+    value {
+      timestamp_ms: -399
+      status: -580
+      pressure: f:80000000
+      flow: f:7f800000
+    }
+  }
+  m_string_sample[] {
+    key: x:6c696e650a627265616b
+    value {
+      timestamp_ms: 0
+      diagnostics {
+        drift: d:c002000000000000
+      }
+    }
+  }
+  m_string_sample[] {
+    key: x:7461620971756f746522
+    value {
+      timestamp_ms: 1
+      status: 1748716176
+      flow: f:00000000
+      diagnostics {
+        calibrated: true
+        voltage: f:c0100000
+      }
+    }
+  }
+  m_uint32_color[] {
+    key: 4294967295
+    value: 77
+  }
+  recursive {
+    f_double: d:0000000000000000
+    f_float: f:80000000
+    f_int32: 0
+    f_int64: -705
+    f_uint32: 1
+    f_uint64: 1
+    f_sint32: 0
+    f_sint64: 0
+    f_fixed32: 0
+    f_fixed64: 15175173228021649746
+    f_sfixed32: 0
+    f_sfixed64: -9223372036854775808
+    f_bool: true
+    f_string: x:317879
+    f_bytes: x:4804336a68da020f9c0f
+    f_enum: 1
+    o_double: d:3ff8000000000000
+    o_int64: -9223372036854775808
+    o_bool: false
+    o_enum: 2
+    r_double[0]: d:7ff8000000000000
+    r_double[1]: d:39b4484bfeebc2a0
+    r_double[2]: d:3ff8000000000000
+    r_int32[0]: -1
+    r_int32[1]: -2147483648
+    r_int64[0]: -1
+    r_int64[1]: 619
+    r_uint32[0]: 0
+    r_sfixed64[0]: -1
+    r_sfixed64[1]: -9223372036854775808
+    r_bool[0]: false
+    r_bool[1]: true
+    r_bool[2]: true
+    r_string[0]: x:68c3a96c6c6f
+    r_bytes[0]: x:5700
+    r_bytes[1]: x:453f0abebc978f915ad0
+    r_bytes[2]: x:7c2ee68421fec108
+    r_enum[0]: 2
+    r_enum[1]: 2
+    r_enum[2]: 1
+    r_unpacked_int32[0]: 2147483647
+    r_unpacked_int32[1]: 1
+    r_unpacked_double[0]: d:7ff0000000000000
+    r_unpacked_double[1]: d:fff0000000000000
+    r_unpacked_double[2]: d:7ff0000000000000
+    m_string_int32[] {
+      key: x:68c3a96c6c6f
+      value: -1
+    }
+    m_string_int32[] {
+      key: x:e697a5e69cac
+      value: -1
+    }
+    m_int64_string[] {
+      key: 9223372036854775807
+      value: x:7461620971756f746522
+    }
+    m_string_sample[] {
+      key: x:68c3a96c6c6f
+      value {
+        timestamp_ms: -1
+        status: -1
+        flow: f:0da24260
+      }
+    }
+    m_uint32_color[] {
+      key: 1
+      value: 2
+    }
+    m_uint32_color[] {
+      key: 1210617829
+      value: 1
+    }
+    recursive {
+      f_double: d:fff0000000000000
+      f_float: f:c8cdc19d
+      f_int32: -755
+      f_int64: 0
+      f_uint32: 0
+      f_uint64: 0
+      f_sint32: 848
+      f_sint64: 6130008785460139126
+      f_fixed32: 4294967295
+      f_fixed64: 5145829427485408755
+      f_sfixed32: -1334037480
+      f_sfixed64: 0
+      f_bool: false
+      f_string: x:61
+      f_bytes: x:d7a886223aa96ca9057f
+      f_enum: 2
+      o_double: d:8000000000000000
+      o_float: f:7f800000
+      o_sint64: -903
+      o_bool: false
+      o_string: x:e697a5e69cac
+      o_enum: -3
+      r_float[0]: f:80000000
+      r_float[1]: f:c8d49c63
+      r_int32[0]: 2147483647
+      r_int32[1]: 0
+      r_uint32[0]: 666
+      r_sint32[0]: -586236645
+      r_sint32[1]: -1
+      r_sint32[2]: -2147483648
+      r_sint64[0]: 9223372036854775807
+      r_sint64[1]: 9223372036854775807
+      r_fixed32[0]: 0
+      r_fixed32[1]: 4294967295
+      r_fixed64[0]: 0
+      r_fixed64[1]: 0
+      r_sfixed32[0]: -2147483648
+      r_sfixed32[1]: 1
+      r_sfixed32[2]: -1
+      r_bool[0]: true
+      r_bool[1]: true
+      r_bool[2]: false
+      r_string[0]: x:68c3a96c6c6f
+      r_string[1]: x:7461620971756f746522
+      r_string[2]: x:e697a5e69cac
+      r_bytes[0]: x:a513abde3a2a56
+      r_bytes[1]: x:9765a0a0c2d3
+      r_bytes[2]: x:a4e55e0d5b21
+      r_enum[0]: 1
+      r_enum[1]: 0
+      m_string_int32[] {
+        key: x:f09f9982
+        value: 0
+      }
+      m_int64_string[] {
+        key: 1
+        value: x:6c696e650a627265616b
+      }
+      m_int64_string[] {
+        key: 9223372036854775807
+        value: x:
+      }
+      m_bool_double[] {
+        key: false
+        value: d:46293e5939a08cea
+      }
+      m_uint32_color[] {
+        key: 1
+        value: 77
+      }
+      c_int32: 0
+    }
+    c_int32: -2147483648
+  }
+  samples[0] {
+    timestamp_ms: 9223372036854775807
+    status: -23242104
+    pressure: f:0da24260
+    diagnostics {
+      calibrated: true
+      voltage: f:00000000
+      drift: d:7ff8000000000000
+    }
+  }
+  samples[1] {
+    timestamp_ms: 9223372036854775807
+    status: 0
+    pressure: f:0da24260
+    diagnostics {
+      drift: d:7ff0000000000000
+    }
+  }
+  samples[2] {
+    timestamp_ms: 1
+    diagnostics {
+      calibrated: false
+      voltage: f:c0100000
+    }
+  }
+  c_sample {
+    timestamp_ms: -468
+    diagnostics {
+      calibrated: true
+      voltage: f:00000000
+    }
+  }
+}
+samples[0] {
+  timestamp_ms: 0
+  status: -745
+  pressure: f:c0100000
+  diagnostics {
+    temperature: f:c0100000
+    voltage: f:7f800000
+    drift: d:fff0000000000000
+  }
+}
+---
+f_double: d:fff0000000000000
+f_float: f:00000000
+f_int32: 1508454560
+f_int64: 151
+f_uint32: 0
+f_uint64: 690
+f_sint32: 325253752
+f_sint64: 9223372036854775807
+f_fixed32: 496
+f_fixed64: 1
+f_sfixed32: 2147483647
+f_sfixed64: -797
+f_bool: false
+f_string: x:
+f_bytes: x:d2
+f_enum: 77
+o_double: d:c1225b8398034d15
+o_sint64: -1
+o_string: x:68c3a96c6c6f
+o_bytes: x:16
+r_double[0]: d:c113e2590b65a1ac
+r_int32[0]: 0
+r_int32[1]: 1
+r_int64[0]: 234
+r_uint32[0]: 0
+r_uint32[1]: 1085666772
+r_sint32[0]: 990
+r_sint64[0]: -1
+r_sint64[1]: -4276336084287350900
+r_sint64[2]: 9127528095048430575
+r_fixed64[0]: 0
+r_sfixed32[0]: -598407645
+r_bool[0]: true
+r_bytes[0]: x:89df2bc396
+r_bytes[1]: x:682cba3eff2976cc95
+r_bytes[2]: x:04ddaba76f204bb95f5d
+r_unpacked_double[0]: d:c002000000000000
+r_unpacked_double[1]: d:c002000000000000
+m_string_int32[] {
+  key: x:61
+  value: -2147483648
+}
+m_bool_double[] {
+  key: false
+  value: d:fff0000000000000
+}
+m_bool_double[] {
+  key: true
+  value: d:c002000000000000
+}
+m_uint32_color[] {
+  key: 0
+  value: 1
+}
+m_uint32_color[] {
+  key: 1055755758
+  value: 0
+}
+recursive {
+  f_double: d:39b4484bfeebc2a0
+  f_float: f:3fc00000
+  f_int32: -323
+  f_int64: -1
+  f_uint32: 1
+  f_uint64: 0
+  f_sint32: -218
+  f_sint64: -9223372036854775808
+  f_fixed32: 0
+  f_fixed64: 656
+  f_sfixed32: -758607985
+  f_sfixed64: 9223372036854775807
+  f_bool: false
+  f_string: x:7461620971756f746522
+  f_bytes: x:6fe84abd9249
+  f_enum: -3
+  o_float: f:ff800000
+  o_int64: -1
+  o_sint64: -9223372036854775808
+  o_enum: -3
+  r_double[0]: d:fff0000000000000
+  r_int32[0]: -2147483648
+  r_int32[1]: 0
+  r_int32[2]: 1
+  r_int64[0]: -1
+  r_int64[1]: -8795061814312529388
+  r_uint32[0]: 3315033002
+  r_uint32[1]: 1
+  r_uint32[2]: 1
+  r_fixed32[0]: 4294967295
+  r_fixed32[1]: 0
+  r_fixed64[0]: 18446744073709551615
+  r_sfixed32[0]: 1
+  r_sfixed32[1]: -1
+  r_sfixed32[2]: 1
+  r_sfixed64[0]: 0
+  r_sfixed64[1]: -1
+  r_bool[0]: false
+  r_bool[1]: false
+  r_string[0]: x:7461620971756f746522
+  r_bytes[0]: x:44a0a4600ddd2bde8d
+  r_bytes[1]: x:8dbb
+  r_bytes[2]: x:a20b20a29a95548900d2
+  r_enum[0]: 77
+  r_enum[1]: 1
+  r_unpacked_int32[0]: 0
+  r_unpacked_int32[1]: -2147483648
+  m_bool_double[] {
+    key: false
+    value: d:39b4484bfeebc2a0
+  }
+  m_string_sample[] {
+    key: x:32323178635f3130327a5f79326161623279
+    value {
+      timestamp_ms: 1
+      status: -255
+      pressure: f:80000000
+      diagnostics {
+        calibrated: false
+        voltage: f:00000000
+        drift: d:c002000000000000
+      }
+    }
+  }
+  m_string_sample[] {
+    key: x:f09f9982
+    value {
+      timestamp_ms: -86823517340420950
+      diagnostics {
+        temperature: f:0da24260
+        drift: d:7ff8000000000000
+      }
+    }
+  }
+  m_uint32_color[] {
+    key: 579
+    value: 1
+  }
+  c_sample {
+    timestamp_ms: 1
+    diagnostics {
+      calibrated: false
+      temperature: f:0da24260
+      drift: d:7ff0000000000000
+    }
+  }
+}
+samples[0] {
+  timestamp_ms: 0
+  status: 2147483647
+  flow: f:7f800000
+  diagnostics {
+    calibrated: true
+    voltage: f:7f800000
+  }
+}
+samples[1] {
+  timestamp_ms: -932
+  flow: f:00000000
+  diagnostics {
+    temperature: f:ff800000
+  }
+}
+c_sample {
+  timestamp_ms: -44
+  status: 1
+}
+---
+f_double: d:c002000000000000
+f_float: f:00000000
+f_int32: 0
+f_int64: 0
+f_uint32: 0
+f_uint64: 18446744073709551615
+f_sint32: -2147483648
+f_sint64: -1
+f_fixed32: 1
+f_fixed64: 349
+f_sfixed32: 0
+f_sfixed64: -1
+f_bool: false
+f_string: x:6c696e650a627265616b
+f_bytes: x:
+f_enum: 0
+o_double: d:c105ef5ce01f1770
+o_int64: -9223372036854775808
+o_uint32: 4294967295
+o_sint64: 9223372036854775807
+o_string: x:e697a5e69cac
+o_enum: 0
+r_double[0]: d:c002000000000000
+r_float[0]: f:7149f2ca
+r_float[1]: f:0da24260
+r_int32[0]: 1
+r_int32[1]: 2147483647
+r_int64[0]: 0
+r_int64[1]: 0
+r_int64[2]: -7189288636114901329
+r_uint32[0]: 0
+r_uint64[0]: 1
+r_uint64[1]: 0
+r_sint32[0]: -188
+r_sint32[1]: 1
+r_sint32[2]: -2147483648
+r_sint64[0]: -4422095851181056905
+r_sint64[1]: 1
+r_fixed32[0]: 0
+r_fixed32[1]: 0
+r_fixed32[2]: 0
+r_fixed64[0]: 0
+r_sfixed64[0]: -6077039908418197760
+r_sfixed64[1]: 580
+r_bool[0]: true
+r_bool[1]: true
+r_string[0]: x:e697a5e69cac
+r_string[1]: x:323333637930326379326132613031
+r_string[2]: x:68c3a96c6c6f
+r_bytes[0]: x:cb
+r_bytes[1]: x:8ee2
+r_unpacked_int32[0]: 1
+r_unpacked_double[0]: d:3ff8000000000000
+r_unpacked_double[1]: d:c002000000000000
+m_int64_string[] {
+  key: -1
+  value: x:6c696e650a627265616b
+}
+m_int64_string[] {
+  key: 1
+  value: x:7461620971756f746522
+}
+m_int64_string[] {
+  key: 195
+  value: x:61783361787a63323232327a79333261
+}
+m_bool_double[] {
+  key: false
+  value: d:c002000000000000
+}
+m_string_sample[] {
+  key: x:627961327833305f61325f7933633178786362
+  value {
+    timestamp_ms: 0
+    status: 0
+    flow: f:c9488022
+  }
+}
+m_string_sample[] {
+  key: x:e697a5e69cac
+  value {
+    timestamp_ms: -1
+    status: 2147483647
+    pressure: f:ff800000
+    flow: f:c8b5bbd6
+    diagnostics {
+      temperature: f:c92764b1
+      drift: d:39b4484bfeebc2a0
+    }
+  }
+}
+recursive {
+  f_double: d:3ff8000000000000
+  f_float: f:80000000
+  f_int32: 0
+  f_int64: -955
+  f_uint32: 1
+  f_uint64: 638
+  f_sint32: -2147483648
+  f_sint64: -9223372036854775808
+  f_fixed32: 1
+  f_fixed64: 0
+  f_sfixed32: -1
+  f_sfixed64: -9223372036854775808
+  f_bool: false
+  f_string: x:68c3a96c6c6f
+  f_bytes: x:
+  f_enum: 77
+  o_float: f:00000000
+  o_sint64: -9223372036854775808
+  o_bytes: x:b6740e5c51
+  r_double[0]: d:41225acc91bc440e
+  r_int32[0]: 2147483647
+  r_int32[1]: 1
+  r_int32[2]: -237
+  r_uint32[0]: 0
+  r_uint64[0]: 0
+  r_uint64[1]: 561
+  r_uint64[2]: 1
+  r_sint32[0]: 2147483647
+  r_sint32[1]: -1
+  r_sint64[0]: -401
+  r_sint64[1]: -9223372036854775808
+  r_sint64[2]: -29
+  r_fixed32[0]: 0
+  r_fixed32[1]: 667
+  r_fixed32[2]: 0
+  r_sfixed32[0]: 0
+  r_sfixed32[1]: 2147483647
+  r_bool[0]: false
+  r_bool[1]: true
+  r_string[0]: x:e697a5e69cac
+  r_string[1]: x:6c696e650a627265616b
+  r_string[2]: x:79783378626379797a78797863313179305f
+  r_bytes[0]: x:f9219eb9e18e6d
+  r_enum[0]: 1
+  r_unpacked_int32[0]: -1
+  r_unpacked_int32[1]: -2147483648
+  r_unpacked_int32[2]: 0
+  r_unpacked_double[0]: d:7ff8000000000000
+  m_string_int32[] {
+    key: x:68c3a96c6c6f
+    value: 2147483647
+  }
+  m_string_int32[] {
+    key: x:6c696e650a627265616b
+    value: 2147483647
+  }
+  m_int64_string[] {
+    key: -1
+    value: x:61
+  }
+  m_int64_string[] {
+    key: 2840413721337385201
+    value: x:30
+  }
+  m_bool_double[] {
+    key: false
+    value: d:c002000000000000
+  }
+  m_bool_double[] {
+    key: true
+    value: d:7ff0000000000000
+  }
+  m_string_sample[] {
+    key: x:e697a5e69cac
+    value {
+      timestamp_ms: -1
+      pressure: f:3fc00000
+      flow: f:ff800000
+      diagnostics {
+        temperature: f:7149f2ca
+        voltage: f:495c4312
+      }
+    }
+  }
+  m_string_sample[] {
+    key: x:f09f9982
+    value {
+      timestamp_ms: 5168591916194146330
+      status: -130
+      pressure: f:7149f2ca
+      flow: f:4964cca2
+      diagnostics {
+        calibrated: true
+        temperature: f:0da24260
+        voltage: f:0da24260
+        drift: d:7ff0000000000000
+      }
+    }
+  }
+  m_uint32_color[] {
+    key: 0
+    value: 2
+  }
+  c_string: x:5f79787833613133623130633130
+}
+samples[0] {
+  timestamp_ms: -9223372036854775808
+  status: -2147483648
+  pressure: f:0da24260
+  flow: f:80000000
+  diagnostics {
+    calibrated: true
+    temperature: f:7fc00000
+    voltage: f:00000000
+  }
+}
+c_sample {
+  timestamp_ms: 935
+  pressure: f:c917d726
+  flow: f:3fc00000
+  diagnostics {
+    calibrated: false
+    temperature: f:0da24260
+  }
+}
+---
+f_double: d:3ff8000000000000
+f_float: f:00000000
+f_int32: 1
+f_int64: 0
+f_uint32: 0
+f_uint64: 0
+f_sint32: -1
+f_sint64: 2773358556976141439
+f_fixed32: 0
+f_fixed64: 0
+f_sfixed32: 0
+f_sfixed64: -9223372036854775808
+f_bool: true
+f_string: x:
+f_bytes: x:d80a35dfbb
+f_enum: -3
+o_double: d:39b4484bfeebc2a0
+o_uint32: 0
+o_sint64: 1
+o_string: x:68c3a96c6c6f
+r_float[0]: f:ff800000
+r_float[1]: f:ff800000
+r_float[2]: f:c0100000
+r_int32[0]: 1
+r_int64[0]: 9223372036854775807
+r_int64[1]: -9223372036854775808
+r_int64[2]: 9223372036854775807
+r_uint64[0]: 18446744073709551615
+r_uint64[1]: 276
+r_sint64[0]: -9094482512288945503
+r_sint64[1]: -1
+r_fixed32[0]: 0
+r_fixed32[1]: 4294967295
+r_fixed32[2]: 0
+r_fixed64[0]: 15088023661982833022
+r_fixed64[1]: 5538742634954195000
+r_fixed64[2]: 0
+r_sfixed32[0]: 0
+r_sfixed32[1]: 0
+r_sfixed32[2]: 710
+r_sfixed64[0]: 1
+r_sfixed64[1]: 0
+r_string[0]: x:62637a323162613231
+r_bytes[0]: x:db1113
+r_bytes[1]: x:709e8b968a346a2c
+r_unpacked_int32[0]: 1597867413
+r_unpacked_int32[1]: 1
+r_unpacked_int32[2]: 589
+m_string_int32[] {
+  key: x:7461620971756f746522
+  value: 0
+}
+m_int64_string[] {
+  key: -9223372036854775808
+  value: x:786163326278627a32616133307a61303232
+}
+m_int64_string[] {
+  key: 3339425525961737225
+  value: x:
+}
+m_string_sample[] {
+  key: x:3333617a327a
+  value {
+    timestamp_ms: -1
+    status: 1
+    pressure: f:3fc00000
+  }
+}
+recursive {
+  f_double: d:8000000000000000
+  f_float: f:00000000
+  f_int32: 0
+  f_int64: 1
+  f_uint32: 4294967295
+  f_uint64: 0
+  f_sint32: -1
+  f_sint64: -9223372036854775808
+  f_fixed32: 527
+  f_fixed64: 0
+  f_sfixed32: -2147483648
+  f_sfixed64: -1
+  f_bool: false
+  f_string: x:61
+  f_bytes: x:c54cb1bd8c5d
+  f_enum: 0
+  o_uint32: 4294967295
+  o_bool: true
+  r_double[0]: d:c0b61f6e9f6ae700
+  r_double[1]: d:7ff0000000000000
+  r_float[0]: f:00000000
+  r_int32[0]: 1
+  r_int64[0]: 9223372036854775807
+  r_int64[1]: 0
+  r_uint32[0]: 0
+  r_uint64[0]: 17650713847163844664
+  r_sint32[0]: -2147483648
+  r_sint32[1]: 0
+  r_sint32[2]: 2147483647
+  r_fixed32[0]: 0
+  r_fixed32[1]: 0
+  r_fixed32[2]: 2195928588
+  r_fixed64[0]: 15101051035312787708
+  r_sfixed32[0]: 2147483647
+  r_sfixed32[1]: -768
+  r_bool[0]: false
+  r_bool[1]: true
+  r_bool[2]: true
+  r_bytes[0]: x:a976df5327d10959de
+  r_enum[0]: 2
+  r_enum[1]: 1
+  r_unpacked_double[0]: d:39b4484bfeebc2a0
+  m_string_int32[] {
+    key: x:61
+    value: 1170996329
+  }
+  m_int64_string[] {
+    key: -1
+    value: x:3331337a315f7a5f635f6330
+  }
+  m_int64_string[] {
+    key: 535
+    value: x:7461620971756f746522
+  }
+  m_int64_string[] {
+    key: 9223372036854775807
+    value: x:f09f9982
+  }
+  m_bool_double[] {
+    key: true
+    value: d:7ff0000000000000
+  }
+  m_string_sample[] {
+    key: x:68c3a96c6c6f
+    value {
+      timestamp_ms: 0
+      pressure: f:7149f2ca
+      diagnostics {
+        calibrated: true
+        voltage: f:c0100000
+        drift: d:7ff0000000000000
+      }
+    }
+  }
+  m_uint32_color[] {
+    key: 0
+    value: 77
+  }
+  m_uint32_color[] {
+    key: 4294967295
+    value: 1
+  }
+  recursive {
+    f_double: d:8000000000000000
+    f_float: f:7149f2ca
+    f_int32: 984
+    f_int64: -9223372036854775808
+    f_uint32: 936
+    f_uint64: 666
+    f_sint32: -1
+    f_sint64: 9223372036854775807
+    f_fixed32: 1
+    f_fixed64: 0
+    f_sfixed32: 0
+    f_sfixed64: -823
+    f_bool: false
+    f_string: x:e697a5e69cac
+    f_bytes: x:e9d52f75
+    f_enum: 77
+    o_double: d:46293e5939a08cea
+    o_float: f:7f800000
+    o_int64: -3103303240487339068
+    o_uint32: 0
+    o_sint64: -9223372036854775808
+    o_enum: 2
+    r_double[0]: d:8000000000000000
+    r_double[1]: d:3ff8000000000000
+    r_double[2]: d:fff0000000000000
+    r_int32[0]: 0
+    r_int32[1]: 1
+    r_uint64[0]: 0
+    r_uint64[1]: 2122518782115457731
+    r_sint32[0]: -2147483648
+    r_sint64[0]: 2711273748816496165
+    r_sint64[1]: 1
+    r_fixed64[0]: 0
+    r_fixed64[1]: 395
+    r_sfixed64[0]: 0
+    r_sfixed64[1]: 1
+    r_sfixed64[2]: -7182381094161896905
+    r_bool[0]: false
+    r_bool[1]: false
+    r_bool[2]: true
+    r_string[0]: x:e697a5e69cac
+    r_string[1]: x:61
+    r_bytes[0]: x:2fb863fe
+    r_enum[0]: 2
+    r_enum[1]: -3
+    r_enum[2]: 0
+    r_unpacked_int32[0]: -2147483648
+    r_unpacked_int32[1]: 0
+    r_unpacked_double[0]: d:410fba0412d52f50
+    r_unpacked_double[1]: d:39b4484bfeebc2a0
+    m_string_int32[] {
+      key: x:
+      value: -1
+    }
+    m_string_int32[] {
+      key: x:e697a5e69cac
+      value: -835
+    }
+    m_int64_string[] {
+      key: -1
+      value: x:7461620971756f746522
+    }
+    m_int64_string[] {
+      key: -566
+      value: x:e697a5e69cac
+    }
+    m_bool_double[] {
+      key: false
+      value: d:39b4484bfeebc2a0
+    }
+    m_bool_double[] {
+      key: true
+      value: d:0000000000000000
+    }
+    m_string_sample[] {
+      key: x:e697a5e69cac
+      value {
+        timestamp_ms: -9223372036854775808
+        pressure: f:7149f2ca
+        flow: f:0da24260
+      }
+    }
+    m_uint32_color[] {
+      key: 0
+      value: 2
+    }
+    samples[0] {
+      timestamp_ms: 0
+    }
+    c_sample {
+      timestamp_ms: 0
+      pressure: f:7fc00000
+      flow: f:3fc00000
+    }
+  }
+  samples[0] {
+    timestamp_ms: -1
+    status: -2147483648
+    pressure: f:493dbae1
+    flow: f:ff800000
+  }
+  samples[1] {
+    timestamp_ms: 0
+    pressure: f:00000000
+    diagnostics {
+      temperature: f:7149f2ca
+    }
+  }
+  samples[2] {
+    timestamp_ms: -565
+    status: -1
+    pressure: f:7f800000
+    flow: f:80000000
+  }
+  c_int32: 2147483647
+}
+samples[0] {
+  timestamp_ms: 0
+  pressure: f:ff800000
+  diagnostics {
+    calibrated: true
+    temperature: f:3fc00000
+    voltage: f:48d82310
+    drift: d:8000000000000000
+  }
+}
+samples[1] {
+  timestamp_ms: -1
+  flow: f:3fc00000
+}
+samples[2] {
+  timestamp_ms: -562
+  flow: f:7f800000
+}
+---
+f_double: d:39b4484bfeebc2a0
+f_float: f:00000000
+f_int32: -1
+f_int64: 868
+f_uint32: 4294967295
+f_uint64: 0
+f_sint32: 0
+f_sint64: 1
+f_fixed32: 4294967295
+f_fixed64: 1
+f_sfixed32: -2147483648
+f_sfixed64: -1
+f_bool: false
+f_string: x:7461620971756f746522
+f_bytes: x:
+f_enum: 1
+o_float: f:80000000
+o_uint32: 4294967295
+o_sint64: -2298309219303190701
+o_bool: true
+o_string: x:5f79317a336261315f78327a5f787a7a32
+r_double[0]: d:c002000000000000
+r_float[0]: f:7f800000
+r_int32[0]: 0
+r_int32[1]: 0
+r_int32[2]: -586
+r_int64[0]: -873
+r_int64[1]: -1
+r_uint64[0]: 0
+r_sint64[0]: -404
+r_fixed32[0]: 506
+r_fixed32[1]: 0
+r_fixed64[0]: 0
+r_fixed64[1]: 14952665109843322912
+r_fixed64[2]: 234
+r_sfixed32[0]: 1
+r_sfixed32[1]: 2147483647
+r_sfixed32[2]: 0
+r_bool[0]: false
+r_bool[1]: true
+r_string[0]: x:337878325f78303263627863336163617a333261
+r_string[1]: x:
+r_string[2]: x:325f62626263785f7832796233
+r_enum[0]: 0
+r_enum[1]: 2
+r_unpacked_double[0]: d:c116823339920c3c
+r_unpacked_double[1]: d:0000000000000000
+r_unpacked_double[2]: d:39b4484bfeebc2a0
+m_bool_double[] {
+  key: false
+  value: d:c10f95e9bdaf4f74
+}
+m_bool_double[] {
+  key: true
+  value: d:46293e5939a08cea
+}
+m_string_sample[] {
+  key: x:637a785f
+  value {
+    timestamp_ms: 352
+    flow: f:0da24260
+    diagnostics {
+      temperature: f:3fc00000
+      voltage: f:80000000
+      drift: d:c002000000000000
+    }
+  }
+}
+m_string_sample[] {
+  key: x:6c696e650a627265616b
+  value {
+    timestamp_ms: -1
+    status: -2147483648
+    pressure: f:7149f2ca
+    flow: f:3fc00000
+    diagnostics {
+      calibrated: true
+      temperature: f:c0100000
+      voltage: f:0da24260
+      drift: d:412d978ab0d56a74
+    }
+  }
+}
+recursive {
+  f_double: d:0000000000000000
+  f_float: f:0da24260
+  f_int32: -2147483648
+  f_int64: 0
+  f_uint32: 0
+  f_uint64: 0
+  f_sint32: -1
+  f_sint64: 306
+  f_fixed32: 0
+  f_fixed64: 0
+  f_sfixed32: 2147483647
+  f_sfixed64: -516
+  f_bool: true
+  f_string: x:
+  f_bytes: x:e7
+  f_enum: 0
+  o_double: d:7ff0000000000000
+  o_float: f:c938e53b
+  o_int64: -299
+  o_uint32: 2867604827
+  o_sint64: 0
+  o_string: x:e697a5e69cac
+  o_bytes: x:6bf19b15fa1ad1dd
+  o_enum: 0
+  r_double[0]: d:0000000000000000
+  r_double[1]: d:8000000000000000
+  r_double[2]: d:7ff0000000000000
+  r_float[0]: f:3fc00000
+  r_sint32[0]: -2147483648
+  r_fixed32[0]: 0
+  r_fixed32[1]: 4294967295
+  r_fixed64[0]: 4884684317091220880
+  r_fixed64[1]: 814
+  r_fixed64[2]: 0
+  r_sfixed32[0]: -966
+  r_sfixed64[0]: 3537494134417510510
+  r_sfixed64[1]: 0
+  r_bytes[0]: x:0f
+  r_bytes[1]: x:219e418e
+  r_bytes[2]: x:b23a527af0cc
+  r_unpacked_int32[0]: -1
+  r_unpacked_int32[1]: 2147483647
+  r_unpacked_double[0]: d:39b4484bfeebc2a0
+  r_unpacked_double[1]: d:8000000000000000
+  m_string_int32[] {
+    key: x:
+    value: 1
+  }
+  m_string_int32[] {
+    key: x:30315f79323078613363315f325f63617a3063
+    value: 0
+  }
+  m_int64_string[] {
+    key: 0
+    value: x:6c696e650a627265616b
+  }
+  m_bool_double[] {
+    key: true
+    value: d:46293e5939a08cea
+  }
+  m_uint32_color[] {
+    key: 3872569833
+    value: 0
+  }
+  samples[0] {
+    timestamp_ms: -9223372036854775808
+    status: 1
+    pressure: f:7f800000
+    flow: f:00000000
+  }
+  samples[1] {
+    timestamp_ms: 1
+    pressure: f:80000000
+    flow: f:c0100000
+    diagnostics {
+      calibrated: true
+      voltage: f:3fc00000
+    }
+  }
+  c_sample {
+    timestamp_ms: 190
+    diagnostics {
+      temperature: f:c753a889
+    }
+  }
+}
+samples[0] {
+  timestamp_ms: 0
+  status: 2147483647
+  diagnostics {
+    temperature: f:0da24260
+  }
+}
+samples[1] {
+  timestamp_ms: -9223372036854775808
+  diagnostics {
+  }
+}
+---
+f_double: d:8000000000000000
+f_float: f:c0100000
+f_int32: 1
+f_int64: 1
+f_uint32: 4294967295
+f_uint64: 0
+f_sint32: -2147483648
+f_sint64: 9223372036854775807
+f_fixed32: 1097867125
+f_fixed64: 0
+f_sfixed32: -1
+f_sfixed64: 1
+f_bool: false
+f_string: x:
+f_bytes: x:67986dfea29dde6cbe36
+f_enum: 1
+o_uint32: 1
+o_sint64: -7854317768493813059
+o_bytes: x:1f5551a1d06aaf
+o_enum: 2
+r_double[0]: d:3ff8000000000000
+r_double[1]: d:39b4484bfeebc2a0
+r_double[2]: d:7ff0000000000000
+r_float[0]: f:ff800000
+r_float[1]: f:7149f2ca
+r_int64[0]: -1
+r_uint64[0]: 18446744073709551615
+r_uint64[1]: 4484236710984701760
+r_sint32[0]: 1
+r_sint32[1]: -2147483648
+r_sint32[2]: 0
+r_sint64[0]: 1
+r_fixed32[0]: 225
+r_fixed32[1]: 0
+r_fixed32[2]: 2067996534
+r_sfixed32[0]: -2147483648
+r_sfixed32[1]: -1950480647
+r_string[0]: x:e697a5e69cac
+r_string[1]: x:f09f9982
+r_string[2]: x:3378
+r_bytes[0]: x:51dbef38cb
+r_bytes[1]: x:dbda4a98
+r_bytes[2]: x:f6
+r_unpacked_int32[0]: 604
+r_unpacked_int32[1]: -47946351
+r_unpacked_int32[2]: -1
+r_unpacked_double[0]: d:0000000000000000
+m_string_int32[] {
+  key: x:
+  value: -2147483648
+}
+m_string_int32[] {
+  key: x:616131615f7a63637a617a78
+  value: -2147483648
+}
+m_string_int32[] {
+  key: x:68c3a96c6c6f
+  value: 232
+}
+m_int64_string[] {
+  key: -1
+  value: x:68c3a96c6c6f
+}
+m_int64_string[] {
+  key: 0
+  value: x:e697a5e69cac
+}
+m_int64_string[] {
+  key: 1
+  value: x:615f635f327a31333231623063787a
+}
+m_bool_double[] {
+  key: false
+  value: d:3ff8000000000000
+}
+m_string_sample[] {
+  key: x:30626179796233787a7931317a617933317a6331
+  value {
+    timestamp_ms: -9223372036854775808
+    status: 746
+    pressure: f:3fc00000
+    flow: f:80000000
+  }
+}
+m_string_sample[] {
+  key: x:61315f61305f637a7a7a307a3030615f78
+  value {
+    timestamp_ms: -8601884371042825328
+    pressure: f:3fc00000
+  }
+}
+m_string_sample[] {
+  key: x:7461620971756f746522
+  value {
+    timestamp_ms: 1
+    flow: f:47bc7e98
+  }
+}
+m_uint32_color[] {
+  key: 0
+  value: 2
+}
+recursive {
+  f_double: d:46293e5939a08cea
+  f_float: f:80000000
+  f_int32: 2147483647
+  f_int64: -1
+  f_uint32: 4294967295
+  f_uint64: 18446744073709551615
+  f_sint32: 0
+  f_sint64: -9223372036854775808
+  f_fixed32: 2800689350
+  f_fixed64: 18446744073709551615
+  f_sfixed32: 1
+  f_sfixed64: -9223372036854775808
+  f_bool: false
+  f_string: x:e697a5e69cac
+  f_bytes: x:8f41522f7406921632
+  f_enum: 77
+  o_double: d:3ff8000000000000
+  o_float: f:3fc00000
+  o_uint32: 0
+  o_sint64: -1
+  o_bool: false
+  o_bytes: x:25
+  o_enum: -3
+  r_float[0]: f:80000000
+  r_float[1]: f:0da24260
+  r_float[2]: f:0da24260
+  r_uint32[0]: 3787652836
+  r_uint32[1]: 0
+  r_uint32[2]: 4294967295
+  r_sint64[0]: 9223372036854775807
+  r_sint64[1]: 9223372036854775807
+  r_fixed32[0]: 1
+  r_fixed32[1]: 194
+  r_fixed64[0]: 0
+  r_fixed64[1]: 12270593093221685254
+  r_fixed64[2]: 1
+  r_bytes[0]: x:ff8ddfc0b8362f
+  r_enum[0]: 1
+  r_unpacked_int32[0]: 2147483647
+  r_unpacked_int32[1]: 0
+  r_unpacked_double[0]: d:8000000000000000
+  r_unpacked_double[1]: d:c002000000000000
+  m_string_int32[] {
+    key: x:
+    value: 1
+  }
+  m_string_int32[] {
+    key: x:7461620971756f746522
+    value: -561849985
+  }
+  m_string_int32[] {
+    key: x:e697a5e69cac
+    value: 510
+  }
+  m_int64_string[] {
+    key: 0
+    value: x:f09f9982
+  }
+  m_int64_string[] {
+    key: 1
+    value: x:e697a5e69cac
+  }
+  m_bool_double[] {
+    key: false
+    value: d:410437dad6a660e8
+  }
+  m_bool_double[] {
+    key: true
+    value: d:c002000000000000
+  }
+  m_string_sample[] {
+    key: x:6261637962796162
+    value {
+      timestamp_ms: -9223372036854775808
+      status: -845
+      pressure: f:7fc00000
+      diagnostics {
+        voltage: f:7fc00000
+      }
+    }
+  }
+  m_uint32_color[] {
+    key: 0
+    value: 2
+  }
+  c_int32: -1
+}
+c_int32: -2147483648
+---
+f_double: d:c002000000000000
+f_float: f:7fc00000
+f_int32: -2147483648
+f_int64: 1
+f_uint32: 0
+f_uint64: 0
+f_sint32: 0
+f_sint64: 3713787131839031342
+f_fixed32: 0
+f_fixed64: 1
+f_sfixed32: 1
+f_sfixed64: 1
+f_bool: true
+f_string: x:
+f_bytes: x:
+f_enum: 2
+o_double: d:3ff8000000000000
+o_float: f:3fc00000
+o_int64: -1
+o_enum: -3
+r_float[0]: f:7149f2ca
+r_int32[0]: -1
+r_int64[0]: 1
+r_uint32[0]: 1
+r_uint32[1]: 0
+r_uint64[0]: 656
+r_uint64[1]: 329
+r_sint32[0]: -2147483648
+r_sint32[1]: 2147483647
+r_sint64[0]: -514
+r_sint64[1]: 5738521890892094424
+r_sint64[2]: 9223372036854775807
+r_fixed32[0]: 1
+r_fixed64[0]: 0
+r_fixed64[1]: 303
+r_sfixed32[0]: -2147483648
+r_sfixed64[0]: 9223372036854775807
+r_bytes[0]: x:08
+r_bytes[1]: x:b893df
+r_enum[0]: 0
+r_enum[1]: 77
+r_unpacked_int32[0]: 2147483647
+r_unpacked_int32[1]: 1
+r_unpacked_int32[2]: -1
+m_string_int32[] {
+  key: x:61
+  value: -1
+}
+m_string_int32[] {
+  key: x:6c696e650a627265616b
+  value: -2147483648
+}
+m_int64_string[] {
+  key: -1891610869978837479
+  value: x:68c3a96c6c6f
+}
+m_bool_double[] {
+  key: false
+  value: d:7ff0000000000000
+}
+m_string_sample[] {
+  key: x:
+  value {
+    timestamp_ms: -1
+    status: -2147483648
+    pressure: f:0da24260
+    flow: f:c8c66df8
+    diagnostics {
+      calibrated: true
+      temperature: f:ff800000
+    }
+  }
+}
+m_string_sample[] {
+  key: x:30335f
+  value {
+    timestamp_ms: -46458582999783963
+    status: 1462111592
+    pressure: f:7149f2ca
+    flow: f:c96056ef
+    diagnostics {
+      temperature: f:c7a59f20
+    }
+  }
+}
+m_uint32_color[] {
+  key: 0
+  value: 1
+}
+m_uint32_color[] {
+  key: 4294967295
+  value: -3
+}
+samples[0] {
+  timestamp_ms: 0
+  pressure: f:7fc00000
+  flow: f:c91734a2
+}
+samples[1] {
+  timestamp_ms: -1
+  status: -829817337
+  flow: f:7fc00000
+}
+c_string: x:627a5f6379787861
+---
+f_double: d:39b4484bfeebc2a0
+f_float: f:c0100000
+f_int32: 0
+f_int64: -1
+f_uint32: 4294967295
+f_uint64: 0
+f_sint32: 693
+f_sint64: -1
+f_fixed32: 711677980
+f_fixed64: 191
+f_sfixed32: 2147483647
+f_sfixed64: 57429845393146315
+f_bool: true
+f_string: x:636130617a5f323179337a7932633361
+f_bytes: x:
+f_enum: 0
+o_double: d:7ff8000000000000
+o_float: f:7f800000
+o_string: x:78637a7a625f337a
+o_enum: 2
+r_double[0]: d:c002000000000000
+r_double[1]: d:46293e5939a08cea
+r_float[0]: f:80000000
+r_int32[0]: -1
+r_int64[0]: -849
+r_int64[1]: -1
+r_int64[2]: 713
+r_uint32[0]: 4294967295
+r_uint64[0]: 0
+r_uint64[1]: 0
+r_uint64[2]: 953
+r_sint64[0]: 1
+r_fixed32[0]: 1
+r_fixed32[1]: 0
+r_fixed64[0]: 18446744073709551615
+r_fixed64[1]: 18446744073709551615
+r_fixed64[2]: 497
+r_bool[0]: false
+r_bool[1]: false
+r_string[0]: x:e697a5e69cac
+r_string[1]: x:61
+r_enum[0]: -3
+r_enum[1]: -3
+r_enum[2]: -3
+r_unpacked_int32[0]: 1
+r_unpacked_int32[1]: -2147483648
+r_unpacked_int32[2]: -1
+r_unpacked_double[0]: d:8000000000000000
+r_unpacked_double[1]: d:39b4484bfeebc2a0
+m_string_int32[] {
+  key: x:7461620971756f746522
+  value: -2147483648
+}
+m_string_int32[] {
+  key: x:797a63327831627863315f31
+  value: 1209774226
+}
+m_int64_string[] {
+  key: 0
+  value: x:e697a5e69cac
+}
+m_int64_string[] {
+  key: 1
+  value: x:7961637a627a327a3161796363317831787a5f5f
+}
+m_bool_double[] {
+  key: false
+  value: d:c002000000000000
+}
+m_bool_double[] {
+  key: true
+  value: d:7ff0000000000000
+}
+m_string_sample[] {
+  key: x:
+  value {
+    timestamp_ms: 0
+    flow: f:0da24260
+  }
+}
+m_string_sample[] {
+  key: x:61
+  value {
+    timestamp_ms: 0
+    pressure: f:4816f142
+    flow: f:80000000
+    diagnostics {
+      calibrated: true
+      temperature: f:7f800000
+      voltage: f:ff800000
+      drift: d:39b4484bfeebc2a0
+    }
+  }
+}
+m_uint32_color[] {
+  key: 4294967295
+  value: 2
+}
+recursive {
+  f_double: d:3ff8000000000000
+  f_float: f:00000000
+  f_int32: -449602082
+  f_int64: 2051762251871287110
+  f_uint32: 918
+  f_uint64: 0
+  f_sint32: 0
+  f_sint64: 9223372036854775807
+  f_fixed32: 0
+  f_fixed64: 0
+  f_sfixed32: -1
+  f_sfixed64: -9223372036854775808
+  f_bool: true
+  f_string: x:61
+  f_bytes: x:3099c7355ddac8ab
+  f_enum: 2
+  o_float: f:80000000
+  o_int64: 1
+  o_enum: 77
+  r_double[0]: d:8000000000000000
+  r_float[0]: f:0da24260
+  r_float[1]: f:3fc00000
+  r_float[2]: f:7149f2ca
+  r_int32[0]: 2147483647
+  r_int32[1]: 0
+  r_int32[2]: -278
+  r_int64[0]: 9223372036854775807
+  r_int64[1]: 9223372036854775807
+  r_int64[2]: 381
+  r_uint64[0]: 0
+  r_uint64[1]: 0
+  r_sint32[0]: 411938502
+  r_sint32[1]: -2147483648
+  r_sint32[2]: 0
+  r_fixed32[0]: 0
+  r_fixed64[0]: 18446744073709551615
+  r_fixed64[1]: 0
+  r_fixed64[2]: 0
+  r_sfixed64[0]: -1
+  r_bool[0]: true
+  r_bool[1]: true
+  r_enum[0]: 1
+  r_enum[1]: -3
+  r_enum[2]: 0
+  r_unpacked_int32[0]: 2147483647
+  m_string_int32[] {
+    key: x:68c3a96c6c6f
+    value: 1
+  }
+  m_string_int32[] {
+    key: x:7962796161315f30335f6163
+    value: 2147483647
+  }
+  m_string_int32[] {
+    key: x:e697a5e69cac
+    value: -2147483648
+  }
+  m_int64_string[] {
+    key: -9223372036854775808
+    value: x:78787a797a7a79337978326379
+  }
+  m_int64_string[] {
+    key: 969
+    value: x:
+  }
+  m_bool_double[] {
+    key: false
+    value: d:7ff8000000000000
+  }
+  m_bool_double[] {
+    key: true
+    value: d:8000000000000000
+  }
+  m_string_sample[] {
+    key: x:68c3a96c6c6f
+    value {
+      timestamp_ms: -9223372036854775808
+      pressure: f:3fc00000
+      flow: f:7149f2ca
+      diagnostics {
+        calibrated: false
+      }
+    }
+  }
+  m_string_sample[] {
+    key: x:7461620971756f746522
+    value {
+      timestamp_ms: 9223372036854775807
+      pressure: f:ff800000
+      flow: f:48a0d1c3
+      diagnostics {
+        temperature: f:80000000
+        voltage: f:7fc00000
+        drift: d:fff0000000000000
+      }
+    }
+  }
+  recursive {
+    f_double: d:8000000000000000
+    f_float: f:3fc00000
+    f_int32: -572
+    f_int64: 0
+    f_uint32: 0
+    f_uint64: 15355671164664340108
+    f_sint32: 0
+    f_sint64: 1
+    f_fixed32: 0
+    f_fixed64: 1
+    f_sfixed32: -47
+    f_sfixed64: -505362812546890406
+    f_bool: true
+    f_string: x:e697a5e69cac
+    f_bytes: x:f531813750d2
+    f_enum: 77
+    o_uint32: 0
+    o_string: x:
+    o_bytes: x:860cabc11732
+    r_float[0]: f:7fc00000
+    r_float[1]: f:7f800000
+    r_int32[0]: -2147483648
+    r_int64[0]: 9223372036854775807
+    r_int64[1]: 0
+    r_int64[2]: 101
+    r_uint32[0]: 1
+    r_uint64[0]: 0
+    r_uint64[1]: 1
+    r_sint32[0]: -1264513822
+    r_sint32[1]: 1
+    r_sint32[2]: -2147483648
+    r_sint64[0]: 9223372036854775807
+    r_sint64[1]: 9223372036854775807
+    r_sint64[2]: 0
+    r_fixed32[0]: 0
+    r_fixed32[1]: 904
+    r_fixed32[2]: 1
+    r_fixed64[0]: 1915353806651684033
+    r_fixed64[1]: 18446744073709551615
+    r_fixed64[2]: 18446744073709551615
+    r_sfixed32[0]: 2147483647
+    r_sfixed32[1]: 2147483647
+    r_sfixed32[2]: 1
+    r_sfixed64[0]: -1
+    r_bool[0]: true
+    r_bool[1]: true
+    r_string[0]: x:61
+    r_unpacked_int32[0]: -742944916
+    r_unpacked_double[0]: d:8000000000000000
+    r_unpacked_double[1]: d:7ff0000000000000
+    recursive {
+      f_double: d:0000000000000000
+      f_float: f:0da24260
+      f_int32: 0
+      f_int64: 0
+      f_uint32: 0
+      f_uint64: 0
+      f_sint32: -2147483648
+      f_sint64: 933
+      f_fixed32: 55780190
+      f_fixed64: 18446744073709551615
+      f_sfixed32: 0
+      f_sfixed64: 0
+      f_bool: true
+      f_string: x:
+      f_bytes: x:69b96e6d6ffdbe25
+      f_enum: 0
+      o_double: d:fff0000000000000
+      o_float: f:ff800000
+      o_sint64: 0
+      o_enum: 77
+      r_double[0]: d:8000000000000000
+      r_float[0]: f:ff800000
+      r_int32[0]: 160
+      r_int64[0]: 0
+      r_int64[1]: 1
+      r_uint32[0]: 1
+      r_uint32[1]: 1
+      r_uint32[2]: 0
+      r_uint64[0]: 353
+      r_uint64[1]: 0
+      r_sint64[0]: -7088397930648416968
+      r_fixed32[0]: 923843202
+      r_fixed32[1]: 1
+      r_fixed64[0]: 556
+      r_fixed64[1]: 8190238039317361846
+      r_sfixed32[0]: -2147483648
+      r_sfixed32[1]: 1579553398
+      r_sfixed32[2]: 2147483647
+      r_sfixed64[0]: -5200692525445768259
+      r_sfixed64[1]: 1
+      r_sfixed64[2]: -1
+      r_bool[0]: false
+      r_bool[1]: true
+      r_string[0]: x:7461620971756f746522
+      r_bytes[0]: x:b4d3cc0dfe
+      r_enum[0]: 2
+      r_enum[1]: 0
+      r_enum[2]: 0
+      r_unpacked_double[0]: d:fff0000000000000
+      m_string_int32[] {
+        key: x:633262785f3278306232
+        value: 0
+      }
+      m_string_int32[] {
+        key: x:68c3a96c6c6f
+        value: 2147483647
+      }
+      m_string_int32[] {
+        key: x:f09f9982
+        value: 0
+      }
+      m_int64_string[] {
+        key: -2844318095804766228
+        value: x:61
+      }
+      m_int64_string[] {
+        key: 1
+        value: x:61
+      }
+      m_uint32_color[] {
+        key: 0
+        value: 1
+      }
+      c_int32: -1
+    }
+  }
+  samples[0] {
+    timestamp_ms: 0
+    pressure: f:3fc00000
+    flow: f:c0100000
+    diagnostics {
+      voltage: f:c0100000
+      drift: d:3ff8000000000000
+    }
+  }
+  samples[1] {
+    timestamp_ms: -1
+    pressure: f:7f800000
+    flow: f:3fc00000
+    diagnostics {
+      calibrated: true
+      temperature: f:0da24260
+      drift: d:7ff0000000000000
+    }
+  }
+}
+samples[0] {
+  timestamp_ms: 3844585225171248181
+  flow: f:80000000
+  diagnostics {
+  }
+}
+c_sample {
+  timestamp_ms: 1
+  status: 2147483647
+  pressure: f:c0100000
+  flow: f:c0100000
+  diagnostics {
+    calibrated: false
+    drift: d:7ff8000000000000
+  }
+}
+---
+f_double: d:8000000000000000
+f_float: f:7f800000
+f_int32: -1
+f_int64: 1
+f_uint32: 0
+f_uint64: 0
+f_sint32: -1
+f_sint64: -9223372036854775808
+f_fixed32: 568
+f_fixed64: 11425566093533853358
+f_sfixed32: -1
+f_sfixed64: -679
+f_bool: true
+f_string: x:7461620971756f746522
+f_bytes: x:6f
+f_enum: 77
+o_double: d:46293e5939a08cea
+o_int64: 9223372036854775807
+o_bool: true
+o_bytes: x:3fd2919401
+o_enum: 1
+r_double[0]: d:0000000000000000
+r_int32[0]: 1
+r_int32[1]: -1
+r_int32[2]: -664757451
+r_int64[0]: 9223372036854775807
+r_int64[1]: 0
+r_uint32[0]: 0
+r_uint32[1]: 14725644
+r_uint32[2]: 2564277831
+r_sint32[0]: -2147483648
+r_sint32[1]: -1
+r_sint64[0]: -9223372036854775808
+r_fixed64[0]: 18446744073709551615
+r_fixed64[1]: 474
+r_fixed64[2]: 0
+r_sfixed32[0]: -585
+r_sfixed32[1]: -2147483648
+r_sfixed64[0]: -9223372036854775808
+r_bool[0]: false
+r_string[0]: x:313361793133305f317862305f335f
+r_string[1]: x:79323263795f313031
+r_bytes[0]: x:806a
+r_bytes[1]: x:7b
+r_enum[0]: 2
+r_enum[1]: 2
+r_unpacked_int32[0]: 2147483647
+r_unpacked_double[0]: d:7ff0000000000000
+r_unpacked_double[1]: d:3ff8000000000000
+r_unpacked_double[2]: d:46293e5939a08cea
+m_string_int32[] {
+  key: x:323332617a3163313063617a6161796363613330
+  value: 2147483647
+}
+m_string_int32[] {
+  key: x:7461620971756f746522
+  value: 2147483647
+}
+m_string_int32[] {
+  key: x:e697a5e69cac
+  value: 1
+}
+m_int64_string[] {
+  key: 712
+  value: x:
+}
+m_bool_double[] {
+  key: true
+  value: d:7ff8000000000000
+}
+m_string_sample[] {
+  key: x:f09f9982
+  value {
+    timestamp_ms: 0
+    flow: f:00000000
+    diagnostics {
+    }
+  }
+}
+m_uint32_color[] {
+  key: 868073375
+  value: 0
+}
+recursive {
+  f_double: d:0000000000000000
+  f_float: f:0da24260
+  f_int32: 0
+  f_int64: 990
+  f_uint32: 1
+  f_uint64: 0
+  f_sint32: -2147483648
+  f_sint64: 1
+  f_fixed32: 0
+  f_fixed64: 0
+  f_sfixed32: 2147483647
+  f_sfixed64: -9223372036854775808
+  f_bool: false
+  f_string: x:5f627878785f313278305f5f
+  f_bytes: x:20e3db
+  f_enum: -3
+  o_double: d:7ff8000000000000
+  o_float: f:7fc00000
+  o_int64: 9223372036854775807
+  o_uint32: 652
+  o_sint64: 9223372036854775807
+  o_bool: true
+  o_enum: -3
+  r_double[0]: d:c002000000000000
+  r_double[1]: d:0000000000000000
+  r_double[2]: d:8000000000000000
+  r_float[0]: f:3fc00000
+  r_float[1]: f:80000000
+  r_int32[0]: 0
+  r_int64[0]: 0
+  r_int64[1]: -9223372036854775808
+  r_int64[2]: -1
+  r_uint32[0]: 0
+  r_uint64[0]: 3198763129081628299
+  r_uint64[1]: 841
+  r_sint32[0]: 1
+  r_sint64[0]: 4116479768730628197
+  r_sint64[1]: 1
+  r_fixed64[0]: 0
+  r_fixed64[1]: 5150697379132175351
+  r_sfixed32[0]: 2147483647
+  r_sfixed32[1]: 0
+  r_sfixed64[0]: 280215813839901004
+  r_sfixed64[1]: -6914684792233795319
+  r_sfixed64[2]: -9223372036854775808
+  r_bool[0]: false
+  r_bool[1]: false
+  r_bool[2]: true
+  r_string[0]: x:627a325f
+  r_string[1]: x:
+  r_bytes[0]: x:0c98c9
+  r_enum[0]: 2
+  r_enum[1]: 1
+  r_unpacked_int32[0]: 1
+  r_unpacked_int32[1]: -2147483648
+  r_unpacked_int32[2]: -1
+  m_string_int32[] {
+    key: x:e697a5e69cac
+    value: 2147483647
+  }
+  m_int64_string[] {
+    key: 0
+    value: x:
+  }
+  m_int64_string[] {
+    key: 110
+    value: x:78
+  }
+  m_bool_double[] {
+    key: true
+    value: d:39b4484bfeebc2a0
+  }
+  m_string_sample[] {
+    key: x:6c696e650a627265616b
+    value {
+      timestamp_ms: 0
+      diagnostics {
+        calibrated: false
+        voltage: f:ff800000
+      }
+    }
+  }
+  recursive {
+    f_double: d:3ff8000000000000
+    f_float: f:3fc00000
+    f_int32: -2147483648
+    f_int64: -438
+    f_uint32: 0
+    f_uint64: 100
+    f_sint32: -2147483648
+    f_sint64: -930589933394206044
+    f_fixed32: 86
+    f_fixed64: 112
+    f_sfixed32: 0
+    f_sfixed64: 6165519495183776468
+    f_bool: false
+    f_string: x:f09f9982
+    f_bytes: x:40a41f
+    f_enum: 0
+    o_double: d:7ff8000000000000
+    o_float: f:80000000
+    o_int64: -689
+    o_uint32: 1
+    o_sint64: -1
+    o_string: x:
+    o_enum: 1
+    r_double[0]: d:8000000000000000
+    r_float[0]: f:ff800000
+    r_float[1]: f:3fc00000
+    r_int32[0]: 2147483647
+    r_int32[1]: -1
+    r_int32[2]: 667856191
+    r_uint64[0]: 1
+    r_uint64[1]: 0
+    r_sint32[0]: 2147483647
+    r_sint32[1]: 0
+    r_sint32[2]: -1483358449
+    r_fixed32[0]: 3157441842
+    r_sfixed32[0]: 1249322156
+    r_sfixed32[1]: 2147483647
+    r_sfixed64[0]: 971554339717951707
+    r_sfixed64[1]: 1
+    r_sfixed64[2]: 120
+    r_string[0]: x:61
+    r_string[1]: x:61
+    r_unpacked_int32[0]: 1
+    r_unpacked_double[0]: d:7ff8000000000000
+    r_unpacked_double[1]: d:7ff8000000000000
+    r_unpacked_double[2]: d:0000000000000000
+    m_string_int32[] {
+      key: x:f09f9982
+      value: -497149058
+    }
+    m_int64_string[] {
+      key: -558740042898139566
+      value: x:31317a5f3132633130315f7a7879
+    }
+    m_bool_double[] {
+      key: false
+      value: d:410842fffff85f80
+    }
+    m_bool_double[] {
+      key: true
+      value: d:46293e5939a08cea
+    }
+    m_string_sample[] {
+      key: x:5f7a307a7a
+      value {
+        timestamp_ms: 9223372036854775807
+        status: -355400265
+        pressure: f:7fc00000
+      }
+    }
+    recursive {
+      f_double: d:0000000000000000
+      f_float: f:00000000
+      f_int32: 168
+      f_int64: -741
+      f_uint32: 61
+      f_uint64: 0
+      f_sint32: 2147483647
+      f_sint64: 0
+      f_fixed32: 1
+      f_fixed64: 1
+      f_sfixed32: 0
+      f_sfixed64: 276199507266861407
+      f_bool: false
+      f_string: x:6c696e650a627265616b
+      f_bytes: x:b94ad8aa2819893327db
+      f_enum: 2
+      o_double: d:46293e5939a08cea
+      o_int64: 1
+      o_string: x:
+      o_bytes: x:aab44b7d1bf3748945
+      o_enum: 77
+      r_float[0]: f:ff800000
+      r_float[1]: f:0da24260
+      r_uint32[0]: 0
+      r_sint32[0]: -1
+      r_sint32[1]: -2147483648
+      r_sint32[2]: -2147483648
+      r_sint64[0]: 7059056550022079099
+      r_fixed32[0]: 273
+      r_fixed32[1]: 0
+      r_fixed32[2]: 0
+      r_sfixed32[0]: -1
+      r_sfixed32[1]: 2147483647
+      r_sfixed32[2]: 1
+      r_sfixed64[0]: 9223372036854775807
+      r_sfixed64[1]: -276
+      r_string[0]: x:6c696e650a627265616b
+      r_string[1]: x:316279325f793133795f32616132
+      r_bytes[0]: x:e927d42e5080dcf7
+      r_bytes[1]: x:93b077520bad36
+      r_enum[0]: 1
+      r_unpacked_double[0]: d:7ff8000000000000
+      m_int64_string[] {
+        key: 3598783953793222851
+        value: x:636178
+      }
+      m_int64_string[] {
+        key: 470
+        value: x:68c3a96c6c6f
+      }
+      c_string: x:
+    }
+    c_string: x:623278626131313331323133633130333162617a
+  }
+  samples[0] {
+    timestamp_ms: 1
+    status: -1
+    pressure: f:7fc00000
+    flow: f:ff800000
+  }
+  c_string: x:e697a5e69cac
+}
+samples[0] {
+  timestamp_ms: 0
+  flow: f:3fc00000
+  diagnostics {
+    voltage: f:7149f2ca
+  }
+}
+c_sample {
+  timestamp_ms: 9223372036854775807
+  status: -4
+  flow: f:48aaccd0
+  diagnostics {
+    calibrated: false
+    temperature: f:3fc00000
+    voltage: f:7fc00000
+  }
+}
+---
+f_double: d:46293e5939a08cea
+f_float: f:ff800000
+f_int32: 2147483647
+f_int64: 9223372036854775807
+f_uint32: 0
+f_uint64: 0
+f_sint32: -1
+f_sint64: 0
+f_fixed32: 1
+f_fixed64: 0
+f_sfixed32: 2147483647
+f_sfixed64: -1
+f_bool: false
+f_string: x:
+f_bytes: x:95d18783
+f_enum: -3
+o_double: d:c0fc3ae3cbe717d0
+o_int64: 1415971606060223254
+o_uint32: 3545150335
+o_sint64: -1
+o_bytes: x:c513
+r_double[0]: d:0000000000000000
+r_int32[0]: -129
+r_int32[1]: 2147483647
+r_int64[0]: -100
+r_int64[1]: -755
+r_int64[2]: -9223372036854775808
+r_uint32[0]: 4294967295
+r_uint32[1]: 4294967295
+r_uint32[2]: 0
+r_sint32[0]: -1
+r_sint64[0]: 0
+r_sint64[1]: 2686193516620166129
+r_fixed32[0]: 690
+r_fixed64[0]: 1
+r_fixed64[1]: 18446744073709551615
+r_sfixed32[0]: -159
+r_bool[0]: true
+r_string[0]: x:7a63793378325f62
+r_string[1]: x:7a306163303333315f
+r_unpacked_int32[0]: 2147483647
+r_unpacked_int32[1]: -2147483648
+r_unpacked_int32[2]: -2147483648
+r_unpacked_double[0]: d:39b4484bfeebc2a0
+m_string_int32[] {
+  key: x:68c3a96c6c6f
+  value: -294
+}
+m_int64_string[] {
+  key: 0
+  value: x:7461620971756f746522
+}
+m_bool_double[] {
+  key: true
+  value: d:7ff0000000000000
+}
+m_string_sample[] {
+  key: x:7461620971756f746522
+  value {
+    timestamp_ms: 0
+    status: -27
+    pressure: f:c8ed26fa
+    diagnostics {
+      calibrated: false
+    }
+  }
+}
+m_uint32_color[] {
+  key: 0
+  value: 0
+}
+m_uint32_color[] {
+  key: 4294967295
+  value: 1
+}
+recursive {
+  f_double: d:4109c77abda0e688
+  f_float: f:7149f2ca
+  f_int32: -2147483648
+  f_int64: 0
+  f_uint32: 2065095220
+  f_uint64: 0
+  f_sint32: -417
+  f_sint64: 0
+  f_fixed32: 0
+  f_fixed64: 9616565435385779577
+  f_sfixed32: -2147483648
+  f_sfixed64: -9223372036854775808
+  f_bool: false
+  f_string: x:785f6161615f615f30
+  f_bytes: x:1064dd7f1fd9087d
+  f_enum: -3
+  o_double: d:7ff8000000000000
+  o_enum: 0
+  r_float[0]: f:00000000
+  r_float[1]: f:c0100000
+  r_float[2]: f:7149f2ca
+  r_int32[0]: -1
+  r_int32[1]: 2147483647
+  r_int64[0]: -1
+  r_int64[1]: 5879468049855602479
+  r_int64[2]: 1
+  r_uint64[0]: 2281635272004084079
+  r_sint32[0]: 202515920
+  r_sint32[1]: 2147483647
+  r_sint64[0]: 0
+  r_fixed32[0]: 0
+  r_fixed32[1]: 929
+  r_fixed32[2]: 4294967295
+  r_fixed64[0]: 18446744073709551615
+  r_fixed64[1]: 1
+  r_fixed64[2]: 18446744073709551615
+  r_sfixed64[0]: 1
+  r_sfixed64[1]: -50
+  r_bool[0]: true
+  r_string[0]: x:68c3a96c6c6f
+  r_string[1]: x:68c3a96c6c6f
+  r_string[2]: x:e697a5e69cac
+  r_bytes[0]: x:189cefef7a
+  r_bytes[1]: x:
+  r_enum[0]: 1
+  r_enum[1]: -3
+  r_unpacked_int32[0]: 1
+  r_unpacked_double[0]: d:fff0000000000000
+  m_bool_double[] {
+    key: true
+    value: d:c002000000000000
+  }
+  m_string_sample[] {
+    key: x:f09f9982
+    value {
+      timestamp_ms: 1
+      status: 2147483647
+      flow: f:ff800000
+    }
+  }
+  m_uint32_color[] {
+    key: 0
+    value: -3
+  }
+  recursive {
+    f_double: d:c002000000000000
+    f_float: f:7fc00000
+    f_int32: -1
+    f_int64: -244
+    f_uint32: 0
+    f_uint64: 0
+    f_sint32: 0
+    f_sint64: 0
+    f_fixed32: 1
+    f_fixed64: 11040651554428404609
+    f_sfixed32: -2147483648
+    f_sfixed64: 9202463949882336620
+    f_bool: true
+    f_string: x:7a335f7a31333033327878627931795f313361
+    f_bytes: x:bd8522
+    f_enum: 77
+    o_float: f:7fc00000
+    o_int64: -1
+    o_uint32: 1
+    o_sint64: 0
+    o_string: x:61
+    o_enum: 77
+    r_float[0]: f:0da24260
+    r_float[1]: f:ff800000
+    r_float[2]: f:7149f2ca
+    r_int64[0]: 0
+    r_int64[1]: -2819057364013016437
+    r_int64[2]: 492277273539082579
+    r_uint32[0]: 4294967295
+    r_uint32[1]: 1
+    r_uint32[2]: 545
+    r_sint64[0]: 0
+    r_sint64[1]: 2381077975171344885
+    r_fixed32[0]: 0
+    r_fixed32[1]: 0
+    r_fixed32[2]: 4294967295
+    r_fixed64[0]: 0
+    r_sfixed32[0]: 2147483647
+    r_sfixed32[1]: 1
+    r_bool[0]: true
+    r_bool[1]: false
+    r_bool[2]: false
+    r_string[0]: x:6c696e650a627265616b
+    r_string[1]: x:61
+    r_bytes[0]: x:c0e214c0ce323d
+    r_enum[0]: 0
+    r_enum[1]: 2
+    m_bool_double[] {
+      key: false
+      value: d:7ff8000000000000
+    }
+    m_uint32_color[] {
+      key: 2392580449
+      value: 0
+    }
+    m_uint32_color[] {
+      key: 32
+      value: 0
+    }
+    recursive {
+      f_double: d:3ff8000000000000
+      f_float: f:7149f2ca
+      f_int32: -1
+      f_int64: 1
+      f_uint32: 0
+      f_uint64: 14934848681609136680
+      f_sint32: -200
+      f_sint64: 9223372036854775807
+      f_fixed32: 1
+      f_fixed64: 18446744073709551615
+      f_sfixed32: 2147483647
+      f_sfixed64: 0
+      f_bool: false
+      f_string: x:e697a5e69cac
+      f_bytes: x:e9
+      f_enum: 1
+      o_int64: -9223372036854775808
+      o_uint32: 1
+      r_double[0]: d:7ff0000000000000
+      r_int32[0]: -1
+      r_int32[1]: -38
+      r_uint32[0]: 0
+      r_uint32[1]: 405904738
+      r_uint32[2]: 0
+      r_uint64[0]: 0
+      r_uint64[1]: 18446744073709551615
+      r_sint32[0]: 0
+      r_fixed32[0]: 0
+      r_fixed32[1]: 529
+      r_fixed64[0]: 0
+      r_fixed64[1]: 0
+      r_fixed64[2]: 0
+      r_sfixed32[0]: -2147483648
+      r_sfixed32[1]: 0
+      r_sfixed32[2]: 2147483647
+      r_sfixed64[0]: 5419907348975510951
+      r_sfixed64[1]: 5866119248999237545
+      r_string[0]: x:f09f9982
+      r_string[1]: x:e697a5e69cac
+      r_bytes[0]: x:a886
+      r_bytes[1]: x:486340913b991135f66d
+      r_enum[0]: 0
+      r_enum[1]: 2
+      r_unpacked_int32[0]: -2079504417
+      r_unpacked_double[0]: d:39b4484bfeebc2a0
+      r_unpacked_double[1]: d:46293e5939a08cea
+      m_string_int32[] {
+        key: x:3378627a62317a7a32787a79335f79337a
+        value: -2147483648
+      }
+      m_string_int32[] {
+        key: x:7461620971756f746522
+        value: -2147483648
+      }
+      m_uint32_color[] {
+        key: 0
+        value: 1
+      }
+      m_uint32_color[] {
+        key: 4294967295
+        value: 77
+      }
+      c_string: x:3162795f7832793333327a63327a3232
+    }
+    samples[0] {
+      timestamp_ms: 2636980154735860338
+      pressure: f:7f800000
+    }
+    samples[1] {
+      timestamp_ms: 0
+      status: 1
+    }
+    samples[2] {
+      timestamp_ms: 9223372036854775807
+      pressure: f:48ad2c3d
+      flow: f:3fc00000
+    }
+  }
+  samples[0] {
+    timestamp_ms: 6775399674352702945
+    pressure: f:3fc00000
+    flow: f:48396e6a
+    diagnostics {
+      calibrated: true
+    }
+  }
+  c_sample {
+    timestamp_ms: 0
+    diagnostics {
+      calibrated: true
+      drift: d:39b4484bfeebc2a0
+    }
+  }
+}
+samples[0] {
+  timestamp_ms: 5730941600649238216
+  status: 336
+  diagnostics {
+    calibrated: true
+    temperature: f:80000000
+  }
+}
+samples[1] {
+  timestamp_ms: -8989873941948544916
+  pressure: f:00000000
+  diagnostics {
+    drift: d:c0c71b4b1ce63980
+  }
+}
+samples[2] {
+  timestamp_ms: -1
+  status: -2147483648
+  pressure: f:80000000
+  diagnostics {
+    voltage: f:7f800000
+    drift: d:7ff0000000000000
+  }
+}
+c_sample {
+  timestamp_ms: -106
+  status: -2147483648
+  diagnostics {
+  }
+}
+---
+f_double: d:39b4484bfeebc2a0
+f_float: f:493664b9
+f_int32: 0
+f_int64: 9223372036854775807
+f_uint32: 170
+f_uint64: 0
+f_sint32: 0
+f_sint64: 9223372036854775807
+f_fixed32: 0
+f_fixed64: 13000674716601767599
+f_sfixed32: -1
+f_sfixed64: 0
+f_bool: true
+f_string: x:7a5f5f63786132305f78
+f_bytes: x:7540ef1e9fb2
+f_enum: 2
+o_float: f:c0100000
+o_int64: 1
+o_uint32: 0
+o_sint64: -1
+o_bytes: x:6a37929aeb7b
+r_double[0]: d:c11905b08990a2d6
+r_double[1]: d:7ff0000000000000
+r_float[0]: f:7fc00000
+r_int32[0]: 0
+r_int32[1]: 0
+r_int32[2]: 2147483647
+r_int64[0]: 1
+r_int64[1]: -1
+r_int64[2]: -2007140034938775477
+r_uint32[0]: 916
+r_uint32[1]: 0
+r_uint32[2]: 1856523536
+r_uint64[0]: 18257083336912420315
+r_uint64[1]: 0
+r_sint64[0]: 0
+r_fixed64[0]: 0
+r_sfixed32[0]: -1
+r_bool[0]: true
+r_enum[0]: 0
+r_enum[1]: 2
+r_enum[2]: 77
+r_unpacked_double[0]: d:0000000000000000
+m_string_int32[] {
+  key: x:7461620971756f746522
+  value: -647
+}
+m_string_int32[] {
+  key: x:79337a78615f7878337a63
+  value: -1909451974
+}
+m_string_int32[] {
+  key: x:7979306163303378325f
+  value: -718144602
+}
+m_int64_string[] {
+  key: -1
+  value: x:61
+}
+m_bool_double[] {
+  key: true
+  value: d:fff0000000000000
+}
+m_string_sample[] {
+  key: x:
+  value {
+    timestamp_ms: 0
+    status: 2141436816
+    pressure: f:00000000
+    flow: f:3fc00000
+    diagnostics {
+      calibrated: true
+      temperature: f:c0100000
+      voltage: f:3fc00000
+      drift: d:8000000000000000
+    }
+  }
+}
+m_string_sample[] {
+  key: x:61
+  value {
+    timestamp_ms: -847
+    diagnostics {
+    }
+  }
+}
+m_string_sample[] {
+  key: x:78633278637a
+  value {
+    timestamp_ms: 1
+    diagnostics {
+      voltage: f:c0100000
+      drift: d:3ff8000000000000
+    }
+  }
+}
+m_uint32_color[] {
+  key: 0
+  value: 77
+}
+m_uint32_color[] {
+  key: 1
+  value: 2
+}
+m_uint32_color[] {
+  key: 276
+  value: 0
+}
+samples[0] {
+  timestamp_ms: 0
+  flow: f:c0100000
+  diagnostics {
+    temperature: f:48b96a48
+    voltage: f:80000000
+  }
+}
+c_int32: 2147483647
+---
+f_double: d:3ff8000000000000
+f_float: f:c0100000
+f_int32: 0
+f_int64: 0
+f_uint32: 0
+f_uint64: 0
+f_sint32: 1
+f_sint64: 0
+f_fixed32: 0
+f_fixed64: 1
+f_sfixed32: 863233229
+f_sfixed64: 0
+f_bool: false
+f_string: x:68c3a96c6c6f
+f_bytes: x:721d37184c
+f_enum: 1
+o_bool: false
+o_bytes: x:9201a5a82ff8285f
+r_double[0]: d:46293e5939a08cea
+r_double[1]: d:7ff0000000000000
+r_double[2]: d:7ff8000000000000
+r_float[0]: f:7fc00000
+r_int32[0]: -2147483648
+r_int32[1]: -1
+r_int64[0]: 9223372036854775807
+r_uint32[0]: 0
+r_uint32[1]: 0
+r_sint32[0]: 2147483647
+r_sint32[1]: 1
+r_sint32[2]: 1
+r_sint64[0]: 0
+r_sint64[1]: -1
+r_sint64[2]: 825
+r_fixed32[0]: 0
+r_fixed64[0]: 0
+r_fixed64[1]: 56
+r_fixed64[2]: 7392166138613242115
+r_sfixed32[0]: 1
+r_sfixed64[0]: 0
+r_sfixed64[1]: 9223372036854775807
+r_string[0]: x:f09f9982
+r_string[1]: x:5f3030317963323079795f3130
+r_enum[0]: -3
+r_unpacked_double[0]: d:46293e5939a08cea
+m_string_int32[] {
+  key: x:6232337830615f625f7a3333
+  value: -2147483648
+}
+m_string_int32[] {
+  key: x:68c3a96c6c6f
+  value: 1
+}
+m_int64_string[] {
+  key: 0
+  value: x:e697a5e69cac
+}
+m_int64_string[] {
+  key: 1
+  value: x:61
+}
+m_string_sample[] {
+  key: x:615f337862633362633379623031
+  value {
+    timestamp_ms: 1
+    diagnostics {
+      calibrated: false
+      temperature: f:7f800000
+      voltage: f:00000000
+    }
+  }
+}
+m_string_sample[] {
+  key: x:7461620971756f746522
+  value {
+    timestamp_ms: -9223372036854775808
+    pressure: f:7149f2ca
+    diagnostics {
+      drift: d:c002000000000000
+    }
+  }
+}
+m_string_sample[] {
+  key: x:f09f9982
+  value {
+    timestamp_ms: -1
+    status: -1
+    flow: f:80000000
+    diagnostics {
+      calibrated: false
+      temperature: f:00000000
+      drift: d:7ff8000000000000
+    }
+  }
+}
+m_uint32_color[] {
+  key: 0
+  value: 1
+}
+recursive {
+  f_double: d:0000000000000000
+  f_float: f:7149f2ca
+  f_int32: 1
+  f_int64: 0
+  f_uint32: 0
+  f_uint64: 0
+  f_sint32: 0
+  f_sint64: 1
+  f_fixed32: 948
+  f_fixed64: 0
+  f_sfixed32: 0
+  f_sfixed64: 0
+  f_bool: false
+  f_string: x:f09f9982
+  f_bytes: x:513dc2e89a99
+  f_enum: 77
+  o_double: d:7ff0000000000000
+  o_float: f:7f800000
+  o_int64: 849
+  o_uint32: 2998419234
+  r_float[0]: f:00000000
+  r_float[1]: f:7f800000
+  r_int32[0]: 149536085
+  r_int32[1]: 0
+  r_int64[0]: -8730291548190085815
+  r_int64[1]: -1
+  r_int64[2]: 3132281014998804719
+  r_uint32[0]: 4294967295
+  r_uint32[1]: 0
+  r_uint64[0]: 1
+  r_uint64[1]: 1
+  r_uint64[2]: 0
+  r_sint32[0]: -673
+  r_sint32[1]: 1
+  r_fixed32[0]: 32
+  r_fixed64[0]: 18446744073709551615
+  r_fixed64[1]: 0
+  r_bool[0]: true
+  r_bool[1]: false
+  r_bool[2]: true
+  r_bytes[0]: x:00fb4fe09484
+  r_bytes[1]: x:f489488eebbdfd3254e6
+  r_bytes[2]: x:
+  r_enum[0]: 0
+  r_unpacked_int32[0]: 2147483647
+  r_unpacked_int32[1]: -907909241
+  r_unpacked_int32[2]: -2147483648
+  m_string_int32[] {
+    key: x:3133317862633179787a613331
+    value: 0
+  }
+  m_string_int32[] {
+    key: x:7461620971756f746522
+    value: -1
+  }
+  m_int64_string[] {
+    key: -5605894007526849802
+    value: x:3379633263617a635f627a32626362335f7a3030
+  }
+  m_int64_string[] {
+    key: 1
+    value: x:317931793263636230303330635f336332336130
+  }
+  m_bool_double[] {
+    key: false
+    value: d:8000000000000000
+  }
+  m_string_sample[] {
+    key: x:3378
+    value {
+      timestamp_ms: -1
+      pressure: f:c0100000
+      flow: f:3fc00000
+      diagnostics {
+        calibrated: false
+        drift: d:39b4484bfeebc2a0
+      }
+    }
+  }
+  m_string_sample[] {
+    key: x:5f33616132796179616278786331306161327a
+    value {
+      timestamp_ms: -9223372036854775808
+      status: 0
+      flow: f:80000000
+    }
+  }
+  m_string_sample[] {
+    key: x:79613179787a30626162626233
+    value {
+      timestamp_ms: -1
+      pressure: f:00000000
+      diagnostics {
+        temperature: f:48906069
+        voltage: f:7f800000
+      }
+    }
+  }
+  m_uint32_color[] {
+    key: 0
+    value: 0
+  }
+  m_uint32_color[] {
+    key: 573
+    value: 77
+  }
+  recursive {
+    f_double: d:0000000000000000
+    f_float: f:80000000
+    f_int32: 2147483647
+    f_int64: 181
+    f_uint32: 1
+    f_uint64: 613
+    f_sint32: -2147483648
+    f_sint64: 3101636523253077735
+    f_fixed32: 0
+    f_fixed64: 118
+    f_sfixed32: -2147483648
+    f_sfixed64: -32
+    f_bool: false
+    f_string: x:7461620971756f746522
+    f_bytes: x:0408149c4f015b
+    f_enum: -3
+    o_double: d:7ff8000000000000
+    o_uint32: 0
+    o_bytes: x:e7b8
+    r_double[0]: d:39b4484bfeebc2a0
+    r_double[1]: d:8000000000000000
+    r_float[0]: f:3fc00000
+    r_float[1]: f:0da24260
+    r_int32[0]: 1
+    r_int32[1]: -1
+    r_int32[2]: 651
+    r_uint32[0]: 586
+    r_uint32[1]: 0
+    r_uint64[0]: 0
+    r_uint64[1]: 17813083895106846817
+    r_sint32[0]: 1
+    r_sint32[1]: 1
+    r_sint32[2]: 2147483647
+    r_sint64[0]: 9223372036854775807
+    r_sint64[1]: 9223372036854775807
+    r_sint64[2]: 1
+    r_fixed32[0]: 0
+    r_fixed64[0]: 748
+    r_fixed64[1]: 0
+    r_fixed64[2]: 5465578008449091974
+    r_sfixed32[0]: 2147483647
+    r_sfixed32[1]: 0
+    r_string[0]: x:61
+    r_string[1]: x:f09f9982
+    r_string[2]: x:62797931
+    r_bytes[0]: x:d597391ea524
+    r_bytes[1]: x:9163e5874ddf
+    r_enum[0]: -3
+    r_unpacked_int32[0]: 0
+    r_unpacked_int32[1]: 0
+    r_unpacked_double[0]: d:7ff8000000000000
+    m_int64_string[] {
+      key: -1
+      value: x:327863337a7961316163
+    }
+    m_int64_string[] {
+      key: 1
+      value: x:6c696e650a627265616b
+    }
+    m_bool_double[] {
+      key: false
+      value: d:8000000000000000
+    }
+    m_string_sample[] {
+      key: x:31313231316262623179316230
+      value {
+        timestamp_ms: 1
+        status: 1
+        flow: f:7f800000
+      }
+    }
+    m_string_sample[] {
+      key: x:7a786162617862327a62786162323032637a
+      value {
+        timestamp_ms: -1
+      }
+    }
+    m_string_sample[] {
+      key: x:e697a5e69cac
+      value {
+        timestamp_ms: 1
+        pressure: f:7f800000
+        flow: f:0da24260
+      }
+    }
+    m_uint32_color[] {
+      key: 0
+      value: 2
+    }
+    m_uint32_color[] {
+      key: 1395836680
+      value: 2
+    }
+    m_uint32_color[] {
+      key: 443890711
+      value: 77
+    }
+    samples[0] {
+      timestamp_ms: -9223372036854775808
+      pressure: f:3fc00000
+    }
+    samples[1] {
+      timestamp_ms: -9223372036854775808
+      status: 2147483647
+      pressure: f:80000000
+      flow: f:0da24260
+    }
+    c_sample {
+      timestamp_ms: 0
+      flow: f:7fc00000
+    }
+  }
+  samples[0] {
+    timestamp_ms: 0
+    status: 965
+    flow: f:00000000
+    diagnostics {
+      calibrated: true
+      voltage: f:80000000
+    }
+  }
+  samples[1] {
+    timestamp_ms: -1
+    status: -1
+    pressure: f:80000000
+    diagnostics {
+      calibrated: false
+      temperature: f:80000000
+      voltage: f:48f1f795
+      drift: d:fff0000000000000
+    }
+  }
+  c_string: x:6c696e650a627265616b
+}
+samples[0] {
+  timestamp_ms: 0
+  status: 2147483647
+  pressure: f:49474a81
+}
+samples[1] {
+  timestamp_ms: 0
+  flow: f:c967810d
+  diagnostics {
+    voltage: f:0da24260
+    drift: d:8000000000000000
+  }
+}
+samples[2] {
+  timestamp_ms: -2411355740758899264
+  status: 0
+  flow: f:3fc00000
+  diagnostics {
+    calibrated: true
+  }
+}
+c_sample {
+  timestamp_ms: 9223372036854775807
+  status: 1
+  pressure: f:0da24260
+  diagnostics {
+    calibrated: true
+    temperature: f:ff800000
+  }
+}
+---
+f_double: d:0000000000000000
+f_float: f:7149f2ca
+f_int32: 884
+f_int64: 1
+f_uint32: 3149566566
+f_uint64: 0
+f_sint32: 1
+f_sint64: -591999021439992129
+f_fixed32: 484
+f_fixed64: 4
+f_sfixed32: 0
+f_sfixed64: 0
+f_bool: false
+f_string: x:7931625f6163336379
+f_bytes: x:bafebe7b2fb745
+f_enum: 77
+o_double: d:46293e5939a08cea
+o_float: f:ff800000
+o_int64: 1
+o_uint32: 0
+o_sint64: 0
+o_string: x:e697a5e69cac
+r_double[0]: d:0000000000000000
+r_float[0]: f:00000000
+r_int32[0]: 2147483647
+r_int32[1]: 2147483647
+r_uint32[0]: 0
+r_uint64[0]: 1
+r_sint32[0]: -222
+r_fixed32[0]: 10
+r_fixed64[0]: 0
+r_fixed64[1]: 18446744073709551615
+r_fixed64[2]: 7402043718363687869
+r_sfixed32[0]: 1545502393
+r_sfixed32[1]: 0
+r_sfixed64[0]: -1
+r_bool[0]: true
+r_bool[1]: false
+r_bytes[0]: x:fa8120d99b5dab2c3e5f
+r_enum[0]: 2
+r_enum[1]: -3
+r_enum[2]: 77
+r_unpacked_int32[0]: -95396220
+r_unpacked_double[0]: d:fff0000000000000
+m_string_int32[] {
+  key: x:
+  value: -170215781
+}
+m_string_int32[] {
+  key: x:32326263615f30633332797a
+  value: 0
+}
+m_int64_string[] {
+  key: 795
+  value: x:
+}
+m_bool_double[] {
+  key: true
+  value: d:0000000000000000
+}
+samples[0] {
+  timestamp_ms: -1
+  pressure: f:80000000
+  diagnostics {
+    temperature: f:c962d2aa
+    voltage: f:c0100000
+  }
+}
+samples[1] {
+  timestamp_ms: -9223372036854775808
+  flow: f:ff800000
+  diagnostics {
+    temperature: f:494c7b07
+    voltage: f:7f800000
+    drift: d:8000000000000000
+  }
+}
+samples[2] {
+  timestamp_ms: 1314356705949466790
+  status: 2147483647
+  flow: f:c93360ae
+  diagnostics {
+    calibrated: true
+    voltage: f:7f800000
+    drift: d:7ff0000000000000
+  }
+}
+c_int32: 832
+---
+f_double: d:7ff8000000000000
+f_float: f:c0100000
+f_int32: -2147483648
+f_int64: -9223372036854775808
+f_uint32: 1
+f_uint64: 0
+f_sint32: -411990102
+f_sint64: -589
+f_fixed32: 0
+f_fixed64: 1
+f_sfixed32: -382
+f_sfixed64: 1
+f_bool: true
+f_string: x:
+f_bytes: x:a7
+f_enum: 1
+o_double: d:c002000000000000
+o_uint32: 592
+o_bool: false
+o_string: x:79333030785f7932333262
+o_bytes: x:2ccfb4c74a3aa8
+r_float[0]: f:ff800000
+r_uint32[0]: 655
+r_sint32[0]: 1
+r_fixed64[0]: 0
+r_sfixed32[0]: -2147483648
+r_sfixed32[1]: -1
+r_sfixed32[2]: 0
+r_sfixed64[0]: 0
+r_unpacked_double[0]: d:46293e5939a08cea
+r_unpacked_double[1]: d:3ff8000000000000
+r_unpacked_double[2]: d:c002000000000000
+m_string_int32[] {
+  key: x:6162785f305f326179796130317863
+  value: -2147483648
+}
+m_int64_string[] {
+  key: 9223372036854775807
+  value: x:68c3a96c6c6f
+}
+m_bool_double[] {
+  key: false
+  value: d:4111d6ebcb5715c0
+}
+m_bool_double[] {
+  key: true
+  value: d:3ff8000000000000
+}
+m_string_sample[] {
+  key: x:61
+  value {
+    timestamp_ms: 450
+    pressure: f:0da24260
+    diagnostics {
+      drift: d:fff0000000000000
+    }
+  }
+}
+m_string_sample[] {
+  key: x:e697a5e69cac
+  value {
+    timestamp_ms: 2062587423106433406
+    diagnostics {
+      calibrated: false
+      temperature: f:c0100000
+    }
+  }
+}
+recursive {
+  f_double: d:fff0000000000000
+  f_float: f:ff800000
+  f_int32: -140570528
+  f_int64: 411
+  f_uint32: 0
+  f_uint64: 0
+  f_sint32: 0
+  f_sint64: 1
+  f_fixed32: 0
+  f_fixed64: 18446744073709551615
+  f_sfixed32: -733
+  f_sfixed64: 0
+  f_bool: true
+  f_string: x:68c3a96c6c6f
+  f_bytes: x:
+  f_enum: -3
+  o_float: f:80000000
+  o_uint32: 1
+  o_bool: true
+  o_enum: 0
+  r_double[0]: d:8000000000000000
+  r_double[1]: d:0000000000000000
+  r_double[2]: d:c002000000000000
+  r_float[0]: f:7f800000
+  r_int32[0]: 0
+  r_int32[1]: 1
+  r_int64[0]: -264
+  r_int64[1]: -9223372036854775808
+  r_int64[2]: 6157607697249015576
+  r_uint32[0]: 0
+  r_uint32[1]: 935
+  r_uint32[2]: 4294967295
+  r_uint64[0]: 15648751140267507751
+  r_uint64[1]: 1
+  r_sint64[0]: 1
+  r_fixed64[0]: 0
+  r_fixed64[1]: 920
+  r_fixed64[2]: 1
+  r_bool[0]: false
+  r_bool[1]: false
+  r_string[0]: x:6c696e650a627265616b
+  r_string[1]: x:6c696e650a627265616b
+  r_string[2]: x:68c3a96c6c6f
+  r_bytes[0]: x:3417
+  r_enum[0]: 77
+  r_enum[1]: 77
+  r_enum[2]: 1
+  r_unpacked_int32[0]: 1
+  r_unpacked_int32[1]: -685
+  r_unpacked_int32[2]: 0
+  r_unpacked_double[0]: d:46293e5939a08cea
+  r_unpacked_double[1]: d:3ff8000000000000
+  r_unpacked_double[2]: d:46293e5939a08cea
+  recursive {
+    f_double: d:fff0000000000000
+    f_float: f:7f800000
+    f_int32: 1
+    f_int64: 1
+    f_uint32: 0
+    f_uint64: 0
+    f_sint32: -1
+    f_sint64: 0
+    f_fixed32: 0
+    f_fixed64: 703
+    f_sfixed32: -122
+    f_sfixed64: 9223372036854775807
+    f_bool: false
+    f_string: x:f09f9982
+    f_bytes: x:99
+    f_enum: 2
+    o_double: d:fff0000000000000
+    o_uint32: 4294967295
+    o_string: x:625f
+    o_enum: 2
+    r_double[0]: d:3ff8000000000000
+    r_double[1]: d:0000000000000000
+    r_double[2]: d:c12676f884f446ec
+    r_float[0]: f:00000000
+    r_float[1]: f:3fc00000
+    r_int32[0]: 2021168246
+    r_int32[1]: 2147483647
+    r_int64[0]: -1
+    r_int64[1]: -9223372036854775808
+    r_int64[2]: -1
+    r_uint32[0]: 1
+    r_uint64[0]: 18446744073709551615
+    r_uint64[1]: 1
+    r_uint64[2]: 0
+    r_sint32[0]: 1
+    r_fixed32[0]: 381185724
+    r_fixed32[1]: 0
+    r_fixed32[2]: 0
+    r_fixed64[0]: 0
+    r_sfixed32[0]: -2147483648
+    r_sfixed32[1]: 543
+    r_sfixed32[2]: -2147483648
+    r_sfixed64[0]: -9223372036854775808
+    r_bool[0]: false
+    r_bool[1]: true
+    r_string[0]: x:30785f3363325f30315f78
+    r_bytes[0]: x:c06e6fc351
+    r_bytes[1]: x:2613b5ef215ffc55580f
+    r_bytes[2]: x:
+    r_unpacked_int32[0]: -2147483648
+    r_unpacked_double[0]: d:c11a53493548d1e0
+    m_string_int32[] {
+      key: x:
+      value: 0
+    }
+    m_string_int32[] {
+      key: x:61
+      value: -512
+    }
+    m_string_int32[] {
+      key: x:e697a5e69cac
+      value: 1558211907
+    }
+    m_int64_string[] {
+      key: 1
+      value: x:7a5f7a3230337979333263637978305f316263
+    }
+    m_int64_string[] {
+      key: 7353503544815919494
+      value: x:e697a5e69cac
+    }
+    m_bool_double[] {
+      key: false
+      value: d:4118260f49e599dc
+    }
+    m_bool_double[] {
+      key: true
+      value: d:39b4484bfeebc2a0
+    }
+    m_string_sample[] {
+      key: x:7461620971756f746522
+      value {
+        timestamp_ms: -9223372036854775808
+      }
+    }
+    m_uint32_color[] {
+      key: 0
+      value: 77
+    }
+    m_uint32_color[] {
+      key: 1
+      value: 1
+    }
+    recursive {
+      f_double: d:46293e5939a08cea
+      f_float: f:7f800000
+      f_int32: 0
+      f_int64: -9223372036854775808
+      f_uint32: 4294967295
+      f_uint64: 1
+      f_sint32: 1
+      f_sint64: 0
+      f_fixed32: 0
+      f_fixed64: 9
+      f_sfixed32: -464
+      f_sfixed64: 9223372036854775807
+      f_bool: false
+      f_string: x:
+      f_bytes: x:2ef20d8b66e041b14f47
+      f_enum: -3
+      o_int64: -9223372036854775808
+      o_sint64: 1893415573733822775
+      o_enum: 1
+      r_double[0]: d:7ff0000000000000
+      r_float[0]: f:c0100000
+      r_float[1]: f:7f800000
+      r_float[2]: f:00000000
+      r_int32[0]: 1
+      r_int32[1]: -577
+      r_int32[2]: -952
+      r_uint32[0]: 0
+      r_uint32[1]: 0
+      r_uint32[2]: 0
+      r_uint64[0]: 13403212616331271120
+      r_uint64[1]: 0
+      r_uint64[2]: 768
+      r_sint32[0]: -726
+      r_sint32[1]: 0
+      r_sint32[2]: -1
+      r_sint64[0]: -9223372036854775808
+      r_sfixed64[0]: 2834692696516835902
+      r_bool[0]: false
+      r_bool[1]: true
+      r_bool[2]: true
+      r_string[0]: x:6233307831
+      r_bytes[0]: x:ea1e
+      r_bytes[1]: x:d0cd4ca908
+      r_bytes[2]: x:2294af0970a657cc08f8
+      r_enum[0]: 77
+      r_enum[1]: 77
+      r_unpacked_double[0]: d:39b4484bfeebc2a0
+      r_unpacked_double[1]: d:7ff0000000000000
+      r_unpacked_double[2]: d:46293e5939a08cea
+      m_string_int32[] {
+        key: x:32
+        value: 0
+      }
+      m_int64_string[] {
+        key: -1
+        value: x:61313178335f635f7933797a317978617a7a635f
+      }
+      m_bool_double[] {
+        key: true
+        value: d:46293e5939a08cea
+      }
+      m_uint32_color[] {
+        key: 674453837
+        value: 1
+      }
+      c_int32: 0
+    }
+    samples[0] {
+      timestamp_ms: -8753792178890914377
+      pressure: f:7fc00000
+    }
+    c_int32: -2147483648
+  }
+  samples[0] {
+    timestamp_ms: 1
+    pressure: f:ff800000
+    diagnostics {
+      calibrated: false
+      temperature: f:7f800000
+      drift: d:0000000000000000
+    }
+  }
+  samples[1] {
+    timestamp_ms: 0
+    status: 578614760
+    flow: f:c8e0f716
+    diagnostics {
+      voltage: f:c76ba441
+      drift: d:46293e5939a08cea
+    }
+  }
+  samples[2] {
+    timestamp_ms: -9223372036854775808
+    status: 1070165663
+  }
+}
+c_sample {
+  timestamp_ms: 9223372036854775807
+  pressure: f:c0100000
+  flow: f:0da24260
+  diagnostics {
+    drift: d:410eb6f3f935d870
+  }
+}

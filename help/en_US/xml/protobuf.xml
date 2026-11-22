@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf</keyword>
+  <short_description>Read and write Protocol Buffers data described by proto2, proto3 or editions .proto files.</short_description>
+  <syntax>
+    <syntax_item>schema = protobuf.load(filename)</syntax_item>
+    <syntax_item>bytes = protobuf.encode(schema, type, value)</syntax_item>
+    <syntax_item>value = protobuf.decode(schema, type, bytes)</syntax_item>
+    <syntax_item>protobuf.write(schema, type, filename, value, 'Delimited', true)</syntax_item>
+    <syntax_item>value = protobuf.read(schema, type, filename, 'Delimited', true)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema</param_name>
+      <param_description>a protobuf.Schema object returned by protobuf.load.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>type</param_name>
+      <param_description>the message type: a full name such as 'pkg.Outer.Inner', or a unique trailing part such as 'Inner'.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>value, bytes</param_name>
+      <param_description>a struct, columns, a table or a timetable on one side, a uint8 vector of encoded data on the other. See each function page for the options.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>schema, value, bytes</param_name>
+      <param_description>a loaded schema, decoded data in the requested layout, or encoded bytes. See each function page.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>The protobuf package reads and writes Protocol Buffers data. The .proto file is parsed at run time with the files it imports: no code generation, no compiler and no external tool are needed. Descriptor sets written by protoc are also accepted, and protobuf.descriptor writes one. This page gives an overview of the package; each function has its own page with its syntax, options and examples.</p>
+    <p>Supported: proto3 files with imports, messages, nested types, enums, <b>optional</b>, <b>repeated</b>, <b>oneof</b>, <b>map</b>, reserved names and numbers, services. Files written with <b>edition = "2023"</b> or <b>"2024"</b> are also read, with their features: field presence (explicit, implicit, legacy required), closed enums (a number that is not a value is kept as an unknown field), expanded or packed repeated fields, UTF-8 checks, delimited messages (group encoding), default values, and in edition 2024 the naming style and the export and local visibility of types. proto2 files are read with the same rules (labels optional, required and repeated, groups named after their type in the text format, default values, closed enums, unpacked repeated fields unless [packed = true], no UTF-8 check); a file without a syntax statement is proto2.</p>
+    <p>Extensions are read: <b>extensions</b> ranges, and <b>extend</b> blocks at file or message level (proto2 and editions; in proto3, only to define custom options on the google.protobuf.*Options messages). An extension is a field of the message it extends, listed by protobuf.fields with its full name in Extension, and named [full.name] in the text format and JSON. MessageSet wire format is not supported.</p>
+    <p>Value mapping: double, single, int32, int64, uint32, uint64, logical, char (string fields), uint8 (bytes fields), int32 (enum values; names are also accepted when encoding). Repeated scalar fields are row vectors, repeated text fields are cells, repeated messages and maps are struct arrays (map entries have the fields key and value).</p>
+    <p>Layouts: in 'struct', an absent value is [] and an absent sub-message is an empty struct; a oneof adds a field named after it with the set member, or '' when none is set. In the columns layouts, missing single and double values are NaN, other missing values are zero or empty text, and a presence output tells which values are present; given back to protobuf.encode with 'Presence', the columns encode to the same bytes. A 'table' or 'timetable' layout gives the columns as a table, with sub-message fields as parent_child variables.</p>
+    <p>protobuf.totext and protobuf.tojson follow the text format and the canonical proto3 JSON mapping of the reference implementation: default values are omitted, 64-bit integers are JSON strings, bytes are base64, enums are names, Timestamp and Duration are RFC 3339 and seconds strings. protobuf.fromjson accepts JSON and .proto field names; protobuf.fromtext reads the text format. With 'NDJSON', records are one JSON object per line. A google.protobuf.Any field is a struct with TypeUrl, Value and Message (the packed message decoded when its type is in the schema).</p>
+    <p>Large delimited streams are decoded and encoded on several threads. protobuf.read maps a data file in memory, protobuf.index writes a record index so 'Records' can skip ahead, protobuf.Decoder decodes a stream given in pieces, and protobuf.Writer writes records as they come. Errors have identifiers of the form protobuf:category:name (for example protobuf:parseError:importNotFound) and follow the language of Nelson.</p>
+    <p>The example drone_fleet_telemetry.m (run([modulepath('protobuf'), '/examples/drone_fleet_telemetry.m'])) streams the telemetry of 48 drones as 72000 records: encoded natively, read back with enum names and a Where filter, compared with NDJSON and replayed live in 3D.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Load a schema, encode a message and decode it back</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+bytes = protobuf.encode(schema, 'SensorSample', struct('timestamp_ms', 1000, 'status', 1));
+protobuf.decode(schema, 'SensorSample', bytes)
+]]></example_item_data>
+    </example_item>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Write a stream of records and read it back as columns</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+records = struct('timestamp_ms', {1000, 1040, 1080}, 'pressure', {single(5.2), [], single(5.6)});
+filename = [tempdir(), 'samples.bin'];
+protobuf.write(schema, 'SensorSample', filename, records, 'Delimited', true);
+[C, present] = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns');
+C.pressure
+present.pressure
+delete(filename);
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf.load">protobuf.load</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Schema">protobuf.Schema</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.descriptor">protobuf.descriptor</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fields">protobuf.fields</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.enums">protobuf.enums</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.encode">protobuf.encode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.write">protobuf.write</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.read">protobuf.read</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.index">protobuf.index</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Decoder">protobuf.Decoder</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Writer">protobuf.Writer</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.totext">protobuf.totext</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fromtext">protobuf.fromtext</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.tojson">protobuf.tojson</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fromjson">protobuf.fromjson</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.show">protobuf.show</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.inspect">protobuf.inspect</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.diff">protobuf.diff</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.infer">protobuf.infer</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

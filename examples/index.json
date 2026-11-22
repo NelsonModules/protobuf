@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "examples": [
+    {
+      "file": "drone_fleet_telemetry.m",
+      "title": {
+        "en_US": "Drone fleet telemetry",
+        "fr_FR": "Télémétrie d'une flotte de drones"
+      },
+      "description": {
+        "en_US": "48 drones stream 72000 protobuf records: the stream is encoded natively, read back with enum names and a Where filter, compared with NDJSON and replayed live in 3D.",
+        "fr_FR": "48 drones émettent 72000 enregistrements protobuf : le flux est encodé nativement, relu avec les noms d'énumération et un filtre Where, comparé à NDJSON et rejoué en direct en 3D."
+      },
+      "tags": [
+        "protobuf",
+        "telemetry",
+        "animation",
+        "3d"
+      ],
+      "requirements": [
+        "gui"
+      ]
+    }
+  ]
+}

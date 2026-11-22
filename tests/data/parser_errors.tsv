@@ -1,0 +1,125 @@
+# .proto text (\n for a new line)	expected error text
+syntax = "proto3";\nimport "y.proto";	x.proto:2:8: import "y.proto" not found.
+syntax = "proto3"; message A { int32 a = 1; int32 b = 1; }	field number 1 is already used in "A" by field "a".
+syntax = "proto3"; message A { int32 a = 19000; }	field numbers 19000 through 19999 are reserved for the implementation.
+syntax = "proto3"; message A { int32 a = 0; }	field numbers must be positive integers.
+syntax = "proto3"; message A { int32 a = 536870912; }	field numbers cannot be greater than 536870911.
+syntax = "proto3"; enum E { A = 1; }	the first value of open enum "E" must be zero.
+syntax = "proto3"; message A { B b = 1; }	"B" is not defined.
+syntax = "proto3"; message A { reserved 2 to 4; int32 a = 3; }	field "a" uses reserved number 3.
+syntax = "proto3"; message A { reserved "a"; int32 a = 3; }	field name "a" is reserved.
+syntax = "proto3"; message A { reserved 4 to 2; }	reserved range end number must be greater than start number.
+syntax = "proto3"; message A { reserved a; }	reserved names must be string literals (identifiers only in editions).
+syntax = "proto3"; enum E { Z = 0; reserved 1; A = 1; }	enum value "A" uses a reserved number.
+syntax = "proto3"; enum E { Z = 0; reserved "A"; A = 1; }	enum value name "A" is reserved.
+syntax = "proto3"; message A { required int32 a = 1; }	required fields are not allowed in proto3.
+syntax = "proto3"; message A { int32 a = 1 [default = 3]; }	explicit default values are not allowed in proto3.
+syntax = "proto3"; message A { int32 foo_bar = 1; int32 fooBar = 2; }	the JSON name of field "fooBar" conflicts with field "foo_bar".
+syntax = "proto3"; message A { string s = 1 [packed = true]; }	packed = true can only be used on repeated scalar numeric fields.
+syntax = "proto3"; message A { repeated int32 r = 1 [packed = 1]; }	the packed option expects true or false.
+syntax = "proto3"; message A { int32 a = 1 [json_name = x]; }	the json_name option expects a string.
+syntax = "proto3"; message A { map<float, int32> m = 1; }	invalid map key type.
+syntax = "proto3"; message A { map<string, int32> m = 1 [packed = true]; }	the packed option is not allowed on map fields.
+syntax = "proto3"; message A { oneof o { map<string, int32> m = 1; } }	map fields are not allowed in oneofs.
+syntax = "proto3"; message A { oneof o { repeated int32 r = 1; } }	fields in oneofs must not have labels.
+syntax = "proto3"; message A { int32 a = 1; } message A {}	"A" is already defined.
+syntax = "proto3"; enum E { Z = 0; A = 1; B = 1; }	"B" uses the same value as "A"; set option allow_alias = true to allow it.
+syntax = "proto3"; enum E { option allow_alias = true; Z = 0; A = 1; }	enum "E" sets allow_alias but has no aliases.
+syntax = "proto3"; enum E { }	an enum must contain at least one value.
+syntax = "proto3"; message A { oneof o { } }	a oneof must contain at least one field.
+syntax = "proto3"; message A { int32 a = 1 }	expected ";"
+syntax = "proto3"; message A { string s = 1; } /* open	unterminated
+syntax = "proto3"; message A { string s = 1 [default = "x]; }	unterminated
+syntax = "proto3"; message A { int32 a = 99999999999999999999; }	integer out of range.
+syntax = "proto3"; package a; package b;	multiple package definitions.
+syntax = "proto3"; extend A {}	an extend block must contain at least one field.
+syntax = "proto3"; message A { extensions 5 to 10; }	extension ranges are not allowed in proto3.
+syntax = "proto3"; message A { group G = 1 {} }	groups are only allowed in proto2 files.
+syntax = "proto3"; message A { int32 a = 1; } service S { rpc Do(A) returns (E); } enum E { Z = 0; }	method "Do" must use message types.
+syntax = "proto3"; package p; message A { message B {} B.C c = 1; }	"B.C" is resolved to "p.A.B.C", which is not defined; use a leading dot to start from the outermost scope.
+syntax = "proto3"; 42	expected a top-level definition.
+syntax = "proto3"; banana	expected a top-level definition, found "banana".
+syntax = "proto3"; option features.field_presence = IMPLICIT;	features are only allowed in editions files.
+edition = "2025";	edition "2025" is not supported (editions 2023 and 2024 are).
+edition = "2023"; message B { optional int32 x = 1; }	the optional label is not allowed in editions
+edition = "2023"; message B { required int32 x = 1; }	use features.field_presence = LEGACY_REQUIRED.
+edition = "2023"; message B { B m = 1 [features.field_presence = IMPLICIT]; }	message fields cannot have implicit presence.
+edition = "2023"; message B { oneof o { int32 a = 1 [features.field_presence = IMPLICIT]; } }	oneof fields cannot set field presence.
+edition = "2023"; message B { repeated int32 a = 1 [features.field_presence = EXPLICIT]; }	repeated fields cannot set field presence.
+edition = "2023"; message B { int32 a = 1 [features.foo = EXPLICIT]; }	unknown feature "foo".
+edition = "2023"; message B { int32 a = 1 [features.field_presence = BAD]; }	"BAD" is not a value of feature "field_presence".
+edition = "2023"; message B { int32 a = 1 [features.repeated_field_encoding = EXPANDED]; }	only repeated fields can set the repeated field encoding.
+edition = "2023"; message B { int32 a = 1 [features.message_encoding = DELIMITED]; }	only message fields can set the message encoding.
+edition = "2023"; message B { int32 a = 1 [features.utf8_validation = NONE]; }	only string fields can set UTF-8 validation.
+edition = "2023"; message B { repeated int32 a = 1 [packed = true]; }	the packed option is not allowed in editions
+edition = "2023"; enum E { A = 1; }	the first value of open enum "E" must be zero.
+edition = "2023"; message B { int32 a = 1 [features.field_presence = IMPLICIT, default = 3]; }	fields with implicit presence cannot have default values.
+edition = "2023"; enum E { option features.enum_type = CLOSED; A = 1; } message C { E e = 1 [features.field_presence = IMPLICIT]; }	fields with implicit presence must use open enums.
+edition = "2023"; message B { int32 a = 1 [default = 3000000000]; }	the default value is out of range for the field type.
+edition = "2023"; message B { uint32 a = 1 [default = -1]; }	the default value is out of range for the field type.
+edition = "2023"; message B { int32 a = 1 [default = 1.5]; }	the default value of an integer field must be an integer.
+edition = "2023"; message B { bool a = 1 [default = 1]; }	the default value of a bool field must be true or false.
+edition = "2023"; message B { string a = 1 [default = 1]; }	the default value of a string or bytes field must be a string.
+edition = "2023"; message B { double a = 1 [default = "x"]; }	the default value of a floating-point field must be a number.
+edition = "2023"; message B { repeated int32 a = 1 [default = 1]; }	repeated fields cannot have default values.
+edition = "2023"; message B { B b = 1 [default = X]; }	message fields cannot have default values.
+edition = "2023"; message B { map<string, int32> m = 1 [default = 1]; }	default
+edition = "2023"; enum E { option features.enum_type = CLOSED; A = 1; } message C { E e = 1 [default = B]; }	"B" is not a value of enum "E".
+edition = "2023"; message B { reserved "x"; }	reserved names must be identifiers in editions.
+edition = "2023"; message B { option features.field_presence = IMPLICIT; }	feature "field_presence" cannot be set on this element.
+edition = "2023"; option features.enforce_naming_style = STYLE2024;	feature "enforce_naming_style" needs edition 2024 or later.
+edition = "2023"; message B { group G = 1 {} }	groups are not allowed in editions
+edition = "2023"; local message A {}	"export" and "local" are only allowed from edition 2024.
+edition = "2023"; import option "a.proto";	"import option" is only allowed from edition 2024.
+edition = "2023"; message B { extensions 5 to 10; } extend B { int32 x = 11; }	"B" does not declare 11 as an extension number.
+edition = "2024"; message foo_bar {}	message name "foo_bar" should be TitleCase
+edition = "2024"; message foo {}	message name "foo" should begin with a capital letter
+edition = "2024"; message A { int32 BadName = 1; }	field name "BadName" should be lower_snake_case
+edition = "2024"; message A { int32 _x = 1; }	field name "_x" should begin with a lower case letter
+edition = "2024"; message A { int32 a_1 = 1; }	field name "a_1" contains underscores that break the style
+edition = "2024"; message A { oneof One { int32 a = 1; } }	oneof name "One" should be lower_snake_case
+edition = "2024"; enum E { a = 0; }	enum value name "a" should be UPPER_SNAKE_CASE
+edition = "2024"; enum e { A = 0; }	enum name "e" should begin with a capital letter
+edition = "2024"; package Bad.pkg;	package name "Bad.pkg" should be lower_snake_case
+edition = "2024"; message A {} service s { rpc Do(A) returns (A); }	service name "s" should begin with a capital letter
+edition = "2024"; message A {} service S { rpc do_it(A) returns (A); }	method name "do_it" should be TitleCase
+syntax = "proto3"; message A { int32 a = 0x; }	expected hexadecimal digits.
+syntax = "proto3"; option x = 1e;	expected exponent digits.
+syntax = "proto3"; message A { int32 a = 12ab; }	invalid character in a number.
+syntax = "proto3"; option x = "\x";	expected hexadecimal digits after \x.
+syntax = "proto3"; option x = "\u12";	invalid unicode escape.
+syntax = "proto3"; option x = "\U00110000";	unicode escape out of range.
+syntax = "proto3"; option x = "\q";	invalid escape sequence.
+syntax = "proto3"; message A { int32 a = 1; } @	unexpected character '@'.
+syntax = "proto3"; message 5 {}	expected a message name.
+syntax = 5;	expected a string literal.
+syntax = "proto3"; message A {} service S { rpc Do(A) gives (A); }	expected "returns".
+syntax = "proto3"; message A { reserved -1; }	expected a positive integer.
+syntax = "proto3"; message A { reserved 0; }	reserved numbers must be positive integers.
+syntax = "proto3"; message A { int32 a = x; }	expected an integer.
+syntax = "proto3"; option x = { a: 1	unterminated aggregate option value.
+syntax = "proto3"; option x = -foo;	expected a number after the sign.
+syntax = "proto3"; option x = -"s";	expected a number after the sign.
+syntax = "proto3"; option x = ;	expected an option value.
+syntax = "proto3"; message A { int32 a = 1;	unexpected end of file inside a message.
+syntax = "proto3"; message A { oneof o { int32 a = 1;	unexpected end of file inside a oneof.
+syntax = "proto3"; enum E { Z = 0;	unexpected end of file inside an enum.
+syntax = "proto3"; message A {} service S { rpc Do(A) returns (A);	unexpected end of file inside a service.
+syntax = "proto3"; message A {} service S { rpc Do(A) returns (A) { option x = 1;	unexpected end of file inside a method.
+syntax = "proto3"; message A { 5 b = 1; }	expected a field type.
+syntax = "proto3"; message A { .no.Such x = 1; }	".no.Such" is not defined.
+syntax = "proto3"; message A { S x = 1; } service S {}	"S" is not a type.
+syntax = "proto3"; enum E { Z = 0; reserved a; }	reserved names must be string literals (identifiers only in editions).
+edition = "2023"; enum E { option features.enum_type = CLOSED; A = 1; } message C { E e = 1 [default = 1]; }	the default value of an enum field must be one of its value names.
+syntax = "proto4";	x.proto:1:10: syntax "proto4" is not supported (proto2 and proto3 are).
+syntax = "proto2"; message A { int32 a = 1; }	x.proto:1:32: fields of proto2 files need a label: optional, required or repeated.
+message A { int32 a = 1; }	fields of proto2 files need a label: optional, required or repeated.
+syntax = "proto2"; message A { optional group lower = 1 { } }	group names must start with a capital letter.
+syntax = "proto2"; message A { oneof o { required int32 a = 1; } }	fields in oneofs must not have labels.
+syntax = "proto2"; option features.field_presence = EXPLICIT;	features are only allowed in editions files.
+syntax = "proto2"; message A { extensions 100 to 199; } extend A { required int32 r = 100; }	extension "r" cannot be required.
+syntax = "proto2"; message A { reserved a; }	reserved names must be string literals (identifiers only in editions).
+syntax = "proto2"; message A { required A a = 1 [default = X]; }	message fields cannot have default values.
+syntax = "proto2"; enum E { A = 1; } message M { optional E e = 1 [default = B]; }	"B" is not a value of enum "E".
+syntax = "proto2"; message A { repeated int32 a = 1 [default = 1]; }	repeated fields cannot have default values.
+syntax = "proto2"; message A { optional string s = 1 [packed = true]; }	packed = true can only be used on repeated scalar numeric fields.

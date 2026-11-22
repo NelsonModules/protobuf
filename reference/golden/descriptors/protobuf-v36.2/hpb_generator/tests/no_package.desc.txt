@@ -1,0 +1,15 @@
+package 
+syntax editions
+edition 2023
+message MessageWithEnumUpbTest
+  enum EnumWithNoPackageInMessage
+    closed
+    value UNKNOWN 0
+    value AB_1 1
+    value CD_2 2
+    value EF_3 3
+    value GH_4 4
+enum EnumWithNoPackage
+  closed
+  value CELSIUS 1
+  value FAHRENHEIT 2

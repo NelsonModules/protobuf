@@ -1,0 +1,533 @@
+package google.pubsub.v1
+syntax proto3
+message MessageStoragePolicy
+  field allowed_persistence_regions 1 3 9 - allowedPersistenceRegions - 0 -
+  field enforce_in_transit 2 1 8 - enforceInTransit - 0 -
+message SchemaSettings
+  field schema 1 1 9 - schema - 0 -
+  field encoding 2 1 14 .google.pubsub.v1.Encoding encoding - 0 -
+  field first_revision_id 3 1 9 - firstRevisionId - 0 -
+  field last_revision_id 4 1 9 - lastRevisionId - 0 -
+message IngestionDataSourceSettings
+  field aws_kinesis 1 1 11 .google.pubsub.v1.IngestionDataSourceSettings.AwsKinesis awsKinesis 0 0 -
+  field cloud_storage 2 1 11 .google.pubsub.v1.IngestionDataSourceSettings.CloudStorage cloudStorage 0 0 -
+  field azure_event_hubs 3 1 11 .google.pubsub.v1.IngestionDataSourceSettings.AzureEventHubs azureEventHubs 0 0 -
+  field aws_msk 5 1 11 .google.pubsub.v1.IngestionDataSourceSettings.AwsMsk awsMsk 0 0 -
+  field confluent_cloud 6 1 11 .google.pubsub.v1.IngestionDataSourceSettings.ConfluentCloud confluentCloud 0 0 -
+  field platform_logs_settings 4 1 11 .google.pubsub.v1.PlatformLogsSettings platformLogsSettings - 0 -
+  message AwsKinesis
+    field state 1 1 14 .google.pubsub.v1.IngestionDataSourceSettings.AwsKinesis.State state - 0 -
+    field stream_arn 2 1 9 - streamArn - 0 -
+    field consumer_arn 3 1 9 - consumerArn - 0 -
+    field aws_role_arn 4 1 9 - awsRoleArn - 0 -
+    field gcp_service_account 5 1 9 - gcpServiceAccount - 0 -
+    enum State
+      value STATE_UNSPECIFIED 0
+      value ACTIVE 1
+      value KINESIS_PERMISSION_DENIED 2
+      value PUBLISH_PERMISSION_DENIED 3
+      value STREAM_NOT_FOUND 4
+      value CONSUMER_NOT_FOUND 5
+      value CONFLICTING_REGION_CONSTRAINTS 6
+  message CloudStorage
+    field state 1 1 14 .google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.State state - 0 -
+    field bucket 2 1 9 - bucket - 0 -
+    field text_format 3 1 11 .google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.TextFormat textFormat 0 0 -
+    field avro_format 4 1 11 .google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.AvroFormat avroFormat 0 0 -
+    field pubsub_avro_format 5 1 11 .google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.PubSubAvroFormat pubsubAvroFormat 0 0 -
+    field minimum_object_create_time 6 1 11 .google.protobuf.Timestamp minimumObjectCreateTime - 0 -
+    field match_glob 9 1 9 - matchGlob - 0 -
+    message TextFormat
+      field delimiter 1 1 9 - delimiter 0 1 -
+      oneof _delimiter
+    message AvroFormat
+    message PubSubAvroFormat
+    enum State
+      value STATE_UNSPECIFIED 0
+      value ACTIVE 1
+      value CLOUD_STORAGE_PERMISSION_DENIED 2
+      value PUBLISH_PERMISSION_DENIED 3
+      value BUCKET_NOT_FOUND 4
+      value TOO_MANY_OBJECTS 5
+      value CONFLICTING_REGION_CONSTRAINTS 8
+    oneof input_format
+  message AzureEventHubs
+    field state 1 1 14 .google.pubsub.v1.IngestionDataSourceSettings.AzureEventHubs.State state - 0 -
+    field resource_group 2 1 9 - resourceGroup - 0 -
+    field namespace 3 1 9 - namespace - 0 -
+    field event_hub 4 1 9 - eventHub - 0 -
+    field client_id 5 1 9 - clientId - 0 -
+    field tenant_id 6 1 9 - tenantId - 0 -
+    field subscription_id 7 1 9 - subscriptionId - 0 -
+    field gcp_service_account 8 1 9 - gcpServiceAccount - 0 -
+    enum State
+      value STATE_UNSPECIFIED 0
+      value ACTIVE 1
+      value EVENT_HUBS_PERMISSION_DENIED 2
+      value PUBLISH_PERMISSION_DENIED 3
+      value NAMESPACE_NOT_FOUND 4
+      value EVENT_HUB_NOT_FOUND 5
+      value SUBSCRIPTION_NOT_FOUND 6
+      value RESOURCE_GROUP_NOT_FOUND 7
+      value CONFLICTING_REGION_CONSTRAINTS 8
+  message AwsMsk
+    field state 1 1 14 .google.pubsub.v1.IngestionDataSourceSettings.AwsMsk.State state - 0 -
+    field cluster_arn 2 1 9 - clusterArn - 0 -
+    field topic 3 1 9 - topic - 0 -
+    field aws_role_arn 4 1 9 - awsRoleArn - 0 -
+    field gcp_service_account 5 1 9 - gcpServiceAccount - 0 -
+    enum State
+      value STATE_UNSPECIFIED 0
+      value ACTIVE 1
+      value MSK_PERMISSION_DENIED 2
+      value PUBLISH_PERMISSION_DENIED 3
+      value CLUSTER_NOT_FOUND 4
+      value TOPIC_NOT_FOUND 5
+      value CONFLICTING_REGION_CONSTRAINTS 6
+  message ConfluentCloud
+    field state 1 1 14 .google.pubsub.v1.IngestionDataSourceSettings.ConfluentCloud.State state - 0 -
+    field bootstrap_server 2 1 9 - bootstrapServer - 0 -
+    field cluster_id 3 1 9 - clusterId - 0 -
+    field topic 4 1 9 - topic - 0 -
+    field identity_pool_id 5 1 9 - identityPoolId - 0 -
+    field gcp_service_account 6 1 9 - gcpServiceAccount - 0 -
+    enum State
+      value STATE_UNSPECIFIED 0
+      value ACTIVE 1
+      value CONFLUENT_CLOUD_PERMISSION_DENIED 2
+      value PUBLISH_PERMISSION_DENIED 3
+      value UNREACHABLE_BOOTSTRAP_SERVER 4
+      value CLUSTER_NOT_FOUND 5
+      value TOPIC_NOT_FOUND 6
+      value CONFLICTING_REGION_CONSTRAINTS 7
+  oneof source
+message PlatformLogsSettings
+  field severity 1 1 14 .google.pubsub.v1.PlatformLogsSettings.Severity severity - 0 -
+  enum Severity
+    value SEVERITY_UNSPECIFIED 0
+    value DISABLED 1
+    value DEBUG 2
+    value INFO 3
+    value WARNING 4
+    value ERROR 5
+message IngestionFailureEvent
+  field topic 1 1 9 - topic - 0 -
+  field error_message 2 1 9 - errorMessage - 0 -
+  field cloud_storage_failure 3 1 11 .google.pubsub.v1.IngestionFailureEvent.CloudStorageFailure cloudStorageFailure 0 0 -
+  field aws_msk_failure 4 1 11 .google.pubsub.v1.IngestionFailureEvent.AwsMskFailureReason awsMskFailure 0 0 -
+  field azure_event_hubs_failure 5 1 11 .google.pubsub.v1.IngestionFailureEvent.AzureEventHubsFailureReason azureEventHubsFailure 0 0 -
+  field confluent_cloud_failure 6 1 11 .google.pubsub.v1.IngestionFailureEvent.ConfluentCloudFailureReason confluentCloudFailure 0 0 -
+  field aws_kinesis_failure 7 1 11 .google.pubsub.v1.IngestionFailureEvent.AwsKinesisFailureReason awsKinesisFailure 0 0 -
+  message ApiViolationReason
+  message AvroFailureReason
+  message SchemaViolationReason
+  message MessageTransformationFailureReason
+  message CloudStorageFailure
+    field bucket 1 1 9 - bucket - 0 -
+    field object_name 2 1 9 - objectName - 0 -
+    field object_generation 3 1 3 - objectGeneration - 0 -
+    field avro_failure_reason 5 1 11 .google.pubsub.v1.IngestionFailureEvent.AvroFailureReason avroFailureReason 0 0 -
+    field api_violation_reason 6 1 11 .google.pubsub.v1.IngestionFailureEvent.ApiViolationReason apiViolationReason 0 0 -
+    field schema_violation_reason 7 1 11 .google.pubsub.v1.IngestionFailureEvent.SchemaViolationReason schemaViolationReason 0 0 -
+    field message_transformation_failure_reason 8 1 11 .google.pubsub.v1.IngestionFailureEvent.MessageTransformationFailureReason messageTransformationFailureReason 0 0 -
+    oneof reason
+  message AwsMskFailureReason
+    field cluster_arn 1 1 9 - clusterArn - 0 -
+    field kafka_topic 2 1 9 - kafkaTopic - 0 -
+    field partition_id 3 1 3 - partitionId - 0 -
+    field offset 4 1 3 - offset - 0 -
+    field api_violation_reason 5 1 11 .google.pubsub.v1.IngestionFailureEvent.ApiViolationReason apiViolationReason 0 0 -
+    field schema_violation_reason 6 1 11 .google.pubsub.v1.IngestionFailureEvent.SchemaViolationReason schemaViolationReason 0 0 -
+    field message_transformation_failure_reason 7 1 11 .google.pubsub.v1.IngestionFailureEvent.MessageTransformationFailureReason messageTransformationFailureReason 0 0 -
+    oneof reason
+  message AzureEventHubsFailureReason
+    field namespace 1 1 9 - namespace - 0 -
+    field event_hub 2 1 9 - eventHub - 0 -
+    field partition_id 3 1 3 - partitionId - 0 -
+    field offset 4 1 3 - offset - 0 -
+    field api_violation_reason 5 1 11 .google.pubsub.v1.IngestionFailureEvent.ApiViolationReason apiViolationReason 0 0 -
+    field schema_violation_reason 6 1 11 .google.pubsub.v1.IngestionFailureEvent.SchemaViolationReason schemaViolationReason 0 0 -
+    field message_transformation_failure_reason 7 1 11 .google.pubsub.v1.IngestionFailureEvent.MessageTransformationFailureReason messageTransformationFailureReason 0 0 -
+    oneof reason
+  message ConfluentCloudFailureReason
+    field cluster_id 1 1 9 - clusterId - 0 -
+    field kafka_topic 2 1 9 - kafkaTopic - 0 -
+    field partition_id 3 1 3 - partitionId - 0 -
+    field offset 4 1 3 - offset - 0 -
+    field api_violation_reason 5 1 11 .google.pubsub.v1.IngestionFailureEvent.ApiViolationReason apiViolationReason 0 0 -
+    field schema_violation_reason 6 1 11 .google.pubsub.v1.IngestionFailureEvent.SchemaViolationReason schemaViolationReason 0 0 -
+    field message_transformation_failure_reason 7 1 11 .google.pubsub.v1.IngestionFailureEvent.MessageTransformationFailureReason messageTransformationFailureReason 0 0 -
+    oneof reason
+  message AwsKinesisFailureReason
+    field stream_arn 1 1 9 - streamArn - 0 -
+    field partition_key 2 1 9 - partitionKey - 0 -
+    field sequence_number 3 1 9 - sequenceNumber - 0 -
+    field schema_violation_reason 4 1 11 .google.pubsub.v1.IngestionFailureEvent.SchemaViolationReason schemaViolationReason 0 0 -
+    field message_transformation_failure_reason 5 1 11 .google.pubsub.v1.IngestionFailureEvent.MessageTransformationFailureReason messageTransformationFailureReason 0 0 -
+    field api_violation_reason 6 1 11 .google.pubsub.v1.IngestionFailureEvent.ApiViolationReason apiViolationReason 0 0 -
+    oneof reason
+  oneof failure
+message JavaScriptUDF
+  field function_name 1 1 9 - functionName - 0 -
+  field code 2 1 9 - code - 0 -
+message Compression
+  field compression_algorithm 1 1 14 .google.pubsub.v1.Compression.CompressionAlgorithm compressionAlgorithm - 0 -
+  field compression_mode 2 1 14 .google.pubsub.v1.Compression.CompressionMode compressionMode - 0 -
+  enum CompressionAlgorithm
+    value COMPRESSION_ALGORITHM_UNSPECIFIED 0
+    value ZLIB 1
+    value ZSTD 3
+  enum CompressionMode
+    value COMPRESSION_MODE_UNSPECIFIED 0
+    value COMPRESS 1
+    value DECOMPRESS 2
+message AIInference
+  field endpoint 1 1 9 - endpoint - 0 -
+  field unstructured_inference 2 1 11 .google.pubsub.v1.AIInference.UnstructuredInference unstructuredInference 0 0 -
+  field service_account_email 3 1 9 - serviceAccountEmail - 0 -
+  message UnstructuredInference
+    field parameters 1 1 11 .google.protobuf.Struct parameters - 0 -
+  oneof inference_mode
+message MessageTransform
+  field javascript_udf 2 1 11 .google.pubsub.v1.JavaScriptUDF javascriptUdf 0 0 -
+  field compression 7 1 11 .google.pubsub.v1.Compression compression 0 0 -
+  field ai_inference 6 1 11 .google.pubsub.v1.AIInference aiInference 0 0 -
+  field enabled 3 1 8 - enabled - 0 -
+  field disabled 4 1 8 - disabled - 0 -
+  oneof transform
+message Topic
+  field name 1 1 9 - name - 0 -
+  field labels 2 3 11 .google.pubsub.v1.Topic.LabelsEntry labels - 0 -
+  field message_storage_policy 3 1 11 .google.pubsub.v1.MessageStoragePolicy messageStoragePolicy - 0 -
+  field kms_key_name 5 1 9 - kmsKeyName - 0 -
+  field schema_settings 6 1 11 .google.pubsub.v1.SchemaSettings schemaSettings - 0 -
+  field satisfies_pzs 7 1 8 - satisfiesPzs - 0 -
+  field message_retention_duration 8 1 11 .google.protobuf.Duration messageRetentionDuration - 0 -
+  field state 9 1 14 .google.pubsub.v1.Topic.State state - 0 -
+  field ingestion_data_source_settings 10 1 11 .google.pubsub.v1.IngestionDataSourceSettings ingestionDataSourceSettings - 0 -
+  field message_transforms 13 3 11 .google.pubsub.v1.MessageTransform messageTransforms - 0 -
+  field tags 14 3 11 .google.pubsub.v1.Topic.TagsEntry tags - 0 -
+  message LabelsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message TagsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  enum State
+    value STATE_UNSPECIFIED 0
+    value ACTIVE 1
+    value INGESTION_RESOURCE_ERROR 2
+message PubsubMessage
+  field data 1 1 12 - data - 0 -
+  field attributes 2 3 11 .google.pubsub.v1.PubsubMessage.AttributesEntry attributes - 0 -
+  field message_id 3 1 9 - messageId - 0 -
+  field publish_time 4 1 11 .google.protobuf.Timestamp publishTime - 0 -
+  field ordering_key 5 1 9 - orderingKey - 0 -
+  message AttributesEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message GetTopicRequest
+  field topic 1 1 9 - topic - 0 -
+message UpdateTopicRequest
+  field topic 1 1 11 .google.pubsub.v1.Topic topic - 0 -
+  field update_mask 2 1 11 .google.protobuf.FieldMask updateMask - 0 -
+message PublishRequest
+  field topic 1 1 9 - topic - 0 -
+  field messages 2 3 11 .google.pubsub.v1.PubsubMessage messages - 0 -
+message PublishResponse
+  field message_ids 1 3 9 - messageIds - 0 -
+message ListTopicsRequest
+  field project 1 1 9 - project - 0 -
+  field page_size 2 1 5 - pageSize - 0 -
+  field page_token 3 1 9 - pageToken - 0 -
+message ListTopicsResponse
+  field topics 1 3 11 .google.pubsub.v1.Topic topics - 0 -
+  field next_page_token 2 1 9 - nextPageToken - 0 -
+message ListTopicSubscriptionsRequest
+  field topic 1 1 9 - topic - 0 -
+  field page_size 2 1 5 - pageSize - 0 -
+  field page_token 3 1 9 - pageToken - 0 -
+message ListTopicSubscriptionsResponse
+  field subscriptions 1 3 9 - subscriptions - 0 -
+  field next_page_token 2 1 9 - nextPageToken - 0 -
+message ListTopicSnapshotsRequest
+  field topic 1 1 9 - topic - 0 -
+  field page_size 2 1 5 - pageSize - 0 -
+  field page_token 3 1 9 - pageToken - 0 -
+message ListTopicSnapshotsResponse
+  field snapshots 1 3 9 - snapshots - 0 -
+  field next_page_token 2 1 9 - nextPageToken - 0 -
+message DeleteTopicRequest
+  field topic 1 1 9 - topic - 0 -
+message DetachSubscriptionRequest
+  field subscription 1 1 9 - subscription - 0 -
+message DetachSubscriptionResponse
+message Subscription
+  field name 1 1 9 - name - 0 -
+  field topic 2 1 9 - topic - 0 -
+  field push_config 4 1 11 .google.pubsub.v1.PushConfig pushConfig - 0 -
+  field bigquery_config 18 1 11 .google.pubsub.v1.BigQueryConfig bigqueryConfig - 0 -
+  field cloud_storage_config 22 1 11 .google.pubsub.v1.CloudStorageConfig cloudStorageConfig - 0 -
+  field bigtable_config 27 1 11 .google.pubsub.v1.BigtableConfig bigtableConfig - 0 -
+  field ack_deadline_seconds 5 1 5 - ackDeadlineSeconds - 0 -
+  field retain_acked_messages 7 1 8 - retainAckedMessages - 0 -
+  field message_retention_duration 8 1 11 .google.protobuf.Duration messageRetentionDuration - 0 -
+  field labels 9 3 11 .google.pubsub.v1.Subscription.LabelsEntry labels - 0 -
+  field enable_message_ordering 10 1 8 - enableMessageOrdering - 0 -
+  field expiration_policy 11 1 11 .google.pubsub.v1.ExpirationPolicy expirationPolicy - 0 -
+  field filter 12 1 9 - filter - 0 -
+  field dead_letter_policy 13 1 11 .google.pubsub.v1.DeadLetterPolicy deadLetterPolicy - 0 -
+  field retry_policy 14 1 11 .google.pubsub.v1.RetryPolicy retryPolicy - 0 -
+  field detached 15 1 8 - detached - 0 -
+  field enable_exactly_once_delivery 16 1 8 - enableExactlyOnceDelivery - 0 -
+  field topic_message_retention_duration 17 1 11 .google.protobuf.Duration topicMessageRetentionDuration - 0 -
+  field state 19 1 14 .google.pubsub.v1.Subscription.State state - 0 -
+  field analytics_hub_subscription_info 23 1 11 .google.pubsub.v1.Subscription.AnalyticsHubSubscriptionInfo analyticsHubSubscriptionInfo - 0 -
+  field message_transforms 25 3 11 .google.pubsub.v1.MessageTransform messageTransforms - 0 -
+  field tags 26 3 11 .google.pubsub.v1.Subscription.TagsEntry tags - 0 -
+  message AnalyticsHubSubscriptionInfo
+    field listing 1 1 9 - listing - 0 -
+    field subscription 2 1 9 - subscription - 0 -
+  message LabelsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message TagsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  enum State
+    value STATE_UNSPECIFIED 0
+    value ACTIVE 1
+    value RESOURCE_ERROR 2
+message RetryPolicy
+  field minimum_backoff 1 1 11 .google.protobuf.Duration minimumBackoff - 0 -
+  field maximum_backoff 2 1 11 .google.protobuf.Duration maximumBackoff - 0 -
+message DeadLetterPolicy
+  field dead_letter_topic 1 1 9 - deadLetterTopic - 0 -
+  field max_delivery_attempts 2 1 5 - maxDeliveryAttempts - 0 -
+message ExpirationPolicy
+  field ttl 1 1 11 .google.protobuf.Duration ttl - 0 -
+message PushConfig
+  field push_endpoint 1 1 9 - pushEndpoint - 0 -
+  field attributes 2 3 11 .google.pubsub.v1.PushConfig.AttributesEntry attributes - 0 -
+  field oidc_token 3 1 11 .google.pubsub.v1.PushConfig.OidcToken oidcToken 0 0 -
+  field pubsub_wrapper 4 1 11 .google.pubsub.v1.PushConfig.PubsubWrapper pubsubWrapper 1 0 -
+  field no_wrapper 5 1 11 .google.pubsub.v1.PushConfig.NoWrapper noWrapper 1 0 -
+  message OidcToken
+    field service_account_email 1 1 9 - serviceAccountEmail - 0 -
+    field audience 2 1 9 - audience - 0 -
+  message PubsubWrapper
+  message NoWrapper
+    field write_metadata 1 1 8 - writeMetadata - 0 -
+  message AttributesEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  oneof authentication_method
+  oneof wrapper
+message BigQueryConfig
+  field table 1 1 9 - table - 0 -
+  field use_topic_schema 2 1 8 - useTopicSchema - 0 -
+  field write_metadata 3 1 8 - writeMetadata - 0 -
+  field drop_unknown_fields 4 1 8 - dropUnknownFields - 0 -
+  field state 5 1 14 .google.pubsub.v1.BigQueryConfig.State state - 0 -
+  field use_table_schema 6 1 8 - useTableSchema - 0 -
+  field service_account_email 7 1 9 - serviceAccountEmail - 0 -
+  enum State
+    value STATE_UNSPECIFIED 0
+    value ACTIVE 1
+    value PERMISSION_DENIED 2
+    value NOT_FOUND 3
+    value SCHEMA_MISMATCH 4
+    value IN_TRANSIT_LOCATION_RESTRICTION 5
+    value VERTEX_AI_LOCATION_RESTRICTION 6
+message BigtableConfig
+  field table 1 1 9 - table - 0 -
+  field app_profile_id 2 1 9 - appProfileId - 0 -
+  field service_account_email 3 1 9 - serviceAccountEmail - 0 -
+  field write_metadata 5 1 8 - writeMetadata - 0 -
+  field column_family_mapping 6 1 11 .google.pubsub.v1.BigtableConfig.ColumnFamilyMapping columnFamilyMapping 0 0 -
+  field state 4 1 14 .google.pubsub.v1.BigtableConfig.State state - 0 -
+  message ColumnFamilyMapping
+    field row_key_schema 1 1 11 .google.pubsub.v1.BigtableConfig.ColumnFamilyMapping.RowKeySchema rowKeySchema 0 0 -
+    field delimited_key 2 1 11 .google.pubsub.v1.BigtableConfig.ColumnFamilyMapping.DelimitedKey delimitedKey 0 0 -
+    message RowKeySchema
+    message DelimitedKey
+      field key_fields 1 3 9 - keyFields - 0 -
+      field delimiter 2 1 12 - delimiter - 0 -
+    oneof key_definition
+  enum State
+    value STATE_UNSPECIFIED 0
+    value ACTIVE 1
+    value NOT_FOUND 2
+    value APP_PROFILE_MISCONFIGURED 3
+    value PERMISSION_DENIED 4
+    value SCHEMA_MISMATCH 5
+    value IN_TRANSIT_LOCATION_RESTRICTION 6
+    value VERTEX_AI_LOCATION_RESTRICTION 7
+  oneof message_mapping
+message CloudStorageConfig
+  field bucket 1 1 9 - bucket - 0 -
+  field filename_prefix 2 1 9 - filenamePrefix - 0 -
+  field filename_suffix 3 1 9 - filenameSuffix - 0 -
+  field filename_datetime_format 10 1 9 - filenameDatetimeFormat - 0 -
+  field text_config 4 1 11 .google.pubsub.v1.CloudStorageConfig.TextConfig textConfig 0 0 -
+  field avro_config 5 1 11 .google.pubsub.v1.CloudStorageConfig.AvroConfig avroConfig 0 0 -
+  field max_duration 6 1 11 .google.protobuf.Duration maxDuration - 0 -
+  field max_bytes 7 1 3 - maxBytes - 0 -
+  field max_messages 8 1 3 - maxMessages - 0 -
+  field state 9 1 14 .google.pubsub.v1.CloudStorageConfig.State state - 0 -
+  field service_account_email 11 1 9 - serviceAccountEmail - 0 -
+  message TextConfig
+  message AvroConfig
+    field write_metadata 1 1 8 - writeMetadata - 0 -
+    field use_topic_schema 2 1 8 - useTopicSchema - 0 -
+  enum State
+    value STATE_UNSPECIFIED 0
+    value ACTIVE 1
+    value PERMISSION_DENIED 2
+    value NOT_FOUND 3
+    value IN_TRANSIT_LOCATION_RESTRICTION 4
+    value SCHEMA_MISMATCH 5
+    value VERTEX_AI_LOCATION_RESTRICTION 6
+  oneof output_format
+message ReceivedMessage
+  field ack_id 1 1 9 - ackId - 0 -
+  field message 2 1 11 .google.pubsub.v1.PubsubMessage message - 0 -
+  field delivery_attempt 3 1 5 - deliveryAttempt - 0 -
+message GetSubscriptionRequest
+  field subscription 1 1 9 - subscription - 0 -
+message UpdateSubscriptionRequest
+  field subscription 1 1 11 .google.pubsub.v1.Subscription subscription - 0 -
+  field update_mask 2 1 11 .google.protobuf.FieldMask updateMask - 0 -
+message ListSubscriptionsRequest
+  field project 1 1 9 - project - 0 -
+  field page_size 2 1 5 - pageSize - 0 -
+  field page_token 3 1 9 - pageToken - 0 -
+message ListSubscriptionsResponse
+  field subscriptions 1 3 11 .google.pubsub.v1.Subscription subscriptions - 0 -
+  field next_page_token 2 1 9 - nextPageToken - 0 -
+message DeleteSubscriptionRequest
+  field subscription 1 1 9 - subscription - 0 -
+message ModifyPushConfigRequest
+  field subscription 1 1 9 - subscription - 0 -
+  field push_config 2 1 11 .google.pubsub.v1.PushConfig pushConfig - 0 -
+message PullRequest
+  field subscription 1 1 9 - subscription - 0 -
+  field return_immediately 2 1 8 - returnImmediately - 0 -
+  field max_messages 3 1 5 - maxMessages - 0 -
+message PullResponse
+  field received_messages 1 3 11 .google.pubsub.v1.ReceivedMessage receivedMessages - 0 -
+message ModifyAckDeadlineRequest
+  field subscription 1 1 9 - subscription - 0 -
+  field ack_ids 4 3 9 - ackIds - 0 -
+  field ack_deadline_seconds 3 1 5 - ackDeadlineSeconds - 0 -
+message AcknowledgeRequest
+  field subscription 1 1 9 - subscription - 0 -
+  field ack_ids 2 3 9 - ackIds - 0 -
+message StreamingPullRequest
+  field subscription 1 1 9 - subscription - 0 -
+  field ack_ids 2 3 9 - ackIds - 0 -
+  field modify_deadline_seconds 3 3 5 - modifyDeadlineSeconds - 0 -
+  field modify_deadline_ack_ids 4 3 9 - modifyDeadlineAckIds - 0 -
+  field stream_ack_deadline_seconds 5 1 5 - streamAckDeadlineSeconds - 0 -
+  field client_id 6 1 9 - clientId - 0 -
+  field max_outstanding_messages 7 1 3 - maxOutstandingMessages - 0 -
+  field max_outstanding_bytes 8 1 3 - maxOutstandingBytes - 0 -
+  field protocol_version 10 1 3 - protocolVersion - 0 -
+message StreamingPullResponse
+  field received_messages 1 3 11 .google.pubsub.v1.ReceivedMessage receivedMessages - 0 -
+  field acknowledge_confirmation 5 1 11 .google.pubsub.v1.StreamingPullResponse.AcknowledgeConfirmation acknowledgeConfirmation - 0 -
+  field modify_ack_deadline_confirmation 3 1 11 .google.pubsub.v1.StreamingPullResponse.ModifyAckDeadlineConfirmation modifyAckDeadlineConfirmation - 0 -
+  field subscription_properties 4 1 11 .google.pubsub.v1.StreamingPullResponse.SubscriptionProperties subscriptionProperties - 0 -
+  message AcknowledgeConfirmation
+    field ack_ids 1 3 9 - ackIds - 0 -
+    field invalid_ack_ids 2 3 9 - invalidAckIds - 0 -
+    field unordered_ack_ids 3 3 9 - unorderedAckIds - 0 -
+    field temporary_failed_ack_ids 4 3 9 - temporaryFailedAckIds - 0 -
+  message ModifyAckDeadlineConfirmation
+    field ack_ids 1 3 9 - ackIds - 0 -
+    field invalid_ack_ids 2 3 9 - invalidAckIds - 0 -
+    field temporary_failed_ack_ids 3 3 9 - temporaryFailedAckIds - 0 -
+  message SubscriptionProperties
+    field exactly_once_delivery_enabled 1 1 8 - exactlyOnceDeliveryEnabled - 0 -
+    field message_ordering_enabled 2 1 8 - messageOrderingEnabled - 0 -
+message CreateSnapshotRequest
+  field name 1 1 9 - name - 0 -
+  field subscription 2 1 9 - subscription - 0 -
+  field labels 3 3 11 .google.pubsub.v1.CreateSnapshotRequest.LabelsEntry labels - 0 -
+  field tags 4 3 11 .google.pubsub.v1.CreateSnapshotRequest.TagsEntry tags - 0 -
+  message LabelsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message TagsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message UpdateSnapshotRequest
+  field snapshot 1 1 11 .google.pubsub.v1.Snapshot snapshot - 0 -
+  field update_mask 2 1 11 .google.protobuf.FieldMask updateMask - 0 -
+message Snapshot
+  field name 1 1 9 - name - 0 -
+  field topic 2 1 9 - topic - 0 -
+  field expire_time 3 1 11 .google.protobuf.Timestamp expireTime - 0 -
+  field labels 4 3 11 .google.pubsub.v1.Snapshot.LabelsEntry labels - 0 -
+  message LabelsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message GetSnapshotRequest
+  field snapshot 1 1 9 - snapshot - 0 -
+message ListSnapshotsRequest
+  field project 1 1 9 - project - 0 -
+  field page_size 2 1 5 - pageSize - 0 -
+  field page_token 3 1 9 - pageToken - 0 -
+message ListSnapshotsResponse
+  field snapshots 1 3 11 .google.pubsub.v1.Snapshot snapshots - 0 -
+  field next_page_token 2 1 9 - nextPageToken - 0 -
+message DeleteSnapshotRequest
+  field snapshot 1 1 9 - snapshot - 0 -
+message SeekRequest
+  field subscription 1 1 9 - subscription - 0 -
+  field time 2 1 11 .google.protobuf.Timestamp time 0 0 -
+  field snapshot 3 1 9 - snapshot 0 0 -
+  oneof target
+message SeekResponse
+message PubsubClientTelemetry
+  field publish_operation 1 1 11 .google.pubsub.v1.PubsubClientTelemetry.PublishOperation publishOperation 0 0 -
+  message PublishOperation
+    field hedged_attempt_count 1 1 5 - hedgedAttemptCount - 0 -
+    field publish_start_time 2 1 11 .google.protobuf.Timestamp publishStartTime - 0 -
+  oneof operation
+service Publisher
+  method CreateTopic .google.pubsub.v1.Topic .google.pubsub.v1.Topic 0 0
+  method UpdateTopic .google.pubsub.v1.UpdateTopicRequest .google.pubsub.v1.Topic 0 0
+  method Publish .google.pubsub.v1.PublishRequest .google.pubsub.v1.PublishResponse 0 0
+  method GetTopic .google.pubsub.v1.GetTopicRequest .google.pubsub.v1.Topic 0 0
+  method ListTopics .google.pubsub.v1.ListTopicsRequest .google.pubsub.v1.ListTopicsResponse 0 0
+  method ListTopicSubscriptions .google.pubsub.v1.ListTopicSubscriptionsRequest .google.pubsub.v1.ListTopicSubscriptionsResponse 0 0
+  method ListTopicSnapshots .google.pubsub.v1.ListTopicSnapshotsRequest .google.pubsub.v1.ListTopicSnapshotsResponse 0 0
+  method DeleteTopic .google.pubsub.v1.DeleteTopicRequest .google.protobuf.Empty 0 0
+  method DetachSubscription .google.pubsub.v1.DetachSubscriptionRequest .google.pubsub.v1.DetachSubscriptionResponse 0 0
+service Subscriber
+  method CreateSubscription .google.pubsub.v1.Subscription .google.pubsub.v1.Subscription 0 0
+  method GetSubscription .google.pubsub.v1.GetSubscriptionRequest .google.pubsub.v1.Subscription 0 0
+  method UpdateSubscription .google.pubsub.v1.UpdateSubscriptionRequest .google.pubsub.v1.Subscription 0 0
+  method ListSubscriptions .google.pubsub.v1.ListSubscriptionsRequest .google.pubsub.v1.ListSubscriptionsResponse 0 0
+  method DeleteSubscription .google.pubsub.v1.DeleteSubscriptionRequest .google.protobuf.Empty 0 0
+  method ModifyAckDeadline .google.pubsub.v1.ModifyAckDeadlineRequest .google.protobuf.Empty 0 0
+  method Acknowledge .google.pubsub.v1.AcknowledgeRequest .google.protobuf.Empty 0 0
+  method Pull .google.pubsub.v1.PullRequest .google.pubsub.v1.PullResponse 0 0
+  method StreamingPull .google.pubsub.v1.StreamingPullRequest .google.pubsub.v1.StreamingPullResponse 1 1
+  method ModifyPushConfig .google.pubsub.v1.ModifyPushConfigRequest .google.protobuf.Empty 0 0
+  method GetSnapshot .google.pubsub.v1.GetSnapshotRequest .google.pubsub.v1.Snapshot 0 0
+  method ListSnapshots .google.pubsub.v1.ListSnapshotsRequest .google.pubsub.v1.ListSnapshotsResponse 0 0
+  method CreateSnapshot .google.pubsub.v1.CreateSnapshotRequest .google.pubsub.v1.Snapshot 0 0
+  method UpdateSnapshot .google.pubsub.v1.UpdateSnapshotRequest .google.pubsub.v1.Snapshot 0 0
+  method DeleteSnapshot .google.pubsub.v1.DeleteSnapshotRequest .google.protobuf.Empty 0 0
+  method Seek .google.pubsub.v1.SeekRequest .google.pubsub.v1.SeekResponse 0 0

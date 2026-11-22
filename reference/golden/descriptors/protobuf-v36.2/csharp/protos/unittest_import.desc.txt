@@ -1,0 +1,15 @@
+package protobuf_unittest_import_proto2
+syntax proto2
+message ImportMessage
+  field d 1 1 5 - d - 0 -
+    resolved 1 0 5 - 0 -
+enum ImportEnum
+  closed
+  value IMPORT_FOO 7
+  value IMPORT_BAR 8
+  value IMPORT_BAZ 9
+enum ImportEnumForMap
+  closed
+  value UNKNOWN 0
+  value FOO 1
+  value BAR 2

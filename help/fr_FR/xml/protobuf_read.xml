@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.read</keyword>
+  <short_description>Décode un fichier protobuf, un identificateur de fichier ouvert ou une entrée ZIP.</short_description>
+  <syntax>
+    <syntax_item>[value, presence, report] = protobuf.read(schema, type, filename, name, value, ...)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.read(schema, type, fid, name, value, ...)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.read(schema, type, z, 'Entry', entryname, name, value, ...)</syntax_item>
+    <syntax_item>[value, presence, report] = protobuf.read(schema, type, filename, 'Delimited', true, 'Records', [first last], 'Index', indexfile)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>un schéma de protobuf.load et un type de message.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>filename, fid, z</param_name>
+      <param_description>un nom de fichier de données, un identificateur de fichier ouvert lu de sa position jusqu'à la fin, ou un nelson.io.ZipArchive ouvert en lecture avec 'Entry', name.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Records'</param_name>
+      <param_description>[premier dernier] avec 'Delimited' : seuls ces enregistrements sont décodés (dernier peut valoir Inf). Avec un index à jour, la lecture part de l'enregistrement indexé le plus proche au lieu de lire tous ceux qui précèdent.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Index'</param_name>
+      <param_description>un autre fichier d'index à utiliser (protobuf.index) ; celui par défaut, nommé d'après le fichier de données avec .pbidx, est trouvé tout seul.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Where'</param_name>
+      <param_description>un pointeur de fonction, avec 'Delimited' : chaque bloc est filtré par les colonnes qu'il reçoit, ce qui lit un gros fichier sans le charger en entier.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Progress'</param_name>
+      <param_description>un pointeur de fonction f(n, total) appelé après chaque bloc de 8 Mio lu (octets lus, taille du fichier).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>autres options</param_name>
+      <param_description>'Delimited', 'Layout', 'Fields', 'WellKnownTypes', 'EnumsAsText', 'FillDefaults', 'MissingAsNaN', 'OnError', 'Workers', 'KeepUnknown', comme protobuf.decode.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>value, presence, report</param_name>
+      <param_description>comme protobuf.decode.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.read décode des données Protocol Buffers depuis un fichier, un identificateur de fichier ouvert ou une entrée ZIP, avec les mêmes options que protobuf.decode. Un fichier est projeté en mémoire au lieu d'être lu en entier : ses pages sont lues à mesure que le décodeur en a besoin, si bien qu'un gros fichier utilise une mémoire bornée.</p>
+    <p>Avec 'Records' et un index écrit par protobuf.index, la lecture saute au premier enregistrement voulu au lieu de lire tous ceux qui précèdent. Un index n'est utilisé que tant que le fichier garde la taille et la date de modification qu'il avait à l'écriture de l'index.</p>
+    <p>'Where' filtre un flux bloc par bloc pendant la lecture, ce qui sélectionne des enregistrements d'un gros fichier sans le charger en entier.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Écrire des enregistrements et les relire en colonnes</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+records = struct('timestamp_ms', {1000, 1040, 1080}, 'pressure', {single(5.2), [], single(5.6)});
+filename = [tempdir(), 'samples.bin'];
+protobuf.write(schema, 'SensorSample', filename, records, 'Delimited', true);
+[C, present] = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns');
+C.pressure
+present.pressure
+delete(filename);
+]]></example_item_data>
+    </example_item>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Filtrer un flux pendant sa lecture et choisir des champs d'un sous-message</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+filename = [modulepath('protobuf'), '/tests/data/golden/sensor_stream.nelson.test.sensors.SensorSample.binpb'];
+C = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns', ...
+  'Fields', {'status', 'diagnostics.drift'}, 'Where', @(C) C.status > 0)
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.write">protobuf.write</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.index">protobuf.index</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

@@ -1,0 +1,741 @@
+id: -528
+tag: x:05432d16
+fallback: 1
+history[0]: 5
+history[1]: 5
+history_expanded[0]: 1
+count: 0
+track[0] {
+}
+track[1] {
+  y: 1
+}
+track[2] {
+}
+raw_text: x:61
+named[] {
+  key: x:
+  value {
+  }
+}
+named[] {
+  key: x:68c3a96c6c6f
+  value {
+    y: 2147483647
+  }
+}
+named[] {
+  key: x:7461620971756f746522
+  value {
+    x: -657
+  }
+}
+flag: true
+---
+id: 0
+fallback: 1
+history[0]: 5
+history_expanded[0]: 1
+history_expanded[1]: 5
+count: 1
+at {
+  y: 1
+}
+raw_text: x:317a6261617a31303032327a63327a7a327a
+named[] {
+  key: x:7831316179333361797a7832327a61
+  value {
+  }
+}
+named[] {
+  key: x:f09f9982
+  value {
+    y: -1
+  }
+}
+ratio: f:ff800000
+total: 0
+samples[0]: -901
+samples[1]: 2147483647
+samples[2]: -1
+---
+id: -1
+tag: x:
+fallback: 1
+count: 1
+at {
+  x: 0
+}
+track[0] {
+  x: -565
+  y: 0
+}
+spot {
+  y: 365
+}
+ratio: f:80000000
+total: 0
+samples[0]: 2147483647
+samples[1]: 0
+---
+id: 1
+value: d:7ff8000000000000
+tag: x:a8a20f82
+fallback: 1
+history[0]: 5
+history[1]: 5
+history[2]: 1
+history_expanded[0]: 5
+count: 1
+at {
+  x: 0
+  y: -1
+}
+track[0] {
+  x: 0
+  y: -1
+}
+named[] {
+  key: x:
+  value {
+    x: 1
+  }
+}
+flag: true
+total: 10220939971088659950
+samples[0]: 1
+---
+id: 1
+value: d:7ff0000000000000
+unit: x:68c3a96c6c6f
+tag: x:9cee140be0c52383b3
+level: 1
+history_expanded[0]: 1
+history_expanded[1]: 1
+history_expanded[2]: 1
+count: 61160630
+at {
+  y: 1
+}
+named[] {
+  key: x:68c3a96c6c6f
+  value {
+    x: 0
+    y: 0
+  }
+}
+named[] {
+  key: x:7461620971756f746522
+  value {
+    x: 96
+  }
+}
+spot {
+  x: 0
+  y: 1971041866
+}
+ratio: f:c0100000
+flag: true
+samples[0]: 2147483647
+---
+id: 0
+unit: x:337863617a7933313379335f7878
+level: 1
+history[0]: 5
+history[1]: 5
+history[2]: 1
+history_expanded[0]: 5
+count: 0
+at {
+  x: 0
+}
+track[0] {
+}
+track[1] {
+  y: 809684778
+}
+named[] {
+  key: x:
+  value {
+    x: 0
+  }
+}
+named[] {
+  key: x:e697a5e69cac
+  value {
+    x: 2147483647
+  }
+}
+named[] {
+  key: x:f09f9982
+  value {
+  }
+}
+big: 1
+ratio: f:ff800000
+total: 0
+samples[0]: 688
+---
+id: 2147483647
+tag: x:84e8a532
+level: 5
+fallback: 5
+history[0]: 5
+history[1]: 5
+history_expanded[0]: 5
+count: 0
+at {
+  x: 937180647
+  y: 2147483647
+}
+track[0] {
+  y: 2147483647
+}
+named[] {
+  key: x:
+  value {
+  }
+}
+named[] {
+  key: x:e697a5e69cac
+  value {
+    x: 2147483647
+    y: -6
+  }
+}
+ratio: f:7f800000
+flag: false
+total: 475
+samples[0]: 0
+samples[1]: 2147483647
+---
+id: 2147483647
+value: d:fff0000000000000
+tag: x:6acf9b66001e
+level: 5
+fallback: 5
+history[0]: 1
+history[1]: 5
+history_expanded[0]: 1
+history_expanded[1]: 1
+count: 0
+track[0] {
+  y: -252
+}
+track[1] {
+  y: 1883498353
+}
+mode: 0
+named[] {
+  key: x:61
+  value {
+    y: 1
+  }
+}
+total: 1000
+samples[0]: 1
+---
+id: 0
+unit: x:61
+history[0]: 5
+history_expanded[0]: 1
+history_expanded[1]: 5
+history_expanded[2]: 5
+count: -455
+track[0] {
+  y: 2147483647
+}
+raw_text: x:30637830
+mode: 0
+big: 0
+ratio: f:80000000
+samples[0]: 569
+samples[1]: -2147483648
+---
+id: -879
+value: d:3ff8000000000000
+level: 1
+history[0]: 5
+history[1]: 1
+history_expanded[0]: 5
+count: 0
+at {
+}
+mode: 0
+named[] {
+  key: x:6c696e650a627265616b
+  value {
+    x: -2147483648
+  }
+}
+big: 9223372036854775807
+samples[0]: 308
+samples[1]: -2147483648
+samples[2]: 0
+---
+id: 1
+value: d:7ff8000000000000
+unit: x:61
+tag: x:bcbd2a11355f75de0070
+level: 5
+history_expanded[0]: 5
+history_expanded[1]: 1
+history_expanded[2]: 1
+count: 0
+track[0] {
+  y: -380
+}
+raw_text: x:3378305f79
+named[] {
+  key: x:68c3a96c6c6f
+  value {
+    x: 1
+  }
+}
+named[] {
+  key: x:7461620971756f746522
+  value {
+    x: -260
+  }
+}
+ratio: f:00000000
+flag: false
+total: 13853900788304483099
+---
+id: 2147483647
+unit: x:68c3a96c6c6f
+tag: x:c595
+fallback: 5
+history[0]: 5
+history_expanded[0]: 5
+history_expanded[1]: 5
+count: 1135839911
+at {
+  x: 514019017
+}
+mode: 0
+named[] {
+  key: x:7461620971756f746522
+  value {
+  }
+}
+named[] {
+  key: x:79305f61617a787a7a3179783079
+  value {
+  }
+}
+named[] {
+  key: x:f09f9982
+  value {
+    x: -1
+    y: 0
+  }
+}
+big: 904
+ratio: f:ff800000
+flag: true
+total: 0
+---
+id: 0
+value: d:46293e5939a08cea
+unit: x:68c3a96c6c6f
+level: 5
+fallback: 1
+history_expanded[0]: 5
+history_expanded[1]: 5
+history_expanded[2]: 5
+count: 426062791
+at {
+  x: 0
+}
+track[0] {
+  x: 0
+}
+spot {
+  x: 1
+  y: 0
+}
+ratio: f:7149f2ca
+total: 0
+---
+id: 972
+value: d:46293e5939a08cea
+unit: x:f09f9982
+tag: x:da91
+level: 5
+history_expanded[0]: 5
+history_expanded[1]: 1
+history_expanded[2]: 1
+count: -1889127931
+track[0] {
+  y: 0
+}
+track[1] {
+  y: -1
+}
+track[2] {
+  x: -2147483648
+  y: 2147483647
+}
+mode: 0
+named[] {
+  key: x:325f635f327a333262786332
+  value {
+    y: 0
+  }
+}
+ratio: f:3fc00000
+flag: true
+total: 40948865427068686
+samples[0]: 2147483647
+samples[1]: -1
+---
+id: -2147483648
+value: d:c1279c79c1f1dcb4
+tag: x:0750eaf68ace71e66f
+level: 1
+fallback: 5
+history[0]: 1
+history[1]: 1
+history_expanded[0]: 1
+history_expanded[1]: 1
+history_expanded[2]: 1
+count: 1082591131
+at {
+  x: -2147483648
+  y: -1977059410
+}
+track[0] {
+}
+track[1] {
+}
+track[2] {
+  x: 2147483647
+  y: 2147483647
+}
+mode: 77
+named[] {
+  key: x:7461620971756f746522
+  value {
+    y: -2147483648
+  }
+}
+spot {
+  y: 0
+}
+ratio: f:00000000
+flag: true
+total: 0
+samples[0]: -2147483648
+---
+id: -2064476709
+value: d:c002000000000000
+unit: x:61
+level: 1
+history[0]: 1
+history_expanded[0]: 5
+history_expanded[1]: 5
+count: 0
+at {
+  y: 1
+}
+track[0] {
+  x: 1
+  y: -570
+}
+track[1] {
+  x: -2147483648
+  y: -2147483648
+}
+raw_text: x:
+mode: 77
+named[] {
+  key: x:61
+  value {
+  }
+}
+ratio: f:ff800000
+flag: true
+total: 0
+samples[0]: 1727579851
+samples[1]: 771
+samples[2]: 1
+---
+id: 691
+value: d:8000000000000000
+fallback: 1
+history[0]: 1
+history[1]: 1
+count: 1
+track[0] {
+  x: 1
+}
+track[1] {
+}
+raw_text: x:61
+mode: 1
+ratio: f:7149f2ca
+samples[0]: -202783328
+samples[1]: 2147483647
+samples[2]: 2147483647
+---
+id: 536867368
+level: 5
+history[0]: 5
+count: 0
+at {
+  x: -2147483648
+  y: 1
+}
+track[0] {
+  y: 599
+}
+raw_text: x:6c696e650a627265616b
+named[] {
+  key: x:7978
+  value {
+    y: 0
+  }
+}
+total: 687
+samples[0]: 1
+samples[1]: -1
+---
+id: 435
+level: 5
+fallback: 1
+history_expanded[0]: 5
+history_expanded[1]: 5
+count: -1
+at {
+  y: -2147483648
+}
+track[0] {
+}
+track[1] {
+  y: 0
+}
+track[2] {
+}
+spot {
+  y: -1
+}
+flag: true
+samples[0]: 2147483647
+---
+id: 1
+value: d:46293e5939a08cea
+fallback: 1
+history[0]: 5
+history[1]: 5
+history[2]: 5
+count: 2147483647
+at {
+  x: -994792058
+  y: -1
+}
+track[0] {
+  x: -2147483648
+}
+track[1] {
+  x: 997020300
+  y: -2147483648
+}
+track[2] {
+  x: -1
+  y: 0
+}
+mode: 0
+named[] {
+  key: x:68c3a96c6c6f
+  value {
+  }
+}
+named[] {
+  key: x:78636279
+  value {
+    x: 2147483647
+    y: -1
+  }
+}
+named[] {
+  key: x:f09f9982
+  value {
+  }
+}
+samples[0]: 773294890
+samples[1]: 0
+---
+id: 1
+unit: x:5f3131637a61337a6363796130617832633232
+level: 1
+fallback: 1
+history[0]: 1
+history[1]: 5
+history_expanded[0]: 1
+history_expanded[1]: 5
+count: 0
+track[0] {
+}
+track[1] {
+}
+track[2] {
+  x: -1039246735
+}
+raw_text: x:3261333163325f7a3230307a335f3331
+named[] {
+  key: x:6232616278
+  value {
+    x: 1788644523
+  }
+}
+flag: true
+samples[0]: 2147483647
+samples[1]: 1810103461
+samples[2]: 0
+---
+id: 98
+value: d:0000000000000000
+unit: x:f09f9982
+history[0]: 5
+history[1]: 1
+history[2]: 1
+count: 1385356590
+track[0] {
+  y: 1
+}
+track[1] {
+  x: -1702528379
+  y: 2147483647
+}
+raw_text: x:317963795f7a3132637a78636363
+named[] {
+  key: x:7461620971756f746522
+  value {
+    y: 1
+  }
+}
+named[] {
+  key: x:787933636363635f61
+  value {
+    x: -1
+    y: 2147483647
+  }
+}
+named[] {
+  key: x:7a3130787a3279613263
+  value {
+    x: -2147483648
+    y: -1
+  }
+}
+spot {
+  x: 55
+}
+ratio: f:80000000
+flag: false
+total: 0
+samples[0]: -1
+samples[1]: -121639048
+samples[2]: 1
+---
+id: 2147483647
+value: d:46293e5939a08cea
+unit: x:e697a5e69cac
+level: 1
+history_expanded[0]: 1
+history_expanded[1]: 5
+count: 0
+at {
+  y: -2147483648
+}
+track[0] {
+  x: -2147483648
+  y: -1
+}
+raw_text: x:793131315f62637a325f32315f7831785f63
+named[] {
+  key: x:31783330627a6363317a6161335f79787a5f33
+  value {
+  }
+}
+named[] {
+  key: x:6c696e650a627265616b
+  value {
+    x: 0
+  }
+}
+named[] {
+  key: x:e697a5e69cac
+  value {
+  }
+}
+big: -1
+samples[0]: 2147483647
+---
+id: -80
+tag: x:a1be7a10
+fallback: 5
+history_expanded[0]: 5
+count: 2147483647
+at {
+  y: -1
+}
+track[0] {
+  x: 0
+  y: -264
+}
+track[1] {
+  y: 2147483647
+}
+track[2] {
+  x: -1
+  y: 0
+}
+named[] {
+  key: x:5f78
+  value {
+    x: 0
+    y: 1360421031
+  }
+}
+named[] {
+  key: x:7461620971756f746522
+  value {
+    x: 2147483647
+    y: 1
+  }
+}
+flag: true
+samples[0]: 1
+samples[1]: 1
+samples[2]: 0
+---
+id: -2147483648
+value: d:0000000000000000
+unit: x:f09f9982
+tag: x:dec9a695898a5c
+level: 5
+history[0]: 1
+history[1]: 1
+history[2]: 5
+count: -1
+at {
+  y: 2147483647
+}
+track[0] {
+  y: 2147483647
+}
+raw_text: x:31317879787a6330795f7a3333
+mode: 77
+named[] {
+  key: x:
+  value {
+    x: 1
+    y: 1
+  }
+}
+big: 0
+ratio: f:7fc00000
+samples[0]: 869735630
+samples[1]: -2147483648

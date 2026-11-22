@@ -1,0 +1,14 @@
+package hpb_test
+syntax editions
+edition 2024
+message MessageWithEnum
+  enum NestedEnum
+    value NESTED_TYPE_UNSPECIFIED 0
+    value NULL 1
+message MessageWithNullEnum
+  enum NULL
+    value UNSPECIFIED 0
+    value VALUE 1
+enum TestEnumWithNull
+  value TYPE_UNSPECIFIED 0
+  value NULL 1

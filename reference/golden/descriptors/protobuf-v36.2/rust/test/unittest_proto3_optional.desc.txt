@@ -1,0 +1,63 @@
+package rust_unittest_proto3_optional
+syntax editions
+edition 2023
+message TestProto3Optional
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int64 2 1 3 - optionalInt64 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_uint32 3 1 13 - optionalUint32 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint64 4 1 4 - optionalUint64 - 0 -
+    resolved 1 0 4 - 0 -
+  field optional_sint32 5 1 17 - optionalSint32 - 0 -
+    resolved 1 0 17 - 0 -
+  field optional_sint64 6 1 18 - optionalSint64 - 0 -
+    resolved 1 0 18 - 0 -
+  field optional_fixed32 7 1 7 - optionalFixed32 - 0 -
+    resolved 1 0 7 - 0 -
+  field optional_fixed64 8 1 6 - optionalFixed64 - 0 -
+    resolved 1 0 6 - 0 -
+  field optional_sfixed32 9 1 15 - optionalSfixed32 - 0 -
+    resolved 1 0 15 - 0 -
+  field optional_sfixed64 10 1 16 - optionalSfixed64 - 0 -
+    resolved 1 0 16 - 0 -
+  field optional_float 11 1 2 - optionalFloat - 0 -
+    resolved 1 0 2 - 0 -
+  field optional_double 12 1 1 - optionalDouble - 0 -
+    resolved 1 0 1 - 0 -
+  field optional_bool 13 1 8 - optionalBool - 0 -
+    resolved 1 0 8 - 0 -
+  field optional_string 14 1 9 - optionalString - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_bytes 15 1 12 - optionalBytes - 0 -
+    resolved 1 0 12 - 0 -
+  field optional_cord 16 1 9 - optionalCord - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_nested_message 18 1 11 .rust_unittest_proto3_optional.TestProto3Optional.NestedMessage optionalNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field lazy_nested_message 19 1 11 .rust_unittest_proto3_optional.TestProto3Optional.NestedMessage lazyNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_nested_enum 21 1 14 .rust_unittest_proto3_optional.TestProto3Optional.NestedEnum optionalNestedEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field singular_int32 22 1 5 - singularInt32 - 0 -
+    resolved 0 0 5 - 0 -
+  field singular_int64 23 1 3 - singularInt64 - 0 -
+    resolved 0 0 3 - 0 -
+  message NestedMessage
+    field bb 1 1 5 - bb - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    value UNSPECIFIED 0
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+    value NEG -1
+message TestProto3OptionalMessage
+  field nested_message 1 1 11 .rust_unittest_proto3_optional.TestProto3OptionalMessage.NestedMessage nestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_nested_message 2 1 11 .rust_unittest_proto3_optional.TestProto3OptionalMessage.NestedMessage optionalNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  message NestedMessage
+    field s 1 1 9 - s - 0 -
+      resolved 0 0 9 1 0 -

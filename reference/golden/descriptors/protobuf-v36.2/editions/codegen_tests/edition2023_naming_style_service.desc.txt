@@ -1,0 +1,8 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+message BadServiceMessage
+  field food 1 1 9 - food - 0 -
+    resolved 1 0 9 1 0 -
+service bad_service_name
+  method BadServiceMethod .protobuf_editions_test.edition2023.BadServiceMessage .protobuf_editions_test.edition2023.BadServiceMessage 0 0

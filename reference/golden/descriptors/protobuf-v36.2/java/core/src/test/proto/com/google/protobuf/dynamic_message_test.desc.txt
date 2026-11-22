@@ -1,0 +1,13 @@
+package dynamic_message_test
+syntax editions
+edition 2023
+message EmptyMessage
+message MessageWithMapFields
+  field string_message_map 1 3 11 .dynamic_message_test.MessageWithMapFields.StringMessageMapEntry stringMessageMap - 0 -
+    resolved 0 0 11 - 0 -
+  message StringMessageMapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 11 .dynamic_message_test.EmptyMessage value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry

@@ -1,0 +1,66 @@
+package protobuf_editions_test.proto3
+syntax proto3
+message Proto3Optional
+  field int32_field 17 1 5 - int32Field 0 1 -
+  field float_field 18 1 2 - floatField 1 1 -
+  field double_field 19 1 1 - doubleField 2 1 -
+  field int64_field 20 1 3 - int64Field 3 1 -
+  field uint32_field 21 1 13 - uint32Field 4 1 -
+  field uint64_field 22 1 4 - uint64Field 5 1 -
+  field sint32_field 23 1 17 - sint32Field 6 1 -
+  field sint64_field 24 1 18 - sint64Field 7 1 -
+  field fixed32_field 25 1 7 - fixed32Field 8 1 -
+  field fixed64_field 26 1 6 - fixed64Field 9 1 -
+  field sfixed32_field 27 1 15 - sfixed32Field 10 1 -
+  field sfixed64_field 28 1 16 - sfixed64Field 11 1 -
+  field bool_field 29 1 8 - boolField 12 1 -
+  field string_field 30 1 9 - stringField 13 1 -
+  field bytes_field 31 1 12 - bytesField 14 1 -
+  field optional_message 2 1 11 .protobuf_editions_test.proto3.Proto3Optional.SubMessage optionalMessage 15 1 -
+  message SubMessage
+    field int32_field 17 1 5 - int32Field 0 1 -
+    field float_field 18 1 2 - floatField 1 1 -
+    field double_field 19 1 1 - doubleField 2 1 -
+    field int64_field 20 1 3 - int64Field 3 1 -
+    field uint32_field 21 1 13 - uint32Field 4 1 -
+    field uint64_field 22 1 4 - uint64Field 5 1 -
+    field sint32_field 23 1 17 - sint32Field 6 1 -
+    field sint64_field 24 1 18 - sint64Field 7 1 -
+    field fixed32_field 25 1 7 - fixed32Field 8 1 -
+    field fixed64_field 26 1 6 - fixed64Field 9 1 -
+    field sfixed32_field 27 1 15 - sfixed32Field 10 1 -
+    field sfixed64_field 28 1 16 - sfixed64Field 11 1 -
+    field bool_field 29 1 8 - boolField 12 1 -
+    field string_field 30 1 9 - stringField 13 1 -
+    field bytes_field 31 1 12 - bytesField 14 1 -
+    oneof _int32_field
+    oneof _float_field
+    oneof _double_field
+    oneof _int64_field
+    oneof _uint32_field
+    oneof _uint64_field
+    oneof _sint32_field
+    oneof _sint64_field
+    oneof _fixed32_field
+    oneof _fixed64_field
+    oneof _sfixed32_field
+    oneof _sfixed64_field
+    oneof _bool_field
+    oneof _string_field
+    oneof _bytes_field
+  oneof _int32_field
+  oneof _float_field
+  oneof _double_field
+  oneof _int64_field
+  oneof _uint32_field
+  oneof _uint64_field
+  oneof _sint32_field
+  oneof _sint64_field
+  oneof _fixed32_field
+  oneof _fixed64_field
+  oneof _sfixed32_field
+  oneof _sfixed64_field
+  oneof _bool_field
+  oneof _string_field
+  oneof _bytes_field
+  oneof _optional_message

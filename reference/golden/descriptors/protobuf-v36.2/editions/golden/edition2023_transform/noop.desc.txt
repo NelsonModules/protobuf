@@ -1,0 +1,6 @@
+package third_party_protobuf_editions_proto
+syntax editions
+edition 2023
+message EditionsTransformNoop
+  field string_field 1 1 9 - stringField - 0 -
+    resolved 1 0 9 1 0 -

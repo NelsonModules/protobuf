@@ -1,0 +1,234 @@
+timestamp_ms: 9223372036854775807
+mode: x:
+measurements[0] {
+  name: x:7a78306279787830336262
+  value: f:00000000
+}
+---
+timestamp_ms: 1
+mode: x:3231335f7a6330
+measurements[0] {
+  name: x:
+  value: f:00000000
+}
+measurements[1] {
+  name: x:6130315f78617a7a
+  value: f:3fc00000
+}
+measurements[2] {
+  name: x:61
+  value: f:c0100000
+}
+---
+timestamp_ms: -7225063480884514271
+mode: x:
+measurements[0] {
+  name: x:615f31793061307a625f787a617879337a
+  value: f:ff800000
+}
+measurements[1] {
+  name: x:63323362785f316363633379625f63635f795f
+  value: f:00000000
+}
+---
+timestamp_ms: -201
+mode: x:
+measurements[0] {
+  name: x:
+  value: f:ff800000
+}
+---
+timestamp_ms: -451
+mode: x:7461620971756f746522
+measurements[0] {
+  name: x:3062
+  value: f:80000000
+}
+measurements[1] {
+  name: x:6c696e650a627265616b
+  value: f:0da24260
+}
+---
+timestamp_ms: 0
+mode: x:68c3a96c6c6f
+measurements[0] {
+  name: x:79613130315f78317a32
+  value: f:494b8e80
+}
+---
+timestamp_ms: -9223372036854775808
+mode: x:5f31786131303332307832325f
+---
+timestamp_ms: 588
+mode: x:7a317a626161637a78635f3361
+measurements[0] {
+  name: x:6c696e650a627265616b
+  value: f:7149f2ca
+}
+measurements[1] {
+  name: x:
+  value: f:c68fdc67
+}
+---
+timestamp_ms: 1
+mode: x:
+measurements[0] {
+  name: x:307a33337a327932637a316263337a62
+  value: f:80000000
+}
+measurements[1] {
+  name: x:f09f9982
+  value: f:c80a7987
+}
+measurements[2] {
+  name: x:
+  value: f:c0100000
+}
+---
+timestamp_ms: 0
+mode: x:6130327a7a78626131635f79
+measurements[0] {
+  name: x:5f3233
+  value: f:7149f2ca
+}
+measurements[1] {
+  name: x:6c696e650a627265616b
+  value: f:ff800000
+}
+measurements[2] {
+  name: x:
+  value: f:3fc00000
+}
+---
+timestamp_ms: -1
+mode: x:
+measurements[0] {
+  name: x:68c3a96c6c6f
+  value: f:c0100000
+}
+measurements[1] {
+  name: x:f09f9982
+  value: f:80000000
+}
+measurements[2] {
+  name: x:31623330635f625f31
+  value: f:c0100000
+}
+---
+timestamp_ms: 4606573277212566290
+mode: x:
+measurements[0] {
+  name: x:68c3a96c6c6f
+  value: f:7fc00000
+}
+---
+timestamp_ms: -927
+mode: x:61
+measurements[0] {
+  name: x:f09f9982
+  value: f:c0100000
+}
+measurements[1] {
+  name: x:61
+  value: f:c78ad173
+}
+measurements[2] {
+  name: x:7461620971756f746522
+  value: f:7149f2ca
+}
+---
+timestamp_ms: 9223372036854775807
+mode: x:f09f9982
+measurements[0] {
+  name: x:68c3a96c6c6f
+  value: f:c896a5e4
+}
+---
+timestamp_ms: -1
+mode: x:
+---
+timestamp_ms: -1
+mode: x:
+---
+timestamp_ms: -1
+mode: x:5f63617a5f637930325f7862323230
+measurements[0] {
+  name: x:f09f9982
+  value: f:00000000
+}
+measurements[1] {
+  name: x:
+  value: f:c0100000
+}
+---
+timestamp_ms: 0
+mode: x:
+measurements[0] {
+  name: x:7931
+  value: f:7f800000
+}
+measurements[1] {
+  name: x:7461620971756f746522
+  value: f:80000000
+}
+---
+timestamp_ms: 0
+mode: x:
+measurements[0] {
+  name: x:3132307961325f5f6361625f3332335f5f63
+  value: f:7f800000
+}
+measurements[1] {
+  name: x:61
+  value: f:80000000
+}
+measurements[2] {
+  name: x:6c696e650a627265616b
+  value: f:00000000
+}
+---
+timestamp_ms: -1
+mode: x:f09f9982
+measurements[0] {
+  name: x:313279617978306132
+  value: f:491df29d
+}
+measurements[1] {
+  name: x:e697a5e69cac
+  value: f:7f800000
+}
+measurements[2] {
+  name: x:6362
+  value: f:00000000
+}
+---
+timestamp_ms: 7809173583703006275
+mode: x:f09f9982
+measurements[0] {
+  name: x:7461620971756f746522
+  value: f:c969549b
+}
+measurements[1] {
+  name: x:625f303030783032
+  value: f:80000000
+}
+---
+timestamp_ms: -1
+mode: x:
+---
+timestamp_ms: 1
+mode: x:61
+---
+timestamp_ms: 0
+mode: x:68c3a96c6c6f
+measurements[0] {
+  name: x:61
+  value: f:80000000
+}
+measurements[1] {
+  name: x:6179636278333330306262316362627a
+  value: f:00000000
+}
+---
+timestamp_ms: 0
+mode: x:3230303332337862625f3361

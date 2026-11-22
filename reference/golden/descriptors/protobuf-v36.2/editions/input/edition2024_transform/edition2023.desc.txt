@@ -1,0 +1,17 @@
+package third_party_protobuf_editions_proto
+syntax editions
+edition 2023
+message Edition2024Transform
+  field string_field 1 1 9 - stringField - 0 -
+    resolved 1 0 9 1 0 -
+  message NestedMessage
+    field cord_field 1 1 9 - cordField - 0 -
+      resolved 1 0 9 1 0 -
+  enum NestedEnum
+    value FOO 0
+    value BAR 1
+enum Edition2024TransformEnum
+  value EDITION2024_TRANSFORM_FOO 0
+  value EDITION2024_TRANSFORM_BAR 1
+service Edition2024TransformService
+  method TestMethod .third_party_protobuf_editions_proto.Edition2024Transform .third_party_protobuf_editions_proto.Edition2024Transform 0 0

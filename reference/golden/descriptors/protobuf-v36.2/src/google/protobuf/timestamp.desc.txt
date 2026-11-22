@@ -1,0 +1,5 @@
+package google.protobuf
+syntax proto3
+message Timestamp
+  field seconds 1 1 3 - seconds - 0 -
+  field nanos 2 1 5 - nanos - 0 -

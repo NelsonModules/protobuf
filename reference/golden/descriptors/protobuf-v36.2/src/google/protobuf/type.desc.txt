@@ -1,0 +1,64 @@
+package google.protobuf
+syntax proto3
+message Type
+  field name 1 1 9 - name - 0 -
+  field fields 2 3 11 .google.protobuf.Field fields - 0 -
+  field oneofs 3 3 9 - oneofs - 0 -
+  field options 4 3 11 .google.protobuf.Option options - 0 -
+  field source_context 5 1 11 .google.protobuf.SourceContext sourceContext - 0 -
+  field syntax 6 1 14 .google.protobuf.Syntax syntax - 0 -
+  field edition 7 1 9 - edition - 0 -
+message Field
+  field kind 1 1 14 .google.protobuf.Field.Kind kind - 0 -
+  field cardinality 2 1 14 .google.protobuf.Field.Cardinality cardinality - 0 -
+  field number 3 1 5 - number - 0 -
+  field name 4 1 9 - name - 0 -
+  field type_url 6 1 9 - typeUrl - 0 -
+  field oneof_index 7 1 5 - oneofIndex - 0 -
+  field packed 8 1 8 - packed - 0 -
+  field options 9 3 11 .google.protobuf.Option options - 0 -
+  field json_name 10 1 9 - jsonName - 0 -
+  field default_value 11 1 9 - defaultValue - 0 -
+  enum Kind
+    value TYPE_UNKNOWN 0
+    value TYPE_DOUBLE 1
+    value TYPE_FLOAT 2
+    value TYPE_INT64 3
+    value TYPE_UINT64 4
+    value TYPE_INT32 5
+    value TYPE_FIXED64 6
+    value TYPE_FIXED32 7
+    value TYPE_BOOL 8
+    value TYPE_STRING 9
+    value TYPE_GROUP 10
+    value TYPE_MESSAGE 11
+    value TYPE_BYTES 12
+    value TYPE_UINT32 13
+    value TYPE_ENUM 14
+    value TYPE_SFIXED32 15
+    value TYPE_SFIXED64 16
+    value TYPE_SINT32 17
+    value TYPE_SINT64 18
+  enum Cardinality
+    value CARDINALITY_UNKNOWN 0
+    value CARDINALITY_OPTIONAL 1
+    value CARDINALITY_REQUIRED 2
+    value CARDINALITY_REPEATED 3
+message Enum
+  field name 1 1 9 - name - 0 -
+  field enumvalue 2 3 11 .google.protobuf.EnumValue enumvalue - 0 -
+  field options 3 3 11 .google.protobuf.Option options - 0 -
+  field source_context 4 1 11 .google.protobuf.SourceContext sourceContext - 0 -
+  field syntax 5 1 14 .google.protobuf.Syntax syntax - 0 -
+  field edition 6 1 9 - edition - 0 -
+message EnumValue
+  field name 1 1 9 - name - 0 -
+  field number 2 1 5 - number - 0 -
+  field options 3 3 11 .google.protobuf.Option options - 0 -
+message Option
+  field name 1 1 9 - name - 0 -
+  field value 2 1 11 .google.protobuf.Any value - 0 -
+enum Syntax
+  value SYNTAX_PROTO2 0
+  value SYNTAX_PROTO3 1
+  value SYNTAX_EDITIONS 2

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.inspect</keyword>
+  <short_description>Read protobuf bytes without a schema.</short_description>
+  <syntax>
+    <syntax_item>txt = protobuf.inspect(bytes)</syntax_item>
+    <syntax_item>[txt, fields] = protobuf.inspect(bytes, 'Delimited', tf)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>bytes</param_name>
+      <param_description>a uint8 vector: encoded data.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Delimited'</param_name>
+      <param_description>logical (default false): read the bytes as a length-delimited stream.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>txt</param_name>
+      <param_description>the fields read without a schema, as protoc --decode_raw prints them. With no output, the text is displayed.</param_description>
+    </param_output_item>
+    <param_output_item>
+      <param_name>fields</param_name>
+      <param_description>a struct array with Number, Wire ('varint', 'fixed64', 'bytes', 'group' or 'fixed32'), Value, Text and Fields (the fields of a nested message, or []); a cell with one struct array per record with 'Delimited'.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.inspect reads the field numbers, wire types and values of protobuf bytes without a schema, the way protoc --decode_raw does. It helps when the schema is unknown or when a byte stream must be examined, and it returns the parsed fields as a struct for further use.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Read bytes without a schema</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+a = struct('timestamp_ms', 1000, 'status', 1, 'diagnostics', struct('drift', 0.5));
+txt = protobuf.inspect(protobuf.encode(schema, 'SensorSample', a))
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.show">protobuf.show</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.decode">protobuf.decode</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

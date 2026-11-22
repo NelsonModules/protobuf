@@ -1,0 +1,127 @@
+package google.api
+syntax proto3
+message CommonLanguageSettings
+  field reference_docs_uri 1 1 9 - referenceDocsUri - 0 -
+  field destinations 2 3 14 .google.api.ClientLibraryDestination destinations - 0 -
+  field selective_gapic_generation 3 1 11 .google.api.SelectiveGapicGeneration selectiveGapicGeneration - 0 -
+message ClientLibrarySettings
+  field version 1 1 9 - version - 0 -
+  field launch_stage 2 1 14 .google.api.LaunchStage launchStage - 0 -
+  field rest_numeric_enums 3 1 8 - restNumericEnums - 0 -
+  field java_settings 21 1 11 .google.api.JavaSettings javaSettings - 0 -
+  field cpp_settings 22 1 11 .google.api.CppSettings cppSettings - 0 -
+  field php_settings 23 1 11 .google.api.PhpSettings phpSettings - 0 -
+  field python_settings 24 1 11 .google.api.PythonSettings pythonSettings - 0 -
+  field node_settings 25 1 11 .google.api.NodeSettings nodeSettings - 0 -
+  field dotnet_settings 26 1 11 .google.api.DotnetSettings dotnetSettings - 0 -
+  field ruby_settings 27 1 11 .google.api.RubySettings rubySettings - 0 -
+  field go_settings 28 1 11 .google.api.GoSettings goSettings - 0 -
+message Publishing
+  field method_settings 2 3 11 .google.api.MethodSettings methodSettings - 0 -
+  field new_issue_uri 101 1 9 - newIssueUri - 0 -
+  field documentation_uri 102 1 9 - documentationUri - 0 -
+  field api_short_name 103 1 9 - apiShortName - 0 -
+  field github_label 104 1 9 - githubLabel - 0 -
+  field codeowner_github_teams 105 3 9 - codeownerGithubTeams - 0 -
+  field doc_tag_prefix 106 1 9 - docTagPrefix - 0 -
+  field organization 107 1 14 .google.api.ClientLibraryOrganization organization - 0 -
+  field library_settings 109 3 11 .google.api.ClientLibrarySettings librarySettings - 0 -
+  field proto_reference_documentation_uri 110 1 9 - protoReferenceDocumentationUri - 0 -
+  field rest_reference_documentation_uri 111 1 9 - restReferenceDocumentationUri - 0 -
+message JavaSettings
+  field library_package 1 1 9 - libraryPackage - 0 -
+  field service_class_names 2 3 11 .google.api.JavaSettings.ServiceClassNamesEntry serviceClassNames - 0 -
+  field common 3 1 11 .google.api.CommonLanguageSettings common - 0 -
+  message ServiceClassNamesEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message CppSettings
+  field common 1 1 11 .google.api.CommonLanguageSettings common - 0 -
+message PhpSettings
+  field common 1 1 11 .google.api.CommonLanguageSettings common - 0 -
+  field library_package 2 1 9 - libraryPackage - 0 -
+message PythonSettings
+  field common 1 1 11 .google.api.CommonLanguageSettings common - 0 -
+  field experimental_features 2 1 11 .google.api.PythonSettings.ExperimentalFeatures experimentalFeatures - 0 -
+  message ExperimentalFeatures
+    field rest_async_io_enabled 1 1 8 - restAsyncIoEnabled - 0 -
+    field protobuf_pythonic_types_enabled 2 1 8 - protobufPythonicTypesEnabled - 0 -
+    field unversioned_package_disabled 3 1 8 - unversionedPackageDisabled - 0 -
+message NodeSettings
+  field common 1 1 11 .google.api.CommonLanguageSettings common - 0 -
+message DotnetSettings
+  field common 1 1 11 .google.api.CommonLanguageSettings common - 0 -
+  field renamed_services 2 3 11 .google.api.DotnetSettings.RenamedServicesEntry renamedServices - 0 -
+  field renamed_resources 3 3 11 .google.api.DotnetSettings.RenamedResourcesEntry renamedResources - 0 -
+  field ignored_resources 4 3 9 - ignoredResources - 0 -
+  field forced_namespace_aliases 5 3 9 - forcedNamespaceAliases - 0 -
+  field handwritten_signatures 6 3 9 - handwrittenSignatures - 0 -
+  message RenamedServicesEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message RenamedResourcesEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message RubySettings
+  field common 1 1 11 .google.api.CommonLanguageSettings common - 0 -
+message GoSettings
+  field common 1 1 11 .google.api.CommonLanguageSettings common - 0 -
+  field renamed_services 2 3 11 .google.api.GoSettings.RenamedServicesEntry renamedServices - 0 -
+  message RenamedServicesEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message MethodSettings
+  field selector 1 1 9 - selector - 0 -
+  field long_running 2 1 11 .google.api.MethodSettings.LongRunning longRunning - 0 -
+  field auto_populated_fields 3 3 9 - autoPopulatedFields - 0 -
+  field batching 4 1 11 .google.api.BatchingConfigProto batching - 0 -
+  message LongRunning
+    field initial_poll_delay 1 1 11 .google.protobuf.Duration initialPollDelay - 0 -
+    field poll_delay_multiplier 2 1 2 - pollDelayMultiplier - 0 -
+    field max_poll_delay 3 1 11 .google.protobuf.Duration maxPollDelay - 0 -
+    field total_poll_timeout 4 1 11 .google.protobuf.Duration totalPollTimeout - 0 -
+message SelectiveGapicGeneration
+  field methods 1 3 9 - methods - 0 -
+  field generate_omitted_as_internal 2 1 8 - generateOmittedAsInternal - 0 -
+message BatchingConfigProto
+  field thresholds 1 1 11 .google.api.BatchingSettingsProto thresholds - 0 -
+  field batch_descriptor 2 1 11 .google.api.BatchingDescriptorProto batchDescriptor - 0 -
+message BatchingSettingsProto
+  field element_count_threshold 1 1 5 - elementCountThreshold - 0 -
+  field request_byte_threshold 2 1 3 - requestByteThreshold - 0 -
+  field delay_threshold 3 1 11 .google.protobuf.Duration delayThreshold - 0 -
+  field element_count_limit 4 1 5 - elementCountLimit - 0 -
+  field request_byte_limit 5 1 5 - requestByteLimit - 0 -
+  field flow_control_element_limit 6 1 5 - flowControlElementLimit - 0 -
+  field flow_control_byte_limit 7 1 5 - flowControlByteLimit - 0 -
+  field flow_control_limit_exceeded_behavior 8 1 14 .google.api.FlowControlLimitExceededBehaviorProto flowControlLimitExceededBehavior - 0 -
+message BatchingDescriptorProto
+  field batched_field 1 1 9 - batchedField - 0 -
+  field discriminator_fields 2 3 9 - discriminatorFields - 0 -
+  field subresponse_field 3 1 9 - subresponseField - 0 -
+enum ClientLibraryOrganization
+  value CLIENT_LIBRARY_ORGANIZATION_UNSPECIFIED 0
+  value CLOUD 1
+  value ADS 2
+  value PHOTOS 3
+  value STREET_VIEW 4
+  value SHOPPING 5
+  value GEO 6
+  value GENERATIVE_AI 7
+enum ClientLibraryDestination
+  value CLIENT_LIBRARY_DESTINATION_UNSPECIFIED 0
+  value GITHUB 10
+  value PACKAGE_MANAGER 20
+enum FlowControlLimitExceededBehaviorProto
+  value UNSET_BEHAVIOR 0
+  value THROW_EXCEPTION 1
+  value BLOCK 2
+  value IGNORE 3
+extension method_signature 1051 3 9 - .google.protobuf.MethodOptions methodSignature - 0 -
+extension default_host 1049 1 9 - .google.protobuf.ServiceOptions defaultHost - 0 -
+extension oauth_scopes 1050 1 9 - .google.protobuf.ServiceOptions oauthScopes - 0 -
+extension api_version 525000001 1 9 - .google.protobuf.ServiceOptions apiVersion - 0 -

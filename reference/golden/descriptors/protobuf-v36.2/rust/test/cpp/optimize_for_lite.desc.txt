@@ -1,0 +1,6 @@
+package optimize_for_lite_test
+syntax editions
+edition 2023
+message OptimizeForLiteTestMessage
+  field value 1 1 9 - value - 0 -
+    resolved 1 0 9 1 0 -

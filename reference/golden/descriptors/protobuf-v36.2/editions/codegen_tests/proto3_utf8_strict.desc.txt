@@ -1,0 +1,9 @@
+package protobuf_editions_test.proto3
+syntax proto3
+message Proto3Utf8Strict
+  field string_field 1 1 9 - stringField - 0 -
+  field map_field 10 3 11 .protobuf_editions_test.proto3.Proto3Utf8Strict.MapFieldEntry mapField - 0 -
+  message MapFieldEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry

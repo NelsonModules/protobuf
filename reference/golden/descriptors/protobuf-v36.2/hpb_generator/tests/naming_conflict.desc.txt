@@ -1,0 +1,15 @@
+package hpb_unittest
+syntax editions
+edition 2023
+message HasChildCount
+  field has_child_count 1 1 11 .hpb_unittest.HasChildCount hasChildCount - 0 -
+    resolved 1 0 11 - 0 -
+  field child_count 2 1 5 - childCount - 0 -
+    resolved 1 0 5 - 0 -
+message ConflictingOsMacros
+  field linux 1 1 5 - linux - 0 -
+    resolved 1 0 5 - 0 -
+  field major 2 1 5 - major - 0 -
+    resolved 1 0 5 - 0 -
+  field minor 3 1 5 - minor - 0 -
+    resolved 1 0 5 - 0 -

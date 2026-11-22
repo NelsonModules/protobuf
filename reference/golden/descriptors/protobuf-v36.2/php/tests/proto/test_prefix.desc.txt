@@ -1,0 +1,12 @@
+package 
+syntax proto3
+message TestPrefix
+  field a 1 1 5 - a - 0 -
+  field nested_message 2 1 11 .TestPrefix.NestedMessage nestedMessage - 0 -
+  field nested_enum 3 1 14 .TestPrefix.NestedEnum nestedEnum - 0 -
+  message NestedMessage
+    field a 1 1 5 - a - 0 -
+  enum NestedEnum
+    value ZERO 0
+message Empty
+  field a 1 1 5 - a - 0 -

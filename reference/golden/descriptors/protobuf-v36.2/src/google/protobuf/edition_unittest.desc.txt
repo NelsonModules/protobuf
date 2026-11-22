@@ -1,0 +1,2108 @@
+package edition_unittest
+syntax editions
+edition 1002
+message TestAllTypes
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int64 2 1 3 - optionalInt64 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_uint32 3 1 13 - optionalUint32 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint64 4 1 4 - optionalUint64 - 0 -
+    resolved 1 0 4 - 0 -
+  field optional_sint32 5 1 17 - optionalSint32 - 0 -
+    resolved 1 0 17 - 0 -
+  field optional_sint64 6 1 18 - optionalSint64 - 0 -
+    resolved 1 0 18 - 0 -
+  field optional_fixed32 7 1 7 - optionalFixed32 - 0 -
+    resolved 1 0 7 - 0 -
+  field optional_fixed64 8 1 6 - optionalFixed64 - 0 -
+    resolved 1 0 6 - 0 -
+  field optional_sfixed32 9 1 15 - optionalSfixed32 - 0 -
+    resolved 1 0 15 - 0 -
+  field optional_sfixed64 10 1 16 - optionalSfixed64 - 0 -
+    resolved 1 0 16 - 0 -
+  field optional_float 11 1 2 - optionalFloat - 0 -
+    resolved 1 0 2 - 0 -
+  field optional_double 12 1 1 - optionalDouble - 0 -
+    resolved 1 0 1 - 0 -
+  field optional_bool 13 1 8 - optionalBool - 0 -
+    resolved 1 0 8 - 0 -
+  field optional_string 14 1 9 - optionalString - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_bytes 15 1 12 - optionalBytes - 0 -
+    resolved 1 0 12 - 0 -
+  field optionalgroup 16 1 11 .edition_unittest.TestAllTypes.OptionalGroup optionalgroup - 0 -
+    resolved 1 0 10 - 0 -
+  field optional_nested_message 18 1 11 .edition_unittest.TestAllTypes.NestedMessage optionalNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_foreign_message 19 1 11 .edition_unittest.ForeignMessage optionalForeignMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_import_message 20 1 11 .proto2_unittest_import.ImportMessage optionalImportMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_nested_enum 21 1 14 .edition_unittest.TestAllTypes.NestedEnum optionalNestedEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_foreign_enum 22 1 14 .edition_unittest.ForeignEnum optionalForeignEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_import_enum 23 1 14 .proto2_unittest_import.ImportEnum optionalImportEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_string_piece 24 1 9 - optionalStringPiece - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_cord 25 1 9 - optionalCord - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_bytes_cord 86 1 12 - optionalBytesCord - 0 -
+    resolved 1 0 12 - 0 -
+  field optional_public_import_message 26 1 11 .proto2_unittest_import.PublicImportMessage optionalPublicImportMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_lazy_message 27 1 11 .edition_unittest.TestAllTypes.NestedMessage optionalLazyMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_unverified_lazy_message 28 1 11 .edition_unittest.TestAllTypes.NestedMessage optionalUnverifiedLazyMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_int32 31 3 5 - repeatedInt32 - 0 -
+    resolved 0 1 5 - 0 -
+  field repeated_int64 32 3 3 - repeatedInt64 - 0 -
+    resolved 0 1 3 - 0 -
+  field repeated_uint32 33 3 13 - repeatedUint32 - 0 -
+    resolved 0 1 13 - 0 -
+  field repeated_uint64 34 3 4 - repeatedUint64 - 0 -
+    resolved 0 1 4 - 0 -
+  field repeated_sint32 35 3 17 - repeatedSint32 - 0 -
+    resolved 0 1 17 - 0 -
+  field repeated_sint64 36 3 18 - repeatedSint64 - 0 -
+    resolved 0 1 18 - 0 -
+  field repeated_fixed32 37 3 7 - repeatedFixed32 - 0 -
+    resolved 0 1 7 - 0 -
+  field repeated_fixed64 38 3 6 - repeatedFixed64 - 0 -
+    resolved 0 1 6 - 0 -
+  field repeated_sfixed32 39 3 15 - repeatedSfixed32 - 0 -
+    resolved 0 1 15 - 0 -
+  field repeated_sfixed64 40 3 16 - repeatedSfixed64 - 0 -
+    resolved 0 1 16 - 0 -
+  field repeated_float 41 3 2 - repeatedFloat - 0 -
+    resolved 0 1 2 - 0 -
+  field repeated_double 42 3 1 - repeatedDouble - 0 -
+    resolved 0 1 1 - 0 -
+  field repeated_bool 43 3 8 - repeatedBool - 0 -
+    resolved 0 1 8 - 0 -
+  field repeated_string 44 3 9 - repeatedString - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_bytes 45 3 12 - repeatedBytes - 0 -
+    resolved 0 0 12 - 0 -
+  field repeatedgroup 46 3 11 .edition_unittest.TestAllTypes.RepeatedGroup repeatedgroup - 0 -
+    resolved 0 0 10 - 0 -
+  field repeated_nested_message 48 3 11 .edition_unittest.TestAllTypes.NestedMessage repeatedNestedMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_foreign_message 49 3 11 .edition_unittest.ForeignMessage repeatedForeignMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_import_message 50 3 11 .proto2_unittest_import.ImportMessage repeatedImportMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_nested_enum 51 3 14 .edition_unittest.TestAllTypes.NestedEnum repeatedNestedEnum - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_foreign_enum 52 3 14 .edition_unittest.ForeignEnum repeatedForeignEnum - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_import_enum 53 3 14 .proto2_unittest_import.ImportEnum repeatedImportEnum - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_string_piece 54 3 9 - repeatedStringPiece - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_cord 55 3 9 - repeatedCord - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_lazy_message 57 3 11 .edition_unittest.TestAllTypes.NestedMessage repeatedLazyMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field default_int32 61 1 5 - defaultInt32 - 0 -
+    resolved 1 0 5 - 0 default=41
+  field default_int64 62 1 3 - defaultInt64 - 0 -
+    resolved 1 0 3 - 0 default=42
+  field default_uint32 63 1 13 - defaultUint32 - 0 -
+    resolved 1 0 13 - 0 default=43
+  field default_uint64 64 1 4 - defaultUint64 - 0 -
+    resolved 1 0 4 - 0 default=44
+  field default_sint32 65 1 17 - defaultSint32 - 0 -
+    resolved 1 0 17 - 0 default=-45
+  field default_sint64 66 1 18 - defaultSint64 - 0 -
+    resolved 1 0 18 - 0 default=46
+  field default_fixed32 67 1 7 - defaultFixed32 - 0 -
+    resolved 1 0 7 - 0 default=47
+  field default_fixed64 68 1 6 - defaultFixed64 - 0 -
+    resolved 1 0 6 - 0 default=48
+  field default_sfixed32 69 1 15 - defaultSfixed32 - 0 -
+    resolved 1 0 15 - 0 default=49
+  field default_sfixed64 70 1 16 - defaultSfixed64 - 0 -
+    resolved 1 0 16 - 0 default=-50
+  field default_float 71 1 2 - defaultFloat - 0 -
+    resolved 1 0 2 - 0 default=51.5
+  field default_double 72 1 1 - defaultDouble - 0 -
+    resolved 1 0 1 - 0 default=52000
+  field default_bool 73 1 8 - defaultBool - 0 -
+    resolved 1 0 8 - 0 default=true
+  field default_string 74 1 9 - defaultString - 0 -
+    resolved 1 0 9 1 0 default=hello
+  field default_bytes 75 1 12 - defaultBytes - 0 -
+    resolved 1 0 12 - 0 default=world
+  field default_nested_enum 81 1 14 .edition_unittest.TestAllTypes.NestedEnum defaultNestedEnum - 0 -
+    resolved 1 0 14 - 0 default=BAR
+  field default_foreign_enum 82 1 14 .edition_unittest.ForeignEnum defaultForeignEnum - 0 -
+    resolved 1 0 14 - 0 default=FOREIGN_BAR
+  field default_import_enum 83 1 14 .proto2_unittest_import.ImportEnum defaultImportEnum - 0 -
+    resolved 1 0 14 - 0 default=IMPORT_BAR
+  field default_string_piece 84 1 9 - defaultStringPiece - 0 -
+    resolved 1 0 9 1 0 default=abc
+  field default_cord 85 1 9 - defaultCord - 0 -
+    resolved 1 0 9 1 0 default=123
+  field oneof_uint32 111 1 13 - oneofUint32 0 0 -
+    resolved 1 0 13 - 0 -
+  field oneof_nested_message 112 1 11 .edition_unittest.TestAllTypes.NestedMessage oneofNestedMessage 0 0 -
+    resolved 1 0 11 - 0 -
+  field oneof_string 113 1 9 - oneofString 0 0 -
+    resolved 1 0 9 1 0 -
+  field oneof_bytes 114 1 12 - oneofBytes 0 0 -
+    resolved 1 0 12 - 0 -
+  field oneof_cord 115 1 9 - oneofCord 0 0 -
+    resolved 1 0 9 1 0 -
+  field oneof_string_piece 116 1 9 - oneofStringPiece 0 0 -
+    resolved 1 0 9 1 0 -
+  field oneof_lazy_nested_message 117 1 11 .edition_unittest.TestAllTypes.NestedMessage oneofLazyNestedMessage 0 0 -
+    resolved 1 0 11 - 0 -
+  message NestedMessage
+    field bb 1 1 5 - bb - 0 -
+      resolved 1 0 5 - 0 -
+  message OptionalGroup
+    field a 17 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+  message RepeatedGroup
+    field a 47 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    closed
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+    value NEG -1
+  oneof oneof_field
+message NestedTestAllTypes
+  field child 1 1 11 .edition_unittest.NestedTestAllTypes child - 0 -
+    resolved 1 0 11 - 0 -
+  field payload 2 1 11 .edition_unittest.TestAllTypes payload - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_child 3 3 11 .edition_unittest.NestedTestAllTypes repeatedChild - 0 -
+    resolved 0 0 11 - 0 -
+  field lazy_child 4 1 11 .edition_unittest.NestedTestAllTypes lazyChild - 0 -
+    resolved 1 0 11 - 0 -
+  field eager_child 5 1 11 .edition_unittest.TestAllTypes eagerChild - 0 -
+    resolved 1 0 11 - 0 -
+message TestDeprecatedFields
+  field deprecated_int32 1 1 5 - deprecatedInt32 - 0 -
+    resolved 1 0 5 - 0 -
+  field deprecated_repeated_string 4 3 9 - deprecatedRepeatedString - 0 -
+    resolved 0 0 9 1 0 -
+  field deprecated_message 3 1 11 .edition_unittest.TestAllTypes.NestedMessage deprecatedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field deprecated_int32_in_oneof 2 1 5 - deprecatedInt32InOneof 0 0 -
+    resolved 1 0 5 - 0 -
+  field nested 5 1 11 .edition_unittest.TestDeprecatedFields nested - 0 -
+    resolved 1 0 11 - 0 -
+  oneof oneof_fields
+message TestDeprecatedMessage
+message ForeignMessage
+  field c 1 1 5 - c - 0 -
+    resolved 1 0 5 - 0 -
+  field d 2 1 5 - d - 0 -
+    resolved 1 0 5 - 0 -
+message TestReservedFields
+  reserved_range 2 3
+  reserved_range 15 16
+  reserved_range 9 12
+  reserved_name bar
+  reserved_name baz
+message TestAllExtensions
+  extension_range 1 536870912
+message OptionalGroup_extension
+  field a 17 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+message RepeatedGroup_extension
+  field a 47 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+message TestMixedFieldsAndExtensions
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field b 3 3 7 - b - 0 -
+    resolved 0 1 7 - 0 -
+  extension c 2 1 5 - .edition_unittest.TestMixedFieldsAndExtensions c - 0 -
+    resolved 1 0 5 - 0 -
+  extension d 4 3 7 - .edition_unittest.TestMixedFieldsAndExtensions d - 0 -
+    resolved 0 1 7 - 0 -
+  extension_range 2 3
+  extension_range 4 5
+message TestGroup
+  field optionalgroup 16 1 11 .edition_unittest.TestGroup.OptionalGroup optionalgroup - 0 -
+    resolved 1 0 10 - 0 -
+  field optional_foreign_enum 22 1 14 .edition_unittest.ForeignEnum optionalForeignEnum - 0 -
+    resolved 1 0 14 - 0 -
+  message OptionalGroup
+    field a 17 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+    field zz 89 1 5 - zz - 0 -
+      resolved 1 0 5 - 0 -
+message TestGroupExtension
+  extension_range 1 536870912
+message TestNestedExtension
+  extension test 1002 1 9 - .edition_unittest.TestAllExtensions test - 0 -
+    resolved 1 0 9 1 0 default=test
+  extension nested_string_extension 1003 1 9 - .edition_unittest.TestAllExtensions nestedStringExtension - 0 -
+    resolved 1 0 9 1 0 -
+  extension optionalgroup_extension 16 1 11 .edition_unittest.TestNestedExtension.OptionalGroup_extension .edition_unittest.TestGroupExtension optionalgroupExtension - 0 -
+    resolved 1 0 10 - 0 -
+  extension optional_foreign_enum_extension 22 1 14 .edition_unittest.ForeignEnum .edition_unittest.TestGroupExtension optionalForeignEnumExtension - 0 -
+    resolved 1 0 14 - 0 -
+  message OptionalGroup_extension
+    field a 17 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+message TestChildExtension
+  field a 1 1 9 - a - 0 -
+    resolved 1 0 9 1 0 -
+  field b 2 1 9 - b - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_extension 3 1 11 .edition_unittest.TestAllExtensions optionalExtension - 0 -
+    resolved 1 0 11 - 0 -
+message TestChildExtensionData
+  field a 1 1 9 - a - 0 -
+    resolved 1 0 9 1 0 -
+  field b 2 1 9 - b - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_extension 3 1 11 .edition_unittest.TestChildExtensionData.NestedTestAllExtensionsData optionalExtension - 0 -
+    resolved 1 0 11 - 0 -
+  message NestedTestAllExtensionsData
+    field dynamic 409707008 1 11 .edition_unittest.TestChildExtensionData.NestedTestAllExtensionsData.NestedDynamicExtensions dynamic - 0 -
+      resolved 1 0 11 - 0 -
+    message NestedDynamicExtensions
+      field a 1 1 5 - a - 0 -
+        resolved 1 0 5 - 0 -
+      field b 2 1 5 - b - 0 -
+        resolved 1 0 5 - 0 -
+message TestNestedChildExtension
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field child 2 1 11 .edition_unittest.TestChildExtension child - 0 -
+    resolved 1 0 11 - 0 -
+message TestNestedChildExtensionData
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field child 2 1 11 .edition_unittest.TestChildExtensionData child - 0 -
+    resolved 1 0 11 - 0 -
+message TestRequiredEnum
+  field required_enum 1 1 14 .edition_unittest.ForeignEnum requiredEnum - 0 -
+    resolved 1 0 14 - 1 -
+  field a 2 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+message TestRequiredEnumNoMask
+  field required_enum 1 1 14 .edition_unittest.TestRequiredEnumNoMask.NestedEnum requiredEnum - 0 -
+    resolved 1 0 14 - 1 -
+  field a 2 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  enum NestedEnum
+    closed
+    value UNSPECIFIED 0
+    value FOO 2
+    value BAR 100
+    value BAZ -1
+message TestRequiredEnumMulti
+  field required_enum_4 4 1 14 .edition_unittest.TestRequiredEnumMulti.NestedEnum requiredEnum4 - 0 -
+    resolved 1 0 14 - 1 -
+  field a_3 3 1 5 - a3 - 0 -
+    resolved 1 0 5 - 0 -
+  field required_enum_2 2 1 14 .edition_unittest.TestRequiredEnumMulti.NestedEnum requiredEnum2 - 0 -
+    resolved 1 0 14 - 1 -
+  field required_enum_1 1 1 14 .edition_unittest.ForeignEnum requiredEnum1 - 0 -
+    resolved 1 0 14 - 1 -
+  enum NestedEnum
+    closed
+    value UNSPECIFIED 0
+    value FOO 1
+    value BAR 2
+    value BAZ 100
+message TestRequiredNoMaskMulti
+  field required_fixed32_80 80 1 7 - requiredFixed3280 - 0 -
+    resolved 1 0 7 - 1 -
+  field required_fixed32_70 70 1 7 - requiredFixed3270 - 0 -
+    resolved 1 0 7 - 1 -
+  field required_enum_64 64 1 14 .edition_unittest.TestRequiredNoMaskMulti.NestedEnum requiredEnum64 - 0 -
+    resolved 1 0 14 - 1 -
+  field required_enum_4 4 1 14 .edition_unittest.TestRequiredNoMaskMulti.NestedEnum requiredEnum4 - 0 -
+    resolved 1 0 14 - 1 -
+  field a_3 3 1 5 - a3 - 0 -
+    resolved 1 0 5 - 0 -
+  field required_enum_2 2 1 14 .edition_unittest.TestRequiredNoMaskMulti.NestedEnum requiredEnum2 - 0 -
+    resolved 1 0 14 - 1 -
+  field required_enum_1 1 1 14 .edition_unittest.ForeignEnum requiredEnum1 - 0 -
+    resolved 1 0 14 - 1 -
+  enum NestedEnum
+    closed
+    value UNSPECIFIED 0
+    value FOO 1
+    value BAR 2
+    value BAZ 100
+message TestRequired
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 1 -
+  field dummy2 2 1 5 - dummy2 - 0 -
+    resolved 1 0 5 - 0 -
+  field b 3 1 5 - b - 0 -
+    resolved 1 0 5 - 1 -
+  field dummy4 4 1 5 - dummy4 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy5 5 1 5 - dummy5 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy6 6 1 5 - dummy6 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy7 7 1 5 - dummy7 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy8 8 1 5 - dummy8 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy9 9 1 5 - dummy9 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy10 10 1 5 - dummy10 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy11 11 1 5 - dummy11 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy12 12 1 5 - dummy12 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy13 13 1 5 - dummy13 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy14 14 1 5 - dummy14 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy15 15 1 5 - dummy15 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy16 16 1 5 - dummy16 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy17 17 1 5 - dummy17 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy18 18 1 5 - dummy18 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy19 19 1 5 - dummy19 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy20 20 1 5 - dummy20 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy21 21 1 5 - dummy21 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy22 22 1 5 - dummy22 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy23 23 1 5 - dummy23 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy24 24 1 5 - dummy24 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy25 25 1 5 - dummy25 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy26 26 1 5 - dummy26 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy27 27 1 5 - dummy27 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy28 28 1 5 - dummy28 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy29 29 1 5 - dummy29 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy30 30 1 5 - dummy30 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy31 31 1 5 - dummy31 - 0 -
+    resolved 1 0 5 - 0 -
+  field dummy32 32 1 5 - dummy32 - 0 -
+    resolved 1 0 5 - 0 -
+  field c 33 1 5 - c - 0 -
+    resolved 1 0 5 - 1 -
+  field optional_foreign 34 1 11 .edition_unittest.ForeignMessage optionalForeign - 0 -
+    resolved 1 0 11 - 0 -
+  extension single 1000 1 11 .edition_unittest.TestRequired .edition_unittest.TestAllExtensions single - 0 -
+    resolved 1 0 11 - 0 -
+  extension multi 1001 3 11 .edition_unittest.TestRequired .edition_unittest.TestAllExtensions multi - 0 -
+    resolved 0 0 11 - 0 -
+message TestRequiredForeign
+  field optional_message 1 1 11 .edition_unittest.TestRequired optionalMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_message 2 3 11 .edition_unittest.TestRequired repeatedMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field dummy 3 1 5 - dummy - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_lazy_message 4 1 11 .edition_unittest.NestedTestAllTypes optionalLazyMessage - 0 -
+    resolved 1 0 11 - 0 -
+message TestRequiredMessage
+  field optional_message 1 1 11 .edition_unittest.TestRequired optionalMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_message 2 3 11 .edition_unittest.TestRequired repeatedMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field required_message 3 1 11 .edition_unittest.TestRequired requiredMessage - 0 -
+    resolved 1 0 11 - 1 -
+message TestNestedRequiredForeign
+  field child 1 1 11 .edition_unittest.TestNestedRequiredForeign child - 0 -
+    resolved 1 0 11 - 0 -
+  field payload 2 1 11 .edition_unittest.TestRequiredForeign payload - 0 -
+    resolved 1 0 11 - 0 -
+  field dummy 3 1 5 - dummy - 0 -
+    resolved 1 0 5 - 0 -
+  field required_enum 5 1 11 .edition_unittest.TestRequiredEnum requiredEnum - 0 -
+    resolved 1 0 11 - 0 -
+  field required_enum_no_mask 6 1 11 .edition_unittest.TestRequiredEnumNoMask requiredEnumNoMask - 0 -
+    resolved 1 0 11 - 0 -
+  field required_enum_multi 7 1 11 .edition_unittest.TestRequiredEnumMulti requiredEnumMulti - 0 -
+    resolved 1 0 11 - 0 -
+  field required_no_mask 9 1 11 .edition_unittest.TestRequiredNoMaskMulti requiredNoMask - 0 -
+    resolved 1 0 11 - 0 -
+message TestForeignNested
+  field foreign_nested 1 1 11 .edition_unittest.TestAllTypes.NestedMessage foreignNested - 0 -
+    resolved 1 0 11 - 0 -
+message TestEmptyMessage
+message TestEmptyMessageWithExtensions
+  extension_range 1 536870912
+message TestPickleNestedMessage
+  message NestedMessage
+    field bb 1 1 5 - bb - 0 -
+      resolved 1 0 5 - 0 -
+    message NestedNestedMessage
+      field cc 1 1 5 - cc - 0 -
+        resolved 1 0 5 - 0 -
+message TestMultipleExtensionRanges
+  extension_range 42 43
+  extension_range 4143 4244
+  extension_range 65536 536870912
+message TestReallyLargeTagNumber
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field bb 268435455 1 5 - bb - 0 -
+    resolved 1 0 5 - 0 -
+message TestRecursiveMessage
+  field a 1 1 11 .edition_unittest.TestRecursiveMessage a - 0 -
+    resolved 1 0 11 - 0 -
+  field i 2 1 5 - i - 0 -
+    resolved 1 0 5 - 0 -
+message TestMutualRecursionA
+  field bb 1 1 11 .edition_unittest.TestMutualRecursionB bb - 0 -
+    resolved 1 0 11 - 0 -
+  field subgroup 2 1 11 .edition_unittest.TestMutualRecursionA.SubGroup subgroup - 0 -
+    resolved 1 0 10 - 0 -
+  field subgroupr 5 3 11 .edition_unittest.TestMutualRecursionA.SubGroupR subgroupr - 0 -
+    resolved 0 0 10 - 0 -
+  message SubMessage
+    field b 1 1 11 .edition_unittest.TestMutualRecursionB b - 0 -
+      resolved 1 0 11 - 0 -
+  message SubGroup
+    field sub_message 3 1 11 .edition_unittest.TestMutualRecursionA.SubMessage subMessage - 0 -
+      resolved 1 0 11 - 0 -
+    field not_in_this_scc 4 1 11 .edition_unittest.TestAllTypes notInThisScc - 0 -
+      resolved 1 0 11 - 0 -
+  message SubGroupR
+    field payload 6 1 11 .edition_unittest.TestAllTypes payload - 0 -
+      resolved 1 0 11 - 0 -
+message TestMutualRecursionB
+  field a 1 1 11 .edition_unittest.TestMutualRecursionA a - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_int32 2 1 5 - optionalInt32 - 0 -
+    resolved 1 0 5 - 0 -
+message TestIsInitialized
+  field sub_message 1 1 11 .edition_unittest.TestIsInitialized.SubMessage subMessage - 0 -
+    resolved 1 0 11 - 0 -
+  message SubMessage
+    field subgroup 1 1 11 .edition_unittest.TestIsInitialized.SubMessage.SubGroup subgroup - 0 -
+      resolved 1 0 10 - 0 -
+    message SubGroup
+      field i 2 1 5 - i - 0 -
+        resolved 1 0 5 - 1 -
+message TestDupFieldNumber
+  field a 1 1 5 - a - 0 -
+    resolved 1 0 5 - 0 -
+  field foo 2 1 11 .edition_unittest.TestDupFieldNumber.Foo foo - 0 -
+    resolved 1 0 10 - 0 -
+  field bar 3 1 11 .edition_unittest.TestDupFieldNumber.Bar bar - 0 -
+    resolved 1 0 10 - 0 -
+  message Foo
+    field a 1 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+  message Bar
+    field a 1 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+message TestEagerMessage
+  field sub_message 1 1 11 .edition_unittest.TestAllTypes subMessage - 0 -
+    resolved 1 0 11 - 0 -
+message TestLazyMessage
+  field sub_message 1 1 11 .edition_unittest.TestAllTypes subMessage - 0 -
+    resolved 1 0 11 - 0 -
+message TestLazyMessageRepeated
+  field repeated_message 1 3 11 .edition_unittest.TestLazyMessage repeatedMessage - 0 -
+    resolved 0 0 11 - 0 -
+message TestEagerMaybeLazy
+  field message_foo 1 1 11 .edition_unittest.TestAllTypes messageFoo - 0 -
+    resolved 1 0 11 - 0 -
+  field message_bar 2 1 11 .edition_unittest.TestAllTypes messageBar - 0 -
+    resolved 1 0 11 - 0 -
+  field message_baz 3 1 11 .edition_unittest.TestEagerMaybeLazy.NestedMessage messageBaz - 0 -
+    resolved 1 0 11 - 0 -
+  message NestedMessage
+    field packed 1 1 11 .edition_unittest.TestPackedTypes packed - 0 -
+      resolved 1 0 11 - 0 -
+message TestNestedMessageHasBits
+  field optional_nested_message 1 1 11 .edition_unittest.TestNestedMessageHasBits.NestedMessage optionalNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  message NestedMessage
+    field nestedmessage_repeated_int32 1 3 5 - nestedmessageRepeatedInt32 - 0 -
+      resolved 0 1 5 - 0 -
+    field nestedmessage_repeated_foreignmessage 2 3 11 .edition_unittest.ForeignMessage nestedmessageRepeatedForeignmessage - 0 -
+      resolved 0 0 11 - 0 -
+message TestCamelCaseFieldNames
+  field PrimitiveField 1 1 5 - PrimitiveField - 0 -
+    resolved 1 0 5 - 0 -
+  field StringField 2 1 9 - StringField - 0 -
+    resolved 1 0 9 1 0 -
+  field EnumField 3 1 14 .edition_unittest.ForeignEnum EnumField - 0 -
+    resolved 1 0 14 - 0 -
+  field MessageField 4 1 11 .edition_unittest.ForeignMessage MessageField - 0 -
+    resolved 1 0 11 - 0 -
+  field StringPieceField 5 1 9 - StringPieceField - 0 -
+    resolved 1 0 9 1 0 -
+  field CordField 6 1 9 - CordField - 0 -
+    resolved 1 0 9 1 0 -
+  field RepeatedPrimitiveField 7 3 5 - RepeatedPrimitiveField - 0 -
+    resolved 0 1 5 - 0 -
+  field RepeatedStringField 8 3 9 - RepeatedStringField - 0 -
+    resolved 0 0 9 1 0 -
+  field RepeatedEnumField 9 3 14 .edition_unittest.ForeignEnum RepeatedEnumField - 0 -
+    resolved 0 1 14 - 0 -
+  field RepeatedMessageField 10 3 11 .edition_unittest.ForeignMessage RepeatedMessageField - 0 -
+    resolved 0 0 11 - 0 -
+  field RepeatedStringPieceField 11 3 9 - RepeatedStringPieceField - 0 -
+    resolved 0 0 9 1 0 -
+  field RepeatedCordField 12 3 9 - RepeatedCordField - 0 -
+    resolved 0 0 9 1 0 -
+message TestFieldOrderings
+  field my_string 11 1 9 - myString - 0 -
+    resolved 1 0 9 1 0 -
+  field my_int 1 1 3 - myInt - 0 -
+    resolved 1 0 3 - 0 -
+  field my_float 101 1 2 - myFloat - 0 -
+    resolved 1 0 2 - 0 -
+  field optional_nested_message 200 1 11 .edition_unittest.TestFieldOrderings.NestedMessage optionalNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  message NestedMessage
+    field oo 2 1 3 - oo - 0 -
+      resolved 1 0 3 - 0 -
+    field bb 1 1 5 - bb - 0 -
+      resolved 1 0 5 - 0 -
+  extension_range 2 11
+  extension_range 12 101
+message TestExtensionOrderings1
+  field my_string 1 1 9 - myString - 0 -
+    resolved 1 0 9 1 0 -
+  extension test_ext_orderings1 13 1 11 .edition_unittest.TestExtensionOrderings1 .edition_unittest.TestFieldOrderings testExtOrderings1 - 0 -
+    resolved 1 0 11 - 0 -
+message TestExtensionOrderings2
+  field my_string 1 1 9 - myString - 0 -
+    resolved 1 0 9 1 0 -
+  extension test_ext_orderings2 12 1 11 .edition_unittest.TestExtensionOrderings2 .edition_unittest.TestFieldOrderings testExtOrderings2 - 0 -
+    resolved 1 0 11 - 0 -
+  message TestExtensionOrderings3
+    field my_string 1 1 9 - myString - 0 -
+      resolved 1 0 9 1 0 -
+    extension test_ext_orderings3 14 1 11 .edition_unittest.TestExtensionOrderings2.TestExtensionOrderings3 .edition_unittest.TestFieldOrderings testExtOrderings3 - 0 -
+      resolved 1 0 11 - 0 -
+message TestExtremeDefaultValues
+  field escaped_bytes 1 1 12 - escapedBytes - 0 -
+    resolved 1 0 12 - 0 default=\000\001\007\010\014\n\r\t\013\\\'\"\376
+  field large_uint32 2 1 13 - largeUint32 - 0 -
+    resolved 1 0 13 - 0 default=4294967295
+  field large_uint64 3 1 4 - largeUint64 - 0 -
+    resolved 1 0 4 - 0 default=18446744073709551615
+  field small_int32 4 1 5 - smallInt32 - 0 -
+    resolved 1 0 5 - 0 default=-2147483647
+  field small_int64 5 1 3 - smallInt64 - 0 -
+    resolved 1 0 3 - 0 default=-9223372036854775807
+  field really_small_int32 21 1 5 - reallySmallInt32 - 0 -
+    resolved 1 0 5 - 0 default=-2147483648
+  field really_small_int64 22 1 3 - reallySmallInt64 - 0 -
+    resolved 1 0 3 - 0 default=-9223372036854775808
+  field utf8_string 6 1 9 - utf8String - 0 -
+    resolved 1 0 9 1 0 default=ሴ
+  field zero_float 7 1 2 - zeroFloat - 0 -
+    resolved 1 0 2 - 0 default=0
+  field one_float 8 1 2 - oneFloat - 0 -
+    resolved 1 0 2 - 0 default=1
+  field small_float 9 1 2 - smallFloat - 0 -
+    resolved 1 0 2 - 0 default=1.5
+  field negative_one_float 10 1 2 - negativeOneFloat - 0 -
+    resolved 1 0 2 - 0 default=-1
+  field negative_float 11 1 2 - negativeFloat - 0 -
+    resolved 1 0 2 - 0 default=-1.5
+  field large_float 12 1 2 - largeFloat - 0 -
+    resolved 1 0 2 - 0 default=2e+08
+  field small_negative_float 13 1 2 - smallNegativeFloat - 0 -
+    resolved 1 0 2 - 0 default=-8e-28
+  field inf_double 14 1 1 - infDouble - 0 -
+    resolved 1 0 1 - 0 default=inf
+  field neg_inf_double 15 1 1 - negInfDouble - 0 -
+    resolved 1 0 1 - 0 default=-inf
+  field nan_double 16 1 1 - nanDouble - 0 -
+    resolved 1 0 1 - 0 default=nan
+  field inf_float 17 1 2 - infFloat - 0 -
+    resolved 1 0 2 - 0 default=inf
+  field neg_inf_float 18 1 2 - negInfFloat - 0 -
+    resolved 1 0 2 - 0 default=-inf
+  field nan_float 19 1 2 - nanFloat - 0 -
+    resolved 1 0 2 - 0 default=nan
+  field cpp_trigraph 20 1 9 - cppTrigraph - 0 -
+    resolved 1 0 9 1 0 default=? ? ?? ?? ??? ??/ ??-
+  field string_with_zero 23 1 9 - stringWithZero - 0 -
+    resolved 1 0 9 1 0 default=hel lo
+  field bytes_with_zero 24 1 12 - bytesWithZero - 0 -
+    resolved 1 0 12 - 0 default=wor\000ld
+  field string_piece_with_zero 25 1 9 - stringPieceWithZero - 0 -
+    resolved 1 0 9 1 0 default=ab c
+  field cord_with_zero 26 1 9 - cordWithZero - 0 -
+    resolved 1 0 9 1 0 default=12 3
+  field replacement_string 27 1 9 - replacementString - 0 -
+    resolved 1 0 9 1 0 default=${unknown}
+message SparseEnumMessage
+  field sparse_enum 1 1 14 .edition_unittest.TestSparseEnum sparseEnum - 0 -
+    resolved 1 0 14 - 0 -
+message OneString
+  field data 1 1 9 - data - 0 -
+    resolved 1 0 9 1 0 -
+message MoreString
+  field data 1 3 9 - data - 0 -
+    resolved 0 0 9 1 0 -
+message OneBytes
+  field data 1 1 12 - data - 0 -
+    resolved 1 0 12 - 0 -
+message MoreBytes
+  field data 1 3 12 - data - 0 -
+    resolved 0 0 12 - 0 -
+message ManyOptionalString
+  field str1 1 1 9 - str1 - 0 -
+    resolved 1 0 9 1 0 -
+  field str2 2 1 9 - str2 - 0 -
+    resolved 1 0 9 1 0 -
+  field str3 3 1 9 - str3 - 0 -
+    resolved 1 0 9 1 0 -
+  field str4 4 1 9 - str4 - 0 -
+    resolved 1 0 9 1 0 -
+  field str5 5 1 9 - str5 - 0 -
+    resolved 1 0 9 1 0 -
+  field str6 6 1 9 - str6 - 0 -
+    resolved 1 0 9 1 0 -
+  field str7 7 1 9 - str7 - 0 -
+    resolved 1 0 9 1 0 -
+  field str8 8 1 9 - str8 - 0 -
+    resolved 1 0 9 1 0 -
+  field str9 9 1 9 - str9 - 0 -
+    resolved 1 0 9 1 0 -
+  field str10 10 1 9 - str10 - 0 -
+    resolved 1 0 9 1 0 -
+  field str11 11 1 9 - str11 - 0 -
+    resolved 1 0 9 1 0 -
+  field str12 12 1 9 - str12 - 0 -
+    resolved 1 0 9 1 0 -
+  field str13 13 1 9 - str13 - 0 -
+    resolved 1 0 9 1 0 -
+  field str14 14 1 9 - str14 - 0 -
+    resolved 1 0 9 1 0 -
+  field str15 15 1 9 - str15 - 0 -
+    resolved 1 0 9 1 0 -
+  field str16 16 1 9 - str16 - 0 -
+    resolved 1 0 9 1 0 -
+  field str17 17 1 9 - str17 - 0 -
+    resolved 1 0 9 1 0 -
+  field str18 18 1 9 - str18 - 0 -
+    resolved 1 0 9 1 0 -
+  field str19 19 1 9 - str19 - 0 -
+    resolved 1 0 9 1 0 -
+  field str20 20 1 9 - str20 - 0 -
+    resolved 1 0 9 1 0 -
+  field str21 21 1 9 - str21 - 0 -
+    resolved 1 0 9 1 0 -
+  field str22 22 1 9 - str22 - 0 -
+    resolved 1 0 9 1 0 -
+  field str23 23 1 9 - str23 - 0 -
+    resolved 1 0 9 1 0 -
+  field str24 24 1 9 - str24 - 0 -
+    resolved 1 0 9 1 0 -
+  field str25 25 1 9 - str25 - 0 -
+    resolved 1 0 9 1 0 -
+  field str26 26 1 9 - str26 - 0 -
+    resolved 1 0 9 1 0 -
+  field str27 27 1 9 - str27 - 0 -
+    resolved 1 0 9 1 0 -
+  field str28 28 1 9 - str28 - 0 -
+    resolved 1 0 9 1 0 -
+  field str29 29 1 9 - str29 - 0 -
+    resolved 1 0 9 1 0 -
+  field str30 30 1 9 - str30 - 0 -
+    resolved 1 0 9 1 0 -
+  field str31 31 1 9 - str31 - 0 -
+    resolved 1 0 9 1 0 -
+  field str32 32 1 9 - str32 - 0 -
+    resolved 1 0 9 1 0 -
+message Int32Message
+  field data 1 1 5 - data - 0 -
+    resolved 1 0 5 - 0 -
+message Uint32Message
+  field data 1 1 13 - data - 0 -
+    resolved 1 0 13 - 0 -
+message Int64Message
+  field data 1 1 3 - data - 0 -
+    resolved 1 0 3 - 0 -
+message Uint64Message
+  field data 1 1 4 - data - 0 -
+    resolved 1 0 4 - 0 -
+message BoolMessage
+  field data 1 1 8 - data - 0 -
+    resolved 1 0 8 - 0 -
+message TestOneof
+  field foo_int 1 1 5 - fooInt 0 0 -
+    resolved 1 0 5 - 0 -
+  field foo_string 2 1 9 - fooString 0 0 -
+    resolved 1 0 9 1 0 -
+  field foo_message 3 1 11 .edition_unittest.TestAllTypes fooMessage 0 0 -
+    resolved 1 0 11 - 0 -
+  field foogroup 4 1 11 .edition_unittest.TestOneof.FooGroup foogroup 0 0 -
+    resolved 1 0 10 - 0 -
+  message FooGroup
+    field a 5 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+    field b 6 1 9 - b - 0 -
+      resolved 1 0 9 1 0 -
+  oneof foo
+message TestOneofBackwardsCompatible
+  field foo_int 1 1 5 - fooInt - 0 -
+    resolved 1 0 5 - 0 -
+  field foo_string 2 1 9 - fooString - 0 -
+    resolved 1 0 9 1 0 -
+  field foo_message 3 1 11 .edition_unittest.TestAllTypes fooMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field foogroup 4 1 11 .edition_unittest.TestOneofBackwardsCompatible.FooGroup foogroup - 0 -
+    resolved 1 0 10 - 0 -
+  message FooGroup
+    field a 5 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+    field b 6 1 9 - b - 0 -
+      resolved 1 0 9 1 0 -
+message TestOneof2
+  field foo_int 1 1 5 - fooInt 0 0 -
+    resolved 1 0 5 - 0 -
+  field foo_string 2 1 9 - fooString 0 0 -
+    resolved 1 0 9 1 0 -
+  field foo_cord 3 1 9 - fooCord 0 0 -
+    resolved 1 0 9 1 0 -
+  field foo_string_piece 4 1 9 - fooStringPiece 0 0 -
+    resolved 1 0 9 1 0 -
+  field foo_bytes 5 1 12 - fooBytes 0 0 -
+    resolved 1 0 12 - 0 -
+  field foo_enum 6 1 14 .edition_unittest.TestOneof2.NestedEnum fooEnum 0 0 -
+    resolved 1 0 14 - 0 -
+  field foo_message 7 1 11 .edition_unittest.TestOneof2.NestedMessage fooMessage 0 0 -
+    resolved 1 0 11 - 0 -
+  field foogroup 8 1 11 .edition_unittest.TestOneof2.FooGroup foogroup 0 0 -
+    resolved 1 0 10 - 0 -
+  field foo_lazy_message 11 1 11 .edition_unittest.TestOneof2.NestedMessage fooLazyMessage 0 0 -
+    resolved 1 0 11 - 0 -
+  field foo_bytes_cord 30 1 12 - fooBytesCord 0 0 -
+    resolved 1 0 12 - 0 -
+  field bar_int 12 1 5 - barInt 1 0 -
+    resolved 1 0 5 - 0 default=5
+  field bar_string 13 1 9 - barString 1 0 -
+    resolved 1 0 9 1 0 default=STRING
+  field bar_cord 14 1 9 - barCord 1 0 -
+    resolved 1 0 9 1 0 default=CORD
+  field bar_string_piece 15 1 9 - barStringPiece 1 0 -
+    resolved 1 0 9 1 0 default=SPIECE
+  field bar_bytes 16 1 12 - barBytes 1 0 -
+    resolved 1 0 12 - 0 default=BYTES
+  field bar_enum 17 1 14 .edition_unittest.TestOneof2.NestedEnum barEnum 1 0 -
+    resolved 1 0 14 - 0 default=BAR
+  field bar_string_with_empty_default 20 1 9 - barStringWithEmptyDefault 1 0 -
+    resolved 1 0 9 1 0 default=
+  field bar_cord_with_empty_default 21 1 9 - barCordWithEmptyDefault 1 0 -
+    resolved 1 0 9 1 0 default=
+  field bar_string_piece_with_empty_default 22 1 9 - barStringPieceWithEmptyDefault 1 0 -
+    resolved 1 0 9 1 0 default=
+  field bar_bytes_with_empty_default 23 1 12 - barBytesWithEmptyDefault 1 0 -
+    resolved 1 0 12 - 0 default=
+  field baz_int 18 1 5 - bazInt - 0 -
+    resolved 1 0 5 - 0 -
+  field baz_string 19 1 9 - bazString - 0 -
+    resolved 1 0 9 1 0 default=BAZ
+  message FooGroup
+    field a 9 1 5 - a - 0 -
+      resolved 1 0 5 - 0 -
+    field b 10 1 9 - b - 0 -
+      resolved 1 0 9 1 0 -
+  message NestedMessage
+    field moo_int 1 1 3 - mooInt - 0 -
+      resolved 1 0 3 - 0 -
+    field corge_int 2 3 5 - corgeInt - 0 -
+      resolved 0 1 5 - 0 -
+  enum NestedEnum
+    closed
+    value UNKNOWN 0
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+  oneof foo
+  oneof bar
+message TestRequiredOneof
+  field foo_int 1 1 5 - fooInt 0 0 -
+    resolved 1 0 5 - 0 -
+  field foo_string 2 1 9 - fooString 0 0 -
+    resolved 1 0 9 1 0 -
+  field foo_message 3 1 11 .edition_unittest.TestRequiredOneof.NestedMessage fooMessage 0 0 -
+    resolved 1 0 11 - 0 -
+  field foo_lazy_message 4 1 11 .edition_unittest.TestRequiredOneof.NestedMessage fooLazyMessage 0 0 -
+    resolved 1 0 11 - 0 -
+  message NestedMessage
+    field required_double 1 1 1 - requiredDouble - 0 -
+      resolved 1 0 1 - 1 -
+  oneof foo
+message TestPackedTypes
+  field packed_int32 90 3 5 - packedInt32 - 0 -
+    resolved 0 1 5 - 0 -
+  field packed_int64 91 3 3 - packedInt64 - 0 -
+    resolved 0 1 3 - 0 -
+  field packed_uint32 92 3 13 - packedUint32 - 0 -
+    resolved 0 1 13 - 0 -
+  field packed_uint64 93 3 4 - packedUint64 - 0 -
+    resolved 0 1 4 - 0 -
+  field packed_sint32 94 3 17 - packedSint32 - 0 -
+    resolved 0 1 17 - 0 -
+  field packed_sint64 95 3 18 - packedSint64 - 0 -
+    resolved 0 1 18 - 0 -
+  field packed_fixed32 96 3 7 - packedFixed32 - 0 -
+    resolved 0 1 7 - 0 -
+  field packed_fixed64 97 3 6 - packedFixed64 - 0 -
+    resolved 0 1 6 - 0 -
+  field packed_sfixed32 98 3 15 - packedSfixed32 - 0 -
+    resolved 0 1 15 - 0 -
+  field packed_sfixed64 99 3 16 - packedSfixed64 - 0 -
+    resolved 0 1 16 - 0 -
+  field packed_float 100 3 2 - packedFloat - 0 -
+    resolved 0 1 2 - 0 -
+  field packed_double 101 3 1 - packedDouble - 0 -
+    resolved 0 1 1 - 0 -
+  field packed_bool 102 3 8 - packedBool - 0 -
+    resolved 0 1 8 - 0 -
+  field packed_enum 103 3 14 .edition_unittest.ForeignEnum packedEnum - 0 -
+    resolved 0 1 14 - 0 -
+message TestUnpackedTypes
+  field unpacked_int32 90 3 5 - unpackedInt32 - 0 -
+    resolved 0 0 5 - 0 -
+  field unpacked_int64 91 3 3 - unpackedInt64 - 0 -
+    resolved 0 0 3 - 0 -
+  field unpacked_uint32 92 3 13 - unpackedUint32 - 0 -
+    resolved 0 0 13 - 0 -
+  field unpacked_uint64 93 3 4 - unpackedUint64 - 0 -
+    resolved 0 0 4 - 0 -
+  field unpacked_sint32 94 3 17 - unpackedSint32 - 0 -
+    resolved 0 0 17 - 0 -
+  field unpacked_sint64 95 3 18 - unpackedSint64 - 0 -
+    resolved 0 0 18 - 0 -
+  field unpacked_fixed32 96 3 7 - unpackedFixed32 - 0 -
+    resolved 0 0 7 - 0 -
+  field unpacked_fixed64 97 3 6 - unpackedFixed64 - 0 -
+    resolved 0 0 6 - 0 -
+  field unpacked_sfixed32 98 3 15 - unpackedSfixed32 - 0 -
+    resolved 0 0 15 - 0 -
+  field unpacked_sfixed64 99 3 16 - unpackedSfixed64 - 0 -
+    resolved 0 0 16 - 0 -
+  field unpacked_float 100 3 2 - unpackedFloat - 0 -
+    resolved 0 0 2 - 0 -
+  field unpacked_double 101 3 1 - unpackedDouble - 0 -
+    resolved 0 0 1 - 0 -
+  field unpacked_bool 102 3 8 - unpackedBool - 0 -
+    resolved 0 0 8 - 0 -
+  field unpacked_enum 103 3 14 .edition_unittest.ForeignEnum unpackedEnum - 0 -
+    resolved 0 0 14 - 0 -
+message TestPackedExtensions
+  extension_range 1 536870912
+message TestUnpackedExtensions
+  extension_range 1 536870912
+message TestDynamicExtensions
+  field scalar_extension 2000 1 7 - scalarExtension - 0 -
+    resolved 1 0 7 - 0 -
+  field enum_extension 2001 1 14 .edition_unittest.ForeignEnum enumExtension - 0 -
+    resolved 1 0 14 - 0 -
+  field dynamic_enum_extension 2002 1 14 .edition_unittest.TestDynamicExtensions.DynamicEnumType dynamicEnumExtension - 0 -
+    resolved 1 0 14 - 0 -
+  field message_extension 2003 1 11 .edition_unittest.ForeignMessage messageExtension - 0 -
+    resolved 1 0 11 - 0 -
+  field dynamic_message_extension 2004 1 11 .edition_unittest.TestDynamicExtensions.DynamicMessageType dynamicMessageExtension - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_extension 2005 3 9 - repeatedExtension - 0 -
+    resolved 0 0 9 1 0 -
+  field packed_extension 2006 3 17 - packedExtension - 0 -
+    resolved 0 1 17 - 0 -
+  message DynamicMessageType
+    field dynamic_field 2100 1 5 - dynamicField - 0 -
+      resolved 1 0 5 - 0 -
+  enum DynamicEnumType
+    closed
+    value DYNAMIC_UNKNOWN 0
+    value DYNAMIC_FOO 2200
+    value DYNAMIC_BAR 2201
+    value DYNAMIC_BAZ 2202
+message TestRepeatedString
+  field repeated_string1 1 3 9 - repeatedString1 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string2 2 3 9 - repeatedString2 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_bytes11 11 3 12 - repeatedBytes11 - 0 -
+    resolved 0 0 12 - 0 -
+  field repeated_bytes12 12 3 12 - repeatedBytes12 - 0 -
+    resolved 0 0 12 - 0 -
+message TestRepeatedScalarDifferentTagSizes
+  field repeated_fixed32 12 3 7 - repeatedFixed32 - 0 -
+    resolved 0 1 7 - 0 -
+  field repeated_int32 13 3 5 - repeatedInt32 - 0 -
+    resolved 0 1 5 - 0 -
+  field repeated_fixed64 2046 3 6 - repeatedFixed64 - 0 -
+    resolved 0 1 6 - 0 -
+  field repeated_int64 2047 3 3 - repeatedInt64 - 0 -
+    resolved 0 1 3 - 0 -
+  field repeated_float 262142 3 2 - repeatedFloat - 0 -
+    resolved 0 1 2 - 0 -
+  field repeated_uint64 262143 3 4 - repeatedUint64 - 0 -
+    resolved 0 1 4 - 0 -
+message TestParsingMerge
+  field required_all_types 1 1 11 .edition_unittest.TestAllTypes requiredAllTypes - 0 -
+    resolved 1 0 11 - 1 -
+  field optional_all_types 2 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 3 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+  field optionalgroup 10 1 11 .edition_unittest.TestParsingMerge.OptionalGroup optionalgroup - 0 -
+    resolved 1 0 10 - 0 -
+  field repeatedgroup 20 3 11 .edition_unittest.TestParsingMerge.RepeatedGroup repeatedgroup - 0 -
+    resolved 0 0 10 - 0 -
+  extension optional_ext 1000 1 11 .edition_unittest.TestAllTypes .edition_unittest.TestParsingMerge optionalExt - 0 -
+    resolved 1 0 11 - 0 -
+  extension repeated_ext 1001 3 11 .edition_unittest.TestAllTypes .edition_unittest.TestParsingMerge repeatedExt - 0 -
+    resolved 0 0 11 - 0 -
+  message RepeatedFieldsGenerator
+    field field1 1 3 11 .edition_unittest.TestAllTypes field1 - 0 -
+      resolved 0 0 11 - 0 -
+    field field2 2 3 11 .edition_unittest.TestAllTypes field2 - 0 -
+      resolved 0 0 11 - 0 -
+    field field3 3 3 11 .edition_unittest.TestAllTypes field3 - 0 -
+      resolved 0 0 11 - 0 -
+    field group1 10 3 11 .edition_unittest.TestParsingMerge.RepeatedFieldsGenerator.Group1 group1 - 0 -
+      resolved 0 0 10 - 0 -
+    field group2 20 3 11 .edition_unittest.TestParsingMerge.RepeatedFieldsGenerator.Group2 group2 - 0 -
+      resolved 0 0 10 - 0 -
+    field ext1 1000 3 11 .edition_unittest.TestAllTypes ext1 - 0 -
+      resolved 0 0 11 - 0 -
+    field ext2 1001 3 11 .edition_unittest.TestAllTypes ext2 - 0 -
+      resolved 0 0 11 - 0 -
+    message Group1
+      field field1 11 1 11 .edition_unittest.TestAllTypes field1 - 0 -
+        resolved 1 0 11 - 0 -
+    message Group2
+      field field1 21 1 11 .edition_unittest.TestAllTypes field1 - 0 -
+        resolved 1 0 11 - 0 -
+  message OptionalGroup
+    field optional_group_all_types 11 1 11 .edition_unittest.TestAllTypes optionalGroupAllTypes - 0 -
+      resolved 1 0 11 - 0 -
+  message RepeatedGroup
+    field repeated_group_all_types 21 1 11 .edition_unittest.TestAllTypes repeatedGroupAllTypes - 0 -
+      resolved 1 0 11 - 0 -
+  extension_range 1000 536870912
+message TestMergeException
+  field all_extensions 1 1 11 .edition_unittest.TestAllExtensions allExtensions - 0 -
+    resolved 1 0 11 - 0 -
+message TestCommentInjectionMessage
+  field a 1 1 9 - a - 0 -
+    resolved 1 0 9 1 0 default=*/ <- Neither should this.
+message TestMessageSize
+  field m1 1 1 8 - m1 - 0 -
+    resolved 1 0 8 - 0 -
+  field m2 2 1 3 - m2 - 0 -
+    resolved 1 0 3 - 0 -
+  field m3 3 1 8 - m3 - 0 -
+    resolved 1 0 8 - 0 -
+  field m4 4 1 9 - m4 - 0 -
+    resolved 1 0 9 1 0 -
+  field m5 5 1 5 - m5 - 0 -
+    resolved 1 0 5 - 0 -
+  field m6 6 1 3 - m6 - 0 -
+    resolved 1 0 3 - 0 -
+message TestEagerlyVerifiedLazyMessage
+  field lazy_message 1 1 11 .edition_unittest.TestEagerlyVerifiedLazyMessage.LazyMessage lazyMessage - 0 -
+    resolved 1 0 11 - 0 -
+  message LazyMessage
+    field bytes_field 1 1 12 - bytesField - 0 -
+      resolved 1 0 12 - 0 -
+message FooRequest
+message FooResponse
+message FooClientMessage
+message FooServerMessage
+message BarRequest
+message BarResponse
+message TestJsonName
+  field field_name1 1 1 5 - fieldName1 - 0 -
+    resolved 1 0 5 - 0 -
+  field fieldName2 2 1 5 - fieldName2 - 0 -
+    resolved 1 0 5 - 0 -
+  field FieldName3 3 1 5 - FieldName3 - 0 -
+    resolved 1 0 5 - 0 -
+  field _field_name4 4 1 5 - FieldName4 - 0 -
+    resolved 1 0 5 - 0 -
+  field FIELD_NAME5 5 1 5 - FIELDNAME5 - 0 -
+    resolved 1 0 5 - 0 -
+  field field_name6 6 1 5 - @type - 0 -
+    resolved 1 0 5 - 0 -
+  field fieldname7 7 1 5 - fieldname7 - 0 -
+    resolved 1 0 5 - 0 -
+message TestHugeFieldNumbers
+  field optional_int32 536870000 1 5 - optionalInt32 - 0 -
+    resolved 1 0 5 - 0 -
+  field fixed_32 536870001 1 5 - fixed32 - 0 -
+    resolved 1 0 5 - 0 -
+  field repeated_int32 536870002 3 5 - repeatedInt32 - 0 -
+    resolved 0 0 5 - 0 -
+  field packed_int32 536870003 3 5 - packedInt32 - 0 -
+    resolved 0 1 5 - 0 -
+  field optional_enum 536870004 1 14 .edition_unittest.ForeignEnum optionalEnum - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_string 536870005 1 9 - optionalString - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_bytes 536870006 1 12 - optionalBytes - 0 -
+    resolved 1 0 12 - 0 -
+  field optional_message 536870007 1 11 .edition_unittest.ForeignMessage optionalMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optionalgroup 536870008 1 11 .edition_unittest.TestHugeFieldNumbers.OptionalGroup optionalgroup - 0 -
+    resolved 1 0 10 - 0 -
+  field string_string_map 536870010 3 11 .edition_unittest.TestHugeFieldNumbers.StringStringMapEntry stringStringMap - 0 -
+    resolved 0 0 11 - 0 -
+  field oneof_uint32 536870011 1 13 - oneofUint32 0 0 -
+    resolved 1 0 13 - 0 -
+  field oneof_test_all_types 536870012 1 11 .edition_unittest.TestAllTypes oneofTestAllTypes 0 0 -
+    resolved 1 0 11 - 0 -
+  field oneof_string 536870013 1 9 - oneofString 0 0 -
+    resolved 1 0 9 1 0 -
+  field oneof_bytes 536870014 1 12 - oneofBytes 0 0 -
+    resolved 1 0 12 - 0 -
+  message OptionalGroup
+    field group_a 536870009 1 5 - groupA - 0 -
+      resolved 1 0 5 - 0 -
+  message StringStringMapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 1 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 1 0 -
+    map_entry
+  oneof oneof_field
+  extension_range 536860000 536870000
+message TestExtensionInsideTable
+  field field1 1 1 5 - field1 - 0 -
+    resolved 1 0 5 - 0 -
+  field field2 2 1 5 - field2 - 0 -
+    resolved 1 0 5 - 0 -
+  field field3 3 1 5 - field3 - 0 -
+    resolved 1 0 5 - 0 -
+  field field4 4 1 5 - field4 - 0 -
+    resolved 1 0 5 - 0 -
+  field field6 6 1 5 - field6 - 0 -
+    resolved 1 0 5 - 0 -
+  field field7 7 1 5 - field7 - 0 -
+    resolved 1 0 5 - 0 -
+  field field8 8 1 5 - field8 - 0 -
+    resolved 1 0 5 - 0 -
+  field field9 9 1 5 - field9 - 0 -
+    resolved 1 0 5 - 0 -
+  field field10 10 1 5 - field10 - 0 -
+    resolved 1 0 5 - 0 -
+  extension_range 5 6
+message TestNestedGroupExtensionOuter
+  field lay1optionalgroup 1 1 11 .edition_unittest.TestNestedGroupExtensionOuter.Layer1OptionalGroup lay1optionalgroup - 0 -
+    resolved 1 0 10 - 0 -
+  message Layer1OptionalGroup
+    field layer2repeatedgroup 2 3 11 .edition_unittest.TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2RepeatedGroup layer2repeatedgroup - 0 -
+      resolved 0 0 10 - 0 -
+    field layer2anotheroptionalrepeatedgroup 4 3 11 .edition_unittest.TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2AnotherOptionalRepeatedGroup layer2anotheroptionalrepeatedgroup - 0 -
+      resolved 0 0 10 - 0 -
+    message Layer2RepeatedGroup
+      field another_field 6 1 9 - anotherField - 0 -
+        resolved 1 0 9 1 0 -
+      extension_range 3 4
+    message Layer2AnotherOptionalRepeatedGroup
+      field but_why_tho 5 1 9 - butWhyTho - 0 -
+        resolved 1 0 9 1 0 -
+message TestNestedGroupExtensionInnerExtension
+  field inner_name 1 1 9 - innerName - 0 -
+    resolved 1 0 9 1 0 -
+message TestExtensionRangeSerialize
+  field foo_one 1 1 5 - fooOne - 0 -
+    resolved 1 0 5 - 0 -
+  field foo_two 6 1 5 - fooTwo - 0 -
+    resolved 1 0 5 - 0 -
+  field foo_three 7 1 5 - fooThree - 0 -
+    resolved 1 0 5 - 0 -
+  field foo_four 13 1 5 - fooFour - 0 -
+    resolved 1 0 5 - 0 -
+  extension bar_one 2 1 5 - .edition_unittest.TestExtensionRangeSerialize barOne - 0 -
+    resolved 1 0 5 - 0 -
+  extension bar_two 4 1 5 - .edition_unittest.TestExtensionRangeSerialize barTwo - 0 -
+    resolved 1 0 5 - 0 -
+  extension bar_three 10 1 5 - .edition_unittest.TestExtensionRangeSerialize barThree - 0 -
+    resolved 1 0 5 - 0 -
+  extension bar_four 15 1 5 - .edition_unittest.TestExtensionRangeSerialize barFour - 0 -
+    resolved 1 0 5 - 0 -
+  extension bar_five 19 1 5 - .edition_unittest.TestExtensionRangeSerialize barFive - 0 -
+    resolved 1 0 5 - 0 -
+  extension_range 2 3
+  extension_range 3 5
+  extension_range 9 11
+  extension_range 15 16
+  extension_range 17 18
+  extension_range 19 20
+message TestVerifyInt32Simple
+  field optional_int32_1 1 1 5 - optionalInt321 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_2 2 1 5 - optionalInt322 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_63 63 1 5 - optionalInt3263 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_64 64 1 5 - optionalInt3264 - 0 -
+    resolved 1 0 5 - 0 -
+message TestVerifyInt32
+  field optional_int32_1 1 1 5 - optionalInt321 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_2 2 1 5 - optionalInt322 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_63 63 1 5 - optionalInt3263 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_64 64 1 5 - optionalInt3264 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_all_types 9 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 10 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+message TestVerifyMostlyInt32
+  field optional_int64_30 30 1 3 - optionalInt6430 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_int32_1 1 1 5 - optionalInt321 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_2 2 1 5 - optionalInt322 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_3 3 1 5 - optionalInt323 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_4 4 1 5 - optionalInt324 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_63 63 1 5 - optionalInt3263 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_64 64 1 5 - optionalInt3264 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_all_types 9 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 10 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+message TestVerifyMostlyInt32BigFieldNumber
+  field optional_int64_30 30 1 3 - optionalInt6430 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_int32_300 300 1 5 - optionalInt32300 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_1 1 1 5 - optionalInt321 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_2 2 1 5 - optionalInt322 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_3 3 1 5 - optionalInt323 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_4 4 1 5 - optionalInt324 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_63 63 1 5 - optionalInt3263 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_64 64 1 5 - optionalInt3264 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_all_types 9 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 10 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+message TestVerifyUint32Simple
+  field optional_uint32_1 1 1 13 - optionalUint321 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_2 2 1 13 - optionalUint322 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_63 63 1 13 - optionalUint3263 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_64 64 1 13 - optionalUint3264 - 0 -
+    resolved 1 0 13 - 0 -
+message TestVerifyUint32
+  field optional_uint32_1 1 1 13 - optionalUint321 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_2 2 1 13 - optionalUint322 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_63 63 1 13 - optionalUint3263 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_64 64 1 13 - optionalUint3264 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_all_types 9 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 10 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+message TestVerifyOneUint32
+  field optional_uint32_1 1 1 13 - optionalUint321 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_int32_2 2 1 5 - optionalInt322 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_63 63 1 5 - optionalInt3263 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_64 64 1 5 - optionalInt3264 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_all_types 9 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 10 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+message TestVerifyOneInt32BigFieldNumber
+  field optional_int32_65 65 1 5 - optionalInt3265 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int64_1 1 1 3 - optionalInt641 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_int64_2 2 1 3 - optionalInt642 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_int64_63 63 1 3 - optionalInt6463 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_int64_64 64 1 3 - optionalInt6464 - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_all_types 9 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 10 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+message TestVerifyInt32BigFieldNumber
+  field optional_int32_1000 1000 1 5 - optionalInt321000 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_65 65 1 5 - optionalInt3265 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_1 1 1 5 - optionalInt321 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_2 2 1 5 - optionalInt322 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_63 63 1 5 - optionalInt3263 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_64 64 1 5 - optionalInt3264 - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_all_types 9 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 10 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+message TestVerifyUint32BigFieldNumber
+  field optional_uint32_1000 1000 1 13 - optionalUint321000 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_65 65 1 13 - optionalUint3265 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_1 1 1 13 - optionalUint321 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_2 2 1 13 - optionalUint322 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_63 63 1 13 - optionalUint3263 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_uint32_64 64 1 13 - optionalUint3264 - 0 -
+    resolved 1 0 13 - 0 -
+  field optional_all_types 9 1 11 .edition_unittest.TestAllTypes optionalAllTypes - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_all_types 10 3 11 .edition_unittest.TestAllTypes repeatedAllTypes - 0 -
+    resolved 0 0 11 - 0 -
+message TestVerifyBigFieldNumberUint32
+  field optional_nested 1 1 11 .edition_unittest.TestVerifyBigFieldNumberUint32.Nested optionalNested - 0 -
+    resolved 1 0 11 - 0 -
+  message Nested
+    field optional_uint32_5000 5000 1 13 - optionalUint325000 - 0 -
+      resolved 1 0 13 - 0 -
+    field optional_uint32_1000 1000 1 13 - optionalUint321000 - 0 -
+      resolved 1 0 13 - 0 -
+    field optional_uint32_66 66 1 13 - optionalUint3266 - 0 -
+      resolved 1 0 13 - 0 -
+    field optional_uint32_65 65 1 13 - optionalUint3265 - 0 -
+      resolved 1 0 13 - 0 -
+    field optional_uint32_1 1 1 13 - optionalUint321 - 0 -
+      resolved 1 0 13 - 0 -
+    field optional_uint32_2 2 1 13 - optionalUint322 - 0 -
+      resolved 1 0 13 - 0 -
+    field optional_uint32_63 63 1 13 - optionalUint3263 - 0 -
+      resolved 1 0 13 - 0 -
+    field optional_uint32_64 64 1 13 - optionalUint3264 - 0 -
+      resolved 1 0 13 - 0 -
+    field optional_nested 9 1 11 .edition_unittest.TestVerifyBigFieldNumberUint32.Nested optionalNested - 0 -
+      resolved 1 0 11 - 0 -
+    field repeated_nested 10 3 11 .edition_unittest.TestVerifyBigFieldNumberUint32.Nested repeatedNested - 0 -
+      resolved 0 0 11 - 0 -
+message EnumParseTester
+  field optional_seq_small_0_lowfield 1 1 14 .edition_unittest.EnumParseTester.SeqSmall0 optionalSeqSmall0Lowfield - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_seq_small_0_midfield 1001 1 14 .edition_unittest.EnumParseTester.SeqSmall0 optionalSeqSmall0Midfield - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_seq_small_0_hifield 1000001 1 14 .edition_unittest.EnumParseTester.SeqSmall0 optionalSeqSmall0Hifield - 0 -
+    resolved 1 0 14 - 0 -
+  field repeated_seq_small_0_lowfield 2 3 14 .edition_unittest.EnumParseTester.SeqSmall0 repeatedSeqSmall0Lowfield - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_seq_small_0_midfield 1002 3 14 .edition_unittest.EnumParseTester.SeqSmall0 repeatedSeqSmall0Midfield - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_seq_small_0_hifield 1000002 3 14 .edition_unittest.EnumParseTester.SeqSmall0 repeatedSeqSmall0Hifield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_small_0_lowfield 3 3 14 .edition_unittest.EnumParseTester.SeqSmall0 packedSeqSmall0Lowfield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_small_0_midfield 1003 3 14 .edition_unittest.EnumParseTester.SeqSmall0 packedSeqSmall0Midfield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_small_0_hifield 1000003 3 14 .edition_unittest.EnumParseTester.SeqSmall0 packedSeqSmall0Hifield - 0 -
+    resolved 0 1 14 - 0 -
+  field optional_seq_small_1_lowfield 4 1 14 .edition_unittest.EnumParseTester.SeqSmall1 optionalSeqSmall1Lowfield - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_seq_small_1_midfield 1004 1 14 .edition_unittest.EnumParseTester.SeqSmall1 optionalSeqSmall1Midfield - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_seq_small_1_hifield 1000004 1 14 .edition_unittest.EnumParseTester.SeqSmall1 optionalSeqSmall1Hifield - 0 -
+    resolved 1 0 14 - 0 -
+  field repeated_seq_small_1_lowfield 5 3 14 .edition_unittest.EnumParseTester.SeqSmall1 repeatedSeqSmall1Lowfield - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_seq_small_1_midfield 1005 3 14 .edition_unittest.EnumParseTester.SeqSmall1 repeatedSeqSmall1Midfield - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_seq_small_1_hifield 1000005 3 14 .edition_unittest.EnumParseTester.SeqSmall1 repeatedSeqSmall1Hifield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_small_1_lowfield 6 3 14 .edition_unittest.EnumParseTester.SeqSmall1 packedSeqSmall1Lowfield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_small_1_midfield 1006 3 14 .edition_unittest.EnumParseTester.SeqSmall1 packedSeqSmall1Midfield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_small_1_hifield 1000006 3 14 .edition_unittest.EnumParseTester.SeqSmall1 packedSeqSmall1Hifield - 0 -
+    resolved 0 1 14 - 0 -
+  field optional_seq_large_lowfield 7 1 14 .edition_unittest.EnumParseTester.SeqLarge optionalSeqLargeLowfield - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_seq_large_midfield 1007 1 14 .edition_unittest.EnumParseTester.SeqLarge optionalSeqLargeMidfield - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_seq_large_hifield 1000007 1 14 .edition_unittest.EnumParseTester.SeqLarge optionalSeqLargeHifield - 0 -
+    resolved 1 0 14 - 0 -
+  field repeated_seq_large_lowfield 8 3 14 .edition_unittest.EnumParseTester.SeqLarge repeatedSeqLargeLowfield - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_seq_large_midfield 1008 3 14 .edition_unittest.EnumParseTester.SeqLarge repeatedSeqLargeMidfield - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_seq_large_hifield 1000008 3 14 .edition_unittest.EnumParseTester.SeqLarge repeatedSeqLargeHifield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_large_lowfield 9 3 14 .edition_unittest.EnumParseTester.SeqLarge packedSeqLargeLowfield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_large_midfield 1009 3 14 .edition_unittest.EnumParseTester.SeqLarge packedSeqLargeMidfield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_seq_large_hifield 1000009 3 14 .edition_unittest.EnumParseTester.SeqLarge packedSeqLargeHifield - 0 -
+    resolved 0 1 14 - 0 -
+  field optional_arbitrary_lowfield 10 1 14 .edition_unittest.EnumParseTester.Arbitrary optionalArbitraryLowfield - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_arbitrary_midfield 1010 1 14 .edition_unittest.EnumParseTester.Arbitrary optionalArbitraryMidfield - 0 -
+    resolved 1 0 14 - 0 -
+  field optional_arbitrary_hifield 1000010 1 14 .edition_unittest.EnumParseTester.Arbitrary optionalArbitraryHifield - 0 -
+    resolved 1 0 14 - 0 -
+  field repeated_arbitrary_lowfield 11 3 14 .edition_unittest.EnumParseTester.Arbitrary repeatedArbitraryLowfield - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_arbitrary_midfield 1011 3 14 .edition_unittest.EnumParseTester.Arbitrary repeatedArbitraryMidfield - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_arbitrary_hifield 1000011 3 14 .edition_unittest.EnumParseTester.Arbitrary repeatedArbitraryHifield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_arbitrary_lowfield 12 3 14 .edition_unittest.EnumParseTester.Arbitrary packedArbitraryLowfield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_arbitrary_midfield 1012 3 14 .edition_unittest.EnumParseTester.Arbitrary packedArbitraryMidfield - 0 -
+    resolved 0 1 14 - 0 -
+  field packed_arbitrary_hifield 1000012 3 14 .edition_unittest.EnumParseTester.Arbitrary packedArbitraryHifield - 0 -
+    resolved 0 1 14 - 0 -
+  field other_field 99 1 5 - otherField - 0 -
+    resolved 1 0 5 - 0 -
+  extension optional_arbitrary_ext 2000000 1 14 .edition_unittest.EnumParseTester.Arbitrary .edition_unittest.EnumParseTester optionalArbitraryExt - 0 -
+    resolved 1 0 14 - 0 -
+  extension repeated_arbitrary_ext 2000001 3 14 .edition_unittest.EnumParseTester.Arbitrary .edition_unittest.EnumParseTester repeatedArbitraryExt - 0 -
+    resolved 0 1 14 - 0 -
+  extension packed_arbitrary_ext 2000002 3 14 .edition_unittest.EnumParseTester.Arbitrary .edition_unittest.EnumParseTester packedArbitraryExt - 0 -
+    resolved 0 1 14 - 0 -
+  enum SeqSmall0
+    closed
+    value SEQ_SMALL_0_DEFAULT 0
+    value SEQ_SMALL_0_1 1
+    value SEQ_SMALL_0_2 2
+  enum SeqSmall1
+    closed
+    value UNKNOWN 0
+    value SEQ_SMALL_1_DEFAULT 1
+    value SEQ_SMALL_1_2 2
+    value SEQ_SMALL_1_3 3
+  enum SeqLarge
+    closed
+    value SEQ_LARGE_DEFAULT -1
+    value SEQ_LARGE_0 0
+    value SEQ_LARGE_1 1
+    value SEQ_LARGE_2 2
+    value SEQ_LARGE_3 3
+    value SEQ_LARGE_4 4
+    value SEQ_LARGE_5 5
+    value SEQ_LARGE_6 6
+    value SEQ_LARGE_7 7
+    value SEQ_LARGE_8 8
+    value SEQ_LARGE_9 9
+    value SEQ_LARGE_10 10
+    value SEQ_LARGE_11 11
+    value SEQ_LARGE_12 12
+    value SEQ_LARGE_13 13
+    value SEQ_LARGE_14 14
+    value SEQ_LARGE_15 15
+    value SEQ_LARGE_16 16
+    value SEQ_LARGE_17 17
+    value SEQ_LARGE_18 18
+    value SEQ_LARGE_19 19
+    value SEQ_LARGE_20 20
+    value SEQ_LARGE_21 21
+    value SEQ_LARGE_22 22
+    value SEQ_LARGE_23 23
+    value SEQ_LARGE_24 24
+    value SEQ_LARGE_25 25
+    value SEQ_LARGE_26 26
+    value SEQ_LARGE_27 27
+    value SEQ_LARGE_28 28
+    value SEQ_LARGE_29 29
+    value SEQ_LARGE_30 30
+    value SEQ_LARGE_31 31
+    value SEQ_LARGE_32 32
+    value SEQ_LARGE_33 33
+  enum Arbitrary
+    closed
+    value ARBITRARY_DEFAULT -123123
+    value ARBITRARY_1 -123
+    value ARBITRARY_2 213
+    value ARBITRARY_3 213213
+    value ARBITRARY_MIN -2147483648
+    value ARBITRARY_MAX 2147483647
+  extension_range 2000000 536870912
+message BoolParseTester
+  field optional_bool_lowfield 1 1 8 - optionalBoolLowfield - 0 -
+    resolved 1 0 8 - 0 -
+  field optional_bool_midfield 1001 1 8 - optionalBoolMidfield - 0 -
+    resolved 1 0 8 - 0 -
+  field optional_bool_hifield 1000001 1 8 - optionalBoolHifield - 0 -
+    resolved 1 0 8 - 0 -
+  field repeated_bool_lowfield 2 3 8 - repeatedBoolLowfield - 0 -
+    resolved 0 1 8 - 0 -
+  field repeated_bool_midfield 1002 3 8 - repeatedBoolMidfield - 0 -
+    resolved 0 1 8 - 0 -
+  field repeated_bool_hifield 1000002 3 8 - repeatedBoolHifield - 0 -
+    resolved 0 1 8 - 0 -
+  field packed_bool_lowfield 3 3 8 - packedBoolLowfield - 0 -
+    resolved 0 1 8 - 0 -
+  field packed_bool_midfield 1003 3 8 - packedBoolMidfield - 0 -
+    resolved 0 1 8 - 0 -
+  field packed_bool_hifield 1000003 3 8 - packedBoolHifield - 0 -
+    resolved 0 1 8 - 0 -
+  field other_field 99 1 5 - otherField - 0 -
+    resolved 1 0 5 - 0 -
+  extension optional_bool_ext 2000000 1 8 - .edition_unittest.BoolParseTester optionalBoolExt - 0 -
+    resolved 1 0 8 - 0 -
+  extension repeated_bool_ext 2000001 3 8 - .edition_unittest.BoolParseTester repeatedBoolExt - 0 -
+    resolved 0 1 8 - 0 -
+  extension packed_bool_ext 2000002 3 8 - .edition_unittest.BoolParseTester packedBoolExt - 0 -
+    resolved 0 1 8 - 0 -
+  extension_range 2000000 536870912
+message Int32ParseTester
+  field optional_int32_lowfield 1 1 5 - optionalInt32Lowfield - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_midfield 1001 1 5 - optionalInt32Midfield - 0 -
+    resolved 1 0 5 - 0 -
+  field optional_int32_hifield 1000001 1 5 - optionalInt32Hifield - 0 -
+    resolved 1 0 5 - 0 -
+  field repeated_int32_lowfield 2 3 5 - repeatedInt32Lowfield - 0 -
+    resolved 0 1 5 - 0 -
+  field repeated_int32_midfield 1002 3 5 - repeatedInt32Midfield - 0 -
+    resolved 0 1 5 - 0 -
+  field repeated_int32_hifield 1000002 3 5 - repeatedInt32Hifield - 0 -
+    resolved 0 1 5 - 0 -
+  field packed_int32_lowfield 3 3 5 - packedInt32Lowfield - 0 -
+    resolved 0 1 5 - 0 -
+  field packed_int32_midfield 1003 3 5 - packedInt32Midfield - 0 -
+    resolved 0 1 5 - 0 -
+  field packed_int32_hifield 1000003 3 5 - packedInt32Hifield - 0 -
+    resolved 0 1 5 - 0 -
+  field other_field 99 1 5 - otherField - 0 -
+    resolved 1 0 5 - 0 -
+  extension optional_int32_ext 2000000 1 5 - .edition_unittest.Int32ParseTester optionalInt32Ext - 0 -
+    resolved 1 0 5 - 0 -
+  extension repeated_int32_ext 2000001 3 5 - .edition_unittest.Int32ParseTester repeatedInt32Ext - 0 -
+    resolved 0 1 5 - 0 -
+  extension packed_int32_ext 2000002 3 5 - .edition_unittest.Int32ParseTester packedInt32Ext - 0 -
+    resolved 0 1 5 - 0 -
+  extension_range 2000000 536870912
+message Int64ParseTester
+  field optional_int64_lowfield 1 1 3 - optionalInt64Lowfield - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_int64_midfield 1001 1 3 - optionalInt64Midfield - 0 -
+    resolved 1 0 3 - 0 -
+  field optional_int64_hifield 1000001 1 3 - optionalInt64Hifield - 0 -
+    resolved 1 0 3 - 0 -
+  field repeated_int64_lowfield 2 3 3 - repeatedInt64Lowfield - 0 -
+    resolved 0 1 3 - 0 -
+  field repeated_int64_midfield 1002 3 3 - repeatedInt64Midfield - 0 -
+    resolved 0 1 3 - 0 -
+  field repeated_int64_hifield 1000002 3 3 - repeatedInt64Hifield - 0 -
+    resolved 0 1 3 - 0 -
+  field packed_int64_lowfield 3 3 3 - packedInt64Lowfield - 0 -
+    resolved 0 1 3 - 0 -
+  field packed_int64_midfield 1003 3 3 - packedInt64Midfield - 0 -
+    resolved 0 1 3 - 0 -
+  field packed_int64_hifield 1000003 3 3 - packedInt64Hifield - 0 -
+    resolved 0 1 3 - 0 -
+  field other_field 99 1 5 - otherField - 0 -
+    resolved 1 0 5 - 0 -
+  extension optional_int64_ext 2000000 1 3 - .edition_unittest.Int64ParseTester optionalInt64Ext - 0 -
+    resolved 1 0 3 - 0 -
+  extension repeated_int64_ext 2000001 3 3 - .edition_unittest.Int64ParseTester repeatedInt64Ext - 0 -
+    resolved 0 1 3 - 0 -
+  extension packed_int64_ext 2000002 3 3 - .edition_unittest.Int64ParseTester packedInt64Ext - 0 -
+    resolved 0 1 3 - 0 -
+  extension_range 2000000 536870912
+message InlinedStringIdxRegressionProto
+  field str1 1 1 9 - str1 - 0 -
+    resolved 1 0 9 1 0 -
+  field sub 2 1 11 .edition_unittest.InlinedStringIdxRegressionProto sub - 0 -
+    resolved 1 0 11 - 0 -
+  field str2 3 1 9 - str2 - 0 -
+    resolved 1 0 9 1 0 -
+  field str3 4 1 12 - str3 - 0 -
+    resolved 1 0 12 - 0 -
+message StringParseTester
+  field optional_string_lowfield 1 1 9 - optionalStringLowfield - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_string_midfield 1001 1 9 - optionalStringMidfield - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_string_hifield 1000001 1 9 - optionalStringHifield - 0 -
+    resolved 1 0 9 1 0 -
+  field repeated_string_lowfield 2 3 9 - repeatedStringLowfield - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_midfield 1002 3 9 - repeatedStringMidfield - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_hifield 1000002 3 9 - repeatedStringHifield - 0 -
+    resolved 0 0 9 1 0 -
+  extension optional_string_ext 2000000 1 9 - .edition_unittest.StringParseTester optionalStringExt - 0 -
+    resolved 1 0 9 1 0 -
+  extension repeated_string_ext 2000001 3 9 - .edition_unittest.StringParseTester repeatedStringExt - 0 -
+    resolved 0 0 9 1 0 -
+  extension_range 2000000 536870912
+message BadFieldNames
+  field OptionalInt32 1 1 5 - OptionalInt32 - 0 -
+    resolved 1 0 5 - 0 -
+  field for 2 1 5 - for - 0 -
+    resolved 1 0 5 - 0 -
+message TestNestedMessageRedaction
+  field optional_unredacted_nested_string 1 1 9 - optionalUnredactedNestedString - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_redacted_nested_string 2 1 9 - optionalRedactedNestedString - 0 -
+    resolved 1 0 9 1 0 -
+message RedactedFields
+  field optional_redacted_string 1 1 9 - optionalRedactedString - 0 -
+    resolved 1 0 9 1 0 -
+  field optional_unredacted_string 2 1 9 - optionalUnredactedString - 0 -
+    resolved 1 0 9 1 0 -
+  field repeated_redacted_string 3 3 9 - repeatedRedactedString - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_unredacted_string 4 3 9 - repeatedUnredactedString - 0 -
+    resolved 0 0 9 1 0 -
+  field optional_redacted_message 5 1 11 .edition_unittest.TestNestedMessageRedaction optionalRedactedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_unredacted_message 6 1 11 .edition_unittest.TestNestedMessageRedaction optionalUnredactedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_redacted_message 7 3 11 .edition_unittest.TestNestedMessageRedaction repeatedRedactedMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_unredacted_message 8 3 11 .edition_unittest.TestNestedMessageRedaction repeatedUnredactedMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field map_redacted_string 9 3 11 .edition_unittest.RedactedFields.MapRedactedStringEntry mapRedactedString - 0 -
+    resolved 0 0 11 - 0 -
+  field map_unredacted_string 10 3 11 .edition_unittest.RedactedFields.MapUnredactedStringEntry mapUnredactedString - 0 -
+    resolved 0 0 11 - 0 -
+  message MapRedactedStringEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 1 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 1 0 -
+    map_entry
+  message MapUnredactedStringEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 1 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 1 0 -
+    map_entry
+message TestCord
+  field optional_bytes_cord 1 1 12 - optionalBytesCord - 0 -
+    resolved 1 0 12 - 0 -
+  field optional_bytes_cord_default 2 1 12 - optionalBytesCordDefault - 0 -
+    resolved 1 0 12 - 0 default=hello
+message TestPackedEnumSmallRange
+  field vals 1 3 14 .edition_unittest.TestPackedEnumSmallRange.NestedEnum vals - 0 -
+    resolved 0 1 14 - 0 -
+  enum NestedEnum
+    closed
+    value UNSPECIFIED 0
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+message EnumsForBenchmark
+  enum Flat
+    closed
+    value A0 0
+    value A1 1
+    value A2 2
+    value A3 3
+    value A4 4
+    value A5 5
+    value A6 6
+    value A7 7
+    value A8 8
+    value A9 9
+    value A10 10
+    value A11 11
+    value A12 12
+    value A13 13
+    value A14 14
+    value A15 15
+  enum AlmostFlat
+    closed
+    value B0 0
+    value B1 1
+    value B2 2
+    value B3 3
+    value B5 5
+    value B6 6
+    value B7 7
+    value B8 8
+    value B9 9
+    value B11 11
+    value B12 12
+    value B13 13
+    value B14 14
+    value B15 15
+    value B17 17
+    value B19 19
+  enum Sparse
+    closed
+    value C0 0
+    value C536 536
+    value C8387 8387
+    value C9673 9673
+    value C10285 10285
+    value C13318 13318
+    value C15963 15963
+    value C16439 16439
+    value C18197 18197
+    value C19430 19430
+    value C20361 20361
+    value C20706 20706
+    value C21050 21050
+    value C21906 21906
+    value C27265 27265
+    value C30109 30109
+    value C31670 31670
+message TestMessageWithManyRepeatedPtrFields
+  field repeated_string_1 1 3 9 - repeatedString1 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_2 2 3 9 - repeatedString2 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_3 3 3 9 - repeatedString3 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_4 4 3 9 - repeatedString4 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_5 5 3 9 - repeatedString5 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_6 6 3 9 - repeatedString6 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_7 7 3 9 - repeatedString7 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_8 8 3 9 - repeatedString8 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_9 9 3 9 - repeatedString9 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_10 10 3 9 - repeatedString10 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_11 11 3 9 - repeatedString11 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_12 12 3 9 - repeatedString12 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_13 13 3 9 - repeatedString13 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_14 14 3 9 - repeatedString14 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_15 15 3 9 - repeatedString15 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_16 16 3 9 - repeatedString16 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_17 17 3 9 - repeatedString17 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_18 18 3 9 - repeatedString18 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_19 19 3 9 - repeatedString19 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_20 20 3 9 - repeatedString20 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_21 21 3 9 - repeatedString21 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_22 22 3 9 - repeatedString22 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_23 23 3 9 - repeatedString23 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_24 24 3 9 - repeatedString24 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_25 25 3 9 - repeatedString25 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_26 26 3 9 - repeatedString26 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_27 27 3 9 - repeatedString27 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_28 28 3 9 - repeatedString28 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_29 29 3 9 - repeatedString29 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_30 30 3 9 - repeatedString30 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_31 31 3 9 - repeatedString31 - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_string_32 32 3 9 - repeatedString32 - 0 -
+    resolved 0 0 9 1 0 -
+enum ForeignEnum
+  closed
+  value FOREIGN_FOO 4
+  value FOREIGN_BAR 5
+  value FOREIGN_BAZ 6
+  value FOREIGN_BAX 32
+enum TestReservedEnumFields
+  closed
+  value UNKNOWN 0
+  reserved_range 2 2
+  reserved_range 15 15
+  reserved_range 9 11
+  reserved_name bar
+  reserved_name baz
+enum TestEnumWithDupValue
+  closed
+  value DUP_UNKNOWN1 0
+  value DUP_FOO1 1
+  value DUP_BAR1 2
+  value DUP_BAZ 3
+  value DUP_UNKNOWN2 0
+  value DUP_FOO2 1
+  value DUP_BAR2 2
+enum TestSparseEnum
+  closed
+  value SPARSE_A 123
+  value SPARSE_B 62374
+  value SPARSE_C 12589234
+  value SPARSE_D -15
+  value SPARSE_E -53452
+  value SPARSE_F 0
+  value SPARSE_G 2
+enum VeryLargeEnum
+  closed
+  value ENUM_LABEL_DEFAULT 0
+  value ENUM_LABEL_1 1
+  value ENUM_LABEL_2 2
+  value ENUM_LABEL_3 3
+  value ENUM_LABEL_4 4
+  value ENUM_LABEL_5 5
+  value ENUM_LABEL_6 6
+  value ENUM_LABEL_7 7
+  value ENUM_LABEL_8 8
+  value ENUM_LABEL_9 9
+  value ENUM_LABEL_10 10
+  value ENUM_LABEL_11 11
+  value ENUM_LABEL_12 12
+  value ENUM_LABEL_13 13
+  value ENUM_LABEL_14 14
+  value ENUM_LABEL_15 15
+  value ENUM_LABEL_16 16
+  value ENUM_LABEL_17 17
+  value ENUM_LABEL_18 18
+  value ENUM_LABEL_19 19
+  value ENUM_LABEL_20 20
+  value ENUM_LABEL_21 21
+  value ENUM_LABEL_22 22
+  value ENUM_LABEL_23 23
+  value ENUM_LABEL_24 24
+  value ENUM_LABEL_25 25
+  value ENUM_LABEL_26 26
+  value ENUM_LABEL_27 27
+  value ENUM_LABEL_28 28
+  value ENUM_LABEL_29 29
+  value ENUM_LABEL_30 30
+  value ENUM_LABEL_31 31
+  value ENUM_LABEL_32 32
+  value ENUM_LABEL_33 33
+  value ENUM_LABEL_34 34
+  value ENUM_LABEL_35 35
+  value ENUM_LABEL_36 36
+  value ENUM_LABEL_37 37
+  value ENUM_LABEL_38 38
+  value ENUM_LABEL_39 39
+  value ENUM_LABEL_40 40
+  value ENUM_LABEL_41 41
+  value ENUM_LABEL_42 42
+  value ENUM_LABEL_43 43
+  value ENUM_LABEL_44 44
+  value ENUM_LABEL_45 45
+  value ENUM_LABEL_46 46
+  value ENUM_LABEL_47 47
+  value ENUM_LABEL_48 48
+  value ENUM_LABEL_49 49
+  value ENUM_LABEL_50 50
+  value ENUM_LABEL_51 51
+  value ENUM_LABEL_52 52
+  value ENUM_LABEL_53 53
+  value ENUM_LABEL_54 54
+  value ENUM_LABEL_55 55
+  value ENUM_LABEL_56 56
+  value ENUM_LABEL_57 57
+  value ENUM_LABEL_58 58
+  value ENUM_LABEL_59 59
+  value ENUM_LABEL_60 60
+  value ENUM_LABEL_61 61
+  value ENUM_LABEL_62 62
+  value ENUM_LABEL_63 63
+  value ENUM_LABEL_64 64
+  value ENUM_LABEL_65 65
+  value ENUM_LABEL_66 66
+  value ENUM_LABEL_67 67
+  value ENUM_LABEL_68 68
+  value ENUM_LABEL_69 69
+  value ENUM_LABEL_70 70
+  value ENUM_LABEL_71 71
+  value ENUM_LABEL_72 72
+  value ENUM_LABEL_73 73
+  value ENUM_LABEL_74 74
+  value ENUM_LABEL_75 75
+  value ENUM_LABEL_76 76
+  value ENUM_LABEL_77 77
+  value ENUM_LABEL_78 78
+  value ENUM_LABEL_79 79
+  value ENUM_LABEL_80 80
+  value ENUM_LABEL_81 81
+  value ENUM_LABEL_82 82
+  value ENUM_LABEL_83 83
+  value ENUM_LABEL_84 84
+  value ENUM_LABEL_85 85
+  value ENUM_LABEL_86 86
+  value ENUM_LABEL_87 87
+  value ENUM_LABEL_88 88
+  value ENUM_LABEL_89 89
+  value ENUM_LABEL_90 90
+  value ENUM_LABEL_91 91
+  value ENUM_LABEL_92 92
+  value ENUM_LABEL_93 93
+  value ENUM_LABEL_94 94
+  value ENUM_LABEL_95 95
+  value ENUM_LABEL_96 96
+  value ENUM_LABEL_97 97
+  value ENUM_LABEL_98 98
+  value ENUM_LABEL_99 99
+  value ENUM_LABEL_100 100
+extension optional_int32_extension 1 1 5 - .edition_unittest.TestAllExtensions optionalInt32Extension - 0 -
+  resolved 1 0 5 - 0 -
+extension optional_int64_extension 2 1 3 - .edition_unittest.TestAllExtensions optionalInt64Extension - 0 -
+  resolved 1 0 3 - 0 -
+extension optional_uint32_extension 3 1 13 - .edition_unittest.TestAllExtensions optionalUint32Extension - 0 -
+  resolved 1 0 13 - 0 -
+extension optional_uint64_extension 4 1 4 - .edition_unittest.TestAllExtensions optionalUint64Extension - 0 -
+  resolved 1 0 4 - 0 -
+extension optional_sint32_extension 5 1 17 - .edition_unittest.TestAllExtensions optionalSint32Extension - 0 -
+  resolved 1 0 17 - 0 -
+extension optional_sint64_extension 6 1 18 - .edition_unittest.TestAllExtensions optionalSint64Extension - 0 -
+  resolved 1 0 18 - 0 -
+extension optional_fixed32_extension 7 1 7 - .edition_unittest.TestAllExtensions optionalFixed32Extension - 0 -
+  resolved 1 0 7 - 0 -
+extension optional_fixed64_extension 8 1 6 - .edition_unittest.TestAllExtensions optionalFixed64Extension - 0 -
+  resolved 1 0 6 - 0 -
+extension optional_sfixed32_extension 9 1 15 - .edition_unittest.TestAllExtensions optionalSfixed32Extension - 0 -
+  resolved 1 0 15 - 0 -
+extension optional_sfixed64_extension 10 1 16 - .edition_unittest.TestAllExtensions optionalSfixed64Extension - 0 -
+  resolved 1 0 16 - 0 -
+extension optional_float_extension 11 1 2 - .edition_unittest.TestAllExtensions optionalFloatExtension - 0 -
+  resolved 1 0 2 - 0 -
+extension optional_double_extension 12 1 1 - .edition_unittest.TestAllExtensions optionalDoubleExtension - 0 -
+  resolved 1 0 1 - 0 -
+extension optional_bool_extension 13 1 8 - .edition_unittest.TestAllExtensions optionalBoolExtension - 0 -
+  resolved 1 0 8 - 0 -
+extension optional_string_extension 14 1 9 - .edition_unittest.TestAllExtensions optionalStringExtension - 0 -
+  resolved 1 0 9 1 0 -
+extension optional_bytes_extension 15 1 12 - .edition_unittest.TestAllExtensions optionalBytesExtension - 0 -
+  resolved 1 0 12 - 0 -
+extension optionalgroup_extension 16 1 11 .edition_unittest.OptionalGroup_extension .edition_unittest.TestAllExtensions optionalgroupExtension - 0 -
+  resolved 1 0 10 - 0 -
+extension optional_nested_message_extension 18 1 11 .edition_unittest.TestAllTypes.NestedMessage .edition_unittest.TestAllExtensions optionalNestedMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_foreign_message_extension 19 1 11 .edition_unittest.ForeignMessage .edition_unittest.TestAllExtensions optionalForeignMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_import_message_extension 20 1 11 .proto2_unittest_import.ImportMessage .edition_unittest.TestAllExtensions optionalImportMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_nested_enum_extension 21 1 14 .edition_unittest.TestAllTypes.NestedEnum .edition_unittest.TestAllExtensions optionalNestedEnumExtension - 0 -
+  resolved 1 0 14 - 0 -
+extension optional_foreign_enum_extension 22 1 14 .edition_unittest.ForeignEnum .edition_unittest.TestAllExtensions optionalForeignEnumExtension - 0 -
+  resolved 1 0 14 - 0 -
+extension optional_import_enum_extension 23 1 14 .proto2_unittest_import.ImportEnum .edition_unittest.TestAllExtensions optionalImportEnumExtension - 0 -
+  resolved 1 0 14 - 0 -
+extension optional_string_piece_extension 24 1 9 - .edition_unittest.TestAllExtensions optionalStringPieceExtension - 0 -
+  resolved 1 0 9 1 0 -
+extension optional_cord_extension 25 1 9 - .edition_unittest.TestAllExtensions optionalCordExtension - 0 -
+  resolved 1 0 9 1 0 -
+extension optional_bytes_cord_extension 86 1 12 - .edition_unittest.TestAllExtensions optionalBytesCordExtension - 0 -
+  resolved 1 0 12 - 0 -
+extension optional_public_import_message_extension 26 1 11 .proto2_unittest_import.PublicImportMessage .edition_unittest.TestAllExtensions optionalPublicImportMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_lazy_message_extension 27 1 11 .edition_unittest.TestAllTypes.NestedMessage .edition_unittest.TestAllExtensions optionalLazyMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension optional_unverified_lazy_message_extension 28 1 11 .edition_unittest.TestAllTypes.NestedMessage .edition_unittest.TestAllExtensions optionalUnverifiedLazyMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension repeated_int32_extension 31 3 5 - .edition_unittest.TestAllExtensions repeatedInt32Extension - 0 -
+  resolved 0 1 5 - 0 -
+extension repeated_int64_extension 32 3 3 - .edition_unittest.TestAllExtensions repeatedInt64Extension - 0 -
+  resolved 0 1 3 - 0 -
+extension repeated_uint32_extension 33 3 13 - .edition_unittest.TestAllExtensions repeatedUint32Extension - 0 -
+  resolved 0 1 13 - 0 -
+extension repeated_uint64_extension 34 3 4 - .edition_unittest.TestAllExtensions repeatedUint64Extension - 0 -
+  resolved 0 1 4 - 0 -
+extension repeated_sint32_extension 35 3 17 - .edition_unittest.TestAllExtensions repeatedSint32Extension - 0 -
+  resolved 0 1 17 - 0 -
+extension repeated_sint64_extension 36 3 18 - .edition_unittest.TestAllExtensions repeatedSint64Extension - 0 -
+  resolved 0 1 18 - 0 -
+extension repeated_fixed32_extension 37 3 7 - .edition_unittest.TestAllExtensions repeatedFixed32Extension - 0 -
+  resolved 0 1 7 - 0 -
+extension repeated_fixed64_extension 38 3 6 - .edition_unittest.TestAllExtensions repeatedFixed64Extension - 0 -
+  resolved 0 1 6 - 0 -
+extension repeated_sfixed32_extension 39 3 15 - .edition_unittest.TestAllExtensions repeatedSfixed32Extension - 0 -
+  resolved 0 1 15 - 0 -
+extension repeated_sfixed64_extension 40 3 16 - .edition_unittest.TestAllExtensions repeatedSfixed64Extension - 0 -
+  resolved 0 1 16 - 0 -
+extension repeated_float_extension 41 3 2 - .edition_unittest.TestAllExtensions repeatedFloatExtension - 0 -
+  resolved 0 1 2 - 0 -
+extension repeated_double_extension 42 3 1 - .edition_unittest.TestAllExtensions repeatedDoubleExtension - 0 -
+  resolved 0 1 1 - 0 -
+extension repeated_bool_extension 43 3 8 - .edition_unittest.TestAllExtensions repeatedBoolExtension - 0 -
+  resolved 0 1 8 - 0 -
+extension repeated_string_extension 44 3 9 - .edition_unittest.TestAllExtensions repeatedStringExtension - 0 -
+  resolved 0 0 9 1 0 -
+extension repeated_bytes_extension 45 3 12 - .edition_unittest.TestAllExtensions repeatedBytesExtension - 0 -
+  resolved 0 0 12 - 0 -
+extension repeatedgroup_extension 46 3 11 .edition_unittest.RepeatedGroup_extension .edition_unittest.TestAllExtensions repeatedgroupExtension - 0 -
+  resolved 0 0 10 - 0 -
+extension repeated_nested_message_extension 48 3 11 .edition_unittest.TestAllTypes.NestedMessage .edition_unittest.TestAllExtensions repeatedNestedMessageExtension - 0 -
+  resolved 0 0 11 - 0 -
+extension repeated_foreign_message_extension 49 3 11 .edition_unittest.ForeignMessage .edition_unittest.TestAllExtensions repeatedForeignMessageExtension - 0 -
+  resolved 0 0 11 - 0 -
+extension repeated_import_message_extension 50 3 11 .proto2_unittest_import.ImportMessage .edition_unittest.TestAllExtensions repeatedImportMessageExtension - 0 -
+  resolved 0 0 11 - 0 -
+extension repeated_nested_enum_extension 51 3 14 .edition_unittest.TestAllTypes.NestedEnum .edition_unittest.TestAllExtensions repeatedNestedEnumExtension - 0 -
+  resolved 0 1 14 - 0 -
+extension repeated_foreign_enum_extension 52 3 14 .edition_unittest.ForeignEnum .edition_unittest.TestAllExtensions repeatedForeignEnumExtension - 0 -
+  resolved 0 1 14 - 0 -
+extension repeated_import_enum_extension 53 3 14 .proto2_unittest_import.ImportEnum .edition_unittest.TestAllExtensions repeatedImportEnumExtension - 0 -
+  resolved 0 1 14 - 0 -
+extension repeated_string_piece_extension 54 3 9 - .edition_unittest.TestAllExtensions repeatedStringPieceExtension - 0 -
+  resolved 0 0 9 1 0 -
+extension repeated_cord_extension 55 3 9 - .edition_unittest.TestAllExtensions repeatedCordExtension - 0 -
+  resolved 0 0 9 1 0 -
+extension repeated_lazy_message_extension 57 3 11 .edition_unittest.TestAllTypes.NestedMessage .edition_unittest.TestAllExtensions repeatedLazyMessageExtension - 0 -
+  resolved 0 0 11 - 0 -
+extension default_int32_extension 61 1 5 - .edition_unittest.TestAllExtensions defaultInt32Extension - 0 -
+  resolved 1 0 5 - 0 default=41
+extension default_int64_extension 62 1 3 - .edition_unittest.TestAllExtensions defaultInt64Extension - 0 -
+  resolved 1 0 3 - 0 default=42
+extension default_uint32_extension 63 1 13 - .edition_unittest.TestAllExtensions defaultUint32Extension - 0 -
+  resolved 1 0 13 - 0 default=43
+extension default_uint64_extension 64 1 4 - .edition_unittest.TestAllExtensions defaultUint64Extension - 0 -
+  resolved 1 0 4 - 0 default=44
+extension default_sint32_extension 65 1 17 - .edition_unittest.TestAllExtensions defaultSint32Extension - 0 -
+  resolved 1 0 17 - 0 default=-45
+extension default_sint64_extension 66 1 18 - .edition_unittest.TestAllExtensions defaultSint64Extension - 0 -
+  resolved 1 0 18 - 0 default=46
+extension default_fixed32_extension 67 1 7 - .edition_unittest.TestAllExtensions defaultFixed32Extension - 0 -
+  resolved 1 0 7 - 0 default=47
+extension default_fixed64_extension 68 1 6 - .edition_unittest.TestAllExtensions defaultFixed64Extension - 0 -
+  resolved 1 0 6 - 0 default=48
+extension default_sfixed32_extension 69 1 15 - .edition_unittest.TestAllExtensions defaultSfixed32Extension - 0 -
+  resolved 1 0 15 - 0 default=49
+extension default_sfixed64_extension 70 1 16 - .edition_unittest.TestAllExtensions defaultSfixed64Extension - 0 -
+  resolved 1 0 16 - 0 default=-50
+extension default_float_extension 71 1 2 - .edition_unittest.TestAllExtensions defaultFloatExtension - 0 -
+  resolved 1 0 2 - 0 default=51.5
+extension default_double_extension 72 1 1 - .edition_unittest.TestAllExtensions defaultDoubleExtension - 0 -
+  resolved 1 0 1 - 0 default=52000
+extension default_bool_extension 73 1 8 - .edition_unittest.TestAllExtensions defaultBoolExtension - 0 -
+  resolved 1 0 8 - 0 default=true
+extension default_string_extension 74 1 9 - .edition_unittest.TestAllExtensions defaultStringExtension - 0 -
+  resolved 1 0 9 1 0 default=hello
+extension default_bytes_extension 75 1 12 - .edition_unittest.TestAllExtensions defaultBytesExtension - 0 -
+  resolved 1 0 12 - 0 default=world
+extension default_nested_enum_extension 81 1 14 .edition_unittest.TestAllTypes.NestedEnum .edition_unittest.TestAllExtensions defaultNestedEnumExtension - 0 -
+  resolved 1 0 14 - 0 default=BAR
+extension default_foreign_enum_extension 82 1 14 .edition_unittest.ForeignEnum .edition_unittest.TestAllExtensions defaultForeignEnumExtension - 0 -
+  resolved 1 0 14 - 0 default=FOREIGN_BAR
+extension default_import_enum_extension 83 1 14 .proto2_unittest_import.ImportEnum .edition_unittest.TestAllExtensions defaultImportEnumExtension - 0 -
+  resolved 1 0 14 - 0 default=IMPORT_BAR
+extension default_string_piece_extension 84 1 9 - .edition_unittest.TestAllExtensions defaultStringPieceExtension - 0 -
+  resolved 1 0 9 1 0 default=abc
+extension default_cord_extension 85 1 9 - .edition_unittest.TestAllExtensions defaultCordExtension - 0 -
+  resolved 1 0 9 1 0 default=123
+extension oneof_uint32_extension 111 1 13 - .edition_unittest.TestAllExtensions oneofUint32Extension - 0 -
+  resolved 1 0 13 - 0 -
+extension oneof_nested_message_extension 112 1 11 .edition_unittest.TestAllTypes.NestedMessage .edition_unittest.TestAllExtensions oneofNestedMessageExtension - 0 -
+  resolved 1 0 11 - 0 -
+extension oneof_string_extension 113 1 9 - .edition_unittest.TestAllExtensions oneofStringExtension - 0 -
+  resolved 1 0 9 1 0 -
+extension oneof_bytes_extension 114 1 12 - .edition_unittest.TestAllExtensions oneofBytesExtension - 0 -
+  resolved 1 0 12 - 0 -
+extension my_extension_string 50 1 9 - .edition_unittest.TestFieldOrderings myExtensionString - 0 -
+  resolved 1 0 9 1 0 -
+extension my_extension_int 5 1 5 - .edition_unittest.TestFieldOrderings myExtensionInt - 0 -
+  resolved 1 0 5 - 0 -
+extension packed_int32_extension 90 3 5 - .edition_unittest.TestPackedExtensions packedInt32Extension - 0 -
+  resolved 0 1 5 - 0 -
+extension packed_int64_extension 91 3 3 - .edition_unittest.TestPackedExtensions packedInt64Extension - 0 -
+  resolved 0 1 3 - 0 -
+extension packed_uint32_extension 92 3 13 - .edition_unittest.TestPackedExtensions packedUint32Extension - 0 -
+  resolved 0 1 13 - 0 -
+extension packed_uint64_extension 93 3 4 - .edition_unittest.TestPackedExtensions packedUint64Extension - 0 -
+  resolved 0 1 4 - 0 -
+extension packed_sint32_extension 94 3 17 - .edition_unittest.TestPackedExtensions packedSint32Extension - 0 -
+  resolved 0 1 17 - 0 -
+extension packed_sint64_extension 95 3 18 - .edition_unittest.TestPackedExtensions packedSint64Extension - 0 -
+  resolved 0 1 18 - 0 -
+extension packed_fixed32_extension 96 3 7 - .edition_unittest.TestPackedExtensions packedFixed32Extension - 0 -
+  resolved 0 1 7 - 0 -
+extension packed_fixed64_extension 97 3 6 - .edition_unittest.TestPackedExtensions packedFixed64Extension - 0 -
+  resolved 0 1 6 - 0 -
+extension packed_sfixed32_extension 98 3 15 - .edition_unittest.TestPackedExtensions packedSfixed32Extension - 0 -
+  resolved 0 1 15 - 0 -
+extension packed_sfixed64_extension 99 3 16 - .edition_unittest.TestPackedExtensions packedSfixed64Extension - 0 -
+  resolved 0 1 16 - 0 -
+extension packed_float_extension 100 3 2 - .edition_unittest.TestPackedExtensions packedFloatExtension - 0 -
+  resolved 0 1 2 - 0 -
+extension packed_double_extension 101 3 1 - .edition_unittest.TestPackedExtensions packedDoubleExtension - 0 -
+  resolved 0 1 1 - 0 -
+extension packed_bool_extension 102 3 8 - .edition_unittest.TestPackedExtensions packedBoolExtension - 0 -
+  resolved 0 1 8 - 0 -
+extension packed_enum_extension 103 3 14 .edition_unittest.ForeignEnum .edition_unittest.TestPackedExtensions packedEnumExtension - 0 -
+  resolved 0 1 14 - 0 -
+extension unpacked_int32_extension 90 3 5 - .edition_unittest.TestUnpackedExtensions unpackedInt32Extension - 0 -
+  resolved 0 0 5 - 0 -
+extension unpacked_int64_extension 91 3 3 - .edition_unittest.TestUnpackedExtensions unpackedInt64Extension - 0 -
+  resolved 0 0 3 - 0 -
+extension unpacked_uint32_extension 92 3 13 - .edition_unittest.TestUnpackedExtensions unpackedUint32Extension - 0 -
+  resolved 0 0 13 - 0 -
+extension unpacked_uint64_extension 93 3 4 - .edition_unittest.TestUnpackedExtensions unpackedUint64Extension - 0 -
+  resolved 0 0 4 - 0 -
+extension unpacked_sint32_extension 94 3 17 - .edition_unittest.TestUnpackedExtensions unpackedSint32Extension - 0 -
+  resolved 0 0 17 - 0 -
+extension unpacked_sint64_extension 95 3 18 - .edition_unittest.TestUnpackedExtensions unpackedSint64Extension - 0 -
+  resolved 0 0 18 - 0 -
+extension unpacked_fixed32_extension 96 3 7 - .edition_unittest.TestUnpackedExtensions unpackedFixed32Extension - 0 -
+  resolved 0 0 7 - 0 -
+extension unpacked_fixed64_extension 97 3 6 - .edition_unittest.TestUnpackedExtensions unpackedFixed64Extension - 0 -
+  resolved 0 0 6 - 0 -
+extension unpacked_sfixed32_extension 98 3 15 - .edition_unittest.TestUnpackedExtensions unpackedSfixed32Extension - 0 -
+  resolved 0 0 15 - 0 -
+extension unpacked_sfixed64_extension 99 3 16 - .edition_unittest.TestUnpackedExtensions unpackedSfixed64Extension - 0 -
+  resolved 0 0 16 - 0 -
+extension unpacked_float_extension 100 3 2 - .edition_unittest.TestUnpackedExtensions unpackedFloatExtension - 0 -
+  resolved 0 0 2 - 0 -
+extension unpacked_double_extension 101 3 1 - .edition_unittest.TestUnpackedExtensions unpackedDoubleExtension - 0 -
+  resolved 0 0 1 - 0 -
+extension unpacked_bool_extension 102 3 8 - .edition_unittest.TestUnpackedExtensions unpackedBoolExtension - 0 -
+  resolved 0 0 8 - 0 -
+extension unpacked_enum_extension 103 3 14 .edition_unittest.ForeignEnum .edition_unittest.TestUnpackedExtensions unpackedEnumExtension - 0 -
+  resolved 0 0 14 - 0 -
+extension test_all_types 536860000 1 11 .edition_unittest.TestAllTypes .edition_unittest.TestHugeFieldNumbers testAllTypes - 0 -
+  resolved 1 0 11 - 0 -
+extension test_extension_inside_table_extension 5 1 5 - .edition_unittest.TestExtensionInsideTable testExtensionInsideTableExtension - 0 -
+  resolved 1 0 5 - 0 -
+extension inner 3 1 11 .edition_unittest.TestNestedGroupExtensionInnerExtension .edition_unittest.TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2RepeatedGroup inner - 0 -
+  resolved 1 0 11 - 0 -

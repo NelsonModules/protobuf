@@ -1,0 +1,86 @@
+package field_presence_test
+syntax editions
+edition 2023
+message TestAllTypes
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+    resolved 0 0 5 - 0 -
+  field optional_string 2 1 9 - optionalString - 0 -
+    resolved 0 0 9 1 0 -
+  field optional_bytes 3 1 12 - optionalBytes - 0 -
+    resolved 0 0 12 - 0 -
+  field optional_float 8 1 2 - optionalFloat - 0 -
+    resolved 0 0 2 - 0 -
+  field optional_double 9 1 1 - optionalDouble - 0 -
+    resolved 0 0 1 - 0 -
+  field optional_nested_enum 4 1 14 .field_presence_test.TestAllTypes.NestedEnum optionalNestedEnum - 0 -
+    resolved 0 0 14 - 0 -
+  field optional_nested_message 5 1 11 .field_presence_test.TestAllTypes.NestedMessage optionalNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_proto2_message 6 1 11 .proto2_unittest.TestRequired optionalProto2Message - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_lazy_message 7 1 11 .field_presence_test.TestAllTypes.NestedMessage optionalLazyMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field oneof_int32 11 1 5 - oneofInt32 0 0 -
+    resolved 1 0 5 - 0 -
+  field oneof_uint32 12 1 13 - oneofUint32 0 0 -
+    resolved 1 0 13 - 0 -
+  field oneof_string 13 1 9 - oneofString 0 0 -
+    resolved 1 0 9 1 0 -
+  field oneof_bytes 14 1 12 - oneofBytes 0 0 -
+    resolved 1 0 12 - 0 -
+  field oneof_nested_enum 15 1 14 .field_presence_test.TestAllTypes.NestedEnum oneofNestedEnum 0 0 -
+    resolved 1 0 14 - 0 -
+  field oneof_nested_message 16 1 11 .field_presence_test.TestAllTypes.NestedMessage oneofNestedMessage 0 0 -
+    resolved 1 0 11 - 0 -
+  field oneof_proto2_message 17 1 11 .proto2_unittest.TestRequired oneofProto2Message 0 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_int32 21 3 5 - repeatedInt32 - 0 -
+    resolved 0 1 5 - 0 -
+  field repeated_string 22 3 9 - repeatedString - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_bytes 23 3 12 - repeatedBytes - 0 -
+    resolved 0 0 12 - 0 -
+  field repeated_nested_enum 24 3 14 .field_presence_test.TestAllTypes.NestedEnum repeatedNestedEnum - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_nested_message 25 3 11 .field_presence_test.TestAllTypes.NestedMessage repeatedNestedMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_proto2_message 26 3 11 .proto2_unittest.TestRequired repeatedProto2Message - 0 -
+    resolved 0 0 11 - 0 -
+  field packed_nested_enum 27 3 14 .field_presence_test.TestAllTypes.NestedEnum packedNestedEnum - 0 -
+    resolved 0 1 14 - 0 -
+  message NestedMessage
+    field value 1 1 5 - value - 0 -
+      resolved 0 0 5 - 0 -
+  enum NestedEnum
+    value FOO 0
+    value BAR 1
+    value BAZ 2
+  oneof oneof_field
+message TestOptionalFieldsOnly
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+    resolved 0 0 5 - 0 -
+  field optional_string 2 1 9 - optionalString - 0 -
+    resolved 0 0 9 1 0 -
+  field optional_bytes 3 1 12 - optionalBytes - 0 -
+    resolved 0 0 12 - 0 -
+  field optional_nested_enum 4 1 14 .field_presence_test.TestAllTypes.NestedEnum optionalNestedEnum - 0 -
+    resolved 0 0 14 - 0 -
+  field optional_nested_message 5 1 11 .field_presence_test.TestAllTypes.NestedMessage optionalNestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_proto2_message 6 1 11 .proto2_unittest.TestRequired optionalProto2Message - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_lazy_message 7 1 11 .field_presence_test.TestAllTypes.NestedMessage optionalLazyMessage - 0 -
+    resolved 1 0 11 - 0 -
+message TestRepeatedFieldsOnly
+  field repeated_int32 21 3 5 - repeatedInt32 - 0 -
+    resolved 0 1 5 - 0 -
+  field repeated_string 22 3 9 - repeatedString - 0 -
+    resolved 0 0 9 1 0 -
+  field repeated_bytes 23 3 12 - repeatedBytes - 0 -
+    resolved 0 0 12 - 0 -
+  field repeated_nested_enum 24 3 14 .field_presence_test.TestAllTypes.NestedEnum repeatedNestedEnum - 0 -
+    resolved 0 1 14 - 0 -
+  field repeated_nested_message 25 3 11 .field_presence_test.TestAllTypes.NestedMessage repeatedNestedMessage - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_proto2_message 26 3 11 .proto2_unittest.TestRequired repeatedProto2Message - 0 -
+    resolved 0 0 11 - 0 -

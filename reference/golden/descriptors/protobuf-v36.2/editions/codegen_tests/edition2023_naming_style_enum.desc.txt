@@ -1,0 +1,5 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+enum bad_enum_name
+  value GOOD_ENUM_VALUE 0

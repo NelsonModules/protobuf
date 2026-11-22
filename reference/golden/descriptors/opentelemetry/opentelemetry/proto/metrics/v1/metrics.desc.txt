@@ -1,0 +1,116 @@
+package opentelemetry.proto.metrics.v1
+syntax proto3
+message MetricsData
+  field resource_metrics 1 3 11 .opentelemetry.proto.metrics.v1.ResourceMetrics resourceMetrics - 0 -
+message ResourceMetrics
+  field resource 1 1 11 .opentelemetry.proto.resource.v1.Resource resource - 0 -
+  field scope_metrics 2 3 11 .opentelemetry.proto.metrics.v1.ScopeMetrics scopeMetrics - 0 -
+  field schema_url 3 1 9 - schemaUrl - 0 -
+  reserved_range 1000 1001
+message ScopeMetrics
+  field scope 1 1 11 .opentelemetry.proto.common.v1.InstrumentationScope scope - 0 -
+  field metrics 2 3 11 .opentelemetry.proto.metrics.v1.Metric metrics - 0 -
+  field schema_url 3 1 9 - schemaUrl - 0 -
+message Metric
+  field name 1 1 9 - name - 0 -
+  field description 2 1 9 - description - 0 -
+  field unit 3 1 9 - unit - 0 -
+  field gauge 5 1 11 .opentelemetry.proto.metrics.v1.Gauge gauge 0 0 -
+  field sum 7 1 11 .opentelemetry.proto.metrics.v1.Sum sum 0 0 -
+  field histogram 9 1 11 .opentelemetry.proto.metrics.v1.Histogram histogram 0 0 -
+  field exponential_histogram 10 1 11 .opentelemetry.proto.metrics.v1.ExponentialHistogram exponentialHistogram 0 0 -
+  field summary 11 1 11 .opentelemetry.proto.metrics.v1.Summary summary 0 0 -
+  field metadata 12 3 11 .opentelemetry.proto.common.v1.KeyValue metadata - 0 -
+  oneof data
+  reserved_range 4 5
+  reserved_range 6 7
+  reserved_range 8 9
+message Gauge
+  field data_points 1 3 11 .opentelemetry.proto.metrics.v1.NumberDataPoint dataPoints - 0 -
+message Sum
+  field data_points 1 3 11 .opentelemetry.proto.metrics.v1.NumberDataPoint dataPoints - 0 -
+  field aggregation_temporality 2 1 14 .opentelemetry.proto.metrics.v1.AggregationTemporality aggregationTemporality - 0 -
+  field is_monotonic 3 1 8 - isMonotonic - 0 -
+message Histogram
+  field data_points 1 3 11 .opentelemetry.proto.metrics.v1.HistogramDataPoint dataPoints - 0 -
+  field aggregation_temporality 2 1 14 .opentelemetry.proto.metrics.v1.AggregationTemporality aggregationTemporality - 0 -
+message ExponentialHistogram
+  field data_points 1 3 11 .opentelemetry.proto.metrics.v1.ExponentialHistogramDataPoint dataPoints - 0 -
+  field aggregation_temporality 2 1 14 .opentelemetry.proto.metrics.v1.AggregationTemporality aggregationTemporality - 0 -
+message Summary
+  field data_points 1 3 11 .opentelemetry.proto.metrics.v1.SummaryDataPoint dataPoints - 0 -
+message NumberDataPoint
+  field attributes 7 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+  field start_time_unix_nano 2 1 6 - startTimeUnixNano - 0 -
+  field time_unix_nano 3 1 6 - timeUnixNano - 0 -
+  field as_double 4 1 1 - asDouble 0 0 -
+  field as_int 6 1 16 - asInt 0 0 -
+  field exemplars 5 3 11 .opentelemetry.proto.metrics.v1.Exemplar exemplars - 0 -
+  field flags 8 1 13 - flags - 0 -
+  oneof value
+  reserved_range 1 2
+message HistogramDataPoint
+  field attributes 9 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+  field start_time_unix_nano 2 1 6 - startTimeUnixNano - 0 -
+  field time_unix_nano 3 1 6 - timeUnixNano - 0 -
+  field count 4 1 6 - count - 0 -
+  field sum 5 1 1 - sum 0 1 -
+  field bucket_counts 6 3 6 - bucketCounts - 0 -
+  field explicit_bounds 7 3 1 - explicitBounds - 0 -
+  field exemplars 8 3 11 .opentelemetry.proto.metrics.v1.Exemplar exemplars - 0 -
+  field flags 10 1 13 - flags - 0 -
+  field min 11 1 1 - min 1 1 -
+  field max 12 1 1 - max 2 1 -
+  oneof _sum
+  oneof _min
+  oneof _max
+  reserved_range 1 2
+message ExponentialHistogramDataPoint
+  field attributes 1 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+  field start_time_unix_nano 2 1 6 - startTimeUnixNano - 0 -
+  field time_unix_nano 3 1 6 - timeUnixNano - 0 -
+  field count 4 1 6 - count - 0 -
+  field sum 5 1 1 - sum 0 1 -
+  field scale 6 1 17 - scale - 0 -
+  field zero_count 7 1 6 - zeroCount - 0 -
+  field positive 8 1 11 .opentelemetry.proto.metrics.v1.ExponentialHistogramDataPoint.Buckets positive - 0 -
+  field negative 9 1 11 .opentelemetry.proto.metrics.v1.ExponentialHistogramDataPoint.Buckets negative - 0 -
+  field flags 10 1 13 - flags - 0 -
+  field exemplars 11 3 11 .opentelemetry.proto.metrics.v1.Exemplar exemplars - 0 -
+  field min 12 1 1 - min 1 1 -
+  field max 13 1 1 - max 2 1 -
+  field zero_threshold 14 1 1 - zeroThreshold - 0 -
+  message Buckets
+    field offset 1 1 17 - offset - 0 -
+    field bucket_counts 2 3 4 - bucketCounts - 0 -
+  oneof _sum
+  oneof _min
+  oneof _max
+message SummaryDataPoint
+  field attributes 7 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+  field start_time_unix_nano 2 1 6 - startTimeUnixNano - 0 -
+  field time_unix_nano 3 1 6 - timeUnixNano - 0 -
+  field count 4 1 6 - count - 0 -
+  field sum 5 1 1 - sum - 0 -
+  field quantile_values 6 3 11 .opentelemetry.proto.metrics.v1.SummaryDataPoint.ValueAtQuantile quantileValues - 0 -
+  field flags 8 1 13 - flags - 0 -
+  message ValueAtQuantile
+    field quantile 1 1 1 - quantile - 0 -
+    field value 2 1 1 - value - 0 -
+  reserved_range 1 2
+message Exemplar
+  field filtered_attributes 7 3 11 .opentelemetry.proto.common.v1.KeyValue filteredAttributes - 0 -
+  field time_unix_nano 2 1 6 - timeUnixNano - 0 -
+  field as_double 3 1 1 - asDouble 0 0 -
+  field as_int 6 1 16 - asInt 0 0 -
+  field span_id 4 1 12 - spanId - 0 -
+  field trace_id 5 1 12 - traceId - 0 -
+  oneof value
+  reserved_range 1 2
+enum AggregationTemporality
+  value AGGREGATION_TEMPORALITY_UNSPECIFIED 0
+  value AGGREGATION_TEMPORALITY_DELTA 1
+  value AGGREGATION_TEMPORALITY_CUMULATIVE 2
+enum DataPointFlags
+  value DATA_POINT_FLAGS_DO_NOT_USE 0
+  value DATA_POINT_FLAGS_NO_RECORDED_VALUE_MASK 1

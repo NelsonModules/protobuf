@@ -1,0 +1,39 @@
+package google.protobuf.internal
+syntax editions
+edition 2023
+message TestAny
+  field value 1 1 11 .google.protobuf.Any value - 0 -
+    resolved 1 0 11 - 0 -
+  field int_value 2 1 5 - intValue - 0 -
+    resolved 1 0 5 - 0 -
+  field map_value 3 3 11 .google.protobuf.internal.TestAny.MapValueEntry mapValue - 0 -
+    resolved 0 0 11 - 0 -
+  message MapValueEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 1 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 1 0 5 - 0 -
+    map_entry
+  extension_range 10 536870912
+message TestAnyExtension1
+  field i 15 1 5 - i - 0 -
+    resolved 1 0 5 - 0 -
+  extension extension1 98418603 1 11 .google.protobuf.internal.TestAnyExtension1 .google.protobuf.internal.TestAny extension1 - 0 -
+    resolved 1 0 11 - 0 -
+message WKTMessage
+  field optional_timestamp 1 1 11 .google.protobuf.Timestamp optionalTimestamp - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_duration 2 1 11 .google.protobuf.Duration optionalDuration - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_struct 3 1 11 .google.protobuf.Struct optionalStruct - 0 -
+    resolved 1 0 11 - 0 -
+  field optional_list_value 4 1 11 .google.protobuf.ListValue optionalListValue - 0 -
+    resolved 1 0 11 - 0 -
+  field repeated_ts 5 3 11 .google.protobuf.Timestamp repeatedTs - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_td 6 3 11 .google.protobuf.Duration repeatedTd - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_struct 7 3 11 .google.protobuf.Struct repeatedStruct - 0 -
+    resolved 0 0 11 - 0 -
+  field repeated_list 8 3 11 .google.protobuf.ListValue repeatedList - 0 -
+    resolved 0 0 11 - 0 -

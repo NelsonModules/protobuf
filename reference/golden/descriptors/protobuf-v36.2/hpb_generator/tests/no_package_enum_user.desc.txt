@@ -1,0 +1,6 @@
+package hpb_unittest
+syntax editions
+edition 2023
+message MyMessage
+  field my_type 1 1 11 .MessageWithEnumUpbTest myType - 0 -
+    resolved 1 0 11 - 0 -

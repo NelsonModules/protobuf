@@ -1,0 +1,20 @@
+package google.protobuf
+syntax proto3
+message Struct
+  field fields 1 3 11 .google.protobuf.Struct.FieldsEntry fields - 0 -
+  message FieldsEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .google.protobuf.Value value - 0 -
+    map_entry
+message Value
+  field null_value 1 1 14 .google.protobuf.NullValue nullValue 0 0 -
+  field number_value 2 1 1 - numberValue 0 0 -
+  field string_value 3 1 9 - stringValue 0 0 -
+  field bool_value 4 1 8 - boolValue 0 0 -
+  field struct_value 5 1 11 .google.protobuf.Struct structValue 0 0 -
+  field list_value 6 1 11 .google.protobuf.ListValue listValue 0 0 -
+  oneof kind
+message ListValue
+  field values 1 3 11 .google.protobuf.Value values - 0 -
+enum NullValue
+  value NULL_VALUE 0

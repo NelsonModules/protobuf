@@ -1,0 +1,55 @@
+package opentelemetry.proto.logs.v1
+syntax proto3
+message LogsData
+  field resource_logs 1 3 11 .opentelemetry.proto.logs.v1.ResourceLogs resourceLogs - 0 -
+message ResourceLogs
+  field resource 1 1 11 .opentelemetry.proto.resource.v1.Resource resource - 0 -
+  field scope_logs 2 3 11 .opentelemetry.proto.logs.v1.ScopeLogs scopeLogs - 0 -
+  field schema_url 3 1 9 - schemaUrl - 0 -
+  reserved_range 1000 1001
+message ScopeLogs
+  field scope 1 1 11 .opentelemetry.proto.common.v1.InstrumentationScope scope - 0 -
+  field log_records 2 3 11 .opentelemetry.proto.logs.v1.LogRecord logRecords - 0 -
+  field schema_url 3 1 9 - schemaUrl - 0 -
+message LogRecord
+  field time_unix_nano 1 1 6 - timeUnixNano - 0 -
+  field observed_time_unix_nano 11 1 6 - observedTimeUnixNano - 0 -
+  field severity_number 2 1 14 .opentelemetry.proto.logs.v1.SeverityNumber severityNumber - 0 -
+  field severity_text 3 1 9 - severityText - 0 -
+  field body 5 1 11 .opentelemetry.proto.common.v1.AnyValue body - 0 -
+  field attributes 6 3 11 .opentelemetry.proto.common.v1.KeyValue attributes - 0 -
+  field dropped_attributes_count 7 1 13 - droppedAttributesCount - 0 -
+  field flags 8 1 7 - flags - 0 -
+  field trace_id 9 1 12 - traceId - 0 -
+  field span_id 10 1 12 - spanId - 0 -
+  field event_name 12 1 9 - eventName - 0 -
+  reserved_range 4 5
+enum SeverityNumber
+  value SEVERITY_NUMBER_UNSPECIFIED 0
+  value SEVERITY_NUMBER_TRACE 1
+  value SEVERITY_NUMBER_TRACE2 2
+  value SEVERITY_NUMBER_TRACE3 3
+  value SEVERITY_NUMBER_TRACE4 4
+  value SEVERITY_NUMBER_DEBUG 5
+  value SEVERITY_NUMBER_DEBUG2 6
+  value SEVERITY_NUMBER_DEBUG3 7
+  value SEVERITY_NUMBER_DEBUG4 8
+  value SEVERITY_NUMBER_INFO 9
+  value SEVERITY_NUMBER_INFO2 10
+  value SEVERITY_NUMBER_INFO3 11
+  value SEVERITY_NUMBER_INFO4 12
+  value SEVERITY_NUMBER_WARN 13
+  value SEVERITY_NUMBER_WARN2 14
+  value SEVERITY_NUMBER_WARN3 15
+  value SEVERITY_NUMBER_WARN4 16
+  value SEVERITY_NUMBER_ERROR 17
+  value SEVERITY_NUMBER_ERROR2 18
+  value SEVERITY_NUMBER_ERROR3 19
+  value SEVERITY_NUMBER_ERROR4 20
+  value SEVERITY_NUMBER_FATAL 21
+  value SEVERITY_NUMBER_FATAL2 22
+  value SEVERITY_NUMBER_FATAL3 23
+  value SEVERITY_NUMBER_FATAL4 24
+enum LogRecordFlags
+  value LOG_RECORD_FLAGS_DO_NOT_USE 0
+  value LOG_RECORD_FLAGS_TRACE_FLAGS_MASK 255

@@ -1,0 +1,6 @@
+package proto2_unittest
+syntax editions
+edition 1002
+message EntryProto
+  field value 3 1 12 - value - 0 -
+    resolved 1 0 12 - 0 -

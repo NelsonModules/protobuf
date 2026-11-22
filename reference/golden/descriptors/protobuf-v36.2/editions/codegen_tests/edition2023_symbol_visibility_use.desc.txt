@@ -1,0 +1,10 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+message SymbolVisibilityUseMessage
+  field top_level_message 1 1 11 .protobuf_editions_test.edition2023.SymbolVisibilityMessage topLevelMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field nested_message 2 1 11 .protobuf_editions_test.edition2023.SymbolVisibilityMessage.NestedMessage nestedMessage - 0 -
+    resolved 1 0 11 - 0 -
+  field nested_enum 3 1 14 .protobuf_editions_test.edition2023.SymbolVisibilityMessage.NestedEnum nestedEnum - 0 -
+    resolved 1 0 14 - 0 -

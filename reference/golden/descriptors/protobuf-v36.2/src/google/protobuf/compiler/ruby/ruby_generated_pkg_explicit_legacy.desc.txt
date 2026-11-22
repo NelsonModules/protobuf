@@ -1,0 +1,4 @@
+package one.two.a_three.and
+syntax proto3
+message Four
+  field another_string 1 1 9 - anotherString - 0 -

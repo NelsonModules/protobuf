@@ -1,0 +1,24 @@
+package wrappers_test
+syntax editions
+edition 2023
+message TopLevelMessage
+  field field1 1 1 5 - field1 - 0 -
+    resolved 0 0 5 - 0 -
+  field field_double 2 1 11 .google.protobuf.DoubleValue fieldDouble - 0 -
+    resolved 1 0 11 - 0 -
+  field field_float 3 1 11 .google.protobuf.FloatValue fieldFloat - 0 -
+    resolved 1 0 11 - 0 -
+  field field_int64 4 1 11 .google.protobuf.Int64Value fieldInt64 - 0 -
+    resolved 1 0 11 - 0 -
+  field field_uint64 5 1 11 .google.protobuf.UInt64Value fieldUint64 - 0 -
+    resolved 1 0 11 - 0 -
+  field field_int32 6 1 11 .google.protobuf.Int32Value fieldInt32 - 0 -
+    resolved 1 0 11 - 0 -
+  field field_uint32 7 1 11 .google.protobuf.UInt32Value fieldUint32 - 0 -
+    resolved 1 0 11 - 0 -
+  field field_bool 8 1 11 .google.protobuf.BoolValue fieldBool - 0 -
+    resolved 1 0 11 - 0 -
+  field field_string 9 1 11 .google.protobuf.StringValue fieldString - 0 -
+    resolved 1 0 11 - 0 -
+  field field_bytes 10 1 11 .google.protobuf.BytesValue fieldBytes - 0 -
+    resolved 1 0 11 - 0 -

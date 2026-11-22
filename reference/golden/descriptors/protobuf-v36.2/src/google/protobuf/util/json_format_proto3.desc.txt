@@ -1,0 +1,336 @@
+package proto3
+syntax proto3
+message MessageType
+  field value 1 1 5 - value - 0 -
+  field optional_int32_value 2 1 5 - optionalInt32Value 0 1 -
+  field optional_string_value 3 1 9 - optionalStringValue 1 1 -
+  oneof _optional_int32_value
+  oneof _optional_string_value
+message TestMessage
+  field bool_value 1 1 8 - boolValue - 0 -
+  field int32_value 2 1 5 - int32Value - 0 -
+  field int64_value 3 1 3 - int64Value - 0 -
+  field uint32_value 4 1 13 - uint32Value - 0 -
+  field uint64_value 5 1 4 - uint64Value - 0 -
+  field float_value 6 1 2 - floatValue - 0 -
+  field double_value 7 1 1 - doubleValue - 0 -
+  field string_value 8 1 9 - stringValue - 0 -
+  field bytes_value 9 1 12 - bytesValue - 0 -
+  field enum_value 10 1 14 .proto3.EnumType enumValue - 0 -
+  field message_value 11 1 11 .proto3.MessageType messageValue - 0 -
+  field repeated_bool_value 21 3 8 - repeatedBoolValue - 0 -
+  field repeated_int32_value 22 3 5 - repeatedInt32Value - 0 -
+  field repeated_int64_value 23 3 3 - repeatedInt64Value - 0 -
+  field repeated_uint32_value 24 3 13 - repeatedUint32Value - 0 -
+  field repeated_uint64_value 25 3 4 - repeatedUint64Value - 0 -
+  field repeated_float_value 26 3 2 - repeatedFloatValue - 0 -
+  field repeated_double_value 27 3 1 - repeatedDoubleValue - 0 -
+  field repeated_string_value 28 3 9 - repeatedStringValue - 0 -
+  field repeated_bytes_value 29 3 12 - repeatedBytesValue - 0 -
+  field repeated_enum_value 30 3 14 .proto3.EnumType repeatedEnumValue - 0 -
+  field repeated_message_value 31 3 11 .proto3.MessageType repeatedMessageValue - 0 -
+  field optional_bool_value 41 1 8 - optionalBoolValue 0 1 -
+  field optional_int32_value 42 1 5 - optionalInt32Value 1 1 -
+  field optional_int64_value 43 1 3 - optionalInt64Value 2 1 -
+  field optional_uint32_value 44 1 13 - optionalUint32Value 3 1 -
+  field optional_uint64_value 45 1 4 - optionalUint64Value 4 1 -
+  field optional_float_value 46 1 2 - optionalFloatValue 5 1 -
+  field optional_double_value 47 1 1 - optionalDoubleValue 6 1 -
+  field optional_string_value 48 1 9 - optionalStringValue 7 1 -
+  field optional_bytes_value 49 1 12 - optionalBytesValue 8 1 -
+  field optional_enum_value 50 1 14 .proto3.EnumType optionalEnumValue 9 1 -
+  field optional_message_value 51 1 11 .proto3.MessageType optionalMessageValue 10 1 -
+  field _nonStandard_name_ 52 1 5 - NonStandardName - 0 -
+  field timestamp_value 53 1 11 .google.protobuf.Timestamp timestampValue - 0 -
+  oneof _optional_bool_value
+  oneof _optional_int32_value
+  oneof _optional_int64_value
+  oneof _optional_uint32_value
+  oneof _optional_uint64_value
+  oneof _optional_float_value
+  oneof _optional_double_value
+  oneof _optional_string_value
+  oneof _optional_bytes_value
+  oneof _optional_enum_value
+  oneof _optional_message_value
+message TestOneof
+  field oneof_int32_value 1 1 5 - oneofInt32Value 0 0 -
+  field oneof_string_value 2 1 9 - oneofStringValue 0 0 -
+  field oneof_bytes_value 3 1 12 - oneofBytesValue 0 0 -
+  field oneof_enum_value 4 1 14 .proto3.EnumType oneofEnumValue 0 0 -
+  field oneof_message_value 5 1 11 .proto3.MessageType oneofMessageValue 0 0 -
+  field oneof_null_value 6 1 14 .google.protobuf.NullValue oneofNullValue 0 0 -
+  oneof oneof_value
+message TestMap
+  field bool_map 1 3 11 .proto3.TestMap.BoolMapEntry boolMap - 0 -
+  field int32_map 2 3 11 .proto3.TestMap.Int32MapEntry int32Map - 0 -
+  field int64_map 3 3 11 .proto3.TestMap.Int64MapEntry int64Map - 0 -
+  field uint32_map 4 3 11 .proto3.TestMap.Uint32MapEntry uint32Map - 0 -
+  field uint64_map 5 3 11 .proto3.TestMap.Uint64MapEntry uint64Map - 0 -
+  field string_map 6 3 11 .proto3.TestMap.StringMapEntry stringMap - 0 -
+  message BoolMapEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Int32MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Int64MapEntry
+    field key 1 1 3 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Uint32MapEntry
+    field key 1 1 13 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Uint64MapEntry
+    field key 1 1 4 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message StringMapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+message TestNestedMap
+  field bool_map 1 3 11 .proto3.TestNestedMap.BoolMapEntry boolMap - 0 -
+  field int32_map 2 3 11 .proto3.TestNestedMap.Int32MapEntry int32Map - 0 -
+  field int64_map 3 3 11 .proto3.TestNestedMap.Int64MapEntry int64Map - 0 -
+  field uint32_map 4 3 11 .proto3.TestNestedMap.Uint32MapEntry uint32Map - 0 -
+  field uint64_map 5 3 11 .proto3.TestNestedMap.Uint64MapEntry uint64Map - 0 -
+  field string_map 6 3 11 .proto3.TestNestedMap.StringMapEntry stringMap - 0 -
+  field map_map 7 3 11 .proto3.TestNestedMap.MapMapEntry mapMap - 0 -
+  message BoolMapEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Int32MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Int64MapEntry
+    field key 1 1 3 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Uint32MapEntry
+    field key 1 1 13 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message Uint64MapEntry
+    field key 1 1 4 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message StringMapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message MapMapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .proto3.TestNestedMap value - 0 -
+    map_entry
+message TestStringMap
+  field string_map 1 3 11 .proto3.TestStringMap.StringMapEntry stringMap - 0 -
+  message StringMapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message TestStringMapOverlay
+  field string_map 1 3 11 .proto3.TestStringMapOverlay.MapEntry stringMap - 0 -
+  message MapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+message TestWrapper
+  field bool_value 1 1 11 .google.protobuf.BoolValue boolValue - 0 -
+  field int32_value 2 1 11 .google.protobuf.Int32Value int32Value - 0 -
+  field int64_value 3 1 11 .google.protobuf.Int64Value int64Value - 0 -
+  field uint32_value 4 1 11 .google.protobuf.UInt32Value uint32Value - 0 -
+  field uint64_value 5 1 11 .google.protobuf.UInt64Value uint64Value - 0 -
+  field float_value 6 1 11 .google.protobuf.FloatValue floatValue - 0 -
+  field double_value 7 1 11 .google.protobuf.DoubleValue doubleValue - 0 -
+  field string_value 8 1 11 .google.protobuf.StringValue stringValue - 0 -
+  field bytes_value 9 1 11 .google.protobuf.BytesValue bytesValue - 0 -
+  field repeated_bool_value 11 3 11 .google.protobuf.BoolValue repeatedBoolValue - 0 -
+  field repeated_int32_value 12 3 11 .google.protobuf.Int32Value repeatedInt32Value - 0 -
+  field repeated_int64_value 13 3 11 .google.protobuf.Int64Value repeatedInt64Value - 0 -
+  field repeated_uint32_value 14 3 11 .google.protobuf.UInt32Value repeatedUint32Value - 0 -
+  field repeated_uint64_value 15 3 11 .google.protobuf.UInt64Value repeatedUint64Value - 0 -
+  field repeated_float_value 16 3 11 .google.protobuf.FloatValue repeatedFloatValue - 0 -
+  field repeated_double_value 17 3 11 .google.protobuf.DoubleValue repeatedDoubleValue - 0 -
+  field repeated_string_value 18 3 11 .google.protobuf.StringValue repeatedStringValue - 0 -
+  field repeated_bytes_value 19 3 11 .google.protobuf.BytesValue repeatedBytesValue - 0 -
+message TestTimestamp
+  field value 1 1 11 .google.protobuf.Timestamp value - 0 -
+  field repeated_value 2 3 11 .google.protobuf.Timestamp repeatedValue - 0 -
+message TestDuration
+  field value 1 1 11 .google.protobuf.Duration value - 0 -
+  field repeated_value 2 3 11 .google.protobuf.Duration repeatedValue - 0 -
+message TestFieldMask
+  field value 1 1 11 .google.protobuf.FieldMask value - 0 -
+message TestStruct
+  field value 1 1 11 .google.protobuf.Struct value - 0 -
+  field repeated_value 2 3 11 .google.protobuf.Struct repeatedValue - 0 -
+message TestAny
+  field value 1 1 11 .google.protobuf.Any value - 0 -
+  field repeated_value 2 3 11 .google.protobuf.Any repeatedValue - 0 -
+message TestValue
+  field value 1 1 11 .google.protobuf.Value value - 0 -
+  field repeated_value 2 3 11 .google.protobuf.Value repeatedValue - 0 -
+message TestListValue
+  field value 1 1 11 .google.protobuf.ListValue value - 0 -
+  field repeated_value 2 3 11 .google.protobuf.ListValue repeatedValue - 0 -
+message TestBoolValue
+  field bool_value 1 1 8 - boolValue - 0 -
+  field bool_map 2 3 11 .proto3.TestBoolValue.BoolMapEntry boolMap - 0 -
+  message BoolMapEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+message TestNullValue
+  field null_value 20 1 14 .google.protobuf.NullValue nullValue - 0 -
+  field repeated_null_value 21 3 14 .google.protobuf.NullValue repeatedNullValue - 0 -
+message TestCustomJsonName
+  field value 1 1 5 - @value - 0 -
+message TestEvilJson
+  field regular_value 1 1 5 - regular_name - 0 -
+  field script 2 1 5 - </script> - 0 -
+  field quotes 3 1 5 - unbalanced"quotes - 0 -
+  field script_and_quotes 4 1 5 - "<script>alert('hello!);</script> - 0 -
+  field empty_string 5 1 5 -  - 0 -
+  field backslash 6 1 5 - \ - 0 -
+  field low_codepoint 7 1 5 -  - 0 -
+message TestExtensions
+  field extensions 1 1 11 .proto2_unittest.TestAllExtensions extensions - 0 -
+message TestEnumValue
+  field enum_value1 1 1 14 .proto3.EnumType enumValue1 - 0 -
+  field enum_value2 2 1 14 .proto3.EnumType enumValue2 - 0 -
+  field enum_value3 3 1 14 .proto3.EnumType enumValue3 - 0 -
+message MapsTestCases
+  field empty_map 1 1 11 .proto3.EmptyMap emptyMap - 0 -
+  field string_to_int 2 1 11 .proto3.StringtoInt stringToInt - 0 -
+  field int_to_string 3 1 11 .proto3.IntToString intToString - 0 -
+  field mixed1 4 1 11 .proto3.Mixed1 mixed1 - 0 -
+  field mixed2 5 1 11 .proto3.Mixed2 mixed2 - 0 -
+  field map_of_objects 6 1 11 .proto3.MapOfObjects mapOfObjects - 0 -
+  field empty_key_string_to_int1 7 1 11 .proto3.StringtoInt emptyKeyStringToInt1 - 0 -
+  field empty_key_string_to_int2 8 1 11 .proto3.StringtoInt emptyKeyStringToInt2 - 0 -
+  field empty_key_string_to_int3 9 1 11 .proto3.StringtoInt emptyKeyStringToInt3 - 0 -
+  field empty_key_bool_to_string 10 1 11 .proto3.BoolToString emptyKeyBoolToString - 0 -
+  field empty_key_int_to_string 11 1 11 .proto3.IntToString emptyKeyIntToString - 0 -
+  field empty_key_mixed 12 1 11 .proto3.Mixed1 emptyKeyMixed - 0 -
+  field empty_key_map_objects 13 1 11 .proto3.MapOfObjects emptyKeyMapObjects - 0 -
+message EmptyMap
+  field map 1 3 11 .proto3.EmptyMap.MapEntry map - 0 -
+  message MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+message StringtoInt
+  field map 1 3 11 .proto3.StringtoInt.MapEntry map - 0 -
+  message MapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+message IntToString
+  field map 1 3 11 .proto3.IntToString.MapEntry map - 0 -
+  message MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message BoolToString
+  field map 1 3 11 .proto3.BoolToString.MapEntry map - 0 -
+  message MapEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message Mixed1
+  field msg 1 1 9 - msg - 0 -
+  field map 2 3 11 .proto3.Mixed1.MapEntry map - 0 -
+  message MapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 2 - value - 0 -
+    map_entry
+message Mixed2
+  field map 1 3 11 .proto3.Mixed2.MapEntry map - 0 -
+  field ee 2 1 14 .proto3.Mixed2.E ee - 0 -
+  message MapEntry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 8 - value - 0 -
+    map_entry
+  enum E
+    value E0 0
+    value E1 1
+    value E2 2
+    value E3 3
+message MapOfObjects
+  field map 1 3 11 .proto3.MapOfObjects.MapEntry map - 0 -
+  message M
+    field inner_text 1 1 9 - innerText - 0 -
+  message MapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .proto3.MapOfObjects.M value - 0 -
+    map_entry
+message MapOfEnums
+  field map 1 3 11 .proto3.MapOfEnums.MapEntry map - 0 -
+  message MapEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 14 .proto3.EnumType value - 0 -
+    map_entry
+message MapIn
+  field other 1 1 9 - other - 0 -
+  field things 2 3 9 - things - 0 -
+  field map_input 3 3 11 .proto3.MapIn.MapInputEntry mapInput - 0 -
+  field map_any 4 3 11 .proto3.MapIn.MapAnyEntry mapAny - 0 -
+  message MapInputEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MapAnyEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .google.protobuf.Any value - 0 -
+    map_entry
+message MapOut
+  field map1 1 3 11 .proto3.MapOut.Map1Entry map1 - 0 -
+  field map2 2 3 11 .proto3.MapOut.Map2Entry map2 - 0 -
+  field map3 3 3 11 .proto3.MapOut.Map3Entry map3 - 0 -
+  field map4 5 3 11 .proto3.MapOut.Map4Entry map4 - 0 -
+  field bar 4 1 9 - bar - 0 -
+  message Map1Entry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .proto3.MapM value - 0 -
+    map_entry
+  message Map2Entry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .proto3.MapOut value - 0 -
+    map_entry
+  message Map3Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message Map4Entry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+message MapOutWireFormat
+  field map1 1 3 11 .proto3.MapOutWireFormat.Map1Entry map1 - 0 -
+  field map2 2 3 11 .proto3.MapOutWireFormat.Map2Entry map2 - 0 -
+  field map3 3 3 11 .proto3.MapOutWireFormat.Map3Entry map3 - 0 -
+  field map4 5 3 11 .proto3.MapOutWireFormat.Map4Entry map4 - 0 -
+  field bar 4 1 9 - bar - 0 -
+  message Map1Entry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .proto3.MapM value - 0 -
+  message Map2Entry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .proto3.MapOut value - 0 -
+  message Map3Entry
+    field key 1 1 5 - key - 0 -
+    field value 2 1 9 - value - 0 -
+  message Map4Entry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 9 - value - 0 -
+message MapM
+  field foo 1 1 9 - foo - 0 -
+enum EnumType
+  value FOO 0
+  value BAR 1
+  value TLSv1_2 2

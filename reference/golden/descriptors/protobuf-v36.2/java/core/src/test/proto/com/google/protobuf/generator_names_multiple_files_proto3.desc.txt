@@ -1,0 +1,8 @@
+package google.protobuf
+syntax proto3
+message MultipleFilesProto3Message
+  field field 1 1 5 - field - 0 -
+enum MultipleFilesProto3Enum
+  value MULTIPLE_FILES_PROTO3_ENUM_UNKNOWN 0
+service MultipleFilesProto3Service
+  method Foo .google.protobuf.MultipleFilesProto3Message .google.protobuf.MultipleFilesProto3Message 0 0

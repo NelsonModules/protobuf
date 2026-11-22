@@ -1,0 +1,1477 @@
+id: 2147483647
+value: 930639.1512075728
+history: 960
+history: -1
+packed_history: 2147483647
+packed_history: 0
+Range {
+  low: nan
+}
+device: "3c3ab11x"
+counters {
+  key: "line\nbreak"
+  value: 2147483647
+}
+counters {
+  key: "x330c"
+  value: 811
+}
+parent {
+  id: 1
+  label: "a"
+  value: 1e+30
+  history: 2147483647
+  history: -2147483648
+  history: -1
+  packed_history: -1
+  packed_history: -1
+  Point {
+    at: 1
+    y: -inf
+  }
+  Manual {
+  }
+  counters {
+    key: "tab\tquote\""
+    value: 1
+  }
+  counters {
+    key: "🙂"
+    value: -1
+  }
+  raw: "\366\3435gv\323"
+  parent {
+    id: -699374504
+    value: -0.0
+    unit: UNIT_MBAR
+    history: -2147483648
+    history: -2147483648
+    history: 0
+    packed_history: 0
+    Range {
+      low: -inf
+      high: 1e+30
+    }
+    Point {
+      at: -642
+      y: -inf
+    }
+    counters {
+      key: ""
+      value: 0
+    }
+    counters {
+      key: "tab\tquote\""
+      value: 1
+    }
+    counters {
+      key: "日本"
+      value: 394
+    }
+    units: UNIT_MBAR
+    units: UNIT_CMH2O
+  }
+}
+===
+id: 0
+value: -2.25
+unit: UNIT_CMH2O
+history: 1
+history: 1
+history: -984
+packed_history: 2147483647
+packed_history: -2147483648
+packed_history: 0
+Point {
+  at: -830
+}
+Point {
+  at: 9223372036854775807
+  y: 0.0
+}
+device: "日本"
+counters {
+  key: "axazz1y1a"
+  value: 1
+}
+raw: "\314\210\353\2513\031"
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+units: UNIT_MBAR
+===
+id: 2147483647
+label: "0x11ay33ayzx22zax1"
+unit: UNIT_MBAR
+history: 517208480
+history: -1
+packed_history: -2147483648
+packed_history: 575
+Range {
+  low: nan
+}
+Point {
+  at: 1
+}
+Manual {
+}
+enabled: true
+parent {
+  id: 1
+  value: -2.25
+  packed_history: 2147483647
+  Point {
+    at: -7276858110116840996
+  }
+  device: "a_3a3b_b313by0"
+  counters {
+    key: "日本"
+    value: -2147483648
+  }
+  counters {
+    key: "🙂"
+    value: -1
+  }
+  units: UNIT_CMH2O
+  units: UNIT_CMH2O
+}
+===
+id: -2147483648
+unit: UNIT_MBAR
+history: 0
+history: 607
+history: 1
+packed_history: 1
+Point {
+  at: 9223372036854775807
+}
+Point {
+  at: -1
+}
+counters {
+  key: "2_y1a_c1"
+  value: 697
+}
+counters {
+  key: "_cz3ac3bzy_ax1bx"
+  value: 1
+}
+raw: "\306\325h\332\372"
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+parent {
+  id: 0
+  value: -0.0
+  packed_history: -1
+  packed_history: 1
+  packed_history: -1
+  Range {
+  }
+  Point {
+    at: -805
+  }
+  Point {
+    at: 315
+    y: -2.25
+  }
+  Point {
+    at: 1
+    y: 1e-30
+  }
+  Manual {
+    operator_name: "日本"
+  }
+  counters {
+    key: ""
+    value: 1971041866
+  }
+  counters {
+    key: "a"
+    value: -2147483648
+  }
+  raw: "L\262T\373\023=%\017s\322"
+  enabled: false
+  units: UNIT_MBAR
+  parent {
+    id: 474
+    label: ""
+    history: -935070909
+    packed_history: 0
+    packed_history: 2147483647
+    packed_history: -2147483648
+    Range {
+      high: -0.0
+    }
+    Point {
+      at: 1
+      y: 1.5
+    }
+    Point {
+      at: -9223372036854775808
+    }
+    Manual {
+    }
+    raw: ""
+    parent {
+      id: -1
+      history: -2147483648
+      history: 0
+      history: 2147483647
+      counters {
+        key: "y3y03zb_3az12"
+        value: -2147483648
+      }
+      counters {
+        key: "🙂"
+        value: 1
+      }
+      units: UNIT_CMH2O
+      units: UNIT_MBAR
+    }
+  }
+}
+===
+id: 2147483647
+label: "line\nbreak"
+value: inf
+unit: UNIT_CMH2O
+history: -1
+history: 1103422314
+history: -2023059260
+packed_history: 0
+packed_history: 0
+packed_history: -687
+Range {
+  high: inf
+}
+Point {
+  at: -1
+  y: 522556.97
+}
+Point {
+  at: -3242741459509023548
+  y: 1e-30
+}
+raw: "\340u\213"
+enabled: true
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+parent {
+  id: -114
+  label: "a"
+  value: 1e+30
+  unit: UNIT_CMH2O
+  history: -1
+  history: 1
+  Range {
+    low: 0.0
+  }
+  Point {
+    at: 0
+    y: -2.25
+  }
+  device: "line\nbreak"
+  units: UNIT_MBAR
+}
+===
+id: 1
+unit: UNIT_MBAR
+Range {
+  low: 1.5
+}
+counters {
+  key: "_21_2a"
+  value: -2147483648
+}
+counters {
+  key: "y1c_10c1_1y_"
+  value: 1
+}
+enabled: true
+units: UNIT_CMH2O
+parent {
+  id: 2147483647
+  unit: UNIT_MBAR
+  packed_history: 0
+  packed_history: -476
+  Range {
+  }
+  counters {
+    key: ""
+    value: 2147483647
+  }
+  counters {
+    key: "héllo"
+    value: -879
+  }
+  counters {
+    key: "tab\tquote\""
+    value: -957
+  }
+  units: UNIT_MBAR
+  units: UNIT_MBAR
+  parent {
+    id: -1
+    label: "2czazyyybcy1_31x3y0c"
+    value: 1e-30
+    history: -2147483648
+    history: -207
+    Point {
+      at: 9223372036854775807
+      y: -2.25
+    }
+    Point {
+      at: -2404326882608453506
+    }
+    device: "a"
+    counters {
+      key: "🙂"
+      value: 665634177
+    }
+    raw: "-\341\374"
+    enabled: true
+    units: UNIT_MBAR
+    units: UNIT_CMH2O
+    units: UNIT_MBAR
+  }
+}
+===
+id: 0
+value: 1.5
+unit: UNIT_CMH2O
+history: 0
+history: -2147483648
+packed_history: 1
+packed_history: -2147483648
+Point {
+  at: 9223372036854775807
+  y: nan
+}
+device: "1a1c0"
+counters {
+  key: "tab\tquote\""
+  value: -1
+}
+counters {
+  key: "yxbz0bc_yc31zc22"
+  value: -1
+}
+===
+id: -1
+label: "z21_012abxx_y0_aaz"
+history: 2147483647
+history: 1
+packed_history: -760
+packed_history: 379
+packed_history: -2147483648
+Range {
+  low: 942134.424374674
+}
+Point {
+  at: -633
+}
+Point {
+  at: 9223372036854775807
+  y: inf
+}
+Point {
+  at: 9223372036854775807
+  y: -inf
+}
+device: "tab\tquote\""
+counters {
+  key: "日本"
+  value: 1617149682
+}
+units: UNIT_CMH2O
+parent {
+  id: -995
+  history: 1
+  packed_history: 0
+  packed_history: 2147483647
+  packed_history: -1
+  Point {
+    at: -1
+    y: 1.5
+  }
+  Point {
+    at: -1
+    y: 1e+30
+  }
+  device: "222z00ab0z"
+  counters {
+    key: "ca2b221az00b30"
+    value: 0
+  }
+  enabled: false
+  parent {
+    id: -2147483648
+    label: "_x__xxbcxz2_c_2z32"
+    history: 1503117085
+    packed_history: 553
+    packed_history: 1000
+    packed_history: -2147483648
+    Range {
+    }
+    Point {
+      at: -9223372036854775808
+      y: -0.0
+    }
+    Point {
+      at: 907
+    }
+    counters {
+      key: ""
+      value: -1
+    }
+    counters {
+      key: "héllo"
+      value: 159
+    }
+    counters {
+      key: "line\nbreak"
+      value: 1
+    }
+    raw: "|M\307[Z"
+  }
+}
+===
+id: -2147483648
+label: "héllo"
+value: -669218.4830575882
+packed_history: -257987725
+Range {
+  high: -inf
+}
+Point {
+  at: 1
+}
+counters {
+  key: "22a1"
+  value: -2147483648
+}
+raw: "\214\003T\217\367"
+enabled: true
+units: UNIT_MBAR
+units: UNIT_MBAR
+===
+id: -2147483648
+label: "tab\tquote\""
+unit: UNIT_CMH2O
+history: -444
+Range {
+  high: -inf
+}
+counters {
+  key: "a"
+  value: -1
+}
+counters {
+  key: "b3_a30c"
+  value: -2147483648
+}
+counters {
+  key: "tab\tquote\""
+  value: 1
+}
+units: UNIT_MBAR
+parent {
+  id: 51
+  label: "cbxzy0_3c3zxb_xaaz"
+  value: -inf
+  unit: UNIT_MBAR
+  history: 1727579851
+  history: 771
+  history: 1
+  Range {
+    low: nan
+  }
+  Point {
+    at: -300
+  }
+  Manual {
+  }
+  counters {
+    key: "y0y"
+    value: -1
+  }
+  enabled: false
+  units: UNIT_CMH2O
+  parent {
+    id: 2147483647
+    history: 1
+    Range {
+      high: -0.0
+    }
+    Point {
+      at: 9223372036854775807
+    }
+    Point {
+      at: 2305827790967563036
+    }
+    counters {
+      key: "a"
+      value: 1
+    }
+    counters {
+      key: "héllo"
+      value: 1
+    }
+    raw: "\204]\275I\352V"
+    enabled: true
+    units: UNIT_CMH2O
+    parent {
+      id: 978
+      label: "line\nbreak"
+      unit: UNIT_MBAR
+      packed_history: 2147483647
+      packed_history: 1
+      raw: "\260\036\241\254\262]\246\331\320"
+      enabled: true
+    }
+  }
+}
+===
+id: -559
+label: "héllo"
+value: inf
+unit: UNIT_CMH2O
+history: 56
+history: 1
+history: -2147483648
+packed_history: 556334174
+packed_history: 0
+packed_history: 0
+Range {
+}
+Point {
+  at: 0
+  y: 1.5
+}
+Point {
+  at: 0
+}
+counters {
+  key: "02_1__"
+  value: 1
+}
+raw: "\211\027\035\261W1)_\372"
+enabled: false
+parent {
+  id: 1
+  value: 104837.21196877281
+  history: -2147483648
+  history: 2147483647
+  history: 1
+  packed_history: -444
+  packed_history: 0
+  Range {
+    low: -0.0
+  }
+  Point {
+    at: -9223372036854775808
+    y: 589655.4
+  }
+  device: "a1xz2ab2cx_"
+  counters {
+    key: "héllo"
+    value: -1
+  }
+}
+===
+id: 589
+value: -2.25
+history: 0
+history: 161
+packed_history: 1
+packed_history: 2147483647
+Range {
+  low: 1e+30
+}
+Point {
+  at: -9223372036854775808
+}
+Manual {
+  operator_name: ""
+}
+raw: "\3007\236iW=\007\272S."
+enabled: false
+units: UNIT_MBAR
+units: UNIT_MBAR
+===
+id: -1
+label: "héllo"
+value: 1e-30
+history: 0
+Range {
+  low: -2.25
+  high: -inf
+}
+device: "0by__002c"
+counters {
+  key: "0a2"
+  value: -68
+}
+counters {
+  key: "a"
+  value: 0
+}
+raw: "\270\313$>|\355\272a\036"
+units: UNIT_MBAR
+units: UNIT_MBAR
+units: UNIT_CMH2O
+parent {
+  id: 1
+  unit: UNIT_CMH2O
+  Point {
+    at: 1
+  }
+  Point {
+    at: 1
+  }
+  Point {
+    at: -9223372036854775808
+    y: 1.5
+  }
+  counters {
+    key: "tab\tquote\""
+    value: 1
+  }
+  counters {
+    key: "yzxbz1_yc00yacc"
+    value: -623
+  }
+  raw: "\323\t"
+  enabled: true
+  units: UNIT_CMH2O
+  units: UNIT_MBAR
+  units: UNIT_MBAR
+  parent {
+    id: 55
+    value: -0.0
+    unit: UNIT_CMH2O
+    history: -1
+    history: -121639048
+    Range {
+      low: -2.25
+      high: 1e+30
+    }
+    Point {
+      at: 0
+    }
+    device: "🙂"
+    counters {
+      key: "a"
+      value: 821858953
+    }
+    counters {
+      key: "tab\tquote\""
+      value: 0
+    }
+  }
+}
+===
+id: -1
+value: -0.0
+history: -1
+history: 0
+history: 485
+packed_history: -1
+packed_history: 19831308
+packed_history: 0
+Range {
+  high: 582688.2068863271
+}
+counters {
+  key: "a"
+  value: 0
+}
+counters {
+  key: "yxz_3yzya_czy"
+  value: -2147483648
+}
+raw: ")h\001I"
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+parent {
+  id: -1
+  unit: UNIT_MBAR
+  history: -1
+  packed_history: 727
+  packed_history: 2147483647
+  Point {
+    at: 0
+    y: 246757.31
+  }
+  Point {
+    at: -1
+  }
+  Point {
+    at: 9223372036854775807
+    y: nan
+  }
+  counters {
+    key: "a"
+    value: -210128330
+  }
+  counters {
+    key: "日本"
+    value: -1
+  }
+  counters {
+    key: "🙂"
+    value: 0
+  }
+  raw: "\206\363\351Z#\367\347\354"
+  units: UNIT_MBAR
+}
+===
+id: 1
+label: "zcyc_bya30"
+value: -2.25
+packed_history: 1
+packed_history: 1
+packed_history: 0
+Point {
+  at: 9223372036854775807
+}
+counters {
+  key: ""
+  value: 743910255
+}
+counters {
+  key: "line\nbreak"
+  value: 1
+}
+counters {
+  key: "日本"
+  value: -1
+}
+raw: "\330\2128\316e"
+units: UNIT_MBAR
+units: UNIT_CMH2O
+parent {
+  id: 1
+  label: "line\nbreak"
+  history: 2147483647
+  packed_history: 0
+  packed_history: -2147483648
+  Range {
+    low: 1.5
+  }
+  Point {
+    at: 960
+    y: nan
+  }
+  Manual {
+  }
+  counters {
+    key: "3y3_yybz1zzzac"
+    value: 1524172885
+  }
+  counters {
+    key: "_a_"
+    value: -1
+  }
+  raw: "+\036"
+  enabled: true
+  parent {
+    id: 0
+    value: 1e-30
+    unit: UNIT_MBAR
+    packed_history: -2147483648
+    packed_history: 0
+    Point {
+      at: -9223372036854775808
+      y: 1.5
+    }
+    Manual {
+      operator_name: "🙂"
+    }
+    counters {
+      key: "héllo"
+      value: 1
+    }
+    units: UNIT_MBAR
+    units: UNIT_MBAR
+  }
+}
+===
+id: 1
+unit: UNIT_CMH2O
+packed_history: 2147483647
+packed_history: 0
+packed_history: 0
+Point {
+  at: 0
+  y: 0.0
+}
+Point {
+  at: 8270714218647755548
+}
+Manual {
+  operator_name: "1_32ac2czx2a3012"
+}
+counters {
+  key: ""
+  value: 2147483647
+}
+counters {
+  key: "日本"
+  value: 2147483647
+}
+enabled: false
+units: UNIT_MBAR
+units: UNIT_MBAR
+units: UNIT_MBAR
+parent {
+  id: -2147483648
+  unit: UNIT_CMH2O
+  history: -1
+  history: -1
+  Range {
+  }
+  Point {
+    at: 3287015681734408641
+  }
+  device: "a"
+  counters {
+    key: ""
+    value: -712
+  }
+  counters {
+    key: "3cxx_ba21_"
+    value: -852
+  }
+  units: UNIT_CMH2O
+  units: UNIT_CMH2O
+  parent {
+    id: -616
+    label: ""
+    packed_history: -1
+    packed_history: 1
+    packed_history: 520909053
+    Point {
+      at: 1
+      y: -inf
+    }
+    Point {
+      at: 409
+      y: nan
+    }
+    counters {
+      key: ""
+      value: -875
+    }
+    counters {
+      key: "3xx302"
+      value: -1
+    }
+    enabled: true
+    units: UNIT_MBAR
+    units: UNIT_CMH2O
+  }
+}
+===
+id: -1657519308
+unit: UNIT_CMH2O
+history: -1
+history: -2147483648
+packed_history: 79185601
+packed_history: 0
+Range {
+  high: 1e-30
+}
+Point {
+  at: 1
+  y: 0.0
+}
+device: "日本"
+counters {
+  key: "0zx3ya223y"
+  value: -2147483648
+}
+counters {
+  key: "line\nbreak"
+  value: -1
+}
+raw: "\'\022U\200\200Lj\241T"
+enabled: true
+units: UNIT_CMH2O
+parent {
+  id: 2147483647
+  label: "日本"
+  packed_history: -455114027
+  packed_history: 0
+  Range {
+    high: 1e+30
+  }
+  Point {
+    at: -262
+  }
+  Manual {
+    operator_name: "1b0bcx21"
+  }
+  counters {
+    key: "tab\tquote\""
+    value: -2147483648
+  }
+  counters {
+    key: "🙂"
+    value: 1
+  }
+  raw: "\253\215n\217R\277\'"
+  enabled: false
+  units: UNIT_CMH2O
+  units: UNIT_MBAR
+  units: UNIT_CMH2O
+  parent {
+    id: 2147483647
+    value: -0.0
+    history: -2147483648
+    packed_history: 1
+    device: "héllo"
+    raw: "\370\013\"\351$\216\335\021F"
+    enabled: true
+    units: UNIT_MBAR
+    units: UNIT_CMH2O
+  }
+}
+===
+id: 1
+label: "héllo"
+value: inf
+history: 0
+history: 2088474744
+packed_history: -2147483648
+Range {
+}
+Point {
+  at: -136
+  y: 776772.8
+}
+Point {
+  at: 0
+  y: nan
+}
+Point {
+  at: 9223372036854775807
+  y: nan
+}
+Manual {
+  operator_name: "tab\tquote\""
+}
+counters {
+  key: "zx2a1x0_1z2y"
+  value: 0
+}
+counters {
+  key: "🙂"
+  value: 1
+}
+raw: "5<\336\030\227\237\216\256\256"
+enabled: true
+parent {
+  id: -1273433070
+  label: "tab\tquote\""
+  value: -2.25
+  unit: UNIT_MBAR
+  packed_history: -1
+  packed_history: 940
+  Range {
+    low: inf
+  }
+  Point {
+    at: 1615922004828014898
+    y: -2.25
+  }
+  device: "日本"
+  counters {
+    key: "héllo"
+    value: 0
+  }
+  counters {
+    key: "line\nbreak"
+    value: -1
+  }
+  counters {
+    key: "日本"
+    value: 0
+  }
+  raw: ""
+  units: UNIT_MBAR
+  units: UNIT_MBAR
+  units: UNIT_CMH2O
+  parent {
+    id: -1
+    label: "🙂"
+    unit: UNIT_CMH2O
+    history: -2147483648
+    history: -2147483648
+    history: 999526542
+    packed_history: 2147483647
+    Range {
+      high: nan
+    }
+    counters {
+      key: "日本"
+      value: 1
+    }
+    counters {
+      key: "🙂"
+      value: 2147483647
+    }
+    units: UNIT_CMH2O
+    units: UNIT_CMH2O
+    units: UNIT_MBAR
+  }
+}
+===
+id: -1
+label: "日本"
+history: -2147483648
+history: 2104506479
+packed_history: 0
+packed_history: 2147483647
+packed_history: -2147483648
+Point {
+  at: -9223372036854775808
+  y: -2.25
+}
+Point {
+  at: 0
+}
+Point {
+  at: 1
+  y: -282692.62
+}
+raw: "\350Lv\256\330\rW\325\327\327"
+enabled: false
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+===
+id: -1
+label: ""
+unit: UNIT_MBAR
+history: 1
+packed_history: 546
+packed_history: -1727074740
+packed_history: -31
+Point {
+  at: 0
+  y: -2.25
+}
+Manual {
+}
+counters {
+  key: "1_1x3c2axb"
+  value: 2147483647
+}
+counters {
+  key: "_0"
+  value: -2147483648
+}
+units: UNIT_MBAR
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+parent {
+  id: -2147483648
+  label: "0xax_0zzc203bz00y3"
+  value: -342035.3890486676
+  unit: UNIT_CMH2O
+  history: 2147483647
+  packed_history: -2147483648
+  Point {
+    at: -9223372036854775808
+  }
+  Point {
+    at: 1
+  }
+  device: ""
+  counters {
+    key: "13cczy3bzcx0_3z_zzcz"
+    value: -295485243
+  }
+  counters {
+    key: "b212"
+    value: -227
+  }
+  units: UNIT_CMH2O
+  units: UNIT_CMH2O
+  units: UNIT_CMH2O
+  parent {
+    id: -1638787538
+    unit: UNIT_MBAR
+    history: -1
+    packed_history: -2147483648
+    packed_history: 0
+    Range {
+      low: -0.0
+    }
+    Point {
+      at: 1
+    }
+    Manual {
+      operator_name: "a"
+    }
+    counters {
+      key: ""
+      value: -902
+    }
+    counters {
+      key: "_bx3_yb32_00b01cay"
+      value: -1
+    }
+    counters {
+      key: "日本"
+      value: 353
+    }
+    raw: "i<h"
+    enabled: true
+    units: UNIT_MBAR
+    units: UNIT_CMH2O
+    units: UNIT_CMH2O
+    parent {
+      id: 15
+      value: 1e+30
+      unit: UNIT_MBAR
+      history: 208
+      packed_history: -1
+      packed_history: 1943765191
+      device: "🙂"
+      counters {
+        key: "héllo"
+        value: 2147483647
+      }
+      counters {
+        key: "line\nbreak"
+        value: 0
+      }
+      enabled: false
+      units: UNIT_MBAR
+      units: UNIT_CMH2O
+      units: UNIT_CMH2O
+    }
+  }
+}
+===
+id: -1
+label: ""
+unit: UNIT_CMH2O
+history: 2147483647
+packed_history: -276
+packed_history: -2147483648
+Range {
+  low: -inf
+  high: 1e-30
+}
+Point {
+  at: 0
+  y: 749101.9
+}
+raw: "\355Q"
+enabled: true
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+units: UNIT_MBAR
+parent {
+  id: -1919373792
+  label: ""
+  unit: UNIT_MBAR
+  history: -533
+  history: 519
+  packed_history: 0
+  packed_history: 2147483647
+  packed_history: -2147483648
+  Point {
+    at: -1
+  }
+  Point {
+    at: -775
+    y: -2.25
+  }
+  Manual {
+    operator_name: "🙂"
+  }
+  counters {
+    key: "b1yyy00x333x__0x1b"
+    value: -1
+  }
+  counters {
+    key: "日本"
+    value: 0
+  }
+  units: UNIT_MBAR
+  units: UNIT_CMH2O
+}
+===
+id: 1
+label: "b_0zbb20c1"
+value: 0.0
+unit: UNIT_MBAR
+history: -2147483648
+history: -20
+packed_history: -2147483648
+packed_history: -2147483648
+packed_history: 0
+Point {
+  at: 1
+}
+Manual {
+}
+counters {
+  key: "a"
+  value: -2147483648
+}
+raw: "\023\313\242\355|\234\355"
+enabled: false
+parent {
+  id: 347
+  label: "0"
+  history: -1
+  history: -1
+  packed_history: -1
+  Range {
+    low: 1.5
+    high: -0.0
+  }
+  counters {
+    key: "tab\tquote\""
+    value: 1
+  }
+  counters {
+    key: "日本"
+    value: 656402251
+  }
+  units: UNIT_CMH2O
+  units: UNIT_CMH2O
+  units: UNIT_CMH2O
+  parent {
+    id: 0
+    label: ""
+    value: 0.0
+    unit: UNIT_CMH2O
+    history: -986
+    history: 1
+    history: 124872671
+    packed_history: -700
+    packed_history: -242576283
+    packed_history: -1
+    Point {
+      at: -9223372036854775808
+    }
+    device: "a"
+    counters {
+      key: ""
+      value: -1
+    }
+    counters {
+      key: "12bab20"
+      value: -339
+    }
+    raw: "\262\371\225"
+    enabled: true
+    units: UNIT_CMH2O
+    units: UNIT_MBAR
+    units: UNIT_CMH2O
+    parent {
+      id: 0
+      label: "a"
+      value: 1.5
+      history: -1
+      packed_history: 2147483647
+      packed_history: -2042952745
+      packed_history: -2147483648
+      device: ""
+      units: UNIT_CMH2O
+      units: UNIT_MBAR
+      units: UNIT_MBAR
+    }
+  }
+}
+===
+id: 311
+value: 1.5
+history: -99445026
+history: 1
+packed_history: 1
+packed_history: -1129004564
+packed_history: 0
+Range {
+  low: inf
+  high: -0.0
+}
+Point {
+  at: 1
+}
+Point {
+  at: -2258816497250649469
+}
+Manual {
+}
+parent {
+  id: 1447978876
+  label: "héllo"
+  value: -inf
+  unit: UNIT_MBAR
+  packed_history: 1
+  packed_history: -607067497
+  packed_history: -902
+  Point {
+    at: 446
+  }
+  Point {
+    at: -9223372036854775808
+    y: nan
+  }
+  Point {
+    at: 0
+  }
+  Manual {
+    operator_name: "héllo"
+  }
+  counters {
+    key: "tab\tquote\""
+    value: 1
+  }
+  raw: "\332\2135i\255\225"
+  enabled: true
+  parent {
+    id: -274
+    unit: UNIT_CMH2O
+    history: 133727774
+    history: -827396283
+    packed_history: 1
+    packed_history: 0
+    packed_history: -981958381
+    Point {
+      at: -9223372036854775808
+    }
+    Point {
+      at: 9223372036854775807
+    }
+    Point {
+      at: 9223372036854775807
+    }
+    counters {
+      key: "🙂"
+      value: -754
+    }
+    units: UNIT_CMH2O
+    units: UNIT_CMH2O
+    parent {
+      id: -1
+      value: -inf
+      history: -2147483648
+      history: 1
+      history: 1
+      packed_history: -1
+      packed_history: 0
+      enabled: true
+      units: UNIT_CMH2O
+      units: UNIT_CMH2O
+      units: UNIT_MBAR
+    }
+  }
+}
+===
+id: -2147483648
+label: "0z02b2b_0"
+history: -1
+packed_history: 2147483647
+Manual {
+}
+units: UNIT_CMH2O
+units: UNIT_CMH2O
+units: UNIT_MBAR
+parent {
+  id: -1
+  label: "a"
+  history: -2147483648
+  history: -183
+  history: -1
+  packed_history: -2147483648
+  packed_history: 2147483647
+  packed_history: -1
+  Range {
+    low: nan
+    high: 1.5
+  }
+  Point {
+    at: -417
+  }
+  device: "22cc3a0cy1yyz2_02c0"
+  enabled: false
+  units: UNIT_CMH2O
+  units: UNIT_CMH2O
+  units: UNIT_CMH2O
+  parent {
+    id: -1402981477
+    label: "héllo"
+    value: -inf
+    unit: UNIT_CMH2O
+    packed_history: 2147483647
+    Range {
+      low: 1.5
+      high: -2.25
+    }
+    Point {
+      at: -9223372036854775808
+    }
+    Point {
+      at: -9223372036854775808
+    }
+    Manual {
+    }
+    raw: ""
+    enabled: true
+    units: UNIT_CMH2O
+    units: UNIT_MBAR
+    parent {
+      id: 1
+      label: "line\nbreak"
+      value: 0.0
+      unit: UNIT_CMH2O
+      history: -1
+      history: -1
+      history: -2147483648
+      packed_history: -1
+      packed_history: 1031074381
+      device: "日本"
+      counters {
+        key: "20"
+        value: 1
+      }
+      counters {
+        key: "tab\tquote\""
+        value: 390
+      }
+      raw: "\265g\376[\017r\232\037"
+      units: UNIT_CMH2O
+      units: UNIT_CMH2O
+      units: UNIT_CMH2O
+    }
+  }
+}
+===
+id: 2147483647
+label: "🙂"
+value: inf
+unit: UNIT_CMH2O
+packed_history: -474
+packed_history: -710
+device: "héllo"
+counters {
+  key: "a"
+  value: 1
+}
+counters {
+  key: "c10bx2z2_"
+  value: -2147483648
+}
+counters {
+  key: "line\nbreak"
+  value: -2147483648
+}
+units: UNIT_CMH2O

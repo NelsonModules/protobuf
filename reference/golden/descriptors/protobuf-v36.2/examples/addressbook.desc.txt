@@ -1,0 +1,17 @@
+package tutorial
+syntax proto3
+message Person
+  field name 1 1 9 - name - 0 -
+  field id 2 1 5 - id - 0 -
+  field email 3 1 9 - email - 0 -
+  field phones 4 3 11 .tutorial.Person.PhoneNumber phones - 0 -
+  field last_updated 5 1 11 .google.protobuf.Timestamp lastUpdated - 0 -
+  message PhoneNumber
+    field number 1 1 9 - number - 0 -
+    field type 2 1 14 .tutorial.Person.PhoneType type - 0 -
+  enum PhoneType
+    value MOBILE 0
+    value HOME 1
+    value WORK 2
+message AddressBook
+  field people 1 3 11 .tutorial.Person people - 0 -

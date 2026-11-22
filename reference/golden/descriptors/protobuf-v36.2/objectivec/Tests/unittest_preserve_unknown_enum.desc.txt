@@ -1,0 +1,27 @@
+package objc.protobuf.tests.proto3_preserve_unknown_enum
+syntax proto3
+message MyMessage
+  field e 1 1 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnum e - 0 -
+  field repeated_e 2 3 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnum repeatedE - 0 -
+  field repeated_packed_e 3 3 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnum repeatedPackedE - 0 true
+  field repeated_packed_unexpected_e 4 3 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnumPlusExtra repeatedPackedUnexpectedE - 0 -
+  field oneof_e_1 5 1 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnum oneofE1 0 0 -
+  field oneof_e_2 6 1 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnum oneofE2 0 0 -
+  oneof o
+message MyMessagePlusExtra
+  field e 1 1 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnumPlusExtra e - 0 -
+  field repeated_e 2 3 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnumPlusExtra repeatedE - 0 -
+  field repeated_packed_e 3 3 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnumPlusExtra repeatedPackedE - 0 true
+  field repeated_packed_unexpected_e 4 3 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnumPlusExtra repeatedPackedUnexpectedE - 0 true
+  field oneof_e_1 5 1 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnumPlusExtra oneofE1 0 0 -
+  field oneof_e_2 6 1 14 .objc.protobuf.tests.proto3_preserve_unknown_enum.MyEnumPlusExtra oneofE2 0 0 -
+  oneof o
+enum MyEnum
+  value FOO 0
+  value BAR 1
+  value BAZ 2
+enum MyEnumPlusExtra
+  value E_FOO 0
+  value E_BAR 1
+  value E_BAZ 2
+  value E_EXTRA 3

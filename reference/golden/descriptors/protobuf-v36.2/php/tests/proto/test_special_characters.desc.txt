@@ -1,0 +1,5 @@
+package foo
+syntax proto3
+message TestSpecialCharacters
+  field a 1 1 9 - a - 0 -
+  field b 2 1 9 - b - 0 -

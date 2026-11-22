@@ -1,0 +1,52 @@
+package proto2_unittest
+syntax editions
+edition 1002
+message TestRedactedNestMessage
+  field foo 1 1 9 - foo - 0 -
+    resolved 1 0 9 0 0 -
+message TestRepeatedRedactedNestMessage
+  field bar 1 1 9 - bar - 0 -
+    resolved 1 0 9 0 0 -
+message TestMessageEnum
+  field redactable_enum 1 3 14 .proto2_unittest.MetaAnnotatedEnum redactableEnum - 0 -
+    resolved 0 0 14 - 0 -
+message TestNestedMessageEnum
+  field direct_enum 1 3 14 .proto2_unittest.MetaAnnotatedEnum directEnum - 0 -
+    resolved 0 0 14 - 0 -
+  field nested_enum 2 1 11 .proto2_unittest.TestMessageEnum nestedEnum - 0 -
+    resolved 1 0 11 - 0 -
+  field redacted_string 3 1 9 - redactedString - 0 -
+    resolved 1 0 9 0 0 -
+message TestRedactedMessage
+  field text_field 1 1 9 - textField - 0 -
+    resolved 1 0 9 0 0 -
+  field meta_annotated 8 1 9 - metaAnnotated - 0 -
+    resolved 1 0 9 0 0 -
+  field repeated_meta_annotated 9 1 9 - repeatedMetaAnnotated - 0 -
+    resolved 1 0 9 0 0 -
+  field unredacted_repeated_annotations 10 1 9 - unredactedRepeatedAnnotations - 0 -
+    resolved 1 0 9 0 0 -
+  field unreported_non_meta_debug_redact_field 17 1 9 - unreportedNonMetaDebugRedactField - 0 -
+    resolved 1 0 9 0 0 -
+  field any_field 18 1 11 .google.protobuf.Any anyField - 0 -
+    resolved 1 0 11 - 0 -
+  field redactable_false 19 1 9 - redactableFalse - 0 -
+    resolved 1 0 9 0 0 -
+  field test_direct_message_enum 22 1 9 - testDirectMessageEnum - 0 -
+    resolved 1 0 9 0 0 -
+  field test_nested_message_enum 23 1 9 - testNestedMessageEnum - 0 -
+    resolved 1 0 9 0 0 -
+  field test_redacted_message_enum 24 1 9 - testRedactedMessageEnum - 0 -
+    resolved 1 0 9 0 0 -
+enum MetaAnnotatedEnum
+  value TEST_NULL 0
+  value TEST_REDACTABLE 1
+  value TEST_NO_REDACT 2
+  value TEST_NO_REDACT_AGAIN 3
+  value TEST_REDACTABLE_FALSE 4
+extension meta_annotated_enum 535801413 1 14 .proto2_unittest.MetaAnnotatedEnum .google.protobuf.FieldOptions metaAnnotatedEnum - 0 -
+  resolved 1 0 14 - 0 -
+extension repeated_meta_annotated_enum 535801414 3 14 .proto2_unittest.MetaAnnotatedEnum .google.protobuf.FieldOptions repeatedMetaAnnotatedEnum - 0 -
+  resolved 0 0 14 - 0 -
+extension test_nested_message_enum 535801415 1 11 .proto2_unittest.TestNestedMessageEnum .google.protobuf.FieldOptions testNestedMessageEnum - 0 -
+  resolved 1 0 11 - 0 -

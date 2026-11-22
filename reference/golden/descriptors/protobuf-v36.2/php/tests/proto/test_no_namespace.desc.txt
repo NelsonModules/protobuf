@@ -1,0 +1,13 @@
+package 
+syntax proto3
+message NoNamespaceMessage
+  field a 1 1 5 - a - 0 -
+  field nested_message 2 1 11 .NoNamespaceMessage.NestedMessage nestedMessage - 0 -
+  field nested_enum 3 1 14 .NoNamespaceMessage.NestedEnum nestedEnum - 0 -
+  message NestedMessage
+    field a 1 1 5 - a - 0 -
+  enum NestedEnum
+    value ZERO 0
+enum NoNamespaceEnum
+  value VALUE_A 0
+  value VALUE_B 1

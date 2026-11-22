@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.write</keyword>
+  <short_description>Encode records and write them to a file, a file identifier or a ZIP entry.</short_description>
+  <syntax>
+    <syntax_item>protobuf.write(schema, type, filename, value, 'Delimited', true, 'Append', tf, 'Progress', f)</syntax_item>
+    <syntax_item>protobuf.write(schema, type, fid, value, ...)</syntax_item>
+    <syntax_item>protobuf.write(schema, type, z, value, 'Entry', entryname, ...)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>a schema from protobuf.load and a message type.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>filename, fid, z</param_name>
+      <param_description>a data file name, an open file identifier written at its position, or a nelson.io.ZipArchive open for writing with 'Entry', name.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>value</param_name>
+      <param_description>the records to write, in any form accepted by protobuf.encode (struct, columns, table, timetable).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Append'</param_name>
+      <param_description>logical (default false), with a file name: add the records at the end of the file instead of replacing it.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Progress'</param_name>
+      <param_description>a function handle f(n, total) called after each 8 MiB block written (bytes written, bytes to write).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>other options</param_name>
+      <param_description>'Delimited', 'Layout', 'Presence', 'RowTimes', 'TimeUnit', 'Workers', as protobuf.encode.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output />
+  <description>
+    <p>protobuf.write encodes records and writes them in one step to a file, an open file identifier or an entry of a ZIP archive. It takes the same values and options as protobuf.encode, and avoids holding the whole encoded buffer when it is not needed.</p>
+    <p>'Append' adds records at the end of an existing delimited file. To write records as they arrive, over several calls while the target stays open, use protobuf.Writer.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Write a stream in two calls, appending the second</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+filename = [tempdir(), 'stream.bin'];
+protobuf.write(schema, 'SensorSample', filename, struct('timestamp_ms', {1, 2}), 'Delimited', true);
+protobuf.write(schema, 'SensorSample', filename, struct('timestamp_ms', 3), 'Delimited', true, 'Append', true);
+C = protobuf.read(schema, 'SensorSample', filename, 'Delimited', true, 'Layout', 'columns');
+C.timestamp_ms
+delete(filename);
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.encode">protobuf.encode</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.read">protobuf.read</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.Writer">protobuf.Writer</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

@@ -1,0 +1,23 @@
+package google.protobuf
+syntax proto3
+message Api
+  field name 1 1 9 - name - 0 -
+  field methods 2 3 11 .google.protobuf.Method methods - 0 -
+  field options 3 3 11 .google.protobuf.Option options - 0 -
+  field version 4 1 9 - version - 0 -
+  field source_context 5 1 11 .google.protobuf.SourceContext sourceContext - 0 -
+  field mixins 6 3 11 .google.protobuf.Mixin mixins - 0 -
+  field syntax 7 1 14 .google.protobuf.Syntax syntax - 0 -
+  field edition 8 1 9 - edition - 0 -
+message Method
+  field name 1 1 9 - name - 0 -
+  field request_type_url 2 1 9 - requestTypeUrl - 0 -
+  field request_streaming 3 1 8 - requestStreaming - 0 -
+  field response_type_url 4 1 9 - responseTypeUrl - 0 -
+  field response_streaming 5 1 8 - responseStreaming - 0 -
+  field options 6 3 11 .google.protobuf.Option options - 0 -
+  field syntax 7 1 14 .google.protobuf.Syntax syntax - 0 -
+  field edition 8 1 9 - edition - 0 -
+message Mixin
+  field name 1 1 9 - name - 0 -
+  field root 2 1 9 - root - 0 -

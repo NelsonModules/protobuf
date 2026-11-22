@@ -1,0 +1,310 @@
+package map_lite_test
+syntax editions
+edition 2023
+message TestMap
+  field int32_to_int32_field 1 3 11 .map_lite_test.TestMap.Int32ToInt32FieldEntry int32ToInt32Field - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_to_string_field 2 3 11 .map_lite_test.TestMap.Int32ToStringFieldEntry int32ToStringField - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_to_bytes_field 3 3 11 .map_lite_test.TestMap.Int32ToBytesFieldEntry int32ToBytesField - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_to_enum_field 4 3 11 .map_lite_test.TestMap.Int32ToEnumFieldEntry int32ToEnumField - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_to_message_field 5 3 11 .map_lite_test.TestMap.Int32ToMessageFieldEntry int32ToMessageField - 0 -
+    resolved 0 0 11 - 0 -
+  field string_to_int32_field 6 3 11 .map_lite_test.TestMap.StringToInt32FieldEntry stringToInt32Field - 0 -
+    resolved 0 0 11 - 0 -
+  field uint32_to_int32_field 7 3 11 .map_lite_test.TestMap.Uint32ToInt32FieldEntry uint32ToInt32Field - 0 -
+    resolved 0 0 11 - 0 -
+  field int64_to_int32_field 8 3 11 .map_lite_test.TestMap.Int64ToInt32FieldEntry int64ToInt32Field - 0 -
+    resolved 0 0 11 - 0 -
+  message MessageValue
+    field value 1 1 5 - value - 0 -
+      resolved 0 0 5 - 0 -
+  message Int32ToInt32FieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 0 0 5 - 0 -
+    map_entry
+  message Int32ToStringFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 0 0 9 1 0 -
+    map_entry
+  message Int32ToBytesFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 12 - value - 0 -
+      resolved 0 0 12 - 0 -
+    map_entry
+  message Int32ToEnumFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 14 .map_lite_test.TestMap.EnumValue value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message Int32ToMessageFieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 11 .map_lite_test.TestMap.MessageValue value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+  message StringToInt32FieldEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 0 0 5 - 0 -
+    map_entry
+  message Uint32ToInt32FieldEntry
+    field key 1 1 13 - key - 0 -
+      resolved 0 0 13 - 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 0 0 5 - 0 -
+    map_entry
+  message Int64ToInt32FieldEntry
+    field key 1 1 3 - key - 0 -
+      resolved 0 0 3 - 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 0 0 5 - 0 -
+    map_entry
+  enum EnumValue
+    value FOO 0
+    value BAR 1
+    value BAZ 2
+    value QUX 3
+message TestOnChangeEventPropagation
+  field optional_message 1 1 11 .map_lite_test.TestMap optionalMessage - 0 -
+    resolved 1 0 11 - 0 -
+message BizarroTestMap
+  field int32_to_int32_field 1 3 11 .map_lite_test.BizarroTestMap.Int32ToInt32FieldEntry int32ToInt32Field - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_to_string_field 2 3 11 .map_lite_test.BizarroTestMap.Int32ToStringFieldEntry int32ToStringField - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_to_bytes_field 3 3 11 .map_lite_test.BizarroTestMap.Int32ToBytesFieldEntry int32ToBytesField - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_to_enum_field 4 3 11 .map_lite_test.BizarroTestMap.Int32ToEnumFieldEntry int32ToEnumField - 0 -
+    resolved 0 0 11 - 0 -
+  field int32_to_message_field 5 3 11 .map_lite_test.BizarroTestMap.Int32ToMessageFieldEntry int32ToMessageField - 0 -
+    resolved 0 0 11 - 0 -
+  field string_to_int32_field 6 3 11 .map_lite_test.BizarroTestMap.StringToInt32FieldEntry stringToInt32Field - 0 -
+    resolved 0 0 11 - 0 -
+  message Int32ToInt32FieldEntry
+    field key 1 1 5 - key - 0 -
+      resolved 0 0 5 - 0 -
+    field value 2 1 12 - value - 0 -
+      resolved 0 0 12 - 0 -
+    map_entry
+  message Int32ToStringFieldEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 0 0 5 - 0 -
+    map_entry
+  message Int32ToBytesFieldEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 5 - value - 0 -
+      resolved 0 0 5 - 0 -
+    map_entry
+  message Int32ToEnumFieldEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 12 - value - 0 -
+      resolved 0 0 12 - 0 -
+    map_entry
+  message Int32ToMessageFieldEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 12 - value - 0 -
+      resolved 0 0 12 - 0 -
+    map_entry
+  message StringToInt32FieldEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 12 - value - 0 -
+      resolved 0 0 12 - 0 -
+    map_entry
+message ReservedAsMapField
+  field if 1 3 11 .map_lite_test.ReservedAsMapField.IfEntry if - 0 -
+    resolved 0 0 11 - 0 -
+  field const 2 3 11 .map_lite_test.ReservedAsMapField.ConstEntry const - 0 -
+    resolved 0 0 11 - 0 -
+  field private 3 3 11 .map_lite_test.ReservedAsMapField.PrivateEntry private - 0 -
+    resolved 0 0 11 - 0 -
+  field class 4 3 11 .map_lite_test.ReservedAsMapField.ClassEntry class - 0 -
+    resolved 0 0 11 - 0 -
+  field int 5 3 11 .map_lite_test.ReservedAsMapField.IntEntry int - 0 -
+    resolved 0 0 11 - 0 -
+  field void 6 3 11 .map_lite_test.ReservedAsMapField.VoidEntry void - 0 -
+    resolved 0 0 11 - 0 -
+  field string 7 3 11 .map_lite_test.ReservedAsMapField.StringEntry string - 0 -
+    resolved 0 0 11 - 0 -
+  field package 8 3 11 .map_lite_test.ReservedAsMapField.PackageEntry package - 0 -
+    resolved 0 0 11 - 0 -
+  field enum 9 3 11 .map_lite_test.ReservedAsMapField.EnumEntry enum - 0 -
+    resolved 0 0 11 - 0 -
+  field null 10 3 11 .map_lite_test.ReservedAsMapField.NullEntry null - 0 -
+    resolved 0 0 11 - 0 -
+  message IfEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message ConstEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message PrivateEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message ClassEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message IntEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message VoidEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message StringEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message PackageEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message EnumEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+  message NullEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 13 - value - 0 -
+      resolved 0 0 13 - 0 -
+    map_entry
+message ReservedAsMapFieldWithEnumValue
+  field if 1 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.IfEntry if - 0 -
+    resolved 0 0 11 - 0 -
+  field const 2 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.ConstEntry const - 0 -
+    resolved 0 0 11 - 0 -
+  field private 3 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.PrivateEntry private - 0 -
+    resolved 0 0 11 - 0 -
+  field class 4 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.ClassEntry class - 0 -
+    resolved 0 0 11 - 0 -
+  field int 5 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.IntEntry int - 0 -
+    resolved 0 0 11 - 0 -
+  field void 6 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.VoidEntry void - 0 -
+    resolved 0 0 11 - 0 -
+  field string 7 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.StringEntry string - 0 -
+    resolved 0 0 11 - 0 -
+  field package 8 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.PackageEntry package - 0 -
+    resolved 0 0 11 - 0 -
+  field enum 9 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.EnumEntry enum - 0 -
+    resolved 0 0 11 - 0 -
+  field null 10 3 11 .map_lite_test.ReservedAsMapFieldWithEnumValue.NullEntry null - 0 -
+    resolved 0 0 11 - 0 -
+  message IfEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message ConstEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message PrivateEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message ClassEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message IntEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message VoidEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message StringEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message PackageEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message EnumEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  message NullEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 14 .map_lite_test.ReservedAsMapFieldWithEnumValue.SampleEnum value - 0 -
+      resolved 0 0 14 - 0 -
+    map_entry
+  enum SampleEnum
+    value A 0
+    value B 1
+message MapContainer
+  field my_map 1 3 11 .map_lite_test.MapContainer.MyMapEntry myMap - 0 -
+    resolved 0 0 11 - 0 -
+  field m 3 3 11 .map_lite_test.MapContainer.MEntry m - 0 -
+    resolved 0 0 11 - 0 -
+  message MyMapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 0 0 9 1 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 0 0 9 1 0 -
+    map_entry
+  message MEntry
+    field key 1 1 13 - key - 0 -
+      resolved 0 0 13 - 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 0 0 9 1 0 -
+    map_entry

@@ -1,0 +1,65 @@
+package nelson.test.editions
+syntax editions
+edition 2023
+message Point
+  field x 1 1 5 - x - 0 -
+    resolved 1 0 5 - 0 -
+  field y 2 1 5 - y - 0 -
+    resolved 1 0 5 - 0 -
+message Reading
+  field id 1 1 5 - id - 0 -
+    resolved 1 0 5 - 1 -
+  field value 2 1 1 - value - 0 -
+    resolved 1 0 1 - 0 default=1.5
+  field unit 3 1 9 - unit - 0 -
+    resolved 1 0 9 1 0 default=bar
+  field tag 4 1 12 - tag - 0 -
+    resolved 1 0 12 - 0 default=\001x
+  field level 5 1 14 .nelson.test.editions.Level level - 0 -
+    resolved 1 0 14 - 0 -
+  field fallback 6 1 14 .nelson.test.editions.Level fallback - 0 -
+    resolved 1 0 14 - 0 default=LEVEL_HIGH
+  field history 7 3 14 .nelson.test.editions.Level history - 0 -
+    resolved 0 1 14 - 0 -
+  field history_expanded 8 3 14 .nelson.test.editions.Level historyExpanded - 0 -
+    resolved 0 0 14 - 0 -
+  field count 9 1 5 - count - 0 -
+    resolved 0 0 5 - 0 -
+  field at 10 1 11 .nelson.test.editions.Point at - 0 -
+    resolved 1 0 10 - 0 -
+  field track 11 3 11 .nelson.test.editions.Point track - 0 -
+    resolved 0 0 10 - 0 -
+  field raw_text 12 1 9 - rawText - 0 -
+    resolved 1 0 9 0 0 -
+  field mode 13 1 14 .nelson.test.editions.Mode mode - 0 -
+    resolved 1 0 14 - 0 -
+  field named 14 3 11 .nelson.test.editions.Reading.NamedEntry named - 0 -
+    resolved 0 0 11 - 0 -
+  field big 15 1 18 - big 0 0 -
+    resolved 1 0 18 - 0 -
+  field spot 16 1 11 .nelson.test.editions.Point spot 0 0 -
+    resolved 1 0 10 - 0 -
+  field ratio 17 1 2 - ratio - 0 -
+    resolved 1 0 2 - 0 default=-inf
+  field flag 18 1 8 - flag - 0 -
+    resolved 1 0 8 - 0 default=true
+  field total 19 1 4 - total - 0 -
+    resolved 1 0 4 - 0 default=18446744073709551615
+  field samples 26 3 17 - samples - 0 -
+    resolved 0 0 17 - 0 -
+  message NamedEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 1 0 -
+    field value 2 1 11 .nelson.test.editions.Point value - 0 -
+      resolved 1 0 11 - 0 -
+    map_entry
+  oneof choice
+  reserved_range 20 26
+  reserved_name old_name
+enum Level
+  closed
+  value LEVEL_LOW 1
+  value LEVEL_HIGH 5
+enum Mode
+  value MODE_UNSET 0
+  value MODE_AUTO 1

@@ -1,0 +1,15 @@
+package pb
+syntax proto2
+message JavaMutableFeatures
+  field nest_in_file_class 6 1 14 .pb.JavaMutableFeatures.NestInFileClassFeature.NestInFileClass nestInFileClass - 0 -
+    resolved 1 0 14 - 0 -
+  message NestInFileClassFeature
+    enum NestInFileClass
+      closed
+      value NEST_IN_FILE_CLASS_UNKNOWN 0
+      value NO 1
+      value YES 2
+      value LEGACY 3
+    reserved_range 1 536870912
+extension java_mutable 9989 1 11 .pb.JavaMutableFeatures .google.protobuf.FeatureSet javaMutable - 0 -
+  resolved 1 0 11 - 0 -

@@ -1,0 +1,146 @@
+package nelson.test.sensors
+syntax proto3
+message SensorSample
+  field timestamp_ms 1 1 3 - timestampMs - 0 -
+  field status 2 1 5 - status 0 1 -
+  field pressure 3 1 2 - pressure 1 1 -
+  field flow 4 1 2 - flow 2 1 -
+  field diagnostics 5 1 11 .nelson.test.sensors.SensorSample.Diagnostics diagnostics 3 1 -
+  message Diagnostics
+    field calibrated 1 1 8 - calibrated 0 1 -
+    field temperature 2 1 2 - temperature 1 1 -
+    field voltage 3 1 2 - voltage 2 1 -
+    field drift 4 1 1 - drift 3 1 -
+    oneof _calibrated
+    oneof _temperature
+    oneof _voltage
+    oneof _drift
+  oneof _status
+  oneof _pressure
+  oneof _flow
+  oneof _diagnostics
+message Summary
+  field begin_ms 1 1 3 - beginMs - 0 -
+  field end_ms 2 1 3 - endMs - 0 -
+  field pressure 3 1 11 .nelson.test.sensors.Summary.Quantiles pressure - 0 -
+  field flow 4 1 11 .nelson.test.sensors.Summary.Quantiles flow - 0 -
+  field quality 5 1 5 - quality 0 1 -
+  message Quantiles
+    field q05 1 1 2 - q05 0 1 -
+    field q50 2 1 2 - q50 1 1 -
+    field q95 3 1 2 - q95 2 1 -
+    oneof _q05
+    oneof _q50
+    oneof _q95
+  oneof _quality
+message Event
+  field started 1 1 11 .nelson.test.sensors.Event.Started started 0 0 -
+  field stopped 2 1 11 .nelson.test.sensors.Event.Stopped stopped 0 0 -
+  field step_completed 3 1 11 .nelson.test.sensors.Event.StepCompleted stepCompleted 0 0 -
+  message Started
+    field timestamp_ms 1 1 3 - timestampMs - 0 -
+    field mode 2 1 9 - mode - 0 -
+  message Stopped
+    field timestamp_ms 1 1 3 - timestampMs - 0 -
+    field mode 2 1 9 - mode - 0 -
+    field remaining_steps 3 1 5 - remainingSteps 0 1 -
+    oneof _remaining_steps
+  message Measurement
+    field name 1 1 9 - name - 0 -
+    field value 2 1 2 - value - 0 -
+  message StepCompleted
+    field timestamp_ms 1 1 3 - timestampMs - 0 -
+    field mode 2 1 9 - mode - 0 -
+    field measurements 3 3 11 .nelson.test.sensors.Event.Measurement measurements - 0 -
+  oneof kind
+message AllTypes
+  field f_double 1 1 1 - fDouble - 0 -
+  field f_float 2 1 2 - fFloat - 0 -
+  field f_int32 3 1 5 - fInt32 - 0 -
+  field f_int64 4 1 3 - fInt64 - 0 -
+  field f_uint32 5 1 13 - fUint32 - 0 -
+  field f_uint64 6 1 4 - fUint64 - 0 -
+  field f_sint32 7 1 17 - fSint32 - 0 -
+  field f_sint64 8 1 18 - fSint64 - 0 -
+  field f_fixed32 9 1 7 - fFixed32 - 0 -
+  field f_fixed64 10 1 6 - fFixed64 - 0 -
+  field f_sfixed32 11 1 15 - fSfixed32 - 0 -
+  field f_sfixed64 12 1 16 - fSfixed64 - 0 -
+  field f_bool 13 1 8 - fBool - 0 -
+  field f_string 14 1 9 - fString - 0 -
+  field f_bytes 15 1 12 - fBytes - 0 -
+  field f_enum 16 1 14 .nelson.test.sensors.AllTypes.Color fEnum - 0 -
+  field o_double 21 1 1 - oDouble 1 1 -
+  field o_float 22 1 2 - oFloat 2 1 -
+  field o_int64 24 1 3 - oInt64 3 1 -
+  field o_uint32 25 1 13 - oUint32 4 1 -
+  field o_sint64 28 1 18 - oSint64 5 1 -
+  field o_bool 33 1 8 - oBool 6 1 -
+  field o_string 34 1 9 - oString 7 1 -
+  field o_bytes 35 1 12 - oBytes 8 1 -
+  field o_enum 36 1 14 .nelson.test.sensors.AllTypes.Color oEnum 9 1 -
+  field r_double 41 3 1 - rDouble - 0 -
+  field r_float 42 3 2 - rFloat - 0 -
+  field r_int32 43 3 5 - rInt32 - 0 -
+  field r_int64 44 3 3 - rInt64 - 0 -
+  field r_uint32 45 3 13 - rUint32 - 0 -
+  field r_uint64 46 3 4 - rUint64 - 0 -
+  field r_sint32 47 3 17 - rSint32 - 0 -
+  field r_sint64 48 3 18 - rSint64 - 0 -
+  field r_fixed32 49 3 7 - rFixed32 - 0 -
+  field r_fixed64 50 3 6 - rFixed64 - 0 -
+  field r_sfixed32 51 3 15 - rSfixed32 - 0 -
+  field r_sfixed64 52 3 16 - rSfixed64 - 0 -
+  field r_bool 53 3 8 - rBool - 0 -
+  field r_string 54 3 9 - rString - 0 -
+  field r_bytes 55 3 12 - rBytes - 0 -
+  field r_enum 56 3 14 .nelson.test.sensors.AllTypes.Color rEnum - 0 -
+  field r_unpacked_int32 57 3 5 - rUnpackedInt32 - 0 false
+  field r_unpacked_double 58 3 1 - rUnpackedDouble - 0 false
+  field m_string_int32 61 3 11 .nelson.test.sensors.AllTypes.MStringInt32Entry mStringInt32 - 0 -
+  field m_int64_string 62 3 11 .nelson.test.sensors.AllTypes.MInt64StringEntry mInt64String - 0 -
+  field m_bool_double 63 3 11 .nelson.test.sensors.AllTypes.MBoolDoubleEntry mBoolDouble - 0 -
+  field m_string_sample 64 3 11 .nelson.test.sensors.AllTypes.MStringSampleEntry mStringSample - 0 -
+  field m_uint32_color 65 3 11 .nelson.test.sensors.AllTypes.MUint32ColorEntry mUint32Color - 0 -
+  field recursive 70 1 11 .nelson.test.sensors.AllTypes recursive - 0 -
+  field samples 71 3 11 .nelson.test.sensors.SensorSample samples - 0 -
+  field c_int32 81 1 5 - cInt32 0 0 -
+  field c_string 82 1 9 - cString 0 0 -
+  field c_sample 83 1 11 .nelson.test.sensors.SensorSample cSample 0 0 -
+  message MStringInt32Entry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 5 - value - 0 -
+    map_entry
+  message MInt64StringEntry
+    field key 1 1 3 - key - 0 -
+    field value 2 1 9 - value - 0 -
+    map_entry
+  message MBoolDoubleEntry
+    field key 1 1 8 - key - 0 -
+    field value 2 1 1 - value - 0 -
+    map_entry
+  message MStringSampleEntry
+    field key 1 1 9 - key - 0 -
+    field value 2 1 11 .nelson.test.sensors.SensorSample value - 0 -
+    map_entry
+  message MUint32ColorEntry
+    field key 1 1 13 - key - 0 -
+    field value 2 1 14 .nelson.test.sensors.AllTypes.Color value - 0 -
+    map_entry
+  enum Color
+    value COLOR_UNSPECIFIED 0
+    value RED 1
+    value GREEN 2
+    value BLUE -3
+  oneof choice
+  oneof _o_double
+  oneof _o_float
+  oneof _o_int64
+  oneof _o_uint32
+  oneof _o_sint64
+  oneof _o_bool
+  oneof _o_string
+  oneof _o_bytes
+  oneof _o_enum
+  reserved_range 90 96
+  reserved_name old_field

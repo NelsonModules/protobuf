@@ -1,0 +1,8 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message TestMessage3
+  message NestedMessage
+    enum OuterClassNameTest3
+      closed
+      value DUMMY_VALUE 1

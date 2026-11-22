@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <module_name>protobuf</module_name>
+  <chapter>protobuf</chapter>
+  <chapter_description>
+    <p>Protocol Buffers for Nelson: .proto files parsed at run time, fast native encoding and decoding.</p>
+  </chapter_description>
+</xmldoc>

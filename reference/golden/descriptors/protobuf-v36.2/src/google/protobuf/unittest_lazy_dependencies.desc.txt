@@ -1,0 +1,8 @@
+package proto2_unittest.lazy_imports
+syntax editions
+edition 1002
+message ImportedMessage
+  field lazy_message 1 1 11 .proto2_unittest.lazy_imports.LazyMessage lazyMessage - 0 -
+    resolved 1 0 11 - 0 -
+message MessageCustomOption
+message MessageCustomOption2

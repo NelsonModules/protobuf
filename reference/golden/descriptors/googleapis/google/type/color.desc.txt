@@ -1,0 +1,7 @@
+package google.type
+syntax proto3
+message Color
+  field red 1 1 2 - red - 0 -
+  field green 2 1 2 - green - 0 -
+  field blue 3 1 2 - blue - 0 -
+  field alpha 4 1 11 .google.protobuf.FloatValue alpha - 0 -

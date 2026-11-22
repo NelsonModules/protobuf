@@ -1,0 +1,28 @@
+package google.cloud.speech.v1
+syntax proto3
+message CustomClass
+  field name 1 1 9 - name - 0 -
+  field custom_class_id 2 1 9 - customClassId - 0 -
+  field items 3 3 11 .google.cloud.speech.v1.CustomClass.ClassItem items - 0 -
+  message ClassItem
+    field value 1 1 9 - value - 0 -
+message PhraseSet
+  field name 1 1 9 - name - 0 -
+  field phrases 2 3 11 .google.cloud.speech.v1.PhraseSet.Phrase phrases - 0 -
+  field boost 4 1 2 - boost - 0 -
+  message Phrase
+    field value 1 1 9 - value - 0 -
+    field boost 2 1 2 - boost - 0 -
+message SpeechAdaptation
+  field phrase_sets 1 3 11 .google.cloud.speech.v1.PhraseSet phraseSets - 0 -
+  field phrase_set_references 2 3 9 - phraseSetReferences - 0 -
+  field custom_classes 3 3 11 .google.cloud.speech.v1.CustomClass customClasses - 0 -
+  field abnf_grammar 4 1 11 .google.cloud.speech.v1.SpeechAdaptation.ABNFGrammar abnfGrammar - 0 -
+  message ABNFGrammar
+    field abnf_strings 1 3 9 - abnfStrings - 0 -
+message TranscriptNormalization
+  field entries 1 3 11 .google.cloud.speech.v1.TranscriptNormalization.Entry entries - 0 -
+  message Entry
+    field search 1 1 9 - search - 0 -
+    field replace 2 1 9 - replace - 0 -
+    field case_sensitive 3 1 8 - caseSensitive - 0 -

@@ -1,0 +1,228 @@
+begin_ms: -1
+end_ms: -9223372036854775808
+pressure {
+  q05: f:3fc00000
+  q50: f:c0100000
+}
+flow {
+  q05: f:3fc00000
+  q95: f:00000000
+}
+quality: 0
+---
+begin_ms: -10
+end_ms: 8465560357308172118
+pressure {
+  q50: f:ff800000
+  q95: f:ff800000
+}
+---
+begin_ms: 0
+end_ms: 1
+pressure {
+  q05: f:c0100000
+  q50: f:7f800000
+  q95: f:7f800000
+}
+flow {
+  q05: f:80000000
+  q50: f:80000000
+  q95: f:0da24260
+}
+quality: -1
+---
+begin_ms: 1
+end_ms: 0
+pressure {
+  q05: f:80000000
+}
+quality: -440383233
+---
+begin_ms: 1
+end_ms: 0
+pressure {
+  q05: f:ff800000
+}
+flow {
+}
+quality: 0
+---
+begin_ms: 0
+end_ms: 1
+pressure {
+  q50: f:3fc00000
+}
+flow {
+  q95: f:7f800000
+}
+quality: -1
+---
+begin_ms: 186341454574849164
+end_ms: 0
+pressure {
+  q95: f:0da24260
+}
+flow {
+  q05: f:49152e44
+  q95: f:7f800000
+}
+quality: -1
+---
+begin_ms: -8688973355689435118
+end_ms: 0
+flow {
+  q50: f:c7ddfe7e
+}
+quality: -6
+---
+begin_ms: -9223372036854775808
+end_ms: -663
+pressure {
+  q05: f:ff800000
+  q50: f:3fc00000
+  q95: f:80000000
+}
+flow {
+  q50: f:c0100000
+}
+quality: 1
+---
+begin_ms: 0
+end_ms: 9223372036854775807
+flow {
+  q50: f:7fc00000
+  q95: f:3fc00000
+}
+quality: -100293479
+---
+begin_ms: 0
+end_ms: 9223372036854775807
+pressure {
+  q50: f:00000000
+}
+flow {
+  q50: f:c0100000
+  q95: f:c93712d1
+}
+quality: 1
+---
+begin_ms: 0
+end_ms: -9223372036854775808
+quality: -2147483648
+---
+begin_ms: 0
+end_ms: -1
+pressure {
+  q05: f:7f800000
+  q95: f:3fc00000
+}
+flow {
+  q05: f:0da24260
+  q95: f:7f800000
+}
+---
+begin_ms: 0
+end_ms: -891
+pressure {
+  q05: f:7149f2ca
+  q50: f:80000000
+}
+flow {
+  q95: f:7fc00000
+}
+---
+begin_ms: 0
+end_ms: 1
+pressure {
+  q50: f:00000000
+}
+flow {
+  q05: f:3fc00000
+}
+---
+begin_ms: 0
+end_ms: 1
+pressure {
+  q05: f:00000000
+  q50: f:3fc00000
+}
+flow {
+  q05: f:3fc00000
+  q50: f:0da24260
+}
+quality: -2147483648
+---
+begin_ms: -378
+end_ms: 0
+pressure {
+  q05: f:7f800000
+  q50: f:7f800000
+  q95: f:3fc00000
+}
+quality: 1968393572
+---
+begin_ms: 9223372036854775807
+end_ms: 2858877024503837439
+pressure {
+}
+flow {
+  q05: f:7fc00000
+}
+quality: 2056634988
+---
+begin_ms: -327
+end_ms: 9223372036854775807
+pressure {
+}
+flow {
+  q05: f:c8866401
+  q50: f:7f800000
+  q95: f:00000000
+}
+---
+begin_ms: 995
+end_ms: 9223372036854775807
+pressure {
+  q05: f:00000000
+}
+flow {
+}
+---
+begin_ms: 0
+end_ms: 6638369283610589613
+pressure {
+  q50: f:ff800000
+  q95: f:0da24260
+}
+flow {
+  q05: f:00000000
+  q50: f:7f800000
+  q95: f:00000000
+}
+---
+begin_ms: 1230182433130116145
+end_ms: 0
+pressure {
+}
+quality: 84
+---
+begin_ms: 1
+end_ms: 0
+flow {
+  q50: f:c90462c2
+}
+---
+begin_ms: -277
+end_ms: -9223372036854775808
+flow {
+  q50: f:ff800000
+  q95: f:c8c1ab5d
+}
+---
+begin_ms: 1
+end_ms: -6578637993108936018
+pressure {
+  q50: f:c8c89af4
+  q95: f:7f800000
+}
+quality: 2147483647

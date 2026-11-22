@@ -1,0 +1,6 @@
+package protobuf_editions_test.edition2023.BadPackageName
+syntax editions
+edition 2023
+message BadFileMessage
+  field foo 1 1 9 - foo - 0 -
+    resolved 1 0 9 1 0 -

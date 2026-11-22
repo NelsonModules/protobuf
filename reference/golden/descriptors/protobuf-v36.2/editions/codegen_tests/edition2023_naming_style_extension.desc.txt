@@ -1,0 +1,7 @@
+package protobuf_editions_test.edition2023
+syntax editions
+edition 2023
+message BadExtensionMessage
+  extension_range 1 536870912
+extension BadExtensionName 1 1 9 - .protobuf_editions_test.edition2023.BadExtensionMessage BadExtensionName - 0 -
+  resolved 1 0 9 1 0 -

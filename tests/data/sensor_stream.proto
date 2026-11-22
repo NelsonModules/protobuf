@@ -1,0 +1,135 @@
+// Invented test schema: streams of sensor records and every proto3 scalar form.
+syntax = "proto3";
+
+package nelson.test.sensors;
+
+option java_package = "org.nelson.test.sensors";
+
+// One high-rate sample; most values have explicit presence.
+message SensorSample {
+  message Diagnostics {
+    optional bool calibrated = 1;
+    optional float temperature = 2;
+    optional float voltage = 3;
+    optional double drift = 4;
+  }
+  int64 timestamp_ms = 1;
+  optional int32 status = 2;
+  optional float pressure = 3;
+  optional float flow = 4;
+  optional Diagnostics diagnostics = 5;
+}
+
+// Aggregated values over a time window.
+message Summary {
+  message Quantiles {
+    optional float q05 = 1;
+    optional float q50 = 2;
+    optional float q95 = 3;
+  }
+  int64 begin_ms = 1;
+  int64 end_ms = 2;
+  Quantiles pressure = 3;
+  Quantiles flow = 4;
+  optional int32 quality = 5;
+}
+
+// Event log entry: exactly one kind per record.
+message Event {
+  message Started {
+    int64 timestamp_ms = 1;
+    string mode = 2;
+  }
+  message Stopped {
+    int64 timestamp_ms = 1;
+    string mode = 2;
+    optional int32 remaining_steps = 3;
+  }
+  message Measurement {
+    string name = 1;
+    float value = 2;
+  }
+  message StepCompleted {
+    int64 timestamp_ms = 1;
+    string mode = 2;
+    repeated Measurement measurements = 3;
+  }
+  oneof kind {
+    Started started = 1;
+    Stopped stopped = 2;
+    StepCompleted step_completed = 3;
+  }
+}
+
+// Every scalar type, enums, maps, packed and unpacked repeated fields.
+message AllTypes {
+  enum Color {
+    COLOR_UNSPECIFIED = 0;
+    RED = 1;
+    GREEN = 2;
+    BLUE = -3;
+  }
+  double f_double = 1;
+  float f_float = 2;
+  int32 f_int32 = 3;
+  int64 f_int64 = 4;
+  uint32 f_uint32 = 5;
+  uint64 f_uint64 = 6;
+  sint32 f_sint32 = 7;
+  sint64 f_sint64 = 8;
+  fixed32 f_fixed32 = 9;
+  fixed64 f_fixed64 = 10;
+  sfixed32 f_sfixed32 = 11;
+  sfixed64 f_sfixed64 = 12;
+  bool f_bool = 13;
+  string f_string = 14;
+  bytes f_bytes = 15;
+  Color f_enum = 16;
+
+  optional double o_double = 21;
+  optional float o_float = 22;
+  optional int64 o_int64 = 24;
+  optional uint32 o_uint32 = 25;
+  optional sint64 o_sint64 = 28;
+  optional bool o_bool = 33;
+  optional string o_string = 34;
+  optional bytes o_bytes = 35;
+  optional Color o_enum = 36;
+
+  repeated double r_double = 41;
+  repeated float r_float = 42;
+  repeated int32 r_int32 = 43;
+  repeated int64 r_int64 = 44;
+  repeated uint32 r_uint32 = 45;
+  repeated uint64 r_uint64 = 46;
+  repeated sint32 r_sint32 = 47;
+  repeated sint64 r_sint64 = 48;
+  repeated fixed32 r_fixed32 = 49;
+  repeated fixed64 r_fixed64 = 50;
+  repeated sfixed32 r_sfixed32 = 51;
+  repeated sfixed64 r_sfixed64 = 52;
+  repeated bool r_bool = 53;
+  repeated string r_string = 54;
+  repeated bytes r_bytes = 55;
+  repeated Color r_enum = 56;
+  repeated int32 r_unpacked_int32 = 57 [packed = false];
+  repeated double r_unpacked_double = 58 [packed = false];
+
+  map<string, int32> m_string_int32 = 61;
+  map<int64, string> m_int64_string = 62;
+  map<bool, double> m_bool_double = 63;
+  map<string, SensorSample> m_string_sample = 64;
+  map<uint32, Color> m_uint32_color = 65;
+
+  AllTypes recursive = 70;
+  repeated SensorSample samples = 71;
+
+  oneof choice {
+    int32 c_int32 = 81;
+    string c_string = 82;
+    SensorSample c_sample = 83;
+  }
+
+  reserved 90 to 95;
+  reserved "old_field";
+}

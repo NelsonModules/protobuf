@@ -1,0 +1,78 @@
+temperature: -0.0
+drift: -2.25
+===
+calibrated: false
+temperature: 0.0
+===
+drift: inf
+===
+calibrated: true
+voltage: -0.0
+drift: -402105.40809944086
+===
+calibrated: true
+temperature: 0.0
+voltage: nan
+drift: -0.0
+===
+calibrated: false
+drift: -inf
+===
+calibrated: true
+voltage: -637137.25
+===
+calibrated: false
+===
+calibrated: true
+temperature: 1e+30
+voltage: 0.0
+drift: inf
+===
+===
+calibrated: false
+temperature: -836928.1
+voltage: 1e+30
+===
+temperature: 1e+30
+voltage: 1e-30
+drift: 1e-30
+===
+calibrated: true
+===
+calibrated: true
+temperature: -inf
+voltage: -0.0
+drift: 0.0
+===
+temperature: 1e-30
+voltage: -inf
+drift: -2.25
+===
+temperature: -0.0
+===
+voltage: -0.0
+===
+temperature: 1e+30
+===
+calibrated: false
+temperature: 1e-30
+===
+calibrated: false
+temperature: 0.0
+drift: -inf
+===
+temperature: 1e-30
+drift: inf
+===
+temperature: 1e+30
+===
+temperature: 1e-30
+voltage: -inf
+drift: nan
+===
+temperature: nan
+voltage: 0.0
+===
+calibrated: true
+temperature: -0.0
+drift: 1.5

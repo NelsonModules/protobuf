@@ -1,0 +1,25 @@
+{"mode": "line\nbreak"}
+{"timestampMs": "1", "mode": "日本"}
+{"timestampMs": "-9223372036854775808", "mode": "line\nbreak"}
+{"timestampMs": "-674", "mode": "b_12_3b"}
+{"timestampMs": "-1"}
+{"mode": "tab\tquote\""}
+{"timestampMs": "-428"}
+{"timestampMs": "-1", "mode": "héllo"}
+{"timestampMs": "-1"}
+{"timestampMs": "-9223372036854775808"}
+{"mode": "🙂"}
+{"mode": "héllo"}
+{"mode": "日本"}
+{"timestampMs": "9223372036854775807", "mode": "tab\tquote\""}
+{"timestampMs": "-1328043436550606508"}
+{"timestampMs": "9223372036854775807", "mode": "a"}
+{}
+{"timestampMs": "649"}
+{"timestampMs": "-8187883072901039406", "mode": "11y"}
+{}
+{"mode": "3b1yay0yx"}
+{"timestampMs": "-1", "mode": "a"}
+{"timestampMs": "9223372036854775807", "mode": "a"}
+{"timestampMs": "1", "mode": "1_x3c1c22x_by"}
+{"timestampMs": "-1", "mode": "x"}

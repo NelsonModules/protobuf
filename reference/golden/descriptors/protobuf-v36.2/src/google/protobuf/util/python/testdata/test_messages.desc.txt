@@ -1,0 +1,15 @@
+package third_party.protobuf.util.python.testdata
+syntax editions
+edition 2023
+message TimestampWrapper
+  field timestamp 1 1 11 .google.protobuf.Timestamp timestamp - 0 -
+    resolved 1 0 11 - 0 -
+message MapWrapper
+  field map 1 3 11 .third_party.protobuf.util.python.testdata.MapWrapper.MapEntry map - 0 -
+    resolved 0 0 11 - 0 -
+  message MapEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 1 0 -
+    field value 2 1 9 - value - 0 -
+      resolved 1 0 9 1 0 -
+    map_entry

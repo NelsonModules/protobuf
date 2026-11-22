@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>en_US</language>
+  <keyword>protobuf.tojson</keyword>
+  <short_description>Canonical proto3 JSON of a message.</short_description>
+  <syntax>
+    <syntax_item>txt = protobuf.tojson(schema, type, value)</syntax_item>
+    <syntax_item>txt = protobuf.tojson(schema, type, value, 'FieldNames', names, 'Indent', tf)</syntax_item>
+    <syntax_item>txt = protobuf.tojson(schema, type, bytes, 'Delimited', true, 'NDJSON', true)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema, type</param_name>
+      <param_description>a schema from protobuf.load and a message type.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>value</param_name>
+      <param_description>a message as a struct or as encoded uint8 bytes; a struct array gives a JSON array.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'FieldNames'</param_name>
+      <param_description>'json' (default, lowerCamelCase JSON names) or 'proto' (the .proto field names).</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'Indent'</param_name>
+      <param_description>logical (default false): one JSON member per line.</param_description>
+    </param_input_item>
+    <param_input_item>
+      <param_name>'NDJSON'</param_name>
+      <param_description>logical (default false): write one JSON object per line. With 'Delimited', true, the bytes are read as a length-delimited stream.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>txt</param_name>
+      <param_description>a character vector: canonical proto3 JSON, an array for several records.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.tojson writes the canonical proto3 JSON of the reference implementation: default values are omitted, 64-bit integers are JSON strings, bytes are base64, enums are names, and Timestamp and Duration are RFC 3339 and seconds strings. A known google.protobuf.Any is written with its "@type" member.</p>
+    <p>With 'NDJSON', records are written one JSON object per line, which suits logs and line based pipelines. protobuf.fromjson reads both forms back.</p>
+  </description>
+  <used_function />
+  <bibliography>Protocol Buffers documentation: https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>JSON of a message, and a round trip</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+record = struct('timestamp_ms', 1000, 'status', 1);
+json = protobuf.tojson(schema, 'SensorSample', record)
+back = protobuf.fromjson(schema, 'SensorSample', json);
+back.timestamp_ms
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fromjson">protobuf.fromjson</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.totext">protobuf.totext</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>initial version</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

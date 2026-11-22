@@ -1,0 +1,24 @@
+package pb
+syntax proto2
+message CppFeatures
+  field legacy_closed_enum 1 1 8 - legacyClosedEnum - 0 -
+    resolved 1 0 8 - 0 -
+  field string_type 2 1 14 .pb.CppFeatures.StringType stringType - 0 -
+    resolved 1 0 14 - 0 -
+  field enum_name_uses_string_view 3 1 8 - enumNameUsesStringView - 0 -
+    resolved 1 0 8 - 0 -
+  field repeated_type 4 1 14 .pb.CppFeatures.RepeatedType repeatedType - 0 -
+    resolved 1 0 14 - 0 -
+  enum StringType
+    closed
+    value STRING_TYPE_UNKNOWN 0
+    value VIEW 1
+    value CORD 2
+    value STRING 3
+  enum RepeatedType
+    closed
+    value REPEATED_TYPE_UNKNOWN 0
+    value LEGACY 1
+    value PROXY 2
+extension cpp 1000 1 11 .pb.CppFeatures .google.protobuf.FeatureSet cpp - 0 -
+  resolved 1 0 11 - 0 -

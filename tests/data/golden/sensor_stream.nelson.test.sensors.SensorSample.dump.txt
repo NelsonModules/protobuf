@@ -1,0 +1,165 @@
+timestamp_ms: -1
+status: 1
+pressure: f:496334f2
+diagnostics {
+  temperature: f:ff800000
+  voltage: f:80000000
+  drift: d:7ff8000000000000
+}
+---
+timestamp_ms: 9223372036854775807
+pressure: f:ff800000
+flow: f:3fc00000
+diagnostics {
+  temperature: f:c757cf3a
+}
+---
+timestamp_ms: 9223372036854775807
+flow: f:0da24260
+diagnostics {
+}
+---
+timestamp_ms: 9223372036854775807
+pressure: f:00000000
+flow: f:7fc00000
+diagnostics {
+  temperature: f:80000000
+  voltage: f:c0100000
+  drift: d:fff0000000000000
+}
+---
+timestamp_ms: -1
+status: -371
+flow: f:7fc00000
+diagnostics {
+  calibrated: true
+  temperature: f:0da24260
+}
+---
+timestamp_ms: -1
+status: 0
+---
+timestamp_ms: 9223372036854775807
+status: 0
+flow: f:48a9407c
+diagnostics {
+  voltage: f:0da24260
+}
+---
+timestamp_ms: 0
+pressure: f:c0100000
+diagnostics {
+  calibrated: false
+  voltage: f:c91e3852
+}
+---
+timestamp_ms: 9223372036854775807
+status: 388
+pressure: f:80000000
+diagnostics {
+  temperature: f:7f800000
+}
+---
+timestamp_ms: -3336705651297371650
+status: 1
+flow: f:c0100000
+diagnostics {
+  drift: d:3ff8000000000000
+}
+---
+timestamp_ms: 1
+diagnostics {
+  temperature: f:0da24260
+  voltage: f:ff800000
+}
+---
+timestamp_ms: 9223372036854775807
+flow: f:3fc00000
+---
+timestamp_ms: -1
+pressure: f:c0100000
+flow: f:c0100000
+diagnostics {
+  drift: d:0000000000000000
+}
+---
+timestamp_ms: 9223372036854775807
+status: 0
+flow: f:491fe229
+diagnostics {
+  temperature: f:ff800000
+}
+---
+timestamp_ms: 1
+status: 86
+pressure: f:7149f2ca
+flow: f:c0100000
+diagnostics {
+  voltage: f:7149f2ca
+}
+---
+timestamp_ms: -3766382369448509621
+status: 2147483647
+flow: f:3fc00000
+diagnostics {
+  voltage: f:7f800000
+  drift: d:c112cc9aab5b6354
+}
+---
+timestamp_ms: 0
+diagnostics {
+  voltage: f:ff800000
+}
+---
+timestamp_ms: 0
+flow: f:0da24260
+diagnostics {
+  calibrated: false
+  temperature: f:7f800000
+}
+---
+timestamp_ms: -9223372036854775808
+pressure: f:00000000
+diagnostics {
+  calibrated: false
+  voltage: f:80000000
+  drift: d:7ff0000000000000
+}
+---
+timestamp_ms: -1
+status: -1
+diagnostics {
+  temperature: f:7fc00000
+  drift: d:fff0000000000000
+}
+---
+timestamp_ms: 1
+status: 2147483647
+pressure: f:ff800000
+flow: f:3fc00000
+---
+timestamp_ms: 9223372036854775807
+status: 0
+pressure: f:7149f2ca
+diagnostics {
+  calibrated: false
+  temperature: f:7fc00000
+}
+---
+timestamp_ms: 46
+pressure: f:7fc00000
+flow: f:3fc00000
+diagnostics {
+  temperature: f:0da24260
+  drift: d:c002000000000000
+}
+---
+timestamp_ms: 0
+flow: f:c8024c51
+---
+timestamp_ms: 3189546085455367831
+flow: f:80000000
+diagnostics {
+  temperature: f:0da24260
+  voltage: f:0da24260
+}

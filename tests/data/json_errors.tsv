@@ -1,0 +1,47 @@
+# schema (sch, js or anyh)	type	JSON text	expected error text
+sch	SensorSample	[1]	message "nelson.test.sensors.SensorSample" expects an object.
+sch	AllTypes	{"cInt32":1,"cString":"a"}	several members of oneof "choice" are set.
+sch	AllTypes	{"mStringInt32":[1]}	field "m_string_int32" expects an object.
+sch	AllTypes	{"mBoolDouble":{"x":1}}	map key "x" is not a bool.
+sch	AllTypes	{"rInt32":1}	field "r_int32" expects an array.
+sch	AllTypes	{"fInt32":true}	field "f_int32" expects an integer.
+sch	AllTypes	{"fInt32":3000000000}	field "f_int32" expects an integer in range
+sch	AllTypes	{"fDouble":"abc"}	field "f_double" expects a number.
+sch	AllTypes	{"fBool":1}	field "f_bool" expects true or false.
+sch	AllTypes	{"fEnum":"PURPLE"}	"PURPLE" is not a value of enum "nelson.test.sensors.AllTypes.Color".
+sch	AllTypes	{"fString":1}	field "f_string" expects a string.
+sch	AllTypes	{"fBytes":"!!"}	field "f_bytes" expects base64 text.
+sch	AllTypes	{"nope":1}	unknown field "nope"
+sch	AllTypes	{"recursive":3}	expects an object
+anyh	Holder	{"item":3}	Any expects an object.
+anyh	Holder	{"item":{}}	Any needs a "@type" string.
+anyh	Holder	{"item":{"@type":"x/no.Such"}}	type of "x/no.Such" is not in the schema.
+anyh	Holder	{"item":{"@type":"type.googleapis.com/google.protobuf.Timestamp"}}	needs a "value" member.
+js	Document	{"at":"2026-13-01T00:00:00Z"}	invalid Timestamp value.
+js	Document	{"at":"2026-11-12 10:30:15Z"}	invalid Timestamp value.
+js	Document	{"at":"2026-11-12T10:30:15.Z"}	invalid Timestamp value.
+js	Document	{"at":"2026-11-12T10:30:15"}	invalid Timestamp value.
+js	Document	{"at":"10000-01-01T00:00:00Z"}	invalid Timestamp value.
+js	Document	{"at":1}	invalid Timestamp value.
+js	Document	{"span":"5"}	invalid Duration value.
+js	Document	{"span":"1.5.5s"}	invalid Duration value.
+js	Document	{"span":"999999999999s"}	invalid Duration value.
+js	Document	{"span":"9999999999999999999999s"}	invalid Duration value.
+js	Document	{"at":"0000-12-31T00:00:00Z"}	invalid Timestamp value.
+js	Document	{"at":"9999-12-31T23:59:59-01:00"}	invalid Timestamp value.
+js	Document	{"mask":1}	FieldMask expects a string.
+js	Document	{"attributes":1}	Struct expects an object.
+js	Document	{"items":1}	ListValue expects an array.
+sch	AllTypes	{} x	unexpected text after the JSON value
+sch	AllTypes	[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]	nesting too deep
+sch	AllTypes	{1:2}	expected a member name
+sch	AllTypes	{"a" 1}	expected ':'
+sch	AllTypes	{"fInt32":1 "fBool":true}	expected ',' or '}'
+sch	AllTypes	{"rInt32":[1 2]}	expected ',' or ']'
+sch	AllTypes	{"fInt32":@}	unexpected character
+sch	AllTypes	{"fInt32":-}	invalid number
+sch	AllTypes	{"fDouble":1e}	invalid number
+sch	AllTypes	{"fString":"\x"}	invalid escape
+sch	AllTypes	{"fString":"\u12"}	invalid \u escape
+sch	AllTypes	{"fString":"\ud83dA"}	invalid surrogate pair
+sch	AllTypes	{"fString":"abc	unterminated string

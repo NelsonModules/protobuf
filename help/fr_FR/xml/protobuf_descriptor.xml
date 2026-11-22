@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmldoc>
+  <copyright>SPDX-License-Identifier: LGPL-3.0-or-later</copyright>
+  <language>fr_FR</language>
+  <keyword>protobuf.descriptor</keyword>
+  <short_description>Écrit le FileDescriptorSet sérialisé d'un schéma.</short_description>
+  <syntax>
+    <syntax_item>bytes = protobuf.descriptor(schema)</syntax_item>
+  </syntax>
+  <param_input>
+    <param_input_item>
+      <param_name>schema</param_name>
+      <param_description>un objet protobuf.Schema renvoyé par protobuf.load.</param_description>
+    </param_input_item>
+  </param_input>
+  <param_output>
+    <param_output_item>
+      <param_name>bytes</param_name>
+      <param_description>un vecteur uint8 : le FileDescriptorSet sérialisé, les imports d'abord puis le fichier chargé, comme l'écrit protoc --descriptor_set_out --include_imports.</param_description>
+    </param_output_item>
+  </param_output>
+  <description>
+    <p>protobuf.descriptor sérialise un schéma chargé en FileDescriptorSet. Les octets décrivent le fichier chargé et tous ses imports, si bien que le schéma peut être reconstruit plus tard avec protobuf.load même quand les sources .proto ont disparu.</p>
+    <p>La sortie correspond à ce qu'écrit protoc avec --descriptor_set_out --include_imports ; elle est donc lisible par les autres outils et runtimes Protocol Buffers.</p>
+  </description>
+  <used_function />
+  <bibliography>Documentation Protocol Buffers : https://protobuf.dev</bibliography>
+  <examples>
+    <example_item>
+      <example_item_type>nelson</example_item_type>
+      <example_item_description>Écrire un descriptor set et le recharger</example_item_description>
+      <example_item_data runnable="cli"><![CDATA[schema = protobuf.load([modulepath('protobuf'), '/tests/data/sensor_stream.proto']);
+bytes = protobuf.descriptor(schema);
+filename = [tempdir(), 'sensor_stream.binpb'];
+fid = fopen(filename, 'w');
+fwrite(fid, bytes, 'uint8');
+fclose(fid);
+schema2 = protobuf.load(filename);
+schema2.Messages
+delete(filename);
+]]></example_item_data>
+    </example_item>
+  </examples>
+  <see_also>
+    <see_also_item><link linkend="${protobuf}protobuf">protobuf</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.load">protobuf.load</link></see_also_item>
+    <see_also_item><link linkend="${protobuf}protobuf.fields">protobuf.fields</link></see_also_item>
+  </see_also>
+  <history>
+    <history_item>
+      <history_version>1.0.0</history_version>
+      <history_description>version initiale</history_description>
+    </history_item>
+  </history>
+  <authors>
+    <author_item>Allan CORNET</author_item>
+  </authors>
+</xmldoc>

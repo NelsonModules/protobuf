@@ -1,0 +1,10 @@
+package upb_test
+syntax proto3
+message TestUtf8Bytes
+  field data 1 1 12 - data 0 1 -
+  oneof _data
+message TestUtf8Proto3String
+  field data 1 1 9 - data 0 1 -
+  oneof _data
+message TestUtf8RepeatedProto3String
+  field data 1 3 9 - data - 0 -

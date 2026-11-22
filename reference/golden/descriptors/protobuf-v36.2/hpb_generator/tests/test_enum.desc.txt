@@ -1,0 +1,15 @@
+package hpb_unittest
+syntax editions
+edition 2023
+message ContainingMessage
+  message OtherMessage
+    enum NestedTestEnum
+      value DEVICE_UNKNOWN 0
+      value DEVICE_KEYBOARD 1
+      value DEVICE_MOUSE 2
+      value DEVICE_MONITOR 3
+enum TestEnum
+  value DEVICE_UNKNOWN 0
+  value DEVICE_KEYBOARD 1
+  value DEVICE_MOUSE 2
+  value DEVICE_MONITOR 3

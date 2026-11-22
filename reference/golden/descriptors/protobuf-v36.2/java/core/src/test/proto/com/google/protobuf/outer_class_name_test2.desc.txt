@@ -1,0 +1,6 @@
+package proto2_unittest
+syntax editions
+edition 2023
+message TestMessage2
+  message NestedMessage
+    message OuterClassNameTest2

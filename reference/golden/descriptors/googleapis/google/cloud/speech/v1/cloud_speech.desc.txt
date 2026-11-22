@@ -1,0 +1,166 @@
+package google.cloud.speech.v1
+syntax proto3
+message RecognizeRequest
+  field config 1 1 11 .google.cloud.speech.v1.RecognitionConfig config - 0 -
+  field audio 2 1 11 .google.cloud.speech.v1.RecognitionAudio audio - 0 -
+message LongRunningRecognizeRequest
+  field config 1 1 11 .google.cloud.speech.v1.RecognitionConfig config - 0 -
+  field audio 2 1 11 .google.cloud.speech.v1.RecognitionAudio audio - 0 -
+  field output_config 4 1 11 .google.cloud.speech.v1.TranscriptOutputConfig outputConfig - 0 -
+message TranscriptOutputConfig
+  field gcs_uri 1 1 9 - gcsUri 0 0 -
+  oneof output_type
+message StreamingRecognizeRequest
+  field streaming_config 1 1 11 .google.cloud.speech.v1.StreamingRecognitionConfig streamingConfig 0 0 -
+  field audio_content 2 1 12 - audioContent 0 0 -
+  oneof streaming_request
+message StreamingRecognitionConfig
+  field config 1 1 11 .google.cloud.speech.v1.RecognitionConfig config - 0 -
+  field single_utterance 2 1 8 - singleUtterance - 0 -
+  field interim_results 3 1 8 - interimResults - 0 -
+  field enable_voice_activity_events 5 1 8 - enableVoiceActivityEvents - 0 -
+  field voice_activity_timeout 6 1 11 .google.cloud.speech.v1.StreamingRecognitionConfig.VoiceActivityTimeout voiceActivityTimeout - 0 -
+  message VoiceActivityTimeout
+    field speech_start_timeout 1 1 11 .google.protobuf.Duration speechStartTimeout - 0 -
+    field speech_end_timeout 2 1 11 .google.protobuf.Duration speechEndTimeout - 0 -
+message RecognitionConfig
+  field encoding 1 1 14 .google.cloud.speech.v1.RecognitionConfig.AudioEncoding encoding - 0 -
+  field sample_rate_hertz 2 1 5 - sampleRateHertz - 0 -
+  field audio_channel_count 7 1 5 - audioChannelCount - 0 -
+  field enable_separate_recognition_per_channel 12 1 8 - enableSeparateRecognitionPerChannel - 0 -
+  field language_code 3 1 9 - languageCode - 0 -
+  field alternative_language_codes 18 3 9 - alternativeLanguageCodes - 0 -
+  field max_alternatives 4 1 5 - maxAlternatives - 0 -
+  field profanity_filter 5 1 8 - profanityFilter - 0 -
+  field adaptation 20 1 11 .google.cloud.speech.v1.SpeechAdaptation adaptation - 0 -
+  field transcript_normalization 24 1 11 .google.cloud.speech.v1.TranscriptNormalization transcriptNormalization - 0 -
+  field speech_contexts 6 3 11 .google.cloud.speech.v1.SpeechContext speechContexts - 0 -
+  field enable_word_time_offsets 8 1 8 - enableWordTimeOffsets - 0 -
+  field enable_word_confidence 15 1 8 - enableWordConfidence - 0 -
+  field enable_automatic_punctuation 11 1 8 - enableAutomaticPunctuation - 0 -
+  field enable_spoken_punctuation 22 1 11 .google.protobuf.BoolValue enableSpokenPunctuation - 0 -
+  field enable_spoken_emojis 23 1 11 .google.protobuf.BoolValue enableSpokenEmojis - 0 -
+  field diarization_config 19 1 11 .google.cloud.speech.v1.SpeakerDiarizationConfig diarizationConfig - 0 -
+  field metadata 9 1 11 .google.cloud.speech.v1.RecognitionMetadata metadata - 0 -
+  field model 13 1 9 - model - 0 -
+  field use_enhanced 14 1 8 - useEnhanced - 0 -
+  enum AudioEncoding
+    value ENCODING_UNSPECIFIED 0
+    value LINEAR16 1
+    value FLAC 2
+    value MULAW 3
+    value AMR 4
+    value AMR_WB 5
+    value OGG_OPUS 6
+    value SPEEX_WITH_HEADER_BYTE 7
+    value MP3 8
+    value WEBM_OPUS 9
+message SpeakerDiarizationConfig
+  field enable_speaker_diarization 1 1 8 - enableSpeakerDiarization - 0 -
+  field min_speaker_count 2 1 5 - minSpeakerCount - 0 -
+  field max_speaker_count 3 1 5 - maxSpeakerCount - 0 -
+  field speaker_tag 5 1 5 - speakerTag - 0 -
+message RecognitionMetadata
+  field interaction_type 1 1 14 .google.cloud.speech.v1.RecognitionMetadata.InteractionType interactionType - 0 -
+  field industry_naics_code_of_audio 3 1 13 - industryNaicsCodeOfAudio - 0 -
+  field microphone_distance 4 1 14 .google.cloud.speech.v1.RecognitionMetadata.MicrophoneDistance microphoneDistance - 0 -
+  field original_media_type 5 1 14 .google.cloud.speech.v1.RecognitionMetadata.OriginalMediaType originalMediaType - 0 -
+  field recording_device_type 6 1 14 .google.cloud.speech.v1.RecognitionMetadata.RecordingDeviceType recordingDeviceType - 0 -
+  field recording_device_name 7 1 9 - recordingDeviceName - 0 -
+  field original_mime_type 8 1 9 - originalMimeType - 0 -
+  field audio_topic 10 1 9 - audioTopic - 0 -
+  enum InteractionType
+    value INTERACTION_TYPE_UNSPECIFIED 0
+    value DISCUSSION 1
+    value PRESENTATION 2
+    value PHONE_CALL 3
+    value VOICEMAIL 4
+    value PROFESSIONALLY_PRODUCED 5
+    value VOICE_SEARCH 6
+    value VOICE_COMMAND 7
+    value DICTATION 8
+  enum MicrophoneDistance
+    value MICROPHONE_DISTANCE_UNSPECIFIED 0
+    value NEARFIELD 1
+    value MIDFIELD 2
+    value FARFIELD 3
+  enum OriginalMediaType
+    value ORIGINAL_MEDIA_TYPE_UNSPECIFIED 0
+    value AUDIO 1
+    value VIDEO 2
+  enum RecordingDeviceType
+    value RECORDING_DEVICE_TYPE_UNSPECIFIED 0
+    value SMARTPHONE 1
+    value PC 2
+    value PHONE_LINE 3
+    value VEHICLE 4
+    value OTHER_OUTDOOR_DEVICE 5
+    value OTHER_INDOOR_DEVICE 6
+message SpeechContext
+  field phrases 1 3 9 - phrases - 0 -
+  field boost 4 1 2 - boost - 0 -
+message RecognitionAudio
+  field content 1 1 12 - content 0 0 -
+  field uri 2 1 9 - uri 0 0 -
+  oneof audio_source
+message RecognizeResponse
+  field results 2 3 11 .google.cloud.speech.v1.SpeechRecognitionResult results - 0 -
+  field total_billed_time 3 1 11 .google.protobuf.Duration totalBilledTime - 0 -
+  field speech_adaptation_info 7 1 11 .google.cloud.speech.v1.SpeechAdaptationInfo speechAdaptationInfo - 0 -
+  field request_id 8 1 3 - requestId - 0 -
+message LongRunningRecognizeResponse
+  field results 2 3 11 .google.cloud.speech.v1.SpeechRecognitionResult results - 0 -
+  field total_billed_time 3 1 11 .google.protobuf.Duration totalBilledTime - 0 -
+  field output_config 6 1 11 .google.cloud.speech.v1.TranscriptOutputConfig outputConfig - 0 -
+  field output_error 7 1 11 .google.rpc.Status outputError - 0 -
+  field speech_adaptation_info 8 1 11 .google.cloud.speech.v1.SpeechAdaptationInfo speechAdaptationInfo - 0 -
+  field request_id 9 1 3 - requestId - 0 -
+message LongRunningRecognizeMetadata
+  field progress_percent 1 1 5 - progressPercent - 0 -
+  field start_time 2 1 11 .google.protobuf.Timestamp startTime - 0 -
+  field last_update_time 3 1 11 .google.protobuf.Timestamp lastUpdateTime - 0 -
+  field uri 4 1 9 - uri - 0 -
+message StreamingRecognizeResponse
+  field error 1 1 11 .google.rpc.Status error - 0 -
+  field results 2 3 11 .google.cloud.speech.v1.StreamingRecognitionResult results - 0 -
+  field speech_event_type 4 1 14 .google.cloud.speech.v1.StreamingRecognizeResponse.SpeechEventType speechEventType - 0 -
+  field speech_event_time 8 1 11 .google.protobuf.Duration speechEventTime - 0 -
+  field total_billed_time 5 1 11 .google.protobuf.Duration totalBilledTime - 0 -
+  field speech_adaptation_info 9 1 11 .google.cloud.speech.v1.SpeechAdaptationInfo speechAdaptationInfo - 0 -
+  field request_id 10 1 3 - requestId - 0 -
+  enum SpeechEventType
+    value SPEECH_EVENT_UNSPECIFIED 0
+    value END_OF_SINGLE_UTTERANCE 1
+    value SPEECH_ACTIVITY_BEGIN 2
+    value SPEECH_ACTIVITY_END 3
+    value SPEECH_ACTIVITY_TIMEOUT 4
+message StreamingRecognitionResult
+  field alternatives 1 3 11 .google.cloud.speech.v1.SpeechRecognitionAlternative alternatives - 0 -
+  field is_final 2 1 8 - isFinal - 0 -
+  field stability 3 1 2 - stability - 0 -
+  field result_end_time 4 1 11 .google.protobuf.Duration resultEndTime - 0 -
+  field channel_tag 5 1 5 - channelTag - 0 -
+  field language_code 6 1 9 - languageCode - 0 -
+message SpeechRecognitionResult
+  field alternatives 1 3 11 .google.cloud.speech.v1.SpeechRecognitionAlternative alternatives - 0 -
+  field channel_tag 2 1 5 - channelTag - 0 -
+  field result_end_time 4 1 11 .google.protobuf.Duration resultEndTime - 0 -
+  field language_code 5 1 9 - languageCode - 0 -
+message SpeechRecognitionAlternative
+  field transcript 1 1 9 - transcript - 0 -
+  field confidence 2 1 2 - confidence - 0 -
+  field words 3 3 11 .google.cloud.speech.v1.WordInfo words - 0 -
+message WordInfo
+  field start_time 1 1 11 .google.protobuf.Duration startTime - 0 -
+  field end_time 2 1 11 .google.protobuf.Duration endTime - 0 -
+  field word 3 1 9 - word - 0 -
+  field confidence 4 1 2 - confidence - 0 -
+  field speaker_tag 5 1 5 - speakerTag - 0 -
+  field speaker_label 6 1 9 - speakerLabel - 0 -
+message SpeechAdaptationInfo
+  field adaptation_timeout 1 1 8 - adaptationTimeout - 0 -
+  field timeout_message 4 1 9 - timeoutMessage - 0 -
+service Speech
+  method Recognize .google.cloud.speech.v1.RecognizeRequest .google.cloud.speech.v1.RecognizeResponse 0 0
+  method LongRunningRecognize .google.cloud.speech.v1.LongRunningRecognizeRequest .google.longrunning.Operation 0 0
+  method StreamingRecognize .google.cloud.speech.v1.StreamingRecognizeRequest .google.cloud.speech.v1.StreamingRecognizeResponse 1 1

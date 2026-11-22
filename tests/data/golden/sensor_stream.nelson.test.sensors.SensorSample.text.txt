@@ -1,0 +1,161 @@
+timestamp_ms: -1
+status: 1
+pressure: 930639.1
+diagnostics {
+  temperature: -inf
+  voltage: -0.0
+  drift: nan
+}
+===
+timestamp_ms: 9223372036854775807
+pressure: -inf
+flow: 1.5
+diagnostics {
+  temperature: -55247.227
+}
+===
+timestamp_ms: 9223372036854775807
+flow: 1e-30
+diagnostics {
+}
+===
+timestamp_ms: 9223372036854775807
+pressure: 0.0
+flow: nan
+diagnostics {
+  temperature: -0.0
+  voltage: -2.25
+  drift: -inf
+}
+===
+timestamp_ms: -1
+status: -371
+flow: nan
+diagnostics {
+  calibrated: true
+  temperature: 1e-30
+}
+===
+timestamp_ms: -1
+status: 0
+===
+timestamp_ms: 9223372036854775807
+status: 0
+flow: 346627.88
+diagnostics {
+  voltage: 1e-30
+}
+===
+pressure: -2.25
+diagnostics {
+  calibrated: false
+  voltage: -648069.1
+}
+===
+timestamp_ms: 9223372036854775807
+status: 388
+pressure: -0.0
+diagnostics {
+  temperature: inf
+}
+===
+timestamp_ms: -3336705651297371650
+status: 1
+flow: -2.25
+diagnostics {
+  drift: 1.5
+}
+===
+timestamp_ms: 1
+diagnostics {
+  temperature: 1e-30
+  voltage: -inf
+}
+===
+timestamp_ms: 9223372036854775807
+flow: 1.5
+===
+timestamp_ms: -1
+pressure: -2.25
+flow: -2.25
+diagnostics {
+  drift: 0.0
+}
+===
+timestamp_ms: 9223372036854775807
+status: 0
+flow: 654882.56
+diagnostics {
+  temperature: -inf
+}
+===
+timestamp_ms: 1
+status: 86
+pressure: 1e+30
+flow: -2.25
+diagnostics {
+  voltage: 1e+30
+}
+===
+timestamp_ms: -3766382369448509621
+status: 2147483647
+flow: 1.5
+diagnostics {
+  voltage: inf
+  drift: -308006.66734080506
+}
+===
+diagnostics {
+  voltage: -inf
+}
+===
+flow: 1e-30
+diagnostics {
+  calibrated: false
+  temperature: inf
+}
+===
+timestamp_ms: -9223372036854775808
+pressure: 0.0
+diagnostics {
+  calibrated: false
+  voltage: -0.0
+  drift: inf
+}
+===
+timestamp_ms: -1
+status: -1
+diagnostics {
+  temperature: nan
+  drift: -inf
+}
+===
+timestamp_ms: 1
+status: 2147483647
+pressure: -inf
+flow: 1.5
+===
+timestamp_ms: 9223372036854775807
+status: 0
+pressure: 1e+30
+diagnostics {
+  calibrated: false
+  temperature: nan
+}
+===
+timestamp_ms: 46
+pressure: nan
+flow: 1.5
+diagnostics {
+  temperature: 1e-30
+  drift: -2.25
+}
+===
+flow: -133425.27
+===
+timestamp_ms: 3189546085455367831
+flow: -0.0
+diagnostics {
+  temperature: 1e-30
+  voltage: 1e-30
+}

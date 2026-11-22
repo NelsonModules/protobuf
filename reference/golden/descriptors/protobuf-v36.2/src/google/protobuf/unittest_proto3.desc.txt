@@ -1,0 +1,189 @@
+package proto3_unittest
+syntax proto3
+message TestAllTypes
+  field optional_int32 1 1 5 - optionalInt32 - 0 -
+  field optional_int64 2 1 3 - optionalInt64 - 0 -
+  field optional_uint32 3 1 13 - optionalUint32 - 0 -
+  field optional_uint64 4 1 4 - optionalUint64 - 0 -
+  field optional_sint32 5 1 17 - optionalSint32 - 0 -
+  field optional_sint64 6 1 18 - optionalSint64 - 0 -
+  field optional_fixed32 7 1 7 - optionalFixed32 - 0 -
+  field optional_fixed64 8 1 6 - optionalFixed64 - 0 -
+  field optional_sfixed32 9 1 15 - optionalSfixed32 - 0 -
+  field optional_sfixed64 10 1 16 - optionalSfixed64 - 0 -
+  field optional_float 11 1 2 - optionalFloat - 0 -
+  field optional_double 12 1 1 - optionalDouble - 0 -
+  field optional_bool 13 1 8 - optionalBool - 0 -
+  field optional_string 14 1 9 - optionalString - 0 -
+  field optional_bytes 15 1 12 - optionalBytes - 0 -
+  field optional_nested_message 18 1 11 .proto3_unittest.TestAllTypes.NestedMessage optionalNestedMessage 1 1 -
+  field optional_foreign_message 19 1 11 .proto3_unittest.ForeignMessage optionalForeignMessage - 0 -
+  field optional_import_message 20 1 11 .proto2_unittest_import.ImportMessage optionalImportMessage - 0 -
+  field optional_nested_enum 21 1 14 .proto3_unittest.TestAllTypes.NestedEnum optionalNestedEnum - 0 -
+  field optional_foreign_enum 22 1 14 .proto3_unittest.ForeignEnum optionalForeignEnum - 0 -
+  field optional_string_piece 24 1 9 - optionalStringPiece - 0 -
+  field optional_cord 25 1 9 - optionalCord - 0 -
+  field optional_public_import_message 26 1 11 .proto2_unittest_import.PublicImportMessage optionalPublicImportMessage - 0 -
+  field optional_lazy_message 27 1 11 .proto3_unittest.TestAllTypes.NestedMessage optionalLazyMessage - 0 -
+  field optional_unverified_lazy_message 28 1 11 .proto3_unittest.TestAllTypes.NestedMessage optionalUnverifiedLazyMessage - 0 -
+  field optional_lazy_import_message 115 1 11 .proto2_unittest_import.ImportMessage optionalLazyImportMessage - 0 -
+  field repeated_int32 31 3 5 - repeatedInt32 - 0 -
+  field repeated_int64 32 3 3 - repeatedInt64 - 0 -
+  field repeated_uint32 33 3 13 - repeatedUint32 - 0 -
+  field repeated_uint64 34 3 4 - repeatedUint64 - 0 -
+  field repeated_sint32 35 3 17 - repeatedSint32 - 0 -
+  field repeated_sint64 36 3 18 - repeatedSint64 - 0 -
+  field repeated_fixed32 37 3 7 - repeatedFixed32 - 0 -
+  field repeated_fixed64 38 3 6 - repeatedFixed64 - 0 -
+  field repeated_sfixed32 39 3 15 - repeatedSfixed32 - 0 -
+  field repeated_sfixed64 40 3 16 - repeatedSfixed64 - 0 -
+  field repeated_float 41 3 2 - repeatedFloat - 0 -
+  field repeated_double 42 3 1 - repeatedDouble - 0 -
+  field repeated_bool 43 3 8 - repeatedBool - 0 -
+  field repeated_string 44 3 9 - repeatedString - 0 -
+  field repeated_bytes 45 3 12 - repeatedBytes - 0 -
+  field repeated_nested_message 48 3 11 .proto3_unittest.TestAllTypes.NestedMessage repeatedNestedMessage - 0 -
+  field repeated_foreign_message 49 3 11 .proto3_unittest.ForeignMessage repeatedForeignMessage - 0 -
+  field repeated_import_message 50 3 11 .proto2_unittest_import.ImportMessage repeatedImportMessage - 0 -
+  field repeated_nested_enum 51 3 14 .proto3_unittest.TestAllTypes.NestedEnum repeatedNestedEnum - 0 -
+  field repeated_foreign_enum 52 3 14 .proto3_unittest.ForeignEnum repeatedForeignEnum - 0 -
+  field repeated_string_piece 54 3 9 - repeatedStringPiece - 0 -
+  field repeated_cord 55 3 9 - repeatedCord - 0 -
+  field repeated_lazy_message 57 3 11 .proto3_unittest.TestAllTypes.NestedMessage repeatedLazyMessage - 0 -
+  field oneof_uint32 111 1 13 - oneofUint32 0 0 -
+  field oneof_nested_message 112 1 11 .proto3_unittest.TestAllTypes.NestedMessage oneofNestedMessage 0 0 -
+  field oneof_string 113 1 9 - oneofString 0 0 -
+  field oneof_bytes 114 1 12 - oneofBytes 0 0 -
+  message NestedMessage
+    field bb 1 1 5 - bb - 0 -
+  enum NestedEnum
+    value ZERO 0
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+    value NEG -1
+  oneof oneof_field
+  oneof _optional_nested_message
+message TestPackedTypes
+  field packed_int32 90 3 5 - packedInt32 - 0 true
+  field packed_int64 91 3 3 - packedInt64 - 0 true
+  field packed_uint32 92 3 13 - packedUint32 - 0 true
+  field packed_uint64 93 3 4 - packedUint64 - 0 true
+  field packed_sint32 94 3 17 - packedSint32 - 0 true
+  field packed_sint64 95 3 18 - packedSint64 - 0 true
+  field packed_fixed32 96 3 7 - packedFixed32 - 0 true
+  field packed_fixed64 97 3 6 - packedFixed64 - 0 true
+  field packed_sfixed32 98 3 15 - packedSfixed32 - 0 true
+  field packed_sfixed64 99 3 16 - packedSfixed64 - 0 true
+  field packed_float 100 3 2 - packedFloat - 0 true
+  field packed_double 101 3 1 - packedDouble - 0 true
+  field packed_bool 102 3 8 - packedBool - 0 true
+  field packed_enum 103 3 14 .proto3_unittest.ForeignEnum packedEnum - 0 true
+message TestUnpackedTypes
+  field repeated_int32 1 3 5 - repeatedInt32 - 0 false
+  field repeated_int64 2 3 3 - repeatedInt64 - 0 false
+  field repeated_uint32 3 3 13 - repeatedUint32 - 0 false
+  field repeated_uint64 4 3 4 - repeatedUint64 - 0 false
+  field repeated_sint32 5 3 17 - repeatedSint32 - 0 false
+  field repeated_sint64 6 3 18 - repeatedSint64 - 0 false
+  field repeated_fixed32 7 3 7 - repeatedFixed32 - 0 false
+  field repeated_fixed64 8 3 6 - repeatedFixed64 - 0 false
+  field repeated_sfixed32 9 3 15 - repeatedSfixed32 - 0 false
+  field repeated_sfixed64 10 3 16 - repeatedSfixed64 - 0 false
+  field repeated_float 11 3 2 - repeatedFloat - 0 false
+  field repeated_double 12 3 1 - repeatedDouble - 0 false
+  field repeated_bool 13 3 8 - repeatedBool - 0 false
+  field repeated_nested_enum 14 3 14 .proto3_unittest.TestAllTypes.NestedEnum repeatedNestedEnum - 0 false
+message NestedTestAllTypes
+  field child 1 1 11 .proto3_unittest.NestedTestAllTypes child - 0 -
+  field payload 2 1 11 .proto3_unittest.TestAllTypes payload - 0 -
+message ForeignMessage
+  field c 1 1 5 - c - 0 -
+message TestEmptyMessage
+message TestMessageWithDummy
+  field dummy 536870911 1 8 - dummy - 0 -
+message TestOneof2
+  field foo_enum 6 1 14 .proto3_unittest.TestOneof2.NestedEnum fooEnum 0 0 -
+  enum NestedEnum
+    value UNKNOWN 0
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+  oneof foo
+message TestHasbits
+  field b1 1 1 8 - b1 - 0 -
+  field b2 2 1 8 - b2 - 0 -
+  field b3 3 1 8 - b3 - 0 -
+  field b4 4 1 8 - b4 - 0 -
+  field b5 5 1 8 - b5 - 0 -
+  field b6 6 1 8 - b6 - 0 -
+  field b7 7 1 8 - b7 - 0 -
+  field b8 8 1 8 - b8 - 0 -
+  field b9 9 1 8 - b9 - 0 -
+  field b10 10 1 8 - b10 - 0 -
+  field b11 11 1 8 - b11 - 0 -
+  field b12 12 1 8 - b12 - 0 -
+  field b13 13 1 8 - b13 - 0 -
+  field b14 14 1 8 - b14 - 0 -
+  field b15 15 1 8 - b15 - 0 -
+  field b16 16 1 8 - b16 - 0 -
+  field b17 17 1 8 - b17 - 0 -
+  field b18 18 1 8 - b18 - 0 -
+  field b19 19 1 8 - b19 - 0 -
+  field b20 20 1 8 - b20 - 0 -
+  field b21 21 1 8 - b21 - 0 -
+  field b22 22 1 8 - b22 - 0 -
+  field b23 23 1 8 - b23 - 0 -
+  field b24 24 1 8 - b24 - 0 -
+  field b25 25 1 8 - b25 - 0 -
+  field b26 26 1 8 - b26 - 0 -
+  field b27 27 1 8 - b27 - 0 -
+  field b28 28 1 8 - b28 - 0 -
+  field b29 29 1 8 - b29 - 0 -
+  field b30 30 1 8 - b30 - 0 -
+  field b31 31 1 8 - b31 - 0 -
+  field b32 32 1 8 - b32 - 0 -
+  field b33 33 1 8 - b33 - 0 -
+  field b34 34 1 8 - b34 - 0 -
+  field b35 35 1 8 - b35 - 0 -
+  field b36 36 1 8 - b36 - 0 -
+  field b37 37 1 8 - b37 - 0 -
+  field b38 38 1 8 - b38 - 0 -
+  field b39 39 1 8 - b39 - 0 -
+  field b40 40 1 8 - b40 - 0 -
+  field b41 41 1 8 - b41 - 0 -
+  field b42 42 1 8 - b42 - 0 -
+  field b43 43 1 8 - b43 - 0 -
+  field b44 44 1 8 - b44 - 0 -
+  field b45 45 1 8 - b45 - 0 -
+  field b46 46 1 8 - b46 - 0 -
+  field b47 47 1 8 - b47 - 0 -
+  field b48 48 1 8 - b48 - 0 -
+  field b49 49 1 8 - b49 - 0 -
+  field b50 50 1 8 - b50 - 0 -
+  field b51 51 1 8 - b51 - 0 -
+  field b52 52 1 8 - b52 - 0 -
+  field b53 53 1 8 - b53 - 0 -
+  field b54 54 1 8 - b54 - 0 -
+  field b55 55 1 8 - b55 - 0 -
+  field b56 56 1 8 - b56 - 0 -
+  field b57 57 1 8 - b57 - 0 -
+  field b58 58 1 8 - b58 - 0 -
+  field b59 59 1 8 - b59 - 0 -
+  field b60 60 1 8 - b60 - 0 -
+  field b61 61 1 8 - b61 - 0 -
+  field b62 62 1 8 - b62 - 0 -
+  field b63 63 1 8 - b63 - 0 -
+  field b64 64 1 8 - b64 - 0 -
+  field b65 65 1 8 - b65 - 0 -
+  field b66 66 1 8 - b66 - 0 -
+  field b67 67 1 8 - b67 - 0 -
+  field b68 68 1 8 - b68 - 0 -
+  field b69 69 1 8 - b69 - 0 -
+  field child 100 1 11 .proto3_unittest.TestAllTypes child - 0 -
+enum ForeignEnum
+  value FOREIGN_ZERO 0
+  value FOREIGN_FOO 4
+  value FOREIGN_BAR 5
+  value FOREIGN_BAZ 6
+  value FOREIGN_LARGE 123456

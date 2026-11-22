@@ -1,0 +1,208 @@
+package protobuf_unittest3
+syntax proto3
+message TestAllTypes
+  field single_int32 1 1 5 - singleInt32 - 0 -
+  field single_int64 2 1 3 - singleInt64 - 0 -
+  field single_uint32 3 1 13 - singleUint32 - 0 -
+  field single_uint64 4 1 4 - singleUint64 - 0 -
+  field single_sint32 5 1 17 - singleSint32 - 0 -
+  field single_sint64 6 1 18 - singleSint64 - 0 -
+  field single_fixed32 7 1 7 - singleFixed32 - 0 -
+  field single_fixed64 8 1 6 - singleFixed64 - 0 -
+  field single_sfixed32 9 1 15 - singleSfixed32 - 0 -
+  field single_sfixed64 10 1 16 - singleSfixed64 - 0 -
+  field single_float 11 1 2 - singleFloat - 0 -
+  field single_double 12 1 1 - singleDouble - 0 -
+  field single_bool 13 1 8 - singleBool - 0 -
+  field single_string 14 1 9 - singleString - 0 -
+  field single_bytes 15 1 12 - singleBytes - 0 -
+  field single_nested_message 18 1 11 .protobuf_unittest3.TestAllTypes.NestedMessage singleNestedMessage - 0 -
+  field single_foreign_message 19 1 11 .protobuf_unittest3.ForeignMessage singleForeignMessage - 0 -
+  field single_import_message 20 1 11 .protobuf_unittest_import.ImportMessage singleImportMessage - 0 -
+  field single_nested_enum 21 1 14 .protobuf_unittest3.TestAllTypes.NestedEnum singleNestedEnum - 0 -
+  field single_foreign_enum 22 1 14 .protobuf_unittest3.ForeignEnum singleForeignEnum - 0 -
+  field single_import_enum 23 1 14 .protobuf_unittest_import.ImportEnum singleImportEnum - 0 -
+  field single_public_import_message 26 1 11 .protobuf_unittest_import.PublicImportMessage singlePublicImportMessage - 0 -
+  field repeated_int32 31 3 5 - repeatedInt32 - 0 -
+  field repeated_int64 32 3 3 - repeatedInt64 - 0 -
+  field repeated_uint32 33 3 13 - repeatedUint32 - 0 -
+  field repeated_uint64 34 3 4 - repeatedUint64 - 0 -
+  field repeated_sint32 35 3 17 - repeatedSint32 - 0 -
+  field repeated_sint64 36 3 18 - repeatedSint64 - 0 -
+  field repeated_fixed32 37 3 7 - repeatedFixed32 - 0 -
+  field repeated_fixed64 38 3 6 - repeatedFixed64 - 0 -
+  field repeated_sfixed32 39 3 15 - repeatedSfixed32 - 0 -
+  field repeated_sfixed64 40 3 16 - repeatedSfixed64 - 0 -
+  field repeated_float 41 3 2 - repeatedFloat - 0 -
+  field repeated_double 42 3 1 - repeatedDouble - 0 -
+  field repeated_bool 43 3 8 - repeatedBool - 0 -
+  field repeated_string 44 3 9 - repeatedString - 0 -
+  field repeated_bytes 45 3 12 - repeatedBytes - 0 -
+  field repeated_nested_message 48 3 11 .protobuf_unittest3.TestAllTypes.NestedMessage repeatedNestedMessage - 0 -
+  field repeated_foreign_message 49 3 11 .protobuf_unittest3.ForeignMessage repeatedForeignMessage - 0 -
+  field repeated_import_message 50 3 11 .protobuf_unittest_import.ImportMessage repeatedImportMessage - 0 -
+  field repeated_nested_enum 51 3 14 .protobuf_unittest3.TestAllTypes.NestedEnum repeatedNestedEnum - 0 -
+  field repeated_foreign_enum 52 3 14 .protobuf_unittest3.ForeignEnum repeatedForeignEnum - 0 -
+  field repeated_import_enum 53 3 14 .protobuf_unittest_import.ImportEnum repeatedImportEnum - 0 -
+  field repeated_public_import_message 54 3 11 .protobuf_unittest_import.PublicImportMessage repeatedPublicImportMessage - 0 -
+  field oneof_uint32 111 1 13 - oneofUint32 0 0 -
+  field oneof_nested_message 112 1 11 .protobuf_unittest3.TestAllTypes.NestedMessage oneofNestedMessage 0 0 -
+  field oneof_string 113 1 9 - oneofString 0 0 -
+  field oneof_bytes 114 1 12 - oneofBytes 0 0 -
+  message NestedMessage
+    field bb 1 1 5 - bb - 0 -
+  enum NestedEnum
+    value NESTED_ENUM_UNSPECIFIED 0
+    value FOO 1
+    value BAR 2
+    value BAZ 3
+    value NEG -1
+  oneof oneof_field
+message NestedTestAllTypes
+  field child 1 1 11 .protobuf_unittest3.NestedTestAllTypes child - 0 -
+  field payload 2 1 11 .protobuf_unittest3.TestAllTypes payload - 0 -
+  field repeated_child 3 3 11 .protobuf_unittest3.NestedTestAllTypes repeatedChild - 0 -
+message TestDeprecatedFields
+  field deprecated_int32 1 1 5 - deprecatedInt32 - 0 -
+message ForeignMessage
+  field c 1 1 5 - c - 0 -
+message TestReservedFields
+  reserved_range 2 3
+  reserved_range 15 16
+  reserved_range 9 12
+  reserved_name bar
+  reserved_name baz
+message TestForeignNested
+  field foreign_nested 1 1 11 .protobuf_unittest3.TestAllTypes.NestedMessage foreignNested - 0 -
+message TestReallyLargeTagNumber
+  field a 1 1 5 - a - 0 -
+  field bb 268435455 1 5 - bb - 0 -
+message TestRecursiveMessage
+  field a 1 1 11 .protobuf_unittest3.TestRecursiveMessage a - 0 -
+  field i 2 1 5 - i - 0 -
+message TestMutualRecursionA
+  field bb 1 1 11 .protobuf_unittest3.TestMutualRecursionB bb - 0 -
+message TestMutualRecursionB
+  field a 1 1 11 .protobuf_unittest3.TestMutualRecursionA a - 0 -
+  field optional_int32 2 1 5 - optionalInt32 - 0 -
+message TestEnumAllowAlias
+  field value 1 1 14 .protobuf_unittest3.TestEnumWithDupValue value - 0 -
+message TestCamelCaseFieldNames
+  field PrimitiveField 1 1 5 - PrimitiveField - 0 -
+  field StringField 2 1 9 - StringField - 0 -
+  field EnumField 3 1 14 .protobuf_unittest3.ForeignEnum EnumField - 0 -
+  field MessageField 4 1 11 .protobuf_unittest3.ForeignMessage MessageField - 0 -
+  field RepeatedPrimitiveField 7 3 5 - RepeatedPrimitiveField - 0 -
+  field RepeatedStringField 8 3 9 - RepeatedStringField - 0 -
+  field RepeatedEnumField 9 3 14 .protobuf_unittest3.ForeignEnum RepeatedEnumField - 0 -
+  field RepeatedMessageField 10 3 11 .protobuf_unittest3.ForeignMessage RepeatedMessageField - 0 -
+message TestFieldOrderings
+  field my_string 11 1 9 - myString - 0 -
+  field my_int 1 1 3 - myInt - 0 -
+  field my_float 101 1 2 - myFloat - 0 -
+  field single_nested_message 200 1 11 .protobuf_unittest3.TestFieldOrderings.NestedMessage singleNestedMessage - 0 -
+  message NestedMessage
+    field oo 2 1 3 - oo - 0 -
+    field bb 1 1 5 - bb - 0 -
+message SparseEnumMessage
+  field sparse_enum 1 1 14 .protobuf_unittest3.TestSparseEnum sparseEnum - 0 -
+message OneString
+  field data 1 1 9 - data - 0 -
+message MoreString
+  field data 1 3 9 - data - 0 -
+message OneBytes
+  field data 1 1 12 - data - 0 -
+message MoreBytes
+  field data 1 1 12 - data - 0 -
+message Int32Message
+  field data 1 1 5 - data - 0 -
+message Uint32Message
+  field data 1 1 13 - data - 0 -
+message Int64Message
+  field data 1 1 3 - data - 0 -
+message Uint64Message
+  field data 1 1 4 - data - 0 -
+message BoolMessage
+  field data 1 1 8 - data - 0 -
+message TestOneof
+  field foo_int 1 1 5 - fooInt 0 0 -
+  field foo_string 2 1 9 - fooString 0 0 -
+  field foo_message 3 1 11 .protobuf_unittest3.TestAllTypes fooMessage 0 0 -
+  oneof foo
+message TestPackedTypes
+  field packed_int32 90 3 5 - packedInt32 - 0 true
+  field packed_int64 91 3 3 - packedInt64 - 0 true
+  field packed_uint32 92 3 13 - packedUint32 - 0 true
+  field packed_uint64 93 3 4 - packedUint64 - 0 true
+  field packed_sint32 94 3 17 - packedSint32 - 0 true
+  field packed_sint64 95 3 18 - packedSint64 - 0 true
+  field packed_fixed32 96 3 7 - packedFixed32 - 0 true
+  field packed_fixed64 97 3 6 - packedFixed64 - 0 true
+  field packed_sfixed32 98 3 15 - packedSfixed32 - 0 true
+  field packed_sfixed64 99 3 16 - packedSfixed64 - 0 true
+  field packed_float 100 3 2 - packedFloat - 0 true
+  field packed_double 101 3 1 - packedDouble - 0 true
+  field packed_bool 102 3 8 - packedBool - 0 true
+  field packed_enum 103 3 14 .protobuf_unittest3.ForeignEnum packedEnum - 0 true
+message TestUnpackedTypes
+  field unpacked_int32 90 3 5 - unpackedInt32 - 0 false
+  field unpacked_int64 91 3 3 - unpackedInt64 - 0 false
+  field unpacked_uint32 92 3 13 - unpackedUint32 - 0 false
+  field unpacked_uint64 93 3 4 - unpackedUint64 - 0 false
+  field unpacked_sint32 94 3 17 - unpackedSint32 - 0 false
+  field unpacked_sint64 95 3 18 - unpackedSint64 - 0 false
+  field unpacked_fixed32 96 3 7 - unpackedFixed32 - 0 false
+  field unpacked_fixed64 97 3 6 - unpackedFixed64 - 0 false
+  field unpacked_sfixed32 98 3 15 - unpackedSfixed32 - 0 false
+  field unpacked_sfixed64 99 3 16 - unpackedSfixed64 - 0 false
+  field unpacked_float 100 3 2 - unpackedFloat - 0 false
+  field unpacked_double 101 3 1 - unpackedDouble - 0 false
+  field unpacked_bool 102 3 8 - unpackedBool - 0 false
+  field unpacked_enum 103 3 14 .protobuf_unittest3.ForeignEnum unpackedEnum - 0 false
+message TestRepeatedScalarDifferentTagSizes
+  field repeated_fixed32 12 3 7 - repeatedFixed32 - 0 -
+  field repeated_int32 13 3 5 - repeatedInt32 - 0 -
+  field repeated_fixed64 2046 3 6 - repeatedFixed64 - 0 -
+  field repeated_int64 2047 3 3 - repeatedInt64 - 0 -
+  field repeated_float 262142 3 2 - repeatedFloat - 0 -
+  field repeated_uint64 262143 3 4 - repeatedUint64 - 0 -
+message TestCommentInjectionMessage
+  field a 1 1 9 - a - 0 -
+message FooRequest
+message FooResponse
+message FooClientMessage
+message FooServerMessage
+message BarRequest
+message BarResponse
+message TestEmptyMessage
+message CommentMessage
+  field text 1 1 9 - text - 0 -
+  message NestedCommentMessage
+    field nested_text 1 1 9 - nestedText - 0 -
+  enum NestedCommentEnum
+    value ZERO_VALUE 0
+enum ForeignEnum
+  value FOREIGN_UNSPECIFIED 0
+  value FOREIGN_FOO 4
+  value FOREIGN_BAR 5
+  value FOREIGN_BAZ 6
+enum TestEnumWithDupValue
+  value TEST_ENUM_WITH_DUP_VALUE_UNSPECIFIED 0
+  value FOO1 1
+  value BAR1 2
+  value BAZ 3
+  value FOO2 1
+  value BAR2 2
+enum TestSparseEnum
+  value TEST_SPARSE_ENUM_UNSPECIFIED 0
+  value SPARSE_A 123
+  value SPARSE_B 62374
+  value SPARSE_C 12589234
+  value SPARSE_D -15
+  value SPARSE_E -53452
+  value SPARSE_G 2
+enum CommentEnum
+  value ZERO_VALUE 0
+service TestService
+  method Foo .protobuf_unittest3.FooRequest .protobuf_unittest3.FooResponse 0 0
+  method Bar .protobuf_unittest3.BarRequest .protobuf_unittest3.BarResponse 0 0

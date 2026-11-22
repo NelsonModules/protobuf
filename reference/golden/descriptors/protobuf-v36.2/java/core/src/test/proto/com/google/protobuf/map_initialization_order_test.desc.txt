@@ -1,0 +1,16 @@
+package map_test
+syntax editions
+edition 2023
+message Message1
+  field map_field 1 3 11 .map_test.Message1.MapFieldEntry mapField - 0 -
+    resolved 0 0 11 - 0 -
+  message MapFieldEntry
+    field key 1 1 9 - key - 0 -
+      resolved 1 0 9 0 0 -
+    field value 2 1 8 - value - 0 -
+      resolved 1 0 8 - 0 -
+    map_entry
+  extension_range 1000 536870912
+message RedactAllTypes
+extension recursive_extension 1001 1 11 .map_test.Message1 .map_test.Message1 recursiveExtension - 0 -
+  resolved 1 0 11 - 0 -

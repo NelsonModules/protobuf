@@ -1,0 +1,9 @@
+package proto2_unittest_unlinked
+syntax editions
+edition 2024
+extension file_opt1 7736975 1 4 - .google.protobuf.FileOptions fileOpt1 - 0 -
+  resolved 1 0 4 - 0 -
+extension message_opt1 7739037 1 5 - .google.protobuf.MessageOptions messageOpt1 - 0 -
+  resolved 1 0 5 - 0 -
+extension field_opt1 7740937 1 6 - .google.protobuf.FieldOptions fieldOpt1 - 0 -
+  resolved 1 0 6 - 0 -

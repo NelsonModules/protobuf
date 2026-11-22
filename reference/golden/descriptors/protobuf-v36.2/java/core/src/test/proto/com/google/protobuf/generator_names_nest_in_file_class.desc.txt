@@ -1,0 +1,15 @@
+package protobuf
+syntax editions
+edition 2024
+message NestInFileClassMessage
+  field field 1 1 5 - field - 0 -
+    resolved 1 0 5 - 0 -
+  message NestedMessage
+    field nested_field 1 1 5 - nestedField - 0 -
+      resolved 1 0 5 - 0 -
+  enum NestedEnum
+    value VALUE0 0
+enum NestInFileClassEnum
+  value VALUE0 0
+service NestInFileClassService
+  method Foo .protobuf.NestInFileClassMessage .protobuf.NestInFileClassMessage 0 0

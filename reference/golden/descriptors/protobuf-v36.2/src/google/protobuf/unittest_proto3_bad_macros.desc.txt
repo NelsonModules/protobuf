@@ -1,0 +1,39 @@
+package protobuf_unittest
+syntax proto3
+enum GID
+  value GID_UNUSED 0
+enum UID
+  value UID_UNUSED 0
+enum BadNames
+  value PACKAGE 0
+  value PACKED 1
+  value linux 2
+  value DOMAIN 3
+  value TRUE 4
+  value FALSE 5
+  value CREATE_NEW 6
+  value DELETE 7
+  value DOUBLE_CLICK 8
+  value ERROR 9
+  value ERROR_BUSY 10
+  value ERROR_INSTALL_FAILED 11
+  value ERROR_NOT_FOUND 12
+  value GetClassName 13
+  value GetCurrentTime 14
+  value GetMessage 15
+  value GetObject 16
+  value IGNORE 17
+  value IN 18
+  value INPUT_KEYBOARD 19
+  value NO_ERROR 20
+  value OUT 21
+  value OPTIONAL 22
+  value NEAR 23
+  value NO_DATA 24
+  value REASON_UNKNOWN 25
+  value SERVICE_DISABLED 26
+  value SEVERITY_ERROR 27
+  value STATUS_PENDING 28
+  value STRICT 29
+  value TYPE_BOOL 30
+  value DEBUG 31

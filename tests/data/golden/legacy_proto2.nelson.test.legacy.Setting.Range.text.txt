@@ -1,0 +1,49 @@
+high: 1e+30
+===
+high: inf
+===
+===
+low: inf
+===
+high: -0.0
+===
+high: 702132.6929919603
+===
+low: -0.0
+high: -0.0
+===
+high: 1.5
+===
+high: 0.0
+===
+low: -inf
+===
+low: 1e-30
+===
+high: -2.25
+===
+low: nan
+===
+===
+high: 1e-30
+===
+===
+low: nan
+high: -inf
+===
+high: -0.0
+===
+===
+low: -0.0
+high: 0.0
+===
+low: -inf
+high: inf
+===
+high: -inf
+===
+high: nan
+===
+low: 0.0
+===
+low: inf

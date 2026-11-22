@@ -1,0 +1,79 @@
+package custom_features
+syntax editions
+edition 2024
+message TestCustomFeatures
+  field file_feature 1 1 14 .custom_features.EnumFeature fileFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field extension_range_feature 2 1 14 .custom_features.EnumFeature extensionRangeFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field message_feature 3 1 14 .custom_features.EnumFeature messageFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field field_feature 4 1 14 .custom_features.EnumFeature fieldFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field oneof_feature 5 1 14 .custom_features.EnumFeature oneofFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field enum_feature 6 1 14 .custom_features.EnumFeature enumFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field enum_entry_feature 7 1 14 .custom_features.EnumFeature enumEntryFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field service_feature 8 1 14 .custom_features.EnumFeature serviceFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field method_feature 9 1 14 .custom_features.EnumFeature methodFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field multiple_feature 10 1 14 .custom_features.EnumFeature multipleFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field bool_field_feature 11 1 8 - boolFieldFeature - 0 -
+    resolved 1 0 8 - 0 -
+  field source_feature 15 1 14 .custom_features.EnumFeature sourceFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field source_feature2 16 1 14 .custom_features.EnumFeature sourceFeature2 - 0 -
+    resolved 1 0 14 - 0 -
+  field removed_feature 17 1 14 .custom_features.EnumFeature removedFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field same_edition_removed_feature 21 1 14 .custom_features.EnumFeature sameEditionRemovedFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field future_feature 18 1 14 .custom_features.EnumFeature futureFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field legacy_feature 19 1 14 .custom_features.EnumFeature legacyFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field value_lifetime_feature 20 1 14 .custom_features.ValueLifetimeFeature valueLifetimeFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field new_unstable_feature 22 1 14 .custom_features.UnstableEnumFeature newUnstableFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field unstable_existing_feature 23 1 14 .custom_features.UnstableEnumFeature unstableExistingFeature - 0 -
+    resolved 1 0 14 - 0 -
+  field removed_unstable_feature 24 1 14 .custom_features.UnstableEnumFeature removedUnstableFeature - 0 -
+    resolved 1 0 14 - 0 -
+enum EnumFeature
+  value TEST_ENUM_FEATURE_UNKNOWN 0
+  value VALUE1 1
+  value VALUE2 2
+  value VALUE3 3
+  value VALUE4 4
+  value VALUE5 5
+  value VALUE6 6
+  value VALUE7 7
+  value VALUE8 8
+  value VALUE9 9
+  value VALUE10 10
+  value VALUE11 11
+  value VALUE12 12
+  value VALUE13 13
+  value VALUE14 14
+  value VALUE15 15
+enum UnstableEnumFeature
+  value TEST_UNSTABLE_ENUM_FEATURE_UNKNOWN 0
+  value UNSTABLE1 1
+  value UNSTABLE2 2
+  value UNSTABLE3 3
+  value UNSTABLE4 4
+enum ValueLifetimeFeature
+  value TEST_VALUE_LIFETIME_UNKNOWN 0
+  value VALUE_LIFETIME_INHERITED 1
+  value VALUE_LIFETIME_SUPPORT 2
+  value VALUE_LIFETIME_EMPTY_SUPPORT 3
+  value VALUE_LIFETIME_FUTURE 4
+  value VALUE_LIFETIME_DEPRECATED 5
+  value VALUE_LIFETIME_REMOVED 6
+extension test 9995 1 11 .custom_features.TestCustomFeatures .google.protobuf.FeatureSet test - 0 -
+  resolved 1 0 11 - 0 -
