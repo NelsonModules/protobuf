@@ -11,7 +11,8 @@
   "repository": "https://github.com/NelsonModules/protobuf",
   "builtin": true,
   "platforms": [
-    "win64"
+    "win64",
+    "wasm32"
   ],
   "nelson": ">=2.0.0",
   "dependencies": {},
